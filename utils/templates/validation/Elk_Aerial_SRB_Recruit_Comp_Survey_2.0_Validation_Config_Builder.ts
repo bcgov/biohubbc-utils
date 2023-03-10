@@ -3,14 +3,16 @@ import {
   aircraftPickListValidator,
   basicNumericValidator,
   datumPickListValidator,
+  eastingValidator,
   featureTypePickListValidator,
   frequencyPickListValidator,
   habitatPickListValidator,
+  northingValidator,
   outputValidationSchema,
   signTypePickListValidator,
   surveyOrTelemetryPickListValidator,
   targetPickListValidator,
-  utmZonePickListValidator
+  utmZoneValidator
 } from './validation-config-helpers';
 
 const elkSpeciesValidator = () => {
@@ -245,7 +247,7 @@ const elkSRBTemplateValidationSchema = {
         {
           name: 'UTM Zone',
           description: '',
-          validations: utmZonePickListValidator()
+          validations: utmZoneValidator()
         },
         {
           name: 'Easting',
@@ -384,17 +386,17 @@ const elkSRBTemplateValidationSchema = {
         {
           name: 'UTM Zone',
           description: '',
-          validations: utmZonePickListValidator()
+          validations: utmZoneValidator()
         },
         {
           name: 'Easting',
           description: '',
-          validations: basicNumericValidator()
+          validations: eastingValidator()
         },
         {
           name: 'Northing',
           description: '',
-          validations: basicNumericValidator()
+          validations: northingValidator()
         },
         {
           name: 'Datum',

@@ -1,4 +1,5 @@
 import * as fs from 'fs';
+import { utmZoneValidator } from './validation-config-helpers';
 const basicNumericValidator = () => {
   return [
     {
@@ -1116,17 +1117,6 @@ const frequencyPickListValidator = () => {
             description: 'Hz'
           }
         ]
-      }
-    }
-  ];
-};
-
-const utmZoneValidator = () => {
-  return [
-    {
-      column_range_validator: {
-        min_value: 7,
-        max_value: 11
       }
     }
   ];

@@ -14,7 +14,7 @@ import {
   signTypePickListValidator,
   surveyOrTelemetryPickListValidator,
   targetPickListValidator,
-  utmZonePickListValidator
+  utmZoneValidator
 } from './validation-config-helpers';
 
 const elkSpeciesValidator = () => {
@@ -79,7 +79,7 @@ const elkGeneralTemplateValidationSchema = {
         {
           name: 'UTM Zone',
           description: '',
-          validations: utmZonePickListValidator()
+          validations: utmZoneValidator()
         },
         {
           name: 'Easting',
@@ -296,7 +296,7 @@ const elkGeneralTemplateValidationSchema = {
         {
           name: 'UTM Zone',
           description: '',
-          validations: utmZonePickListValidator()
+          validations: utmZoneValidator()
         },
         {
           name: 'Easting',

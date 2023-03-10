@@ -163,42 +163,17 @@ export const frequencyPickListValidator = () => {
   ];
 };
 
-export const utmZonePickListValidator = () => {
+export const utmZoneValidator = () => {
   return [
     {
-      column_code_validator: {
-        name: {
-          type: 'string'
-        },
-        description: {
-          type: 'string'
-        },
-        allowed_code_values: [
-          {
-            name: '7',
-            description: '7'
-          },
-          {
-            name: '8',
-            description: '8'
-          },
-          {
-            name: '9',
-            description: '9'
-          },
-          {
-            name: '10',
-            description: '10'
-          },
-          {
-            name: '11',
-            description: '11'
-          }
-        ]
+      column_range_validator: {
+        min_value: 7,
+        max_value: 11
       }
     }
   ];
 };
+
 
 export const eastingValidator = () => {
   return [
