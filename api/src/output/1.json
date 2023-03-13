@@ -2,55 +2,25 @@
   "Observations": [
     {
       "_data": {
-        "Study Area": "Central Selkirks",
-        "Population Unit": "Central Selkirks",
-        "Block ID/SU ID": "4-23",
-        "Date": "16-Mar-19",
-        "Time": "11:00:00",
+        "Study Area": "East Kootenay",
+        "Population Unit": "9",
+        "Block ID/SU ID": "Mt Assiniboine",
         "UTM Zone": "11",
-        "Easting": "493420",
-        "Northing": "5589669",
-        "Datum": "NAD83",
-        "Species": "M-RATA",
+        "Easting": "638449",
+        "Northing": "5460230",
+        "Datum": "WGS84",
         "Group Label": "1",
-        "Adult Males": "1",
-        "Adult Females": "2",
-        "Adults - Unclassified Sex": "3",
-        "Immature Males": "4",
-        "Juveniles - Unclassified Sex": "5",
-        "Yearling Males": "6",
-        "Yearling Females": "7",
-        "Yearling - Unclassified Sex": "8",
-        "Males - Unclassified Life Stage": "9",
-        "Females - Unclassified Life Stage": "10",
-        "Unclassified Life Stage and Sex": "11",
-        "BC RISC - Class I Bulls": "12",
-        "BC RISC - Class II Bulls": "13",
-        "BC RISC - Class III Bulls": "14",
-        "BC RISC - Class I or  II Bulls": "15",
-        "Bulls - 3 Points or Fewer": "16",
-        "Bulls - 3 or 4 Points": "17",
-        "Bulls - 4 Points or Fewer": "18",
-        "Bulls - 4 Points or More": "19",
-        "Bulls - 5 Points or More": "20",
-        "Bulls - 6 Points or More": "21",
-        "Bulls - 10 Points or Tripalm": "22",
-        "Total Count": "253",
-        "Sign type": "Bed",
-        "Sign Count": "4",
-        "Age of Sign": "Old",
-        "Veg Cover (%)": "10",
+        "Date": "28-Jan-19",
+        "Species": "M-OVCA",
+        "Ewes": "2",
+        "Lambs": "3",
+        "Total Count": "5",
         "Snow Cover (%)": "100",
-        "Activity": "Standing",
-        "Elevation (m) of Observation": "1200",
-        "Habitat": "Alpine",
-        "Number of Marked Animals Observed": "1",
-        "Survey or Telemetry Search": "Survey",
-        "Photos": "4-8",
-        "Observation Comments": "Looked Health"
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
       },
       "_name": "Observations",
-      "_key": "Central Selkirks:4-23",
+      "_key": "East Kootenay:Mt Assiniboine",
       "_parentKey": "",
       "_type": "root",
       "_row": 0,
@@ -58,30 +28,3735 @@
         "1"
       ],
       "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "9",
+        "Block ID/SU ID": "Mt Assiniboine",
+        "UTM Zone": "11",
+        "Easting": "638533",
+        "Northing": "5460718",
+        "Datum": "WGS84",
+        "Group Label": "2",
+        "Date": "28-Jan-19",
+        "Species": "M-OVCA",
+        "BC RISC Class III Rams": "2",
+        "BC RISC Class IV Rams": "2",
+        "Ewes": "1",
+        "Total Count": "5",
+        "Snow Cover (%)": "100",
+        "Activity": "Not Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Mt Assiniboine",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 1,
+      "_childKeys": [
+        "2"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "9",
+        "Block ID/SU ID": "Mt Assiniboine",
+        "UTM Zone": "11",
+        "Easting": "639798",
+        "Northing": "5462611",
+        "Datum": "WGS84",
+        "Group Label": "3",
+        "Date": "28-Jan-19",
+        "Species": "M-OVCA",
+        "BC RISC Class II Rams": "2",
+        "BC RISC Class III Rams": "2",
+        "Ewes": "1",
+        "Lambs": "1",
+        "Total Count": "6",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Mt Assiniboine",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 2,
+      "_childKeys": [
+        "3"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "9",
+        "Block ID/SU ID": "Mt Assiniboine",
+        "UTM Zone": "11",
+        "Easting": "638880",
+        "Northing": "5460017",
+        "Datum": "WGS84",
+        "Group Label": "4",
+        "Date": "28-Jan-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "1",
+        "Ewes": "3",
+        "Lambs": "4",
+        "Total Count": "8",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Mt Assiniboine",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 3,
+      "_childKeys": [
+        "4"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "9",
+        "Block ID/SU ID": "Mt Assiniboine",
+        "UTM Zone": "11",
+        "Easting": "639190",
+        "Northing": "5458095",
+        "Datum": "WGS84",
+        "Group Label": "5",
+        "Date": "28-Jan-19",
+        "Species": "M-OVCA",
+        "Ewes": "4",
+        "Lambs": "3",
+        "Total Count": "7",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Mt Assiniboine",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 4,
+      "_childKeys": [
+        "5"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "9",
+        "Block ID/SU ID": "Mt Assiniboine",
+        "UTM Zone": "11",
+        "Easting": "639918",
+        "Northing": "5456857",
+        "Datum": "WGS84",
+        "Group Label": "6",
+        "Date": "28-Jan-19",
+        "Species": "M-OVCA",
+        "Ewes": "1",
+        "Lambs": "1",
+        "Total Count": "2",
+        "Snow Cover (%)": "100",
+        "Activity": "Not Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Mt Assiniboine",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 5,
+      "_childKeys": [
+        "6"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "9",
+        "Block ID/SU ID": "Mt Assiniboine",
+        "UTM Zone": "11",
+        "Easting": "645012",
+        "Northing": "5459810",
+        "Datum": "WGS84",
+        "Group Label": "7",
+        "Date": "28-Jan-19",
+        "Species": "M-OVCA",
+        "Ewes": "1",
+        "Lambs": "1",
+        "Total Count": "2",
+        "Snow Cover (%)": "100",
+        "Activity": "Not Moving",
+        "Habitat": "Ridge"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Mt Assiniboine",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 6,
+      "_childKeys": [
+        "7"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "7",
+        "Block ID/SU ID": "Sharkstooth",
+        "UTM Zone": "11",
+        "Easting": "648565",
+        "Northing": "5462278",
+        "Datum": "WGS84",
+        "Group Label": "8",
+        "Date": "28-Jan-19",
+        "Species": "M-OVCA",
+        "Ewes": "7",
+        "Lambs": "4",
+        "Total Count": "11",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Ridge"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Sharkstooth",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 7,
+      "_childKeys": [
+        "8"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "7",
+        "Block ID/SU ID": "Sharkstooth",
+        "UTM Zone": "11",
+        "Easting": "649700",
+        "Northing": "5461240",
+        "Datum": "WGS84",
+        "Group Label": "9",
+        "Date": "28-Jan-19",
+        "Species": "M-OVCA",
+        "BC RISC Class II Rams": "1",
+        "Ewes": "5",
+        "Lambs": "3",
+        "Total Count": "9",
+        "Snow Cover (%)": "100",
+        "Activity": "Not Moving",
+        "Habitat": "Ridge"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Sharkstooth",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 8,
+      "_childKeys": [
+        "9"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "7",
+        "Block ID/SU ID": "Sharkstooth",
+        "UTM Zone": "11",
+        "Easting": "636814",
+        "Northing": "5463417",
+        "Datum": "WGS84",
+        "Group Label": "10",
+        "Date": "28-Jan-19",
+        "Species": "M-OVCA",
+        "BC RISC Class II Rams": "2",
+        "BC RISC Class III Rams": "1",
+        "BC RISC Class IV Rams": "1",
+        "Total Count": "4",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Sharkstooth",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 9,
+      "_childKeys": [
+        "10"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "7",
+        "Block ID/SU ID": "Sharkstooth",
+        "UTM Zone": "11",
+        "Easting": "636355",
+        "Northing": "5463717",
+        "Datum": "WGS84",
+        "Group Label": "11",
+        "Date": "28-Jan-19",
+        "Species": "M-OVCA",
+        "BC RISC Class II Rams": "1",
+        "BC RISC Class III Rams": "2",
+        "BC RISC Class IV Rams": "1",
+        "Total Count": "4",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Sharkstooth",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 10,
+      "_childKeys": [
+        "11"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "7",
+        "Block ID/SU ID": "Sharkstooth",
+        "UTM Zone": "11",
+        "Easting": "635912",
+        "Northing": "5463890",
+        "Datum": "WGS84",
+        "Group Label": "12",
+        "Date": "28-Jan-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "1",
+        "BC RISC Class II Rams": "2",
+        "Ewes": "6",
+        "Lambs": "3",
+        "Total Count": "12",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Sharkstooth",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 11,
+      "_childKeys": [
+        "12"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "7",
+        "Block ID/SU ID": "Sharkstooth",
+        "UTM Zone": "11",
+        "Easting": "637874",
+        "Northing": "5463332",
+        "Datum": "WGS84",
+        "Group Label": "13",
+        "Date": "28-Jan-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "1",
+        "BC RISC Class II Rams": "2",
+        "Ram - Unclassified": "1",
+        "Total Count": "4",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Sharkstooth",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 12,
+      "_childKeys": [
+        "13"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "7",
+        "Block ID/SU ID": "Sharkstooth",
+        "UTM Zone": "11",
+        "Easting": "641076",
+        "Northing": "5464313",
+        "Datum": "WGS84",
+        "Group Label": "14",
+        "Date": "28-Jan-19",
+        "Species": "M-OVCA",
+        "Ewes": "5",
+        "Lambs": "2",
+        "Total Count": "7",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Caves"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Sharkstooth",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 13,
+      "_childKeys": [
+        "14"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "8",
+        "Block ID/SU ID": "Columbia Lake East",
+        "UTM Zone": "11",
+        "Easting": "610312",
+        "Northing": "5482815",
+        "Datum": "WGS84",
+        "Group Label": "15",
+        "Date": "28-Jan-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "2",
+        "BC RISC Class II Rams": "2",
+        "BC RISC Class III Rams": "2",
+        "Ewes": "2",
+        "Lambs": "2",
+        "Adults Unclassified Sex": "10",
+        "Total Count": "20",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Columbia Lake East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 14,
+      "_childKeys": [
+        "15"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "7",
+        "Block ID/SU ID": "Sharkstooth",
+        "UTM Zone": "11",
+        "Easting": "613474",
+        "Northing": "5481887",
+        "Datum": "WGS84",
+        "Group Label": "16",
+        "Date": "28-Jan-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "3",
+        "Ewes": "8",
+        "Lambs": "5",
+        "Total Count": "16",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Sharkstooth",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 15,
+      "_childKeys": [
+        "16"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "4",
+        "Block ID/SU ID": "Elk Valley West",
+        "UTM Zone": "11",
+        "Easting": "597660",
+        "Northing": "5514922",
+        "Datum": "WGS84",
+        "Group Label": "17",
+        "Date": "5-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class II Rams": "1",
+        "Total Count": "1",
+        "Snow Cover (%)": "80",
+        "Activity": "Not Moving",
+        "Habitat": "Cliff, open"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley West",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 16,
+      "_childKeys": [
+        "17"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "4",
+        "Block ID/SU ID": "Elk Valley West",
+        "UTM Zone": "11",
+        "Easting": "598732",
+        "Northing": "5526308",
+        "Datum": "WGS84",
+        "Group Label": "18",
+        "Date": "5-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "2",
+        "Lambs": "1",
+        "Total Count": "3",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Ridge"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley West",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 17,
+      "_childKeys": [
+        "18"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "4",
+        "Block ID/SU ID": "Elk Valley West",
+        "UTM Zone": "11",
+        "Easting": "581666",
+        "Northing": "5573480",
+        "Datum": "WGS84",
+        "Group Label": "19",
+        "Date": "5-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "2",
+        "BC RISC Class II Rams": "3",
+        "BC RISC Class IV Rams": "1",
+        "Ewes": "5",
+        "Lambs": "3",
+        "Total Count": "14",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley West",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 18,
+      "_childKeys": [
+        "19"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "4",
+        "Block ID/SU ID": "Elk Valley West",
+        "UTM Zone": "11",
+        "Easting": "583302",
+        "Northing": "5561554",
+        "Datum": "WGS84",
+        "Group Label": "20",
+        "Date": "5-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class II Rams": "1",
+        "Ewes": "2",
+        "Total Count": "3",
+        "Snow Cover (%)": "100",
+        "Activity": "Not Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley West",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 19,
+      "_childKeys": [
+        "20"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "4",
+        "Block ID/SU ID": "Elk Valley West",
+        "UTM Zone": "11",
+        "Easting": "583508",
+        "Northing": "5561315",
+        "Datum": "WGS84",
+        "Group Label": "21",
+        "Date": "5-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class III Rams": "1",
+        "Ewes": "5",
+        "Lambs": "1",
+        "Total Count": "7",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Ridge"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley West",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 20,
+      "_childKeys": [
+        "21"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "4",
+        "Block ID/SU ID": "Elk Valley West",
+        "UTM Zone": "11",
+        "Easting": "584982",
+        "Northing": "5557776",
+        "Datum": "WGS84",
+        "Group Label": "22",
+        "Date": "5-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "3",
+        "Total Count": "3",
+        "Snow Cover (%)": "90",
+        "Activity": "Not Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley West",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 21,
+      "_childKeys": [
+        "22"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "4",
+        "Block ID/SU ID": "Elk Valley West",
+        "UTM Zone": "11",
+        "Easting": "585663",
+        "Northing": "5557752",
+        "Datum": "WGS84",
+        "Group Label": "23",
+        "Date": "5-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "6",
+        "Lambs": "2",
+        "Adults Unclassified Sex": "6",
+        "Total Count": "14",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Ridge"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley West",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 22,
+      "_childKeys": [
+        "23"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "4",
+        "Block ID/SU ID": "Elk Valley West",
+        "UTM Zone": "11",
+        "Easting": "585491",
+        "Northing": "5558008",
+        "Datum": "WGS84",
+        "Group Label": "24",
+        "Date": "5-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "1",
+        "BC RISC Class II Rams": "2",
+        "BC RISC Class III Rams": "3",
+        "BC RISC Class IV Rams": "1",
+        "Ewes": "5",
+        "Lambs": "2",
+        "Total Count": "14",
+        "Snow Cover (%)": "80",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley West",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 23,
+      "_childKeys": [
+        "24"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "643053",
+        "Northing": "5598484",
+        "Datum": "WGS84",
+        "Group Label": "25",
+        "Date": "5-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class II Rams": "1",
+        "Total Count": "1",
+        "Snow Cover (%)": "90",
+        "Activity": "Not Moving",
+        "Habitat": "Cliff, broken"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 24,
+      "_childKeys": [
+        "25"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "643657",
+        "Northing": "5597649",
+        "Datum": "WGS84",
+        "Group Label": "26",
+        "Date": "5-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "2",
+        "Total Count": "2",
+        "Snow Cover (%)": "90",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 25,
+      "_childKeys": [
+        "26"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "653434",
+        "Northing": "5584632",
+        "Datum": "WGS84",
+        "Group Label": "27",
+        "Date": "5-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "1",
+        "Lambs": "1",
+        "Total Count": "2",
+        "Snow Cover (%)": "80",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 26,
+      "_childKeys": [
+        "27"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "650704",
+        "Northing": "5579843",
+        "Datum": "WGS84",
+        "Group Label": "28",
+        "Date": "5-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class IV Rams": "1",
+        "Total Count": "1",
+        "Snow Cover (%)": "90",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 27,
+      "_childKeys": [
+        "28"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "657263",
+        "Northing": "5555434",
+        "Datum": "WGS84",
+        "Group Label": "29",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class II Rams": "1",
+        "BC RISC Class III Rams": "3",
+        "BC RISC Class IV Rams": "1",
+        "Total Count": "5",
+        "Snow Cover (%)": "80",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 28,
+      "_childKeys": [
+        "29"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "657376",
+        "Northing": "5555997",
+        "Datum": "WGS84",
+        "Group Label": "30",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class II Rams": "5",
+        "BC RISC Class III Rams": "4",
+        "BC RISC Class IV Rams": "2",
+        "Ewes": "8",
+        "Lambs": "5",
+        "Total Count": "24",
+        "Snow Cover (%)": "80",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 29,
+      "_childKeys": [
+        "30"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "657143",
+        "Northing": "5556205",
+        "Datum": "WGS84",
+        "Group Label": "31",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class II Rams": "2",
+        "Ewes": "1",
+        "Lambs": "1",
+        "Total Count": "4",
+        "Snow Cover (%)": "100",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 30,
+      "_childKeys": [
+        "31"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "656837",
+        "Northing": "5557833",
+        "Datum": "WGS84",
+        "Group Label": "32",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class III Rams": "1",
+        "Total Count": "1",
+        "Snow Cover (%)": "100",
+        "Activity": "Not Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 31,
+      "_childKeys": [
+        "32"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "659347",
+        "Northing": "5557678",
+        "Datum": "WGS84",
+        "Group Label": "33",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "3",
+        "Lambs": "3",
+        "Total Count": "6",
+        "Snow Cover (%)": "80",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 32,
+      "_childKeys": [
+        "33"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "662505",
+        "Northing": "5561442",
+        "Datum": "WGS84",
+        "Group Label": "34",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "4",
+        "Lambs": "3",
+        "Total Count": "7",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 33,
+      "_childKeys": [
+        "34"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "662227",
+        "Northing": "5561784",
+        "Datum": "WGS84",
+        "Group Label": "35",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "2",
+        "Lambs": "2",
+        "Total Count": "4",
+        "Snow Cover (%)": "80",
+        "Activity": "Not Moving",
+        "Habitat": "Cliff, broken"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 34,
+      "_childKeys": [
+        "35"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "658052",
+        "Northing": "5564246",
+        "Datum": "WGS84",
+        "Group Label": "36",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "6",
+        "Total Count": "6",
+        "Snow Cover (%)": "80",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 35,
+      "_childKeys": [
+        "36"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "658401",
+        "Northing": "5564145",
+        "Datum": "WGS84",
+        "Group Label": "37",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class IV Rams": "1",
+        "Total Count": "1",
+        "Snow Cover (%)": "90",
+        "Activity": "Not Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 36,
+      "_childKeys": [
+        "37"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "652684",
+        "Northing": "5564814",
+        "Datum": "WGS84",
+        "Group Label": "38",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "1",
+        "Ewes": "14",
+        "Lambs": "4",
+        "Total Count": "19",
+        "Snow Cover (%)": "90",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 37,
+      "_childKeys": [
+        "38"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "653712",
+        "Northing": "5564976",
+        "Datum": "WGS84",
+        "Group Label": "39",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "1",
+        "Lambs": "1",
+        "Total Count": "2",
+        "Snow Cover (%)": "90",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 38,
+      "_childKeys": [
+        "39"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "654416",
+        "Northing": "5568238",
+        "Datum": "WGS84",
+        "Group Label": "40",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class II Rams": "1",
+        "Total Count": "1",
+        "Snow Cover (%)": "90",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 39,
+      "_childKeys": [
+        "40"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "655941",
+        "Northing": "5568846",
+        "Datum": "WGS84",
+        "Group Label": "41",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class II Rams": "1",
+        "BC RISC Class III Rams": "1",
+        "Ewes": "4",
+        "Lambs": "1",
+        "Total Count": "7",
+        "Snow Cover (%)": "90",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 40,
+      "_childKeys": [
+        "41"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "656075",
+        "Northing": "5568949",
+        "Datum": "WGS84",
+        "Group Label": "42",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class II Rams": "1",
+        "BC RISC Class III Rams": "1",
+        "BC RISC Class IV Rams": "2",
+        "Ewes": "8",
+        "Lambs": "2",
+        "Total Count": "14",
+        "Snow Cover (%)": "90",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 41,
+      "_childKeys": [
+        "42"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "647068",
+        "Northing": "5564628",
+        "Datum": "WGS84",
+        "Group Label": "43",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class III Rams": "1",
+        "BC RISC Class IV Rams": "1",
+        "Ewes": "13",
+        "Lambs": "2",
+        "Total Count": "17",
+        "Snow Cover (%)": "90",
+        "Activity": "Not Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 42,
+      "_childKeys": [
+        "43"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "646652",
+        "Northing": "5564632",
+        "Datum": "WGS84",
+        "Group Label": "44",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class III Rams": "2",
+        "Ewes": "1",
+        "Total Count": "3",
+        "Snow Cover (%)": "90",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 43,
+      "_childKeys": [
+        "44"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "646589",
+        "Northing": "5564769",
+        "Datum": "WGS84",
+        "Group Label": "45",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "4",
+        "BC RISC Class IV Rams": "1",
+        "Total Count": "5",
+        "Snow Cover (%)": "90",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 44,
+      "_childKeys": [
+        "45"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "647629",
+        "Northing": "5560879",
+        "Datum": "WGS84",
+        "Group Label": "46",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class III Rams": "1",
+        "Total Count": "1",
+        "Snow Cover (%)": "100",
+        "Activity": "Not Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 45,
+      "_childKeys": [
+        "46"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "646971",
+        "Northing": "5561893",
+        "Datum": "WGS84",
+        "Group Label": "47",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class II Rams": "1",
+        "BC RISC Class III Rams": "1",
+        "Total Count": "2",
+        "Snow Cover (%)": "100",
+        "Activity": "Not Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 46,
+      "_childKeys": [
+        "47"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "646320",
+        "Northing": "5562931",
+        "Datum": "WGS84",
+        "Group Label": "48",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class II Rams": "1",
+        "Ewes": "1",
+        "Lambs": "1",
+        "Total Count": "3",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 47,
+      "_childKeys": [
+        "48"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "646494",
+        "Northing": "5562425",
+        "Datum": "WGS84",
+        "Group Label": "49",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "1",
+        "BC RISC Class II Rams": "2",
+        "Ewes": "3",
+        "Lambs": "1",
+        "Total Count": "7",
+        "Snow Cover (%)": "80",
+        "Activity": "Not Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 48,
+      "_childKeys": [
+        "49"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "647719",
+        "Northing": "5560389",
+        "Datum": "WGS84",
+        "Group Label": "50",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class II Rams": "1",
+        "BC RISC Class IV Rams": "1",
+        "Total Count": "2",
+        "Snow Cover (%)": "90",
+        "Activity": "Not Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 49,
+      "_childKeys": [
+        "50"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "647868",
+        "Northing": "5559760",
+        "Datum": "WGS84",
+        "Group Label": "51",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class II Rams": "1",
+        "Total Count": "1",
+        "Snow Cover (%)": "90",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 50,
+      "_childKeys": [
+        "51"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "648395",
+        "Northing": "5559522",
+        "Datum": "WGS84",
+        "Group Label": "52",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "2",
+        "Lambs": "5",
+        "Total Count": "7",
+        "Snow Cover (%)": "90",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 51,
+      "_childKeys": [
+        "52"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "648227",
+        "Northing": "5559688",
+        "Datum": "WGS84",
+        "Group Label": "53",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class III Rams": "2",
+        "Total Count": "2",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 52,
+      "_childKeys": [
+        "53"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "653219",
+        "Northing": "5550244",
+        "Datum": "WGS84",
+        "Group Label": "54",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "1",
+        "BC RISC Class III Rams": "1",
+        "Ewes": "7",
+        "Lambs": "3",
+        "Total Count": "12",
+        "Snow Cover (%)": "60",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 53,
+      "_childKeys": [
+        "54"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "656164",
+        "Northing": "5546377",
+        "Datum": "WGS84",
+        "Group Label": "55",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class III Rams": "1",
+        "BC RISC Class IV Rams": "2",
+        "Total Count": "3",
+        "Snow Cover (%)": "70",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 54,
+      "_childKeys": [
+        "55"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "659138",
+        "Northing": "5552667",
+        "Datum": "WGS84",
+        "Group Label": "56",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class II Rams": "2",
+        "BC RISC Class III Rams": "1",
+        "BC RISC Class IV Rams": "1",
+        "Ewes": "12",
+        "Lambs": "6",
+        "Total Count": "22",
+        "Snow Cover (%)": "80",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 55,
+      "_childKeys": [
+        "56"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "659180",
+        "Northing": "5548803",
+        "Datum": "WGS84",
+        "Group Label": "57",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "1",
+        "BC RISC Class II Rams": "1",
+        "BC RISC Class III Rams": "1",
+        "Total Count": "3",
+        "Snow Cover (%)": "80",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 56,
+      "_childKeys": [
+        "57"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "661275",
+        "Northing": "5553909",
+        "Datum": "WGS84",
+        "Group Label": "58",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "9",
+        "Total Count": "9",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 57,
+      "_childKeys": [
+        "58"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "662570",
+        "Northing": "5549184",
+        "Datum": "WGS84",
+        "Group Label": "59",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "7",
+        "Lambs": "2",
+        "Total Count": "9",
+        "Snow Cover (%)": "80",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 58,
+      "_childKeys": [
+        "59"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "662800",
+        "Northing": "5546701",
+        "Datum": "WGS84",
+        "Group Label": "60",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "1",
+        "Total Count": "1",
+        "Snow Cover (%)": "70",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 59,
+      "_childKeys": [
+        "60"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "659444",
+        "Northing": "5543645",
+        "Datum": "WGS84",
+        "Group Label": "61",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "4",
+        "Ewes": "25",
+        "Lambs": "12",
+        "Total Count": "41",
+        "Snow Cover (%)": "70",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 60,
+      "_childKeys": [
+        "61"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "659755",
+        "Northing": "5543971",
+        "Datum": "WGS84",
+        "Group Label": "62",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "2",
+        "BC RISC Class II Rams": "1",
+        "Ewes": "5",
+        "Lambs": "3",
+        "Total Count": "11",
+        "Snow Cover (%)": "70",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 61,
+      "_childKeys": [
+        "62"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "658933",
+        "Northing": "5544552",
+        "Datum": "WGS84",
+        "Group Label": "63",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "1",
+        "Ewes": "16",
+        "Lambs": "8",
+        "Total Count": "25",
+        "Snow Cover (%)": "60",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 62,
+      "_childKeys": [
+        "63"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "660592",
+        "Northing": "5542761",
+        "Datum": "WGS84",
+        "Group Label": "64",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "1",
+        "BC RISC Class II Rams": "1",
+        "BC RISC Class III Rams": "4",
+        "BC RISC Class IV Rams": "1",
+        "Ram - Unclassified": "1",
+        "Total Count": "8",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 63,
+      "_childKeys": [
+        "64"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "659615",
+        "Northing": "5542033",
+        "Datum": "WGS84",
+        "Group Label": "65",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class III Rams": "1",
+        "Total Count": "1",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 64,
+      "_childKeys": [
+        "65"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "658917",
+        "Northing": "5542028",
+        "Datum": "WGS84",
+        "Group Label": "66",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class II Rams": "1",
+        "BC RISC Class III Rams": "2",
+        "Total Count": "3",
+        "Snow Cover (%)": "80",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 65,
+      "_childKeys": [
+        "66"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "660662",
+        "Northing": "5542727",
+        "Datum": "WGS84",
+        "Group Label": "67",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "6",
+        "BC RISC Class II Rams": "3",
+        "BC RISC Class III Rams": "1",
+        "BC RISC Class IV Rams": "1",
+        "Total Count": "11",
+        "Snow Cover (%)": "80",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 66,
+      "_childKeys": [
+        "67"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "661265",
+        "Northing": "5542145",
+        "Datum": "WGS84",
+        "Group Label": "68",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class II Rams": "1",
+        "Total Count": "1",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 67,
+      "_childKeys": [
+        "68"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "661708",
+        "Northing": "5542673",
+        "Datum": "WGS84",
+        "Group Label": "69",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "3",
+        "Ewes": "16",
+        "Lambs": "4",
+        "Total Count": "23",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 68,
+      "_childKeys": [
+        "69"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "659568",
+        "Northing": "5524364",
+        "Datum": "WGS84",
+        "Group Label": "70",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "2",
+        "Lambs": "1",
+        "Total Count": "3",
+        "Snow Cover (%)": "60",
+        "Activity": "Moving",
+        "Habitat": "Cliff, broken"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 69,
+      "_childKeys": [
+        "70"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "659156",
+        "Northing": "5525111",
+        "Datum": "WGS84",
+        "Group Label": "71",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "1",
+        "BC RISC Class II Rams": "3",
+        "BC RISC Class III Rams": "3",
+        "Ewes": "28",
+        "Lambs": "12",
+        "Total Count": "47",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, broken"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 70,
+      "_childKeys": [
+        "71"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "658298",
+        "Northing": "5524967",
+        "Datum": "WGS84",
+        "Group Label": "72",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "1",
+        "Total Count": "1",
+        "Snow Cover (%)": "70",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 71,
+      "_childKeys": [
+        "72"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "662522",
+        "Northing": "5508458",
+        "Datum": "WGS84",
+        "Group Label": "73",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class III Rams": "1",
+        "Total Count": "1",
+        "Snow Cover (%)": "100",
+        "Activity": "Not Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 72,
+      "_childKeys": [
+        "73"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "663247",
+        "Northing": "5507219",
+        "Datum": "WGS84",
+        "Group Label": "74",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "1",
+        "BC RISC Class II Rams": "1",
+        "Ewes": "14",
+        "Lambs": "1",
+        "Total Count": "17",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 73,
+      "_childKeys": [
+        "74"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "667579",
+        "Northing": "5507240",
+        "Datum": "WGS84",
+        "Group Label": "75",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class II Rams": "1",
+        "Total Count": "1",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 74,
+      "_childKeys": [
+        "75"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "669404",
+        "Northing": "5508724",
+        "Datum": "WGS84",
+        "Group Label": "76",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class III Rams": "4",
+        "Ewes": "1",
+        "Total Count": "5",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 75,
+      "_childKeys": [
+        "76"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "670701",
+        "Northing": "5508067",
+        "Datum": "WGS84",
+        "Group Label": "77",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "3",
+        "Lambs": "2",
+        "Total Count": "5",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 76,
+      "_childKeys": [
+        "77"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "670057",
+        "Northing": "5509252",
+        "Datum": "WGS84",
+        "Group Label": "78",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "1",
+        "Ewes": "3",
+        "Lambs": "1",
+        "Total Count": "5",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 77,
+      "_childKeys": [
+        "78"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "658039",
+        "Northing": "5509720",
+        "Datum": "WGS84",
+        "Group Label": "79",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "5",
+        "Lambs": "3",
+        "Total Count": "8",
+        "Snow Cover (%)": "10",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 78,
+      "_childKeys": [
+        "79"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "657232",
+        "Northing": "5509875",
+        "Datum": "WGS84",
+        "Group Label": "80",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "16",
+        "Lambs": "4",
+        "Total Count": "20",
+        "Snow Cover (%)": "80",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 79,
+      "_childKeys": [
+        "80"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "655785",
+        "Northing": "5512023",
+        "Datum": "WGS84",
+        "Group Label": "81",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "4",
+        "Lambs": "1",
+        "Total Count": "5",
+        "Snow Cover (%)": "60",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 80,
+      "_childKeys": [
+        "81"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "657929",
+        "Northing": "5513988",
+        "Datum": "WGS84",
+        "Group Label": "82",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class II Rams": "7",
+        "BC RISC Class III Rams": "5",
+        "Total Count": "12",
+        "Snow Cover (%)": "70",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 81,
+      "_childKeys": [
+        "82"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "661724",
+        "Northing": "5534348",
+        "Datum": "WGS84",
+        "Group Label": "83",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "1",
+        "BC RISC Class III Rams": "1",
+        "Total Count": "2",
+        "Snow Cover (%)": "80",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 82,
+      "_childKeys": [
+        "83"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "3",
+        "Block ID/SU ID": "Elk Valley East",
+        "UTM Zone": "11",
+        "Easting": "661174",
+        "Northing": "5538323",
+        "Datum": "WGS84",
+        "Group Label": "84",
+        "Date": "6-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class II Rams": "1",
+        "Total Count": "1",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Elk Valley East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 83,
+      "_childKeys": [
+        "84"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "2",
+        "Block ID/SU ID": "Wigwam Flats",
+        "UTM Zone": "11",
+        "Easting": "638367",
+        "Northing": "5457910",
+        "Datum": "WGS84",
+        "Group Label": "85",
+        "Date": "21-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "4",
+        "BC RISC Class II Rams": "1",
+        "BC RISC Class III Rams": "2",
+        "Ewes": "13",
+        "Lambs": "7",
+        "Adults Unclassified Sex": "2",
+        "Total Count": "29",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Timber"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Wigwam Flats",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 84,
+      "_childKeys": [
+        "85"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "2",
+        "Block ID/SU ID": "Wigwam Flats",
+        "UTM Zone": "11",
+        "Easting": "638449",
+        "Northing": "5460230",
+        "Datum": "WGS84",
+        "Group Label": "86",
+        "Date": "21-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "1",
+        "BC RISC Class II Rams": "1",
+        "Ewes": "3",
+        "Lambs": "2",
+        "Adults Unclassified Sex": "5",
+        "Total Count": "12",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Wigwam Flats",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 85,
+      "_childKeys": [
+        "86"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "2",
+        "Block ID/SU ID": "Wigwam Flats",
+        "UTM Zone": "11",
+        "Easting": "638533",
+        "Northing": "5460718",
+        "Datum": "WGS84",
+        "Group Label": "87",
+        "Date": "21-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class II Rams": "2",
+        "Ewes": "3",
+        "Lambs": "1",
+        "Total Count": "6",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Wigwam Flats",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 86,
+      "_childKeys": [
+        "87"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "2",
+        "Block ID/SU ID": "Wigwam Flats",
+        "UTM Zone": "11",
+        "Easting": "637926",
+        "Northing": "5461382",
+        "Datum": "WGS84",
+        "Group Label": "88",
+        "Date": "21-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class III Rams": "4",
+        "Total Count": "4",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Wigwam Flats",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 87,
+      "_childKeys": [
+        "88"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "2",
+        "Block ID/SU ID": "Wigwam Flats",
+        "UTM Zone": "11",
+        "Easting": "638880",
+        "Northing": "5460017",
+        "Datum": "WGS84",
+        "Group Label": "89",
+        "Date": "21-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "1",
+        "Total Count": "1",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Wigwam Flats",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 88,
+      "_childKeys": [
+        "89"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "2",
+        "Block ID/SU ID": "Wigwam Flats",
+        "UTM Zone": "11",
+        "Easting": "639190",
+        "Northing": "5458095",
+        "Datum": "WGS84",
+        "Group Label": "90",
+        "Date": "21-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "1",
+        "BC RISC Class II Rams": "1",
+        "Ewes": "12",
+        "Lambs": "1",
+        "Total Count": "15",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Wigwam Flats",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 89,
+      "_childKeys": [
+        "90"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "2",
+        "Block ID/SU ID": "Wigwam Flats",
+        "UTM Zone": "11",
+        "Easting": "639425",
+        "Northing": "5457062",
+        "Datum": "WGS84",
+        "Group Label": "91",
+        "Date": "21-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "1",
+        "BC RISC Class II Rams": "7",
+        "BC RISC Class III Rams": "1",
+        "Ewes": "50",
+        "Lambs": "14",
+        "Total Count": "73",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Wigwam Flats",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 90,
+      "_childKeys": [
+        "91"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "2",
+        "Block ID/SU ID": "Wigwam Flats",
+        "UTM Zone": "11",
+        "Easting": "639918",
+        "Northing": "5456857",
+        "Datum": "WGS84",
+        "Group Label": "92",
+        "Date": "21-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "1",
+        "Ewes": "1",
+        "Total Count": "2",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Wigwam Flats",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 91,
+      "_childKeys": [
+        "92"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "2",
+        "Block ID/SU ID": "Wigwam Flats",
+        "UTM Zone": "11",
+        "Easting": "640609",
+        "Northing": "5459935",
+        "Datum": "WGS84",
+        "Group Label": "93",
+        "Date": "21-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class III Rams": "1",
+        "Total Count": "1",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Wigwam Flats",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 92,
+      "_childKeys": [
+        "93"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "2",
+        "Block ID/SU ID": "Wigwam Flats",
+        "UTM Zone": "11",
+        "Easting": "646169",
+        "Northing": "5459748",
+        "Datum": "WGS84",
+        "Group Label": "94",
+        "Date": "21-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class III Rams": "1",
+        "Ewes": "16",
+        "Lambs": "4",
+        "Total Count": "21",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Wigwam Flats",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 93,
+      "_childKeys": [
+        "94"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "2",
+        "Block ID/SU ID": "Wigwam Flats",
+        "UTM Zone": "11",
+        "Easting": "647794",
+        "Northing": "5460780",
+        "Datum": "WGS84",
+        "Group Label": "95",
+        "Date": "21-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "1",
+        "BC RISC Class II Rams": "2",
+        "BC RISC Class III Rams": "5",
+        "BC RISC Class IV Rams": "3",
+        "Ewes": "3",
+        "Lambs": "1",
+        "Total Count": "15",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Wigwam Flats",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 94,
+      "_childKeys": [
+        "95"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "2",
+        "Block ID/SU ID": "Wigwam Flats",
+        "UTM Zone": "11",
+        "Easting": "647390",
+        "Northing": "5461304",
+        "Datum": "WGS84",
+        "Group Label": "96",
+        "Date": "21-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "1",
+        "Lambs": "1",
+        "Total Count": "2",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Wigwam Flats",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 95,
+      "_childKeys": [
+        "96"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "2",
+        "Block ID/SU ID": "Wigwam Flats",
+        "UTM Zone": "11",
+        "Easting": "646167",
+        "Northing": "5460729",
+        "Datum": "WGS84",
+        "Group Label": "97",
+        "Date": "21-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "3",
+        "Total Count": "3",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Wigwam Flats",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 96,
+      "_childKeys": [
+        "97"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "2",
+        "Block ID/SU ID": "Wigwam Flats",
+        "UTM Zone": "11",
+        "Easting": "636814",
+        "Northing": "5463417",
+        "Datum": "WGS84",
+        "Group Label": "98",
+        "Date": "21-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "1",
+        "Ewes": "3",
+        "Lambs": "1",
+        "Total Count": "5"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Wigwam Flats",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 97,
+      "_childKeys": [
+        "98"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "2",
+        "Block ID/SU ID": "Wigwam Flats",
+        "UTM Zone": "11",
+        "Easting": "636355",
+        "Northing": "5463717",
+        "Datum": "WGS84",
+        "Group Label": "99",
+        "Date": "21-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "2",
+        "Lambs": "1",
+        "Total Count": "3",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Timber"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Wigwam Flats",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 98,
+      "_childKeys": [
+        "99"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "5",
+        "Block ID/SU ID": "Bull River",
+        "UTM Zone": "11",
+        "Easting": "609369",
+        "Northing": "5482023",
+        "Datum": "WGS84",
+        "Group Label": "100",
+        "Date": "27-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "4",
+        "Lambs": "1",
+        "Total Count": "5",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Timber"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Bull River",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 99,
+      "_childKeys": [
+        "100"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "5",
+        "Block ID/SU ID": "Bull River",
+        "UTM Zone": "11",
+        "Easting": "609837",
+        "Northing": "5482073",
+        "Datum": "WGS84",
+        "Group Label": "101",
+        "Date": "27-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "1",
+        "Adults Unclassified Sex": "3",
+        "Total Count": "4",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Timber"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Bull River",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 100,
+      "_childKeys": [
+        "101"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "5",
+        "Block ID/SU ID": "Bull River",
+        "UTM Zone": "11",
+        "Easting": "610412",
+        "Northing": "5482519",
+        "Datum": "WGS84",
+        "Group Label": "102",
+        "Date": "27-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "1",
+        "Total Count": "1",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Timber"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Bull River",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 101,
+      "_childKeys": [
+        "102"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "5",
+        "Block ID/SU ID": "Bull River",
+        "UTM Zone": "11",
+        "Easting": "610312",
+        "Northing": "5482815",
+        "Datum": "WGS84",
+        "Group Label": "103",
+        "Date": "27-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class II Rams": "2",
+        "Ewes": "2",
+        "Lambs": "2",
+        "Total Count": "6",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Bull River",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 102,
+      "_childKeys": [
+        "103"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "5",
+        "Block ID/SU ID": "Bull River",
+        "UTM Zone": "11",
+        "Easting": "611397",
+        "Northing": "5483246",
+        "Datum": "WGS84",
+        "Group Label": "104",
+        "Date": "27-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "6",
+        "Lambs": "4",
+        "Total Count": "10",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Timber"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Bull River",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 103,
+      "_childKeys": [
+        "104"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "5",
+        "Block ID/SU ID": "Bull River",
+        "UTM Zone": "11",
+        "Easting": "611602",
+        "Northing": "5483484",
+        "Datum": "WGS84",
+        "Group Label": "105",
+        "Date": "27-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "4",
+        "Lambs": "2",
+        "Total Count": "6",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Timber"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Bull River",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 104,
+      "_childKeys": [
+        "105"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "5",
+        "Block ID/SU ID": "Bull River",
+        "UTM Zone": "11",
+        "Easting": "611410",
+        "Northing": "5483836",
+        "Datum": "WGS84",
+        "Group Label": "106",
+        "Date": "27-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "4",
+        "Lambs": "2",
+        "Total Count": "6",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected",
+        "Number of Marked Animals Observed": "2",
+        "Survey or Telemetry Search": "Survey"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Bull River",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 105,
+      "_childKeys": [
+        "106"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "5",
+        "Block ID/SU ID": "Bull River",
+        "UTM Zone": "11",
+        "Easting": "613474",
+        "Northing": "5481887",
+        "Datum": "WGS84",
+        "Group Label": "107",
+        "Date": "27-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "1",
+        "BC RISC Class II Rams": "2",
+        "Total Count": "3",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected",
+        "Number of Marked Animals Observed": "1",
+        "Survey or Telemetry Search": "Survey"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Bull River",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 106,
+      "_childKeys": [
+        "107"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "5",
+        "Block ID/SU ID": "Bull River",
+        "UTM Zone": "11",
+        "Easting": "614703",
+        "Northing": "5483117",
+        "Datum": "WGS84",
+        "Group Label": "108",
+        "Date": "27-Feb-19",
+        "Species": "M-OVCA",
+        "Total Count": "0"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Bull River",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 107,
+      "_childKeys": [
+        "108"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "5",
+        "Block ID/SU ID": "Bull River",
+        "UTM Zone": "11",
+        "Easting": "614665",
+        "Northing": "5483408",
+        "Datum": "WGS84",
+        "Group Label": "109",
+        "Date": "27-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "2",
+        "Total Count": "2",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Bull River",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 108,
+      "_childKeys": [
+        "109"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "5",
+        "Block ID/SU ID": "Bull River",
+        "UTM Zone": "11",
+        "Easting": "618282",
+        "Northing": "5483734",
+        "Datum": "WGS84",
+        "Group Label": "110",
+        "Date": "27-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "1",
+        "BC RISC Class II Rams": "3",
+        "BC RISC Class III Rams": "4",
+        "Total Count": "8",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Bull River",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 109,
+      "_childKeys": [
+        "110"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "5",
+        "Block ID/SU ID": "Bull River",
+        "UTM Zone": "11",
+        "Easting": "620070",
+        "Northing": "5483791",
+        "Datum": "WGS84",
+        "Group Label": "111",
+        "Date": "27-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class III Rams": "3",
+        "Total Count": "3",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Bull River",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 110,
+      "_childKeys": [
+        "111"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "5",
+        "Block ID/SU ID": "Bull River",
+        "UTM Zone": "11",
+        "Easting": "620388",
+        "Northing": "5483784",
+        "Datum": "WGS84",
+        "Group Label": "112",
+        "Date": "27-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class II Rams": "2",
+        "Total Count": "2",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Bull River",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 111,
+      "_childKeys": [
+        "112"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "5",
+        "Block ID/SU ID": "Bull River",
+        "UTM Zone": "11",
+        "Easting": "606267",
+        "Northing": "5496171",
+        "Datum": "WGS84",
+        "Group Label": "113",
+        "Date": "27-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class II Rams": "1",
+        "BC RISC Class III Rams": "1",
+        "Total Count": "2",
+        "Snow Cover (%)": "90",
+        "Activity": "Not Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Bull River",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 112,
+      "_childKeys": [
+        "113"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "5",
+        "Block ID/SU ID": "Bull River",
+        "UTM Zone": "11",
+        "Easting": "605560",
+        "Northing": "5499641",
+        "Datum": "WGS84",
+        "Group Label": "114",
+        "Date": "27-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "2",
+        "Lambs": "2",
+        "Total Count": "4",
+        "Snow Cover (%)": "90",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Bull River",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 113,
+      "_childKeys": [
+        "114"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "6",
+        "Block ID/SU ID": "Premier-Wildhorse",
+        "UTM Zone": "11",
+        "Easting": "597051",
+        "Northing": "5511348",
+        "Datum": "WGS84",
+        "Group Label": "115",
+        "Date": "27-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "1",
+        "Lambs": "1",
+        "Total Count": "2",
+        "Snow Cover (%)": "100",
+        "Activity": "Not Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Premier-Wildhorse",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 114,
+      "_childKeys": [
+        "115"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "6",
+        "Block ID/SU ID": "Premier-Wildhorse",
+        "UTM Zone": "11",
+        "Easting": "597660",
+        "Northing": "5514922",
+        "Datum": "WGS84",
+        "Group Label": "116",
+        "Date": "27-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "2",
+        "Ewes": "3",
+        "Lambs": "2",
+        "Total Count": "7",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Premier-Wildhorse",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 115,
+      "_childKeys": [
+        "116"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "6",
+        "Block ID/SU ID": "Premier-Wildhorse",
+        "UTM Zone": "11",
+        "Easting": "600686",
+        "Northing": "5514752",
+        "Datum": "WGS84",
+        "Group Label": "117",
+        "Date": "27-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "1",
+        "Total Count": "1",
+        "Snow Cover (%)": "100",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Premier-Wildhorse",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 116,
+      "_childKeys": [
+        "117"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "6",
+        "Block ID/SU ID": "Premier-Wildhorse",
+        "UTM Zone": "11",
+        "Easting": "598332",
+        "Northing": "5523092",
+        "Datum": "WGS84",
+        "Group Label": "118",
+        "Date": "27-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class II Rams": "1",
+        "Ewes": "1",
+        "Lambs": "1",
+        "Total Count": "3",
+        "Snow Cover (%)": "80",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Premier-Wildhorse",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 117,
+      "_childKeys": [
+        "118"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "6",
+        "Block ID/SU ID": "Premier-Wildhorse",
+        "UTM Zone": "11",
+        "Easting": "598403",
+        "Northing": "5523733",
+        "Datum": "WGS84",
+        "Group Label": "119",
+        "Date": "27-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "1",
+        "Lambs": "2",
+        "Total Count": "3",
+        "Snow Cover (%)": "80",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Premier-Wildhorse",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 118,
+      "_childKeys": [
+        "119"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "8",
+        "Block ID/SU ID": "Columbia Lake East",
+        "UTM Zone": "11",
+        "Easting": "582511",
+        "Northing": "5570775",
+        "Datum": "WGS84",
+        "Group Label": "120",
+        "Date": "28-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class II Rams": "1",
+        "BC RISC Class III Rams": "1",
+        "Total Count": "2"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Columbia Lake East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 119,
+      "_childKeys": [
+        "120"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "8",
+        "Block ID/SU ID": "Columbia Lake East",
+        "UTM Zone": "11",
+        "Easting": "583097",
+        "Northing": "5566395",
+        "Datum": "WGS84",
+        "Group Label": "121",
+        "Date": "28-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "1",
+        "BC RISC Class II Rams": "1",
+        "BC RISC Class III Rams": "1",
+        "Ewes": "5",
+        "Lambs": "4",
+        "Total Count": "12",
+        "Snow Cover (%)": "80",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Columbia Lake East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 120,
+      "_childKeys": [
+        "121"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "8",
+        "Block ID/SU ID": "Columbia Lake East",
+        "UTM Zone": "11",
+        "Easting": "583302",
+        "Northing": "5561554",
+        "Datum": "WGS84",
+        "Group Label": "122",
+        "Date": "28-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "1",
+        "Ewes": "4",
+        "Lambs": "2",
+        "Total Count": "7",
+        "Snow Cover (%)": "80",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Columbia Lake East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 121,
+      "_childKeys": [
+        "122"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "8",
+        "Block ID/SU ID": "Columbia Lake East",
+        "UTM Zone": "11",
+        "Easting": "583365",
+        "Northing": "5561367",
+        "Datum": "WGS84",
+        "Group Label": "123",
+        "Date": "28-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "1",
+        "Ewes": "1",
+        "Lambs": "1",
+        "Total Count": "3",
+        "Snow Cover (%)": "80",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Columbia Lake East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 122,
+      "_childKeys": [
+        "123"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "8",
+        "Block ID/SU ID": "Columbia Lake East",
+        "UTM Zone": "11",
+        "Easting": "584990",
+        "Northing": "5558102",
+        "Datum": "WGS84",
+        "Group Label": "124",
+        "Date": "28-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "5",
+        "Total Count": "5",
+        "Snow Cover (%)": "80",
+        "Activity": "Moving",
+        "Habitat": "Cliff, dissected"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Columbia Lake East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 123,
+      "_childKeys": [
+        "124"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "8",
+        "Block ID/SU ID": "Columbia Lake East",
+        "UTM Zone": "11",
+        "Easting": "584982",
+        "Northing": "5557776",
+        "Datum": "WGS84",
+        "Group Label": "125",
+        "Date": "28-Feb-19",
+        "Species": "M-OVCA",
+        "Ewes": "3",
+        "Total Count": "3",
+        "Snow Cover (%)": "90",
+        "Activity": "Moving"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Columbia Lake East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 124,
+      "_childKeys": [
+        "125"
+      ],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Study Area": "East Kootenay",
+        "Population Unit": "8",
+        "Block ID/SU ID": "Columbia Lake East",
+        "UTM Zone": "11",
+        "Easting": "585269",
+        "Northing": "5557421",
+        "Datum": "WGS84",
+        "Group Label": "126",
+        "Date": "28-Feb-19",
+        "Species": "M-OVCA",
+        "BC RISC Class I Rams": "1",
+        "BC RISC Class II Rams": "1",
+        "Ewes": "3",
+        "Total Count": "5",
+        "Snow Cover (%)": "90",
+        "Activity": "Moving"
+      },
+      "_name": "Observations",
+      "_key": "East Kootenay:Columbia Lake East",
+      "_parentKey": "",
+      "_type": "root",
+      "_row": 125,
+      "_childKeys": [
+        "126"
+      ],
+      "_children": []
     }
   ],
   "Marked Animals": [
     {
       "_data": {
-        "Group Label": "1",
-        "Date": "16/Mar/19",
+        "Group Label": "106",
+        "Date": "27-Feb-19",
         "Targeted or Non-Targeted": "Non-Targeted",
-        "Wildlife Health ID": "3636",
-        "Animal ID": "35463",
-        "Telemetry Device ID": "35365",
-        "Collar/Tag Frequency": "114.34",
-        "Frequency Unit": "MHz",
-        "Right Ear Tag ID": "04",
-        "Right Ear Tag Colour": "Yellow",
-        "Left Ear Tag ID": "05",
-        "Left Ear Tag Colour": "Red",
-        "Marked Animals Comments": "Collar to tight"
+        "Animal ID": "BH001",
+        "Telemetry Device ID": "6A10298",
+        "Collar/Tag Frequency": "150.151",
+        "Frequency Unit": "KHz"
       },
       "_name": "Marked Animals",
-      "_key": "3636:35463:35365",
-      "_parentKey": "1",
+      "_key": "BH001:6A10298",
+      "_parentKey": "106",
       "_type": "",
       "_row": 0,
+      "_childKeys": [],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Group Label": "106",
+        "Date": "27-Feb-19",
+        "Targeted or Non-Targeted": "Non-Targeted",
+        "Animal ID": "BH002",
+        "Telemetry Device ID": "7C28091",
+        "Collar/Tag Frequency": "150.155",
+        "Frequency Unit": "KHz"
+      },
+      "_name": "Marked Animals",
+      "_key": "BH002:7C28091",
+      "_parentKey": "106",
+      "_type": "",
+      "_row": 1,
+      "_childKeys": [],
+      "_children": []
+    },
+    {
+      "_data": {
+        "Group Label": "107",
+        "Date": "27-Feb-19",
+        "Targeted or Non-Targeted": "Non-Targeted",
+        "Animal ID": "BH003",
+        "Telemetry Device ID": "4B38560",
+        "Collar/Tag Frequency": "150.250",
+        "Frequency Unit": "KHz"
+      },
+      "_name": "Marked Animals",
+      "_key": "BH003:4B38560",
+      "_parentKey": "107",
+      "_type": "",
+      "_row": 2,
       "_childKeys": [],
       "_children": []
     }
