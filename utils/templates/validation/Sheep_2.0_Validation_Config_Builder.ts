@@ -1,39 +1,5 @@
 import * as fs from 'fs';
-import { utmZoneValidator } from './validation-config-helpers';
-const basicNumericValidator = () => {
-  return [
-    {
-      column_numeric_validator: {
-        name: '',
-        description: ''
-      }
-    }
-  ];
-};
-
-const eastingValidator = () => {
-  return [
-    {
-      column_format_validator: {
-        reg_exp: '^[0-9]{6,6}$',
-        reg_exp_flags: 'g',
-        expected_format: 'Easting needs to be a 6 digit number. For example: 123456.'
-      }
-    }
-  ];
-};
-
-const northingValidator = () => {
-  return [
-    {
-      column_format_validator: {
-        reg_exp: '^[0-9]{7,7}$',
-        reg_exp_flags: 'g',
-        expected_format: 'Northing needs to be a 7 digit number. For example: 1234567.'
-      }
-    }
-  ];
-};
+import { utmZoneValidator, eastingValidator, northingValidator, basicNumericValidator } from './validation-config-helpers';
 
 const sheepSpeciesPickListValidator = () => {
   return [
