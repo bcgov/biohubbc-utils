@@ -1,0 +1,34 @@
+﻿eventID,measurementID,measurementType,measurementUnit,measurementValue,organismID,occurrenceID
+Central Selkirks:4-23:0,Central Selkirks:4-23:0:study-area,Study Area,,Central Selkirks,,
+Central Selkirks:4-23:0,Central Selkirks:4-23:0:block-id/su-id,Block ID/SU ID,,4-23,,
+Central Selkirks:4-23:0,Central Selkirks:4-23:0:group-label,Group Label,,1,,
+Central Selkirks:4-23:0,Central Selkirks:4-23:0:sign-type,Sign Type,,,,
+Central Selkirks:4-23:0,Central Selkirks:4-23:0:sign-count,Sign Count,,4,,
+Central Selkirks:4-23:0,Central Selkirks:4-23:0:age-of-sign,Age of Sign,,Old,,
+Central Selkirks:4-23:0,Central Selkirks:4-23:0:veg-cover,Veg Cover,%,10,,
+Central Selkirks:4-23:0,Central Selkirks:4-23:0:snow-cover,Snow Cover,%,100,,
+Central Selkirks:4-23:0,Central Selkirks:4-23:0:activity,Activity,,Standing,,
+Central Selkirks:4-23:0,Central Selkirks:4-23:0:elevation-observation,Elevation (m) of Observation,,1200,,
+Central Selkirks:4-23:0,Central Selkirks:4-23:0:habitat,Habitat,,Alpine,,
+Central Selkirks:4-23:0,Central Selkirks:4-23:0:number-of-marked-animals-observed,Number of Marked Animals Observed,,1,,
+Central Selkirks:4-23:0,Central Selkirks:4-23:0:survey-or-telemetry-search,Survey or Telemetry Search,,Survey,,
+Central Selkirks:4-23:0,Central Selkirks:4-23:0:photos,Photos,,4-8,,
+Central Selkirks:4-23:0,3636:35463:35365:0:wildlife-health-id,Wildlife Health ID,,3636,3636:35463:35365:0,
+Central Selkirks:4-23:0,3636:35463:35365:0:animal-id,Animal ID,,35463,3636:35463:35365:0,
+Central Selkirks:4-23:0,3636:35463:35365:0:telemetry-device-id,Telemetry Device ID,,35365,3636:35463:35365:0,
+Central Selkirks:4-23:0,3636:35463:35365:0:collar/tag-frequency,Collar/Tag Frequency,MHz,114.34,3636:35463:35365:0,
+Central Selkirks:4-23:0,3636:35463:35365:0:right-ear-tag-id,Right Ear Tag ID,,04,3636:35463:35365:0,
+Central Selkirks:4-23:0,3636:35463:35365:0:right-ear-tag-colour,Right Ear Tag Colour,,Yellow,3636:35463:35365:0,
+Central Selkirks:4-23:0,3636:35463:35365:0:left-ear-tag-id,Left Ear Tag ID,,05,3636:35463:35365:0,
+Central Selkirks:4-23:0,3636:35463:35365:0:left-ear-tag-colour,Left Ear Tag Colour,,Red,3636:35463:35365:0,
+Central Selkirks:4-23:0,Central Selkirks:4-23:0:antler-configuration,Antler Configuration,,BC RISC Class I,,Central Selkirks:4-23:0:11
+Central Selkirks:4-23:0,Central Selkirks:4-23:0:antler-configuration,Antler Configuration,,BC RISC Class II,,Central Selkirks:4-23:0:12
+Central Selkirks:4-23:0,Central Selkirks:4-23:0:antler-configuration,Antler Configuration,,BC RISC Class III,,Central Selkirks:4-23:0:13
+Central Selkirks:4-23:0,Central Selkirks:4-23:0:Antler-configuration,Antler Configuration,,BC RISC Class I or II,,Central Selkirks:4-23:0:14
+Central Selkirks:4-23:0,Central Selkirks:4-23:0:Antler-configuration,Antler Configuration,,3 Points or Fewer,,Central Selkirks:4-23:0:15
+Central Selkirks:4-23:0,Central Selkirks:4-23:0:Antler-configuration,Antler Configuration,,3 or 4 Points,,Central Selkirks:4-23:0:16
+Central Selkirks:4-23:0,Central Selkirks:4-23:0:Antler-configuration,Antler Configuration,,4 points or fewer,,Central Selkirks:4-23:0:17
+Central Selkirks:4-23:0,Central Selkirks:4-23:0:Antler-configuration,Antler Configuration,,4 points or fewer,,Central Selkirks:4-23:0:18
+Central Selkirks:4-23:0,Central Selkirks:4-23:0:Antler-configuration,Antler Configuration,,5 points or more,,Central Selkirks:4-23:0:19
+Central Selkirks:4-23:0,Central Selkirks:4-23:0:Antler-configuration,Antler Configuration,,6 points or more,,Central Selkirks:4-23:0:20
+Central Selkirks:4-23:0,Central Selkirks:4-23:0:Antler-configuration,Antler Configuration,,10 Points or Tripalm,,Central Selkirks:4-23:0:21
