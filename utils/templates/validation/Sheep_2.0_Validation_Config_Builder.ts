@@ -1,5 +1,5 @@
 import * as fs from 'fs';
-import { utmZoneValidator, eastingValidator, northingValidator, basicNumericValidator } from './validation-config-helpers';
+import { utmZoneValidator, basicNumericValidator, eastingValidator, northingValidator } from './validation-config-helpers';
 
 const sheepSpeciesPickListValidator = () => {
   return [
