@@ -1,3 +1,4 @@
+import { transformSchema } from '../transform';
 import { createPathField, createValueField, getValuesByName } from '../xlsx/xlsx-transform-json-path-queries';
 import { TransformSchema } from '../xlsx/xlsx-transform-schema-parser';
 
@@ -1148,3 +1149,5 @@ export const goatTotalCountchema: TransformSchema = {
     }
   ]
 };
+
+transformSchema("Monashee_Mt_Goat_Total_Count_Recruit_Comp_Survey_2.0.xlsx", goatTotalCountchema)

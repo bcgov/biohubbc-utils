@@ -1,3 +1,4 @@
+import { transformSchema } from '../transform';
 import { createPathField, createValueField, getValuesByName } from '../xlsx/xlsx-transform-json-path-queries';
 import { TransformSchema } from '../xlsx/xlsx-transform-schema-parser';
 
@@ -2092,3 +2093,5 @@ export const mooseSRBSchema: TransformSchema = {
     }
   ]
 };
+
+transformSchema("", mooseSRBSchema);

@@ -1,3 +1,4 @@
+import { transformSchema } from '../transform';
 import { createPathField, createValueField, getValuesByName } from '../xlsx/xlsx-transform-json-path-queries';
 import { TransformSchema } from '../xlsx/xlsx-transform-schema-parser';
 
@@ -2226,3 +2227,5 @@ export const caribouTotalCountchema: TransformSchema = {
     }
   ]
 };
+
+transformSchema("Central Selkirks Caribou_Aerial_Population_Total_Count_Recuit_Comp_Survey_1.0.xlsx", caribouTotalCountchema)

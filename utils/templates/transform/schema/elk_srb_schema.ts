@@ -1,5 +1,6 @@
 import { TransformSchema } from '../xlsx/xlsx-transform-schema-parser';
 import { createPathField, createValueField, getValuesByName } from "../xlsx/xlsx-transform-json-path-queries";
+import { transformSchema } from '../transform';
 
 export const elkSRBSchema: TransformSchema = {
   templateMeta: [
@@ -1577,3 +1578,5 @@ export const elkSRBSchema: TransformSchema = {
   },
   ]
 }
+
+transformSchema("Elk_Aerial_StratifiedRandomBlock_Recruit_Comp_Survey_2.0.xlsx", elkSRBSchema)

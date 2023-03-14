@@ -1,3 +1,4 @@
+import { transformSchema } from '../transform';
 import { createPathField, createValueField, getValuesByName } from '../xlsx/xlsx-transform-json-path-queries';
 import { TransformSchema } from '../xlsx/xlsx-transform-schema-parser';
 
@@ -1492,3 +1493,5 @@ export const sheepTotalCountSchema: TransformSchema = {
     }
   ]
 };
+
+transformSchema("EastKootenay_Sheep_Aerial_Total_Count_2.0.xlsx", sheepTotalCountSchema);
