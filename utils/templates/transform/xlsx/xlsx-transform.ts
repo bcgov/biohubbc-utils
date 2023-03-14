@@ -73,24 +73,23 @@ export class XLSXTransform {
   start() {
     // Prepare the raw data, by adding keys and other dwcMeta to the raw row objects
     const preparedRowObjects = this.prepareRowObjects();
-    console.log(__dirname)
-    fs.writeFileSync(path.join(__dirname, 'output', '1.json'), JSON.stringify(preparedRowObjects, null, 2));
+    fs.writeFileSync(path.join(process.cwd(), 'transform', 'output', '1.json'), JSON.stringify(preparedRowObjects, null, 2));
 
     // Recurse through the data, and create a hierarchical structure for each logical record
     const hierarchicalRowObjects = this.buildRowObjectsHierarchy(preparedRowObjects);
-    fs.writeFileSync(path.join(__dirname, 'output', '2.json'), JSON.stringify(hierarchicalRowObjects, null, 2));
+    fs.writeFileSync(path.join(process.cwd(), 'transform', 'output', '2.json'), JSON.stringify(hierarchicalRowObjects, null, 2));
 
     // Iterate over the hierarchical row objects, mapping original values to their DWC equivalents
     const processedHierarchicalRowObjects = this.processHierarchicalRowObjects(hierarchicalRowObjects);
     fs.writeFileSync(
-      path.join(__dirname, 'output', '3.json'),
+      path.join(process.cwd(), 'transform', 'output', '3.json'),
       JSON.stringify(processedHierarchicalRowObjects, null, 2)
     );
 
     // Iterate over the Darwin Core records, group them by DWC sheet name, and remove duplicate records in each sheet
     const preparedRowObjectsForJSONToSheet = this.prepareRowObjectsForJSONToSheet(processedHierarchicalRowObjects);
     fs.writeFileSync(
-      path.join(__dirname, 'output', '4.json'),
+      path.join(process.cwd(), 'transform', 'output', '4.json'),
       JSON.stringify(preparedRowObjectsForJSONToSheet, null, 2)
     );
 
