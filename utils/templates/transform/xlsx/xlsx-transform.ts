@@ -1,7 +1,7 @@
 import jsonpatch, { Operation } from 'fast-json-patch';
 import * as fs from 'fs';
 import { JSONPath, JSONPathOptions } from 'jsonpath-plus';
-import path from 'path';
+import * as path from 'path';
 import xlsx from 'xlsx';
 import XLSXTransformSchemaParser, {
   ConditionSchema,
@@ -73,6 +73,7 @@ export class XLSXTransform {
   start() {
     // Prepare the raw data, by adding keys and other dwcMeta to the raw row objects
     const preparedRowObjects = this.prepareRowObjects();
+    console.log(__dirname)
     fs.writeFileSync(path.join(__dirname, 'output', '1.json'), JSON.stringify(preparedRowObjects, null, 2));
 
     // Recurse through the data, and create a hierarchical structure for each logical record

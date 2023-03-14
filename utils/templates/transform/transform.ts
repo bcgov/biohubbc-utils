@@ -1,12 +1,12 @@
 import Ajv from 'ajv';
-import * as fs from 'fs';
-import path from 'path';
 import xlsx from 'xlsx';
+import fs from 'fs';
+import path from 'path';
 // import { caribouTotalCountchema } from './schema/caribou_total_count_schema';
 //import { goatTotalCountchema } from './schema/goat_total_count_schema';
 import { sheepTotalCountchema } from './schema/sheep_total_count_schema';
-import { XLSXTransform } from './xlsx-transform';
-import { transformationConfigJSONSchema } from './xlsx-transform-schema';
+import { XLSXTransform } from './xlsx/xlsx-transform';
+import { transformationConfigJSONSchema } from './xlsx/xlsx-transform-schema';
 
 const TEMPLATE_NAME = 'EastKootenay_Sheep_Aerial_Total_Count_2.0.xlsx';
 const TEMPLATE_SCHEMA = sheepTotalCountchema;
