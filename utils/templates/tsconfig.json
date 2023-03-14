@@ -22,7 +22,6 @@
       "noFallthroughCasesInSwitch": true,
       "strict": true
     },
-    "include": ["src"],
     "ts-node": {
       "files": true
     }
