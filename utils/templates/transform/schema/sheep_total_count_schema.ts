@@ -2,7 +2,7 @@ import { createPathField, createValueField, getValuesByName } from '../xlsx/xlsx
 import { TransformSchema } from '../xlsx/xlsx-transform-schema-parser';
 
 
-export const sheepTotalCountchema: TransformSchema = {
+export const sheepTotalCountSchema: TransformSchema = {
   templateMeta: [
     {
       sheetName: 'Observations',
