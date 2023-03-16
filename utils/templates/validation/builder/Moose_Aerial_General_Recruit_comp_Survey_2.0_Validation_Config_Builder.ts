@@ -1152,11 +1152,16 @@ const mooseGeneralTemplateValidationSchema = {
 };
 
 fs.writeFile(
-  './schema/moose_general_validation_config_output.json',
+  './validation/schema/moose_general_validation_config_output.json',
   JSON.stringify(mooseGeneralTemplateValidationSchema),
   (err) => {
     // file written successfully
 
-    console.log('All done!');
+    if (err) {
+    console.log('Oops');
+    console.log(err)
+  } else {
+    console.log('All Done!');
+  }
   }
 );

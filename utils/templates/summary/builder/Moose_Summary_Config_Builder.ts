@@ -150,7 +150,12 @@ const mooseSummarySchema = {
   ]
 }
 
-fs.writeFile('./schema/moose_summary_results.json', JSON.stringify(mooseSummarySchema), (err) => {
+fs.writeFile('./summary/schema/moose_summary_results.json', JSON.stringify(mooseSummarySchema), (err) => {
   // file written successfully
-  console.log('IS IT REALLY ALL DONE?!');
+  if (err) {
+    console.log('Oops');
+    console.log(err)
+  } else {
+    console.log('All Done!');
+  }
 });

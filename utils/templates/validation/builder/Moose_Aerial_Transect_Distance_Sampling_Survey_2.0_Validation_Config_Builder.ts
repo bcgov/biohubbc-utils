@@ -1162,11 +1162,16 @@ const mooseTransectTemplateValidationSchema = {
 };
 
 fs.writeFile(
-  './schema/moose_transect_validation_config_output.json',
+  './validation/schema/moose_transect_validation_config_output.json',
   JSON.stringify(mooseTransectTemplateValidationSchema),
   (err) => {
     // file written successfully
 
-    console.log('All done!');
+    if (err) {
+    console.log('Oops');
+    console.log(err)
+  } else {
+    console.log('All Done!');
+  }
   }
 );

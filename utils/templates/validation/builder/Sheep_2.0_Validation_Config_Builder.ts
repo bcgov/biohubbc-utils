@@ -1450,8 +1450,13 @@ const sheepTemplateValidationSchema = {
   ]
 };
 
-fs.writeFile('./schema/sheep_validation_config_output.json', JSON.stringify(sheepTemplateValidationSchema), (err) => {
+fs.writeFile('./validation/schema/sheep_validation_config_output.json', JSON.stringify(sheepTemplateValidationSchema), (err) => {
   // file written successfully
 
-  console.log('All done!');
+  if (err) {
+    console.log('Oops');
+    console.log(err)
+  } else {
+    console.log('All Done!');
+  }
 });

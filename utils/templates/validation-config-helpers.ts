@@ -11,12 +11,17 @@ import * as fs from 'fs';
  */
 export const outputValidationSchema = (template: any, outputName: string) => {
   fs.writeFile(
-    `./schema/${outputName}.json`,
+    `./validation/schema/${outputName}.json`,
     JSON.stringify(template),
     (err) => {
       // file written successfully
   
-      console.log('All done!');
+      if (err) {
+    console.log('Oops');
+    console.log(err)
+  } else {
+    console.log('All Done!');
+  }
     }
   );
 };

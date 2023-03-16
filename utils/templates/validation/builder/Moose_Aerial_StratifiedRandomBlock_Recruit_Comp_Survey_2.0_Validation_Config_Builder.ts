@@ -1257,11 +1257,16 @@ const mooseSRBTemplateValidationSchema = {
   ]
 };
 
-fs.writeFile('./schema/moose_SRB_validation_config_output.json', JSON.stringify(mooseSRBTemplateValidationSchema), (err) => {
+fs.writeFile('./validation/schema/moose_SRB_validation_config_output.json', JSON.stringify(mooseSRBTemplateValidationSchema), (err) => {
   if (err) {
     console.error(err);
   }
   // file written successfully
 
-  console.log('All done!');
+  if (err) {
+    console.log('Oops');
+    console.log(err)
+  } else {
+    console.log('All Done!');
+  }
 });

@@ -1447,8 +1447,13 @@ const goatTemplateValidationSchema = {
   ]
 };
 
-fs.writeFile('./schema/goat_validation_config_output.json', JSON.stringify(goatTemplateValidationSchema), (err) => {
+fs.writeFile('./validation/schema/goat_validation_config_output.json', JSON.stringify(goatTemplateValidationSchema), (err) => {
   // file written successfully
 
-  console.log('All done!');
+  if (err) {
+    console.log('Oops');
+    console.log(err)
+  } else {
+    console.log('All Done!');
+  }
 });
