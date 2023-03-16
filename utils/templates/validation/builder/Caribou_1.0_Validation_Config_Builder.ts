@@ -1533,7 +1533,7 @@ const caribouTemplateValidationSchema = {
 };
 
 fs.writeFile(
-  './output/caribou_validation_config_output.json',
+  './schema/caribou_validation_config_output.json',
   JSON.stringify(caribouTemplateValidationSchema),
   (err) => {
     // file written successfully

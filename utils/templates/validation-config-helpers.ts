@@ -11,7 +11,7 @@ import * as fs from 'fs';
  */
 export const outputValidationSchema = (template: any, outputName: string) => {
   fs.writeFile(
-    `./output/${outputName}.json`,
+    `./schema/${outputName}.json`,
     JSON.stringify(template),
     (err) => {
       // file written successfully

@@ -1257,7 +1257,7 @@ const mooseSRBTemplateValidationSchema = {
   ]
 };
 
-fs.writeFile('./output/moose_SRB_validation_config_output.json', JSON.stringify(mooseSRBTemplateValidationSchema), (err) => {
+fs.writeFile('./schema/moose_SRB_validation_config_output.json', JSON.stringify(mooseSRBTemplateValidationSchema), (err) => {
   if (err) {
     console.error(err);
   }

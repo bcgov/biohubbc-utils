@@ -1,5 +1,5 @@
 import * as fs from 'fs';
-import { utmZoneValidator, basicNumericValidator, eastingValidator, northingValidator } from './validation-config-helpers';
+import { utmZoneValidator, basicNumericValidator, eastingValidator, northingValidator } from '../../validation-config-helpers';
 
 const sheepSpeciesPickListValidator = () => {
   return [
@@ -1450,7 +1450,7 @@ const sheepTemplateValidationSchema = {
   ]
 };
 
-fs.writeFile('./output/sheep_validation_config_output.json', JSON.stringify(sheepTemplateValidationSchema), (err) => {
+fs.writeFile('./schema/sheep_validation_config_output.json', JSON.stringify(sheepTemplateValidationSchema), (err) => {
   // file written successfully
 
   console.log('All done!');
