@@ -15,7 +15,7 @@ import {
   surveyOrTelemetryPickListValidator,
   targetPickListValidator,
   utmZoneValidator
-} from '../../validation-config-helpers';
+} from '../../helper/validation-config-helpers';
 
 const elkSpeciesValidator = () => {
   return [
