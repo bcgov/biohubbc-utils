@@ -15,4 +15,4 @@ yarn-debug.log*
 yarn-error.log*
 
 # temp output files
-**/utils/templates/observations/transform/output/*
+**/utils/templates/observations/transform/output/
