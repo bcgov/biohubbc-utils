@@ -1,4 +1,3 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 node_modules
 
@@ -9,10 +8,11 @@ node_modules
 
 
 # misc
-.DS_Store
+**/.DS_Store
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-
+# temp output files
+**/utils/templates/observations/transform/output/*
