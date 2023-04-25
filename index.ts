@@ -23,7 +23,7 @@ const MOOSE_SUMMARY = readFileToString(summaryDirectory, "Moose_Summary_Results_
 const SHEEP_SUMMARY = readFileToString(summaryDirectory, "Sheep_Summary_Results_UPSERT.sql")
 
 
-export {
+module.exports = {
   ELK_GENERAL,
   ELK_SRB,
   GOAT_TOTAL_COUNT,
