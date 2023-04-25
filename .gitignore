@@ -16,3 +16,5 @@ yarn-error.log*
 
 # temp output files
 **/utils/templates/observations/transform/output/*
+
+**/dist
