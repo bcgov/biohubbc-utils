@@ -10,7 +10,6 @@ const readFileToString = async (path: string, fileName: string): Promise<Buffer>
 }
 
 /* OBSERVATIONS */
-
 const ELK_GENERAL = readFileToString(observationDirectory, "elk_general_upsert.sql");
 const ELK_SRB = readFileToString(observationDirectory, "elk_srb_upsert.sql");
 const GOAT_TOTAL_COUNT = readFileToString(observationDirectory, "Goat_Aerial_Population_Total_Count_Recuit_Comp_Survey_2.0_Upsert_SQL.sql")
