@@ -4,9 +4,9 @@ const summaryDirectory = "./utils/templates/summary/sql"
 const observationDirectory = "./utils/templates/observations/sql"
 
 
-const readFileToString = async (path: string, fileName: string): Promise<Buffer> => {
+const readFileToString = async (path: string, fileName: string): Promise<string> => {
   const fullPath = `${path}/${fileName}.sql`;
-  return await fs.readFileSync(fullPath);
+  return await fs.readFileSync(fullPath).toString();
 }
 
 /* OBSERVATIONS */
@@ -23,7 +23,7 @@ const MOOSE_SUMMARY = readFileToString(summaryDirectory, "Moose_Summary_Results_
 const SHEEP_SUMMARY = readFileToString(summaryDirectory, "Sheep_Summary_Results_UPSERT.sql")
 
 
-module.exports = {
+export {
   ELK_GENERAL,
   ELK_SRB,
   GOAT_TOTAL_COUNT,
