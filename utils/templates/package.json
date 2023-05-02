@@ -16,7 +16,7 @@
     "build-validation-moose-srb": "ts-node ./validation/builder/Moose_Aerial_StratifiedRandomBlock_Recruit_Comp_Survey_2.0_Validation_Config_Builder.ts",
     "build-validation-moose-transect": "ts-node ./validation/builder/Moose_Aerial_Transect_Distance_Sampling_Survey_2.0_Validation_Config_Builder.ts",
     "build-validation-sheep": "ts-node ./validation/builder/Sheep_2.0_Validation_Config_Builder.ts",
-    "build-validation-goat": "ts-node ./validation/builder/Goat_2.0_Validation_Config_Builder.ts",
+    "build-validation-goat": "ts-node ./observations/validation/builder/Goat_2.0_Validation_Config_Builder.ts",
     "build-validation-caribou": "ts-node ./validation/builder/Caribou_1.0_Validation_Config_Builder.ts",
     "build-validation-elk-general": "ts-node ./validation/builder/Elk_Aerial_General_Recruit_Comp_Survey_2.0_Validation_Config_Builder.ts",
     "build-validation-elk-srb": "ts-node ./validation/builder/Elk_Aerial_SRB_Recruit_Comp_Survey_2.0_Validation_Config_Builder.ts",

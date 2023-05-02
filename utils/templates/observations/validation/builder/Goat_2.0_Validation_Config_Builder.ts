@@ -1,34 +1,11 @@
 import * as fs from 'fs';
+import { eastingValidator, northingValidator, utmZoneValidator } from '../../../helper/validation-config-helpers';
 const basicNumericValidator = () => {
   return [
     {
       column_numeric_validator: {
         name: '',
         description: ''
-      }
-    }
-  ];
-};
-
-const eastingValidator = () => {
-  return [
-    {
-      column_format_validator: {
-        reg_exp: '^[0-9]{6,6}$',
-        reg_exp_flags: 'g',
-        expected_format: 'Easting needs to be a 6 digit number. For example: 123456.'
-      }
-    }
-  ];
-};
-
-const northingValidator = () => {
-  return [
-    {
-      column_format_validator: {
-        reg_exp: '^[0-9]{7,7}$',
-        reg_exp_flags: 'g',
-        expected_format: 'Northing needs to be a 7 digit number. For example: 1234567.'
       }
     }
   ];
@@ -1109,17 +1086,6 @@ const frequencyPickListValidator = () => {
   ];
 };
 
-const utmZoneValidator = () => {
-  return [
-    {
-      column_range_validator: {
-        min_value: 7,
-        max_value: 11
-      }
-    }
-  ];
-};
-
 const goatTemplateValidationSchema = {
   name: '',
   description: '',
@@ -1133,7 +1099,44 @@ const goatTemplateValidationSchema = {
         },
         {
           file_required_columns_validator: {
-            required_columns: []
+            required_columns: [
+              'Study Area',
+              'Population Unit',
+              'Block ID/SU ID',
+              'Population Unit/Block Area (km2)',
+              'Date',
+              'Start Time 1 (24hrs)',
+              'End Time 1 (24hrs)',
+              'Start Time 2 (24hrs)',
+              'End Time 2 (24hrs)',
+              'Start Time 3 (24hrs)',
+              'End Time 3 (24hrs)',
+              'Start Time 4 (24hrs)',
+              'End Time 4 (24hrs)',
+              'Total Block Time',
+              'Total Time (hours)',
+              'Total Time (mins)',
+              'Time (mins)/block area (km2)',
+              'Aircraft Company',
+              'Aircraft Type',
+              'Pilot',
+              'Navigator',
+              'Rear Left Observer',
+              'Rear Right Observer',
+              'Air Temperature (C)',
+              'Visibility',
+              'Cloud Cover (%)',
+              'Wind Speed',
+              'Precipitation',
+              'Light',
+              'Snow Cover',
+              'Snow Conditions',
+              'Snow Depth',
+              'Days Since Snowfall',
+              'Weather Description',
+              'Location Description',
+              'Effort & Site Comments'
+            ]
           }
         }
       ],
@@ -1159,7 +1162,46 @@ const goatTemplateValidationSchema = {
         },
         {
           file_required_columns_validator: {
-            required_columns: ['Study Area', 'Date', 'Species']
+            required_columns: [
+              'Study Area',
+              'Population Unit',
+              'Block ID/SU ID',
+              'UTM Zone ',
+              'Easting',
+              'Northing',
+              'Datum',
+              'Lat (DD)',
+              'Long (DD)',
+              'Group Label',
+              'Date',
+              'Time',
+              'Species',
+              'Adults Unclassified Sex',
+              'Kid',
+              'Nanny',
+              'Billy',
+              'Unclassified Age/Sex',
+              'Total Count',
+              'Sign Type',
+              'Sign Count',
+              'Age of Sign',
+              'Veg Cover (%)',
+              'Snow Cover (%)',
+              'Activity',
+              'Elevation (m) of Observation',
+              'Habitat',
+              'Wind Blown',
+              'Terrain Obstruction',
+              'Number of Marked Animals Observed',
+              'Survey or Telemetry Search',
+              'Photos',
+              'Observation Comments'
+            ]
+          }
+        },
+        {
+          file_column_unique_validator: {
+            required_columns: ['Study Area', 'Block ID/SU ID']
           }
         }
       ],
@@ -1295,7 +1337,26 @@ const goatTemplateValidationSchema = {
         },
         {
           file_required_columns_validator: {
-            required_columns: []
+            required_columns: [
+              'Group Label',
+              'Date',
+              'Targeted or Non-Targeted',
+              'Wildlife Health ID',
+              'Animal ID',
+              'Telemetry Device ID',
+              'Collar/Tag Frequency',
+              'Frequency Unit',
+              'Right Ear Tag ID',
+              'Right Ear Tag Colour',
+              'Left Ear Tag ID',
+              'Left Ear Tag Colour',
+              'Marked Animals Comments'
+            ]
+          }
+        },
+        {
+          file_column_unique_validator: {
+            required_columns: ['Wildlife Health ID', 'Animal ID', 'Telemetry Device ID']
           }
         }
       ],
@@ -1321,7 +1382,39 @@ const goatTemplateValidationSchema = {
         },
         {
           file_required_columns_validator: {
-            required_columns: []
+            required_columns: [
+              'Study Area',
+              'Population Unit',
+              'Block ID/SU ID',
+              'UTM Zone',
+              'Easting',
+              'Northing',
+              'Datum',
+              'Lat (DD)',
+              'Long (DD)',
+              'Date',
+              'Species',
+              'Adult Males',
+              'Adult Females',
+              'Adults - Unclassified Sex',
+              'Juvenile Males',
+              'Juvenile Females',
+              'Juveniles - Unclassified Sex',
+              'Unknown Age/Sex',
+              'Total Count',
+              'Species',
+              'Occurrence',
+              'Status',
+              'Activity',
+              'Activity Count',
+              'Feature Type',
+              'Feature Type',
+              'Count',
+              'Sign Type	',
+              'Sign Count',
+              'Photos',
+              'Incidental Observation Comments'
+            ]
           }
         }
       ],
@@ -1448,7 +1541,7 @@ const goatTemplateValidationSchema = {
 };
 
 fs.writeFile(
-  './validation/schema/goat_validation_config_output.json',
+  './observations/validation/schema/goat_validation_config_output.json',
   JSON.stringify(goatTemplateValidationSchema),
   (err) => {
     // file written successfully

@@ -2,28 +2,24 @@ import * as fs from 'fs';
 
 /**
  * Stringifies the template object for insertion into the database.
- * 
+ *
  * Note: outputName should follow the pattern `template_validation_config_output`
  * Example: `elk_general_validation_config_output`
- * 
+ *
  * @param {any} template validation schema for a given template
  * @param {string} outputName output name for the file
  */
 export const outputValidationSchema = (template: any, outputName: string) => {
-  fs.writeFile(
-    `./validation/schema/${outputName}.json`,
-    JSON.stringify(template),
-    (err) => {
-      // file written successfully
-  
-      if (err) {
-    console.log('Oops');
-    console.log(err)
-  } else {
-    console.log('All Done!');
-  }
+  fs.writeFile(`./validation/schema/${outputName}.json`, JSON.stringify(template), (err) => {
+    // file written successfully
+
+    if (err) {
+      console.log('Oops');
+      console.log(err);
+    } else {
+      console.log('All Done!');
     }
-  );
+  });
 };
 
 export const basicNumericValidator = () => {
@@ -167,38 +163,64 @@ export const frequencyPickListValidator = () => {
     }
   ];
 };
-
 export const utmZoneValidator = () => {
   return [
     {
-      column_range_validator: {
-        min_value: 7,
-        max_value: 11
+      column_format_validator: {
+        reg_exp: '[7-12]/',
+        reg_exp_flags: 'g',
+        expected_format: 'UTM Zone must be a number between 7 and 12.'
       }
     }
   ];
 };
 
-
+/**
+ * Allows numbers in the range 166640 and 833360 with or without decimals
+ * The regular expression breaks down the desired range of numbers into several ranges that are matched using different patterns. Here's a breakdown of each pattern:
+ *
+ * 1666[4-9]\d*(?:\.\d+)? matches any number between 166640 and 166699.999..., with or without a decimal point and optional digits after the decimal point.
+ * 166[7-9]\d{3}(?:\.\d+)? matches any number between 166700 and 166999, with or without a decimal point and optional digits after the decimal point.
+ * 16[7-9]\d{4}(?:\.\d+)? matches any number between 167000 and 169999, with or without a decimal point and optional digits after the decimal point.
+ * 1[7-9]\d{5}(?:\.\d+)? matches any number between 170000 and 999999, with or without a decimal point and optional digits after the decimal point.
+ * [2-7]\d{6}(?:\.\d+)? matches any number between 1000000 and 7999999, with or without a decimal point and optional digits after the decimal point.
+ * 8[0-2]\d{4}(?:\.\d+)? matches any number between 800000 and 829999, with or without a decimal point and optional digits after the decimal point.
+ * 8333[0-5]\d*(?:\.\d+)? matches any number between 833300 and 833359.999..., with or without a decimal point and optional digits after the decimal point.
+ * 83336[0-5]\d*(?:\.\d+)? matches any number between 833360 and 833365.999..., with or without a decimal point and optional digits after the decimal point.
+ * 833360(?:\.\d+)? matches the number 833360, with or without a decimal point and optional digits after the decimal point
+ *
+ * @return {*}
+ */
 export const eastingValidator = () => {
   return [
     {
       column_format_validator: {
-        reg_exp: '^[0-9]{6,6}$',
+        reg_exp:
+          '/^(1666[4-9]d*(?:.d+)?|166[7-9]d{3}(?:.d+)?|16[7-9]d{4}(?:.d+)?|1[7-9]d{5}(?:.d+)?|[2-7]d{6}(?:.d+)?|8[0-2]d{4}(?:.d+)?|8333[0-5]d*(?:.d+)?|83336[0-5]d*(?:.d+)?|833360(?:.d+)?)$/',
         reg_exp_flags: 'g',
-        expected_format: 'Easting needs to be a 6 digit number. For example: 123456.'
+        expected_format: 'Easting needs to be a 6 digit number.'
       }
     }
   ];
 };
 
+/**
+ * Allows number in the range 1110400-9999999 with decimals allowed:
+ *
+ * 1110400 matches the lower limit of the range.
+ * [1-9]\d{6,} matches any number greater than 1110400, with at least 7 digits. 
+ * The [1-9] ensures that the first digit is not zero, and the \d{6,} matches any sequence of at least six digits.
+ *
+ *
+ * @return {*}
+ */
 export const northingValidator = () => {
   return [
     {
       column_format_validator: {
-        reg_exp: '^[0-9]{7,7}$',
+        reg_exp: '/^(1110400|[1-9]d{6,})(?:.d+)?$/',
         reg_exp_flags: 'g',
-        expected_format: 'Northing needs to be a 7 digit number. For example: 1234567.'
+        expected_format: 'Northing needs to be a 7 digit number.'
       }
     }
   ];
