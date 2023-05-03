@@ -10,7 +10,7 @@ import * as fs from 'fs';
  * @param {string} outputName output name for the file
  */
 export const outputValidationSchema = (template: any, outputName: string) => {
-  fs.writeFile(`./validation/schema/${outputName}.json`, JSON.stringify(template), (err) => {
+  fs.writeFile(`./observations/validation/schema/${outputName}.json`, JSON.stringify(template), (err) => {
     // file written successfully
 
     if (err) {
@@ -208,7 +208,7 @@ export const eastingValidator = () => {
  * Allows number in the range 1110400-9999999 with decimals allowed:
  *
  * 1110400 matches the lower limit of the range.
- * [1-9]\d{6,} matches any number greater than 1110400, with at least 7 digits. 
+ * [1-9]\d{6,} matches any number greater than 1110400, with at least 7 digits.
  * The [1-9] ensures that the first digit is not zero, and the \d{6,} matches any sequence of at least six digits.
  *
  *
