@@ -1,4 +1,4 @@
-import * as fs from 'fs';
+import { outputValidationSchema } from '../../../helper/validation-config-helpers';
 
 // helper functions for constructing validation schema
 const basicNumericValidator = () => {
@@ -46,6 +46,7 @@ const utmZoneValidator = () => {
     }
   ];
 };
+
 const mooseSpeciesPickListValidator = () => {
   return [
     {
@@ -157,6 +158,7 @@ const stratumPickListValidator = () => {
     }
   ];
 };
+
 const aircraftPickListValidator = () => {
   return [
     {
@@ -241,6 +243,7 @@ const aircraftPickListValidator = () => {
     }
   ];
 };
+
 const datumPickListValidator = () => {
   return [
     {
@@ -269,6 +272,7 @@ const datumPickListValidator = () => {
     }
   ];
 };
+
 const signTypePickListValidator = () => {
   return [
     {
@@ -410,6 +414,7 @@ const ageOfSignPickListValidator = () => {
     }
   ];
 };
+
 const frequencyPickListValidator = () => {
   return [
     {
@@ -463,6 +468,7 @@ const surveyOrTelemetryPickListValidator = () => {
     }
   ];
 };
+
 const observationActivityPickListValidator = () => {
   return [
     {
@@ -700,6 +706,7 @@ const activityNonTargettedPickListValidator = () => {
     }
   ];
 };
+
 const targetPickListValidator = () => {
   return [
     {
@@ -724,6 +731,7 @@ const targetPickListValidator = () => {
     }
   ];
 };
+
 const featureTypePickListValidator = () => {
   return [
     {
@@ -1257,16 +1265,4 @@ const mooseSRBTemplateValidationSchema = {
   ]
 };
 
-fs.writeFile('./validation/schema/moose_SRB_validation_config_output.json', JSON.stringify(mooseSRBTemplateValidationSchema), (err) => {
-  if (err) {
-    console.error(err);
-  }
-  // file written successfully
-
-  if (err) {
-    console.log('Oops');
-    console.log(err)
-  } else {
-    console.log('All Done!');
-  }
-});
+outputValidationSchema(mooseSRBTemplateValidationSchema, 'moose_srb_validation_config_output');
