@@ -1138,6 +1138,11 @@ const goatTemplateValidationSchema = {
               'Effort & Site Comments'
             ]
           }
+        },
+        {
+          file_column_unique_validator: {
+            column_names: ['Study Area', 'Population Unit', 'Block ID/SU ID', 'Date']
+          }
         }
       ],
       columns: [
@@ -1166,7 +1171,7 @@ const goatTemplateValidationSchema = {
               'Study Area',
               'Population Unit',
               'Block ID/SU ID',
-              'UTM Zone ',
+              'UTM Zone',
               'Easting',
               'Northing',
               'Datum',
@@ -1197,11 +1202,6 @@ const goatTemplateValidationSchema = {
               'Photos',
               'Observation Comments'
             ]
-          }
-        },
-        {
-          file_column_unique_validator: {
-            required_columns: ['Study Area', 'Block ID/SU ID']
           }
         }
       ],
@@ -1353,11 +1353,6 @@ const goatTemplateValidationSchema = {
               'Marked Animals Comments'
             ]
           }
-        },
-        {
-          file_column_unique_validator: {
-            required_columns: ['Wildlife Health ID', 'Animal ID', 'Telemetry Device ID']
-          }
         }
       ],
       columns: [
@@ -1402,15 +1397,12 @@ const goatTemplateValidationSchema = {
               'Juveniles - Unclassified Sex',
               'Unknown Age/Sex',
               'Total Count',
-              'Species',
-              'Occurrence',
-              'Status',
+              'Species Occurrence Status',
               'Activity',
               'Activity Count',
               'Feature Type',
-              'Feature Type',
-              'Count',
-              'Sign Type	',
+              'Feature Type Count',
+              'Sign Type',
               'Sign Count',
               'Photos',
               'Incidental Observation Comments'
