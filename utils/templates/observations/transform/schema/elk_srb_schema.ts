@@ -29,7 +29,7 @@ export const elkSRBSchema: TransformSchema = {
     },
     {
       sheetName: 'Observations',
-      primaryKey: ['Study Area', 'Block ID/SU ID', 'Stratum'],
+      primaryKey: ['Study Area', 'Block ID/SU ID', 'Stratum', '_row'],
       parentKey: ['Study Area', 'Block ID/SU ID', 'Stratum'],
       type: '',
       foreignKeys: [
@@ -74,6 +74,27 @@ export const elkSRBSchema: TransformSchema = {
     }
   ],
   map: [
+    {
+      sheetName: 'record',
+      fields: [
+        {
+          columnName: 'eventId',
+          columnValue: [
+            {
+              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+            }
+          ]
+        },
+        {
+          columnName: 'basisOfRecord ',
+          columnValue: [
+            {
+              static: 'HumanObservation'
+            }
+          ]
+        }
+      ]
+    },
     {
       sheetName: 'event',
       fields: [
