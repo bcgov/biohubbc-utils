@@ -52,8 +52,57 @@ const elkGeneralTemplateValidationSchema = {
       validations: [
         {
           file_duplicate_columns_validator: {}
+        },
+        {
+          file_required_columns_validator: {
+            required_columns: [
+              'Study Area',
+              'Population Unit',
+              'Block ID/SU ID',
+              'Population Unit/Block Area (km2)',
+              'Date',
+              'Start Time 1 (24hrs)',
+              'End Time 1 (24hrs)',
+              'Start Time 2 (24hrs)',
+              'End Time 2 (24hrs)',
+              'Start Time 3 (24hrs)',
+              'End Time 3 (24hrs)',
+              'Start Time 4 (24hrs)',
+              'End Time 4 (24hrs)',
+              'Total Block Time',
+              'Total Time (hours)',
+              'Total Time (mins)',
+              'Time (mins)/block area (km2)',
+              'Aircraft Company',
+              'Aircraft Type',
+              'Pilot',
+              'Navigator',
+              'Rear Left Observer',
+              'Rear Right Observer',
+              'Air Temperature (C)',
+              'Visibility',
+              'Cloud Cover (%)',
+              'Wind Speed',
+              'Precipitation',
+              'Light',
+              'Snow Cover',
+              'Snow Conditions',
+              'Snow Depth',
+              'Days Since Snowfall',
+              'Weather Description',
+              'Location Description',
+              'Habitat Description',
+              'Effort & Site Comments'
+            ]
+          }
+        },
+        {
+          file_column_unique_validator: {
+            column_names: ['Study Area', 'Population Unit', 'Block ID/SU ID', 'Date', 'Start Time 1 (24hrs)']
+          }
         }
       ],
+
       columns: [
         {
           name: 'Aircraft Type',
@@ -71,7 +120,56 @@ const elkGeneralTemplateValidationSchema = {
         },
         {
           file_required_columns_validator: {
-            required_columns: ['Study Area', 'Date', 'Species']
+            required_columns: [
+              'Study Area',
+              'Population Unit',
+              'Block ID/SU ID',
+              'UTM Zone',
+              'Easting',
+              'Northing',
+              'Datum',
+              'Lat (DD)',
+              'Long (DD)',
+              'Species',
+              'Group Label',
+              'Date',
+              'Time',
+              'BC RISC Yearling Bulls',
+              'BC RISC Class I Bulls',
+              'BC RISC Class II Bulls',
+              'BC RISC Class III Bulls',
+              'BC RISC Class IV Bulls',
+              'Spike Bulls',
+              'Raghorn Bulls',
+              '<=3 Point Bulls',
+              '3 - 4 Point Bulls',
+              '3 - 5 Point Bulls',
+              '<4 Point Bulls',
+              '>=4 Point Bulls',
+              '5 Point Bulls',
+              '>=5 Point Bulls',
+              '>= 6 Point Bulls',
+              'Adult Bulls - Unclassified',
+              'Unclassified Bulls',
+              'Cows',
+              'Calves',
+              'Adult Unclassified Sex',
+              'Yearling - Unclassified Sex',
+              'Unclassified Age/Sex',
+              'Total Count',
+              'Sign Type',
+              'Sign Count',
+              'Age of Sign',
+              'Topography',
+              'Habitat',
+              'Veg Cover (%)',
+              'Snow Cover (%)',
+              'Activity',
+              'Number of Marked Animals Observed',
+              'Survey or Telemetry Search',
+              'Photos',
+              'Observation Comments'
+            ]
           }
         }
       ],
@@ -269,6 +367,25 @@ const elkGeneralTemplateValidationSchema = {
       validations: [
         {
           file_duplicate_columns_validator: {}
+        },
+        {
+          file_required_columns_validator: {
+            required_columns: [
+              'Group Label',
+              'Date',
+              'Targeted or Non-Targeted',
+              'Wildlife Health ID',
+              'Animal ID',
+              'Telemetry Device ID',
+              'Collar/Tag Frequency',
+              'Frequency Unit',
+              'Right Ear Tag ID',
+              'Right Ear Tag Colour',
+              'Left Ear Tag ID',
+              'Left Ear Tag Colour',
+              'Marked Animals Comments'
+            ]
+          }
         }
       ],
       columns: [
@@ -290,6 +407,40 @@ const elkGeneralTemplateValidationSchema = {
       validations: [
         {
           file_duplicate_columns_validator: {}
+        },
+        {
+          file_required_columns_validator: {
+            required_columns: [
+              'Study Area',
+              'Block ID/SU ID',
+              'Date',
+              'Time',
+              'UTM Zone',
+              'Easting',
+              'Northing',
+              'Datum',
+              'Lat (DD)',
+              'Long (DD)',
+              'Species',
+              'Adult Males',
+              'Adult Females',
+              'Adults - Unclassified Sex',
+              'Juvenile Males',
+              'Juvenile Females',
+              'Juveniles - Unclassified Sex',
+              'Unknown Age/Sex',
+              'Total Count',
+              'Species Occurrence Status',
+              'Activity',
+              'Activity Count',
+              'Feature Type',
+              'Feature Type Count',
+              'Sign Type',
+              'Sign Count',
+              'Photos',
+              'Incidental Observation Comments'
+            ]
+          }
         }
       ],
       columns: [
