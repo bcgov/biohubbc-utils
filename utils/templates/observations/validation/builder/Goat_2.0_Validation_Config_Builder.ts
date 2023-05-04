@@ -1141,7 +1141,7 @@ const goatTemplateValidationSchema = {
         },
         {
           file_column_unique_validator: {
-            column_names: ['Study Area', 'Population Unit', 'Block ID/SU ID', 'Date']
+            column_names: ['Study Area', 'Population Unit', 'Block ID/SU ID', 'Date', 'Start Time 1 (24hrs)']
           }
         }
       ],

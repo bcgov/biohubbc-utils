@@ -163,6 +163,12 @@ export const frequencyPickListValidator = () => {
     }
   ];
 };
+
+/**
+ * Allows UTM Zones 7-11
+ *
+ * @return {*}
+ */
 export const utmZoneValidator = () => {
   return [
     {
@@ -176,7 +182,7 @@ export const utmZoneValidator = () => {
 };
 
 /**
- * Allows 6 digit numbers with or without decimals
+ * Allows 6 digit number, with or without decimal points:
  *
  * @return {*}
  */
@@ -193,7 +199,7 @@ export const eastingValidator = () => {
 };
 
 /**
- * Allows number in the range 5,400,000-6,500,000 with decimals allowed:
+ * Allows 7 digit number, with or without decimal points:
  *
  * @return {*}
  */
