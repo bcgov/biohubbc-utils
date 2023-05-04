@@ -10,7 +10,7 @@ import * as fs from 'fs';
  * @param {string} outputName output name for the file
  */
 export const outputValidationSchema = (template: any, outputName: string) => {
-  fs.writeFile(`./validation/schema/${outputName}.json`, JSON.stringify(template), (err) => {
+  fs.writeFile(`./observations/validation/schema/${outputName}.json`, JSON.stringify(template), (err) => {
     // file written successfully
 
     if (err) {
