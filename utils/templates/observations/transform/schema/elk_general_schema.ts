@@ -1332,7 +1332,7 @@ export const elkGeneralSchema: TransformSchema = {
           },
           createValueField('measurementType', 'Antler Configuration'),
           createValueField('measurementUnit', ''),
-          createValueField('measurementValue', 'unknown')
+          createValueField('measurementValue', 'unclassified')
         ]
       }
     ]
@@ -1406,7 +1406,7 @@ export const elkGeneralSchema: TransformSchema = {
           },
           createValueField('measurementType', 'Antler Configuration'),
           createValueField('measurementUnit', ''),
-          createValueField('measurementValue', 'unknown')
+          createValueField('measurementValue', 'unclassified')
         ]
       }
     ]

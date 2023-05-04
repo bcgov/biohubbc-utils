@@ -48,6 +48,11 @@
               "Effort & Site Comments"
             ]
           }
+        },
+        {
+          "file_column_unique_validator": {
+            "column_names": ["Study Area", "Population Unit", "Block ID/SU ID", "Date"]
+          }
         }
       ],
       "columns": [
@@ -103,7 +108,7 @@
               "Study Area",
               "Population Unit",
               "Block ID/SU ID",
-              "UTM Zone ",
+              "UTM Zone",
               "Easting",
               "Northing",
               "Datum",
@@ -135,8 +140,7 @@
               "Observation Comments"
             ]
           }
-        },
-        { "file_column_unique_validator": { "required_columns": ["Study Area", "Block ID/SU ID"] } }
+        }
       ],
       "columns": [
         {
@@ -145,9 +149,9 @@
           "validations": [
             {
               "column_format_validator": {
-                "reg_exp": "[7-12]/",
+                "reg_exp": "^([7-9]|1[0-1])$",
                 "reg_exp_flags": "g",
-                "expected_format": "UTM Zone must be a number between 7 and 12."
+                "expected_format": "UTM Zone must be a number between 7 and 11."
               }
             }
           ]
@@ -158,7 +162,7 @@
           "validations": [
             {
               "column_format_validator": {
-                "reg_exp": "/^(1666[4-9]d*(?:.d+)?|166[7-9]d{3}(?:.d+)?|16[7-9]d{4}(?:.d+)?|1[7-9]d{5}(?:.d+)?|[2-7]d{6}(?:.d+)?|8[0-2]d{4}(?:.d+)?|8333[0-5]d*(?:.d+)?|83336[0-5]d*(?:.d+)?|833360(?:.d+)?)$/",
+                "reg_exp": "^[1-9][0-9][0-9][0-9][0-9][0-9](?:\\.\\d+)?$",
                 "reg_exp_flags": "g",
                 "expected_format": "Easting needs to be a 6 digit number."
               }
@@ -171,7 +175,7 @@
           "validations": [
             {
               "column_format_validator": {
-                "reg_exp": "/^(1110400|[1-9]d{6,})(?:.d+)?$/",
+                "reg_exp": "^[1-9][0-9][0-9][0-9][0-9][0-9][0-9](?:\\.\\d+)?$",
                 "reg_exp_flags": "g",
                 "expected_format": "Northing needs to be a 7 digit number."
               }
@@ -498,11 +502,6 @@
               "Marked Animals Comments"
             ]
           }
-        },
-        {
-          "file_column_unique_validator": {
-            "required_columns": ["Wildlife Health ID", "Animal ID", "Telemetry Device ID"]
-          }
         }
       ],
       "columns": [
@@ -568,15 +567,12 @@
               "Juveniles - Unclassified Sex",
               "Unknown Age/Sex",
               "Total Count",
-              "Species",
-              "Occurrence",
-              "Status",
+              "Species Occurrence Status",
               "Activity",
               "Activity Count",
               "Feature Type",
-              "Feature Type",
-              "Count",
-              "Sign Type\t",
+              "Feature Type Count",
+              "Sign Type",
               "Sign Count",
               "Photos",
               "Incidental Observation Comments"
@@ -591,9 +587,9 @@
           "validations": [
             {
               "column_format_validator": {
-                "reg_exp": "[7-12]/",
+                "reg_exp": "^([7-9]|1[0-1])$",
                 "reg_exp_flags": "g",
-                "expected_format": "UTM Zone must be a number between 7 and 12."
+                "expected_format": "UTM Zone must be a number between 7 and 11."
               }
             }
           ]
@@ -604,7 +600,7 @@
           "validations": [
             {
               "column_format_validator": {
-                "reg_exp": "/^(1666[4-9]d*(?:.d+)?|166[7-9]d{3}(?:.d+)?|16[7-9]d{4}(?:.d+)?|1[7-9]d{5}(?:.d+)?|[2-7]d{6}(?:.d+)?|8[0-2]d{4}(?:.d+)?|8333[0-5]d*(?:.d+)?|83336[0-5]d*(?:.d+)?|833360(?:.d+)?)$/",
+                "reg_exp": "^[1-9][0-9][0-9][0-9][0-9][0-9](?:\\.\\d+)?$",
                 "reg_exp_flags": "g",
                 "expected_format": "Easting needs to be a 6 digit number."
               }
@@ -617,7 +613,7 @@
           "validations": [
             {
               "column_format_validator": {
-                "reg_exp": "/^(1110400|[1-9]d{6,})(?:.d+)?$/",
+                "reg_exp": "^[1-9][0-9][0-9][0-9][0-9][0-9][0-9](?:\\.\\d+)?$",
                 "reg_exp_flags": "g",
                 "expected_format": "Northing needs to be a 7 digit number."
               }
