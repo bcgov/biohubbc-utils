@@ -1,4 +1,4 @@
-import { outputValidationSchema } from '../../../helper/validation-config-helpers';
+import { outputValidationSchema } from '../../../../helper/validation-config-helpers';
 
 // helper functions for constructing validation schema
 const basicNumericValidator = () => {

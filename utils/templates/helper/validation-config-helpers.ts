@@ -2,28 +2,24 @@ import * as fs from 'fs';
 
 /**
  * Stringifies the template object for insertion into the database.
- * 
+ *
  * Note: outputName should follow the pattern `template_validation_config_output`
  * Example: `elk_general_validation_config_output`
- * 
+ *
  * @param {any} template validation schema for a given template
  * @param {string} outputName output name for the file
  */
 export const outputValidationSchema = (template: any, outputName: string) => {
-  fs.writeFile(
-    `./validation/schema/${outputName}.json`,
-    JSON.stringify(template),
-    (err) => {
-      // file written successfully
-  
-      if (err) {
-    console.log('Oops');
-    console.log(err)
-  } else {
-    console.log('All Done!');
-  }
+  fs.writeFile(`./observations/validation/schema/${outputName}.json`, JSON.stringify(template), (err) => {
+    // file written successfully
+
+    if (err) {
+      console.log('Oops');
+      console.log(err);
+    } else {
+      console.log('All Done!');
     }
-  );
+  });
 };
 
 export const basicNumericValidator = () => {
@@ -178,7 +174,6 @@ export const utmZoneValidator = () => {
     }
   ];
 };
-
 
 export const eastingValidator = () => {
   return [
