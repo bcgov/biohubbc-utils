@@ -118,6 +118,10 @@ export const mooseGeneralSchema: TransformSchema = {
         }
       ]
     },
+    // Spike/Fork Bulls (static: 0)
+    // sex: Male
+    // life stage: Unknown
+    // configuration: Spike/Fork Bulls
     {
       sheetName: 'occurrence',
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Spike/Fork Bulls']) }] },
@@ -188,6 +192,11 @@ export const mooseGeneralSchema: TransformSchema = {
         }
       ]
     },
+
+    // Sub-Prime Bulls (static: 1)
+    // sex: Male
+    // life stage: Unknown
+    // configuration: Sub-Prime Bulls
     {
       sheetName: 'occurrence',
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Sub-Prime Bulls']) }] },
@@ -1653,9 +1662,6 @@ export const mooseGeneralSchema: TransformSchema = {
       ]
     },
 
-
-
-
     //
     {
       sheetName: 'measurementOrFact',
@@ -1998,4 +2004,4 @@ export const mooseGeneralSchema: TransformSchema = {
   ]
 };
 
-transformSchema("", mooseGeneralSchema)
+transformSchema('', mooseGeneralSchema);
