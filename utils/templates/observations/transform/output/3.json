@@ -2,345 +2,2740 @@
   {
     "record": [
       {
-        "eventId": "SA-1:BISID-1:0:0",
+        "eventID": "8-9:22:0",
         "basisOfRecord ": "HumanObservation"
       }
     ],
     "event": [
       {
-        "eventID": "SA-1:BISID-1:0:0",
-        "eventDate": "27/Feb/23",
-        "eventRemarks": "coments son"
+        "eventID": "8-9:22:0",
+        "eventDate": "",
+        "eventRemarks": ""
       }
     ],
     "location": [
       {
-        "eventID": "SA-1:BISID-1:0:0",
-        "verbatimCoordinates": "8 1 1",
-        "decimalLatitude": "",
-        "decimalLongitude": "",
-        "verbatimSRS": "NAD27"
+        "eventID": "8-9:22:0",
+        "verbatimCoordinates": "49.88690360 -120.6049292",
+        "decimalLatitude": "49.88690360",
+        "decimalLongitude": "-120.6049292",
+        "verbatimSRS": ""
       }
     ],
     "occurrence": [
       {
-        "eventID": "SA-1:BISID-1:0:0",
-        "occurrenceID": "SA-1:BISID-1:0:0:1",
+        "eventID": "8-9:22:0",
+        "occurrenceID": "8-9:22:0:13",
         "individualCount": "1",
         "sex": "male",
         "lifeStage": "unknown",
-        "taxonID": "S-ELK",
-        "occurrenceRemarks": "coments son"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0:0",
-        "occurrenceID": "SA-1:BISID-1:0:0:2",
-        "individualCount": "2",
-        "sex": "male",
-        "lifeStage": "unknown",
-        "taxonID": "S-ELK",
-        "occurrenceRemarks": "coments son"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0:0",
-        "occurrenceID": "SA-1:BISID-1:0:0:3",
-        "individualCount": "3",
-        "sex": "male",
-        "lifeStage": "adult",
-        "taxonID": "S-ELK",
-        "occurrenceRemarks": "coments son"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0:0",
-        "occurrenceID": "SA-1:BISID-1:0:0:4",
-        "individualCount": "4",
-        "sex": "male",
-        "lifeStage": "adult",
-        "taxonID": "S-ELK",
-        "occurrenceRemarks": "coments son"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0:0",
-        "occurrenceID": "SA-1:BISID-1:0:0:5",
-        "individualCount": "5",
-        "sex": "male",
-        "lifeStage": "unknown",
-        "taxonID": "S-ELK",
-        "occurrenceRemarks": "coments son"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0:0",
-        "occurrenceID": "SA-1:BISID-1:0:0:6",
-        "individualCount": "6",
-        "sex": "male",
-        "lifeStage": "unknown",
-        "taxonID": "S-ELK",
-        "occurrenceRemarks": "coments son"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0:0",
-        "occurrenceID": "SA-1:BISID-1:0:0:7",
-        "individualCount": "7",
-        "sex": "male",
-        "lifeStage": "unknown",
-        "taxonID": "S-ELK",
-        "occurrenceRemarks": "coments son"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0:0",
-        "occurrenceID": "SA-1:BISID-1:0:0:8",
-        "individualCount": "8",
-        "sex": "male",
-        "lifeStage": "unknown",
-        "taxonID": "S-ELK",
-        "occurrenceRemarks": "coments son"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0:0",
-        "occurrenceID": "SA-1:BISID-1:0:0:9",
-        "individualCount": "9",
-        "sex": "male",
-        "lifeStage": "unknown",
-        "taxonID": "S-ELK",
-        "occurrenceRemarks": "coments son"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0:0",
-        "occurrenceID": "SA-1:BISID-1:0:0:10",
-        "individualCount": "10",
-        "sex": "male",
-        "lifeStage": "unknown",
-        "taxonID": "S-ELK",
-        "occurrenceRemarks": "coments son"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0:0",
-        "occurrenceID": "SA-1:BISID-1:0:0:11",
-        "individualCount": "11",
-        "sex": "male",
-        "lifeStage": "unknown",
-        "taxonID": "S-ELK",
-        "occurrenceRemarks": "coments son"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0:0",
-        "occurrenceID": "SA-1:BISID-1:0:0:12",
-        "individualCount": "12",
-        "sex": "male",
-        "lifeStage": "adult",
-        "taxonID": "S-ELK",
-        "occurrenceRemarks": "coments son"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0:0",
-        "occurrenceID": "SA-1:BISID-1:0:0:13",
-        "individualCount": "13",
-        "sex": "male",
-        "lifeStage": "adult",
-        "taxonID": "S-ELK",
-        "occurrenceRemarks": "coments son"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0:0",
-        "occurrenceID": "SA-1:BISID-1:0:0:14",
-        "individualCount": "",
-        "sex": "male",
-        "lifeStage": "adult",
-        "taxonID": "S-ELK",
-        "occurrenceRemarks": "coments son"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0:0",
-        "occurrenceID": "SA-1:BISID-1:0:0:15",
-        "individualCount": "15",
-        "sex": "male",
-        "lifeStage": "adult",
-        "taxonID": "S-ELK",
-        "occurrenceRemarks": "coments son"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0:0",
-        "occurrenceID": "SA-1:BISID-1:0:0:16",
-        "individualCount": "16",
-        "sex": "male",
-        "lifeStage": "adult",
-        "taxonID": "S-ELK",
-        "occurrenceRemarks": "coments son"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0:0",
-        "occurrenceID": "SA-1:BISID-1:0:0:17",
-        "individualCount": "17",
-        "sex": "female",
-        "lifeStage": "adult",
-        "taxonID": "S-ELK",
-        "occurrenceRemarks": "coments son"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0:0",
-        "occurrenceID": "SA-1:BISID-1:0:0:18",
-        "individualCount": "18",
-        "sex": "unknown",
-        "lifeStage": "juvenile",
-        "taxonID": "S-ELK",
-        "occurrenceRemarks": "coments son"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0:0",
-        "occurrenceID": "SA-1:BISID-1:0:0:19",
-        "individualCount": "19",
-        "sex": "unknown",
-        "lifeStage": "adult",
-        "taxonID": "S-ELK",
-        "occurrenceRemarks": "coments son"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0:0",
-        "occurrenceID": "SA-1:BISID-1:0:0:20",
-        "individualCount": "20",
-        "sex": "unknown",
-        "lifeStage": "yearling",
-        "taxonID": "S-ELK",
-        "occurrenceRemarks": "coments son"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0:0",
-        "occurrenceID": "SA-1:BISID-1:0:0:21",
-        "individualCount": "21",
-        "sex": "unknown",
-        "lifeStage": "unknown",
-        "taxonID": "S-ELK",
-        "occurrenceRemarks": "coments son"
+        "taxonID": "",
+        "occurrenceRemarks": ""
       }
     ],
     "measurementOrFact": [
       {
-        "eventID": "SA-1:BISID-1:0:0",
-        "measurementID": "SA-1:BISID-1:0:0:antler-configuration",
-        "occurrenceID": "SA-1:BISID-1:0:0:1",
-        "measurementType": "Antler Configuration",
+        "eventID": "8-9:22:0",
+        "measurementID": "8-9:22:0:study-area",
+        "measurementType": "Study Area",
         "measurementUnit": "",
-        "measurementValue": "BC RISC Class I"
+        "measurementValue": "8-9"
       },
       {
-        "eventID": "SA-1:BISID-1:0:0",
-        "measurementID": "SA-1:BISID-1:0:0:antler-configuration",
-        "occurrenceID": "SA-1:BISID-1:0:0:2",
-        "measurementType": "Antler Configuration",
+        "eventID": "8-9:22:0",
+        "measurementID": "8-9:22:0:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
         "measurementUnit": "",
-        "measurementValue": "BC RISC Class II"
+        "measurementValue": "22"
       },
       {
-        "eventID": "SA-1:BISID-1:0:0",
-        "measurementID": "SA-1:BISID-1:0:0:antler-configuration",
-        "occurrenceID": "SA-1:BISID-1:0:0:3",
-        "measurementType": "Antler Configuration",
-        "measurementUnit": "",
-        "measurementValue": "BC RISC Class III"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0:0",
-        "measurementID": "SA-1:BISID-1:0:0:antler-configuration",
-        "occurrenceID": "SA-1:BISID-1:0:0:4",
-        "measurementType": "Antler Configuration",
-        "measurementUnit": "",
-        "measurementValue": "BC RISC Class IV"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0:0",
-        "measurementID": "SA-1:BISID-1:0:0:antler-configuration",
-        "occurrenceID": "SA-1:BISID-1:0:0:5",
-        "measurementType": "Antler Configuration",
-        "measurementUnit": "",
-        "measurementValue": "Spike antlers"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0:0",
-        "measurementID": "SA-1:BISID-1:0:0:antler-configuration",
-        "occurrenceID": "SA-1:BISID-1:0:0:6",
-        "measurementType": "Antler Configuration",
-        "measurementUnit": "",
-        "measurementValue": "Raghorn antlers"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0:0",
-        "measurementID": "SA-1:BISID-1:0:0:antler-configuration",
-        "occurrenceID": "SA-1:BISID-1:0:0:7",
-        "measurementType": "Antler Configuration",
-        "measurementUnit": "",
-        "measurementValue": "3 points or fewer"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0:0",
-        "measurementID": "SA-1:BISID-1:0:0:antler-configuration",
-        "occurrenceID": "SA-1:BISID-1:0:0:8",
-        "measurementType": "Antler Configuration",
-        "measurementUnit": "",
-        "measurementValue": "3 or 4 points"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0:0",
-        "measurementID": "SA-1:BISID-1:0:0:antler-configuration",
-        "occurrenceID": "SA-1:BISID-1:0:0:9",
-        "measurementType": "Antler Configuration",
-        "measurementUnit": "",
-        "measurementValue": "3 or 4 or 5 points"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0:0",
-        "measurementID": "SA-1:BISID-1:0:0:antler-configuration",
-        "occurrenceID": "SA-1:BISID-1:0:0:10",
-        "measurementType": "Antler Configuration",
-        "measurementUnit": "",
-        "measurementValue": "fewer than 4 points"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0:0",
-        "measurementID": "SA-1:BISID-1:0:0:antler-configuration",
-        "occurrenceID": "SA-1:BISID-1:0:0:11",
-        "measurementType": "Antler Configuration",
-        "measurementUnit": "",
-        "measurementValue": "4 points or more"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0:0",
-        "measurementID": "SA-1:BISID-1:0:0:antler-configuration",
-        "occurrenceID": "SA-1:BISID-1:0:0:12",
-        "measurementType": "Antler Configuration",
-        "measurementUnit": "",
-        "measurementValue": "5 points"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0:0",
-        "measurementID": "SA-1:BISID-1:0:0:antler-configuration",
-        "occurrenceID": "SA-1:BISID-1:0:0:13",
-        "measurementType": "Antler Configuration",
-        "measurementUnit": "",
-        "measurementValue": "5 points or more"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0:0",
-        "measurementID": "SA-1:BISID-1:0:0:antler-configuration",
-        "occurrenceID": "SA-1:BISID-1:0:0:14",
-        "measurementType": "Antler Configuration",
-        "measurementUnit": "",
-        "measurementValue": "6 points or more"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0:0",
-        "measurementID": "SA-1:BISID-1:0:0:antler-configuration",
-        "occurrenceID": "SA-1:BISID-1:0:0:15",
+        "eventID": "8-9:22:0",
+        "measurementID": "8-9:22:0:antler-configuration",
+        "occurrenceID": "8-9:22:0:13",
         "measurementType": "Antler Configuration",
         "measurementUnit": "",
         "measurementValue": "unclassified"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:22:1",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:22:1",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:22:1",
+        "verbatimCoordinates": "49.88341145 -120.6089177",
+        "decimalLatitude": "49.88341145",
+        "decimalLongitude": "-120.6089177",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:22:1",
+        "occurrenceID": "8-9:22:1:0",
+        "individualCount": "1",
+        "sex": "male",
+        "lifeStage": "unknown",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:22:1",
+        "measurementID": "8-9:22:1:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
       },
       {
-        "eventID": "SA-1:BISID-1:0:0",
-        "measurementID": "SA-1:BISID-1:0:0:antler-configuration",
-        "occurrenceID": "SA-1:BISID-1:0:0:16",
+        "eventID": "8-9:22:1",
+        "measurementID": "8-9:22:1:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "22"
+      },
+      {
+        "eventID": "8-9:22:1",
+        "measurementID": "8-9:22:1:antler-configuration",
+        "occurrenceID": "8-9:22:1:0",
+        "measurementType": "Antler Configuration",
+        "measurementUnit": "",
+        "measurementValue": "Spike/Fork"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:23:2",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:23:2",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:23:2",
+        "verbatimCoordinates": "49.44447909 -119.5079154",
+        "decimalLatitude": "49.44447909",
+        "decimalLongitude": "-119.5079154",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:23:2",
+        "occurrenceID": "8-9:23:2:13",
+        "individualCount": "1",
+        "sex": "male",
+        "lifeStage": "unknown",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:23:2",
+        "measurementID": "8-9:23:2:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:23:2",
+        "measurementID": "8-9:23:2:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "23"
+      },
+      {
+        "eventID": "8-9:23:2",
+        "measurementID": "8-9:23:2:antler-configuration",
+        "occurrenceID": "8-9:23:2:13",
         "measurementType": "Antler Configuration",
         "measurementUnit": "",
         "measurementValue": "unclassified"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:23:3",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:23:3",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:23:3",
+        "verbatimCoordinates": "49.45297239 -119.5009683",
+        "decimalLatitude": "49.45297239",
+        "decimalLongitude": "-119.5009683",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:23:3",
+        "occurrenceID": "8-9:23:3:13",
+        "individualCount": "1",
+        "sex": "male",
+        "lifeStage": "unknown",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      },
+      {
+        "eventID": "8-9:23:3",
+        "occurrenceID": "8-9:23:3:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:23:3",
+        "measurementID": "8-9:23:3:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:23:3",
+        "measurementID": "8-9:23:3:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "23"
+      },
+      {
+        "eventID": "8-9:23:3",
+        "measurementID": "8-9:23:3:antler-configuration",
+        "occurrenceID": "8-9:23:3:13",
+        "measurementType": "Antler Configuration",
+        "measurementUnit": "",
+        "measurementValue": "unclassified"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:23:4",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:23:4",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:23:4",
+        "verbatimCoordinates": "49.45421652 -119.4848064",
+        "decimalLatitude": "49.45421652",
+        "decimalLongitude": "-119.4848064",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:23:4",
+        "occurrenceID": "8-9:23:4:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:23:4",
+        "measurementID": "8-9:23:4:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:23:4",
+        "measurementID": "8-9:23:4:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "23"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:23:5",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:23:5",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:23:5",
+        "verbatimCoordinates": "49.44228899 -119.4929046",
+        "decimalLatitude": "49.44228899",
+        "decimalLongitude": "-119.4929046",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:23:5",
+        "occurrenceID": "8-9:23:5:13",
+        "individualCount": "1",
+        "sex": "male",
+        "lifeStage": "unknown",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      },
+      {
+        "eventID": "8-9:23:5",
+        "occurrenceID": "8-9:23:5:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      },
+      {
+        "eventID": "8-9:23:5",
+        "occurrenceID": "8-9:23:5:15",
+        "individualCount": "1",
+        "sex": "unknown",
+        "lifeStage": "juvenile",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:23:5",
+        "measurementID": "8-9:23:5:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:23:5",
+        "measurementID": "8-9:23:5:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "23"
+      },
+      {
+        "eventID": "8-9:23:5",
+        "measurementID": "8-9:23:5:antler-configuration",
+        "occurrenceID": "8-9:23:5:13",
+        "measurementType": "Antler Configuration",
+        "measurementUnit": "",
+        "measurementValue": "unclassified"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:26:6",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:26:6",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:26:6",
+        "verbatimCoordinates": "49.44603335 -119.4948300",
+        "decimalLatitude": "49.44603335",
+        "decimalLongitude": "-119.4948300",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:26:6",
+        "occurrenceID": "8-9:26:6:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      },
+      {
+        "eventID": "8-9:26:6",
+        "occurrenceID": "8-9:26:6:15",
+        "individualCount": "1",
+        "sex": "unknown",
+        "lifeStage": "juvenile",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:26:6",
+        "measurementID": "8-9:26:6:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:26:6",
+        "measurementID": "8-9:26:6:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "26"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:26:7",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:26:7",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:26:7",
+        "verbatimCoordinates": "49.44312156 -119.4710999",
+        "decimalLatitude": "49.44312156",
+        "decimalLongitude": "-119.4710999",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:26:7",
+        "occurrenceID": "8-9:26:7:13",
+        "individualCount": "1",
+        "sex": "male",
+        "lifeStage": "unknown",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      },
+      {
+        "eventID": "8-9:26:7",
+        "occurrenceID": "8-9:26:7:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:26:7",
+        "measurementID": "8-9:26:7:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:26:7",
+        "measurementID": "8-9:26:7:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "26"
+      },
+      {
+        "eventID": "8-9:26:7",
+        "measurementID": "8-9:26:7:antler-configuration",
+        "occurrenceID": "8-9:26:7:13",
+        "measurementType": "Antler Configuration",
+        "measurementUnit": "",
+        "measurementValue": "unclassified"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:26:8",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:26:8",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:26:8",
+        "verbatimCoordinates": "49.46408219 -119.3939225",
+        "decimalLatitude": "49.46408219",
+        "decimalLongitude": "-119.3939225",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:26:8",
+        "occurrenceID": "8-9:26:8:13",
+        "individualCount": "1",
+        "sex": "male",
+        "lifeStage": "unknown",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:26:8",
+        "measurementID": "8-9:26:8:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:26:8",
+        "measurementID": "8-9:26:8:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "26"
+      },
+      {
+        "eventID": "8-9:26:8",
+        "measurementID": "8-9:26:8:antler-configuration",
+        "occurrenceID": "8-9:26:8:13",
+        "measurementType": "Antler Configuration",
+        "measurementUnit": "",
+        "measurementValue": "unclassified"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:26:9",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:26:9",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:26:9",
+        "verbatimCoordinates": "49.44963279 -119.4556690",
+        "decimalLatitude": "49.44963279",
+        "decimalLongitude": "-119.4556690",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:26:9",
+        "occurrenceID": "8-9:26:9:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:26:9",
+        "measurementID": "8-9:26:9:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:26:9",
+        "measurementID": "8-9:26:9:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "26"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:26:10",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:26:10",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:26:10",
+        "verbatimCoordinates": "49.43561733 -119.4248822",
+        "decimalLatitude": "49.43561733",
+        "decimalLongitude": "-119.4248822",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:26:10",
+        "occurrenceID": "8-9:26:10:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:26:10",
+        "measurementID": "8-9:26:10:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:26:10",
+        "measurementID": "8-9:26:10:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "26"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:26:11",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:26:11",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:26:11",
+        "verbatimCoordinates": "49.42855541 -119.4241269",
+        "decimalLatitude": "49.42855541",
+        "decimalLongitude": "-119.4241269",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:26:11",
+        "occurrenceID": "8-9:26:11:13",
+        "individualCount": "1",
+        "sex": "male",
+        "lifeStage": "unknown",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:26:11",
+        "measurementID": "8-9:26:11:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:26:11",
+        "measurementID": "8-9:26:11:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "26"
+      },
+      {
+        "eventID": "8-9:26:11",
+        "measurementID": "8-9:26:11:antler-configuration",
+        "occurrenceID": "8-9:26:11:13",
+        "measurementType": "Antler Configuration",
+        "measurementUnit": "",
+        "measurementValue": "unclassified"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:26:12",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:26:12",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:26:12",
+        "verbatimCoordinates": "49.42434115 -119.4323231",
+        "decimalLatitude": "49.42434115",
+        "decimalLongitude": "-119.4323231",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:26:12",
+        "occurrenceID": "8-9:26:12:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      },
+      {
+        "eventID": "8-9:26:12",
+        "occurrenceID": "8-9:26:12:15",
+        "individualCount": "1",
+        "sex": "unknown",
+        "lifeStage": "juvenile",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:26:12",
+        "measurementID": "8-9:26:12:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:26:12",
+        "measurementID": "8-9:26:12:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "26"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:26:13",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:26:13",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:26:13",
+        "verbatimCoordinates": "49.46245828 -119.4367907",
+        "decimalLatitude": "49.46245828",
+        "decimalLongitude": "-119.4367907",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:26:13",
+        "occurrenceID": "8-9:26:13:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      },
+      {
+        "eventID": "8-9:26:13",
+        "occurrenceID": "8-9:26:13:15",
+        "individualCount": "1",
+        "sex": "unknown",
+        "lifeStage": "juvenile",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:26:13",
+        "measurementID": "8-9:26:13:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:26:13",
+        "measurementID": "8-9:26:13:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "26"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:26:14",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:26:14",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:26:14",
+        "verbatimCoordinates": "49.50146548 -119.4952853",
+        "decimalLatitude": "49.50146548",
+        "decimalLongitude": "-119.4952853",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:26:14",
+        "occurrenceID": "8-9:26:14:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      },
+      {
+        "eventID": "8-9:26:14",
+        "occurrenceID": "8-9:26:14:15",
+        "individualCount": "1",
+        "sex": "unknown",
+        "lifeStage": "juvenile",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:26:14",
+        "measurementID": "8-9:26:14:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:26:14",
+        "measurementID": "8-9:26:14:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "26"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:27:15",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:27:15",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:27:15",
+        "verbatimCoordinates": "49.48625383 -119.4976256",
+        "decimalLatitude": "49.48625383",
+        "decimalLongitude": "-119.4976256",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:27:15",
+        "occurrenceID": "8-9:27:15:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:27:15",
+        "measurementID": "8-9:27:15:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:27:15",
+        "measurementID": "8-9:27:15:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "27"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:27:16",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:27:16",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:27:16",
+        "verbatimCoordinates": "49.48611679 -119.4991279",
+        "decimalLatitude": "49.48611679",
+        "decimalLongitude": "-119.4991279",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:27:16",
+        "occurrenceID": "8-9:27:16:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      },
+      {
+        "eventID": "8-9:27:16",
+        "occurrenceID": "8-9:27:16:15",
+        "individualCount": "1",
+        "sex": "unknown",
+        "lifeStage": "juvenile",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:27:16",
+        "measurementID": "8-9:27:16:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:27:16",
+        "measurementID": "8-9:27:16:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "27"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:27:17",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:27:17",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:27:17",
+        "verbatimCoordinates": "49.50290130 -119.4895432",
+        "decimalLatitude": "49.50290130",
+        "decimalLongitude": "-119.4895432",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:27:17",
+        "occurrenceID": "8-9:27:17:13",
+        "individualCount": "1",
+        "sex": "male",
+        "lifeStage": "unknown",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:27:17",
+        "measurementID": "8-9:27:17:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:27:17",
+        "measurementID": "8-9:27:17:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "27"
+      },
+      {
+        "eventID": "8-9:27:17",
+        "measurementID": "8-9:27:17:antler-configuration",
+        "occurrenceID": "8-9:27:17:13",
+        "measurementType": "Antler Configuration",
+        "measurementUnit": "",
+        "measurementValue": "unclassified"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:27:18",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:27:18",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:27:18",
+        "verbatimCoordinates": "49.67802591 -119.5749413",
+        "decimalLatitude": "49.67802591",
+        "decimalLongitude": "-119.5749413",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:27:18",
+        "occurrenceID": "8-9:27:18:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      },
+      {
+        "eventID": "8-9:27:18",
+        "occurrenceID": "8-9:27:18:15",
+        "individualCount": "1",
+        "sex": "unknown",
+        "lifeStage": "juvenile",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:27:18",
+        "measurementID": "8-9:27:18:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:27:18",
+        "measurementID": "8-9:27:18:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "27"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:29:19",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:29:19",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:29:19",
+        "verbatimCoordinates": "49.71282673 -119.5694866",
+        "decimalLatitude": "49.71282673",
+        "decimalLongitude": "-119.5694866",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:29:19",
+        "occurrenceID": "8-9:29:19:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:29:19",
+        "measurementID": "8-9:29:19:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:29:19",
+        "measurementID": "8-9:29:19:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "29"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:33:20",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:33:20",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:33:20",
+        "verbatimCoordinates": "49.69001253 -119.5859994",
+        "decimalLatitude": "49.69001253",
+        "decimalLongitude": "-119.5859994",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:33:20",
+        "occurrenceID": "8-9:33:20:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:33:20",
+        "measurementID": "8-9:33:20:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:33:20",
+        "measurementID": "8-9:33:20:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "33"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:33:21",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:33:21",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:33:21",
+        "verbatimCoordinates": "49.69567928 -119.5781896",
+        "decimalLatitude": "49.69567928",
+        "decimalLongitude": "-119.5781896",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:33:21",
+        "occurrenceID": "8-9:33:21:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:33:21",
+        "measurementID": "8-9:33:21:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:33:21",
+        "measurementID": "8-9:33:21:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "33"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:33:22",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:33:22",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:33:22",
+        "verbatimCoordinates": "49.69652711 -119.5744829",
+        "decimalLatitude": "49.69652711",
+        "decimalLongitude": "-119.5744829",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:33:22",
+        "occurrenceID": "8-9:33:22:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:33:22",
+        "measurementID": "8-9:33:22:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:33:22",
+        "measurementID": "8-9:33:22:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "33"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:33:23",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:33:23",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:33:23",
+        "verbatimCoordinates": "49.68697996 -119.5735206",
+        "decimalLatitude": "49.68697996",
+        "decimalLongitude": "-119.5735206",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:33:23",
+        "occurrenceID": "8-9:33:23:14",
+        "individualCount": "2",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:33:23",
+        "measurementID": "8-9:33:23:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:33:23",
+        "measurementID": "8-9:33:23:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "33"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:33:24",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:33:24",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:33:24",
+        "verbatimCoordinates": "49.67312249 -119.5864535",
+        "decimalLatitude": "49.67312249",
+        "decimalLongitude": "-119.5864535",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:33:24",
+        "occurrenceID": "8-9:33:24:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:33:24",
+        "measurementID": "8-9:33:24:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:33:24",
+        "measurementID": "8-9:33:24:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "33"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:33:25",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:33:25",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:33:25",
+        "verbatimCoordinates": "49.71562210 -119.5641708",
+        "decimalLatitude": "49.71562210",
+        "decimalLongitude": "-119.5641708",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:33:25",
+        "occurrenceID": "8-9:33:25:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:33:25",
+        "measurementID": "8-9:33:25:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:33:25",
+        "measurementID": "8-9:33:25:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "33"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:33:26",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:33:26",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:33:26",
+        "verbatimCoordinates": "49.74124624 -119.5473060",
+        "decimalLatitude": "49.74124624",
+        "decimalLongitude": "-119.5473060",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:33:26",
+        "occurrenceID": "8-9:33:26:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      },
+      {
+        "eventID": "8-9:33:26",
+        "occurrenceID": "8-9:33:26:15",
+        "individualCount": "1",
+        "sex": "unknown",
+        "lifeStage": "juvenile",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:33:26",
+        "measurementID": "8-9:33:26:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:33:26",
+        "measurementID": "8-9:33:26:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "33"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:33:27",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:33:27",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:33:27",
+        "verbatimCoordinates": "49.73807604 -119.5258735",
+        "decimalLatitude": "49.73807604",
+        "decimalLongitude": "-119.5258735",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:33:27",
+        "occurrenceID": "8-9:33:27:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:33:27",
+        "measurementID": "8-9:33:27:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:33:27",
+        "measurementID": "8-9:33:27:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "33"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:35:28",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:35:28",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:35:28",
+        "verbatimCoordinates": "49.74819216 -119.5192945",
+        "decimalLatitude": "49.74819216",
+        "decimalLongitude": "-119.5192945",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:35:28",
+        "occurrenceID": "8-9:35:28:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:35:28",
+        "measurementID": "8-9:35:28:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:35:28",
+        "measurementID": "8-9:35:28:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "35"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:35:29",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:35:29",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:35:29",
+        "verbatimCoordinates": "49.74854847 -119.5206544",
+        "decimalLatitude": "49.74854847",
+        "decimalLongitude": "-119.5206544",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:35:29",
+        "occurrenceID": "8-9:35:29:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      },
+      {
+        "eventID": "8-9:35:29",
+        "occurrenceID": "8-9:35:29:15",
+        "individualCount": "1",
+        "sex": "unknown",
+        "lifeStage": "juvenile",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:35:29",
+        "measurementID": "8-9:35:29:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:35:29",
+        "measurementID": "8-9:35:29:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "35"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:35:30",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:35:30",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:35:30",
+        "verbatimCoordinates": "49.70609271 -119.4980729",
+        "decimalLatitude": "49.70609271",
+        "decimalLongitude": "-119.4980729",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:35:30",
+        "occurrenceID": "8-9:35:30:0",
+        "individualCount": "1",
+        "sex": "male",
+        "lifeStage": "unknown",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      },
+      {
+        "eventID": "8-9:35:30",
+        "occurrenceID": "8-9:35:30:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:35:30",
+        "measurementID": "8-9:35:30:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:35:30",
+        "measurementID": "8-9:35:30:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "35"
+      },
+      {
+        "eventID": "8-9:35:30",
+        "measurementID": "8-9:35:30:antler-configuration",
+        "occurrenceID": "8-9:35:30:0",
+        "measurementType": "Antler Configuration",
+        "measurementUnit": "",
+        "measurementValue": "Spike/Fork"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:35:31",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:35:31",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:35:31",
+        "verbatimCoordinates": "49.70797059 -119.5001843",
+        "decimalLatitude": "49.70797059",
+        "decimalLongitude": "-119.5001843",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:35:31",
+        "occurrenceID": "8-9:35:31:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      },
+      {
+        "eventID": "8-9:35:31",
+        "occurrenceID": "8-9:35:31:15",
+        "individualCount": "1",
+        "sex": "unknown",
+        "lifeStage": "juvenile",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:35:31",
+        "measurementID": "8-9:35:31:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:35:31",
+        "measurementID": "8-9:35:31:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "35"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:35:32",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:35:32",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:35:32",
+        "verbatimCoordinates": "49.71454410 -119.4990188",
+        "decimalLatitude": "49.71454410",
+        "decimalLongitude": "-119.4990188",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:35:32",
+        "occurrenceID": "8-9:35:32:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      },
+      {
+        "eventID": "8-9:35:32",
+        "occurrenceID": "8-9:35:32:15",
+        "individualCount": "1",
+        "sex": "unknown",
+        "lifeStage": "juvenile",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:35:32",
+        "measurementID": "8-9:35:32:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:35:32",
+        "measurementID": "8-9:35:32:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "35"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:35:33",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:35:33",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:35:33",
+        "verbatimCoordinates": "49.73959333 -119.5061235",
+        "decimalLatitude": "49.73959333",
+        "decimalLongitude": "-119.5061235",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:35:33",
+        "occurrenceID": "8-9:35:33:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:35:33",
+        "measurementID": "8-9:35:33:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:35:33",
+        "measurementID": "8-9:35:33:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "35"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:28:34",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:28:34",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:28:34",
+        "verbatimCoordinates": "49.74258676 -119.5008545",
+        "decimalLatitude": "49.74258676",
+        "decimalLongitude": "-119.5008545",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:28:34",
+        "occurrenceID": "8-9:28:34:13",
+        "individualCount": "2",
+        "sex": "male",
+        "lifeStage": "unknown",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      },
+      {
+        "eventID": "8-9:28:34",
+        "occurrenceID": "8-9:28:34:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:28:34",
+        "measurementID": "8-9:28:34:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:28:34",
+        "measurementID": "8-9:28:34:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "28"
+      },
+      {
+        "eventID": "8-9:28:34",
+        "measurementID": "8-9:28:34:antler-configuration",
+        "occurrenceID": "8-9:28:34:13",
+        "measurementType": "Antler Configuration",
+        "measurementUnit": "",
+        "measurementValue": "unclassified"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:4:35",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:4:35",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:4:35",
+        "verbatimCoordinates": "49.71377707 -119.4938169",
+        "decimalLatitude": "49.71377707",
+        "decimalLongitude": "-119.4938169",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:4:35",
+        "occurrenceID": "8-9:4:35:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:4:35",
+        "measurementID": "8-9:4:35:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:4:35",
+        "measurementID": "8-9:4:35:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "4"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:4:36",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:4:36",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:4:36",
+        "verbatimCoordinates": "49.69278317 -119.4973080",
+        "decimalLatitude": "49.69278317",
+        "decimalLongitude": "-119.4973080",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:4:36",
+        "occurrenceID": "8-9:4:36:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:4:36",
+        "measurementID": "8-9:4:36:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:4:36",
+        "measurementID": "8-9:4:36:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "4"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:9:37",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:9:37",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:9:37",
+        "verbatimCoordinates": "49.66637582 -119.5093333",
+        "decimalLatitude": "49.66637582",
+        "decimalLongitude": "-119.5093333",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:9:37",
+        "occurrenceID": "8-9:9:37:14",
+        "individualCount": "2",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:9:37",
+        "measurementID": "8-9:9:37:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:9:37",
+        "measurementID": "8-9:9:37:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "9"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:9:38",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:9:38",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:9:38",
+        "verbatimCoordinates": "49.69266691 -119.5574092",
+        "decimalLatitude": "49.69266691",
+        "decimalLongitude": "-119.5574092",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:9:38",
+        "occurrenceID": "8-9:9:38:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:9:38",
+        "measurementID": "8-9:9:38:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:9:38",
+        "measurementID": "8-9:9:38:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "9"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:9:39",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:9:39",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:9:39",
+        "verbatimCoordinates": "49.69497504 -119.5560049",
+        "decimalLatitude": "49.69497504",
+        "decimalLongitude": "-119.5560049",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:9:39",
+        "occurrenceID": "8-9:9:39:13",
+        "individualCount": "1",
+        "sex": "male",
+        "lifeStage": "unknown",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      },
+      {
+        "eventID": "8-9:9:39",
+        "occurrenceID": "8-9:9:39:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:9:39",
+        "measurementID": "8-9:9:39:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:9:39",
+        "measurementID": "8-9:9:39:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "9"
+      },
+      {
+        "eventID": "8-9:9:39",
+        "measurementID": "8-9:9:39:antler-configuration",
+        "occurrenceID": "8-9:9:39:13",
+        "measurementType": "Antler Configuration",
+        "measurementUnit": "",
+        "measurementValue": "unclassified"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:6:40",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:6:40",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:6:40",
+        "verbatimCoordinates": "49.71338673 -119.5149178",
+        "decimalLatitude": "49.71338673",
+        "decimalLongitude": "-119.5149178",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:6:40",
+        "occurrenceID": "8-9:6:40:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:6:40",
+        "measurementID": "8-9:6:40:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:6:40",
+        "measurementID": "8-9:6:40:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "6"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:7:41",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:7:41",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:7:41",
+        "verbatimCoordinates": "49.72651538 -119.5521902",
+        "decimalLatitude": "49.72651538",
+        "decimalLongitude": "-119.5521902",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:7:41",
+        "occurrenceID": "8-9:7:41:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:7:41",
+        "measurementID": "8-9:7:41:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:7:41",
+        "measurementID": "8-9:7:41:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "7"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:7:42",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:7:42",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:7:42",
+        "verbatimCoordinates": "49.72890054 -119.5563991",
+        "decimalLatitude": "49.72890054",
+        "decimalLongitude": "-119.5563991",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:7:42",
+        "occurrenceID": "8-9:7:42:13",
+        "individualCount": "1",
+        "sex": "male",
+        "lifeStage": "unknown",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      },
+      {
+        "eventID": "8-9:7:42",
+        "occurrenceID": "8-9:7:42:14",
+        "individualCount": "2",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:7:42",
+        "measurementID": "8-9:7:42:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:7:42",
+        "measurementID": "8-9:7:42:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "7"
+      },
+      {
+        "eventID": "8-9:7:42",
+        "measurementID": "8-9:7:42:antler-configuration",
+        "occurrenceID": "8-9:7:42:13",
+        "measurementType": "Antler Configuration",
+        "measurementUnit": "",
+        "measurementValue": "unclassified"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:7:43",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:7:43",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:7:43",
+        "verbatimCoordinates": "49.72237648 -119.5406396",
+        "decimalLatitude": "49.72237648",
+        "decimalLongitude": "-119.5406396",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:7:43",
+        "occurrenceID": "8-9:7:43:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      },
+      {
+        "eventID": "8-9:7:43",
+        "occurrenceID": "8-9:7:43:15",
+        "individualCount": "1",
+        "sex": "unknown",
+        "lifeStage": "juvenile",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:7:43",
+        "measurementID": "8-9:7:43:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:7:43",
+        "measurementID": "8-9:7:43:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "7"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:17:44",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:17:44",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:17:44",
+        "verbatimCoordinates": "49.70810168 -119.5531134",
+        "decimalLatitude": "49.70810168",
+        "decimalLongitude": "-119.5531134",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:17:44",
+        "occurrenceID": "8-9:17:44:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:17:44",
+        "measurementID": "8-9:17:44:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:17:44",
+        "measurementID": "8-9:17:44:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "17"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:17:45",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:17:45",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:17:45",
+        "verbatimCoordinates": "49.70501153 -119.5473832",
+        "decimalLatitude": "49.70501153",
+        "decimalLongitude": "-119.5473832",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:17:45",
+        "occurrenceID": "8-9:17:45:14",
+        "individualCount": "1",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      },
+      {
+        "eventID": "8-9:17:45",
+        "occurrenceID": "8-9:17:45:15",
+        "individualCount": "1",
+        "sex": "unknown",
+        "lifeStage": "juvenile",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:17:45",
+        "measurementID": "8-9:17:45:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:17:45",
+        "measurementID": "8-9:17:45:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "17"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:17:46",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:17:46",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:17:46",
+        "verbatimCoordinates": "49.70604510 -119.5454848",
+        "decimalLatitude": "49.70604510",
+        "decimalLongitude": "-119.5454848",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:17:46",
+        "occurrenceID": "8-9:17:46:13",
+        "individualCount": "1",
+        "sex": "male",
+        "lifeStage": "unknown",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:17:46",
+        "measurementID": "8-9:17:46:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:17:46",
+        "measurementID": "8-9:17:46:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "17"
+      },
+      {
+        "eventID": "8-9:17:46",
+        "measurementID": "8-9:17:46:antler-configuration",
+        "occurrenceID": "8-9:17:46:13",
+        "measurementType": "Antler Configuration",
+        "measurementUnit": "",
+        "measurementValue": "unclassified"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "8-9:17:47",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "8-9:17:47",
+        "eventDate": "",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "8-9:17:47",
+        "verbatimCoordinates": "49.72039358 -119.5511457",
+        "decimalLatitude": "49.72039358",
+        "decimalLongitude": "-119.5511457",
+        "verbatimSRS": ""
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "8-9:17:47",
+        "occurrenceID": "8-9:17:47:14",
+        "individualCount": "2",
+        "sex": "female",
+        "lifeStage": "adult",
+        "taxonID": "",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "8-9:17:47",
+        "measurementID": "8-9:17:47:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "8-9"
+      },
+      {
+        "eventID": "8-9:17:47",
+        "measurementID": "8-9:17:47:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "17"
       }
     ]
   }

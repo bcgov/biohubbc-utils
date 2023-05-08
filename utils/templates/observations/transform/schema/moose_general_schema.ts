@@ -64,6 +64,14 @@ export const mooseGeneralSchema: TransformSchema = {
               paths: [getValuesByName('Observations', ['Date'])]
             }
           ]
+        },
+        {
+          columnName: 'eventRemarks',
+          columnValue: [
+            {
+              paths: [getValuesByName('Observations', ['Observation Comments'])]
+            }
+          ]
         }
       ]
     },
@@ -267,6 +275,10 @@ export const mooseGeneralSchema: TransformSchema = {
         }
       ]
     },
+    // Prime Bulls (static: 2)
+    // sex: Male
+    // life stage: Adult
+    // configuration: Prime Bulls
     {
       sheetName: 'occurrence',
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Prime Bulls']) }] },
@@ -337,6 +349,10 @@ export const mooseGeneralSchema: TransformSchema = {
         }
       ]
     },
+    // Senior Bulls (static: 3)
+    // sex: Male
+    // life stage: Adult
+    // configuration: Senior Bulls
     {
       sheetName: 'occurrence',
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Senior Bulls']) }] },
@@ -407,6 +423,10 @@ export const mooseGeneralSchema: TransformSchema = {
         }
       ]
     },
+    // 3 Brow/10 Points Bulls (static: 4)
+    // sex: Male
+    // life stage: Adult
+    // configuration: 3 Brow/10 Points Bulls
     {
       sheetName: 'occurrence',
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['3 Brow/10 Points Bulls']) }] },
@@ -477,6 +497,10 @@ export const mooseGeneralSchema: TransformSchema = {
         }
       ]
     },
+    // BC RISC Yearling Bulls (static: 5)
+    // sex: Male
+    // life stage: Yearling
+    // configuration: BC RISC Yearling Bulls
     {
       sheetName: 'occurrence',
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['BC RISC Yearling Bulls']) }] },
@@ -547,6 +571,10 @@ export const mooseGeneralSchema: TransformSchema = {
         }
       ]
     },
+    // BC RISC Class I Bulls (static: 6)
+    // sex: Male
+    // life stage: Unknown
+    // configuration: BC RISC Class I Bulls
     {
       sheetName: 'occurrence',
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['BC RISC Class I Bulls']) }] },
@@ -617,6 +645,11 @@ export const mooseGeneralSchema: TransformSchema = {
         }
       ]
     },
+    // BC RISC Class II Bulls (static: 7)
+    // sex: Male
+    // life stage: Adult
+    // configuration: BC RISC Class II Bulls
+
     {
       sheetName: 'occurrence',
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['BC RISC Class II Bulls']) }] },
@@ -687,6 +720,10 @@ export const mooseGeneralSchema: TransformSchema = {
         }
       ]
     },
+    // BC RISC Class III Bulls (static: 8)
+    // sex: Male
+    // life stage: Adult
+    // configuration: BC RISC Class III Bulls
     {
       sheetName: 'occurrence',
       condition: {
@@ -760,6 +797,10 @@ export const mooseGeneralSchema: TransformSchema = {
         }
       ]
     },
+    // Oswald (1997) Class I Bulls (static: 9)
+    // sex: Male
+    // life stage: Unknown
+    // configuration: Oswald (1997) Class I Bulls
     {
       sheetName: 'occurrence',
       condition: {
@@ -833,6 +874,10 @@ export const mooseGeneralSchema: TransformSchema = {
         }
       ]
     },
+    // Oswald (1997) Class II Bulls (static: 10)
+    // sex: Male
+    // life stage: Unknown
+    // configuration: Oswald (1997) Class II Bulls
     {
       sheetName: 'occurrence',
       condition: {
@@ -906,6 +951,10 @@ export const mooseGeneralSchema: TransformSchema = {
         }
       ]
     },
+    // Oswald (1997) Class III Bulls (static: 11)
+    // sex: Male
+    // life stage: Adult
+    // configuration: Oswald (1997) Class III Bulls
     {
       sheetName: 'occurrence',
       condition: {
@@ -979,6 +1028,10 @@ export const mooseGeneralSchema: TransformSchema = {
         }
       ]
     },
+    // Adult Bulls - Unclassified (static: 12)
+    // sex: Male
+    // life stage: Adult
+    // configuration: Adult Bulls - Unclassified
     {
       sheetName: 'occurrence',
       condition: {
@@ -1010,8 +1063,52 @@ export const mooseGeneralSchema: TransformSchema = {
         createValueField('lifeStage', 'adult'),
         createPathField('taxonID', 'Observations', ['Species']),
         createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
+      ],
+      add: [
+        {
+          sheetName: 'measurementOrFact',
+          fields: [
+            {
+              columnName: 'eventID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+                }
+              ]
+            },
+            {
+              columnName: 'measurementID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: 'antler-configuration'
+                  }
+                }
+              ]
+            },
+            {
+              columnName: 'occurrenceID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: '12'
+                  }
+                }
+              ]
+            },
+            createValueField('measurementType', 'Antler Configuration'),
+            createValueField('measurementUnit', ''),
+            createValueField('measurementValue', 'unclassified')
+          ]
+        }
       ]
     },
+    // Bulls - Unclassified (static: 13)
+    // sex: Male
+    // life stage: Unknown
+    // configuration: Bulls - Unclassified
     {
       sheetName: 'occurrence',
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Bulls - Unclassified']) }] },
@@ -1040,8 +1137,52 @@ export const mooseGeneralSchema: TransformSchema = {
         createValueField('lifeStage', 'unknown'),
         createPathField('taxonID', 'Observations', ['Species']),
         createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
+      ],
+      add: [
+        {
+          sheetName: 'measurementOrFact',
+          fields: [
+            {
+              columnName: 'eventID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+                }
+              ]
+            },
+            {
+              columnName: 'measurementID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: 'antler-configuration'
+                  }
+                }
+              ]
+            },
+            {
+              columnName: 'occurrenceID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: '13'
+                  }
+                }
+              ]
+            },
+            createValueField('measurementType', 'Antler Configuration'),
+            createValueField('measurementUnit', ''),
+            createValueField('measurementValue', 'unclassified')
+          ]
+        }
       ]
     },
+    // Cow (static: 14)
+    // sex: Female
+    // life stage: Adult
+    // configuration: Cow
     {
       sheetName: 'occurrence',
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Cow']) }] },
@@ -1072,6 +1213,10 @@ export const mooseGeneralSchema: TransformSchema = {
         createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
       ]
     },
+    // Calves (static: 15)
+    // sex: Unknown
+    // life stage: Juvenile
+    // configuration: Calves
     {
       sheetName: 'occurrence',
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Calves']) }] },
@@ -1102,6 +1247,10 @@ export const mooseGeneralSchema: TransformSchema = {
         createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
       ]
     },
+    // Adult Unclassified Sex (static: 16)
+    // sex: Unknown
+    // life stage: Adult
+    // configuration: Adult Unclassified Sex
     {
       sheetName: 'occurrence',
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Adult Unclassified Sex']) }] },
@@ -1132,6 +1281,11 @@ export const mooseGeneralSchema: TransformSchema = {
         createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
       ]
     },
+    // Adult Unclassified Sex (static: 17)
+    // sex: Unknown
+    // life stage: Unknown
+    // configuration: Adult Unclassified Sex
+
     {
       sheetName: 'occurrence',
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Unclassified Age/Sex']) }] },
@@ -2004,4 +2158,4 @@ export const mooseGeneralSchema: TransformSchema = {
   ]
 };
 
-transformSchema('', mooseGeneralSchema);
+transformSchema('Moose_Aerial_General_Recruit_comp_survey_2.0_Test_Data.xlsx', mooseGeneralSchema);

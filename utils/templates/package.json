@@ -28,6 +28,7 @@
     "transform-elk-general": "ts-node ./observations/transform/schema/elk_general_schema.ts",
     "transform-caribou": "ts-node ./observations/transform/schema/caribou_total_count_schema.ts",
     "transform-goat": "ts-node ./observations/transform/schema/goat_total_count_schema.ts",
+    "transform-moose-general": "ts-node ./observations/transform/schema/moose_general_schema.ts",
     "build-summary-moose": "ts-node ./summary/builder/Moose_Summary_Config_Builder.ts",
     "build-summary-caribou": "ts-node ./summary/builder/Caribou_Summary_Config_Builder.ts",
     "build-summary-elk": "ts-node ./summary/builder/Elk_Summary_Config_Builder.ts",

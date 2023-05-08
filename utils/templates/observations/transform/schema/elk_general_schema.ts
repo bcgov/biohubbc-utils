@@ -25,32 +25,6 @@ export const elkGeneralSchema: TransformSchema = {
       foreignKeys: []
     }
   ],
-  dwcMeta: [
-    {
-      sheetName: 'record',
-      primaryKey: ['eventID']
-    },
-    {
-      sheetName: 'event',
-      primaryKey: ['eventID']
-    },
-    {
-      sheetName: 'location',
-      primaryKey: ['eventID']
-    },
-    {
-      sheetName: 'occurrence',
-      primaryKey: ['occurrenceID']
-    },
-    {
-      sheetName: 'organism',
-      primaryKey: ['organismID']
-    },
-    {
-      sheetName: 'measurementOrFact',
-      primaryKey: ['eventID', 'measurementID', 'occurrenceID', 'organismID']
-    }
-  ],
   map: [
     {
       sheetName: 'record',
@@ -1584,6 +1558,32 @@ export const elkGeneralSchema: TransformSchema = {
         createPathField('taxonID', 'Observations', ['Species']),
         createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
       ]
+    }
+  ],
+  dwcMeta: [
+    {
+      sheetName: 'record',
+      primaryKey: ['eventID']
+    },
+    {
+      sheetName: 'event',
+      primaryKey: ['eventID']
+    },
+    {
+      sheetName: 'location',
+      primaryKey: ['eventID']
+    },
+    {
+      sheetName: 'occurrence',
+      primaryKey: ['occurrenceID']
+    },
+    {
+      sheetName: 'organism',
+      primaryKey: ['organismID']
+    },
+    {
+      sheetName: 'measurementOrFact',
+      primaryKey: ['eventID', 'measurementID', 'occurrenceID', 'organismID']
     }
   ]
 };

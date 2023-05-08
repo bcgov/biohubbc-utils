@@ -844,7 +844,7 @@ const mooseGeneralTemplateValidationSchema = {
               'BC RISC Class I Bulls',
               'BC RISC Class II Bulls',
               'BC RISC Class III Bulls',
-              'Oswald (1997)Class I Bulls',
+              'Oswald (1997) Class I Bulls',
               'Oswald (1997) Class II Bulls',
               'Oswald (1997) Class III Bulls',
               'Adult Bulls - Unclassified',
@@ -907,7 +907,7 @@ const mooseGeneralTemplateValidationSchema = {
           validations: mooseSpeciesPickListValidator()
         },
         {
-          name: 'Spike/ Fork Bulls',
+          name: 'Spike/Fork Bulls',
           description: '',
           validations: basicNumericValidator()
         },
@@ -927,7 +927,7 @@ const mooseGeneralTemplateValidationSchema = {
           validations: basicNumericValidator()
         },
         {
-          name: '3 Brow/10 Point Bulls',
+          name: '3 Brow/10 Points Bulls',
           description: '',
           validations: basicNumericValidator()
         },
@@ -963,6 +963,16 @@ const mooseGeneralTemplateValidationSchema = {
         },
         {
           name: 'Oswald (1997) Class III Bulls',
+          description: '',
+          validations: basicNumericValidator()
+        },
+        {
+          name: 'Adult Bulls - Unclassified',
+          description: '',
+          validations: basicNumericValidator()
+        },
+        {
+          name: 'Bulls - Unclassified',
           description: '',
           validations: basicNumericValidator()
         },
@@ -1089,7 +1099,6 @@ const mooseGeneralTemplateValidationSchema = {
           file_required_columns_validator: {
             required_columns: [
               'Study Area',
-              'Population Unit',
               'Block ID/SU ID',
               'UTM Zone',
               'Easting',
@@ -1243,7 +1252,7 @@ const mooseGeneralTemplateValidationSchema = {
 };
 
 fs.writeFile(
-  './validation/schema/moose_general_validation_config_output.json',
+  './observations/validation/schema/moose_general_validation_config_output.json',
   JSON.stringify(mooseGeneralTemplateValidationSchema),
   (err) => {
     // file written successfully
