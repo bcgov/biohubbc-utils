@@ -2020,4 +2020,4 @@ export const mooseTransectSchema: TransformSchema = {
   ]
 };
 
-transformSchema("", mooseTransectSchema);
+transformSchema('', mooseTransectSchema);
