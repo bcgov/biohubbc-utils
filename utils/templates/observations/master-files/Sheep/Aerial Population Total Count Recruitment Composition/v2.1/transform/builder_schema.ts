@@ -1,9 +1,12 @@
-import { transformSchema } from '../transform';
-import { createPathField, createValueField, getValuesByName } from '../xlsx/xlsx-transform-json-path-queries';
-import { TransformSchema } from '../xlsx/xlsx-transform-schema-parser';
+import { transformSchema } from '../../../../../transform/transform';
+import {
+  createPathField,
+  createValueField,
+  getValuesByName
+} from '../../../../../transform/xlsx/xlsx-transform-json-path-queries';
+import { TransformSchema } from '../../../../../transform/xlsx/xlsx-transform-schema-parser';
 
-
-export const sheepTotalCountSchema: TransformSchema = {
+export const schema: TransformSchema = {
   templateMeta: [
     {
       sheetName: 'Observations',
@@ -28,27 +31,6 @@ export const sheepTotalCountSchema: TransformSchema = {
   ],
   map: [
     {
-      sheetName: 'record',
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'basisOfRecord ',
-          columnValue: [
-            {
-              static: 'HumanObservation'
-            }
-          ]
-        }
-      ]
-    },
-    {
       sheetName: 'event',
       fields: [
         {
@@ -72,6 +54,14 @@ export const sheepTotalCountSchema: TransformSchema = {
           columnValue: [
             {
               paths: [getValuesByName('Observations', ['Observation Comments'])]
+            }
+          ]
+        },
+        {
+          columnName: 'basisOfRecord ',
+          columnValue: [
+            {
+              static: 'HumanObservation'
             }
           ]
         }
@@ -165,7 +155,7 @@ export const sheepTotalCountSchema: TransformSchema = {
               columnName: 'eventID',
               columnValue: [
                 {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
                 }
               ]
             },
@@ -1494,4 +1484,4 @@ export const sheepTotalCountSchema: TransformSchema = {
   ]
 };
 
-transformSchema("EastKootenay_Sheep_Aerial_Total_Count_2.0.xlsx", sheepTotalCountSchema);
+transformSchema('Sheep_Aerial_Population_Total_Count_Recuit_Comp_Survey_2.0.xlsx', schema);
