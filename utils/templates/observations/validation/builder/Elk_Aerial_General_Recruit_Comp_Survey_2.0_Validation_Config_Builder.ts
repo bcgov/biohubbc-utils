@@ -171,6 +171,22 @@ const elkGeneralTemplateValidationSchema = {
       ],
       columns: [
         {
+          name: 'Study Area',
+          validations: [
+            {
+              column_required_validator: {}
+            }
+          ]
+        },
+        {
+          name: 'Date',
+          validations: [
+            {
+              column_required_validator: {}
+            }
+          ]
+        },
+        {
           name: 'UTM Zone',
           description: '',
           validations: utmZoneValidator()
@@ -203,7 +219,7 @@ const elkGeneralTemplateValidationSchema = {
         {
           name: 'Species',
           description: '',
-          validations: elkSpeciesValidator()
+          validations: [...elkSpeciesValidator(), { column_required_validator: {} }]
         },
         {
           name: 'BC RISC Yearlings Bulls',
