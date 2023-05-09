@@ -12,13 +12,23 @@ export const transformationSchemaBuilder: TransformSchema = {
       primaryKey: ['Study Area', 'Block ID/SU ID'],
       parentKey: [],
       type: 'root',
-
       foreignKeys: [
         {
           sheetName: 'Marked Animals',
           primaryKey: ['Group Label']
+        },
+        {
+          sheetName: 'Effort & Site Conditions',
+          primaryKey: ['Study Area', 'Population Unit', 'Block ID/SU ID']
         }
       ]
+    },
+    {
+      sheetName: 'Effort & Site Conditions',
+      primaryKey: ['Study Area', 'Population Unit', 'Block ID/SU ID'],
+      parentKey: ['Study Area', 'Population Unit', 'Block ID/SU ID'],
+      type: '',
+      foreignKeys: []
     },
     {
       sheetName: 'Marked Animals',
@@ -45,6 +55,9 @@ export const transformationSchemaBuilder: TransformSchema = {
           columnValue: [
             {
               paths: [getValuesByName('Observations', ['Date'])]
+            },
+            {
+              paths: [getValuesByName('Effort & Site Conditions', ['Date'])]
             }
           ]
         },
@@ -1456,10 +1469,6 @@ export const transformationSchemaBuilder: TransformSchema = {
     }
   ],
   dwcMeta: [
-    {
-      sheetName: 'record',
-      primaryKey: ['eventID']
-    },
     {
       sheetName: 'event',
       primaryKey: ['eventID']

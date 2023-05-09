@@ -25,10 +25,7 @@ export const outputValidationSchema = (template: any, outputName: string) => {
 export const basicNumericValidator = () => {
   return [
     {
-      column_numeric_validator: {
-        name: '',
-        description: ''
-      }
+      column_numeric_validator: {}
     }
   ];
 };
@@ -56,49 +53,10 @@ export const basicRequiredValidator = () => {
   ];
 };
 
-export const sheepSpeciesPickListValidator = () => {
-  return [
-    {
-      column_code_validator: {
-        name: {
-          type: 'string'
-        },
-        description: {
-          type: 'string'
-        },
-        allowed_code_values: [
-          {
-            name: 'M-OVCA',
-            description: 'M-OVCA'
-          },
-          {
-            name: 'M-OVDA',
-            description: 'M-OVDA'
-          },
-          {
-            name: 'M-OVDA-DA',
-            description: 'M-OVDA-DA'
-          },
-          {
-            name: 'M-OVDA-ST',
-            description: 'M-OVDAST'
-          }
-        ]
-      }
-    }
-  ];
-};
-
 export const goatSpeciesPickListValidator = () => {
   return [
     {
       column_code_validator: {
-        name: {
-          type: 'string'
-        },
-        description: {
-          type: 'string'
-        },
         allowed_code_values: [
           {
             name: 'M-ORAM',
@@ -114,12 +72,6 @@ export const targetPickListValidator = () => {
   return [
     {
       column_code_validator: {
-        name: {
-          type: 'string'
-        },
-        description: {
-          type: 'string'
-        },
         allowed_code_values: [
           {
             name: 'Targeted',
@@ -139,12 +91,6 @@ export const frequencyPickListValidator = () => {
   return [
     {
       column_code_validator: {
-        name: {
-          type: 'string'
-        },
-        description: {
-          type: 'string'
-        },
         allowed_code_values: [
           {
             name: 'KHz',
@@ -219,12 +165,6 @@ export const surveyOrTelemetryPickListValidator = () => {
   return [
     {
       column_code_validator: {
-        name: {
-          type: 'string'
-        },
-        description: {
-          type: 'string'
-        },
         allowed_code_values: [
           {
             name: 'Survey',
@@ -244,12 +184,6 @@ export const datumPickListValidator = () => {
   return [
     {
       column_code_validator: {
-        name: {
-          type: 'string'
-        },
-        description: {
-          type: 'string'
-        },
         allowed_code_values: [
           {
             name: 'NAD83',
@@ -273,12 +207,6 @@ export const signTypePickListValidator = () => {
   return [
     {
       column_code_validator: {
-        name: {
-          type: 'string'
-        },
-        description: {
-          type: 'string'
-        },
         allowed_code_values: [
           {
             name: 'Antler',
@@ -362,12 +290,6 @@ export const ageOfSignPickListValidator = () => {
   return [
     {
       column_code_validator: {
-        name: {
-          type: 'string'
-        },
-        description: {
-          type: 'string'
-        },
         allowed_code_values: [
           {
             name: 'New',
@@ -415,12 +337,6 @@ export const aircraftPickListValidator = () => {
   return [
     {
       column_code_validator: {
-        name: {
-          type: 'string'
-        },
-        description: {
-          type: 'string'
-        },
         allowed_code_values: [
           {
             name: 'Bell JetRanger',
@@ -500,12 +416,6 @@ export const observationActivityPickListValidator = () => {
   return [
     {
       column_code_validator: {
-        name: {
-          type: 'string'
-        },
-        description: {
-          type: 'string'
-        },
         allowed_code_values: [
           {
             name: 'Standing',
@@ -541,12 +451,6 @@ export const activityNonTargetedPickListValidator = () => {
   return [
     {
       column_code_validator: {
-        name: {
-          type: 'string'
-        },
-        description: {
-          type: 'string'
-        },
         allowed_code_values: [
           {
             name: 'Alert',
@@ -738,12 +642,6 @@ export const habitatPickListValidator = () => {
   return [
     {
       column_code_validator: {
-        name: {
-          type: 'string'
-        },
-        description: {
-          type: 'string'
-        },
         allowed_code_values: [
           {
             name: 'Alpine',
@@ -1046,16 +944,11 @@ export const habitatPickListValidator = () => {
     }
   ];
 };
+
 export const featureTypePickListValidator = () => {
   return [
     {
       column_code_validator: {
-        name: {
-          type: 'string'
-        },
-        description: {
-          type: 'string'
-        },
         allowed_code_values: [
           {
             name: 'Breeding Site',
@@ -1164,16 +1057,11 @@ export const featureTypePickListValidator = () => {
     }
   ];
 };
+
 export const yesNoPickListValidator = () => {
   return [
     {
       column_code_validator: {
-        name: {
-          type: 'string'
-        },
-        description: {
-          type: 'string'
-        },
         allowed_code_values: [
           {
             name: 'Y',
@@ -1193,12 +1081,6 @@ export const presentAbsentPickListValidator = () => {
   return [
     {
       column_code_validator: {
-        name: {
-          type: 'string'
-        },
-        description: {
-          type: 'string'
-        },
         allowed_code_values: [
           {
             name: 'Present',
@@ -1218,12 +1100,6 @@ export const lightPickListValidator = () => {
   return [
     {
       column_code_validator: {
-        name: {
-          type: 'string'
-        },
-        description: {
-          type: 'string'
-        },
         allowed_code_values: [
           {
             name: 'Bright',
@@ -1236,6 +1112,197 @@ export const lightPickListValidator = () => {
           {
             name: 'Shady',
             description: 'Shady'
+          }
+        ]
+      }
+    }
+  ];
+};
+
+export const activityNonTargettedPickListValidator = () => {
+  return [
+    {
+      column_code_validator: {
+        allowed_code_values: [
+          {
+            name: 'Alert',
+            description: 'Alert'
+          },
+          {
+            name: 'Avoiding Pests',
+            description: 'Avoiding Pests'
+          },
+          {
+            name: 'Basking',
+            description: 'Basking'
+          },
+          {
+            name: 'Bedding',
+            description: 'Bedding'
+          },
+          {
+            name: 'Building',
+            description: 'Building'
+          },
+          {
+            name: 'Cashing',
+            description: 'Cashing'
+          },
+          {
+            name: 'Casting',
+            description: 'Casting'
+          },
+          {
+            name: 'Courting',
+            description: 'Courting'
+          },
+          {
+            name: 'Denning',
+            description: 'Denning'
+          },
+          {
+            name: 'Disturbed',
+            description: 'Disturbed'
+          },
+          {
+            name: 'Drinking',
+            description: 'Drinking'
+          },
+          {
+            name: 'Excreting',
+            description: 'Excreting'
+          },
+          {
+            name: 'Feeding',
+            description: 'Feeding'
+          },
+          {
+            name: 'Fleeing',
+            description: 'Fleeing'
+          },
+          {
+            name: 'Feeding salmonid',
+            description: 'Feeding salmonid'
+          },
+          {
+            name: 'Grooming',
+            description: 'Grooming'
+          },
+          {
+            name: 'Habitat',
+            description: 'Habitat'
+          },
+          {
+            name: 'Hibernating',
+            description: 'Hibernating'
+          },
+          {
+            name: 'Hunting',
+            description: 'Building'
+          },
+          {
+            name: 'Ingesting Minerals',
+            description: 'Ingesting Minerals'
+          },
+          {
+            name: 'Incubating',
+            description: 'Incubating'
+          },
+          {
+            name: 'Living',
+            description: 'Living'
+          },
+          {
+            name: 'Migrating Daily',
+            description: 'Migrating Daily'
+          },
+          {
+            name: 'Migrating Seasonally',
+            description: 'Migrating Seasonally'
+          },
+          {
+            name: 'Reproducing birthing',
+            description: 'Reproducing birthing'
+          },
+          {
+            name: 'Reproducing eggs',
+            description: 'Reproducing eggs'
+          },
+          {
+            name: 'Rearing',
+            description: 'Rearing'
+          },
+          {
+            name: 'Standing',
+            description: 'Standing'
+          },
+          {
+            name: 'Security and/or Thermal',
+            description: 'Security and/or Thermal'
+          },
+          {
+            name: 'Thermal',
+            description: 'Thermal'
+          },
+          {
+            name: 'Territoriality',
+            description: 'Territoriality'
+          },
+          {
+            name: 'Not Traveling',
+            description: 'Not Traveling'
+          },
+          {
+            name: 'Traveling, Flying',
+            description: 'Traveling flying'
+          },
+          {
+            name: 'Traveling, Unclassified',
+            description: 'Traveling, Unclassified'
+          },
+          {
+            name: 'Traveling, Walking',
+            description: 'Traveling, Walking'
+          },
+          {
+            name: 'Traveling on a Path',
+            description: 'Traveling on a Path'
+          },
+          {
+            name: 'Traveling, Running',
+            description: 'Traveling running'
+          },
+          {
+            name: 'Traveling, Swimming',
+            description: 'Traveling, Swimming'
+          },
+          {
+            name: 'Traveling, Heli-Skiing',
+            description: 'Traveling, Heli-Skiing'
+          },
+          {
+            name: 'Traveling, Skiing',
+            description: 'Traveling, Skiing'
+          },
+          {
+            name: 'Traveling, Snowmobiling',
+            description: 'Traveling, Snowmobiling'
+          },
+          {
+            name: 'Traveling, Snowshoeing',
+            description: 'Traveling, Snowshoeing'
+          },
+          {
+            name: 'Traveling, Snow Cat',
+            description: 'Traveling, Snow Cat'
+          },
+          {
+            name: 'Urinating',
+            description: 'Urinating'
+          },
+          {
+            name: 'Described in comments',
+            description: 'Described in comments'
           }
         ]
       }

@@ -4,12 +4,12 @@ SET SCHEMA 'biohub';
 DO $$
 DECLARE
     _template_id integer; -- set after template is created
-    _template_name varchar := 'Goat Aerial Population Total Count Recruitment Composition Survey';
-    _template_version varchar := '2.0';
-    _template_description varchar := 'Goat Aerial Population Total Count Recruitment Composition Survey';
+    _template_name varchar := '___TEMPLATE_NAME___';
+    _template_version varchar := '___TEMPLATE_VERSION___';
+    _template_description varchar := '___TEMPLATE_DESCRIPTION___';
     _field_method_name varchar := null;
 
-    _taxonomy_ids integer[] := array[2062]; -- wild taxonomic IDs from elastic search
+    _taxonomy_ids integer[] := array[___TAXON_IDS___]; -- wild taxonomic IDs from elastic search
     _taxonomy_id integer; -- used as an index in the loop, do not set
     _validation_schema varchar := $v_s${___VALIDATION_CONFIG___}$v_s$;
     _transformation_schema varchar := $v_s$___TRANSFORMATION_CONFIG___$v_s$;
