@@ -15,7 +15,20 @@ export async function build(): Promise<void> {
 
   await updateSQL([
     { replaceValue: validateConfig, replaceToken: '___VALIDATION_CONFIG___' },
-    { replaceValue: transformConfig, replaceToken: '___TRANSFORMATION_CONFIG___' }
+    { replaceValue: transformConfig, replaceToken: '___TRANSFORMATION_CONFIG___' },
+    {
+      replaceValue: 'Goat Aerial Population Total Count Recruitment Composition Survey',
+      replaceToken: '___TEMPLATE_NAME___'
+    },
+    { replaceValue: '2.0', replaceToken: '___TEMPLATE_VERSION___' },
+    {
+      replaceValue: 'Goat Aerial Population Total Count Recruitment Composition Survey',
+      replaceToken: '___TEMPLATE_DESCRIPTION___'
+    },
+    {
+      replaceValue: '2062',
+      replaceToken: '___TAXON_IDS___'
+    }
   ]);
 }
 
@@ -66,7 +79,7 @@ async function build_validation_config(): Promise<string> {
  * @return {*}  {Promise<void>}
  */
 async function updateSQL(operations: { replaceValue: string; replaceToken: string }[]): Promise<void> {
-  const inputPath = path.resolve(__dirname, './sql/upsert_builder.sql');
+  const inputPath = path.resolve(__dirname, './sql/upsert_template.sql');
   const outputPath = path.resolve(__dirname, './sql/upsert.sql');
 
   await fs.readFile(inputPath, function (error, data) {
