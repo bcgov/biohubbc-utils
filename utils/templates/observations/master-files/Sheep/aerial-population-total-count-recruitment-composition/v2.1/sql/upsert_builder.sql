@@ -11,8 +11,8 @@ DECLARE
 
     _taxonomy_ids integer[] := array[2062]; -- wild taxonomic IDs from elastic search
     _taxonomy_id integer; -- used as an index in the loop, do not set
-    _validation_schema varchar := $v_s$ /* TODO */ $v_s$;
-    _transformation_schema varchar := $v_s$ /* TODO */ $v_s$;
+    _validation_schema varchar := $v_s${___VALIDATION_CONFIG___}$v_s$;
+    _transformation_schema varchar := $v_s$___TRANSFORMATION_CONFIG___$v_s$;
 BEGIN
   INSERT INTO
     template (name, version, record_effective_date, description)

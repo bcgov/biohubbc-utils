@@ -1,4 +1,3 @@
-import { transformSchema } from '../../../../../transform/transform';
 import {
   createPathField,
   createValueField,
@@ -6,7 +5,7 @@ import {
 } from '../../../../../transform/xlsx/xlsx-transform-json-path-queries';
 import { TransformSchema } from '../../../../../transform/xlsx/xlsx-transform-schema-parser';
 
-export const schema: TransformSchema = {
+export const transformationSchemaBuilder: TransformSchema = {
   templateMeta: [
     {
       sheetName: 'Observations',
@@ -1484,4 +1483,4 @@ export const schema: TransformSchema = {
   ]
 };
 
-transformSchema('Sheep_Aerial_Population_Total_Count_Recuit_Comp_Survey_2.0.xlsx', schema);
+export default transformationSchemaBuilder;
