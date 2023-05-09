@@ -56,39 +56,6 @@ export const basicRequiredValidator = () => {
   ];
 };
 
-export const sheepSpeciesPickListValidator = () => {
-  return [
-    {
-      column_code_validator: {
-        name: {
-          type: 'string'
-        },
-        description: {
-          type: 'string'
-        },
-        allowed_code_values: [
-          {
-            name: 'M-OVCA',
-            description: 'M-OVCA'
-          },
-          {
-            name: 'M-OVDA',
-            description: 'M-OVDA'
-          },
-          {
-            name: 'M-OVDA-DA',
-            description: 'M-OVDA-DA'
-          },
-          {
-            name: 'M-OVDA-ST',
-            description: 'M-OVDAST'
-          }
-        ]
-      }
-    }
-  ];
-};
-
 export const goatSpeciesPickListValidator = () => {
   return [
     {
