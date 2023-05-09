@@ -1,50 +1,10 @@
 import * as fs from 'fs';
-
-const basicNumericValidator = () => {
-  return [
-    {
-      column_numeric_validator: {
-        name: '',
-        description: ''
-      }
-    }
-  ];
-};
-
-const eastingValidator = () => {
-  return [
-    {
-      column_format_validator: {
-        reg_exp: '^[0-9]{6,6}$',
-        reg_exp_flags: 'g',
-        expected_format: 'Easting needs to be a 6 digit number. For example: 123456.'
-      }
-    }
-  ];
-};
-
-const northingValidator = () => {
-  return [
-    {
-      column_format_validator: {
-        reg_exp: '^[0-9]{7,7}$',
-        reg_exp_flags: 'g',
-        expected_format: 'Northing needs to be a 7 digit number. For example: 1234567.'
-      }
-    }
-  ];
-};
-
-const utmZoneValidator = () => {
-  return [
-    {
-      column_range_validator: {
-        min_value: 7,
-        max_value: 11
-      }
-    }
-  ];
-};
+import {
+  basicNumericValidator,
+  eastingValidator,
+  northingValidator,
+  utmZoneValidator
+} from '../../../helper/validation-config-helpers';
 
 const mooseSpeciesPickListValidator = () => {
   return [
@@ -797,7 +757,45 @@ const mooseTransectTemplateValidationSchema = {
         },
         {
           file_required_columns_validator: {
-            required_columns: ['Study Area']
+            required_columns: [
+              'Study Area',
+              'Block ID/SU ID',
+              'Total Distance Flown (km)',
+              'Date',
+              'Start Time 1 (24hrs)',
+              'End Time 1 (24hrs)',
+              'Start Time 2 (24hrs)',
+              'End Time 2 (24hrs)',
+              'Start Time 3 (24hrs)',
+              'End Time 3 (24hrs)',
+              'Total Block Time',
+              'Total Time (hours)',
+              'Total Time (mins)',
+              'Time (mins)/block area (km2)',
+              'Aircraft Company',
+              'Aircraft Type',
+              'Pilot',
+              'Navigator',
+              'Rear Left Observer',
+              'Rear Right Observer',
+              'Air Temperature (C)',
+              'Visibility',
+              'Cloud Cover (%)',
+              'Wind Speed',
+              'Precipitation',
+              'Light',
+              'Snow Cover',
+              'Snow Depth',
+              'Days Since Snowfall',
+              'Weather Description',
+              'Habitat Description',
+              'Effort & Site Comments'
+            ]
+          }
+        },
+        {
+          file_column_unique_validator: {
+            column_names: ['Study Area', 'Block ID/SU ID', 'Date', 'Start Time 1 (24hrs)']
           }
         }
       ],
@@ -823,7 +821,53 @@ const mooseTransectTemplateValidationSchema = {
         },
         {
           file_required_columns_validator: {
-            required_columns: ['Study Area', 'Block ID/SU ID', 'Date', 'Species']
+            required_columns: [
+              'Study Area',
+              'Block ID/SU ID',
+              'Transect ID',
+              'UTM Zone',
+              'Easting',
+              'Northing',
+              'Datum',
+              'Lat (DD)',
+              'Long (DD)',
+              'Perpendicular Distance From Transect Line (m)',
+              'Group Label',
+              'Date',
+              'Time',
+              'Species',
+              'Spike/Fork Bulls',
+              'Sub-Prime Bulls',
+              'Prime Bulls',
+              'Senior Bulls',
+              '3 Brow/10 Points Bulls',
+              'BC RISC Yearling Bulls',
+              'BC RISC Class I Bulls',
+              'BC RISC Class II Bulls',
+              'BC RISC Class III Bulls',
+              'Oswald (1997) Class I Bulls',
+              'Oswald (1997) Class II Bulls',
+              'Oswald (1997) Class III Bulls',
+              'Adult Bulls - Unclassified',
+              'Bulls - Unclassified',
+              'Cow',
+              'Calves',
+              'Adult Unclassified Sex',
+              'Unclassified Age/Sex',
+              'Total Count',
+              'Cow W/1 calf',
+              'Cow W/2 calves',
+              'Sign Type',
+              'Sign Count',
+              'Age of Sign',
+              'Veg Cover (%)',
+              'Snow Cover (%)',
+              'Activity',
+              'Number of Marked Animals Observed',
+              'Survey or Telemetry Search',
+              'Photos',
+              'Observation Comments'
+            ]
           }
         }
       ],
@@ -1009,7 +1053,21 @@ const mooseTransectTemplateValidationSchema = {
         },
         {
           file_required_columns_validator: {
-            required_columns: []
+            required_columns: [
+              'Group Label',
+              'Date',
+              'Targeted or Non-Targeted',
+              'Wildlife Health ID',
+              'Animal ID',
+              'Telemetry Device ID',
+              'Collar/Tag Frequency',
+              'Frequency Unit',
+              'Right Ear Tag ID',
+              'Right Ear Tag Colour',
+              'Left Ear Tag ID',
+              'Left Ear Tag Colour',
+              'Marked Animals Comments'
+            ]
           }
         }
       ],
@@ -1035,7 +1093,36 @@ const mooseTransectTemplateValidationSchema = {
         },
         {
           file_required_columns_validator: {
-            required_columns: []
+            required_columns: [
+              'Study Area',
+              'Block ID/SU ID',
+              'Transect ID',
+              'UTM Zone',
+              'Easting',
+              'Northing',
+              'Datum',
+              'Lat (DD)',
+              'Long (DD)',
+              'Date',
+              'Species',
+              'Adult Males',
+              'Adult Females',
+              'Adults - Unclassified Sex',
+              'Juvenile Males',
+              'Juvenile Females',
+              'Juveniles - Unclassified Sex',
+              'Unknown Age/Sex',
+              'Total Count',
+              'Species Occurrence Status',
+              'Activity',
+              'Activity Count',
+              'Feature Type',
+              'Feature Type Count',
+              'Sign Type',
+              'Sign Count',
+              'Photos',
+              'Incidental Observation Comments'
+            ]
           }
         }
       ],
@@ -1153,8 +1240,8 @@ const mooseTransectTemplateValidationSchema = {
   workbookValidations: [
     {
       workbook_parent_child_key_match_validator: {
-        parent_worksheet_name: 'Observations',
         child_worksheet_name: 'Marked Animals',
+        parent_worksheet_name: 'Observations',
         column_names: ['Group Label']
       }
     }
@@ -1162,16 +1249,16 @@ const mooseTransectTemplateValidationSchema = {
 };
 
 fs.writeFile(
-  './validation/schema/moose_transect_validation_config_output.json',
+  './observations/validation/schema/moose_transect_validation_config_output.json',
   JSON.stringify(mooseTransectTemplateValidationSchema),
   (err) => {
     // file written successfully
 
     if (err) {
-    console.log('Oops');
-    console.log(err)
-  } else {
-    console.log('All Done!');
-  }
+      console.log('Oops');
+      console.log(err);
+    } else {
+      console.log('All Done!');
+    }
   }
 );

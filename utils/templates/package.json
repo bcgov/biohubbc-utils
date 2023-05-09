@@ -17,10 +17,13 @@
 
     "master-build-validation-elk-srb": "ts-node ./observations/master-files/Elk/SRB/Elk_Aerial_SRB_Recruit_Comp_Survey_2.0_Validation_Config_Builder.ts",
     "master-transform-elk-srb": "ts-node ./observations/master-files/Elk/SRB/elk_srb_schema.ts",
-
     "build-validation-moose-general": "ts-node ./observations/validation/builder/Moose_Aerial_General_Recruit_comp_Survey_2.0_Validation_Config_Builder.ts",
     "build-validation-moose-srb": "ts-node ./observations/validation/builder/Moose_Aerial_StratifiedRandomBlock_Recruit_Comp_Survey_2.0_Validation_Config_Builder.ts",
+
     "build-validation-moose-transect": "ts-node ./observations/validation/builder/Moose_Aerial_Transect_Distance_Sampling_Survey_2.0_Validation_Config_Builder.ts",
+    "transform-moose-transect": "ts-node ./observations/transform/schema/moose_transect_schema.ts",
+
+
     "build-validation-sheep": "ts-node ./observations/validation/builder/Sheep_2.0_Validation_Config_Builder.ts",
     "build-validation-goat": "ts-node ./observations/validation/builder/Goat_2.0_Validation_Config_Builder.ts",
     "build-validation-caribou": "ts-node ./observations/validation/builder/Caribou_1.0_Validation_Config_Builder.ts",

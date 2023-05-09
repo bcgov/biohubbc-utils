@@ -1,49 +1,17 @@
 ﻿eventID,basisOfRecord 
-8-9:22:0,HumanObservation
-8-9:22:1,HumanObservation
-8-9:23:2,HumanObservation
-8-9:23:3,HumanObservation
-8-9:23:4,HumanObservation
-8-9:23:5,HumanObservation
-8-9:26:6,HumanObservation
-8-9:26:7,HumanObservation
-8-9:26:8,HumanObservation
-8-9:26:9,HumanObservation
-8-9:26:10,HumanObservation
-8-9:26:11,HumanObservation
-8-9:26:12,HumanObservation
-8-9:26:13,HumanObservation
-8-9:26:14,HumanObservation
-8-9:27:15,HumanObservation
-8-9:27:16,HumanObservation
-8-9:27:17,HumanObservation
-8-9:27:18,HumanObservation
-8-9:29:19,HumanObservation
-8-9:33:20,HumanObservation
-8-9:33:21,HumanObservation
-8-9:33:22,HumanObservation
-8-9:33:23,HumanObservation
-8-9:33:24,HumanObservation
-8-9:33:25,HumanObservation
-8-9:33:26,HumanObservation
-8-9:33:27,HumanObservation
-8-9:35:28,HumanObservation
-8-9:35:29,HumanObservation
-8-9:35:30,HumanObservation
-8-9:35:31,HumanObservation
-8-9:35:32,HumanObservation
-8-9:35:33,HumanObservation
-8-9:28:34,HumanObservation
-8-9:4:35,HumanObservation
-8-9:4:36,HumanObservation
-8-9:9:37,HumanObservation
-8-9:9:38,HumanObservation
-8-9:9:39,HumanObservation
-8-9:6:40,HumanObservation
-8-9:7:41,HumanObservation
-8-9:7:42,HumanObservation
-8-9:7:43,HumanObservation
-8-9:17:44,HumanObservation
-8-9:17:45,HumanObservation
-8-9:17:46,HumanObservation
-8-9:17:47,HumanObservation
+MU 749:Lowland:1:0,HumanObservation
+MU 749:Lowland:2:1,HumanObservation
+MU 749:Lowland:3:2,HumanObservation
+MU 749:Lowland:4:3,HumanObservation
+MU 749:Lowland:4:4,HumanObservation
+MU 749:Lowland:5:5,HumanObservation
+MU 749:Lowland:6:6,HumanObservation
+MU 749:Lowland:7:7,HumanObservation
+MU 749:Lowland:8:8,HumanObservation
+MU 749:Upland:9:9,HumanObservation
+MU 749:Upland:10:10,HumanObservation
+MU 749:Upland:11:11,HumanObservation
+MU 749:Upland:12:12,HumanObservation
+MU 749:Upland:12:13,HumanObservation
+MU 749:Upland:13:14,HumanObservation
+MU 749:Upland:14:15,HumanObservation

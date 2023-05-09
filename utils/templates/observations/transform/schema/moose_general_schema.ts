@@ -1285,7 +1285,6 @@ export const mooseGeneralSchema: TransformSchema = {
     // sex: Unknown
     // life stage: Unknown
     // configuration: Adult Unclassified Sex
-
     {
       sheetName: 'occurrence',
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Unclassified Age/Sex']) }] },
