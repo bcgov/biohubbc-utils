@@ -1470,10 +1470,6 @@ export const transformationSchemaBuilder: TransformSchema = {
   ],
   dwcMeta: [
     {
-      sheetName: 'record',
-      primaryKey: ['eventID']
-    },
-    {
       sheetName: 'event',
       primaryKey: ['eventID']
     },
