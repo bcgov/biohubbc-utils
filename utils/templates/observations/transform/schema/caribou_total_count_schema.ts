@@ -158,6 +158,46 @@ export const caribouTotalCountchema: TransformSchema = {
         createValueField('lifeStage', 'adult'),
         createPathField('taxonID', 'Observations', ['Species']),
         createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
+      ],
+      add: [
+        {
+          sheetName: 'measurementOrFact',
+          fields: [
+            {
+              columnName: 'eventID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+                }
+              ]
+            },
+            {
+              columnName: 'measurementID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: 'antler-configuration'
+                  }
+                }
+              ]
+            },
+            {
+              columnName: 'occurrenceID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: '0'
+                  }
+                }
+              ]
+            },
+            createValueField('measurementType', 'Antler Configuration'),
+            createValueField('measurementUnit', ''),
+            createValueField('measurementValue', 'unclassified')
+          ]
+        }
       ]
     },
     //Adult Females(static:1)
@@ -440,6 +480,46 @@ export const caribouTotalCountchema: TransformSchema = {
         createValueField('lifeStage', 'unknown'),
         createPathField('taxonID', 'Observations', ['Species']),
         createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
+      ],
+      add: [
+        {
+          sheetName: 'measurementOrFact',
+          fields: [
+            {
+              columnName: 'eventID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+                }
+              ]
+            },
+            {
+              columnName: 'measurementID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: 'antler-configuration'
+                  }
+                }
+              ]
+            },
+            {
+              columnName: 'occurrenceID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: '8'
+                  }
+                }
+              ]
+            },
+            createValueField('measurementType', 'Antler Configuration'),
+            createValueField('measurementUnit', ''),
+            createValueField('measurementValue', 'unclassified')
+          ]
+        }
       ]
     },
     //Females - Unclassified Life Stage (static: 9)
@@ -2228,4 +2308,7 @@ export const caribouTotalCountchema: TransformSchema = {
   ]
 };
 
-transformSchema("Central Selkirks Caribou_Aerial_Population_Total_Count_Recuit_Comp_Survey_1.0.xlsx", caribouTotalCountchema)
+transformSchema(
+  'Central Selkirks Caribou_Aerial_Population_Total_Count_Recuit_Comp_Survey_1.0.xlsx',
+  caribouTotalCountchema
+);

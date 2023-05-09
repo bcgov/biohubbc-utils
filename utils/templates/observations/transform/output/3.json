@@ -2,1440 +2,657 @@
   {
     "record": [
       {
-        "eventID": "MU 749:Lowland:1:0",
+        "eventID": "Central Selkirks:4-23:0",
         "basisOfRecord ": "HumanObservation"
       }
     ],
     "event": [
       {
-        "eventID": "MU 749:Lowland:1:0",
-        "eventDate": "31/Jan/16",
-        "eventRemarks": ""
+        "eventID": "Central Selkirks:4-23:0",
+        "eventDate": "16-Mar-19",
+        "eventRemarks": "Looked Health"
       }
     ],
     "location": [
       {
-        "eventID": "MU 749:Lowland:1:0",
-        "verbatimCoordinates": "59.212853 -123.488743",
-        "decimalLatitude": "59.212853",
-        "decimalLongitude": "-123.488743",
-        "verbatimSRS": ""
+        "eventID": "Central Selkirks:4-23:0",
+        "verbatimCoordinates": "11 493420 5589669",
+        "decimalLatitude": "",
+        "decimalLongitude": "",
+        "verbatimSRS": "NAD83"
       }
     ],
     "occurrence": [
       {
-        "eventID": "MU 749:Lowland:1:0",
-        "occurrenceID": "MU 749:Lowland:1:0:13",
-        "individualCount": "2",
-        "sex": "male",
-        "lifeStage": "unknown",
-        "taxonID": "M-ALAM",
-        "occurrenceRemarks": ""
+        "eventID": "Central Selkirks:4-23:0",
+        "occurrenceID": "Central Selkirks:4-23:0:2",
+        "individualCount": "7",
+        "sex": "unknown",
+        "lifeStage": "adult",
+        "taxonID": "M-RATA",
+        "occurrenceRemarks": "Looked Health"
+      },
+      {
+        "eventID": "Central Selkirks:4-23:0",
+        "occurrenceID": "Central Selkirks:4-23:0:4",
+        "individualCount": "1",
+        "sex": "unknown",
+        "lifeStage": "juvenile",
+        "taxonID": "M-RATA",
+        "occurrenceRemarks": "Looked Health"
+      }
+    ],
+    "organism": [
+      {
+        "eventID": "Central Selkirks:4-23:0",
+        "organismID": "3636:35463:35365:0",
+        "organismRemarks": "Collar to tight"
       }
     ],
     "measurementOrFact": [
       {
-        "eventID": "MU 749:Lowland:1:0",
-        "measurementID": "MU 749:Lowland:1:0:study-area",
+        "eventID": "Central Selkirks:4-23:0",
+        "measurementID": "Central Selkirks:4-23:0:study-area",
         "measurementType": "Study Area",
         "measurementUnit": "",
-        "measurementValue": "MU 749"
+        "measurementValue": "Central Selkirks"
       },
       {
-        "eventID": "MU 749:Lowland:1:0",
-        "measurementID": "MU 749:Lowland:1:0:block-id/su-id",
+        "eventID": "Central Selkirks:4-23:0",
+        "measurementID": "Central Selkirks:4-23:0:block-id/su-id",
         "measurementType": "Block ID/SU ID",
         "measurementUnit": "",
-        "measurementValue": "Lowland"
+        "measurementValue": "4-23"
       },
       {
-        "eventID": "MU 749:Lowland:1:0",
-        "measurementID": "MU 749:Lowland:1:0:perpendicular-distance-from-transect-line",
-        "measurementType": "Perpendicular Distance From Transect Line",
-        "measurementUnit": "m",
-        "measurementValue": "140.0"
-      },
-      {
-        "eventID": "MU 749:Lowland:1:0",
-        "measurementID": "MU 749:Lowland:1:0:group-label",
+        "eventID": "Central Selkirks:4-23:0",
+        "measurementID": "Central Selkirks:4-23:0:group-label",
         "measurementType": "Group Label",
         "measurementUnit": "",
         "measurementValue": "1"
       },
       {
-        "eventID": "MU 749:Lowland:1:0",
-        "measurementID": "MU 749:Lowland:1:0:veg-cover",
+        "eventID": "Central Selkirks:4-23:0",
+        "measurementID": "Central Selkirks:4-23:0:veg-cover",
         "measurementType": "Veg Cover",
         "measurementUnit": "%",
-        "measurementValue": "2"
+        "measurementValue": "10"
       },
       {
-        "eventID": "MU 749:Lowland:1:0",
-        "measurementID": "MU 749:Lowland:1:0:activity",
-        "measurementType": "Activity",
-        "measurementUnit": "",
-        "measurementValue": "Bedding"
-      },
-      {
-        "eventID": "MU 749:Lowland:1:0",
-        "measurementID": "MU 749:Lowland:1:0:survey-or-telemetry-search",
-        "measurementType": "Survey or Telemetry Search",
-        "measurementUnit": "",
-        "measurementValue": "Survey"
-      },
-      {
-        "eventID": "MU 749:Lowland:1:0",
-        "measurementID": "MU 749:Lowland:1:0:antler-configuration",
-        "occurrenceID": "MU 749:Lowland:1:0:13",
-        "measurementType": "Antler Configuration",
-        "measurementUnit": "",
-        "measurementValue": "unclassified"
-      }
-    ]
-  },
-  {
-    "record": [
-      {
-        "eventID": "MU 749:Lowland:2:1",
-        "basisOfRecord ": "HumanObservation"
-      }
-    ],
-    "event": [
-      {
-        "eventID": "MU 749:Lowland:2:1",
-        "eventDate": "31/Jan/16",
-        "eventRemarks": ""
-      }
-    ],
-    "location": [
-      {
-        "eventID": "MU 749:Lowland:2:1",
-        "verbatimCoordinates": "59.217152 -123.532102",
-        "decimalLatitude": "59.217152",
-        "decimalLongitude": "-123.532102",
-        "verbatimSRS": ""
-      }
-    ],
-    "occurrence": [
-      {
-        "eventID": "MU 749:Lowland:2:1",
-        "occurrenceID": "MU 749:Lowland:2:1:14",
-        "individualCount": "1",
-        "sex": "female",
-        "lifeStage": "adult",
-        "taxonID": "M-ALAM",
-        "occurrenceRemarks": ""
-      }
-    ],
-    "measurementOrFact": [
-      {
-        "eventID": "MU 749:Lowland:2:1",
-        "measurementID": "MU 749:Lowland:2:1:study-area",
-        "measurementType": "Study Area",
-        "measurementUnit": "",
-        "measurementValue": "MU 749"
-      },
-      {
-        "eventID": "MU 749:Lowland:2:1",
-        "measurementID": "MU 749:Lowland:2:1:block-id/su-id",
-        "measurementType": "Block ID/SU ID",
-        "measurementUnit": "",
-        "measurementValue": "Lowland"
-      },
-      {
-        "eventID": "MU 749:Lowland:2:1",
-        "measurementID": "MU 749:Lowland:2:1:perpendicular-distance-from-transect-line",
-        "measurementType": "Perpendicular Distance From Transect Line",
-        "measurementUnit": "m",
-        "measurementValue": "350.0"
-      },
-      {
-        "eventID": "MU 749:Lowland:2:1",
-        "measurementID": "MU 749:Lowland:2:1:group-label",
-        "measurementType": "Group Label",
-        "measurementUnit": "",
-        "measurementValue": "2"
-      },
-      {
-        "eventID": "MU 749:Lowland:2:1",
-        "measurementID": "MU 749:Lowland:2:1:veg-cover",
-        "measurementType": "Veg Cover",
+        "eventID": "Central Selkirks:4-23:0",
+        "measurementID": "Central Selkirks:4-23:0:snow-cover",
+        "measurementType": "Snow Cover",
         "measurementUnit": "%",
-        "measurementValue": "5"
+        "measurementValue": "100"
       },
       {
-        "eventID": "MU 749:Lowland:2:1",
-        "measurementID": "MU 749:Lowland:2:1:activity",
-        "measurementType": "Activity",
-        "measurementUnit": "",
-        "measurementValue": "Bedding"
-      },
-      {
-        "eventID": "MU 749:Lowland:2:1",
-        "measurementID": "MU 749:Lowland:2:1:survey-or-telemetry-search",
-        "measurementType": "Survey or Telemetry Search",
-        "measurementUnit": "",
-        "measurementValue": "Survey"
-      }
-    ]
-  },
-  {
-    "record": [
-      {
-        "eventID": "MU 749:Lowland:3:2",
-        "basisOfRecord ": "HumanObservation"
-      }
-    ],
-    "event": [
-      {
-        "eventID": "MU 749:Lowland:3:2",
-        "eventDate": "31/Jan/16",
-        "eventRemarks": ""
-      }
-    ],
-    "location": [
-      {
-        "eventID": "MU 749:Lowland:3:2",
-        "verbatimCoordinates": "59.214069 -123.244385",
-        "decimalLatitude": "59.214069",
-        "decimalLongitude": "-123.244385",
-        "verbatimSRS": ""
-      }
-    ],
-    "occurrence": [
-      {
-        "eventID": "MU 749:Lowland:3:2",
-        "occurrenceID": "MU 749:Lowland:3:2:14",
-        "individualCount": "1",
-        "sex": "female",
-        "lifeStage": "adult",
-        "taxonID": "M-ALAM",
-        "occurrenceRemarks": ""
-      },
-      {
-        "eventID": "MU 749:Lowland:3:2",
-        "occurrenceID": "MU 749:Lowland:3:2:15",
-        "individualCount": "1",
-        "sex": "unknown",
-        "lifeStage": "juvenile",
-        "taxonID": "M-ALAM",
-        "occurrenceRemarks": ""
-      }
-    ],
-    "organism": [
-      {
-        "eventID": "MU 749:Lowland:3:2",
-        "organismID": "16-00001:MF001:6A7981:0",
-        "organismRemarks": ""
-      }
-    ],
-    "measurementOrFact": [
-      {
-        "eventID": "MU 749:Lowland:3:2",
-        "measurementID": "MU 749:Lowland:3:2:study-area",
-        "measurementType": "Study Area",
-        "measurementUnit": "",
-        "measurementValue": "MU 749"
-      },
-      {
-        "eventID": "MU 749:Lowland:3:2",
-        "measurementID": "MU 749:Lowland:3:2:block-id/su-id",
-        "measurementType": "Block ID/SU ID",
-        "measurementUnit": "",
-        "measurementValue": "Lowland"
-      },
-      {
-        "eventID": "MU 749:Lowland:3:2",
-        "measurementID": "MU 749:Lowland:3:2:perpendicular-distance-from-transect-line",
-        "measurementType": "Perpendicular Distance From Transect Line",
-        "measurementUnit": "m",
-        "measurementValue": "8.6"
-      },
-      {
-        "eventID": "MU 749:Lowland:3:2",
-        "measurementID": "MU 749:Lowland:3:2:group-label",
-        "measurementType": "Group Label",
-        "measurementUnit": "",
-        "measurementValue": "3"
-      },
-      {
-        "eventID": "MU 749:Lowland:3:2",
-        "measurementID": "MU 749:Lowland:3:2:veg-cover",
-        "measurementType": "Veg Cover",
-        "measurementUnit": "%",
-        "measurementValue": "60"
-      },
-      {
-        "eventID": "MU 749:Lowland:3:2",
-        "measurementID": "MU 749:Lowland:3:2:activity",
+        "eventID": "Central Selkirks:4-23:0",
+        "measurementID": "Central Selkirks:4-23:0:activity",
         "measurementType": "Activity",
         "measurementUnit": "",
         "measurementValue": "Standing"
       },
       {
-        "eventID": "MU 749:Lowland:3:2",
-        "measurementID": "MU 749:Lowland:3:2:number-of-marked-animals-observed",
+        "eventID": "Central Selkirks:4-23:0",
+        "measurementID": "Central Selkirks:4-23:0:elevation-observation",
+        "measurementType": "Elevation (m) of Observation",
+        "measurementUnit": "",
+        "measurementValue": "1200"
+      },
+      {
+        "eventID": "Central Selkirks:4-23:0",
+        "measurementID": "Central Selkirks:4-23:0:habitat",
+        "measurementType": "Habitat",
+        "measurementUnit": "",
+        "measurementValue": "Alpine"
+      },
+      {
+        "eventID": "Central Selkirks:4-23:0",
+        "measurementID": "Central Selkirks:4-23:0:number-of-marked-animals-observed",
         "measurementType": "Number of Marked Animals Observed",
         "measurementUnit": "",
         "measurementValue": "1"
       },
       {
-        "eventID": "MU 749:Lowland:3:2",
-        "measurementID": "MU 749:Lowland:3:2:survey-or-telemetry-search",
+        "eventID": "Central Selkirks:4-23:0",
+        "measurementID": "Central Selkirks:4-23:0:survey-or-telemetry-search",
         "measurementType": "Survey or Telemetry Search",
         "measurementUnit": "",
         "measurementValue": "Survey"
       },
       {
-        "eventID": "MU 749:Lowland:3:2",
-        "organismID": "16-00001:MF001:6A7981:0",
-        "measurementID": "16-00001:MF001:6A7981:0:wildlife-health-id",
+        "eventID": "Central Selkirks:4-23:0",
+        "measurementID": "Central Selkirks:4-23:0:photos",
+        "measurementType": "Photos",
+        "measurementUnit": "",
+        "measurementValue": "4-8"
+      },
+      {
+        "eventID": "Central Selkirks:4-23:0",
+        "organismID": "3636:35463:35365:0",
+        "measurementID": "3636:35463:35365:0:wildlife-health-id",
         "measurementType": "Wildlife Health ID",
         "measurementUnit": "",
-        "measurementValue": "16-00001"
+        "measurementValue": "3636"
       },
       {
-        "eventID": "MU 749:Lowland:3:2",
-        "organismID": "16-00001:MF001:6A7981:0",
-        "measurementID": "16-00001:MF001:6A7981:0:animal-id",
+        "eventID": "Central Selkirks:4-23:0",
+        "organismID": "3636:35463:35365:0",
+        "measurementID": "3636:35463:35365:0:animal-id",
         "measurementType": "Animal ID",
         "measurementUnit": "",
-        "measurementValue": "MF001"
+        "measurementValue": "35463"
       },
       {
-        "eventID": "MU 749:Lowland:3:2",
-        "organismID": "16-00001:MF001:6A7981:0",
-        "measurementID": "16-00001:MF001:6A7981:0:telemetry-device-id",
+        "eventID": "Central Selkirks:4-23:0",
+        "organismID": "3636:35463:35365:0",
+        "measurementID": "3636:35463:35365:0:telemetry-device-id",
         "measurementType": "Telemetry Device ID",
         "measurementUnit": "",
-        "measurementValue": "6A7981"
+        "measurementValue": "35365"
       },
       {
-        "eventID": "MU 749:Lowland:3:2",
-        "organismID": "16-00001:MF001:6A7981:0",
-        "measurementID": "16-00001:MF001:6A7981:0:collar/tag-frequency",
+        "eventID": "Central Selkirks:4-23:0",
+        "organismID": "3636:35463:35365:0",
+        "measurementID": "3636:35463:35365:0:collar/tag-frequency",
         "measurementType": "Collar/Tag Frequency",
-        "measurementUnit": "KHz",
-        "measurementValue": "151.002"
+        "measurementUnit": "MHz",
+        "measurementValue": "114.34"
+      },
+      {
+        "eventID": "Central Selkirks:4-23:0",
+        "organismID": "3636:35463:35365:0",
+        "measurementID": "3636:35463:35365:0:right-ear-tag-id",
+        "measurementType": "Right Ear Tag ID",
+        "measurementUnit": "",
+        "measurementValue": "04"
+      },
+      {
+        "eventID": "Central Selkirks:4-23:0",
+        "organismID": "3636:35463:35365:0",
+        "measurementID": "3636:35463:35365:0:right-ear-tag-colour",
+        "measurementType": "Right Ear Tag Colour",
+        "measurementUnit": "",
+        "measurementValue": "Yellow"
+      },
+      {
+        "eventID": "Central Selkirks:4-23:0",
+        "organismID": "3636:35463:35365:0",
+        "measurementID": "3636:35463:35365:0:left-ear-tag-id",
+        "measurementType": "Left Ear Tag ID",
+        "measurementUnit": "",
+        "measurementValue": "05"
+      },
+      {
+        "eventID": "Central Selkirks:4-23:0",
+        "organismID": "3636:35463:35365:0",
+        "measurementID": "3636:35463:35365:0:left-ear-tag-colour",
+        "measurementType": "Left Ear Tag Colour",
+        "measurementUnit": "",
+        "measurementValue": "Red"
       }
     ]
   },
   {
     "record": [
       {
-        "eventID": "MU 749:Lowland:4:3",
+        "eventID": "Central Selkirks:4-23:1",
         "basisOfRecord ": "HumanObservation"
       }
     ],
     "event": [
       {
-        "eventID": "MU 749:Lowland:4:3",
-        "eventDate": "1/Feb/16",
+        "eventID": "Central Selkirks:4-23:1",
+        "eventDate": "16-Mar-19",
         "eventRemarks": ""
       }
     ],
     "location": [
       {
-        "eventID": "MU 749:Lowland:4:3",
-        "verbatimCoordinates": "59.189628 -123.285746",
-        "decimalLatitude": "59.189628",
-        "decimalLongitude": "-123.285746",
-        "verbatimSRS": ""
+        "eventID": "Central Selkirks:4-23:1",
+        "verbatimCoordinates": "11 486420 5596948",
+        "decimalLatitude": "",
+        "decimalLongitude": "",
+        "verbatimSRS": "NAD83"
       }
     ],
     "occurrence": [
       {
-        "eventID": "MU 749:Lowland:4:3",
-        "occurrenceID": "MU 749:Lowland:4:3:13",
-        "individualCount": "1",
-        "sex": "male",
-        "lifeStage": "unknown",
-        "taxonID": "M-ALAM",
-        "occurrenceRemarks": ""
-      }
-    ],
-    "measurementOrFact": [
-      {
-        "eventID": "MU 749:Lowland:4:3",
-        "measurementID": "MU 749:Lowland:4:3:study-area",
-        "measurementType": "Study Area",
-        "measurementUnit": "",
-        "measurementValue": "MU 749"
-      },
-      {
-        "eventID": "MU 749:Lowland:4:3",
-        "measurementID": "MU 749:Lowland:4:3:block-id/su-id",
-        "measurementType": "Block ID/SU ID",
-        "measurementUnit": "",
-        "measurementValue": "Lowland"
-      },
-      {
-        "eventID": "MU 749:Lowland:4:3",
-        "measurementID": "MU 749:Lowland:4:3:perpendicular-distance-from-transect-line",
-        "measurementType": "Perpendicular Distance From Transect Line",
-        "measurementUnit": "m",
-        "measurementValue": "201.80"
-      },
-      {
-        "eventID": "MU 749:Lowland:4:3",
-        "measurementID": "MU 749:Lowland:4:3:group-label",
-        "measurementType": "Group Label",
-        "measurementUnit": "",
-        "measurementValue": "4"
-      },
-      {
-        "eventID": "MU 749:Lowland:4:3",
-        "measurementID": "MU 749:Lowland:4:3:veg-cover",
-        "measurementType": "Veg Cover",
-        "measurementUnit": "%",
-        "measurementValue": "5"
-      },
-      {
-        "eventID": "MU 749:Lowland:4:3",
-        "measurementID": "MU 749:Lowland:4:3:activity",
-        "measurementType": "Activity",
-        "measurementUnit": "",
-        "measurementValue": "Standing"
-      },
-      {
-        "eventID": "MU 749:Lowland:4:3",
-        "measurementID": "MU 749:Lowland:4:3:survey-or-telemetry-search",
-        "measurementType": "Survey or Telemetry Search",
-        "measurementUnit": "",
-        "measurementValue": "Survey"
-      },
-      {
-        "eventID": "MU 749:Lowland:4:3",
-        "measurementID": "MU 749:Lowland:4:3:antler-configuration",
-        "occurrenceID": "MU 749:Lowland:4:3:13",
-        "measurementType": "Antler Configuration",
-        "measurementUnit": "",
-        "measurementValue": "unclassified"
-      }
-    ]
-  },
-  {
-    "record": [
-      {
-        "eventID": "MU 749:Lowland:4:4",
-        "basisOfRecord ": "HumanObservation"
-      }
-    ],
-    "event": [
-      {
-        "eventID": "MU 749:Lowland:4:4",
-        "eventDate": "1/Feb/16",
-        "eventRemarks": ""
-      }
-    ],
-    "location": [
-      {
-        "eventID": "MU 749:Lowland:4:4",
-        "verbatimCoordinates": "59.191439 -123.290777",
-        "decimalLatitude": "59.191439",
-        "decimalLongitude": "-123.290777",
-        "verbatimSRS": ""
-      }
-    ],
-    "occurrence": [
-      {
-        "eventID": "MU 749:Lowland:4:4",
-        "occurrenceID": "MU 749:Lowland:4:4:13",
-        "individualCount": "1",
-        "sex": "male",
-        "lifeStage": "unknown",
-        "taxonID": "M-ALAM",
-        "occurrenceRemarks": ""
-      }
-    ],
-    "measurementOrFact": [
-      {
-        "eventID": "MU 749:Lowland:4:4",
-        "measurementID": "MU 749:Lowland:4:4:study-area",
-        "measurementType": "Study Area",
-        "measurementUnit": "",
-        "measurementValue": "MU 749"
-      },
-      {
-        "eventID": "MU 749:Lowland:4:4",
-        "measurementID": "MU 749:Lowland:4:4:block-id/su-id",
-        "measurementType": "Block ID/SU ID",
-        "measurementUnit": "",
-        "measurementValue": "Lowland"
-      },
-      {
-        "eventID": "MU 749:Lowland:4:4",
-        "measurementID": "MU 749:Lowland:4:4:perpendicular-distance-from-transect-line",
-        "measurementType": "Perpendicular Distance From Transect Line",
-        "measurementUnit": "m",
-        "measurementValue": "404.70"
-      },
-      {
-        "eventID": "MU 749:Lowland:4:4",
-        "measurementID": "MU 749:Lowland:4:4:group-label",
-        "measurementType": "Group Label",
-        "measurementUnit": "",
-        "measurementValue": "5"
-      },
-      {
-        "eventID": "MU 749:Lowland:4:4",
-        "measurementID": "MU 749:Lowland:4:4:veg-cover",
-        "measurementType": "Veg Cover",
-        "measurementUnit": "%",
-        "measurementValue": "5"
-      },
-      {
-        "eventID": "MU 749:Lowland:4:4",
-        "measurementID": "MU 749:Lowland:4:4:activity",
-        "measurementType": "Activity",
-        "measurementUnit": "",
-        "measurementValue": "Bedding"
-      },
-      {
-        "eventID": "MU 749:Lowland:4:4",
-        "measurementID": "MU 749:Lowland:4:4:survey-or-telemetry-search",
-        "measurementType": "Survey or Telemetry Search",
-        "measurementUnit": "",
-        "measurementValue": "Survey"
-      },
-      {
-        "eventID": "MU 749:Lowland:4:4",
-        "measurementID": "MU 749:Lowland:4:4:antler-configuration",
-        "occurrenceID": "MU 749:Lowland:4:4:13",
-        "measurementType": "Antler Configuration",
-        "measurementUnit": "",
-        "measurementValue": "unclassified"
-      }
-    ]
-  },
-  {
-    "record": [
-      {
-        "eventID": "MU 749:Lowland:5:5",
-        "basisOfRecord ": "HumanObservation"
-      }
-    ],
-    "event": [
-      {
-        "eventID": "MU 749:Lowland:5:5",
-        "eventDate": "1/Feb/16",
-        "eventRemarks": ""
-      }
-    ],
-    "location": [
-      {
-        "eventID": "MU 749:Lowland:5:5",
-        "verbatimCoordinates": "59.196175 -123.344191",
-        "decimalLatitude": "59.196175",
-        "decimalLongitude": "-123.344191",
-        "verbatimSRS": ""
-      }
-    ],
-    "occurrence": [
-      {
-        "eventID": "MU 749:Lowland:5:5",
-        "occurrenceID": "MU 749:Lowland:5:5:13",
-        "individualCount": "1",
-        "sex": "male",
-        "lifeStage": "unknown",
-        "taxonID": "M-ALAM",
-        "occurrenceRemarks": ""
-      }
-    ],
-    "measurementOrFact": [
-      {
-        "eventID": "MU 749:Lowland:5:5",
-        "measurementID": "MU 749:Lowland:5:5:study-area",
-        "measurementType": "Study Area",
-        "measurementUnit": "",
-        "measurementValue": "MU 749"
-      },
-      {
-        "eventID": "MU 749:Lowland:5:5",
-        "measurementID": "MU 749:Lowland:5:5:block-id/su-id",
-        "measurementType": "Block ID/SU ID",
-        "measurementUnit": "",
-        "measurementValue": "Lowland"
-      },
-      {
-        "eventID": "MU 749:Lowland:5:5",
-        "measurementID": "MU 749:Lowland:5:5:perpendicular-distance-from-transect-line",
-        "measurementType": "Perpendicular Distance From Transect Line",
-        "measurementUnit": "m",
-        "measurementValue": "946.60"
-      },
-      {
-        "eventID": "MU 749:Lowland:5:5",
-        "measurementID": "MU 749:Lowland:5:5:group-label",
-        "measurementType": "Group Label",
-        "measurementUnit": "",
-        "measurementValue": "6"
-      },
-      {
-        "eventID": "MU 749:Lowland:5:5",
-        "measurementID": "MU 749:Lowland:5:5:veg-cover",
-        "measurementType": "Veg Cover",
-        "measurementUnit": "%",
-        "measurementValue": "5"
-      },
-      {
-        "eventID": "MU 749:Lowland:5:5",
-        "measurementID": "MU 749:Lowland:5:5:activity",
-        "measurementType": "Activity",
-        "measurementUnit": "",
-        "measurementValue": "Standing"
-      },
-      {
-        "eventID": "MU 749:Lowland:5:5",
-        "measurementID": "MU 749:Lowland:5:5:survey-or-telemetry-search",
-        "measurementType": "Survey or Telemetry Search",
-        "measurementUnit": "",
-        "measurementValue": "Survey"
-      },
-      {
-        "eventID": "MU 749:Lowland:5:5",
-        "measurementID": "MU 749:Lowland:5:5:antler-configuration",
-        "occurrenceID": "MU 749:Lowland:5:5:13",
-        "measurementType": "Antler Configuration",
-        "measurementUnit": "",
-        "measurementValue": "unclassified"
-      }
-    ]
-  },
-  {
-    "record": [
-      {
-        "eventID": "MU 749:Lowland:6:6",
-        "basisOfRecord ": "HumanObservation"
-      }
-    ],
-    "event": [
-      {
-        "eventID": "MU 749:Lowland:6:6",
-        "eventDate": "1/Feb/16",
-        "eventRemarks": ""
-      }
-    ],
-    "location": [
-      {
-        "eventID": "MU 749:Lowland:6:6",
-        "verbatimCoordinates": "59.184519 -123.340254",
-        "decimalLatitude": "59.184519",
-        "decimalLongitude": "-123.340254",
-        "verbatimSRS": ""
-      }
-    ],
-    "occurrence": [
-      {
-        "eventID": "MU 749:Lowland:6:6",
-        "occurrenceID": "MU 749:Lowland:6:6:13",
+        "eventID": "Central Selkirks:4-23:1",
+        "occurrenceID": "Central Selkirks:4-23:1:2",
         "individualCount": "2",
-        "sex": "male",
-        "lifeStage": "unknown",
-        "taxonID": "M-ALAM",
+        "sex": "unknown",
+        "lifeStage": "adult",
+        "taxonID": "M-RATA",
         "occurrenceRemarks": ""
       }
     ],
     "measurementOrFact": [
       {
-        "eventID": "MU 749:Lowland:6:6",
-        "measurementID": "MU 749:Lowland:6:6:study-area",
+        "eventID": "Central Selkirks:4-23:1",
+        "measurementID": "Central Selkirks:4-23:1:study-area",
         "measurementType": "Study Area",
         "measurementUnit": "",
-        "measurementValue": "MU 749"
+        "measurementValue": "Central Selkirks"
       },
       {
-        "eventID": "MU 749:Lowland:6:6",
-        "measurementID": "MU 749:Lowland:6:6:block-id/su-id",
+        "eventID": "Central Selkirks:4-23:1",
+        "measurementID": "Central Selkirks:4-23:1:block-id/su-id",
         "measurementType": "Block ID/SU ID",
         "measurementUnit": "",
-        "measurementValue": "Lowland"
+        "measurementValue": "4-23"
       },
       {
-        "eventID": "MU 749:Lowland:6:6",
-        "measurementID": "MU 749:Lowland:6:6:perpendicular-distance-from-transect-line",
-        "measurementType": "Perpendicular Distance From Transect Line",
-        "measurementUnit": "m",
-        "measurementValue": "352.50"
-      },
-      {
-        "eventID": "MU 749:Lowland:6:6",
-        "measurementID": "MU 749:Lowland:6:6:group-label",
-        "measurementType": "Group Label",
-        "measurementUnit": "",
-        "measurementValue": "7"
-      },
-      {
-        "eventID": "MU 749:Lowland:6:6",
-        "measurementID": "MU 749:Lowland:6:6:veg-cover",
-        "measurementType": "Veg Cover",
-        "measurementUnit": "%",
-        "measurementValue": "20"
-      },
-      {
-        "eventID": "MU 749:Lowland:6:6",
-        "measurementID": "MU 749:Lowland:6:6:activity",
-        "measurementType": "Activity",
-        "measurementUnit": "",
-        "measurementValue": "Standing"
-      },
-      {
-        "eventID": "MU 749:Lowland:6:6",
-        "measurementID": "MU 749:Lowland:6:6:survey-or-telemetry-search",
-        "measurementType": "Survey or Telemetry Search",
-        "measurementUnit": "",
-        "measurementValue": "Survey"
-      },
-      {
-        "eventID": "MU 749:Lowland:6:6",
-        "measurementID": "MU 749:Lowland:6:6:antler-configuration",
-        "occurrenceID": "MU 749:Lowland:6:6:13",
-        "measurementType": "Antler Configuration",
-        "measurementUnit": "",
-        "measurementValue": "unclassified"
-      }
-    ]
-  },
-  {
-    "record": [
-      {
-        "eventID": "MU 749:Lowland:7:7",
-        "basisOfRecord ": "HumanObservation"
-      }
-    ],
-    "event": [
-      {
-        "eventID": "MU 749:Lowland:7:7",
-        "eventDate": "1/Feb/16",
-        "eventRemarks": ""
-      }
-    ],
-    "location": [
-      {
-        "eventID": "MU 749:Lowland:7:7",
-        "verbatimCoordinates": "59.185094 -123.346662",
-        "decimalLatitude": "59.185094",
-        "decimalLongitude": "-123.346662",
-        "verbatimSRS": ""
-      }
-    ],
-    "occurrence": [
-      {
-        "eventID": "MU 749:Lowland:7:7",
-        "occurrenceID": "MU 749:Lowland:7:7:13",
-        "individualCount": "1",
-        "sex": "male",
-        "lifeStage": "unknown",
-        "taxonID": "M-ALAM",
-        "occurrenceRemarks": ""
-      }
-    ],
-    "measurementOrFact": [
-      {
-        "eventID": "MU 749:Lowland:7:7",
-        "measurementID": "MU 749:Lowland:7:7:study-area",
-        "measurementType": "Study Area",
-        "measurementUnit": "",
-        "measurementValue": "MU 749"
-      },
-      {
-        "eventID": "MU 749:Lowland:7:7",
-        "measurementID": "MU 749:Lowland:7:7:block-id/su-id",
-        "measurementType": "Block ID/SU ID",
-        "measurementUnit": "",
-        "measurementValue": "Lowland"
-      },
-      {
-        "eventID": "MU 749:Lowland:7:7",
-        "measurementID": "MU 749:Lowland:7:7:perpendicular-distance-from-transect-line",
-        "measurementType": "Perpendicular Distance From Transect Line",
-        "measurementUnit": "m",
-        "measurementValue": "286.60"
-      },
-      {
-        "eventID": "MU 749:Lowland:7:7",
-        "measurementID": "MU 749:Lowland:7:7:group-label",
-        "measurementType": "Group Label",
-        "measurementUnit": "",
-        "measurementValue": "8"
-      },
-      {
-        "eventID": "MU 749:Lowland:7:7",
-        "measurementID": "MU 749:Lowland:7:7:veg-cover",
+        "eventID": "Central Selkirks:4-23:1",
+        "measurementID": "Central Selkirks:4-23:1:veg-cover",
         "measurementType": "Veg Cover",
         "measurementUnit": "%",
         "measurementValue": "10"
       },
       {
-        "eventID": "MU 749:Lowland:7:7",
-        "measurementID": "MU 749:Lowland:7:7:activity",
-        "measurementType": "Activity",
-        "measurementUnit": "",
-        "measurementValue": "Standing"
+        "eventID": "Central Selkirks:4-23:1",
+        "measurementID": "Central Selkirks:4-23:1:snow-cover",
+        "measurementType": "Snow Cover",
+        "measurementUnit": "%",
+        "measurementValue": "100"
       },
       {
-        "eventID": "MU 749:Lowland:7:7",
-        "measurementID": "MU 749:Lowland:7:7:survey-or-telemetry-search",
+        "eventID": "Central Selkirks:4-23:1",
+        "measurementID": "Central Selkirks:4-23:1:activity",
+        "measurementType": "Activity",
+        "measurementUnit": "",
+        "measurementValue": "Bedding"
+      },
+      {
+        "eventID": "Central Selkirks:4-23:1",
+        "measurementID": "Central Selkirks:4-23:1:elevation-observation",
+        "measurementType": "Elevation (m) of Observation",
+        "measurementUnit": "",
+        "measurementValue": "1200"
+      },
+      {
+        "eventID": "Central Selkirks:4-23:1",
+        "measurementID": "Central Selkirks:4-23:1:habitat",
+        "measurementType": "Habitat",
+        "measurementUnit": "",
+        "measurementValue": "Alpine Barren"
+      },
+      {
+        "eventID": "Central Selkirks:4-23:1",
+        "measurementID": "Central Selkirks:4-23:1:survey-or-telemetry-search",
         "measurementType": "Survey or Telemetry Search",
         "measurementUnit": "",
         "measurementValue": "Survey"
       },
       {
-        "eventID": "MU 749:Lowland:7:7",
-        "measurementID": "MU 749:Lowland:7:7:antler-configuration",
-        "occurrenceID": "MU 749:Lowland:7:7:13",
-        "measurementType": "Antler Configuration",
+        "eventID": "Central Selkirks:4-23:1",
+        "measurementID": "Central Selkirks:4-23:1:photos",
+        "measurementType": "Photos",
         "measurementUnit": "",
-        "measurementValue": "unclassified"
+        "measurementValue": "9-12"
       }
     ]
   },
   {
     "record": [
       {
-        "eventID": "MU 749:Lowland:8:8",
+        "eventID": "Central Selkirks:4-23:2",
         "basisOfRecord ": "HumanObservation"
       }
     ],
     "event": [
       {
-        "eventID": "MU 749:Lowland:8:8",
-        "eventDate": "1/Feb/16",
+        "eventID": "Central Selkirks:4-23:2",
+        "eventDate": "16-Mar-19",
         "eventRemarks": ""
       }
     ],
     "location": [
       {
-        "eventID": "MU 749:Lowland:8:8",
-        "verbatimCoordinates": "59.19793 -123.297085",
-        "decimalLatitude": "59.19793",
-        "decimalLongitude": "-123.297085",
-        "verbatimSRS": ""
+        "eventID": "Central Selkirks:4-23:2",
+        "verbatimCoordinates": "11 468500 5609483",
+        "decimalLatitude": "",
+        "decimalLongitude": "",
+        "verbatimSRS": "NAD83"
       }
     ],
     "occurrence": [
       {
-        "eventID": "MU 749:Lowland:8:8",
-        "occurrenceID": "MU 749:Lowland:8:8:14",
-        "individualCount": "1",
-        "sex": "female",
-        "lifeStage": "adult",
-        "taxonID": "M-ALAM",
-        "occurrenceRemarks": ""
-      },
-      {
-        "eventID": "MU 749:Lowland:8:8",
-        "occurrenceID": "MU 749:Lowland:8:8:15",
+        "eventID": "Central Selkirks:4-23:2",
+        "occurrenceID": "Central Selkirks:4-23:2:2",
         "individualCount": "1",
         "sex": "unknown",
-        "lifeStage": "juvenile",
-        "taxonID": "M-ALAM",
+        "lifeStage": "adult",
+        "taxonID": "M-RATA",
         "occurrenceRemarks": ""
-      }
-    ],
-    "measurementOrFact": [
-      {
-        "eventID": "MU 749:Lowland:8:8",
-        "measurementID": "MU 749:Lowland:8:8:study-area",
-        "measurementType": "Study Area",
-        "measurementUnit": "",
-        "measurementValue": "MU 749"
       },
       {
-        "eventID": "MU 749:Lowland:8:8",
-        "measurementID": "MU 749:Lowland:8:8:block-id/su-id",
-        "measurementType": "Block ID/SU ID",
-        "measurementUnit": "",
-        "measurementValue": "Lowland"
-      },
-      {
-        "eventID": "MU 749:Lowland:8:8",
-        "measurementID": "MU 749:Lowland:8:8:perpendicular-distance-from-transect-line",
-        "measurementType": "Perpendicular Distance From Transect Line",
-        "measurementUnit": "m",
-        "measurementValue": "1129.00"
-      },
-      {
-        "eventID": "MU 749:Lowland:8:8",
-        "measurementID": "MU 749:Lowland:8:8:group-label",
-        "measurementType": "Group Label",
-        "measurementUnit": "",
-        "measurementValue": "9"
-      },
-      {
-        "eventID": "MU 749:Lowland:8:8",
-        "measurementID": "MU 749:Lowland:8:8:veg-cover",
-        "measurementType": "Veg Cover",
-        "measurementUnit": "%",
-        "measurementValue": "5"
-      },
-      {
-        "eventID": "MU 749:Lowland:8:8",
-        "measurementID": "MU 749:Lowland:8:8:activity",
-        "measurementType": "Activity",
-        "measurementUnit": "",
-        "measurementValue": "Standing"
-      },
-      {
-        "eventID": "MU 749:Lowland:8:8",
-        "measurementID": "MU 749:Lowland:8:8:survey-or-telemetry-search",
-        "measurementType": "Survey or Telemetry Search",
-        "measurementUnit": "",
-        "measurementValue": "Survey"
-      }
-    ]
-  },
-  {
-    "record": [
-      {
-        "eventID": "MU 749:Upland:9:9",
-        "basisOfRecord ": "HumanObservation"
-      }
-    ],
-    "event": [
-      {
-        "eventID": "MU 749:Upland:9:9",
-        "eventDate": "2/Feb/16",
-        "eventRemarks": ""
-      }
-    ],
-    "location": [
-      {
-        "eventID": "MU 749:Upland:9:9",
-        "verbatimCoordinates": "59.216322 -123.537111",
-        "decimalLatitude": "59.216322",
-        "decimalLongitude": "-123.537111",
-        "verbatimSRS": ""
-      }
-    ],
-    "occurrence": [
-      {
-        "eventID": "MU 749:Upland:9:9",
-        "occurrenceID": "MU 749:Upland:9:9:13",
-        "individualCount": "1",
+        "eventID": "Central Selkirks:4-23:2",
+        "occurrenceID": "Central Selkirks:4-23:2:3",
+        "individualCount": "2",
         "sex": "male",
         "lifeStage": "unknown",
-        "taxonID": "M-ALAM",
+        "taxonID": "M-RATA",
         "occurrenceRemarks": ""
       }
     ],
     "measurementOrFact": [
       {
-        "eventID": "MU 749:Upland:9:9",
-        "measurementID": "MU 749:Upland:9:9:study-area",
+        "eventID": "Central Selkirks:4-23:2",
+        "measurementID": "Central Selkirks:4-23:2:study-area",
         "measurementType": "Study Area",
         "measurementUnit": "",
-        "measurementValue": "MU 749"
+        "measurementValue": "Central Selkirks"
       },
       {
-        "eventID": "MU 749:Upland:9:9",
-        "measurementID": "MU 749:Upland:9:9:block-id/su-id",
+        "eventID": "Central Selkirks:4-23:2",
+        "measurementID": "Central Selkirks:4-23:2:block-id/su-id",
         "measurementType": "Block ID/SU ID",
         "measurementUnit": "",
-        "measurementValue": "Upland"
+        "measurementValue": "4-23"
       },
       {
-        "eventID": "MU 749:Upland:9:9",
-        "measurementID": "MU 749:Upland:9:9:perpendicular-distance-from-transect-line",
-        "measurementType": "Perpendicular Distance From Transect Line",
-        "measurementUnit": "m",
-        "measurementValue": "262.80"
-      },
-      {
-        "eventID": "MU 749:Upland:9:9",
-        "measurementID": "MU 749:Upland:9:9:group-label",
-        "measurementType": "Group Label",
-        "measurementUnit": "",
-        "measurementValue": "10"
-      },
-      {
-        "eventID": "MU 749:Upland:9:9",
-        "measurementID": "MU 749:Upland:9:9:veg-cover",
+        "eventID": "Central Selkirks:4-23:2",
+        "measurementID": "Central Selkirks:4-23:2:veg-cover",
         "measurementType": "Veg Cover",
         "measurementUnit": "%",
         "measurementValue": "10"
       },
       {
-        "eventID": "MU 749:Upland:9:9",
-        "measurementID": "MU 749:Upland:9:9:activity",
-        "measurementType": "Activity",
-        "measurementUnit": "",
-        "measurementValue": "Standing"
-      },
-      {
-        "eventID": "MU 749:Upland:9:9",
-        "measurementID": "MU 749:Upland:9:9:survey-or-telemetry-search",
-        "measurementType": "Survey or Telemetry Search",
-        "measurementUnit": "",
-        "measurementValue": "Survey"
-      },
-      {
-        "eventID": "MU 749:Upland:9:9",
-        "measurementID": "MU 749:Upland:9:9:antler-configuration",
-        "occurrenceID": "MU 749:Upland:9:9:13",
-        "measurementType": "Antler Configuration",
-        "measurementUnit": "",
-        "measurementValue": "unclassified"
-      }
-    ]
-  },
-  {
-    "record": [
-      {
-        "eventID": "MU 749:Upland:10:10",
-        "basisOfRecord ": "HumanObservation"
-      }
-    ],
-    "event": [
-      {
-        "eventID": "MU 749:Upland:10:10",
-        "eventDate": "2/Feb/16",
-        "eventRemarks": ""
-      }
-    ],
-    "location": [
-      {
-        "eventID": "MU 749:Upland:10:10",
-        "verbatimCoordinates": "59.207907 -124.080729",
-        "decimalLatitude": "59.207907",
-        "decimalLongitude": "-124.080729",
-        "verbatimSRS": ""
-      }
-    ],
-    "occurrence": [
-      {
-        "eventID": "MU 749:Upland:10:10",
-        "occurrenceID": "MU 749:Upland:10:10:14",
-        "individualCount": "2",
-        "sex": "female",
-        "lifeStage": "adult",
-        "taxonID": "M-ALAM",
-        "occurrenceRemarks": ""
-      }
-    ],
-    "measurementOrFact": [
-      {
-        "eventID": "MU 749:Upland:10:10",
-        "measurementID": "MU 749:Upland:10:10:study-area",
-        "measurementType": "Study Area",
-        "measurementUnit": "",
-        "measurementValue": "MU 749"
-      },
-      {
-        "eventID": "MU 749:Upland:10:10",
-        "measurementID": "MU 749:Upland:10:10:block-id/su-id",
-        "measurementType": "Block ID/SU ID",
-        "measurementUnit": "",
-        "measurementValue": "Upland"
-      },
-      {
-        "eventID": "MU 749:Upland:10:10",
-        "measurementID": "MU 749:Upland:10:10:perpendicular-distance-from-transect-line",
-        "measurementType": "Perpendicular Distance From Transect Line",
-        "measurementUnit": "m",
-        "measurementValue": "297.70"
-      },
-      {
-        "eventID": "MU 749:Upland:10:10",
-        "measurementID": "MU 749:Upland:10:10:group-label",
-        "measurementType": "Group Label",
-        "measurementUnit": "",
-        "measurementValue": "11"
-      },
-      {
-        "eventID": "MU 749:Upland:10:10",
-        "measurementID": "MU 749:Upland:10:10:veg-cover",
-        "measurementType": "Veg Cover",
+        "eventID": "Central Selkirks:4-23:2",
+        "measurementID": "Central Selkirks:4-23:2:snow-cover",
+        "measurementType": "Snow Cover",
         "measurementUnit": "%",
-        "measurementValue": "20"
+        "measurementValue": "100"
       },
       {
-        "eventID": "MU 749:Upland:10:10",
-        "measurementID": "MU 749:Upland:10:10:activity",
-        "measurementType": "Activity",
-        "measurementUnit": "",
-        "measurementValue": "Standing"
-      },
-      {
-        "eventID": "MU 749:Upland:10:10",
-        "measurementID": "MU 749:Upland:10:10:survey-or-telemetry-search",
-        "measurementType": "Survey or Telemetry Search",
-        "measurementUnit": "",
-        "measurementValue": "Survey"
-      }
-    ]
-  },
-  {
-    "record": [
-      {
-        "eventID": "MU 749:Upland:11:11",
-        "basisOfRecord ": "HumanObservation"
-      }
-    ],
-    "event": [
-      {
-        "eventID": "MU 749:Upland:11:11",
-        "eventDate": "2/Feb/16",
-        "eventRemarks": ""
-      }
-    ],
-    "location": [
-      {
-        "eventID": "MU 749:Upland:11:11",
-        "verbatimCoordinates": "",
-        "decimalLatitude": "",
-        "decimalLongitude": "",
-        "verbatimSRS": ""
-      }
-    ],
-    "measurementOrFact": [
-      {
-        "eventID": "MU 749:Upland:11:11",
-        "measurementID": "MU 749:Upland:11:11:study-area",
-        "measurementType": "Study Area",
-        "measurementUnit": "",
-        "measurementValue": "MU 749"
-      },
-      {
-        "eventID": "MU 749:Upland:11:11",
-        "measurementID": "MU 749:Upland:11:11:block-id/su-id",
-        "measurementType": "Block ID/SU ID",
-        "measurementUnit": "",
-        "measurementValue": "Upland"
-      },
-      {
-        "eventID": "MU 749:Upland:11:11",
-        "measurementID": "MU 749:Upland:11:11:perpendicular-distance-from-transect-line",
-        "measurementType": "Perpendicular Distance From Transect Line",
-        "measurementUnit": "m",
-        "measurementValue": ""
-      },
-      {
-        "eventID": "MU 749:Upland:11:11",
-        "measurementID": "MU 749:Upland:11:11:survey-or-telemetry-search",
-        "measurementType": "Survey or Telemetry Search",
-        "measurementUnit": "",
-        "measurementValue": "Survey"
-      }
-    ]
-  },
-  {
-    "record": [
-      {
-        "eventID": "MU 749:Upland:12:12",
-        "basisOfRecord ": "HumanObservation"
-      }
-    ],
-    "event": [
-      {
-        "eventID": "MU 749:Upland:12:12",
-        "eventDate": "2/Feb/16",
-        "eventRemarks": ""
-      }
-    ],
-    "location": [
-      {
-        "eventID": "MU 749:Upland:12:12",
-        "verbatimCoordinates": "59.211359 -124.169785",
-        "decimalLatitude": "59.211359",
-        "decimalLongitude": "-124.169785",
-        "verbatimSRS": ""
-      }
-    ],
-    "occurrence": [
-      {
-        "eventID": "MU 749:Upland:12:12",
-        "occurrenceID": "MU 749:Upland:12:12:14",
-        "individualCount": "1",
-        "sex": "female",
-        "lifeStage": "adult",
-        "taxonID": "M-ALAM",
-        "occurrenceRemarks": ""
-      }
-    ],
-    "measurementOrFact": [
-      {
-        "eventID": "MU 749:Upland:12:12",
-        "measurementID": "MU 749:Upland:12:12:study-area",
-        "measurementType": "Study Area",
-        "measurementUnit": "",
-        "measurementValue": "MU 749"
-      },
-      {
-        "eventID": "MU 749:Upland:12:12",
-        "measurementID": "MU 749:Upland:12:12:block-id/su-id",
-        "measurementType": "Block ID/SU ID",
-        "measurementUnit": "",
-        "measurementValue": "Upland"
-      },
-      {
-        "eventID": "MU 749:Upland:12:12",
-        "measurementID": "MU 749:Upland:12:12:perpendicular-distance-from-transect-line",
-        "measurementType": "Perpendicular Distance From Transect Line",
-        "measurementUnit": "m",
-        "measurementValue": "172.50"
-      },
-      {
-        "eventID": "MU 749:Upland:12:12",
-        "measurementID": "MU 749:Upland:12:12:group-label",
-        "measurementType": "Group Label",
-        "measurementUnit": "",
-        "measurementValue": "12"
-      },
-      {
-        "eventID": "MU 749:Upland:12:12",
-        "measurementID": "MU 749:Upland:12:12:veg-cover",
-        "measurementType": "Veg Cover",
-        "measurementUnit": "%",
-        "measurementValue": "10"
-      },
-      {
-        "eventID": "MU 749:Upland:12:12",
-        "measurementID": "MU 749:Upland:12:12:activity",
+        "eventID": "Central Selkirks:4-23:2",
+        "measurementID": "Central Selkirks:4-23:2:activity",
         "measurementType": "Activity",
         "measurementUnit": "",
         "measurementValue": "Bedding"
       },
       {
-        "eventID": "MU 749:Upland:12:12",
-        "measurementID": "MU 749:Upland:12:12:survey-or-telemetry-search",
+        "eventID": "Central Selkirks:4-23:2",
+        "measurementID": "Central Selkirks:4-23:2:elevation-observation",
+        "measurementType": "Elevation (m) of Observation",
+        "measurementUnit": "",
+        "measurementValue": "1220"
+      },
+      {
+        "eventID": "Central Selkirks:4-23:2",
+        "measurementID": "Central Selkirks:4-23:2:habitat",
+        "measurementType": "Habitat",
+        "measurementUnit": "",
+        "measurementValue": "Alpine"
+      },
+      {
+        "eventID": "Central Selkirks:4-23:2",
+        "measurementID": "Central Selkirks:4-23:2:survey-or-telemetry-search",
         "measurementType": "Survey or Telemetry Search",
         "measurementUnit": "",
         "measurementValue": "Survey"
+      },
+      {
+        "eventID": "Central Selkirks:4-23:2",
+        "measurementID": "Central Selkirks:4-23:2:photos",
+        "measurementType": "Photos",
+        "measurementUnit": "",
+        "measurementValue": "13-17"
       }
     ]
   },
   {
     "record": [
       {
-        "eventID": "MU 749:Upland:12:13",
+        "eventID": "Central Selkirks:4-24:3",
         "basisOfRecord ": "HumanObservation"
       }
     ],
     "event": [
       {
-        "eventID": "MU 749:Upland:12:13",
-        "eventDate": "2/Feb/16",
+        "eventID": "Central Selkirks:4-24:3",
+        "eventDate": "17-Mar-19",
         "eventRemarks": ""
       }
     ],
     "location": [
       {
-        "eventID": "MU 749:Upland:12:13",
-        "verbatimCoordinates": "59.213983 -124.100043",
-        "decimalLatitude": "59.213983",
-        "decimalLongitude": "-124.100043",
-        "verbatimSRS": ""
-      }
-    ],
-    "occurrence": [
-      {
-        "eventID": "MU 749:Upland:12:13",
-        "occurrenceID": "MU 749:Upland:12:13:14",
-        "individualCount": "3",
-        "sex": "female",
-        "lifeStage": "adult",
-        "taxonID": "M-ALAM",
-        "occurrenceRemarks": ""
-      }
-    ],
-    "measurementOrFact": [
-      {
-        "eventID": "MU 749:Upland:12:13",
-        "measurementID": "MU 749:Upland:12:13:study-area",
-        "measurementType": "Study Area",
-        "measurementUnit": "",
-        "measurementValue": "MU 749"
-      },
-      {
-        "eventID": "MU 749:Upland:12:13",
-        "measurementID": "MU 749:Upland:12:13:block-id/su-id",
-        "measurementType": "Block ID/SU ID",
-        "measurementUnit": "",
-        "measurementValue": "Upland"
-      },
-      {
-        "eventID": "MU 749:Upland:12:13",
-        "measurementID": "MU 749:Upland:12:13:perpendicular-distance-from-transect-line",
-        "measurementType": "Perpendicular Distance From Transect Line",
-        "measurementUnit": "m",
-        "measurementValue": "396.90"
-      },
-      {
-        "eventID": "MU 749:Upland:12:13",
-        "measurementID": "MU 749:Upland:12:13:group-label",
-        "measurementType": "Group Label",
-        "measurementUnit": "",
-        "measurementValue": "13"
-      },
-      {
-        "eventID": "MU 749:Upland:12:13",
-        "measurementID": "MU 749:Upland:12:13:veg-cover",
-        "measurementType": "Veg Cover",
-        "measurementUnit": "%",
-        "measurementValue": "20"
-      },
-      {
-        "eventID": "MU 749:Upland:12:13",
-        "measurementID": "MU 749:Upland:12:13:activity",
-        "measurementType": "Activity",
-        "measurementUnit": "",
-        "measurementValue": "Standing"
-      },
-      {
-        "eventID": "MU 749:Upland:12:13",
-        "measurementID": "MU 749:Upland:12:13:survey-or-telemetry-search",
-        "measurementType": "Survey or Telemetry Search",
-        "measurementUnit": "",
-        "measurementValue": "Survey"
-      }
-    ]
-  },
-  {
-    "record": [
-      {
-        "eventID": "MU 749:Upland:13:14",
-        "basisOfRecord ": "HumanObservation"
-      }
-    ],
-    "event": [
-      {
-        "eventID": "MU 749:Upland:13:14",
-        "eventDate": "3/Feb/16",
-        "eventRemarks": ""
-      }
-    ],
-    "location": [
-      {
-        "eventID": "MU 749:Upland:13:14",
-        "verbatimCoordinates": "",
+        "eventID": "Central Selkirks:4-24:3",
+        "verbatimCoordinates": "11 447578 5581199",
         "decimalLatitude": "",
         "decimalLongitude": "",
-        "verbatimSRS": ""
-      }
-    ],
-    "measurementOrFact": [
-      {
-        "eventID": "MU 749:Upland:13:14",
-        "measurementID": "MU 749:Upland:13:14:study-area",
-        "measurementType": "Study Area",
-        "measurementUnit": "",
-        "measurementValue": "MU 749"
-      },
-      {
-        "eventID": "MU 749:Upland:13:14",
-        "measurementID": "MU 749:Upland:13:14:block-id/su-id",
-        "measurementType": "Block ID/SU ID",
-        "measurementUnit": "",
-        "measurementValue": "Upland"
-      },
-      {
-        "eventID": "MU 749:Upland:13:14",
-        "measurementID": "MU 749:Upland:13:14:perpendicular-distance-from-transect-line",
-        "measurementType": "Perpendicular Distance From Transect Line",
-        "measurementUnit": "m",
-        "measurementValue": ""
-      },
-      {
-        "eventID": "MU 749:Upland:13:14",
-        "measurementID": "MU 749:Upland:13:14:survey-or-telemetry-search",
-        "measurementType": "Survey or Telemetry Search",
-        "measurementUnit": "",
-        "measurementValue": "Survey"
-      }
-    ]
-  },
-  {
-    "record": [
-      {
-        "eventID": "MU 749:Upland:14:15",
-        "basisOfRecord ": "HumanObservation"
-      }
-    ],
-    "event": [
-      {
-        "eventID": "MU 749:Upland:14:15",
-        "eventDate": "3/Feb/16",
-        "eventRemarks": ""
-      }
-    ],
-    "location": [
-      {
-        "eventID": "MU 749:Upland:14:15",
-        "verbatimCoordinates": "58.325799 -123.409782",
-        "decimalLatitude": "58.325799",
-        "decimalLongitude": "-123.409782",
-        "verbatimSRS": ""
+        "verbatimSRS": "NAD83"
       }
     ],
     "occurrence": [
       {
-        "eventID": "MU 749:Upland:14:15",
-        "occurrenceID": "MU 749:Upland:14:15:13",
-        "individualCount": "1",
-        "sex": "male",
-        "lifeStage": "unknown",
-        "taxonID": "M-ALAM",
+        "eventID": "Central Selkirks:4-24:3",
+        "occurrenceID": "Central Selkirks:4-24:3:2",
+        "individualCount": "9",
+        "sex": "unknown",
+        "lifeStage": "adult",
+        "taxonID": "M-RATA",
         "occurrenceRemarks": ""
       }
     ],
     "measurementOrFact": [
       {
-        "eventID": "MU 749:Upland:14:15",
-        "measurementID": "MU 749:Upland:14:15:study-area",
+        "eventID": "Central Selkirks:4-24:3",
+        "measurementID": "Central Selkirks:4-24:3:study-area",
         "measurementType": "Study Area",
         "measurementUnit": "",
-        "measurementValue": "MU 749"
+        "measurementValue": "Central Selkirks"
       },
       {
-        "eventID": "MU 749:Upland:14:15",
-        "measurementID": "MU 749:Upland:14:15:block-id/su-id",
+        "eventID": "Central Selkirks:4-24:3",
+        "measurementID": "Central Selkirks:4-24:3:block-id/su-id",
         "measurementType": "Block ID/SU ID",
         "measurementUnit": "",
-        "measurementValue": "Upland"
+        "measurementValue": "4-24"
       },
       {
-        "eventID": "MU 749:Upland:14:15",
-        "measurementID": "MU 749:Upland:14:15:perpendicular-distance-from-transect-line",
-        "measurementType": "Perpendicular Distance From Transect Line",
-        "measurementUnit": "m",
-        "measurementValue": "55.70"
-      },
-      {
-        "eventID": "MU 749:Upland:14:15",
-        "measurementID": "MU 749:Upland:14:15:group-label",
-        "measurementType": "Group Label",
-        "measurementUnit": "",
+        "eventID": "Central Selkirks:4-24:3",
+        "measurementID": "Central Selkirks:4-24:3:veg-cover",
+        "measurementType": "Veg Cover",
+        "measurementUnit": "%",
         "measurementValue": "15"
       },
       {
-        "eventID": "MU 749:Upland:14:15",
-        "measurementID": "MU 749:Upland:14:15:veg-cover",
-        "measurementType": "Veg Cover",
+        "eventID": "Central Selkirks:4-24:3",
+        "measurementID": "Central Selkirks:4-24:3:snow-cover",
+        "measurementType": "Snow Cover",
         "measurementUnit": "%",
-        "measurementValue": "20"
+        "measurementValue": "100"
       },
       {
-        "eventID": "MU 749:Upland:14:15",
-        "measurementID": "MU 749:Upland:14:15:activity",
+        "eventID": "Central Selkirks:4-24:3",
+        "measurementID": "Central Selkirks:4-24:3:activity",
         "measurementType": "Activity",
         "measurementUnit": "",
-        "measurementValue": "Standing"
+        "measurementValue": "Running"
       },
       {
-        "eventID": "MU 749:Upland:14:15",
-        "measurementID": "MU 749:Upland:14:15:survey-or-telemetry-search",
+        "eventID": "Central Selkirks:4-24:3",
+        "measurementID": "Central Selkirks:4-24:3:elevation-observation",
+        "measurementType": "Elevation (m) of Observation",
+        "measurementUnit": "",
+        "measurementValue": "1400"
+      },
+      {
+        "eventID": "Central Selkirks:4-24:3",
+        "measurementID": "Central Selkirks:4-24:3:habitat",
+        "measurementType": "Habitat",
+        "measurementUnit": "",
+        "measurementValue": "Alpine"
+      },
+      {
+        "eventID": "Central Selkirks:4-24:3",
+        "measurementID": "Central Selkirks:4-24:3:survey-or-telemetry-search",
         "measurementType": "Survey or Telemetry Search",
         "measurementUnit": "",
         "measurementValue": "Survey"
       },
       {
-        "eventID": "MU 749:Upland:14:15",
-        "measurementID": "MU 749:Upland:14:15:antler-configuration",
-        "occurrenceID": "MU 749:Upland:14:15:13",
-        "measurementType": "Antler Configuration",
+        "eventID": "Central Selkirks:4-24:3",
+        "measurementID": "Central Selkirks:4-24:3:photos",
+        "measurementType": "Photos",
         "measurementUnit": "",
-        "measurementValue": "unclassified"
+        "measurementValue": "18-20"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "Central Selkirks:4-24:4",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "Central Selkirks:4-24:4",
+        "eventDate": "17-Mar-19",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "Central Selkirks:4-24:4",
+        "verbatimCoordinates": "11 469471 5597272",
+        "decimalLatitude": "",
+        "decimalLongitude": "",
+        "verbatimSRS": "NAD83"
+      }
+    ],
+    "occurrence": [
+      {
+        "eventID": "Central Selkirks:4-24:4",
+        "occurrenceID": "Central Selkirks:4-24:4:2",
+        "individualCount": "4",
+        "sex": "unknown",
+        "lifeStage": "adult",
+        "taxonID": "M-RATA",
+        "occurrenceRemarks": ""
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "Central Selkirks:4-24:4",
+        "measurementID": "Central Selkirks:4-24:4:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "Central Selkirks"
+      },
+      {
+        "eventID": "Central Selkirks:4-24:4",
+        "measurementID": "Central Selkirks:4-24:4:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "4-24"
+      },
+      {
+        "eventID": "Central Selkirks:4-24:4",
+        "measurementID": "Central Selkirks:4-24:4:veg-cover",
+        "measurementType": "Veg Cover",
+        "measurementUnit": "%",
+        "measurementValue": "30"
+      },
+      {
+        "eventID": "Central Selkirks:4-24:4",
+        "measurementID": "Central Selkirks:4-24:4:snow-cover",
+        "measurementType": "Snow Cover",
+        "measurementUnit": "%",
+        "measurementValue": "100"
+      },
+      {
+        "eventID": "Central Selkirks:4-24:4",
+        "measurementID": "Central Selkirks:4-24:4:activity",
+        "measurementType": "Activity",
+        "measurementUnit": "",
+        "measurementValue": "Running"
+      },
+      {
+        "eventID": "Central Selkirks:4-24:4",
+        "measurementID": "Central Selkirks:4-24:4:elevation-observation",
+        "measurementType": "Elevation (m) of Observation",
+        "measurementUnit": "",
+        "measurementValue": "1420"
+      },
+      {
+        "eventID": "Central Selkirks:4-24:4",
+        "measurementID": "Central Selkirks:4-24:4:habitat",
+        "measurementType": "Habitat",
+        "measurementUnit": "",
+        "measurementValue": "Alpine"
+      },
+      {
+        "eventID": "Central Selkirks:4-24:4",
+        "measurementID": "Central Selkirks:4-24:4:survey-or-telemetry-search",
+        "measurementType": "Survey or Telemetry Search",
+        "measurementUnit": "",
+        "measurementValue": "Survey"
+      }
+    ]
+  },
+  {
+    "record": [
+      {
+        "eventID": "Central Selkirks:4-24:5",
+        "basisOfRecord ": "HumanObservation"
+      }
+    ],
+    "event": [
+      {
+        "eventID": "Central Selkirks:4-24:5",
+        "eventDate": "17-Mar-19",
+        "eventRemarks": ""
+      }
+    ],
+    "location": [
+      {
+        "eventID": "Central Selkirks:4-24:5",
+        "verbatimCoordinates": "11 459477 5562415",
+        "decimalLatitude": "",
+        "decimalLongitude": "",
+        "verbatimSRS": "NAD83"
+      }
+    ],
+    "measurementOrFact": [
+      {
+        "eventID": "Central Selkirks:4-24:5",
+        "measurementID": "Central Selkirks:4-24:5:study-area",
+        "measurementType": "Study Area",
+        "measurementUnit": "",
+        "measurementValue": "Central Selkirks"
+      },
+      {
+        "eventID": "Central Selkirks:4-24:5",
+        "measurementID": "Central Selkirks:4-24:5:block-id/su-id",
+        "measurementType": "Block ID/SU ID",
+        "measurementUnit": "",
+        "measurementValue": "4-24"
+      },
+      {
+        "eventID": "Central Selkirks:4-24:5",
+        "measurementID": "Central Selkirks:4-24:5:sign-type",
+        "measurementType": "Sign Type",
+        "measurementUnit": "",
+        "measurementValue": ""
+      },
+      {
+        "eventID": "Central Selkirks:4-24:5",
+        "measurementID": "Central Selkirks:4-24:5:sign-count",
+        "measurementType": "Sign Count",
+        "measurementUnit": "",
+        "measurementValue": "1"
+      },
+      {
+        "eventID": "Central Selkirks:4-24:5",
+        "measurementID": "Central Selkirks:4-24:5:age-of-sign",
+        "measurementType": "Age of Sign",
+        "measurementUnit": "",
+        "measurementValue": "New"
       }
     ]
   }

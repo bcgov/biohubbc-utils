@@ -1,38 +1,5 @@
 import * as fs from 'fs';
-const basicNumericValidator = () => {
-  return [
-    {
-      column_numeric_validator: {
-        name: '',
-        description: ''
-      }
-    }
-  ];
-};
-
-const eastingValidator = () => {
-  return [
-    {
-      column_format_validator: {
-        reg_exp: '^[0-9]{6,6}$',
-        reg_exp_flags: 'g',
-        expected_format: 'Easting needs to be a 6 digit number. For example: 123456.'
-      }
-    }
-  ];
-};
-
-const northingValidator = () => {
-  return [
-    {
-      column_format_validator: {
-        reg_exp: '^[0-9]{7,7}$',
-        reg_exp_flags: 'g',
-        expected_format: 'Northing needs to be a 7 digit number. For example: 1234567.'
-      }
-    }
-  ];
-};
+import { basicNumericValidator, eastingValidator, northingValidator } from '../../../helper/validation-config-helpers';
 
 const caribouSpeciesPickListValidator = () => {
   return [
@@ -1133,7 +1100,49 @@ const caribouTemplateValidationSchema = {
         },
         {
           file_required_columns_validator: {
-            required_columns: []
+            required_columns: [
+              'Study Area',
+              'Population Unit',
+              'Block ID/SU ID',
+              'Population Unit/Block Area (km2)',
+              'Date',
+              'Start Time 1 (24hrs)',
+              'End Time 1 (24hrs)',
+              'Start Time 2 (24hrs)',
+              'End Time 2 (24hrs)',
+              'Start Time 3 (24hrs)',
+              'End Time 3 (24hrs)',
+              'Start Time 4 (24hrs)',
+              'End Time 4 (24hrs)',
+              'Total Block Time',
+              'Total Time (hours)',
+              'Total Time (mins)',
+              'Time (mins)/block area (km2)',
+              'Aircraft Company',
+              'Aircraft Type',
+              'Pilot',
+              'Navigator',
+              'Rear Left Observer',
+              'Rear Right Observer',
+              'Air Temperature (C)',
+              'Visibility',
+              'Cloud Cover (%)',
+              'Wind Speed',
+              'Precipitation',
+              'Light',
+              'New Snow Cover',
+              'Snow conditions',
+              'Snow Depth',
+              'Days Since Snowfall',
+              'Weather Description',
+              'Location Description',
+              'Effort & Site Comments'
+            ]
+          }
+        },
+        {
+          file_column_unique_validator: {
+            column_names: ['Study Area', 'Block ID/SU ID', 'Date', 'Start Time 1 (24hrs)']
           }
         }
       ],
@@ -1159,11 +1168,76 @@ const caribouTemplateValidationSchema = {
         },
         {
           file_required_columns_validator: {
-            required_columns: ['Study Area', 'Date', 'Species']
+            required_columns: [
+              'Study Area',
+              'Population Unit',
+              'Block ID/SU ID',
+              'Date',
+              'Time',
+              'UTM Zone',
+              'Easting',
+              'Northing',
+              'Datum',
+              'Lat (DD)',
+              'Long (DD)',
+              'Species',
+              'Group Label',
+              'Adult Males',
+              'Adult Females',
+              'Adults - Unclassified Sex',
+              'Immature Males',
+              'Juveniles - Unclassified Sex',
+              'Yearling Males',
+              'Yearling Females',
+              'Yearling - Unclassified Sex',
+              'Males - Unclassified Life Stage',
+              'Females - Unclassified Life Stage',
+              'Unclassifed Life Stage and Sex',
+              'BC RISC - Class I Bulls',
+              'BC RISC - Class II Bulls',
+              'BC RISC - Class III Bulls',
+              'BC RISC - Class I or  II Bulls',
+              'Bulls - 3 Points or Fewer',
+              'Bulls - 3 or 4 Points',
+              'Bulls - 4 Points or Fewer',
+              'Bulls - 4 Points or More',
+              'Bulls - 5 Points or More',
+              'Bulls - 6 Points or More',
+              'Bulls - 10 Points or Tripalm',
+              'Total Count',
+              'Sign Type',
+              'Sign Count',
+              'Age of Sign',
+              'Veg Cover (%)',
+              'Snow Cover (%)',
+              'Activity',
+              'Elevation (m) of Observation',
+              'Habitat',
+              'Number of Marked Animals Observed',
+              'Survey or Telemetry Search',
+              'Photos',
+              'Observation Comments'
+            ]
           }
         }
       ],
       columns: [
+        {
+          name: 'Study Area',
+          validations: [
+            {
+              column_required_validator: {}
+            }
+          ]
+        },
+        {
+          name: 'Date',
+          validations: [
+            {
+              column_required_validator: {}
+            }
+          ]
+        },
         {
           name: 'UTM Zone',
           description: '',
@@ -1197,7 +1271,7 @@ const caribouTemplateValidationSchema = {
         {
           name: 'Species',
           description: '',
-          validations: caribouSpeciesPickListValidator()
+          validations: [...caribouSpeciesPickListValidator(), { column_required_validator: {} }]
         },
         {
           name: 'Adult Males',
@@ -1380,7 +1454,21 @@ const caribouTemplateValidationSchema = {
         },
         {
           file_required_columns_validator: {
-            required_columns: []
+            required_columns: [
+              'Group Label',
+              'Date',
+              'Targeted or Non-Targeted',
+              'Wildlife Health ID',
+              'Animal ID',
+              'Telemetry Device ID',
+              'Collar/Tag Frequency',
+              'Frequency Unit',
+              'Right Ear Tag ID',
+              'Right Ear Tag Colour',
+              'Left Ear Tag ID',
+              'Left Ear Tag Colour',
+              'Marked Animals Comments'
+            ]
           }
         }
       ],
@@ -1406,7 +1494,36 @@ const caribouTemplateValidationSchema = {
         },
         {
           file_required_columns_validator: {
-            required_columns: []
+            required_columns: [
+              'Study Area',
+              'Population Unit',
+              'Block ID/SU ID',
+              'Date',
+              'UTM Zone',
+              'Easting',
+              'Northing',
+              'Datum',
+              'Lat (DD)',
+              'Long (DD)',
+              'Species',
+              'Adult Males',
+              'Adult Females',
+              'Adults - Unclassified Sex',
+              'Juvenile Males',
+              'Juvenile Females',
+              'Juveniles - Unclassified Sex',
+              'Unknown Age/Sex',
+              'Total Count',
+              'Species Occurrence Status',
+              'Activity',
+              'Activity Count',
+              'Habitat Feature Type',
+              'Habitat Feature Count',
+              'Sign Type',
+              'Sign Count',
+              'Photos',
+              'Incidental Observation Comments'
+            ]
           }
         }
       ],
@@ -1533,16 +1650,16 @@ const caribouTemplateValidationSchema = {
 };
 
 fs.writeFile(
-  './validation/schema/caribou_validation_config_output.json',
+  './observations/validation/schema/caribou_validation_config_output.json',
   JSON.stringify(caribouTemplateValidationSchema),
   (err) => {
     // file written successfully
 
     if (err) {
-    console.log('Oops');
-    console.log(err)
-  } else {
-    console.log('All Done!');
-  }
+      console.log('Oops');
+      console.log(err);
+    } else {
+      console.log('All Done!');
+    }
   }
 );

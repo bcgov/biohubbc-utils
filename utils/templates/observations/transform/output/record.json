@@ -1,17 +1,7 @@
 ﻿eventID,basisOfRecord 
-MU 749:Lowland:1:0,HumanObservation
-MU 749:Lowland:2:1,HumanObservation
-MU 749:Lowland:3:2,HumanObservation
-MU 749:Lowland:4:3,HumanObservation
-MU 749:Lowland:4:4,HumanObservation
-MU 749:Lowland:5:5,HumanObservation
-MU 749:Lowland:6:6,HumanObservation
-MU 749:Lowland:7:7,HumanObservation
-MU 749:Lowland:8:8,HumanObservation
-MU 749:Upland:9:9,HumanObservation
-MU 749:Upland:10:10,HumanObservation
-MU 749:Upland:11:11,HumanObservation
-MU 749:Upland:12:12,HumanObservation
-MU 749:Upland:12:13,HumanObservation
-MU 749:Upland:13:14,HumanObservation
-MU 749:Upland:14:15,HumanObservation
+Central Selkirks:4-23:0,HumanObservation
+Central Selkirks:4-23:1,HumanObservation
+Central Selkirks:4-23:2,HumanObservation
+Central Selkirks:4-24:3,HumanObservation
+Central Selkirks:4-24:4,HumanObservation
+Central Selkirks:4-24:5,HumanObservation

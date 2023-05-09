@@ -1203,6 +1203,11 @@ const goatTemplateValidationSchema = {
               'Observation Comments'
             ]
           }
+        },
+        {
+          file_required_columns_validator: {
+            required_columns: ['Study Area', 'Date', 'Species']
+          }
         }
       ],
       columns: [
