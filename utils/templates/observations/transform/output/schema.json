@@ -4,7 +4,8 @@
       "sheetName": "Observations",
       "primaryKey": [
         "Study Area",
-        "Block ID/SU ID"
+        "Block ID/SU ID",
+        "Transect ID"
       ],
       "parentKey": [],
       "type": "root",
@@ -2806,6 +2807,62 @@
             {
               "paths": [
                 "$..[?(@._name === 'Observations')]..['Block ID/SU ID']"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sheetName": "measurementOrFact",
+      "fields": [
+        {
+          "columnName": "eventID",
+          "columnValue": [
+            {
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
+            }
+          ]
+        },
+        {
+          "columnName": "measurementID",
+          "columnValue": [
+            {
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ],
+              "postfix": {
+                "static": "perpendicular-distance-from-transect-line"
+              }
+            }
+          ]
+        },
+        {
+          "columnName": "measurementType",
+          "columnValue": [
+            {
+              "static": "Perpendicular Distance From Transect Line"
+            }
+          ]
+        },
+        {
+          "columnName": "measurementUnit",
+          "columnValue": [
+            {
+              "static": "m"
+            }
+          ]
+        },
+        {
+          "columnName": "measurementValue",
+          "columnValue": [
+            {
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Perpendicular Distance From Transect Line (m)']"
               ]
             }
           ]
