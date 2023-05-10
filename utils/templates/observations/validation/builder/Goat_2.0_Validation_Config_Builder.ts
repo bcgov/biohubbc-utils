@@ -1203,14 +1203,25 @@ const goatTemplateValidationSchema = {
               'Observation Comments'
             ]
           }
-        },
-        {
-          file_required_columns_validator: {
-            required_columns: ['Study Area', 'Date', 'Species']
-          }
         }
       ],
       columns: [
+        {
+          name: 'Study Area',
+          validations: [
+            {
+              column_required_validator: {}
+            }
+          ]
+        },
+        {
+          name: 'Date',
+          validations: [
+            {
+              column_required_validator: {}
+            }
+          ]
+        },
         {
           name: 'UTM Zone',
           description: '',
@@ -1244,7 +1255,7 @@ const goatTemplateValidationSchema = {
         {
           name: 'Species',
           description: '',
-          validations: goatSpeciesPickListValidator()
+          validations: [...goatSpeciesPickListValidator(), { column_required_validator: {} }]
         },
         {
           name: 'Adults Unclassified Sex',
