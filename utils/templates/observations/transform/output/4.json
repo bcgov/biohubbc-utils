@@ -1,599 +1,5668 @@
 {
-  "record": [
-    {
-      "eventID": "Central Selkirks:4-23:0",
-      "basisOfRecord ": "HumanObservation"
-    },
-    {
-      "eventID": "Central Selkirks:4-23:1",
-      "basisOfRecord ": "HumanObservation"
-    },
-    {
-      "eventID": "Central Selkirks:4-23:2",
-      "basisOfRecord ": "HumanObservation"
-    },
-    {
-      "eventID": "Central Selkirks:4-24:3",
-      "basisOfRecord ": "HumanObservation"
-    },
-    {
-      "eventID": "Central Selkirks:4-24:4",
-      "basisOfRecord ": "HumanObservation"
-    },
-    {
-      "eventID": "Central Selkirks:4-24:5",
-      "basisOfRecord ": "HumanObservation"
-    }
-  ],
   "event": [
     {
-      "eventID": "Central Selkirks:4-23:0",
-      "eventDate": "16-Mar-19",
-      "eventRemarks": "Looked Health"
-    },
-    {
-      "eventID": "Central Selkirks:4-23:1",
-      "eventDate": "16-Mar-19",
+      "eventID": "432_ZoneA:11:high:0",
+      "eventDate": "23/Jan/21",
       "eventRemarks": ""
     },
     {
-      "eventID": "Central Selkirks:4-23:2",
-      "eventDate": "16-Mar-19",
+      "eventID": "432_ZoneA:11:low:1",
+      "eventDate": "23/Jan/21",
       "eventRemarks": ""
     },
     {
-      "eventID": "Central Selkirks:4-24:3",
-      "eventDate": "17-Mar-19",
+      "eventID": "432_ZoneA:12:high:5",
+      "eventDate": "24/Jan/21",
       "eventRemarks": ""
     },
     {
-      "eventID": "Central Selkirks:4-24:4",
-      "eventDate": "17-Mar-19",
+      "eventID": "432_ZoneA:12:high:2",
+      "eventDate": "24/Jan/21",
       "eventRemarks": ""
     },
     {
-      "eventID": "Central Selkirks:4-24:5",
-      "eventDate": "17-Mar-19",
+      "eventID": "432_ZoneA:12:high:3",
+      "eventDate": "24/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:12:high:4",
+      "eventDate": "24/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:12:low:7",
+      "eventDate": "24/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:12:low:6",
+      "eventDate": "24/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:13:high:9",
+      "eventDate": "23/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:13:high:8",
+      "eventDate": "23/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:13:low",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:14:high:15",
+      "eventDate": "24/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:14:high:10",
+      "eventDate": "24/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:14:high:11",
+      "eventDate": "24/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:14:high:12",
+      "eventDate": "24/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:14:high:13",
+      "eventDate": "24/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:14:high:14",
+      "eventDate": "24/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:14:low:17",
+      "eventDate": "24/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:14:low:16",
+      "eventDate": "24/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:15:high",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:15:low",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:16:high",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:16:low",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:17:high",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:17:low",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:18:high",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:18:low",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:19:high",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:19:low",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:20:high",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:20:low",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:21:high",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:21:low",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:22:high:19",
+      "eventDate": "22/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:22:high:18",
+      "eventDate": "22/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:22:low",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:23:high:20",
+      "eventDate": "23/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:23:low",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:24:high",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:24:low",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:25:high:26",
+      "eventDate": "24/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:25:high:21",
+      "eventDate": "24/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:25:high:22",
+      "eventDate": "24/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:25:high:23",
+      "eventDate": "24/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:25:high:24",
+      "eventDate": "24/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:25:high:25",
+      "eventDate": "24/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:25:low:29",
+      "eventDate": "24/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:25:low:27",
+      "eventDate": "24/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:25:low:28",
+      "eventDate": "24/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:26:high",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:26:low",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:27:high",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:27:low",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:28:high",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:28:low",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:29:high:30",
+      "eventDate": "25/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:29:low",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:30:high:36",
+      "eventDate": "22/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:30:high:31",
+      "eventDate": "22/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:30:high:32",
+      "eventDate": "22/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:30:high:33",
+      "eventDate": "22/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:30:high:34",
+      "eventDate": "22/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:30:high:35",
+      "eventDate": "22/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:30:low",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:31:high:37",
+      "eventDate": "22/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:31:low",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:32:high",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:32:low",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:33:high:38",
+      "eventDate": "22/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:33:low",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:34:high",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:34:low",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:35:high",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:35:low",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:36:high:42",
+      "eventDate": "25/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:36:high:39",
+      "eventDate": "25/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:36:high:40",
+      "eventDate": "25/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:36:high:41",
+      "eventDate": "25/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:36:low",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:37:high:45",
+      "eventDate": "23/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:37:high:43",
+      "eventDate": "23/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:37:high:44",
+      "eventDate": "23/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:37:low",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:38:high",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:38:low",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:39:high",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:39:low",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:40:high:49",
+      "eventDate": "22/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:40:high:46",
+      "eventDate": "22/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:40:high:47",
+      "eventDate": "22/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:40:high:48",
+      "eventDate": "22/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:40:low",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:41:high:52",
+      "eventDate": "22/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:41:high:50",
+      "eventDate": "22/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:41:high:51",
+      "eventDate": "22/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:41:low",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:42:high:53",
+      "eventDate": "22/Jan/21",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:42:low",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:43:high",
+      "eventDate": "",
+      "eventRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:43:low",
+      "eventDate": "",
       "eventRemarks": ""
     }
   ],
   "location": [
     {
-      "eventID": "Central Selkirks:4-23:0",
-      "verbatimCoordinates": "11 493420 5589669",
-      "decimalLatitude": "",
-      "decimalLongitude": "",
-      "verbatimSRS": "NAD83"
+      "eventID": "432_ZoneA:11:high:0",
+      "verbatimCoordinates": "50.279456 -118.029515",
+      "decimalLatitude": "50.279456",
+      "decimalLongitude": "-118.029515",
+      "verbatimSRS": ""
     },
     {
-      "eventID": "Central Selkirks:4-23:1",
-      "verbatimCoordinates": "11 486420 5596948",
-      "decimalLatitude": "",
-      "decimalLongitude": "",
-      "verbatimSRS": "NAD83"
+      "eventID": "432_ZoneA:11:low:1",
+      "verbatimCoordinates": "50.277992 -118.032353",
+      "decimalLatitude": "50.277992",
+      "decimalLongitude": "-118.032353",
+      "verbatimSRS": ""
     },
     {
-      "eventID": "Central Selkirks:4-23:2",
-      "verbatimCoordinates": "11 468500 5609483",
-      "decimalLatitude": "",
-      "decimalLongitude": "",
-      "verbatimSRS": "NAD83"
+      "eventID": "432_ZoneA:12:high:5",
+      "verbatimCoordinates": "50.222254 -117.958575",
+      "decimalLatitude": "50.222254",
+      "decimalLongitude": "-117.958575",
+      "verbatimSRS": ""
     },
     {
-      "eventID": "Central Selkirks:4-24:3",
-      "verbatimCoordinates": "11 447578 5581199",
-      "decimalLatitude": "",
-      "decimalLongitude": "",
-      "verbatimSRS": "NAD83"
+      "eventID": "432_ZoneA:12:high:2",
+      "verbatimCoordinates": "50.334579 -117.972488",
+      "decimalLatitude": "50.334579",
+      "decimalLongitude": "-117.972488",
+      "verbatimSRS": ""
     },
     {
-      "eventID": "Central Selkirks:4-24:4",
-      "verbatimCoordinates": "11 469471 5597272",
-      "decimalLatitude": "",
-      "decimalLongitude": "",
-      "verbatimSRS": "NAD83"
+      "eventID": "432_ZoneA:12:high:3",
+      "verbatimCoordinates": "50.341352 -117.978577",
+      "decimalLatitude": "50.341352",
+      "decimalLongitude": "-117.978577",
+      "verbatimSRS": ""
     },
     {
-      "eventID": "Central Selkirks:4-24:5",
-      "verbatimCoordinates": "11 459477 5562415",
-      "decimalLatitude": "",
-      "decimalLongitude": "",
-      "verbatimSRS": "NAD83"
+      "eventID": "432_ZoneA:12:high:4",
+      "verbatimCoordinates": "50.342855 -117.991613",
+      "decimalLatitude": "50.342855",
+      "decimalLongitude": "-117.991613",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:12:low:7",
+      "verbatimCoordinates": "50.315576 -117.934255",
+      "decimalLatitude": "50.315576",
+      "decimalLongitude": "-117.934255",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:12:low:6",
+      "verbatimCoordinates": "50.323994 -117.994842",
+      "decimalLatitude": "50.323994",
+      "decimalLongitude": "-117.994842",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:13:high:9",
+      "verbatimCoordinates": "50.349856 -118.054131",
+      "decimalLatitude": "50.349856",
+      "decimalLongitude": "-118.054131",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:13:high:8",
+      "verbatimCoordinates": "50.352317 -118.0532",
+      "decimalLatitude": "50.352317",
+      "decimalLongitude": "-118.0532",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:14:high:15",
+      "verbatimCoordinates": "50.380986 -117.942564",
+      "decimalLatitude": "50.380986",
+      "decimalLongitude": "-117.942564",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:14:high:10",
+      "verbatimCoordinates": "50.387176 -117.958823",
+      "decimalLatitude": "50.387176",
+      "decimalLongitude": "-117.958823",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:14:high:11",
+      "verbatimCoordinates": "50.405219 -117.935356",
+      "decimalLatitude": "50.405219",
+      "decimalLongitude": "-117.935356",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:14:high:12",
+      "verbatimCoordinates": "50.401078 -117.937271",
+      "decimalLatitude": "50.401078",
+      "decimalLongitude": "-117.937271",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:14:high:13",
+      "verbatimCoordinates": "50.380441 -117.946394",
+      "decimalLatitude": "50.380441",
+      "decimalLongitude": "-117.946394",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:14:high:14",
+      "verbatimCoordinates": "50.383089 -117.944833",
+      "decimalLatitude": "50.383089",
+      "decimalLongitude": "-117.944833",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:14:low:17",
+      "verbatimCoordinates": "50.369615 -117.952009",
+      "decimalLatitude": "50.369615",
+      "decimalLongitude": "-117.952009",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:14:low:16",
+      "verbatimCoordinates": "50.398877 -117.939943",
+      "decimalLatitude": "50.398877",
+      "decimalLongitude": "-117.939943",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:22:high:19",
+      "verbatimCoordinates": "50.126255 -117.946527",
+      "decimalLatitude": "50.126255",
+      "decimalLongitude": "-117.946527",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:22:high:18",
+      "verbatimCoordinates": "50.12541 -117.945548",
+      "decimalLatitude": "50.12541",
+      "decimalLongitude": "-117.945548",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:23:high:20",
+      "verbatimCoordinates": "50.189506 -117.980077",
+      "decimalLatitude": "50.189506",
+      "decimalLongitude": "-117.980077",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:25:high:26",
+      "verbatimCoordinates": "50.246321 -117.917563",
+      "decimalLatitude": "50.246321",
+      "decimalLongitude": "-117.917563",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:25:high:21",
+      "verbatimCoordinates": "50.222254 -117.958575",
+      "decimalLatitude": "50.222254",
+      "decimalLongitude": "-117.958575",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:25:high:22",
+      "verbatimCoordinates": "50.258595 -118.00045",
+      "decimalLatitude": "50.258595",
+      "decimalLongitude": "-118.00045",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:25:high:23",
+      "verbatimCoordinates": "50.220306 -117.94514",
+      "decimalLatitude": "50.220306",
+      "decimalLongitude": "-117.94514",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:25:high:24",
+      "verbatimCoordinates": "50.241869 -117.956485",
+      "decimalLatitude": "50.241869",
+      "decimalLongitude": "-117.956485",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:25:high:25",
+      "verbatimCoordinates": "50.245169 -117.916387",
+      "decimalLatitude": "50.245169",
+      "decimalLongitude": "-117.916387",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:25:low:29",
+      "verbatimCoordinates": "50.221923 -117.942921",
+      "decimalLatitude": "50.221923",
+      "decimalLongitude": "-117.942921",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:25:low:27",
+      "verbatimCoordinates": "50.232594 -117.958052",
+      "decimalLatitude": "50.232594",
+      "decimalLongitude": "-117.958052",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:25:low:28",
+      "verbatimCoordinates": "50.255454 -117.986771",
+      "decimalLatitude": "50.255454",
+      "decimalLongitude": "-117.986771",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:29:high:30",
+      "verbatimCoordinates": "49.915582 -118.153718",
+      "decimalLatitude": "49.915582",
+      "decimalLongitude": "-118.153718",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:30:high:36",
+      "verbatimCoordinates": "49.937922 -118.049952",
+      "decimalLatitude": "49.937922",
+      "decimalLongitude": "-118.049952",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:30:high:31",
+      "verbatimCoordinates": "49.948208 -118.037623",
+      "decimalLatitude": "49.948208",
+      "decimalLongitude": "-118.037623",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:30:high:32",
+      "verbatimCoordinates": "49.93724 -118.045109",
+      "decimalLatitude": "49.93724",
+      "decimalLongitude": "-118.045109",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:30:high:33",
+      "verbatimCoordinates": "49.938493 -118.043352",
+      "decimalLatitude": "49.938493",
+      "decimalLongitude": "-118.043352",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:30:high:34",
+      "verbatimCoordinates": "49.939562 -118.047581",
+      "decimalLatitude": "49.939562",
+      "decimalLongitude": "-118.047581",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:30:high:35",
+      "verbatimCoordinates": "49.939938 -118.048051",
+      "decimalLatitude": "49.939938",
+      "decimalLongitude": "-118.048051",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:31:high:37",
+      "verbatimCoordinates": "49.92659 -118.059941",
+      "decimalLatitude": "49.92659",
+      "decimalLongitude": "-118.059941",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:33:high:38",
+      "verbatimCoordinates": "49.93912 -118.145085",
+      "decimalLatitude": "49.93912",
+      "decimalLongitude": "-118.145085",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:36:high:42",
+      "verbatimCoordinates": "50.10574 -118.082562",
+      "decimalLatitude": "50.10574",
+      "decimalLongitude": "-118.082562",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:36:high:39",
+      "verbatimCoordinates": "50.117794 -118.037051",
+      "decimalLatitude": "50.117794",
+      "decimalLongitude": "-118.037051",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:36:high:40",
+      "verbatimCoordinates": "50.104163 -118.077754",
+      "decimalLatitude": "50.104163",
+      "decimalLongitude": "-118.077754",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:36:high:41",
+      "verbatimCoordinates": "50.105072 -118.088286",
+      "decimalLatitude": "50.105072",
+      "decimalLongitude": "-118.088286",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:37:high:45",
+      "verbatimCoordinates": "50.026366 -118.072764",
+      "decimalLatitude": "50.026366",
+      "decimalLongitude": "-118.072764",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:37:high:43",
+      "verbatimCoordinates": "50.011226 -118.075075",
+      "decimalLatitude": "50.011226",
+      "decimalLongitude": "-118.075075",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:37:high:44",
+      "verbatimCoordinates": "50.02408 -118.074538",
+      "decimalLatitude": "50.02408",
+      "decimalLongitude": "-118.074538",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:40:high:49",
+      "verbatimCoordinates": "49.942514 -118.206192",
+      "decimalLatitude": "49.942514",
+      "decimalLongitude": "-118.206192",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:40:high:46",
+      "verbatimCoordinates": "49.953351 -118.213644",
+      "decimalLatitude": "49.953351",
+      "decimalLongitude": "-118.213644",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:40:high:47",
+      "verbatimCoordinates": "49.945556 -118.209903",
+      "decimalLatitude": "49.945556",
+      "decimalLongitude": "-118.209903",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:40:high:48",
+      "verbatimCoordinates": "49.930897 -118.200029",
+      "decimalLatitude": "49.930897",
+      "decimalLongitude": "-118.200029",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:41:high:52",
+      "verbatimCoordinates": "49.964111 -118.214414",
+      "decimalLatitude": "49.964111",
+      "decimalLongitude": "-118.214414",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:41:high:50",
+      "verbatimCoordinates": "49.970089 -118.258099",
+      "decimalLatitude": "49.970089",
+      "decimalLongitude": "-118.258099",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:41:high:51",
+      "verbatimCoordinates": "49.96131 -118.211415",
+      "decimalLatitude": "49.96131",
+      "decimalLongitude": "-118.211415",
+      "verbatimSRS": ""
+    },
+    {
+      "eventID": "432_ZoneA:42:high:53",
+      "verbatimCoordinates": "50.092654 -117.971536",
+      "decimalLatitude": "50.092654",
+      "decimalLongitude": "-117.971536",
+      "verbatimSRS": ""
     }
   ],
   "occurrence": [
     {
-      "eventID": "Central Selkirks:4-23:0",
-      "occurrenceID": "Central Selkirks:4-23:0:2",
-      "individualCount": "7",
+      "eventID": "432_ZoneA:11:high:0",
+      "occurrenceID": "432_ZoneA:11:high:0:17",
+      "individualCount": "1",
       "sex": "unknown",
-      "lifeStage": "adult",
-      "taxonID": "M-RATA",
-      "occurrenceRemarks": "Looked Health"
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
     },
     {
-      "eventID": "Central Selkirks:4-23:0",
-      "occurrenceID": "Central Selkirks:4-23:0:4",
+      "eventID": "432_ZoneA:11:low:1",
+      "occurrenceID": "432_ZoneA:11:low:1:13",
+      "individualCount": "1",
+      "sex": "male",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:12:high:5",
+      "occurrenceID": "432_ZoneA:12:high:5:13",
+      "individualCount": "1",
+      "sex": "male",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:12:high:2",
+      "occurrenceID": "432_ZoneA:12:high:2:14",
+      "individualCount": "1",
+      "sex": "female",
+      "lifeStage": "adult",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:12:high:2",
+      "occurrenceID": "432_ZoneA:12:high:2:15",
+      "individualCount": "2",
+      "sex": "unknown",
+      "lifeStage": "juvenile",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:12:high:3",
+      "occurrenceID": "432_ZoneA:12:high:3:17",
+      "individualCount": "2",
+      "sex": "unknown",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:12:high:4",
+      "occurrenceID": "432_ZoneA:12:high:4:17",
+      "individualCount": "1",
+      "sex": "unknown",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:12:low:7",
+      "occurrenceID": "432_ZoneA:12:low:7:14",
+      "individualCount": "1",
+      "sex": "female",
+      "lifeStage": "adult",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:12:low:7",
+      "occurrenceID": "432_ZoneA:12:low:7:15",
       "individualCount": "1",
       "sex": "unknown",
       "lifeStage": "juvenile",
-      "taxonID": "M-RATA",
-      "occurrenceRemarks": "Looked Health"
-    },
-    {
-      "eventID": "Central Selkirks:4-23:1",
-      "occurrenceID": "Central Selkirks:4-23:1:2",
-      "individualCount": "2",
-      "sex": "unknown",
-      "lifeStage": "adult",
-      "taxonID": "M-RATA",
+      "taxonID": "M-ALAM",
       "occurrenceRemarks": ""
     },
     {
-      "eventID": "Central Selkirks:4-23:2",
-      "occurrenceID": "Central Selkirks:4-23:2:2",
+      "eventID": "432_ZoneA:12:low:6",
+      "occurrenceID": "432_ZoneA:12:low:6:14",
+      "individualCount": "1",
+      "sex": "female",
+      "lifeStage": "adult",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:12:low:6",
+      "occurrenceID": "432_ZoneA:12:low:6:15",
       "individualCount": "1",
       "sex": "unknown",
-      "lifeStage": "adult",
-      "taxonID": "M-RATA",
+      "lifeStage": "juvenile",
+      "taxonID": "M-ALAM",
       "occurrenceRemarks": ""
     },
     {
-      "eventID": "Central Selkirks:4-23:2",
-      "occurrenceID": "Central Selkirks:4-23:2:3",
+      "eventID": "432_ZoneA:13:high:9",
+      "occurrenceID": "432_ZoneA:13:high:9:17",
+      "individualCount": "1",
+      "sex": "unknown",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:13:high:8",
+      "occurrenceID": "432_ZoneA:13:high:8:1",
+      "individualCount": "1",
+      "sex": "male",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:13:high:8",
+      "occurrenceID": "432_ZoneA:13:high:8:13",
+      "individualCount": "4",
+      "sex": "male",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:14:high:15",
+      "occurrenceID": "432_ZoneA:14:high:15:14",
+      "individualCount": "1",
+      "sex": "female",
+      "lifeStage": "adult",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:14:high:15",
+      "occurrenceID": "432_ZoneA:14:high:15:15",
+      "individualCount": "1",
+      "sex": "unknown",
+      "lifeStage": "juvenile",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:14:high:10",
+      "occurrenceID": "432_ZoneA:14:high:10:17",
+      "individualCount": "1",
+      "sex": "unknown",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:14:high:11",
+      "occurrenceID": "432_ZoneA:14:high:11:0",
+      "individualCount": "1",
+      "sex": "male",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:14:high:11",
+      "occurrenceID": "432_ZoneA:14:high:11:14",
+      "individualCount": "1",
+      "sex": "female",
+      "lifeStage": "adult",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:14:high:11",
+      "occurrenceID": "432_ZoneA:14:high:11:17",
+      "individualCount": "2",
+      "sex": "unknown",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:14:high:12",
+      "occurrenceID": "432_ZoneA:14:high:12:17",
+      "individualCount": "2",
+      "sex": "unknown",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:14:high:13",
+      "occurrenceID": "432_ZoneA:14:high:13:1",
+      "individualCount": "1",
+      "sex": "male",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:14:high:13",
+      "occurrenceID": "432_ZoneA:14:high:13:13",
+      "individualCount": "1",
+      "sex": "male",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:14:high:13",
+      "occurrenceID": "432_ZoneA:14:high:13:17",
+      "individualCount": "1",
+      "sex": "unknown",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:14:high:14",
+      "occurrenceID": "432_ZoneA:14:high:14:17",
+      "individualCount": "1",
+      "sex": "unknown",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:14:low:17",
+      "occurrenceID": "432_ZoneA:14:low:17:15",
+      "individualCount": "2",
+      "sex": "unknown",
+      "lifeStage": "juvenile",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:14:low:16",
+      "occurrenceID": "432_ZoneA:14:low:16:14",
+      "individualCount": "1",
+      "sex": "female",
+      "lifeStage": "adult",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:14:low:16",
+      "occurrenceID": "432_ZoneA:14:low:16:17",
+      "individualCount": "1",
+      "sex": "unknown",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:22:high:19",
+      "occurrenceID": "432_ZoneA:22:high:19:13",
+      "individualCount": "1",
+      "sex": "male",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:22:high:18",
+      "occurrenceID": "432_ZoneA:22:high:18:14",
+      "individualCount": "1",
+      "sex": "female",
+      "lifeStage": "adult",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:22:high:18",
+      "occurrenceID": "432_ZoneA:22:high:18:15",
+      "individualCount": "1",
+      "sex": "unknown",
+      "lifeStage": "juvenile",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:23:high:20",
+      "occurrenceID": "432_ZoneA:23:high:20:1",
+      "individualCount": "1",
+      "sex": "male",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:25:high:26",
+      "occurrenceID": "432_ZoneA:25:high:26:14",
+      "individualCount": "1",
+      "sex": "female",
+      "lifeStage": "adult",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:25:high:26",
+      "occurrenceID": "432_ZoneA:25:high:26:15",
+      "individualCount": "1",
+      "sex": "unknown",
+      "lifeStage": "juvenile",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:25:high:21",
+      "occurrenceID": "432_ZoneA:25:high:21:17",
+      "individualCount": "1",
+      "sex": "unknown",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:25:high:22",
+      "occurrenceID": "432_ZoneA:25:high:22:17",
+      "individualCount": "1",
+      "sex": "unknown",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:25:high:23",
+      "occurrenceID": "432_ZoneA:25:high:23:17",
+      "individualCount": "2",
+      "sex": "unknown",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:25:high:24",
+      "occurrenceID": "432_ZoneA:25:high:24:0",
+      "individualCount": "1",
+      "sex": "male",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:25:high:24",
+      "occurrenceID": "432_ZoneA:25:high:24:17",
+      "individualCount": "2",
+      "sex": "unknown",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:25:high:25",
+      "occurrenceID": "432_ZoneA:25:high:25:14",
+      "individualCount": "1",
+      "sex": "female",
+      "lifeStage": "adult",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:25:low:29",
+      "occurrenceID": "432_ZoneA:25:low:29:1",
+      "individualCount": "1",
+      "sex": "male",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:25:low:27",
+      "occurrenceID": "432_ZoneA:25:low:27:17",
+      "individualCount": "1",
+      "sex": "unknown",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:25:low:28",
+      "occurrenceID": "432_ZoneA:25:low:28:14",
+      "individualCount": "1",
+      "sex": "female",
+      "lifeStage": "adult",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:25:low:28",
+      "occurrenceID": "432_ZoneA:25:low:28:15",
+      "individualCount": "1",
+      "sex": "unknown",
+      "lifeStage": "juvenile",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:29:high:30",
+      "occurrenceID": "432_ZoneA:29:high:30:17",
+      "individualCount": "1",
+      "sex": "unknown",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:30:high:36",
+      "occurrenceID": "432_ZoneA:30:high:36:14",
+      "individualCount": "4",
+      "sex": "female",
+      "lifeStage": "adult",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:30:high:31",
+      "occurrenceID": "432_ZoneA:30:high:31:14",
+      "individualCount": "1",
+      "sex": "female",
+      "lifeStage": "adult",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:30:high:31",
+      "occurrenceID": "432_ZoneA:30:high:31:15",
+      "individualCount": "1",
+      "sex": "unknown",
+      "lifeStage": "juvenile",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:30:high:32",
+      "occurrenceID": "432_ZoneA:30:high:32:14",
+      "individualCount": "1",
+      "sex": "female",
+      "lifeStage": "adult",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:30:high:32",
+      "occurrenceID": "432_ZoneA:30:high:32:15",
+      "individualCount": "2",
+      "sex": "unknown",
+      "lifeStage": "juvenile",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:30:high:33",
+      "occurrenceID": "432_ZoneA:30:high:33:13",
       "individualCount": "2",
       "sex": "male",
       "lifeStage": "unknown",
-      "taxonID": "M-RATA",
+      "taxonID": "M-ALAM",
       "occurrenceRemarks": ""
     },
     {
-      "eventID": "Central Selkirks:4-24:3",
-      "occurrenceID": "Central Selkirks:4-24:3:2",
-      "individualCount": "9",
-      "sex": "unknown",
+      "eventID": "432_ZoneA:30:high:34",
+      "occurrenceID": "432_ZoneA:30:high:34:14",
+      "individualCount": "1",
+      "sex": "female",
       "lifeStage": "adult",
-      "taxonID": "M-RATA",
+      "taxonID": "M-ALAM",
       "occurrenceRemarks": ""
     },
     {
-      "eventID": "Central Selkirks:4-24:4",
-      "occurrenceID": "Central Selkirks:4-24:4:2",
-      "individualCount": "4",
-      "sex": "unknown",
+      "eventID": "432_ZoneA:30:high:35",
+      "occurrenceID": "432_ZoneA:30:high:35:14",
+      "individualCount": "1",
+      "sex": "female",
       "lifeStage": "adult",
-      "taxonID": "M-RATA",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:31:high:37",
+      "occurrenceID": "432_ZoneA:31:high:37:17",
+      "individualCount": "1",
+      "sex": "unknown",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:33:high:38",
+      "occurrenceID": "432_ZoneA:33:high:38:14",
+      "individualCount": "1",
+      "sex": "female",
+      "lifeStage": "adult",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:36:high:42",
+      "occurrenceID": "432_ZoneA:36:high:42:17",
+      "individualCount": "1",
+      "sex": "unknown",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:36:high:39",
+      "occurrenceID": "432_ZoneA:36:high:39:0",
+      "individualCount": "2",
+      "sex": "male",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:36:high:40",
+      "occurrenceID": "432_ZoneA:36:high:40:14",
+      "individualCount": "2",
+      "sex": "female",
+      "lifeStage": "adult",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:36:high:41",
+      "occurrenceID": "432_ZoneA:36:high:41:13",
+      "individualCount": "1",
+      "sex": "male",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:37:high:45",
+      "occurrenceID": "432_ZoneA:37:high:45:14",
+      "individualCount": "1",
+      "sex": "female",
+      "lifeStage": "adult",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:37:high:45",
+      "occurrenceID": "432_ZoneA:37:high:45:15",
+      "individualCount": "1",
+      "sex": "unknown",
+      "lifeStage": "juvenile",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:37:high:43",
+      "occurrenceID": "432_ZoneA:37:high:43:13",
+      "individualCount": "1",
+      "sex": "male",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:37:high:43",
+      "occurrenceID": "432_ZoneA:37:high:43:14",
+      "individualCount": "1",
+      "sex": "female",
+      "lifeStage": "adult",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:37:high:44",
+      "occurrenceID": "432_ZoneA:37:high:44:13",
+      "individualCount": "1",
+      "sex": "male",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:37:high:44",
+      "occurrenceID": "432_ZoneA:37:high:44:17",
+      "individualCount": "1",
+      "sex": "unknown",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:40:high:49",
+      "occurrenceID": "432_ZoneA:40:high:49:14",
+      "individualCount": "1",
+      "sex": "female",
+      "lifeStage": "adult",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:40:high:46",
+      "occurrenceID": "432_ZoneA:40:high:46:13",
+      "individualCount": "1",
+      "sex": "male",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:40:high:47",
+      "occurrenceID": "432_ZoneA:40:high:47:14",
+      "individualCount": "1",
+      "sex": "female",
+      "lifeStage": "adult",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:40:high:47",
+      "occurrenceID": "432_ZoneA:40:high:47:15",
+      "individualCount": "1",
+      "sex": "unknown",
+      "lifeStage": "juvenile",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:40:high:48",
+      "occurrenceID": "432_ZoneA:40:high:48:0",
+      "individualCount": "2",
+      "sex": "male",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:40:high:48",
+      "occurrenceID": "432_ZoneA:40:high:48:13",
+      "individualCount": "1",
+      "sex": "male",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:40:high:48",
+      "occurrenceID": "432_ZoneA:40:high:48:14",
+      "individualCount": "2",
+      "sex": "female",
+      "lifeStage": "adult",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:40:high:48",
+      "occurrenceID": "432_ZoneA:40:high:48:17",
+      "individualCount": "2",
+      "sex": "unknown",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:41:high:52",
+      "occurrenceID": "432_ZoneA:41:high:52:1",
+      "individualCount": "1",
+      "sex": "male",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:41:high:52",
+      "occurrenceID": "432_ZoneA:41:high:52:14",
+      "individualCount": "2",
+      "sex": "female",
+      "lifeStage": "adult",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:41:high:50",
+      "occurrenceID": "432_ZoneA:41:high:50:13",
+      "individualCount": "1",
+      "sex": "male",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:41:high:51",
+      "occurrenceID": "432_ZoneA:41:high:51:0",
+      "individualCount": "1",
+      "sex": "male",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:42:high:53",
+      "occurrenceID": "432_ZoneA:42:high:53:14",
+      "individualCount": "3",
+      "sex": "female",
+      "lifeStage": "adult",
+      "taxonID": "M-ALAM",
+      "occurrenceRemarks": ""
+    },
+    {
+      "eventID": "432_ZoneA:42:high:53",
+      "occurrenceID": "432_ZoneA:42:high:53:15",
+      "individualCount": "2",
+      "sex": "unknown",
+      "lifeStage": "juvenile",
+      "taxonID": "M-ALAM",
       "occurrenceRemarks": ""
     }
   ],
   "measurementOrFact": [
     {
-      "eventID": "Central Selkirks:4-23:0",
-      "measurementID": "Central Selkirks:4-23:0:study-area",
+      "eventID": "432_ZoneA:11:high:0",
+      "measurementID": "432_ZoneA:11:high:0:study-area",
       "measurementType": "Study Area",
       "measurementUnit": "",
-      "measurementValue": "Central Selkirks"
+      "measurementValue": "432_ZoneA"
     },
     {
-      "eventID": "Central Selkirks:4-23:0",
-      "measurementID": "Central Selkirks:4-23:0:block-id/su-id",
+      "eventID": "432_ZoneA:11:high:0",
+      "measurementID": "432_ZoneA:11:high:0:block-id/su-id",
       "measurementType": "Block ID/SU ID",
       "measurementUnit": "",
-      "measurementValue": "4-23"
+      "measurementValue": "11"
     },
     {
-      "eventID": "Central Selkirks:4-23:0",
-      "measurementID": "Central Selkirks:4-23:0:group-label",
-      "measurementType": "Group Label",
+      "eventID": "432_ZoneA:11:high:0",
+      "measurementID": "432_ZoneA:11:high:0:stratum",
+      "measurementType": "Stratum",
       "measurementUnit": "",
-      "measurementValue": "1"
+      "measurementValue": "high"
     },
     {
-      "eventID": "Central Selkirks:4-23:0",
-      "measurementID": "Central Selkirks:4-23:0:veg-cover",
+      "eventID": "432_ZoneA:11:high:0",
+      "measurementID": "432_ZoneA:11:high:0:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "3.3"
+    },
+    {
+      "eventID": "432_ZoneA:11:high:0",
+      "measurementID": "432_ZoneA:11:high:0:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:11:high:0",
+      "measurementID": "432_ZoneA:11:high:0:veg-cover",
       "measurementType": "Veg Cover",
       "measurementUnit": "%",
-      "measurementValue": "10"
+      "measurementValue": "5"
     },
     {
-      "eventID": "Central Selkirks:4-23:0",
-      "measurementID": "Central Selkirks:4-23:0:snow-cover",
-      "measurementType": "Snow Cover",
-      "measurementUnit": "%",
-      "measurementValue": "100"
-    },
-    {
-      "eventID": "Central Selkirks:4-23:0",
-      "measurementID": "Central Selkirks:4-23:0:activity",
-      "measurementType": "Activity",
-      "measurementUnit": "",
-      "measurementValue": "Standing"
-    },
-    {
-      "eventID": "Central Selkirks:4-23:0",
-      "measurementID": "Central Selkirks:4-23:0:elevation-observation",
-      "measurementType": "Elevation (m) of Observation",
-      "measurementUnit": "",
-      "measurementValue": "1200"
-    },
-    {
-      "eventID": "Central Selkirks:4-23:0",
-      "measurementID": "Central Selkirks:4-23:0:habitat",
-      "measurementType": "Habitat",
-      "measurementUnit": "",
-      "measurementValue": "Alpine"
-    },
-    {
-      "eventID": "Central Selkirks:4-23:0",
-      "measurementID": "Central Selkirks:4-23:0:number-of-marked-animals-observed",
-      "measurementType": "Number of Marked Animals Observed",
-      "measurementUnit": "",
-      "measurementValue": "1"
-    },
-    {
-      "eventID": "Central Selkirks:4-23:0",
-      "measurementID": "Central Selkirks:4-23:0:survey-or-telemetry-search",
-      "measurementType": "Survey or Telemetry Search",
-      "measurementUnit": "",
-      "measurementValue": "Survey"
-    },
-    {
-      "eventID": "Central Selkirks:4-23:0",
-      "measurementID": "Central Selkirks:4-23:0:photos",
-      "measurementType": "Photos",
-      "measurementUnit": "",
-      "measurementValue": "4-8"
-    },
-    {
-      "eventID": "Central Selkirks:4-23:0",
-      "organismID": "3636:35463:35365:0",
-      "measurementID": "3636:35463:35365:0:wildlife-health-id",
-      "measurementType": "Wildlife Health ID",
-      "measurementUnit": "",
-      "measurementValue": "3636"
-    },
-    {
-      "eventID": "Central Selkirks:4-23:0",
-      "organismID": "3636:35463:35365:0",
-      "measurementID": "3636:35463:35365:0:animal-id",
-      "measurementType": "Animal ID",
-      "measurementUnit": "",
-      "measurementValue": "35463"
-    },
-    {
-      "eventID": "Central Selkirks:4-23:0",
-      "organismID": "3636:35463:35365:0",
-      "measurementID": "3636:35463:35365:0:telemetry-device-id",
-      "measurementType": "Telemetry Device ID",
-      "measurementUnit": "",
-      "measurementValue": "35365"
-    },
-    {
-      "eventID": "Central Selkirks:4-23:0",
-      "organismID": "3636:35463:35365:0",
-      "measurementID": "3636:35463:35365:0:collar/tag-frequency",
-      "measurementType": "Collar/Tag Frequency",
-      "measurementUnit": "MHz",
-      "measurementValue": "114.34"
-    },
-    {
-      "eventID": "Central Selkirks:4-23:0",
-      "organismID": "3636:35463:35365:0",
-      "measurementID": "3636:35463:35365:0:right-ear-tag-id",
-      "measurementType": "Right Ear Tag ID",
-      "measurementUnit": "",
-      "measurementValue": "04"
-    },
-    {
-      "eventID": "Central Selkirks:4-23:0",
-      "organismID": "3636:35463:35365:0",
-      "measurementID": "3636:35463:35365:0:right-ear-tag-colour",
-      "measurementType": "Right Ear Tag Colour",
-      "measurementUnit": "",
-      "measurementValue": "Yellow"
-    },
-    {
-      "eventID": "Central Selkirks:4-23:0",
-      "organismID": "3636:35463:35365:0",
-      "measurementID": "3636:35463:35365:0:left-ear-tag-id",
-      "measurementType": "Left Ear Tag ID",
-      "measurementUnit": "",
-      "measurementValue": "05"
-    },
-    {
-      "eventID": "Central Selkirks:4-23:0",
-      "organismID": "3636:35463:35365:0",
-      "measurementID": "3636:35463:35365:0:left-ear-tag-colour",
-      "measurementType": "Left Ear Tag Colour",
-      "measurementUnit": "",
-      "measurementValue": "Red"
-    },
-    {
-      "eventID": "Central Selkirks:4-23:1",
-      "measurementID": "Central Selkirks:4-23:1:study-area",
+      "eventID": "432_ZoneA:11:low:1",
+      "measurementID": "432_ZoneA:11:low:1:study-area",
       "measurementType": "Study Area",
       "measurementUnit": "",
-      "measurementValue": "Central Selkirks"
+      "measurementValue": "432_ZoneA"
     },
     {
-      "eventID": "Central Selkirks:4-23:1",
-      "measurementID": "Central Selkirks:4-23:1:block-id/su-id",
+      "eventID": "432_ZoneA:11:low:1",
+      "measurementID": "432_ZoneA:11:low:1:block-id/su-id",
       "measurementType": "Block ID/SU ID",
       "measurementUnit": "",
-      "measurementValue": "4-23"
+      "measurementValue": "11"
     },
     {
-      "eventID": "Central Selkirks:4-23:1",
-      "measurementID": "Central Selkirks:4-23:1:veg-cover",
-      "measurementType": "Veg Cover",
-      "measurementUnit": "%",
-      "measurementValue": "10"
-    },
-    {
-      "eventID": "Central Selkirks:4-23:1",
-      "measurementID": "Central Selkirks:4-23:1:snow-cover",
-      "measurementType": "Snow Cover",
-      "measurementUnit": "%",
-      "measurementValue": "100"
-    },
-    {
-      "eventID": "Central Selkirks:4-23:1",
-      "measurementID": "Central Selkirks:4-23:1:activity",
-      "measurementType": "Activity",
+      "eventID": "432_ZoneA:11:low:1",
+      "measurementID": "432_ZoneA:11:low:1:stratum",
+      "measurementType": "Stratum",
       "measurementUnit": "",
-      "measurementValue": "Bedding"
+      "measurementValue": "low"
     },
     {
-      "eventID": "Central Selkirks:4-23:1",
-      "measurementID": "Central Selkirks:4-23:1:elevation-observation",
-      "measurementType": "Elevation (m) of Observation",
-      "measurementUnit": "",
-      "measurementValue": "1200"
+      "eventID": "432_ZoneA:11:low:1",
+      "measurementID": "432_ZoneA:11:low:1:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "17.2"
     },
     {
-      "eventID": "Central Selkirks:4-23:1",
-      "measurementID": "Central Selkirks:4-23:1:habitat",
-      "measurementType": "Habitat",
-      "measurementUnit": "",
-      "measurementValue": "Alpine Barren"
+      "eventID": "432_ZoneA:11:low:1",
+      "measurementID": "432_ZoneA:11:low:1:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
     },
     {
-      "eventID": "Central Selkirks:4-23:1",
-      "measurementID": "Central Selkirks:4-23:1:survey-or-telemetry-search",
-      "measurementType": "Survey or Telemetry Search",
-      "measurementUnit": "",
-      "measurementValue": "Survey"
-    },
-    {
-      "eventID": "Central Selkirks:4-23:1",
-      "measurementID": "Central Selkirks:4-23:1:photos",
-      "measurementType": "Photos",
-      "measurementUnit": "",
-      "measurementValue": "9-12"
-    },
-    {
-      "eventID": "Central Selkirks:4-23:2",
-      "measurementID": "Central Selkirks:4-23:2:study-area",
-      "measurementType": "Study Area",
-      "measurementUnit": "",
-      "measurementValue": "Central Selkirks"
-    },
-    {
-      "eventID": "Central Selkirks:4-23:2",
-      "measurementID": "Central Selkirks:4-23:2:block-id/su-id",
-      "measurementType": "Block ID/SU ID",
-      "measurementUnit": "",
-      "measurementValue": "4-23"
-    },
-    {
-      "eventID": "Central Selkirks:4-23:2",
-      "measurementID": "Central Selkirks:4-23:2:veg-cover",
-      "measurementType": "Veg Cover",
-      "measurementUnit": "%",
-      "measurementValue": "10"
-    },
-    {
-      "eventID": "Central Selkirks:4-23:2",
-      "measurementID": "Central Selkirks:4-23:2:snow-cover",
-      "measurementType": "Snow Cover",
-      "measurementUnit": "%",
-      "measurementValue": "100"
-    },
-    {
-      "eventID": "Central Selkirks:4-23:2",
-      "measurementID": "Central Selkirks:4-23:2:activity",
-      "measurementType": "Activity",
-      "measurementUnit": "",
-      "measurementValue": "Bedding"
-    },
-    {
-      "eventID": "Central Selkirks:4-23:2",
-      "measurementID": "Central Selkirks:4-23:2:elevation-observation",
-      "measurementType": "Elevation (m) of Observation",
-      "measurementUnit": "",
-      "measurementValue": "1220"
-    },
-    {
-      "eventID": "Central Selkirks:4-23:2",
-      "measurementID": "Central Selkirks:4-23:2:habitat",
-      "measurementType": "Habitat",
-      "measurementUnit": "",
-      "measurementValue": "Alpine"
-    },
-    {
-      "eventID": "Central Selkirks:4-23:2",
-      "measurementID": "Central Selkirks:4-23:2:survey-or-telemetry-search",
-      "measurementType": "Survey or Telemetry Search",
-      "measurementUnit": "",
-      "measurementValue": "Survey"
-    },
-    {
-      "eventID": "Central Selkirks:4-23:2",
-      "measurementID": "Central Selkirks:4-23:2:photos",
-      "measurementType": "Photos",
-      "measurementUnit": "",
-      "measurementValue": "13-17"
-    },
-    {
-      "eventID": "Central Selkirks:4-24:3",
-      "measurementID": "Central Selkirks:4-24:3:study-area",
-      "measurementType": "Study Area",
-      "measurementUnit": "",
-      "measurementValue": "Central Selkirks"
-    },
-    {
-      "eventID": "Central Selkirks:4-24:3",
-      "measurementID": "Central Selkirks:4-24:3:block-id/su-id",
-      "measurementType": "Block ID/SU ID",
-      "measurementUnit": "",
-      "measurementValue": "4-24"
-    },
-    {
-      "eventID": "Central Selkirks:4-24:3",
-      "measurementID": "Central Selkirks:4-24:3:veg-cover",
-      "measurementType": "Veg Cover",
-      "measurementUnit": "%",
-      "measurementValue": "15"
-    },
-    {
-      "eventID": "Central Selkirks:4-24:3",
-      "measurementID": "Central Selkirks:4-24:3:snow-cover",
-      "measurementType": "Snow Cover",
-      "measurementUnit": "%",
-      "measurementValue": "100"
-    },
-    {
-      "eventID": "Central Selkirks:4-24:3",
-      "measurementID": "Central Selkirks:4-24:3:activity",
-      "measurementType": "Activity",
-      "measurementUnit": "",
-      "measurementValue": "Running"
-    },
-    {
-      "eventID": "Central Selkirks:4-24:3",
-      "measurementID": "Central Selkirks:4-24:3:elevation-observation",
-      "measurementType": "Elevation (m) of Observation",
-      "measurementUnit": "",
-      "measurementValue": "1400"
-    },
-    {
-      "eventID": "Central Selkirks:4-24:3",
-      "measurementID": "Central Selkirks:4-24:3:habitat",
-      "measurementType": "Habitat",
-      "measurementUnit": "",
-      "measurementValue": "Alpine"
-    },
-    {
-      "eventID": "Central Selkirks:4-24:3",
-      "measurementID": "Central Selkirks:4-24:3:survey-or-telemetry-search",
-      "measurementType": "Survey or Telemetry Search",
-      "measurementUnit": "",
-      "measurementValue": "Survey"
-    },
-    {
-      "eventID": "Central Selkirks:4-24:3",
-      "measurementID": "Central Selkirks:4-24:3:photos",
-      "measurementType": "Photos",
-      "measurementUnit": "",
-      "measurementValue": "18-20"
-    },
-    {
-      "eventID": "Central Selkirks:4-24:4",
-      "measurementID": "Central Selkirks:4-24:4:study-area",
-      "measurementType": "Study Area",
-      "measurementUnit": "",
-      "measurementValue": "Central Selkirks"
-    },
-    {
-      "eventID": "Central Selkirks:4-24:4",
-      "measurementID": "Central Selkirks:4-24:4:block-id/su-id",
-      "measurementType": "Block ID/SU ID",
-      "measurementUnit": "",
-      "measurementValue": "4-24"
-    },
-    {
-      "eventID": "Central Selkirks:4-24:4",
-      "measurementID": "Central Selkirks:4-24:4:veg-cover",
+      "eventID": "432_ZoneA:11:low:1",
+      "measurementID": "432_ZoneA:11:low:1:veg-cover",
       "measurementType": "Veg Cover",
       "measurementUnit": "%",
       "measurementValue": "30"
     },
     {
-      "eventID": "Central Selkirks:4-24:4",
-      "measurementID": "Central Selkirks:4-24:4:snow-cover",
-      "measurementType": "Snow Cover",
-      "measurementUnit": "%",
-      "measurementValue": "100"
-    },
-    {
-      "eventID": "Central Selkirks:4-24:4",
-      "measurementID": "Central Selkirks:4-24:4:activity",
-      "measurementType": "Activity",
+      "eventID": "432_ZoneA:11:low:1",
+      "measurementID": "432_ZoneA:11:low:1:antler-configuration",
+      "occurrenceID": "432_ZoneA:11:low:1:13",
+      "measurementType": "Antler Configuration",
       "measurementUnit": "",
-      "measurementValue": "Running"
+      "measurementValue": "unclassified"
     },
     {
-      "eventID": "Central Selkirks:4-24:4",
-      "measurementID": "Central Selkirks:4-24:4:elevation-observation",
-      "measurementType": "Elevation (m) of Observation",
-      "measurementUnit": "",
-      "measurementValue": "1420"
-    },
-    {
-      "eventID": "Central Selkirks:4-24:4",
-      "measurementID": "Central Selkirks:4-24:4:habitat",
-      "measurementType": "Habitat",
-      "measurementUnit": "",
-      "measurementValue": "Alpine"
-    },
-    {
-      "eventID": "Central Selkirks:4-24:4",
-      "measurementID": "Central Selkirks:4-24:4:survey-or-telemetry-search",
-      "measurementType": "Survey or Telemetry Search",
-      "measurementUnit": "",
-      "measurementValue": "Survey"
-    },
-    {
-      "eventID": "Central Selkirks:4-24:5",
-      "measurementID": "Central Selkirks:4-24:5:study-area",
+      "eventID": "432_ZoneA:12:high:5",
+      "measurementID": "432_ZoneA:12:high:5:study-area",
       "measurementType": "Study Area",
       "measurementUnit": "",
-      "measurementValue": "Central Selkirks"
+      "measurementValue": "432_ZoneA"
     },
     {
-      "eventID": "Central Selkirks:4-24:5",
-      "measurementID": "Central Selkirks:4-24:5:block-id/su-id",
+      "eventID": "432_ZoneA:12:high:5",
+      "measurementID": "432_ZoneA:12:high:5:block-id/su-id",
       "measurementType": "Block ID/SU ID",
       "measurementUnit": "",
-      "measurementValue": "4-24"
+      "measurementValue": "12"
     },
     {
-      "eventID": "Central Selkirks:4-24:5",
-      "measurementID": "Central Selkirks:4-24:5:sign-type",
-      "measurementType": "Sign Type",
+      "eventID": "432_ZoneA:12:high:5",
+      "measurementID": "432_ZoneA:12:high:5:stratum",
+      "measurementType": "Stratum",
       "measurementUnit": "",
-      "measurementValue": ""
+      "measurementValue": "high"
     },
     {
-      "eventID": "Central Selkirks:4-24:5",
-      "measurementID": "Central Selkirks:4-24:5:sign-count",
-      "measurementType": "Sign Count",
+      "eventID": "432_ZoneA:12:high:5",
+      "measurementID": "432_ZoneA:12:high:5:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "5.2"
+    },
+    {
+      "eventID": "432_ZoneA:12:high:5",
+      "measurementID": "432_ZoneA:12:high:5:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:12:high:5",
+      "measurementID": "432_ZoneA:12:high:5:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "30"
+    },
+    {
+      "eventID": "432_ZoneA:12:high:5",
+      "measurementID": "432_ZoneA:12:high:5:antler-configuration",
+      "occurrenceID": "432_ZoneA:12:high:5:13",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "unclassified"
+    },
+    {
+      "eventID": "432_ZoneA:12:high:2",
+      "measurementID": "432_ZoneA:12:high:2:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:12:high:2",
+      "measurementID": "432_ZoneA:12:high:2:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "12"
+    },
+    {
+      "eventID": "432_ZoneA:12:high:2",
+      "measurementID": "432_ZoneA:12:high:2:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:12:high:2",
+      "measurementID": "432_ZoneA:12:high:2:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "5.2"
+    },
+    {
+      "eventID": "432_ZoneA:12:high:2",
+      "measurementID": "432_ZoneA:12:high:2:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:12:high:2",
+      "measurementID": "432_ZoneA:12:high:2:cow-w/2-calves",
+      "measurementType": "Cow W/2 calves",
       "measurementUnit": "",
       "measurementValue": "1"
     },
     {
-      "eventID": "Central Selkirks:4-24:5",
-      "measurementID": "Central Selkirks:4-24:5:age-of-sign",
-      "measurementType": "Age of Sign",
+      "eventID": "432_ZoneA:12:high:2",
+      "measurementID": "432_ZoneA:12:high:2:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "15"
+    },
+    {
+      "eventID": "432_ZoneA:12:high:3",
+      "measurementID": "432_ZoneA:12:high:3:study-area",
+      "measurementType": "Study Area",
       "measurementUnit": "",
-      "measurementValue": "New"
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:12:high:3",
+      "measurementID": "432_ZoneA:12:high:3:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "12"
+    },
+    {
+      "eventID": "432_ZoneA:12:high:3",
+      "measurementID": "432_ZoneA:12:high:3:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:12:high:3",
+      "measurementID": "432_ZoneA:12:high:3:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "5.2"
+    },
+    {
+      "eventID": "432_ZoneA:12:high:3",
+      "measurementID": "432_ZoneA:12:high:3:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:12:high:3",
+      "measurementID": "432_ZoneA:12:high:3:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "25"
+    },
+    {
+      "eventID": "432_ZoneA:12:high:4",
+      "measurementID": "432_ZoneA:12:high:4:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:12:high:4",
+      "measurementID": "432_ZoneA:12:high:4:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "12"
+    },
+    {
+      "eventID": "432_ZoneA:12:high:4",
+      "measurementID": "432_ZoneA:12:high:4:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:12:high:4",
+      "measurementID": "432_ZoneA:12:high:4:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "5.2"
+    },
+    {
+      "eventID": "432_ZoneA:12:high:4",
+      "measurementID": "432_ZoneA:12:high:4:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:12:high:4",
+      "measurementID": "432_ZoneA:12:high:4:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "30"
+    },
+    {
+      "eventID": "432_ZoneA:12:low:7",
+      "measurementID": "432_ZoneA:12:low:7:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:12:low:7",
+      "measurementID": "432_ZoneA:12:low:7:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "12"
+    },
+    {
+      "eventID": "432_ZoneA:12:low:7",
+      "measurementID": "432_ZoneA:12:low:7:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:12:low:7",
+      "measurementID": "432_ZoneA:12:low:7:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "24.9"
+    },
+    {
+      "eventID": "432_ZoneA:12:low:7",
+      "measurementID": "432_ZoneA:12:low:7:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:12:low:7",
+      "measurementID": "432_ZoneA:12:low:7:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "40"
+    },
+    {
+      "eventID": "432_ZoneA:12:low:6",
+      "measurementID": "432_ZoneA:12:low:6:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:12:low:6",
+      "measurementID": "432_ZoneA:12:low:6:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "12"
+    },
+    {
+      "eventID": "432_ZoneA:12:low:6",
+      "measurementID": "432_ZoneA:12:low:6:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:12:low:6",
+      "measurementID": "432_ZoneA:12:low:6:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "24.9"
+    },
+    {
+      "eventID": "432_ZoneA:12:low:6",
+      "measurementID": "432_ZoneA:12:low:6:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:12:low:6",
+      "measurementID": "432_ZoneA:12:low:6:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "50"
+    },
+    {
+      "eventID": "432_ZoneA:13:high:9",
+      "measurementID": "432_ZoneA:13:high:9:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:13:high:9",
+      "measurementID": "432_ZoneA:13:high:9:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "13"
+    },
+    {
+      "eventID": "432_ZoneA:13:high:9",
+      "measurementID": "432_ZoneA:13:high:9:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:13:high:9",
+      "measurementID": "432_ZoneA:13:high:9:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "4"
+    },
+    {
+      "eventID": "432_ZoneA:13:high:9",
+      "measurementID": "432_ZoneA:13:high:9:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:13:high:9",
+      "measurementID": "432_ZoneA:13:high:9:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "30"
+    },
+    {
+      "eventID": "432_ZoneA:13:high:8",
+      "measurementID": "432_ZoneA:13:high:8:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:13:high:8",
+      "measurementID": "432_ZoneA:13:high:8:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "13"
+    },
+    {
+      "eventID": "432_ZoneA:13:high:8",
+      "measurementID": "432_ZoneA:13:high:8:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:13:high:8",
+      "measurementID": "432_ZoneA:13:high:8:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "4"
+    },
+    {
+      "eventID": "432_ZoneA:13:high:8",
+      "measurementID": "432_ZoneA:13:high:8:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:13:high:8",
+      "measurementID": "432_ZoneA:13:high:8:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "5"
+    },
+    {
+      "eventID": "432_ZoneA:13:high:8",
+      "measurementID": "432_ZoneA:13:high:8:antler-configuration",
+      "occurrenceID": "432_ZoneA:13:high:8:1",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "Sub-Prime"
+    },
+    {
+      "eventID": "432_ZoneA:13:high:8",
+      "measurementID": "432_ZoneA:13:high:8:antler-configuration",
+      "occurrenceID": "432_ZoneA:13:high:8:13",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "unclassified"
+    },
+    {
+      "eventID": "432_ZoneA:13:low",
+      "measurementID": "432_ZoneA:13:low:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:13:low",
+      "measurementID": "432_ZoneA:13:low:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "13"
+    },
+    {
+      "eventID": "432_ZoneA:13:low",
+      "measurementID": "432_ZoneA:13:low:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:13:low",
+      "measurementID": "432_ZoneA:13:low:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "22.4"
+    },
+    {
+      "eventID": "432_ZoneA:13:low",
+      "measurementID": "432_ZoneA:13:low:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "N"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:15",
+      "measurementID": "432_ZoneA:14:high:15:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:15",
+      "measurementID": "432_ZoneA:14:high:15:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "14"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:15",
+      "measurementID": "432_ZoneA:14:high:15:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:15",
+      "measurementID": "432_ZoneA:14:high:15:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "2.8"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:15",
+      "measurementID": "432_ZoneA:14:high:15:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:15",
+      "measurementID": "432_ZoneA:14:high:15:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "15"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:10",
+      "measurementID": "432_ZoneA:14:high:10:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:10",
+      "measurementID": "432_ZoneA:14:high:10:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "14"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:10",
+      "measurementID": "432_ZoneA:14:high:10:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:10",
+      "measurementID": "432_ZoneA:14:high:10:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "2.8"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:10",
+      "measurementID": "432_ZoneA:14:high:10:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:10",
+      "measurementID": "432_ZoneA:14:high:10:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "15"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:11",
+      "measurementID": "432_ZoneA:14:high:11:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:11",
+      "measurementID": "432_ZoneA:14:high:11:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "14"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:11",
+      "measurementID": "432_ZoneA:14:high:11:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:11",
+      "measurementID": "432_ZoneA:14:high:11:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "2.8"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:11",
+      "measurementID": "432_ZoneA:14:high:11:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:11",
+      "measurementID": "432_ZoneA:14:high:11:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "30"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:11",
+      "measurementID": "432_ZoneA:14:high:11:antler-configuration",
+      "occurrenceID": "432_ZoneA:14:high:11:0",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "Spike/Fork"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:12",
+      "measurementID": "432_ZoneA:14:high:12:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:12",
+      "measurementID": "432_ZoneA:14:high:12:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "14"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:12",
+      "measurementID": "432_ZoneA:14:high:12:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:12",
+      "measurementID": "432_ZoneA:14:high:12:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "2.8"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:12",
+      "measurementID": "432_ZoneA:14:high:12:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:12",
+      "measurementID": "432_ZoneA:14:high:12:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "30"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:13",
+      "measurementID": "432_ZoneA:14:high:13:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:13",
+      "measurementID": "432_ZoneA:14:high:13:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "14"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:13",
+      "measurementID": "432_ZoneA:14:high:13:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:13",
+      "measurementID": "432_ZoneA:14:high:13:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "2.8"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:13",
+      "measurementID": "432_ZoneA:14:high:13:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:13",
+      "measurementID": "432_ZoneA:14:high:13:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "50"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:13",
+      "measurementID": "432_ZoneA:14:high:13:antler-configuration",
+      "occurrenceID": "432_ZoneA:14:high:13:1",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "Sub-Prime"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:13",
+      "measurementID": "432_ZoneA:14:high:13:antler-configuration",
+      "occurrenceID": "432_ZoneA:14:high:13:13",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "unclassified"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:14",
+      "measurementID": "432_ZoneA:14:high:14:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:14",
+      "measurementID": "432_ZoneA:14:high:14:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "14"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:14",
+      "measurementID": "432_ZoneA:14:high:14:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:14",
+      "measurementID": "432_ZoneA:14:high:14:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "2.8"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:14",
+      "measurementID": "432_ZoneA:14:high:14:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:14:high:14",
+      "measurementID": "432_ZoneA:14:high:14:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "30"
+    },
+    {
+      "eventID": "432_ZoneA:14:low:17",
+      "measurementID": "432_ZoneA:14:low:17:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:14:low:17",
+      "measurementID": "432_ZoneA:14:low:17:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "14"
+    },
+    {
+      "eventID": "432_ZoneA:14:low:17",
+      "measurementID": "432_ZoneA:14:low:17:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:14:low:17",
+      "measurementID": "432_ZoneA:14:low:17:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "7.4"
+    },
+    {
+      "eventID": "432_ZoneA:14:low:17",
+      "measurementID": "432_ZoneA:14:low:17:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:14:low:17",
+      "measurementID": "432_ZoneA:14:low:17:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "60"
+    },
+    {
+      "eventID": "432_ZoneA:14:low:16",
+      "measurementID": "432_ZoneA:14:low:16:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:14:low:16",
+      "measurementID": "432_ZoneA:14:low:16:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "14"
+    },
+    {
+      "eventID": "432_ZoneA:14:low:16",
+      "measurementID": "432_ZoneA:14:low:16:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:14:low:16",
+      "measurementID": "432_ZoneA:14:low:16:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "7.4"
+    },
+    {
+      "eventID": "432_ZoneA:14:low:16",
+      "measurementID": "432_ZoneA:14:low:16:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:14:low:16",
+      "measurementID": "432_ZoneA:14:low:16:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "40"
+    },
+    {
+      "eventID": "432_ZoneA:15:high",
+      "measurementID": "432_ZoneA:15:high:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:15:high",
+      "measurementID": "432_ZoneA:15:high:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "15"
+    },
+    {
+      "eventID": "432_ZoneA:15:high",
+      "measurementID": "432_ZoneA:15:high:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:15:high",
+      "measurementID": "432_ZoneA:15:high:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "2.1"
+    },
+    {
+      "eventID": "432_ZoneA:15:high",
+      "measurementID": "432_ZoneA:15:high:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "N"
+    },
+    {
+      "eventID": "432_ZoneA:15:low",
+      "measurementID": "432_ZoneA:15:low:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:15:low",
+      "measurementID": "432_ZoneA:15:low:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "15"
+    },
+    {
+      "eventID": "432_ZoneA:15:low",
+      "measurementID": "432_ZoneA:15:low:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:15:low",
+      "measurementID": "432_ZoneA:15:low:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "17.4"
+    },
+    {
+      "eventID": "432_ZoneA:15:low",
+      "measurementID": "432_ZoneA:15:low:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "N"
+    },
+    {
+      "eventID": "432_ZoneA:16:high",
+      "measurementID": "432_ZoneA:16:high:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:16:high",
+      "measurementID": "432_ZoneA:16:high:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "16"
+    },
+    {
+      "eventID": "432_ZoneA:16:high",
+      "measurementID": "432_ZoneA:16:high:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:16:high",
+      "measurementID": "432_ZoneA:16:high:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "2.8"
+    },
+    {
+      "eventID": "432_ZoneA:16:high",
+      "measurementID": "432_ZoneA:16:high:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "N"
+    },
+    {
+      "eventID": "432_ZoneA:16:low",
+      "measurementID": "432_ZoneA:16:low:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:16:low",
+      "measurementID": "432_ZoneA:16:low:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "16"
+    },
+    {
+      "eventID": "432_ZoneA:16:low",
+      "measurementID": "432_ZoneA:16:low:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:16:low",
+      "measurementID": "432_ZoneA:16:low:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "36.8"
+    },
+    {
+      "eventID": "432_ZoneA:16:low",
+      "measurementID": "432_ZoneA:16:low:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "N"
+    },
+    {
+      "eventID": "432_ZoneA:17:high",
+      "measurementID": "432_ZoneA:17:high:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:17:high",
+      "measurementID": "432_ZoneA:17:high:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "17"
+    },
+    {
+      "eventID": "432_ZoneA:17:high",
+      "measurementID": "432_ZoneA:17:high:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:17:high",
+      "measurementID": "432_ZoneA:17:high:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "11.1"
+    },
+    {
+      "eventID": "432_ZoneA:17:high",
+      "measurementID": "432_ZoneA:17:high:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:17:low",
+      "measurementID": "432_ZoneA:17:low:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:17:low",
+      "measurementID": "432_ZoneA:17:low:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "17"
+    },
+    {
+      "eventID": "432_ZoneA:17:low",
+      "measurementID": "432_ZoneA:17:low:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:17:low",
+      "measurementID": "432_ZoneA:17:low:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "41.2"
+    },
+    {
+      "eventID": "432_ZoneA:17:low",
+      "measurementID": "432_ZoneA:17:low:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "N"
+    },
+    {
+      "eventID": "432_ZoneA:18:high",
+      "measurementID": "432_ZoneA:18:high:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:18:high",
+      "measurementID": "432_ZoneA:18:high:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "18"
+    },
+    {
+      "eventID": "432_ZoneA:18:high",
+      "measurementID": "432_ZoneA:18:high:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:18:high",
+      "measurementID": "432_ZoneA:18:high:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "16.9"
+    },
+    {
+      "eventID": "432_ZoneA:18:high",
+      "measurementID": "432_ZoneA:18:high:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "N"
+    },
+    {
+      "eventID": "432_ZoneA:18:low",
+      "measurementID": "432_ZoneA:18:low:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:18:low",
+      "measurementID": "432_ZoneA:18:low:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "18"
+    },
+    {
+      "eventID": "432_ZoneA:18:low",
+      "measurementID": "432_ZoneA:18:low:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:18:low",
+      "measurementID": "432_ZoneA:18:low:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "3.2"
+    },
+    {
+      "eventID": "432_ZoneA:18:low",
+      "measurementID": "432_ZoneA:18:low:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "N"
+    },
+    {
+      "eventID": "432_ZoneA:19:high",
+      "measurementID": "432_ZoneA:19:high:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:19:high",
+      "measurementID": "432_ZoneA:19:high:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "19"
+    },
+    {
+      "eventID": "432_ZoneA:19:high",
+      "measurementID": "432_ZoneA:19:high:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:19:high",
+      "measurementID": "432_ZoneA:19:high:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "10.3"
+    },
+    {
+      "eventID": "432_ZoneA:19:high",
+      "measurementID": "432_ZoneA:19:high:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "N"
+    },
+    {
+      "eventID": "432_ZoneA:19:low",
+      "measurementID": "432_ZoneA:19:low:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:19:low",
+      "measurementID": "432_ZoneA:19:low:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "19"
+    },
+    {
+      "eventID": "432_ZoneA:19:low",
+      "measurementID": "432_ZoneA:19:low:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:19:low",
+      "measurementID": "432_ZoneA:19:low:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "1.8"
+    },
+    {
+      "eventID": "432_ZoneA:19:low",
+      "measurementID": "432_ZoneA:19:low:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "N"
+    },
+    {
+      "eventID": "432_ZoneA:20:high",
+      "measurementID": "432_ZoneA:20:high:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:20:high",
+      "measurementID": "432_ZoneA:20:high:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "20"
+    },
+    {
+      "eventID": "432_ZoneA:20:high",
+      "measurementID": "432_ZoneA:20:high:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:20:high",
+      "measurementID": "432_ZoneA:20:high:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "4.6"
+    },
+    {
+      "eventID": "432_ZoneA:20:high",
+      "measurementID": "432_ZoneA:20:high:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "N"
+    },
+    {
+      "eventID": "432_ZoneA:20:low",
+      "measurementID": "432_ZoneA:20:low:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:20:low",
+      "measurementID": "432_ZoneA:20:low:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "20"
+    },
+    {
+      "eventID": "432_ZoneA:20:low",
+      "measurementID": "432_ZoneA:20:low:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:20:low",
+      "measurementID": "432_ZoneA:20:low:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "13.9"
+    },
+    {
+      "eventID": "432_ZoneA:20:low",
+      "measurementID": "432_ZoneA:20:low:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "N"
+    },
+    {
+      "eventID": "432_ZoneA:21:high",
+      "measurementID": "432_ZoneA:21:high:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:21:high",
+      "measurementID": "432_ZoneA:21:high:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "21"
+    },
+    {
+      "eventID": "432_ZoneA:21:high",
+      "measurementID": "432_ZoneA:21:high:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:21:high",
+      "measurementID": "432_ZoneA:21:high:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "1.7"
+    },
+    {
+      "eventID": "432_ZoneA:21:high",
+      "measurementID": "432_ZoneA:21:high:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "N"
+    },
+    {
+      "eventID": "432_ZoneA:21:low",
+      "measurementID": "432_ZoneA:21:low:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:21:low",
+      "measurementID": "432_ZoneA:21:low:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "21"
+    },
+    {
+      "eventID": "432_ZoneA:21:low",
+      "measurementID": "432_ZoneA:21:low:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:21:low",
+      "measurementID": "432_ZoneA:21:low:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "24.5"
+    },
+    {
+      "eventID": "432_ZoneA:21:low",
+      "measurementID": "432_ZoneA:21:low:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "N"
+    },
+    {
+      "eventID": "432_ZoneA:22:high:19",
+      "measurementID": "432_ZoneA:22:high:19:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:22:high:19",
+      "measurementID": "432_ZoneA:22:high:19:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "22"
+    },
+    {
+      "eventID": "432_ZoneA:22:high:19",
+      "measurementID": "432_ZoneA:22:high:19:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:22:high:19",
+      "measurementID": "432_ZoneA:22:high:19:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "3.4"
+    },
+    {
+      "eventID": "432_ZoneA:22:high:19",
+      "measurementID": "432_ZoneA:22:high:19:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:22:high:19",
+      "measurementID": "432_ZoneA:22:high:19:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "10"
+    },
+    {
+      "eventID": "432_ZoneA:22:high:19",
+      "measurementID": "432_ZoneA:22:high:19:antler-configuration",
+      "occurrenceID": "432_ZoneA:22:high:19:13",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "unclassified"
+    },
+    {
+      "eventID": "432_ZoneA:22:high:18",
+      "measurementID": "432_ZoneA:22:high:18:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:22:high:18",
+      "measurementID": "432_ZoneA:22:high:18:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "22"
+    },
+    {
+      "eventID": "432_ZoneA:22:high:18",
+      "measurementID": "432_ZoneA:22:high:18:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:22:high:18",
+      "measurementID": "432_ZoneA:22:high:18:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "3.4"
+    },
+    {
+      "eventID": "432_ZoneA:22:high:18",
+      "measurementID": "432_ZoneA:22:high:18:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:22:high:18",
+      "measurementID": "432_ZoneA:22:high:18:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "20"
+    },
+    {
+      "eventID": "432_ZoneA:22:low",
+      "measurementID": "432_ZoneA:22:low:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:22:low",
+      "measurementID": "432_ZoneA:22:low:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "22"
+    },
+    {
+      "eventID": "432_ZoneA:22:low",
+      "measurementID": "432_ZoneA:22:low:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:22:low",
+      "measurementID": "432_ZoneA:22:low:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "18.4"
+    },
+    {
+      "eventID": "432_ZoneA:22:low",
+      "measurementID": "432_ZoneA:22:low:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:23:high:20",
+      "measurementID": "432_ZoneA:23:high:20:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:23:high:20",
+      "measurementID": "432_ZoneA:23:high:20:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "23"
+    },
+    {
+      "eventID": "432_ZoneA:23:high:20",
+      "measurementID": "432_ZoneA:23:high:20:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:23:high:20",
+      "measurementID": "432_ZoneA:23:high:20:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "4.7"
+    },
+    {
+      "eventID": "432_ZoneA:23:high:20",
+      "measurementID": "432_ZoneA:23:high:20:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:23:high:20",
+      "measurementID": "432_ZoneA:23:high:20:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "10"
+    },
+    {
+      "eventID": "432_ZoneA:23:high:20",
+      "measurementID": "432_ZoneA:23:high:20:antler-configuration",
+      "occurrenceID": "432_ZoneA:23:high:20:1",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "Sub-Prime"
+    },
+    {
+      "eventID": "432_ZoneA:23:low",
+      "measurementID": "432_ZoneA:23:low:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:23:low",
+      "measurementID": "432_ZoneA:23:low:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "23"
+    },
+    {
+      "eventID": "432_ZoneA:23:low",
+      "measurementID": "432_ZoneA:23:low:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:23:low",
+      "measurementID": "432_ZoneA:23:low:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "19.3"
+    },
+    {
+      "eventID": "432_ZoneA:23:low",
+      "measurementID": "432_ZoneA:23:low:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:24:high",
+      "measurementID": "432_ZoneA:24:high:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:24:high",
+      "measurementID": "432_ZoneA:24:high:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "24"
+    },
+    {
+      "eventID": "432_ZoneA:24:high",
+      "measurementID": "432_ZoneA:24:high:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:24:high",
+      "measurementID": "432_ZoneA:24:high:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "1.7"
+    },
+    {
+      "eventID": "432_ZoneA:24:high",
+      "measurementID": "432_ZoneA:24:high:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:24:low",
+      "measurementID": "432_ZoneA:24:low:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:24:low",
+      "measurementID": "432_ZoneA:24:low:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "24"
+    },
+    {
+      "eventID": "432_ZoneA:24:low",
+      "measurementID": "432_ZoneA:24:low:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:24:low",
+      "measurementID": "432_ZoneA:24:low:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "16"
+    },
+    {
+      "eventID": "432_ZoneA:24:low",
+      "measurementID": "432_ZoneA:24:low:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:26",
+      "measurementID": "432_ZoneA:25:high:26:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:26",
+      "measurementID": "432_ZoneA:25:high:26:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "25"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:26",
+      "measurementID": "432_ZoneA:25:high:26:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:26",
+      "measurementID": "432_ZoneA:25:high:26:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "4.7"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:26",
+      "measurementID": "432_ZoneA:25:high:26:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:26",
+      "measurementID": "432_ZoneA:25:high:26:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "30"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:21",
+      "measurementID": "432_ZoneA:25:high:21:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:21",
+      "measurementID": "432_ZoneA:25:high:21:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "25"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:21",
+      "measurementID": "432_ZoneA:25:high:21:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:21",
+      "measurementID": "432_ZoneA:25:high:21:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "4.7"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:21",
+      "measurementID": "432_ZoneA:25:high:21:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:21",
+      "measurementID": "432_ZoneA:25:high:21:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "10"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:22",
+      "measurementID": "432_ZoneA:25:high:22:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:22",
+      "measurementID": "432_ZoneA:25:high:22:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "25"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:22",
+      "measurementID": "432_ZoneA:25:high:22:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:22",
+      "measurementID": "432_ZoneA:25:high:22:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "4.7"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:22",
+      "measurementID": "432_ZoneA:25:high:22:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:22",
+      "measurementID": "432_ZoneA:25:high:22:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "10"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:23",
+      "measurementID": "432_ZoneA:25:high:23:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:23",
+      "measurementID": "432_ZoneA:25:high:23:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "25"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:23",
+      "measurementID": "432_ZoneA:25:high:23:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:23",
+      "measurementID": "432_ZoneA:25:high:23:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "4.7"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:23",
+      "measurementID": "432_ZoneA:25:high:23:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:23",
+      "measurementID": "432_ZoneA:25:high:23:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "50"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:24",
+      "measurementID": "432_ZoneA:25:high:24:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:24",
+      "measurementID": "432_ZoneA:25:high:24:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "25"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:24",
+      "measurementID": "432_ZoneA:25:high:24:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:24",
+      "measurementID": "432_ZoneA:25:high:24:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "4.7"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:24",
+      "measurementID": "432_ZoneA:25:high:24:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:24",
+      "measurementID": "432_ZoneA:25:high:24:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "30"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:24",
+      "measurementID": "432_ZoneA:25:high:24:antler-configuration",
+      "occurrenceID": "432_ZoneA:25:high:24:0",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "Spike/Fork"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:25",
+      "measurementID": "432_ZoneA:25:high:25:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:25",
+      "measurementID": "432_ZoneA:25:high:25:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "25"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:25",
+      "measurementID": "432_ZoneA:25:high:25:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:25",
+      "measurementID": "432_ZoneA:25:high:25:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "4.7"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:25",
+      "measurementID": "432_ZoneA:25:high:25:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:25:high:25",
+      "measurementID": "432_ZoneA:25:high:25:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "30"
+    },
+    {
+      "eventID": "432_ZoneA:25:low:29",
+      "measurementID": "432_ZoneA:25:low:29:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:25:low:29",
+      "measurementID": "432_ZoneA:25:low:29:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "25"
+    },
+    {
+      "eventID": "432_ZoneA:25:low:29",
+      "measurementID": "432_ZoneA:25:low:29:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:25:low:29",
+      "measurementID": "432_ZoneA:25:low:29:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "27.6"
+    },
+    {
+      "eventID": "432_ZoneA:25:low:29",
+      "measurementID": "432_ZoneA:25:low:29:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:25:low:29",
+      "measurementID": "432_ZoneA:25:low:29:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "30"
+    },
+    {
+      "eventID": "432_ZoneA:25:low:29",
+      "measurementID": "432_ZoneA:25:low:29:antler-configuration",
+      "occurrenceID": "432_ZoneA:25:low:29:1",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "Sub-Prime"
+    },
+    {
+      "eventID": "432_ZoneA:25:low:27",
+      "measurementID": "432_ZoneA:25:low:27:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:25:low:27",
+      "measurementID": "432_ZoneA:25:low:27:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "25"
+    },
+    {
+      "eventID": "432_ZoneA:25:low:27",
+      "measurementID": "432_ZoneA:25:low:27:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:25:low:27",
+      "measurementID": "432_ZoneA:25:low:27:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "27.6"
+    },
+    {
+      "eventID": "432_ZoneA:25:low:27",
+      "measurementID": "432_ZoneA:25:low:27:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:25:low:27",
+      "measurementID": "432_ZoneA:25:low:27:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "40"
+    },
+    {
+      "eventID": "432_ZoneA:25:low:28",
+      "measurementID": "432_ZoneA:25:low:28:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:25:low:28",
+      "measurementID": "432_ZoneA:25:low:28:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "25"
+    },
+    {
+      "eventID": "432_ZoneA:25:low:28",
+      "measurementID": "432_ZoneA:25:low:28:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:25:low:28",
+      "measurementID": "432_ZoneA:25:low:28:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "27.6"
+    },
+    {
+      "eventID": "432_ZoneA:25:low:28",
+      "measurementID": "432_ZoneA:25:low:28:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:25:low:28",
+      "measurementID": "432_ZoneA:25:low:28:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "40"
+    },
+    {
+      "eventID": "432_ZoneA:26:high",
+      "measurementID": "432_ZoneA:26:high:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:26:high",
+      "measurementID": "432_ZoneA:26:high:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "26"
+    },
+    {
+      "eventID": "432_ZoneA:26:high",
+      "measurementID": "432_ZoneA:26:high:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:26:high",
+      "measurementID": "432_ZoneA:26:high:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "2.8"
+    },
+    {
+      "eventID": "432_ZoneA:26:high",
+      "measurementID": "432_ZoneA:26:high:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "N"
+    },
+    {
+      "eventID": "432_ZoneA:26:low",
+      "measurementID": "432_ZoneA:26:low:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:26:low",
+      "measurementID": "432_ZoneA:26:low:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "26"
+    },
+    {
+      "eventID": "432_ZoneA:26:low",
+      "measurementID": "432_ZoneA:26:low:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:26:low",
+      "measurementID": "432_ZoneA:26:low:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "21.6"
+    },
+    {
+      "eventID": "432_ZoneA:26:low",
+      "measurementID": "432_ZoneA:26:low:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "N"
+    },
+    {
+      "eventID": "432_ZoneA:27:high",
+      "measurementID": "432_ZoneA:27:high:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:27:high",
+      "measurementID": "432_ZoneA:27:high:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "27"
+    },
+    {
+      "eventID": "432_ZoneA:27:high",
+      "measurementID": "432_ZoneA:27:high:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:27:high",
+      "measurementID": "432_ZoneA:27:high:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "5.5"
+    },
+    {
+      "eventID": "432_ZoneA:27:high",
+      "measurementID": "432_ZoneA:27:high:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "N"
+    },
+    {
+      "eventID": "432_ZoneA:27:low",
+      "measurementID": "432_ZoneA:27:low:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:27:low",
+      "measurementID": "432_ZoneA:27:low:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "27"
+    },
+    {
+      "eventID": "432_ZoneA:27:low",
+      "measurementID": "432_ZoneA:27:low:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:27:low",
+      "measurementID": "432_ZoneA:27:low:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "19.5"
+    },
+    {
+      "eventID": "432_ZoneA:27:low",
+      "measurementID": "432_ZoneA:27:low:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "N"
+    },
+    {
+      "eventID": "432_ZoneA:28:high",
+      "measurementID": "432_ZoneA:28:high:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:28:high",
+      "measurementID": "432_ZoneA:28:high:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "28"
+    },
+    {
+      "eventID": "432_ZoneA:28:high",
+      "measurementID": "432_ZoneA:28:high:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:28:high",
+      "measurementID": "432_ZoneA:28:high:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "1.5"
+    },
+    {
+      "eventID": "432_ZoneA:28:high",
+      "measurementID": "432_ZoneA:28:high:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:28:low",
+      "measurementID": "432_ZoneA:28:low:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:28:low",
+      "measurementID": "432_ZoneA:28:low:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "28"
+    },
+    {
+      "eventID": "432_ZoneA:28:low",
+      "measurementID": "432_ZoneA:28:low:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:28:low",
+      "measurementID": "432_ZoneA:28:low:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "16.4"
+    },
+    {
+      "eventID": "432_ZoneA:28:low",
+      "measurementID": "432_ZoneA:28:low:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:29:high:30",
+      "measurementID": "432_ZoneA:29:high:30:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:29:high:30",
+      "measurementID": "432_ZoneA:29:high:30:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "29"
+    },
+    {
+      "eventID": "432_ZoneA:29:high:30",
+      "measurementID": "432_ZoneA:29:high:30:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:29:high:30",
+      "measurementID": "432_ZoneA:29:high:30:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "4.2"
+    },
+    {
+      "eventID": "432_ZoneA:29:high:30",
+      "measurementID": "432_ZoneA:29:high:30:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:29:high:30",
+      "measurementID": "432_ZoneA:29:high:30:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "30"
+    },
+    {
+      "eventID": "432_ZoneA:29:low",
+      "measurementID": "432_ZoneA:29:low:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:29:low",
+      "measurementID": "432_ZoneA:29:low:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "29"
+    },
+    {
+      "eventID": "432_ZoneA:29:low",
+      "measurementID": "432_ZoneA:29:low:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:29:low",
+      "measurementID": "432_ZoneA:29:low:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "21.3"
+    },
+    {
+      "eventID": "432_ZoneA:29:low",
+      "measurementID": "432_ZoneA:29:low:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:36",
+      "measurementID": "432_ZoneA:30:high:36:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:36",
+      "measurementID": "432_ZoneA:30:high:36:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "30"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:36",
+      "measurementID": "432_ZoneA:30:high:36:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:36",
+      "measurementID": "432_ZoneA:30:high:36:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "10.2"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:36",
+      "measurementID": "432_ZoneA:30:high:36:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:36",
+      "measurementID": "432_ZoneA:30:high:36:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "40"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:31",
+      "measurementID": "432_ZoneA:30:high:31:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:31",
+      "measurementID": "432_ZoneA:30:high:31:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "30"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:31",
+      "measurementID": "432_ZoneA:30:high:31:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:31",
+      "measurementID": "432_ZoneA:30:high:31:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "10.2"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:31",
+      "measurementID": "432_ZoneA:30:high:31:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:31",
+      "measurementID": "432_ZoneA:30:high:31:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "30"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:32",
+      "measurementID": "432_ZoneA:30:high:32:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:32",
+      "measurementID": "432_ZoneA:30:high:32:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "30"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:32",
+      "measurementID": "432_ZoneA:30:high:32:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:32",
+      "measurementID": "432_ZoneA:30:high:32:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "10.2"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:32",
+      "measurementID": "432_ZoneA:30:high:32:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:32",
+      "measurementID": "432_ZoneA:30:high:32:cow-w/2-calves",
+      "measurementType": "Cow W/2 calves",
+      "measurementUnit": "",
+      "measurementValue": "1"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:32",
+      "measurementID": "432_ZoneA:30:high:32:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "30"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:33",
+      "measurementID": "432_ZoneA:30:high:33:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:33",
+      "measurementID": "432_ZoneA:30:high:33:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "30"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:33",
+      "measurementID": "432_ZoneA:30:high:33:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:33",
+      "measurementID": "432_ZoneA:30:high:33:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "10.2"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:33",
+      "measurementID": "432_ZoneA:30:high:33:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:33",
+      "measurementID": "432_ZoneA:30:high:33:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "40"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:33",
+      "measurementID": "432_ZoneA:30:high:33:antler-configuration",
+      "occurrenceID": "432_ZoneA:30:high:33:13",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "unclassified"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:34",
+      "measurementID": "432_ZoneA:30:high:34:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:34",
+      "measurementID": "432_ZoneA:30:high:34:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "30"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:34",
+      "measurementID": "432_ZoneA:30:high:34:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:34",
+      "measurementID": "432_ZoneA:30:high:34:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "10.2"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:34",
+      "measurementID": "432_ZoneA:30:high:34:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:34",
+      "measurementID": "432_ZoneA:30:high:34:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "40"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:35",
+      "measurementID": "432_ZoneA:30:high:35:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:35",
+      "measurementID": "432_ZoneA:30:high:35:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "30"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:35",
+      "measurementID": "432_ZoneA:30:high:35:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:35",
+      "measurementID": "432_ZoneA:30:high:35:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "10.2"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:35",
+      "measurementID": "432_ZoneA:30:high:35:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:30:high:35",
+      "measurementID": "432_ZoneA:30:high:35:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "30"
+    },
+    {
+      "eventID": "432_ZoneA:30:low",
+      "measurementID": "432_ZoneA:30:low:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:30:low",
+      "measurementID": "432_ZoneA:30:low:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "30"
+    },
+    {
+      "eventID": "432_ZoneA:30:low",
+      "measurementID": "432_ZoneA:30:low:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:30:low",
+      "measurementID": "432_ZoneA:30:low:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "21.4"
+    },
+    {
+      "eventID": "432_ZoneA:30:low",
+      "measurementID": "432_ZoneA:30:low:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:31:high:37",
+      "measurementID": "432_ZoneA:31:high:37:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:31:high:37",
+      "measurementID": "432_ZoneA:31:high:37:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "31"
+    },
+    {
+      "eventID": "432_ZoneA:31:high:37",
+      "measurementID": "432_ZoneA:31:high:37:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:31:high:37",
+      "measurementID": "432_ZoneA:31:high:37:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "7"
+    },
+    {
+      "eventID": "432_ZoneA:31:high:37",
+      "measurementID": "432_ZoneA:31:high:37:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:31:high:37",
+      "measurementID": "432_ZoneA:31:high:37:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "40"
+    },
+    {
+      "eventID": "432_ZoneA:31:low",
+      "measurementID": "432_ZoneA:31:low:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:31:low",
+      "measurementID": "432_ZoneA:31:low:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "31"
+    },
+    {
+      "eventID": "432_ZoneA:31:low",
+      "measurementID": "432_ZoneA:31:low:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:31:low",
+      "measurementID": "432_ZoneA:31:low:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "22.7"
+    },
+    {
+      "eventID": "432_ZoneA:31:low",
+      "measurementID": "432_ZoneA:31:low:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "N"
+    },
+    {
+      "eventID": "432_ZoneA:32:high",
+      "measurementID": "432_ZoneA:32:high:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:32:high",
+      "measurementID": "432_ZoneA:32:high:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "32"
+    },
+    {
+      "eventID": "432_ZoneA:32:high",
+      "measurementID": "432_ZoneA:32:high:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:32:high",
+      "measurementID": "432_ZoneA:32:high:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "1.1"
+    },
+    {
+      "eventID": "432_ZoneA:32:high",
+      "measurementID": "432_ZoneA:32:high:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:32:low",
+      "measurementID": "432_ZoneA:32:low:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:32:low",
+      "measurementID": "432_ZoneA:32:low:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "32"
+    },
+    {
+      "eventID": "432_ZoneA:32:low",
+      "measurementID": "432_ZoneA:32:low:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:32:low",
+      "measurementID": "432_ZoneA:32:low:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "7.3"
+    },
+    {
+      "eventID": "432_ZoneA:32:low",
+      "measurementID": "432_ZoneA:32:low:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "N"
+    },
+    {
+      "eventID": "432_ZoneA:33:high:38",
+      "measurementID": "432_ZoneA:33:high:38:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:33:high:38",
+      "measurementID": "432_ZoneA:33:high:38:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "33"
+    },
+    {
+      "eventID": "432_ZoneA:33:high:38",
+      "measurementID": "432_ZoneA:33:high:38:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:33:high:38",
+      "measurementID": "432_ZoneA:33:high:38:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "5.1"
+    },
+    {
+      "eventID": "432_ZoneA:33:high:38",
+      "measurementID": "432_ZoneA:33:high:38:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "N"
+    },
+    {
+      "eventID": "432_ZoneA:33:high:38",
+      "measurementID": "432_ZoneA:33:high:38:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "30"
+    },
+    {
+      "eventID": "432_ZoneA:33:low",
+      "measurementID": "432_ZoneA:33:low:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:33:low",
+      "measurementID": "432_ZoneA:33:low:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "33"
+    },
+    {
+      "eventID": "432_ZoneA:33:low",
+      "measurementID": "432_ZoneA:33:low:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:33:low",
+      "measurementID": "432_ZoneA:33:low:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "18.3"
+    },
+    {
+      "eventID": "432_ZoneA:33:low",
+      "measurementID": "432_ZoneA:33:low:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "N"
+    },
+    {
+      "eventID": "432_ZoneA:34:high",
+      "measurementID": "432_ZoneA:34:high:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:34:high",
+      "measurementID": "432_ZoneA:34:high:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "34"
+    },
+    {
+      "eventID": "432_ZoneA:34:high",
+      "measurementID": "432_ZoneA:34:high:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:34:high",
+      "measurementID": "432_ZoneA:34:high:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "1.4"
+    },
+    {
+      "eventID": "432_ZoneA:34:high",
+      "measurementID": "432_ZoneA:34:high:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:34:low",
+      "measurementID": "432_ZoneA:34:low:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:34:low",
+      "measurementID": "432_ZoneA:34:low:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "34"
+    },
+    {
+      "eventID": "432_ZoneA:34:low",
+      "measurementID": "432_ZoneA:34:low:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:34:low",
+      "measurementID": "432_ZoneA:34:low:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "13.8"
+    },
+    {
+      "eventID": "432_ZoneA:34:low",
+      "measurementID": "432_ZoneA:34:low:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "N"
+    },
+    {
+      "eventID": "432_ZoneA:35:high",
+      "measurementID": "432_ZoneA:35:high:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:35:high",
+      "measurementID": "432_ZoneA:35:high:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "35"
+    },
+    {
+      "eventID": "432_ZoneA:35:high",
+      "measurementID": "432_ZoneA:35:high:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:35:high",
+      "measurementID": "432_ZoneA:35:high:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "5.2"
+    },
+    {
+      "eventID": "432_ZoneA:35:high",
+      "measurementID": "432_ZoneA:35:high:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:35:low",
+      "measurementID": "432_ZoneA:35:low:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:35:low",
+      "measurementID": "432_ZoneA:35:low:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "35"
+    },
+    {
+      "eventID": "432_ZoneA:35:low",
+      "measurementID": "432_ZoneA:35:low:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:35:low",
+      "measurementID": "432_ZoneA:35:low:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "9.9"
+    },
+    {
+      "eventID": "432_ZoneA:35:low",
+      "measurementID": "432_ZoneA:35:low:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:36:high:42",
+      "measurementID": "432_ZoneA:36:high:42:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:36:high:42",
+      "measurementID": "432_ZoneA:36:high:42:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "36"
+    },
+    {
+      "eventID": "432_ZoneA:36:high:42",
+      "measurementID": "432_ZoneA:36:high:42:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:36:high:42",
+      "measurementID": "432_ZoneA:36:high:42:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "8.8"
+    },
+    {
+      "eventID": "432_ZoneA:36:high:42",
+      "measurementID": "432_ZoneA:36:high:42:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:36:high:42",
+      "measurementID": "432_ZoneA:36:high:42:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "10"
+    },
+    {
+      "eventID": "432_ZoneA:36:high:39",
+      "measurementID": "432_ZoneA:36:high:39:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:36:high:39",
+      "measurementID": "432_ZoneA:36:high:39:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "36"
+    },
+    {
+      "eventID": "432_ZoneA:36:high:39",
+      "measurementID": "432_ZoneA:36:high:39:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:36:high:39",
+      "measurementID": "432_ZoneA:36:high:39:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "8.8"
+    },
+    {
+      "eventID": "432_ZoneA:36:high:39",
+      "measurementID": "432_ZoneA:36:high:39:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:36:high:39",
+      "measurementID": "432_ZoneA:36:high:39:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "5"
+    },
+    {
+      "eventID": "432_ZoneA:36:high:39",
+      "measurementID": "432_ZoneA:36:high:39:antler-configuration",
+      "occurrenceID": "432_ZoneA:36:high:39:0",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "Spike/Fork"
+    },
+    {
+      "eventID": "432_ZoneA:36:high:40",
+      "measurementID": "432_ZoneA:36:high:40:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:36:high:40",
+      "measurementID": "432_ZoneA:36:high:40:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "36"
+    },
+    {
+      "eventID": "432_ZoneA:36:high:40",
+      "measurementID": "432_ZoneA:36:high:40:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:36:high:40",
+      "measurementID": "432_ZoneA:36:high:40:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "8.8"
+    },
+    {
+      "eventID": "432_ZoneA:36:high:40",
+      "measurementID": "432_ZoneA:36:high:40:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:36:high:40",
+      "measurementID": "432_ZoneA:36:high:40:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "20"
+    },
+    {
+      "eventID": "432_ZoneA:36:high:41",
+      "measurementID": "432_ZoneA:36:high:41:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:36:high:41",
+      "measurementID": "432_ZoneA:36:high:41:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "36"
+    },
+    {
+      "eventID": "432_ZoneA:36:high:41",
+      "measurementID": "432_ZoneA:36:high:41:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:36:high:41",
+      "measurementID": "432_ZoneA:36:high:41:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "8.8"
+    },
+    {
+      "eventID": "432_ZoneA:36:high:41",
+      "measurementID": "432_ZoneA:36:high:41:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:36:high:41",
+      "measurementID": "432_ZoneA:36:high:41:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "5"
+    },
+    {
+      "eventID": "432_ZoneA:36:high:41",
+      "measurementID": "432_ZoneA:36:high:41:antler-configuration",
+      "occurrenceID": "432_ZoneA:36:high:41:13",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "unclassified"
+    },
+    {
+      "eventID": "432_ZoneA:36:low",
+      "measurementID": "432_ZoneA:36:low:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:36:low",
+      "measurementID": "432_ZoneA:36:low:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "36"
+    },
+    {
+      "eventID": "432_ZoneA:36:low",
+      "measurementID": "432_ZoneA:36:low:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:36:low",
+      "measurementID": "432_ZoneA:36:low:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "14.4"
+    },
+    {
+      "eventID": "432_ZoneA:36:low",
+      "measurementID": "432_ZoneA:36:low:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:37:high:45",
+      "measurementID": "432_ZoneA:37:high:45:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:37:high:45",
+      "measurementID": "432_ZoneA:37:high:45:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "37"
+    },
+    {
+      "eventID": "432_ZoneA:37:high:45",
+      "measurementID": "432_ZoneA:37:high:45:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:37:high:45",
+      "measurementID": "432_ZoneA:37:high:45:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "5.9"
+    },
+    {
+      "eventID": "432_ZoneA:37:high:45",
+      "measurementID": "432_ZoneA:37:high:45:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:37:high:45",
+      "measurementID": "432_ZoneA:37:high:45:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "40"
+    },
+    {
+      "eventID": "432_ZoneA:37:high:43",
+      "measurementID": "432_ZoneA:37:high:43:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:37:high:43",
+      "measurementID": "432_ZoneA:37:high:43:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "37"
+    },
+    {
+      "eventID": "432_ZoneA:37:high:43",
+      "measurementID": "432_ZoneA:37:high:43:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:37:high:43",
+      "measurementID": "432_ZoneA:37:high:43:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "5.9"
+    },
+    {
+      "eventID": "432_ZoneA:37:high:43",
+      "measurementID": "432_ZoneA:37:high:43:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:37:high:43",
+      "measurementID": "432_ZoneA:37:high:43:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "30"
+    },
+    {
+      "eventID": "432_ZoneA:37:high:43",
+      "measurementID": "432_ZoneA:37:high:43:antler-configuration",
+      "occurrenceID": "432_ZoneA:37:high:43:13",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "unclassified"
+    },
+    {
+      "eventID": "432_ZoneA:37:high:44",
+      "measurementID": "432_ZoneA:37:high:44:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:37:high:44",
+      "measurementID": "432_ZoneA:37:high:44:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "37"
+    },
+    {
+      "eventID": "432_ZoneA:37:high:44",
+      "measurementID": "432_ZoneA:37:high:44:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:37:high:44",
+      "measurementID": "432_ZoneA:37:high:44:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "5.9"
+    },
+    {
+      "eventID": "432_ZoneA:37:high:44",
+      "measurementID": "432_ZoneA:37:high:44:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:37:high:44",
+      "measurementID": "432_ZoneA:37:high:44:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "5"
+    },
+    {
+      "eventID": "432_ZoneA:37:high:44",
+      "measurementID": "432_ZoneA:37:high:44:antler-configuration",
+      "occurrenceID": "432_ZoneA:37:high:44:13",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "unclassified"
+    },
+    {
+      "eventID": "432_ZoneA:37:low",
+      "measurementID": "432_ZoneA:37:low:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:37:low",
+      "measurementID": "432_ZoneA:37:low:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "37"
+    },
+    {
+      "eventID": "432_ZoneA:37:low",
+      "measurementID": "432_ZoneA:37:low:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:37:low",
+      "measurementID": "432_ZoneA:37:low:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "14.4"
+    },
+    {
+      "eventID": "432_ZoneA:37:low",
+      "measurementID": "432_ZoneA:37:low:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "N"
+    },
+    {
+      "eventID": "432_ZoneA:38:high",
+      "measurementID": "432_ZoneA:38:high:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:38:high",
+      "measurementID": "432_ZoneA:38:high:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "38"
+    },
+    {
+      "eventID": "432_ZoneA:38:high",
+      "measurementID": "432_ZoneA:38:high:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:38:high",
+      "measurementID": "432_ZoneA:38:high:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "9.8"
+    },
+    {
+      "eventID": "432_ZoneA:38:high",
+      "measurementID": "432_ZoneA:38:high:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:38:low",
+      "measurementID": "432_ZoneA:38:low:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:38:low",
+      "measurementID": "432_ZoneA:38:low:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "38"
+    },
+    {
+      "eventID": "432_ZoneA:38:low",
+      "measurementID": "432_ZoneA:38:low:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:38:low",
+      "measurementID": "432_ZoneA:38:low:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "24.9"
+    },
+    {
+      "eventID": "432_ZoneA:38:low",
+      "measurementID": "432_ZoneA:38:low:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "N"
+    },
+    {
+      "eventID": "432_ZoneA:39:high",
+      "measurementID": "432_ZoneA:39:high:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:39:high",
+      "measurementID": "432_ZoneA:39:high:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "39"
+    },
+    {
+      "eventID": "432_ZoneA:39:high",
+      "measurementID": "432_ZoneA:39:high:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:39:high",
+      "measurementID": "432_ZoneA:39:high:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "6"
+    },
+    {
+      "eventID": "432_ZoneA:39:high",
+      "measurementID": "432_ZoneA:39:high:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:39:low",
+      "measurementID": "432_ZoneA:39:low:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:39:low",
+      "measurementID": "432_ZoneA:39:low:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "39"
+    },
+    {
+      "eventID": "432_ZoneA:39:low",
+      "measurementID": "432_ZoneA:39:low:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:39:low",
+      "measurementID": "432_ZoneA:39:low:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "14.3"
+    },
+    {
+      "eventID": "432_ZoneA:39:low",
+      "measurementID": "432_ZoneA:39:low:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "N"
+    },
+    {
+      "eventID": "432_ZoneA:40:high:49",
+      "measurementID": "432_ZoneA:40:high:49:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:40:high:49",
+      "measurementID": "432_ZoneA:40:high:49:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "40"
+    },
+    {
+      "eventID": "432_ZoneA:40:high:49",
+      "measurementID": "432_ZoneA:40:high:49:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:40:high:49",
+      "measurementID": "432_ZoneA:40:high:49:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "5.5"
+    },
+    {
+      "eventID": "432_ZoneA:40:high:49",
+      "measurementID": "432_ZoneA:40:high:49:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:40:high:49",
+      "measurementID": "432_ZoneA:40:high:49:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "45"
+    },
+    {
+      "eventID": "432_ZoneA:40:high:46",
+      "measurementID": "432_ZoneA:40:high:46:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:40:high:46",
+      "measurementID": "432_ZoneA:40:high:46:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "40"
+    },
+    {
+      "eventID": "432_ZoneA:40:high:46",
+      "measurementID": "432_ZoneA:40:high:46:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:40:high:46",
+      "measurementID": "432_ZoneA:40:high:46:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "5.5"
+    },
+    {
+      "eventID": "432_ZoneA:40:high:46",
+      "measurementID": "432_ZoneA:40:high:46:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:40:high:46",
+      "measurementID": "432_ZoneA:40:high:46:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "20"
+    },
+    {
+      "eventID": "432_ZoneA:40:high:46",
+      "measurementID": "432_ZoneA:40:high:46:antler-configuration",
+      "occurrenceID": "432_ZoneA:40:high:46:13",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "unclassified"
+    },
+    {
+      "eventID": "432_ZoneA:40:high:47",
+      "measurementID": "432_ZoneA:40:high:47:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:40:high:47",
+      "measurementID": "432_ZoneA:40:high:47:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "40"
+    },
+    {
+      "eventID": "432_ZoneA:40:high:47",
+      "measurementID": "432_ZoneA:40:high:47:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:40:high:47",
+      "measurementID": "432_ZoneA:40:high:47:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "5.5"
+    },
+    {
+      "eventID": "432_ZoneA:40:high:47",
+      "measurementID": "432_ZoneA:40:high:47:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:40:high:47",
+      "measurementID": "432_ZoneA:40:high:47:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "30"
+    },
+    {
+      "eventID": "432_ZoneA:40:high:48",
+      "measurementID": "432_ZoneA:40:high:48:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:40:high:48",
+      "measurementID": "432_ZoneA:40:high:48:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "40"
+    },
+    {
+      "eventID": "432_ZoneA:40:high:48",
+      "measurementID": "432_ZoneA:40:high:48:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:40:high:48",
+      "measurementID": "432_ZoneA:40:high:48:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "5.5"
+    },
+    {
+      "eventID": "432_ZoneA:40:high:48",
+      "measurementID": "432_ZoneA:40:high:48:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:40:high:48",
+      "measurementID": "432_ZoneA:40:high:48:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "30"
+    },
+    {
+      "eventID": "432_ZoneA:40:high:48",
+      "measurementID": "432_ZoneA:40:high:48:antler-configuration",
+      "occurrenceID": "432_ZoneA:40:high:48:0",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "Spike/Fork"
+    },
+    {
+      "eventID": "432_ZoneA:40:high:48",
+      "measurementID": "432_ZoneA:40:high:48:antler-configuration",
+      "occurrenceID": "432_ZoneA:40:high:48:13",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "unclassified"
+    },
+    {
+      "eventID": "432_ZoneA:40:low",
+      "measurementID": "432_ZoneA:40:low:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:40:low",
+      "measurementID": "432_ZoneA:40:low:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "40"
+    },
+    {
+      "eventID": "432_ZoneA:40:low",
+      "measurementID": "432_ZoneA:40:low:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:40:low",
+      "measurementID": "432_ZoneA:40:low:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "20.5"
+    },
+    {
+      "eventID": "432_ZoneA:40:low",
+      "measurementID": "432_ZoneA:40:low:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "N"
+    },
+    {
+      "eventID": "432_ZoneA:41:high:52",
+      "measurementID": "432_ZoneA:41:high:52:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:41:high:52",
+      "measurementID": "432_ZoneA:41:high:52:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "41"
+    },
+    {
+      "eventID": "432_ZoneA:41:high:52",
+      "measurementID": "432_ZoneA:41:high:52:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:41:high:52",
+      "measurementID": "432_ZoneA:41:high:52:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "7.8"
+    },
+    {
+      "eventID": "432_ZoneA:41:high:52",
+      "measurementID": "432_ZoneA:41:high:52:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:41:high:52",
+      "measurementID": "432_ZoneA:41:high:52:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "45"
+    },
+    {
+      "eventID": "432_ZoneA:41:high:52",
+      "measurementID": "432_ZoneA:41:high:52:antler-configuration",
+      "occurrenceID": "432_ZoneA:41:high:52:1",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "Sub-Prime"
+    },
+    {
+      "eventID": "432_ZoneA:41:high:50",
+      "measurementID": "432_ZoneA:41:high:50:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:41:high:50",
+      "measurementID": "432_ZoneA:41:high:50:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "41"
+    },
+    {
+      "eventID": "432_ZoneA:41:high:50",
+      "measurementID": "432_ZoneA:41:high:50:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:41:high:50",
+      "measurementID": "432_ZoneA:41:high:50:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "7.8"
+    },
+    {
+      "eventID": "432_ZoneA:41:high:50",
+      "measurementID": "432_ZoneA:41:high:50:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:41:high:50",
+      "measurementID": "432_ZoneA:41:high:50:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "45"
+    },
+    {
+      "eventID": "432_ZoneA:41:high:50",
+      "measurementID": "432_ZoneA:41:high:50:antler-configuration",
+      "occurrenceID": "432_ZoneA:41:high:50:13",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "unclassified"
+    },
+    {
+      "eventID": "432_ZoneA:41:high:51",
+      "measurementID": "432_ZoneA:41:high:51:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:41:high:51",
+      "measurementID": "432_ZoneA:41:high:51:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "41"
+    },
+    {
+      "eventID": "432_ZoneA:41:high:51",
+      "measurementID": "432_ZoneA:41:high:51:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:41:high:51",
+      "measurementID": "432_ZoneA:41:high:51:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "7.8"
+    },
+    {
+      "eventID": "432_ZoneA:41:high:51",
+      "measurementID": "432_ZoneA:41:high:51:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:41:high:51",
+      "measurementID": "432_ZoneA:41:high:51:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "45"
+    },
+    {
+      "eventID": "432_ZoneA:41:high:51",
+      "measurementID": "432_ZoneA:41:high:51:antler-configuration",
+      "occurrenceID": "432_ZoneA:41:high:51:0",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "Spike/Fork"
+    },
+    {
+      "eventID": "432_ZoneA:41:low",
+      "measurementID": "432_ZoneA:41:low:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:41:low",
+      "measurementID": "432_ZoneA:41:low:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "41"
+    },
+    {
+      "eventID": "432_ZoneA:41:low",
+      "measurementID": "432_ZoneA:41:low:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:41:low",
+      "measurementID": "432_ZoneA:41:low:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "4.7"
+    },
+    {
+      "eventID": "432_ZoneA:41:low",
+      "measurementID": "432_ZoneA:41:low:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:42:high:53",
+      "measurementID": "432_ZoneA:42:high:53:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:42:high:53",
+      "measurementID": "432_ZoneA:42:high:53:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "42"
+    },
+    {
+      "eventID": "432_ZoneA:42:high:53",
+      "measurementID": "432_ZoneA:42:high:53:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:42:high:53",
+      "measurementID": "432_ZoneA:42:high:53:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "12.5"
+    },
+    {
+      "eventID": "432_ZoneA:42:high:53",
+      "measurementID": "432_ZoneA:42:high:53:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:42:high:53",
+      "measurementID": "432_ZoneA:42:high:53:veg-cover",
+      "measurementType": "Veg Cover",
+      "measurementUnit": "%",
+      "measurementValue": "40"
+    },
+    {
+      "eventID": "432_ZoneA:42:low",
+      "measurementID": "432_ZoneA:42:low:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:42:low",
+      "measurementID": "432_ZoneA:42:low:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "42"
+    },
+    {
+      "eventID": "432_ZoneA:42:low",
+      "measurementID": "432_ZoneA:42:low:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:42:low",
+      "measurementID": "432_ZoneA:42:low:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "11.4"
+    },
+    {
+      "eventID": "432_ZoneA:42:low",
+      "measurementID": "432_ZoneA:42:low:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "Y"
+    },
+    {
+      "eventID": "432_ZoneA:43:high",
+      "measurementID": "432_ZoneA:43:high:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:43:high",
+      "measurementID": "432_ZoneA:43:high:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "43"
+    },
+    {
+      "eventID": "432_ZoneA:43:high",
+      "measurementID": "432_ZoneA:43:high:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "high"
+    },
+    {
+      "eventID": "432_ZoneA:43:high",
+      "measurementID": "432_ZoneA:43:high:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "2.4"
+    },
+    {
+      "eventID": "432_ZoneA:43:high",
+      "measurementID": "432_ZoneA:43:high:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "N"
+    },
+    {
+      "eventID": "432_ZoneA:43:low",
+      "measurementID": "432_ZoneA:43:low:study-area",
+      "measurementType": "Study Area",
+      "measurementUnit": "",
+      "measurementValue": "432_ZoneA"
+    },
+    {
+      "eventID": "432_ZoneA:43:low",
+      "measurementID": "432_ZoneA:43:low:block-id/su-id",
+      "measurementType": "Block ID/SU ID",
+      "measurementUnit": "",
+      "measurementValue": "43"
+    },
+    {
+      "eventID": "432_ZoneA:43:low",
+      "measurementID": "432_ZoneA:43:low:stratum",
+      "measurementType": "Stratum",
+      "measurementUnit": "",
+      "measurementValue": "low"
+    },
+    {
+      "eventID": "432_ZoneA:43:low",
+      "measurementID": "432_ZoneA:43:low:stratum/block-area",
+      "measurementType": "Stratum/Block Area",
+      "measurementUnit": "km2",
+      "measurementValue": "12.2"
+    },
+    {
+      "eventID": "432_ZoneA:43:low",
+      "measurementID": "432_ZoneA:43:low:sampled",
+      "measurementType": "Sampled",
+      "measurementUnit": "Y/N",
+      "measurementValue": "N"
     }
   ],
-  "organism": [
-    {
-      "eventID": "Central Selkirks:4-23:0",
-      "organismID": "3636:35463:35365:0",
-      "organismRemarks": "Collar to tight"
-    }
-  ]
+  "organism": []
 }

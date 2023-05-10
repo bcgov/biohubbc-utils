@@ -873,6 +873,16 @@ const mooseTransectTemplateValidationSchema = {
       ],
       columns: [
         {
+          name: 'Study Area',
+          description: '',
+          validations: [{ column_required_validator: {} }]
+        },
+        {
+          name: 'Date',
+          description: '',
+          validations: [{ column_required_validator: {} }]
+        },
+        {
           name: 'UTM Zone',
           description: '',
           validations: utmZoneValidator()
@@ -905,7 +915,7 @@ const mooseTransectTemplateValidationSchema = {
         {
           name: 'Species',
           description: '',
-          validations: mooseSpeciesPickListValidator()
+          validations: [...mooseSpeciesPickListValidator(), { column_required_validator: {} }]
         },
         {
           name: 'Spike/ Fork Bulls',
