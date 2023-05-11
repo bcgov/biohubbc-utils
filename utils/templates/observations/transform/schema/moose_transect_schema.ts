@@ -627,68 +627,553 @@ export const mooseTransectSchema: TransformSchema = {
       ]
     },
 
-    // {
-    //   sheetName: 'measurementOrFact',
-    //   condition: {
-    //     type: 'and',
-    //     checks: [{ ifNotEmpty: getValuesByName('Observations', ['Cow W/1 calves']) }]
-    //   },
-    //   fields: [
-    //     {
-    //       columnName: 'eventID',
-    //       columnValue: [
-    //         {
-    //           paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-    //         }
-    //       ]
-    //     },
-    //     {
-    //       columnName: 'measurementID',
-    //       columnValue: [
-    //         {
-    //           paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-    //           postfix: {
-    //             static: 'cow-w/1-calf'
-    //           }
-    //         }
-    //       ]
-    //     },
-    //     createValueField('measurementType', 'Cow W/1 calf'),
-    //     createValueField('measurementUnit', ''),
-    //     createPathField('measurementValue', 'Observations', ['Cow W/1 calf'])
-    //   ]
-    // },
-    // {
-    //   sheetName: 'measurementOrFact',
-    //   condition: {
-    //     type: 'and',
-    //     checks: [{ ifNotEmpty: getValuesByName('Observations', ['Cow W/2 calves']) }]
-    //   },
-    //   fields: [
-    //     {
-    //       columnName: 'eventID',
-    //       columnValue: [
-    //         {
-    //           paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-    //         }
-    //       ]
-    //     },
-    //     {
-    //       columnName: 'measurementID',
-    //       columnValue: [
-    //         {
-    //           paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-    //           postfix: {
-    //             static: 'cow-w/2-calves'
-    //           }
-    //         }
-    //       ]
-    //     },
-    //     createValueField('measurementType', 'Cow W/2 calves'),
-    //     createValueField('measurementUnit', ''),
-    //     createPathField('measurementValue', 'Observations', ['Cow W/2 calves'])
-    //   ]
-    // },
+    // Spike/Fork Bulls (static: 14)
+    // sex: Male
+    // life stage: Unknown
+    // configuration: Cows
+    {
+      sheetName: 'occurrence',
+      condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Cows']) }] },
+      fields: [
+        {
+          columnName: 'eventID',
+          columnValue: [
+            {
+              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+            }
+          ]
+        },
+        {
+          columnName: 'occurrenceID',
+          columnValue: [
+            {
+              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+              postfix: {
+                static: '14'
+              }
+            }
+          ]
+        },
+        createPathField('individualCount', 'Observations', ['Cows']),
+        createValueField('sex', 'male'),
+        createValueField('lifeStage', 'unknown'),
+        createPathField('taxonID', 'Observations', ['Species']),
+        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
+      ],
+      add: [
+        {
+          sheetName: 'measurementOrFact',
+          condition: {
+            type: 'and',
+            checks: [{ ifNotEmpty: getValuesByName('Observations', ['Cow W/1 calves']) }]
+          },
+          fields: [
+            {
+              columnName: 'eventID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+                }
+              ]
+            },
+            {
+              columnName: 'occurrenceID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: '0'
+                  }
+                }
+              ]
+            },
+            {
+              columnName: 'measurementID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: 'cow-w/1-calf'
+                  }
+                }
+              ]
+            },
+            createValueField('measurementType', 'Cow W/1 calf'),
+            createValueField('measurementUnit', ''),
+            createPathField('measurementValue', 'Observations', ['Cow W/1 calf'])
+          ]
+        },
+        {
+          sheetName: 'measurementOrFact',
+          condition: {
+            type: 'and',
+            checks: [{ ifNotEmpty: getValuesByName('Observations', ['Cow W/2 calves']) }]
+          },
+          fields: [
+            {
+              columnName: 'eventID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+                }
+              ]
+            },
+            {
+              columnName: 'occurrenceID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: '0'
+                  }
+                }
+              ]
+            },
+            {
+              columnName: 'measurementID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: 'cow-w/2-calves'
+                  }
+                }
+              ]
+            },
+            createValueField('measurementType', 'Cow W/2 calves'),
+            createValueField('measurementUnit', ''),
+            createPathField('measurementValue', 'Observations', ['Cow W/2 calves'])
+          ]
+        },
+        {
+          sheetName: 'measurementOrFact',
+          condition: {
+            type: 'or',
+            checks: [
+              { ifNotEmpty: getValuesByName('Observations', ['Sign Type']) },
+              { ifNotEmpty: getValuesByName('Observations', ['Sign Count']) }
+            ]
+          },
+          fields: [
+            {
+              columnName: 'eventID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+                }
+              ]
+            },
+            {
+              columnName: 'measurementID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: 'sign-type'
+                  }
+                }
+              ]
+            },
+            {
+              columnName: 'occurrenceID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: '14'
+                  }
+                }
+              ]
+            },
+            createValueField('measurementType', 'Sign Type'),
+            createValueField('measurementUnit', ''),
+            createPathField('measurementValue', 'Observations', ['Sign Type'])
+          ]
+        },
+        {
+          sheetName: 'measurementOrFact',
+          condition: {
+            type: 'or',
+            checks: [
+              { ifNotEmpty: getValuesByName('Observations', ['Sign Count']) },
+              { ifNotEmpty: getValuesByName('Observations', ['Sign Type']) }
+            ]
+          },
+          fields: [
+            {
+              columnName: 'eventID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+                }
+              ]
+            },
+            {
+              columnName: 'measurementID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: 'sign-count'
+                  }
+                }
+              ]
+            },
+            {
+              columnName: 'occurrenceID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: '0'
+                  }
+                }
+              ]
+            },
+            createValueField('measurementType', 'Sign Count'),
+            createValueField('measurementUnit', ''),
+            createPathField('measurementValue', 'Observations', ['Sign Count'])
+          ]
+        },
+        {
+          sheetName: 'measurementOrFact',
+          condition: {
+            type: 'and',
+            checks: [{ ifNotEmpty: getValuesByName('Observations', ['Age of Sign']) }]
+          },
+          fields: [
+            {
+              columnName: 'eventID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+                }
+              ]
+            },
+            {
+              columnName: 'measurementID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: 'age-of-sign'
+                  }
+                }
+              ]
+            },
+            {
+              columnName: 'occurrenceID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: '14'
+                  }
+                }
+              ]
+            },
+            createValueField('measurementType', 'Age of Sign'),
+            createValueField('measurementUnit', ''),
+            createPathField('measurementValue', 'Observations', ['Age of Sign'])
+          ]
+        },
+        {
+          sheetName: 'measurementOrFact',
+          condition: {
+            type: 'and',
+            checks: [{ ifNotEmpty: getValuesByName('Observations', ['Veg Cover (%)']) }]
+          },
+          fields: [
+            {
+              columnName: 'eventID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+                }
+              ]
+            },
+            {
+              columnName: 'measurementID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: 'veg-cover'
+                  }
+                }
+              ]
+            },
+            {
+              columnName: 'occurrenceID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: '14'
+                  }
+                }
+              ]
+            },
+            createValueField('measurementType', 'Veg Cover'),
+            createValueField('measurementUnit', '%'),
+            createPathField('measurementValue', 'Observations', ['Veg Cover (%)'])
+          ]
+        },
+        {
+          sheetName: 'measurementOrFact',
+          condition: {
+            type: 'and',
+            checks: [{ ifNotEmpty: getValuesByName('Observations', ['Snow Cover (%)']) }]
+          },
+          fields: [
+            {
+              columnName: 'eventID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+                }
+              ]
+            },
+            {
+              columnName: 'measurementID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: 'snow-cover'
+                  }
+                }
+              ]
+            },
+            {
+              columnName: 'occurrenceID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: '14'
+                  }
+                }
+              ]
+            },
+            createValueField('measurementType', 'Snow Cover'),
+            createValueField('measurementUnit', '%'),
+            createPathField('measurementValue', 'Observations', ['Snow Cover (%)'])
+          ]
+        },
+        {
+          sheetName: 'measurementOrFact',
+          condition: {
+            type: 'and',
+            checks: [{ ifNotEmpty: getValuesByName('Observations', ['Activity']) }]
+          },
+          fields: [
+            {
+              columnName: 'eventID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+                }
+              ]
+            },
+            {
+              columnName: 'measurementID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: 'activity'
+                  }
+                }
+              ]
+            },
+            {
+              columnName: 'occurrenceID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: '14'
+                  }
+                }
+              ]
+            },
+            createValueField('measurementType', 'Activity'),
+            createValueField('measurementUnit', ''),
+            createPathField('measurementValue', 'Observations', ['Activity'])
+          ]
+        },
+        {
+          sheetName: 'measurementOrFact',
+          condition: {
+            type: 'and',
+            checks: [{ ifNotEmpty: getValuesByName('Observations', ['Number of Marked Animals Observed']) }]
+          },
+          fields: [
+            {
+              columnName: 'eventID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+                }
+              ]
+            },
+            {
+              columnName: 'measurementID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: 'number-of-marked-animals-observed'
+                  }
+                }
+              ]
+            },
+            {
+              columnName: 'occurrenceID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: '14'
+                  }
+                }
+              ]
+            },
+            createValueField('measurementType', 'Number of Marked Animals Observed'),
+            createValueField('measurementUnit', ''),
+            createPathField('measurementValue', 'Observations', ['Number of Marked Animals Observed'])
+          ]
+        },
+        {
+          sheetName: 'measurementOrFact',
+          condition: {
+            type: 'and',
+            checks: [{ ifNotEmpty: getValuesByName('Observations', ['Survey or Telemetry Search']) }]
+          },
+          fields: [
+            {
+              columnName: 'eventID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+                }
+              ]
+            },
+            {
+              columnName: 'measurementID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: 'survey-or-telemetry-search'
+                  }
+                }
+              ]
+            },
+            {
+              columnName: 'occurrenceID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: '14'
+                  }
+                }
+              ]
+            },
+            createValueField('measurementType', 'Survey or Telemetry Search'),
+            createValueField('measurementUnit', ''),
+            createPathField('measurementValue', 'Observations', ['Survey or Telemetry Search'])
+          ]
+        },
+        {
+          sheetName: 'measurementOrFact',
+          condition: {
+            type: 'and',
+            checks: [{ ifNotEmpty: getValuesByName('Observations', ['Photos']) }]
+          },
+          fields: [
+            {
+              columnName: 'eventID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+                }
+              ]
+            },
+            {
+              columnName: 'measurementID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: 'photos'
+                  }
+                }
+              ]
+            },
+            {
+              columnName: 'occurrenceID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: '14'
+                  }
+                }
+              ]
+            },
+            createValueField('measurementType', 'Photos'),
+            createValueField('measurementUnit', ''),
+            createPathField('measurementValue', 'Observations', ['Photos'])
+          ]
+        },
+        {
+          sheetName: 'measurementOrFact',
+          condition: {
+            type: 'and',
+            checks: [{ ifNotEmpty: getValuesByName('Observations', ['Observation Comments']) }]
+          },
+          fields: [
+            {
+              columnName: 'eventID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+                }
+              ]
+            },
+            {
+              columnName: 'measurementID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: 'observation-comments'
+                  }
+                }
+              ]
+            },
+            {
+              columnName: 'occurrenceID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: '14'
+                  }
+                }
+              ]
+            },
+            createValueField('measurementType', 'Observation Comments'),
+            createValueField('measurementUnit', ''),
+            createPathField('measurementValue', 'Observations', ['Observation Comments'])
+          ]
+        }
+      ]
+    },
+
     //------------------- animal count is done ------------
     {
       sheetName: 'organism',

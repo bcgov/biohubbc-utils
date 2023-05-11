@@ -1,38 +1,14 @@
 {
   "templateMeta": [
     {
-      "sheetName": "Block Summary",
-      "primaryKey": [
-        "Study Area",
-        "Block ID/SU ID",
-        "Stratum"
-      ],
-      "parentKey": [],
-      "type": "root",
-      "foreignKeys": [
-        {
-          "sheetName": "Observations",
-          "primaryKey": [
-            "Study Area",
-            "Block ID/SU ID",
-            "Stratum"
-          ]
-        }
-      ]
-    },
-    {
       "sheetName": "Observations",
       "primaryKey": [
         "Study Area",
         "Block ID/SU ID",
         "Transect ID"
       ],
-      "parentKey": [
-        "Study Area",
-        "Block ID/SU ID",
-        "Stratum"
-      ],
-      "type": "",
+      "parentKey": [],
+      "type": "root",
       "foreignKeys": [
         {
           "sheetName": "Marked Animals",
@@ -56,42 +32,31 @@
       "foreignKeys": []
     }
   ],
-  "dwcMeta": [
-    {
-      "sheetName": "event",
-      "primaryKey": [
-        "eventID"
-      ]
-    },
-    {
-      "sheetName": "location",
-      "primaryKey": [
-        "eventID"
-      ]
-    },
-    {
-      "sheetName": "occurrence",
-      "primaryKey": [
-        "occurrenceID"
-      ]
-    },
-    {
-      "sheetName": "organism",
-      "primaryKey": [
-        "organismID"
-      ]
-    },
-    {
-      "sheetName": "measurementOrFact",
-      "primaryKey": [
-        "eventID",
-        "measurementID",
-        "occurrenceID",
-        "organismID"
-      ]
-    }
-  ],
   "map": [
+    {
+      "sheetName": "record",
+      "fields": [
+        {
+          "columnName": "eventID",
+          "columnValue": [
+            {
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
+            }
+          ]
+        },
+        {
+          "columnName": "basisOfRecord ",
+          "columnValue": [
+            {
+              "static": "HumanObservation"
+            }
+          ]
+        }
+      ]
+    },
     {
       "sheetName": "event",
       "fields": [
@@ -100,7 +65,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -113,11 +78,6 @@
               "paths": [
                 "$..[?(@._name === 'Observations')]..['Date']"
               ]
-            },
-            {
-              "paths": [
-                "$..[?(@._name === 'Effort & Site Conditions')]..['Date']"
-              ]
             }
           ]
         },
@@ -126,7 +86,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['Block Summary Comments']"
+                "$..[?(@._name === 'Observations')]..['Observation Comments']"
               ]
             }
           ]
@@ -149,7 +109,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -220,7 +180,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -296,7 +256,7 @@
               "columnValue": [
                 {
                   "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_key']",
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ]
                 }
@@ -307,7 +267,7 @@
               "columnValue": [
                 {
                   "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_key']",
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
@@ -325,1547 +285,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "2"
-                  }
-                }
-              ]
-            },
-            {
-              "columnName": "measurementType",
-              "columnValue": [
-                {
-                  "static": "Antler Configuration"
-                }
-              ]
-            },
-            {
-              "columnName": "measurementUnit",
-              "columnValue": [
-                {
-                  "static": ""
-                }
-              ]
-            },
-            {
-              "columnName": "measurementValue",
-              "columnValue": [
-                {
-                  "static": "Prime"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "sheetName": "occurrence",
-      "condition": {
-        "type": "and",
-        "checks": [
-          {
-            "ifNotEmpty": "$..[?(@._name === 'Observations')]..['Senior Bulls']"
-          }
-        ]
-      },
-      "fields": [
-        {
-          "columnName": "eventID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "occurrenceID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
-              ],
-              "postfix": {
-                "static": "3"
-              }
-            }
-          ]
-        },
-        {
-          "columnName": "individualCount",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['Senior Bulls']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "sex",
-          "columnValue": [
-            {
-              "static": "male"
-            }
-          ]
-        },
-        {
-          "columnName": "lifeStage",
-          "columnValue": [
-            {
-              "static": "adult"
-            }
-          ]
-        },
-        {
-          "columnName": "taxonID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['Species']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "occurrenceRemarks",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['Observation Comments']"
-              ]
-            }
-          ]
-        }
-      ],
-      "add": [
-        {
-          "sheetName": "measurementOrFact",
-          "fields": [
-            {
-              "columnName": "eventID",
-              "columnValue": [
-                {
-                  "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
-                    "$..[?(@._name === 'Observations')]..['_row']"
-                  ]
-                }
-              ]
-            },
-            {
-              "columnName": "measurementID",
-              "columnValue": [
-                {
-                  "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
-                    "$..[?(@._name === 'Observations')]..['_row']"
-                  ],
-                  "postfix": {
-                    "static": "antler-configuration"
-                  }
-                }
-              ]
-            },
-            {
-              "columnName": "occurrenceID",
-              "columnValue": [
-                {
-                  "paths": [
-                    "$..[?(@._name === 'Observations')]..['_key']",
-                    "$..[?(@._name === 'Observations')]..['_row']"
-                  ],
-                  "postfix": {
-                    "static": "3"
-                  }
-                }
-              ]
-            },
-            {
-              "columnName": "measurementType",
-              "columnValue": [
-                {
-                  "static": "Antler Configuration"
-                }
-              ]
-            },
-            {
-              "columnName": "measurementUnit",
-              "columnValue": [
-                {
-                  "static": ""
-                }
-              ]
-            },
-            {
-              "columnName": "measurementValue",
-              "columnValue": [
-                {
-                  "static": "Senior"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "sheetName": "occurrence",
-      "condition": {
-        "type": "and",
-        "checks": [
-          {
-            "ifNotEmpty": "$..[?(@._name === 'Observations')]..['3 Brow/10 Points Bulls']"
-          }
-        ]
-      },
-      "fields": [
-        {
-          "columnName": "eventID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "occurrenceID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
-              ],
-              "postfix": {
-                "static": "4"
-              }
-            }
-          ]
-        },
-        {
-          "columnName": "individualCount",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['3 Brow/10 Points Bulls']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "sex",
-          "columnValue": [
-            {
-              "static": "male"
-            }
-          ]
-        },
-        {
-          "columnName": "lifeStage",
-          "columnValue": [
-            {
-              "static": "adult"
-            }
-          ]
-        },
-        {
-          "columnName": "taxonID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['Species']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "occurrenceRemarks",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['Observation Comments']"
-              ]
-            }
-          ]
-        }
-      ],
-      "add": [
-        {
-          "sheetName": "measurementOrFact",
-          "fields": [
-            {
-              "columnName": "eventID",
-              "columnValue": [
-                {
-                  "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
-                    "$..[?(@._name === 'Observations')]..['_row']"
-                  ]
-                }
-              ]
-            },
-            {
-              "columnName": "measurementID",
-              "columnValue": [
-                {
-                  "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
-                    "$..[?(@._name === 'Observations')]..['_row']"
-                  ],
-                  "postfix": {
-                    "static": "antler-configuration"
-                  }
-                }
-              ]
-            },
-            {
-              "columnName": "occurrenceID",
-              "columnValue": [
-                {
-                  "paths": [
-                    "$..[?(@._name === 'Observations')]..['_key']",
-                    "$..[?(@._name === 'Observations')]..['_row']"
-                  ],
-                  "postfix": {
-                    "static": "4"
-                  }
-                }
-              ]
-            },
-            {
-              "columnName": "measurementType",
-              "columnValue": [
-                {
-                  "static": "Antler Configuration"
-                }
-              ]
-            },
-            {
-              "columnName": "measurementUnit",
-              "columnValue": [
-                {
-                  "static": ""
-                }
-              ]
-            },
-            {
-              "columnName": "measurementValue",
-              "columnValue": [
-                {
-                  "static": "3 Brow/10 Points"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "sheetName": "occurrence",
-      "condition": {
-        "type": "and",
-        "checks": [
-          {
-            "ifNotEmpty": "$..[?(@._name === 'Observations')]..['BC RISC Yearling Bulls']"
-          }
-        ]
-      },
-      "fields": [
-        {
-          "columnName": "eventID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "occurrenceID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
-              ],
-              "postfix": {
-                "static": "5"
-              }
-            }
-          ]
-        },
-        {
-          "columnName": "individualCount",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['BC RISC Yearling Bulls']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "sex",
-          "columnValue": [
-            {
-              "static": "male"
-            }
-          ]
-        },
-        {
-          "columnName": "lifeStage",
-          "columnValue": [
-            {
-              "static": "yearling"
-            }
-          ]
-        },
-        {
-          "columnName": "taxonID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['Species']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "occurrenceRemarks",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['Observation Comments']"
-              ]
-            }
-          ]
-        }
-      ],
-      "add": [
-        {
-          "sheetName": "measurementOrFact",
-          "fields": [
-            {
-              "columnName": "eventID",
-              "columnValue": [
-                {
-                  "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
-                    "$..[?(@._name === 'Observations')]..['_row']"
-                  ]
-                }
-              ]
-            },
-            {
-              "columnName": "measurementID",
-              "columnValue": [
-                {
-                  "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
-                    "$..[?(@._name === 'Observations')]..['_row']"
-                  ],
-                  "postfix": {
-                    "static": "antler-configuration"
-                  }
-                }
-              ]
-            },
-            {
-              "columnName": "occurrenceID",
-              "columnValue": [
-                {
-                  "paths": [
-                    "$..[?(@._name === 'Observations')]..['_key']",
-                    "$..[?(@._name === 'Observations')]..['_row']"
-                  ],
-                  "postfix": {
-                    "static": "5"
-                  }
-                }
-              ]
-            },
-            {
-              "columnName": "measurementType",
-              "columnValue": [
-                {
-                  "static": "Antler Configuration"
-                }
-              ]
-            },
-            {
-              "columnName": "measurementUnit",
-              "columnValue": [
-                {
-                  "static": ""
-                }
-              ]
-            },
-            {
-              "columnName": "measurementValue",
-              "columnValue": [
-                {
-                  "static": "BC RISC Yearling"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "sheetName": "occurrence",
-      "condition": {
-        "type": "and",
-        "checks": [
-          {
-            "ifNotEmpty": "$..[?(@._name === 'Observations')]..['BC RISC Class I Bulls']"
-          }
-        ]
-      },
-      "fields": [
-        {
-          "columnName": "eventID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "occurrenceID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
-              ],
-              "postfix": {
-                "static": "6"
-              }
-            }
-          ]
-        },
-        {
-          "columnName": "individualCount",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['BC RISC Class I Bulls']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "sex",
-          "columnValue": [
-            {
-              "static": "male"
-            }
-          ]
-        },
-        {
-          "columnName": "lifeStage",
-          "columnValue": [
-            {
-              "static": "unknown"
-            }
-          ]
-        },
-        {
-          "columnName": "taxonID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['Species']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "occurrenceRemarks",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['Observation Comments']"
-              ]
-            }
-          ]
-        }
-      ],
-      "add": [
-        {
-          "sheetName": "measurementOrFact",
-          "fields": [
-            {
-              "columnName": "eventID",
-              "columnValue": [
-                {
-                  "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
-                    "$..[?(@._name === 'Observations')]..['_row']"
-                  ]
-                }
-              ]
-            },
-            {
-              "columnName": "measurementID",
-              "columnValue": [
-                {
-                  "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
-                    "$..[?(@._name === 'Observations')]..['_row']"
-                  ],
-                  "postfix": {
-                    "static": "antler-configuration"
-                  }
-                }
-              ]
-            },
-            {
-              "columnName": "occurrenceID",
-              "columnValue": [
-                {
-                  "paths": [
-                    "$..[?(@._name === 'Observations')]..['_key']",
-                    "$..[?(@._name === 'Observations')]..['_row']"
-                  ],
-                  "postfix": {
-                    "static": "6"
-                  }
-                }
-              ]
-            },
-            {
-              "columnName": "measurementType",
-              "columnValue": [
-                {
-                  "static": "Antler Configuration"
-                }
-              ]
-            },
-            {
-              "columnName": "measurementUnit",
-              "columnValue": [
-                {
-                  "static": ""
-                }
-              ]
-            },
-            {
-              "columnName": "measurementValue",
-              "columnValue": [
-                {
-                  "static": "BC RISC Class I"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "sheetName": "occurrence",
-      "condition": {
-        "type": "and",
-        "checks": [
-          {
-            "ifNotEmpty": "$..[?(@._name === 'Observations')]..['BC RISC Class II Bulls']"
-          }
-        ]
-      },
-      "fields": [
-        {
-          "columnName": "eventID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "occurrenceID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
-              ],
-              "postfix": {
-                "static": "7"
-              }
-            }
-          ]
-        },
-        {
-          "columnName": "individualCount",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['BC RISC Class II Bulls']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "sex",
-          "columnValue": [
-            {
-              "static": "male"
-            }
-          ]
-        },
-        {
-          "columnName": "lifeStage",
-          "columnValue": [
-            {
-              "static": "adult"
-            }
-          ]
-        },
-        {
-          "columnName": "taxonID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['Species']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "occurrenceRemarks",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['Observation Comments']"
-              ]
-            }
-          ]
-        }
-      ],
-      "add": [
-        {
-          "sheetName": "measurementOrFact",
-          "fields": [
-            {
-              "columnName": "eventID",
-              "columnValue": [
-                {
-                  "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
-                    "$..[?(@._name === 'Observations')]..['_row']"
-                  ]
-                }
-              ]
-            },
-            {
-              "columnName": "measurementID",
-              "columnValue": [
-                {
-                  "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
-                    "$..[?(@._name === 'Observations')]..['_row']"
-                  ],
-                  "postfix": {
-                    "static": "antler-configuration"
-                  }
-                }
-              ]
-            },
-            {
-              "columnName": "occurrenceID",
-              "columnValue": [
-                {
-                  "paths": [
-                    "$..[?(@._name === 'Observations')]..['_key']",
-                    "$..[?(@._name === 'Observations')]..['_row']"
-                  ],
-                  "postfix": {
-                    "static": "7"
-                  }
-                }
-              ]
-            },
-            {
-              "columnName": "measurementType",
-              "columnValue": [
-                {
-                  "static": "Antler Configuration"
-                }
-              ]
-            },
-            {
-              "columnName": "measurementUnit",
-              "columnValue": [
-                {
-                  "static": ""
-                }
-              ]
-            },
-            {
-              "columnName": "measurementValue",
-              "columnValue": [
-                {
-                  "static": "BC RISC Class II"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "sheetName": "occurrence",
-      "condition": {
-        "type": "and",
-        "checks": [
-          {
-            "ifNotEmpty": "$..[?(@._name === 'Observations')]..['BC RISC Class III Bulls']"
-          }
-        ]
-      },
-      "fields": [
-        {
-          "columnName": "eventID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "occurrenceID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
-              ],
-              "postfix": {
-                "static": "8"
-              }
-            }
-          ]
-        },
-        {
-          "columnName": "individualCount",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['BC RISC Class III Bulls']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "sex",
-          "columnValue": [
-            {
-              "static": "male"
-            }
-          ]
-        },
-        {
-          "columnName": "lifeStage",
-          "columnValue": [
-            {
-              "static": "adult"
-            }
-          ]
-        },
-        {
-          "columnName": "taxonID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['Species']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "occurrenceRemarks",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['Observation Comments']"
-              ]
-            }
-          ]
-        }
-      ],
-      "add": [
-        {
-          "sheetName": "measurementOrFact",
-          "fields": [
-            {
-              "columnName": "eventID",
-              "columnValue": [
-                {
-                  "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
-                    "$..[?(@._name === 'Observations')]..['_row']"
-                  ]
-                }
-              ]
-            },
-            {
-              "columnName": "measurementID",
-              "columnValue": [
-                {
-                  "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
-                    "$..[?(@._name === 'Observations')]..['_row']"
-                  ],
-                  "postfix": {
-                    "static": "antler-configuration"
-                  }
-                }
-              ]
-            },
-            {
-              "columnName": "occurrenceID",
-              "columnValue": [
-                {
-                  "paths": [
-                    "$..[?(@._name === 'Observations')]..['_key']",
-                    "$..[?(@._name === 'Observations')]..['_row']"
-                  ],
-                  "postfix": {
-                    "static": "8"
-                  }
-                }
-              ]
-            },
-            {
-              "columnName": "measurementType",
-              "columnValue": [
-                {
-                  "static": "Antler Configuration"
-                }
-              ]
-            },
-            {
-              "columnName": "measurementUnit",
-              "columnValue": [
-                {
-                  "static": ""
-                }
-              ]
-            },
-            {
-              "columnName": "measurementValue",
-              "columnValue": [
-                {
-                  "static": "BC RISC Class III"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "sheetName": "occurrence",
-      "condition": {
-        "type": "and",
-        "checks": [
-          {
-            "ifNotEmpty": "$..[?(@._name === 'Observations')]..['Oswald (1997) Class I Bulls']"
-          }
-        ]
-      },
-      "fields": [
-        {
-          "columnName": "eventID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "occurrenceID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
-              ],
-              "postfix": {
-                "static": "9"
-              }
-            }
-          ]
-        },
-        {
-          "columnName": "individualCount",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['Oswald (1997) Class I Bulls']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "sex",
-          "columnValue": [
-            {
-              "static": "male"
-            }
-          ]
-        },
-        {
-          "columnName": "lifeStage",
-          "columnValue": [
-            {
-              "static": "unknown"
-            }
-          ]
-        },
-        {
-          "columnName": "taxonID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['Species']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "occurrenceRemarks",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['Observation Comments']"
-              ]
-            }
-          ]
-        }
-      ],
-      "add": [
-        {
-          "sheetName": "measurementOrFact",
-          "fields": [
-            {
-              "columnName": "eventID",
-              "columnValue": [
-                {
-                  "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
-                    "$..[?(@._name === 'Observations')]..['_row']"
-                  ]
-                }
-              ]
-            },
-            {
-              "columnName": "measurementID",
-              "columnValue": [
-                {
-                  "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
-                    "$..[?(@._name === 'Observations')]..['_row']"
-                  ],
-                  "postfix": {
-                    "static": "antler-configuration"
-                  }
-                }
-              ]
-            },
-            {
-              "columnName": "occurrenceID",
-              "columnValue": [
-                {
-                  "paths": [
-                    "$..[?(@._name === 'Observations')]..['_key']",
-                    "$..[?(@._name === 'Observations')]..['_row']"
-                  ],
-                  "postfix": {
-                    "static": "9"
-                  }
-                }
-              ]
-            },
-            {
-              "columnName": "measurementType",
-              "columnValue": [
-                {
-                  "static": "Antler Configuration"
-                }
-              ]
-            },
-            {
-              "columnName": "measurementUnit",
-              "columnValue": [
-                {
-                  "static": ""
-                }
-              ]
-            },
-            {
-              "columnName": "measurementValue",
-              "columnValue": [
-                {
-                  "static": "Oswald (1997) Class I"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "sheetName": "occurrence",
-      "condition": {
-        "type": "and",
-        "checks": [
-          {
-            "ifNotEmpty": "$..[?(@._name === 'Observations')]..['Oswald (1997) Class II Bulls']"
-          }
-        ]
-      },
-      "fields": [
-        {
-          "columnName": "eventID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "occurrenceID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
-              ],
-              "postfix": {
-                "static": "10"
-              }
-            }
-          ]
-        },
-        {
-          "columnName": "individualCount",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['Oswald (1997) Class II Bulls']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "sex",
-          "columnValue": [
-            {
-              "static": "male"
-            }
-          ]
-        },
-        {
-          "columnName": "lifeStage",
-          "columnValue": [
-            {
-              "static": "unknown"
-            }
-          ]
-        },
-        {
-          "columnName": "taxonID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['Species']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "occurrenceRemarks",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['Observation Comments']"
-              ]
-            }
-          ]
-        }
-      ],
-      "add": [
-        {
-          "sheetName": "measurementOrFact",
-          "fields": [
-            {
-              "columnName": "eventID",
-              "columnValue": [
-                {
-                  "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
-                    "$..[?(@._name === 'Observations')]..['_row']"
-                  ]
-                }
-              ]
-            },
-            {
-              "columnName": "measurementID",
-              "columnValue": [
-                {
-                  "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
-                    "$..[?(@._name === 'Observations')]..['_row']"
-                  ],
-                  "postfix": {
-                    "static": "antler-configuration"
-                  }
-                }
-              ]
-            },
-            {
-              "columnName": "occurrenceID",
-              "columnValue": [
-                {
-                  "paths": [
-                    "$..[?(@._name === 'Observations')]..['_key']",
-                    "$..[?(@._name === 'Observations')]..['_row']"
-                  ],
-                  "postfix": {
-                    "static": "10"
-                  }
-                }
-              ]
-            },
-            {
-              "columnName": "measurementType",
-              "columnValue": [
-                {
-                  "static": "Antler Configuration"
-                }
-              ]
-            },
-            {
-              "columnName": "measurementUnit",
-              "columnValue": [
-                {
-                  "static": ""
-                }
-              ]
-            },
-            {
-              "columnName": "measurementValue",
-              "columnValue": [
-                {
-                  "static": "Oswald (1997) Class II"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "sheetName": "occurrence",
-      "condition": {
-        "type": "and",
-        "checks": [
-          {
-            "ifNotEmpty": "$..[?(@._name === 'Observations')]..['Oswald (1997) Class III Bulls']"
-          }
-        ]
-      },
-      "fields": [
-        {
-          "columnName": "eventID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "occurrenceID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
-              ],
-              "postfix": {
-                "static": "11"
-              }
-            }
-          ]
-        },
-        {
-          "columnName": "individualCount",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['Oswald (1997) Class III Bulls']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "sex",
-          "columnValue": [
-            {
-              "static": "male"
-            }
-          ]
-        },
-        {
-          "columnName": "lifeStage",
-          "columnValue": [
-            {
-              "static": "adult"
-            }
-          ]
-        },
-        {
-          "columnName": "taxonID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['Species']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "occurrenceRemarks",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['Observation Comments']"
-              ]
-            }
-          ]
-        }
-      ],
-      "add": [
-        {
-          "sheetName": "measurementOrFact",
-          "fields": [
-            {
-              "columnName": "eventID",
-              "columnValue": [
-                {
-                  "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
-                    "$..[?(@._name === 'Observations')]..['_row']"
-                  ]
-                }
-              ]
-            },
-            {
-              "columnName": "measurementID",
-              "columnValue": [
-                {
-                  "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
-                    "$..[?(@._name === 'Observations')]..['_row']"
-                  ],
-                  "postfix": {
-                    "static": "antler-configuration"
-                  }
-                }
-              ]
-            },
-            {
-              "columnName": "occurrenceID",
-              "columnValue": [
-                {
-                  "paths": [
-                    "$..[?(@._name === 'Observations')]..['_key']",
-                    "$..[?(@._name === 'Observations')]..['_row']"
-                  ],
-                  "postfix": {
-                    "static": "11"
-                  }
-                }
-              ]
-            },
-            {
-              "columnName": "measurementType",
-              "columnValue": [
-                {
-                  "static": "Antler Configuration"
-                }
-              ]
-            },
-            {
-              "columnName": "measurementUnit",
-              "columnValue": [
-                {
-                  "static": ""
-                }
-              ]
-            },
-            {
-              "columnName": "measurementValue",
-              "columnValue": [
-                {
-                  "static": "Oswald (1997) Class III"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "sheetName": "occurrence",
-      "condition": {
-        "type": "and",
-        "checks": [
-          {
-            "ifNotEmpty": "$..[?(@._name === 'Observations')]..['Adult Bulls - Unclassified']"
-          }
-        ]
-      },
-      "fields": [
-        {
-          "columnName": "eventID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "occurrenceID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
-              ],
-              "postfix": {
-                "static": "12"
-              }
-            }
-          ]
-        },
-        {
-          "columnName": "individualCount",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['Adult Bulls - Unclassified']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "sex",
-          "columnValue": [
-            {
-              "static": "male"
-            }
-          ]
-        },
-        {
-          "columnName": "lifeStage",
-          "columnValue": [
-            {
-              "static": "adult"
-            }
-          ]
-        },
-        {
-          "columnName": "taxonID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['Species']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "occurrenceRemarks",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['Observation Comments']"
-              ]
-            }
-          ]
-        }
-      ],
-      "add": [
-        {
-          "sheetName": "measurementOrFact",
-          "fields": [
-            {
-              "columnName": "eventID",
-              "columnValue": [
-                {
-                  "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
-                    "$..[?(@._name === 'Observations')]..['_row']"
-                  ]
-                }
-              ]
-            },
-            {
-              "columnName": "measurementID",
-              "columnValue": [
-                {
-                  "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
-                    "$..[?(@._name === 'Observations')]..['_row']"
-                  ],
-                  "postfix": {
-                    "static": "antler-configuration"
-                  }
-                }
-              ]
-            },
-            {
-              "columnName": "occurrenceID",
-              "columnValue": [
-                {
-                  "paths": [
-                    "$..[?(@._name === 'Observations')]..['_key']",
-                    "$..[?(@._name === 'Observations')]..['_row']"
-                  ],
-                  "postfix": {
-                    "static": "12"
+                    "static": "0"
                   }
                 }
               ]
@@ -2685,6 +1105,1034 @@
       ]
     },
     {
+      "sheetName": "occurrence",
+      "condition": {
+        "type": "and",
+        "checks": [
+          {
+            "ifNotEmpty": "$..[?(@._name === 'Observations')]..['Cows']"
+          }
+        ]
+      },
+      "fields": [
+        {
+          "columnName": "eventID",
+          "columnValue": [
+            {
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
+            }
+          ]
+        },
+        {
+          "columnName": "occurrenceID",
+          "columnValue": [
+            {
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ],
+              "postfix": {
+                "static": "14"
+              }
+            }
+          ]
+        },
+        {
+          "columnName": "individualCount",
+          "columnValue": [
+            {
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Cows']"
+              ]
+            }
+          ]
+        },
+        {
+          "columnName": "sex",
+          "columnValue": [
+            {
+              "static": "male"
+            }
+          ]
+        },
+        {
+          "columnName": "lifeStage",
+          "columnValue": [
+            {
+              "static": "unknown"
+            }
+          ]
+        },
+        {
+          "columnName": "taxonID",
+          "columnValue": [
+            {
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Species']"
+              ]
+            }
+          ]
+        },
+        {
+          "columnName": "occurrenceRemarks",
+          "columnValue": [
+            {
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Observation Comments']"
+              ]
+            }
+          ]
+        }
+      ],
+      "add": [
+        {
+          "sheetName": "measurementOrFact",
+          "condition": {
+            "type": "and",
+            "checks": [
+              {
+                "ifNotEmpty": "$..[?(@._name === 'Observations')]..['Cow W/1 calves']"
+              }
+            ]
+          },
+          "fields": [
+            {
+              "columnName": "eventID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ]
+                }
+              ]
+            },
+            {
+              "columnName": "occurrenceID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ],
+                  "postfix": {
+                    "static": "0"
+                  }
+                }
+              ]
+            },
+            {
+              "columnName": "measurementID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ],
+                  "postfix": {
+                    "static": "cow-w/1-calf"
+                  }
+                }
+              ]
+            },
+            {
+              "columnName": "measurementType",
+              "columnValue": [
+                {
+                  "static": "Cow W/1 calf"
+                }
+              ]
+            },
+            {
+              "columnName": "measurementUnit",
+              "columnValue": [
+                {
+                  "static": ""
+                }
+              ]
+            },
+            {
+              "columnName": "measurementValue",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['Cow W/1 calf']"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sheetName": "measurementOrFact",
+          "condition": {
+            "type": "and",
+            "checks": [
+              {
+                "ifNotEmpty": "$..[?(@._name === 'Observations')]..['Cow W/2 calves']"
+              }
+            ]
+          },
+          "fields": [
+            {
+              "columnName": "eventID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ]
+                }
+              ]
+            },
+            {
+              "columnName": "occurrenceID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ],
+                  "postfix": {
+                    "static": "0"
+                  }
+                }
+              ]
+            },
+            {
+              "columnName": "measurementID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ],
+                  "postfix": {
+                    "static": "cow-w/2-calves"
+                  }
+                }
+              ]
+            },
+            {
+              "columnName": "measurementType",
+              "columnValue": [
+                {
+                  "static": "Cow W/2 calves"
+                }
+              ]
+            },
+            {
+              "columnName": "measurementUnit",
+              "columnValue": [
+                {
+                  "static": ""
+                }
+              ]
+            },
+            {
+              "columnName": "measurementValue",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['Cow W/2 calves']"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sheetName": "measurementOrFact",
+          "condition": {
+            "type": "or",
+            "checks": [
+              {
+                "ifNotEmpty": "$..[?(@._name === 'Observations')]..['Sign Type']"
+              },
+              {
+                "ifNotEmpty": "$..[?(@._name === 'Observations')]..['Sign Count']"
+              }
+            ]
+          },
+          "fields": [
+            {
+              "columnName": "eventID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ]
+                }
+              ]
+            },
+            {
+              "columnName": "measurementID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ],
+                  "postfix": {
+                    "static": "sign-type"
+                  }
+                }
+              ]
+            },
+            {
+              "columnName": "occurrenceID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ],
+                  "postfix": {
+                    "static": "14"
+                  }
+                }
+              ]
+            },
+            {
+              "columnName": "measurementType",
+              "columnValue": [
+                {
+                  "static": "Sign Type"
+                }
+              ]
+            },
+            {
+              "columnName": "measurementUnit",
+              "columnValue": [
+                {
+                  "static": ""
+                }
+              ]
+            },
+            {
+              "columnName": "measurementValue",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['Sign Type']"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sheetName": "measurementOrFact",
+          "condition": {
+            "type": "or",
+            "checks": [
+              {
+                "ifNotEmpty": "$..[?(@._name === 'Observations')]..['Sign Count']"
+              },
+              {
+                "ifNotEmpty": "$..[?(@._name === 'Observations')]..['Sign Type']"
+              }
+            ]
+          },
+          "fields": [
+            {
+              "columnName": "eventID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ]
+                }
+              ]
+            },
+            {
+              "columnName": "measurementID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ],
+                  "postfix": {
+                    "static": "sign-count"
+                  }
+                }
+              ]
+            },
+            {
+              "columnName": "occurrenceID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ],
+                  "postfix": {
+                    "static": "0"
+                  }
+                }
+              ]
+            },
+            {
+              "columnName": "measurementType",
+              "columnValue": [
+                {
+                  "static": "Sign Count"
+                }
+              ]
+            },
+            {
+              "columnName": "measurementUnit",
+              "columnValue": [
+                {
+                  "static": ""
+                }
+              ]
+            },
+            {
+              "columnName": "measurementValue",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['Sign Count']"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sheetName": "measurementOrFact",
+          "condition": {
+            "type": "and",
+            "checks": [
+              {
+                "ifNotEmpty": "$..[?(@._name === 'Observations')]..['Age of Sign']"
+              }
+            ]
+          },
+          "fields": [
+            {
+              "columnName": "eventID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ]
+                }
+              ]
+            },
+            {
+              "columnName": "measurementID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ],
+                  "postfix": {
+                    "static": "age-of-sign"
+                  }
+                }
+              ]
+            },
+            {
+              "columnName": "occurrenceID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ],
+                  "postfix": {
+                    "static": "14"
+                  }
+                }
+              ]
+            },
+            {
+              "columnName": "measurementType",
+              "columnValue": [
+                {
+                  "static": "Age of Sign"
+                }
+              ]
+            },
+            {
+              "columnName": "measurementUnit",
+              "columnValue": [
+                {
+                  "static": ""
+                }
+              ]
+            },
+            {
+              "columnName": "measurementValue",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['Age of Sign']"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sheetName": "measurementOrFact",
+          "condition": {
+            "type": "and",
+            "checks": [
+              {
+                "ifNotEmpty": "$..[?(@._name === 'Observations')]..['Veg Cover (%)']"
+              }
+            ]
+          },
+          "fields": [
+            {
+              "columnName": "eventID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ]
+                }
+              ]
+            },
+            {
+              "columnName": "measurementID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ],
+                  "postfix": {
+                    "static": "veg-cover"
+                  }
+                }
+              ]
+            },
+            {
+              "columnName": "occurrenceID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ],
+                  "postfix": {
+                    "static": "14"
+                  }
+                }
+              ]
+            },
+            {
+              "columnName": "measurementType",
+              "columnValue": [
+                {
+                  "static": "Veg Cover"
+                }
+              ]
+            },
+            {
+              "columnName": "measurementUnit",
+              "columnValue": [
+                {
+                  "static": "%"
+                }
+              ]
+            },
+            {
+              "columnName": "measurementValue",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['Veg Cover (%)']"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sheetName": "measurementOrFact",
+          "condition": {
+            "type": "and",
+            "checks": [
+              {
+                "ifNotEmpty": "$..[?(@._name === 'Observations')]..['Snow Cover (%)']"
+              }
+            ]
+          },
+          "fields": [
+            {
+              "columnName": "eventID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ]
+                }
+              ]
+            },
+            {
+              "columnName": "measurementID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ],
+                  "postfix": {
+                    "static": "snow-cover"
+                  }
+                }
+              ]
+            },
+            {
+              "columnName": "occurrenceID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ],
+                  "postfix": {
+                    "static": "14"
+                  }
+                }
+              ]
+            },
+            {
+              "columnName": "measurementType",
+              "columnValue": [
+                {
+                  "static": "Snow Cover"
+                }
+              ]
+            },
+            {
+              "columnName": "measurementUnit",
+              "columnValue": [
+                {
+                  "static": "%"
+                }
+              ]
+            },
+            {
+              "columnName": "measurementValue",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['Snow Cover (%)']"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sheetName": "measurementOrFact",
+          "condition": {
+            "type": "and",
+            "checks": [
+              {
+                "ifNotEmpty": "$..[?(@._name === 'Observations')]..['Activity']"
+              }
+            ]
+          },
+          "fields": [
+            {
+              "columnName": "eventID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ]
+                }
+              ]
+            },
+            {
+              "columnName": "measurementID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ],
+                  "postfix": {
+                    "static": "activity"
+                  }
+                }
+              ]
+            },
+            {
+              "columnName": "occurrenceID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ],
+                  "postfix": {
+                    "static": "14"
+                  }
+                }
+              ]
+            },
+            {
+              "columnName": "measurementType",
+              "columnValue": [
+                {
+                  "static": "Activity"
+                }
+              ]
+            },
+            {
+              "columnName": "measurementUnit",
+              "columnValue": [
+                {
+                  "static": ""
+                }
+              ]
+            },
+            {
+              "columnName": "measurementValue",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['Activity']"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sheetName": "measurementOrFact",
+          "condition": {
+            "type": "and",
+            "checks": [
+              {
+                "ifNotEmpty": "$..[?(@._name === 'Observations')]..['Number of Marked Animals Observed']"
+              }
+            ]
+          },
+          "fields": [
+            {
+              "columnName": "eventID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ]
+                }
+              ]
+            },
+            {
+              "columnName": "measurementID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ],
+                  "postfix": {
+                    "static": "number-of-marked-animals-observed"
+                  }
+                }
+              ]
+            },
+            {
+              "columnName": "occurrenceID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ],
+                  "postfix": {
+                    "static": "14"
+                  }
+                }
+              ]
+            },
+            {
+              "columnName": "measurementType",
+              "columnValue": [
+                {
+                  "static": "Number of Marked Animals Observed"
+                }
+              ]
+            },
+            {
+              "columnName": "measurementUnit",
+              "columnValue": [
+                {
+                  "static": ""
+                }
+              ]
+            },
+            {
+              "columnName": "measurementValue",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['Number of Marked Animals Observed']"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sheetName": "measurementOrFact",
+          "condition": {
+            "type": "and",
+            "checks": [
+              {
+                "ifNotEmpty": "$..[?(@._name === 'Observations')]..['Survey or Telemetry Search']"
+              }
+            ]
+          },
+          "fields": [
+            {
+              "columnName": "eventID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ]
+                }
+              ]
+            },
+            {
+              "columnName": "measurementID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ],
+                  "postfix": {
+                    "static": "survey-or-telemetry-search"
+                  }
+                }
+              ]
+            },
+            {
+              "columnName": "occurrenceID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ],
+                  "postfix": {
+                    "static": "14"
+                  }
+                }
+              ]
+            },
+            {
+              "columnName": "measurementType",
+              "columnValue": [
+                {
+                  "static": "Survey or Telemetry Search"
+                }
+              ]
+            },
+            {
+              "columnName": "measurementUnit",
+              "columnValue": [
+                {
+                  "static": ""
+                }
+              ]
+            },
+            {
+              "columnName": "measurementValue",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['Survey or Telemetry Search']"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sheetName": "measurementOrFact",
+          "condition": {
+            "type": "and",
+            "checks": [
+              {
+                "ifNotEmpty": "$..[?(@._name === 'Observations')]..['Photos']"
+              }
+            ]
+          },
+          "fields": [
+            {
+              "columnName": "eventID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ]
+                }
+              ]
+            },
+            {
+              "columnName": "measurementID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ],
+                  "postfix": {
+                    "static": "photos"
+                  }
+                }
+              ]
+            },
+            {
+              "columnName": "occurrenceID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ],
+                  "postfix": {
+                    "static": "14"
+                  }
+                }
+              ]
+            },
+            {
+              "columnName": "measurementType",
+              "columnValue": [
+                {
+                  "static": "Photos"
+                }
+              ]
+            },
+            {
+              "columnName": "measurementUnit",
+              "columnValue": [
+                {
+                  "static": ""
+                }
+              ]
+            },
+            {
+              "columnName": "measurementValue",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['Photos']"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sheetName": "measurementOrFact",
+          "condition": {
+            "type": "and",
+            "checks": [
+              {
+                "ifNotEmpty": "$..[?(@._name === 'Observations')]..['Observation Comments']"
+              }
+            ]
+          },
+          "fields": [
+            {
+              "columnName": "eventID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ]
+                }
+              ]
+            },
+            {
+              "columnName": "measurementID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ],
+                  "postfix": {
+                    "static": "observation-comments"
+                  }
+                }
+              ]
+            },
+            {
+              "columnName": "occurrenceID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ],
+                  "postfix": {
+                    "static": "14"
+                  }
+                }
+              ]
+            },
+            {
+              "columnName": "measurementType",
+              "columnValue": [
+                {
+                  "static": "Observation Comments"
+                }
+              ]
+            },
+            {
+              "columnName": "measurementUnit",
+              "columnValue": [
+                {
+                  "static": ""
+                }
+              ]
+            },
+            {
+              "columnName": "measurementValue",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['Observation Comments']"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "sheetName": "organism",
       "condition": {
         "type": "and",
@@ -2700,7 +2148,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -2737,7 +2185,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -2748,7 +2196,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
@@ -2778,7 +2226,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['Study Area']"
+                "$..[?(@._name === 'Observations')]..['Study Area']"
               ]
             }
           ]
@@ -2793,7 +2241,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -2804,7 +2252,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
@@ -2834,175 +2282,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['Block ID/SU ID']"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "sheetName": "measurementOrFact",
-      "fields": [
-        {
-          "columnName": "eventID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "measurementID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
-              ],
-              "postfix": {
-                "static": "stratum"
-              }
-            }
-          ]
-        },
-        {
-          "columnName": "measurementType",
-          "columnValue": [
-            {
-              "static": "Stratum"
-            }
-          ]
-        },
-        {
-          "columnName": "measurementUnit",
-          "columnValue": [
-            {
-              "static": ""
-            }
-          ]
-        },
-        {
-          "columnName": "measurementValue",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Block Summary')]..['Stratum']"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "sheetName": "measurementOrFact",
-      "fields": [
-        {
-          "columnName": "eventID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "measurementID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
-              ],
-              "postfix": {
-                "static": "stratum/block-area"
-              }
-            }
-          ]
-        },
-        {
-          "columnName": "measurementType",
-          "columnValue": [
-            {
-              "static": "Stratum/Block Area"
-            }
-          ]
-        },
-        {
-          "columnName": "measurementUnit",
-          "columnValue": [
-            {
-              "static": "km2"
-            }
-          ]
-        },
-        {
-          "columnName": "measurementValue",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Block Summary')]..['Stratum/Block Area (km2)']"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "sheetName": "measurementOrFact",
-      "fields": [
-        {
-          "columnName": "eventID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "measurementID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
-              ],
-              "postfix": {
-                "static": "sampled"
-              }
-            }
-          ]
-        },
-        {
-          "columnName": "measurementType",
-          "columnValue": [
-            {
-              "static": "Sampled"
-            }
-          ]
-        },
-        {
-          "columnName": "measurementUnit",
-          "columnValue": [
-            {
-              "static": "Y/N"
-            }
-          ]
-        },
-        {
-          "columnName": "measurementValue",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Block Summary')]..['Sampled (Y/N)']"
+                "$..[?(@._name === 'Observations')]..['Block ID/SU ID']"
               ]
             }
           ]
@@ -3081,7 +2361,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -3092,7 +2372,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
@@ -3135,81 +2415,6 @@
         "type": "and",
         "checks": [
           {
-            "ifNotEmpty": "$..[?(@._name === 'Observations')]..['Targeted or Non-Targeted']"
-          }
-        ]
-      },
-      "fields": [
-        {
-          "columnName": "eventID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "organismID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Marked Animals')]..['_key']",
-                "$..[?(@._name === 'Marked Animals')]..['_row']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "measurementID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Marked Animals')]..['_key']",
-                "$..[?(@._name === 'Marked Animals')]..['_row']"
-              ],
-              "postfix": {
-                "static": "targeted-or-non-targeted"
-              }
-            }
-          ]
-        },
-        {
-          "columnName": "measurementType",
-          "columnValue": [
-            {
-              "static": "Targeted or Non-Targeted"
-            }
-          ]
-        },
-        {
-          "columnName": "measurementUnit",
-          "columnValue": [
-            {
-              "static": ""
-            }
-          ]
-        },
-        {
-          "columnName": "measurementValue",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Marked Animals')]..['Targeted or Non-Targeted']"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "sheetName": "measurementOrFact",
-      "condition": {
-        "type": "and",
-        "checks": [
-          {
             "ifNotEmpty": "$..[?(@._name === 'Marked Animals')]..['Wildlife Health ID']"
           }
         ]
@@ -3220,7 +2425,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -3295,7 +2500,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -3370,7 +2575,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -3445,7 +2650,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -3522,7 +2727,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -3597,7 +2802,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -3672,7 +2877,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -3747,7 +2952,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -3804,6 +3009,47 @@
             }
           ]
         }
+      ]
+    }
+  ],
+  "dwcMeta": [
+    {
+      "sheetName": "record",
+      "primaryKey": [
+        "eventID"
+      ]
+    },
+    {
+      "sheetName": "event",
+      "primaryKey": [
+        "eventID"
+      ]
+    },
+    {
+      "sheetName": "location",
+      "primaryKey": [
+        "eventID"
+      ]
+    },
+    {
+      "sheetName": "occurrence",
+      "primaryKey": [
+        "occurrenceID"
+      ]
+    },
+    {
+      "sheetName": "organism",
+      "primaryKey": [
+        "organismID"
+      ]
+    },
+    {
+      "sheetName": "measurementOrFact",
+      "primaryKey": [
+        "eventID",
+        "measurementID",
+        "occurrenceID",
+        "organismID"
       ]
     }
   ]
