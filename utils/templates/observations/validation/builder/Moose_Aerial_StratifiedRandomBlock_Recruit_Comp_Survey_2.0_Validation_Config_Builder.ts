@@ -927,6 +927,16 @@ const mooseSRBTemplateValidationSchema = {
       ],
       columns: [
         {
+          name: 'Study Area',
+          description: '',
+          validations: [{ column_required_validator: {} }]
+        },
+        {
+          name: 'Date',
+          description: '',
+          validations: [{ column_required_validator: {} }]
+        },
+        {
           name: 'Stratum',
           description: '',
           validations: stratumPickListValidator()
@@ -964,7 +974,7 @@ const mooseSRBTemplateValidationSchema = {
         {
           name: 'Species',
           description: '',
-          validations: mooseSpeciesPickListValidator()
+          validations: [...mooseSpeciesPickListValidator(), { column_required_validator: {} }]
         },
         {
           name: 'Spike/Fork Bulls',
