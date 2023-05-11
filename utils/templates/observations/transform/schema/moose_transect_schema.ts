@@ -197,1124 +197,499 @@ export const mooseTransectSchema: TransformSchema = {
             createValueField('measurementUnit', ''),
             createValueField('measurementValue', 'Spike/Fork')
           ]
+        },
+        {
+          sheetName: 'measurementOrFact',
+          condition: {
+            type: 'or',
+            checks: [
+              { ifNotEmpty: getValuesByName('Observations', ['Sign Type']) },
+              { ifNotEmpty: getValuesByName('Observations', ['Sign Count']) }
+            ]
+          },
+          fields: [
+            {
+              columnName: 'eventID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+                }
+              ]
+            },
+            {
+              columnName: 'measurementID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: 'sign-type'
+                  }
+                }
+              ]
+            },
+            {
+              columnName: 'occurrenceID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: '0'
+                  }
+                }
+              ]
+            },
+            createValueField('measurementType', 'Sign Type'),
+            createValueField('measurementUnit', ''),
+            createPathField('measurementValue', 'Observations', ['Sign Type'])
+          ]
+        },
+        {
+          sheetName: 'measurementOrFact',
+          condition: {
+            type: 'or',
+            checks: [
+              { ifNotEmpty: getValuesByName('Observations', ['Sign Count']) },
+              { ifNotEmpty: getValuesByName('Observations', ['Sign Type']) }
+            ]
+          },
+          fields: [
+            {
+              columnName: 'eventID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+                }
+              ]
+            },
+            {
+              columnName: 'measurementID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: 'sign-count'
+                  }
+                }
+              ]
+            },
+            {
+              columnName: 'occurrenceID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: '0'
+                  }
+                }
+              ]
+            },
+            createValueField('measurementType', 'Sign Count'),
+            createValueField('measurementUnit', ''),
+            createPathField('measurementValue', 'Observations', ['Sign Count'])
+          ]
+        },
+        {
+          sheetName: 'measurementOrFact',
+          condition: {
+            type: 'and',
+            checks: [{ ifNotEmpty: getValuesByName('Observations', ['Age of Sign']) }]
+          },
+          fields: [
+            {
+              columnName: 'eventID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+                }
+              ]
+            },
+            {
+              columnName: 'measurementID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: 'age-of-sign'
+                  }
+                }
+              ]
+            },
+            {
+              columnName: 'occurrenceID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: '0'
+                  }
+                }
+              ]
+            },
+            createValueField('measurementType', 'Age of Sign'),
+            createValueField('measurementUnit', ''),
+            createPathField('measurementValue', 'Observations', ['Age of Sign'])
+          ]
+        },
+        {
+          sheetName: 'measurementOrFact',
+          condition: {
+            type: 'and',
+            checks: [{ ifNotEmpty: getValuesByName('Observations', ['Veg Cover (%)']) }]
+          },
+          fields: [
+            {
+              columnName: 'eventID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+                }
+              ]
+            },
+            {
+              columnName: 'measurementID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: 'veg-cover'
+                  }
+                }
+              ]
+            },
+            {
+              columnName: 'occurrenceID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: '0'
+                  }
+                }
+              ]
+            },
+            createValueField('measurementType', 'Veg Cover'),
+            createValueField('measurementUnit', '%'),
+            createPathField('measurementValue', 'Observations', ['Veg Cover (%)'])
+          ]
+        },
+        {
+          sheetName: 'measurementOrFact',
+          condition: {
+            type: 'and',
+            checks: [{ ifNotEmpty: getValuesByName('Observations', ['Snow Cover (%)']) }]
+          },
+          fields: [
+            {
+              columnName: 'eventID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+                }
+              ]
+            },
+            {
+              columnName: 'measurementID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: 'snow-cover'
+                  }
+                }
+              ]
+            },
+            {
+              columnName: 'occurrenceID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: '0'
+                  }
+                }
+              ]
+            },
+            createValueField('measurementType', 'Snow Cover'),
+            createValueField('measurementUnit', '%'),
+            createPathField('measurementValue', 'Observations', ['Snow Cover (%)'])
+          ]
+        },
+        {
+          sheetName: 'measurementOrFact',
+          condition: {
+            type: 'and',
+            checks: [{ ifNotEmpty: getValuesByName('Observations', ['Activity']) }]
+          },
+          fields: [
+            {
+              columnName: 'eventID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+                }
+              ]
+            },
+            {
+              columnName: 'measurementID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: 'activity'
+                  }
+                }
+              ]
+            },
+            {
+              columnName: 'occurrenceID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: '0'
+                  }
+                }
+              ]
+            },
+            createValueField('measurementType', 'Activity'),
+            createValueField('measurementUnit', ''),
+            createPathField('measurementValue', 'Observations', ['Activity'])
+          ]
+        },
+        {
+          sheetName: 'measurementOrFact',
+          condition: {
+            type: 'and',
+            checks: [{ ifNotEmpty: getValuesByName('Observations', ['Number of Marked Animals Observed']) }]
+          },
+          fields: [
+            {
+              columnName: 'eventID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+                }
+              ]
+            },
+            {
+              columnName: 'measurementID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: 'number-of-marked-animals-observed'
+                  }
+                }
+              ]
+            },
+            {
+              columnName: 'occurrenceID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: '0'
+                  }
+                }
+              ]
+            },
+            createValueField('measurementType', 'Number of Marked Animals Observed'),
+            createValueField('measurementUnit', ''),
+            createPathField('measurementValue', 'Observations', ['Number of Marked Animals Observed'])
+          ]
+        },
+        {
+          sheetName: 'measurementOrFact',
+          condition: {
+            type: 'and',
+            checks: [{ ifNotEmpty: getValuesByName('Observations', ['Survey or Telemetry Search']) }]
+          },
+          fields: [
+            {
+              columnName: 'eventID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+                }
+              ]
+            },
+            {
+              columnName: 'measurementID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: 'survey-or-telemetry-search'
+                  }
+                }
+              ]
+            },
+            {
+              columnName: 'occurrenceID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: '0'
+                  }
+                }
+              ]
+            },
+            createValueField('measurementType', 'Survey or Telemetry Search'),
+            createValueField('measurementUnit', ''),
+            createPathField('measurementValue', 'Observations', ['Survey or Telemetry Search'])
+          ]
+        },
+        {
+          sheetName: 'measurementOrFact',
+          condition: {
+            type: 'and',
+            checks: [{ ifNotEmpty: getValuesByName('Observations', ['Photos']) }]
+          },
+          fields: [
+            {
+              columnName: 'eventID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+                }
+              ]
+            },
+            {
+              columnName: 'measurementID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: 'photos'
+                  }
+                }
+              ]
+            },
+            {
+              columnName: 'occurrenceID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: '0'
+                  }
+                }
+              ]
+            },
+            createValueField('measurementType', 'Photos'),
+            createValueField('measurementUnit', ''),
+            createPathField('measurementValue', 'Observations', ['Photos'])
+          ]
+        },
+        {
+          sheetName: 'measurementOrFact',
+          condition: {
+            type: 'and',
+            checks: [{ ifNotEmpty: getValuesByName('Observations', ['Observation Comments']) }]
+          },
+          fields: [
+            {
+              columnName: 'eventID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+                }
+              ]
+            },
+            {
+              columnName: 'measurementID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: 'observation-comments'
+                  }
+                }
+              ]
+            },
+            {
+              columnName: 'occurrenceID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: '0'
+                  }
+                }
+              ]
+            },
+            createValueField('measurementType', 'Observation Comments'),
+            createValueField('measurementUnit', ''),
+            createPathField('measurementValue', 'Observations', ['Observation Comments'])
+          ]
         }
       ]
     },
 
-    // Sub-Prime Bulls (static: 1)
-    // sex: Male
-    // life stage: Unknown
-    // configuration: Sub-Prime Bulls
-    {
-      sheetName: 'occurrence',
-      condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Sub-Prime Bulls']) }] },
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '1'
-              }
-            }
-          ]
-        },
-        createPathField('individualCount', 'Observations', ['Sub-Prime Bulls']),
-        createValueField('sex', 'male'),
-        createValueField('lifeStage', 'unknown'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
-      ],
-      add: [
-        {
-          sheetName: 'measurementOrFact',
-          fields: [
-            {
-              columnName: 'eventID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-                }
-              ]
-            },
-            {
-              columnName: 'measurementID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: 'antler-configuration'
-                  }
-                }
-              ]
-            },
-            {
-              columnName: 'occurrenceID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: '1'
-                  }
-                }
-              ]
-            },
-            createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'Sub-Prime')
-          ]
-        }
-      ]
-    },
-    // Prime Bulls (static: 2)
-    // sex: Male
-    // life stage: Adult
-    // configuration: Prime Bulls
-    {
-      sheetName: 'occurrence',
-      condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Prime Bulls']) }] },
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '2'
-              }
-            }
-          ]
-        },
-        createPathField('individualCount', 'Observations', ['Prime Bulls']),
-        createValueField('sex', 'male'),
-        createValueField('lifeStage', 'adult'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
-      ],
-      add: [
-        {
-          sheetName: 'measurementOrFact',
-          fields: [
-            {
-              columnName: 'eventID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-                }
-              ]
-            },
-            {
-              columnName: 'measurementID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: 'antler-configuration'
-                  }
-                }
-              ]
-            },
-            {
-              columnName: 'occurrenceID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: '2'
-                  }
-                }
-              ]
-            },
-            createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'Prime')
-          ]
-        }
-      ]
-    },
-    // Senior Bulls (static: 3)
-    // sex: Male
-    // life stage: Adult
-    // configuration: Senior Bulls
-    {
-      sheetName: 'occurrence',
-      condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Senior Bulls']) }] },
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '3'
-              }
-            }
-          ]
-        },
-        createPathField('individualCount', 'Observations', ['Senior Bulls']),
-        createValueField('sex', 'male'),
-        createValueField('lifeStage', 'adult'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
-      ],
-      add: [
-        {
-          sheetName: 'measurementOrFact',
-          fields: [
-            {
-              columnName: 'eventID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-                }
-              ]
-            },
-            {
-              columnName: 'measurementID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: 'antler-configuration'
-                  }
-                }
-              ]
-            },
-            {
-              columnName: 'occurrenceID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: '3'
-                  }
-                }
-              ]
-            },
-            createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'Senior')
-          ]
-        }
-      ]
-    },
-    // 3 Brow/10 Points Bulls (static: 4)
-    // sex: Male
-    // life stage: Adult
-    // configuration: 3 Brow/10 Points Bulls
-
-    {
-      sheetName: 'occurrence',
-      condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['3 Brow/10 Points Bulls']) }] },
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '4'
-              }
-            }
-          ]
-        },
-        createPathField('individualCount', 'Observations', ['3 Brow/10 Points Bulls']),
-        createValueField('sex', 'male'),
-        createValueField('lifeStage', 'adult'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
-      ],
-      add: [
-        {
-          sheetName: 'measurementOrFact',
-          fields: [
-            {
-              columnName: 'eventID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-                }
-              ]
-            },
-            {
-              columnName: 'measurementID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: 'antler-configuration'
-                  }
-                }
-              ]
-            },
-            {
-              columnName: 'occurrenceID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: '4'
-                  }
-                }
-              ]
-            },
-            createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', '3 Brow/10 Points')
-          ]
-        }
-      ]
-    },
-    // BC RISC Yearling Bulls (static: 5)
-    // sex: Male
-    // life stage: Yearling
-    // configuration: BC RISC Yearling Bulls
-    {
-      sheetName: 'occurrence',
-      condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['BC RISC Yearling Bulls']) }] },
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '5'
-              }
-            }
-          ]
-        },
-        createPathField('individualCount', 'Observations', ['BC RISC Yearling Bulls']),
-        createValueField('sex', 'male'),
-        createValueField('lifeStage', 'yearling'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
-      ],
-      add: [
-        {
-          sheetName: 'measurementOrFact',
-          fields: [
-            {
-              columnName: 'eventID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-                }
-              ]
-            },
-            {
-              columnName: 'measurementID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: 'antler-configuration'
-                  }
-                }
-              ]
-            },
-            {
-              columnName: 'occurrenceID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: '5'
-                  }
-                }
-              ]
-            },
-            createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'BC RISC Yearling')
-          ]
-        }
-      ]
-    },
-    // BC RISC Class I Bulls (static: 6)
-    // sex: Male
-    // life stage: Unknown
-    // configuration: BC RISC Class I Bulls
-    {
-      sheetName: 'occurrence',
-      condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['BC RISC Class I Bulls']) }] },
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '6'
-              }
-            }
-          ]
-        },
-        createPathField('individualCount', 'Observations', ['BC RISC Class I Bulls']),
-        createValueField('sex', 'male'),
-        createValueField('lifeStage', 'unknown'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
-      ],
-      add: [
-        {
-          sheetName: 'measurementOrFact',
-          fields: [
-            {
-              columnName: 'eventID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-                }
-              ]
-            },
-            {
-              columnName: 'measurementID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: 'antler-configuration'
-                  }
-                }
-              ]
-            },
-            {
-              columnName: 'occurrenceID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: '6'
-                  }
-                }
-              ]
-            },
-            createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'BC RISC Class I')
-          ]
-        }
-      ]
-    },
-    // BC RISC Class II Bulls (static: 7)
-    // sex: Male
-    // life stage: Adult
-    // configuration: BC RISC Class II Bulls
-    {
-      sheetName: 'occurrence',
-      condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['BC RISC Class II Bulls']) }] },
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '7'
-              }
-            }
-          ]
-        },
-        createPathField('individualCount', 'Observations', ['BC RISC Class II Bulls']),
-        createValueField('sex', 'male'),
-        createValueField('lifeStage', 'adult'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
-      ],
-      add: [
-        {
-          sheetName: 'measurementOrFact',
-          fields: [
-            {
-              columnName: 'eventID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-                }
-              ]
-            },
-            {
-              columnName: 'measurementID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: 'antler-configuration'
-                  }
-                }
-              ]
-            },
-            {
-              columnName: 'occurrenceID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: '7'
-                  }
-                }
-              ]
-            },
-            createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'BC RISC Class II')
-          ]
-        }
-      ]
-    },
-    // BC RISC Class III Bulls (static: 8)
-    // sex: Male
-    // life stage: Adult
-    // configuration: BC RISC Class III Bulls
-    {
-      sheetName: 'occurrence',
-      condition: {
-        type: 'and',
-        checks: [{ ifNotEmpty: getValuesByName('Observations', ['BC RISC Class III Bulls']) }]
-      },
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '8'
-              }
-            }
-          ]
-        },
-        createPathField('individualCount', 'Observations', ['BC RISC Class III Bulls']),
-        createValueField('sex', 'male'),
-        createValueField('lifeStage', 'adult'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
-      ],
-      add: [
-        {
-          sheetName: 'measurementOrFact',
-          fields: [
-            {
-              columnName: 'eventID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-                }
-              ]
-            },
-            {
-              columnName: 'measurementID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: 'antler-configuration'
-                  }
-                }
-              ]
-            },
-            {
-              columnName: 'occurrenceID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: '8'
-                  }
-                }
-              ]
-            },
-            createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'BC RISC Class III')
-          ]
-        }
-      ]
-    },
-    // Oswald (1997) Class I Bulls (static: 9)
-    // sex: Male
-    // life stage: Unknown
-    // configuration: Oswald (1997) Class I Bulls
-    {
-      sheetName: 'occurrence',
-      condition: {
-        type: 'and',
-        checks: [{ ifNotEmpty: getValuesByName('Observations', ['Oswald (1997) Class I Bulls']) }]
-      },
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '9'
-              }
-            }
-          ]
-        },
-        createPathField('individualCount', 'Observations', ['Oswald (1997) Class I Bulls']),
-        createValueField('sex', 'male'),
-        createValueField('lifeStage', 'unknown'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
-      ],
-      add: [
-        {
-          sheetName: 'measurementOrFact',
-          fields: [
-            {
-              columnName: 'eventID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-                }
-              ]
-            },
-            {
-              columnName: 'measurementID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: 'antler-configuration'
-                  }
-                }
-              ]
-            },
-            {
-              columnName: 'occurrenceID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: '9'
-                  }
-                }
-              ]
-            },
-            createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'Oswald (1997) Class I')
-          ]
-        }
-      ]
-    },
-    // Oswald (1997) Class II Bulls (static: 10)
-    // sex: Male
-    // life stage: Unknown
-    // configuration: Oswald (1997) Class II Bulls
-    {
-      sheetName: 'occurrence',
-      condition: {
-        type: 'and',
-        checks: [{ ifNotEmpty: getValuesByName('Observations', ['Oswald (1997) Class II Bulls']) }]
-      },
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '10'
-              }
-            }
-          ]
-        },
-        createPathField('individualCount', 'Observations', ['Oswald (1997) Class II Bulls']),
-        createValueField('sex', 'male'),
-        createValueField('lifeStage', 'unknown'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
-      ],
-      add: [
-        {
-          sheetName: 'measurementOrFact',
-          fields: [
-            {
-              columnName: 'eventID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-                }
-              ]
-            },
-            {
-              columnName: 'measurementID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: 'antler-configuration'
-                  }
-                }
-              ]
-            },
-            {
-              columnName: 'occurrenceID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: '10'
-                  }
-                }
-              ]
-            },
-            createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'Oswald (1997) Class II')
-          ]
-        }
-      ]
-    },
-    // Oswald (1997) Class III Bulls (static: 11)
-    // sex: Male
-    // life stage: Adult
-    // configuration: Oswald (1997) Class III Bulls
-    {
-      sheetName: 'occurrence',
-      condition: {
-        type: 'and',
-        checks: [{ ifNotEmpty: getValuesByName('Observations', ['Oswald (1997) Class III Bulls']) }]
-      },
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '11'
-              }
-            }
-          ]
-        },
-        createPathField('individualCount', 'Observations', ['Oswald (1997) Class III Bulls']),
-        createValueField('sex', 'male'),
-        createValueField('lifeStage', 'adult'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
-      ],
-      add: [
-        {
-          sheetName: 'measurementOrFact',
-          fields: [
-            {
-              columnName: 'eventID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-                }
-              ]
-            },
-            {
-              columnName: 'measurementID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: 'antler-configuration'
-                  }
-                }
-              ]
-            },
-            {
-              columnName: 'occurrenceID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: '11'
-                  }
-                }
-              ]
-            },
-            createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'Oswald (1997) Class III')
-          ]
-        }
-      ]
-    },
-    // Adult Bulls - Unclassified (static: 12)
-    // sex: Male
-    // life stage: Adult
-    // configuration: Adult Bulls - Unclassified
-    {
-      sheetName: 'occurrence',
-      condition: {
-        type: 'and',
-        checks: [{ ifNotEmpty: getValuesByName('Observations', ['Adult Bulls - Unclassified']) }]
-      },
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '12'
-              }
-            }
-          ]
-        },
-        createPathField('individualCount', 'Observations', ['Adult Bulls - Unclassified']),
-        createValueField('sex', 'male'),
-        createValueField('lifeStage', 'adult'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
-      ],
-      add: [
-        {
-          sheetName: 'measurementOrFact',
-          fields: [
-            {
-              columnName: 'eventID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-                }
-              ]
-            },
-            {
-              columnName: 'measurementID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: 'antler-configuration'
-                  }
-                }
-              ]
-            },
-            {
-              columnName: 'occurrenceID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: '12'
-                  }
-                }
-              ]
-            },
-            createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'unclassified')
-          ]
-        }
-      ]
-    },
-    // Bulls - Unclassified (static: 13)
-    // sex: Male
-    // life stage: Unknown
-    // configuration: Bulls - Unclassified
-    {
-      sheetName: 'occurrence',
-      condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Bulls - Unclassified']) }] },
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '13'
-              }
-            }
-          ]
-        },
-        createPathField('individualCount', 'Observations', ['Bulls - Unclassified']),
-        createValueField('sex', 'male'),
-        createValueField('lifeStage', 'unknown'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
-      ],
-      add: [
-        {
-          sheetName: 'measurementOrFact',
-          fields: [
-            {
-              columnName: 'eventID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-                }
-              ]
-            },
-            {
-              columnName: 'measurementID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: 'antler-configuration'
-                  }
-                }
-              ]
-            },
-            {
-              columnName: 'occurrenceID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: '13'
-                  }
-                }
-              ]
-            },
-            createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'unclassified')
-          ]
-        }
-      ]
-    },
-    // Cow (static: 14)
-    // sex: Female
-    // life stage: Adult
-    // configuration: Cow
-    {
-      sheetName: 'occurrence',
-      condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Cow']) }] },
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '14'
-              }
-            }
-          ]
-        },
-        createPathField('individualCount', 'Observations', ['Cow']),
-        createValueField('sex', 'female'),
-        createValueField('lifeStage', 'adult'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
-      ]
-    },
-    // Calves (static: 15)
-    // sex: Unknown
-    // life stage: Juvenile
-    // configuration: Calves
-    {
-      sheetName: 'occurrence',
-      condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Calves']) }] },
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '15'
-              }
-            }
-          ]
-        },
-        createPathField('individualCount', 'Observations', ['Calves']),
-        createValueField('sex', 'unknown'),
-        createValueField('lifeStage', 'juvenile'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
-      ]
-    },
-    // Adult Unclassified Sex (static: 16)
-    // sex: Unknown
-    // life stage: Adult
-    // configuration: Adult Unclassified Sex
-    {
-      sheetName: 'occurrence',
-      condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Adult Unclassified Sex']) }] },
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '16'
-              }
-            }
-          ]
-        },
-        createPathField('individualCount', 'Observations', ['Adult Unclassified Sex']),
-        createValueField('sex', 'unknown'),
-        createValueField('lifeStage', 'adult'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
-      ]
-    },
-    // Adult Unclassified Sex (static: 17)
-    // sex: Unknown
-    // life stage: Unknown
-    // configuration: Adult Unclassified Sex
-    {
-      sheetName: 'occurrence',
-      condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Unclassified Age/Sex']) }] },
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '17'
-              }
-            }
-          ]
-        },
-        createPathField('individualCount', 'Observations', ['Unclassified Age/Sex']),
-        createValueField('sex', 'unknown'),
-        createValueField('lifeStage', 'unknown'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
-      ]
-    },
+    // {
+    //   sheetName: 'measurementOrFact',
+    //   condition: {
+    //     type: 'and',
+    //     checks: [{ ifNotEmpty: getValuesByName('Observations', ['Cow W/1 calves']) }]
+    //   },
+    //   fields: [
+    //     {
+    //       columnName: 'eventID',
+    //       columnValue: [
+    //         {
+    //           paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+    //         }
+    //       ]
+    //     },
+    //     {
+    //       columnName: 'measurementID',
+    //       columnValue: [
+    //         {
+    //           paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+    //           postfix: {
+    //             static: 'cow-w/1-calf'
+    //           }
+    //         }
+    //       ]
+    //     },
+    //     createValueField('measurementType', 'Cow W/1 calf'),
+    //     createValueField('measurementUnit', ''),
+    //     createPathField('measurementValue', 'Observations', ['Cow W/1 calf'])
+    //   ]
+    // },
+    // {
+    //   sheetName: 'measurementOrFact',
+    //   condition: {
+    //     type: 'and',
+    //     checks: [{ ifNotEmpty: getValuesByName('Observations', ['Cow W/2 calves']) }]
+    //   },
+    //   fields: [
+    //     {
+    //       columnName: 'eventID',
+    //       columnValue: [
+    //         {
+    //           paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+    //         }
+    //       ]
+    //     },
+    //     {
+    //       columnName: 'measurementID',
+    //       columnValue: [
+    //         {
+    //           paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+    //           postfix: {
+    //             static: 'cow-w/2-calves'
+    //           }
+    //         }
+    //       ]
+    //     },
+    //     createValueField('measurementType', 'Cow W/2 calves'),
+    //     createValueField('measurementUnit', ''),
+    //     createPathField('measurementValue', 'Observations', ['Cow W/2 calves'])
+    //   ]
+    // },
+    //------------------- animal count is done ------------
     {
       sheetName: 'organism',
       condition: {
@@ -1343,6 +718,8 @@ export const mooseTransectSchema: TransformSchema = {
         createPathField('organismRemarks', 'Marked Animals', ['Marked Animals Comments'])
       ]
     },
+
+    //MeasurementOfFact for fields specific to the left of the animal counts
     {
       sheetName: 'measurementOrFact',
       fields: [
@@ -1453,392 +830,6 @@ export const mooseTransectSchema: TransformSchema = {
         createValueField('measurementType', 'Group Label'),
         createValueField('measurementUnit', ''),
         createPathField('measurementValue', 'Observations', ['Group Label'])
-      ]
-    },
-    {
-      sheetName: 'measurementOrFact',
-      condition: {
-        type: 'and',
-        checks: [{ ifNotEmpty: getValuesByName('Observations', ['Cow W/1 calves']) }]
-      },
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: 'cow-w/1-calf'
-              }
-            }
-          ]
-        },
-        createValueField('measurementType', 'Cow W/1 calf'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Cow W/1 calf'])
-      ]
-    },
-    {
-      sheetName: 'measurementOrFact',
-      condition: {
-        type: 'and',
-        checks: [{ ifNotEmpty: getValuesByName('Observations', ['Cow W/2 calves']) }]
-      },
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: 'cow-w/2-calves'
-              }
-            }
-          ]
-        },
-        createValueField('measurementType', 'Cow W/2 calves'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Cow W/2 calves'])
-      ]
-    },
-    {
-      sheetName: 'measurementOrFact',
-      condition: {
-        type: 'or',
-        checks: [
-          { ifNotEmpty: getValuesByName('Observations', ['Sign Type']) },
-          { ifNotEmpty: getValuesByName('Observations', ['Sign Count']) }
-        ]
-      },
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: 'sign-type'
-              }
-            }
-          ]
-        },
-        createValueField('measurementType', 'Sign Type'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Sign Type'])
-      ]
-    },
-    {
-      sheetName: 'measurementOrFact',
-      condition: {
-        type: 'or',
-        checks: [
-          { ifNotEmpty: getValuesByName('Observations', ['Sign Count']) },
-          { ifNotEmpty: getValuesByName('Observations', ['Sign Type']) }
-        ]
-      },
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: 'sign-count'
-              }
-            }
-          ]
-        },
-        createValueField('measurementType', 'Sign Count'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Sign Count'])
-      ]
-    },
-    {
-      sheetName: 'measurementOrFact',
-      condition: {
-        type: 'and',
-        checks: [{ ifNotEmpty: getValuesByName('Observations', ['Age of Sign']) }]
-      },
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: 'age-of-sign'
-              }
-            }
-          ]
-        },
-        createValueField('measurementType', 'Age of Sign'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Age of Sign'])
-      ]
-    },
-    {
-      sheetName: 'measurementOrFact',
-      condition: {
-        type: 'and',
-        checks: [{ ifNotEmpty: getValuesByName('Observations', ['Veg Cover (%)']) }]
-      },
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: 'veg-cover'
-              }
-            }
-          ]
-        },
-        createValueField('measurementType', 'Veg Cover'),
-        createValueField('measurementUnit', '%'),
-        createPathField('measurementValue', 'Observations', ['Veg Cover (%)'])
-      ]
-    },
-    {
-      sheetName: 'measurementOrFact',
-      condition: {
-        type: 'and',
-        checks: [{ ifNotEmpty: getValuesByName('Observations', ['Snow Cover (%)']) }]
-      },
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: 'snow-cover'
-              }
-            }
-          ]
-        },
-        createValueField('measurementType', 'Snow Cover'),
-        createValueField('measurementUnit', '%'),
-        createPathField('measurementValue', 'Observations', ['Snow Cover (%)'])
-      ]
-    },
-    {
-      sheetName: 'measurementOrFact',
-      condition: {
-        type: 'and',
-        checks: [{ ifNotEmpty: getValuesByName('Observations', ['Activity']) }]
-      },
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: 'activity'
-              }
-            }
-          ]
-        },
-        createValueField('measurementType', 'Activity'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Activity'])
-      ]
-    },
-    {
-      sheetName: 'measurementOrFact',
-      condition: {
-        type: 'and',
-        checks: [{ ifNotEmpty: getValuesByName('Observations', ['Number of Marked Animals Observed']) }]
-      },
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: 'number-of-marked-animals-observed'
-              }
-            }
-          ]
-        },
-        createValueField('measurementType', 'Number of Marked Animals Observed'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Number of Marked Animals Observed'])
-      ]
-    },
-    {
-      sheetName: 'measurementOrFact',
-      condition: {
-        type: 'and',
-        checks: [{ ifNotEmpty: getValuesByName('Observations', ['Survey or Telemetry Search']) }]
-      },
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: 'survey-or-telemetry-search'
-              }
-            }
-          ]
-        },
-        createValueField('measurementType', 'Survey or Telemetry Search'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Survey or Telemetry Search'])
-      ]
-    },
-    {
-      sheetName: 'measurementOrFact',
-      condition: {
-        type: 'and',
-        checks: [{ ifNotEmpty: getValuesByName('Observations', ['Photos']) }]
-      },
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: 'photos'
-              }
-            }
-          ]
-        },
-        createValueField('measurementType', 'Photos'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Photos'])
-      ]
-    },
-    {
-      sheetName: 'measurementOrFact',
-      condition: {
-        type: 'and',
-        checks: [{ ifNotEmpty: getValuesByName('Observations', ['Targeted or Non-Targeted']) }]
-      },
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'organismID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Marked Animals', ['_key']), getValuesByName('Marked Animals', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Marked Animals', ['_key']), getValuesByName('Marked Animals', ['_row'])],
-              postfix: {
-                static: 'targeted-or-non-targeted'
-              }
-            }
-          ]
-        },
-        createValueField('measurementType', 'Targeted or Non-Targeted'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Marked Animals', ['Targeted or Non-Targeted'])
       ]
     },
     {
@@ -1997,6 +988,7 @@ export const mooseTransectSchema: TransformSchema = {
         createPathField('measurementValue', 'Marked Animals', ['Collar/Tag Frequency'])
       ]
     },
+
     {
       sheetName: 'measurementOrFact',
       condition: {
@@ -2182,4 +1174,7 @@ export const mooseTransectSchema: TransformSchema = {
   ]
 };
 
-transformSchema('Moose_Aerial_Transect_Distance_Sampling_survey_2.0_Test_Data.xlsx', mooseTransectSchema);
+transformSchema('Moose_Transect_SpikeBulls_no_marked_animals.xlsx', mooseTransectSchema);
+
+//transformSchema('Moose_Transect_SpikeBulls_with_marked_animals.xlsx', mooseTransectSchema);
+//transformSchema('Moose_Transect_SpikeBulls_no_marked_animals.xlsx', mooseTransectSchema);

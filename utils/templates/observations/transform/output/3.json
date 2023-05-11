@@ -2,657 +2,146 @@
   {
     "record": [
       {
-        "eventID": "Central Selkirks:4-23:0",
+        "eventID": "MU 749:Lowland:1:0",
         "basisOfRecord ": "HumanObservation"
       }
     ],
     "event": [
       {
-        "eventID": "Central Selkirks:4-23:0",
-        "eventDate": "16-Mar-19",
-        "eventRemarks": "Looked Health"
+        "eventID": "MU 749:Lowland:1:0",
+        "eventDate": "31/Jan/16",
+        "eventRemarks": "have an observation"
       }
     ],
     "location": [
       {
-        "eventID": "Central Selkirks:4-23:0",
-        "verbatimCoordinates": "11 493420 5589669",
-        "decimalLatitude": "",
-        "decimalLongitude": "",
-        "verbatimSRS": "NAD83"
+        "eventID": "MU 749:Lowland:1:0",
+        "verbatimCoordinates": "59.212853 -123.488743",
+        "decimalLatitude": "59.212853",
+        "decimalLongitude": "-123.488743",
+        "verbatimSRS": ""
       }
     ],
     "occurrence": [
       {
-        "eventID": "Central Selkirks:4-23:0",
-        "occurrenceID": "Central Selkirks:4-23:0:2",
-        "individualCount": "7",
-        "sex": "unknown",
-        "lifeStage": "adult",
-        "taxonID": "M-RATA",
-        "occurrenceRemarks": "Looked Health"
-      },
-      {
-        "eventID": "Central Selkirks:4-23:0",
-        "occurrenceID": "Central Selkirks:4-23:0:4",
-        "individualCount": "1",
-        "sex": "unknown",
-        "lifeStage": "juvenile",
-        "taxonID": "M-RATA",
-        "occurrenceRemarks": "Looked Health"
-      }
-    ],
-    "organism": [
-      {
-        "eventID": "Central Selkirks:4-23:0",
-        "organismID": "3636:35463:35365:0",
-        "organismRemarks": "Collar to tight"
-      }
-    ],
-    "measurementOrFact": [
-      {
-        "eventID": "Central Selkirks:4-23:0",
-        "measurementID": "Central Selkirks:4-23:0:study-area",
-        "measurementType": "Study Area",
-        "measurementUnit": "",
-        "measurementValue": "Central Selkirks"
-      },
-      {
-        "eventID": "Central Selkirks:4-23:0",
-        "measurementID": "Central Selkirks:4-23:0:block-id/su-id",
-        "measurementType": "Block ID/SU ID",
-        "measurementUnit": "",
-        "measurementValue": "4-23"
-      },
-      {
-        "eventID": "Central Selkirks:4-23:0",
-        "measurementID": "Central Selkirks:4-23:0:group-label",
-        "measurementType": "Group Label",
-        "measurementUnit": "",
-        "measurementValue": "1"
-      },
-      {
-        "eventID": "Central Selkirks:4-23:0",
-        "measurementID": "Central Selkirks:4-23:0:veg-cover",
-        "measurementType": "Veg Cover",
-        "measurementUnit": "%",
-        "measurementValue": "10"
-      },
-      {
-        "eventID": "Central Selkirks:4-23:0",
-        "measurementID": "Central Selkirks:4-23:0:snow-cover",
-        "measurementType": "Snow Cover",
-        "measurementUnit": "%",
-        "measurementValue": "100"
-      },
-      {
-        "eventID": "Central Selkirks:4-23:0",
-        "measurementID": "Central Selkirks:4-23:0:activity",
-        "measurementType": "Activity",
-        "measurementUnit": "",
-        "measurementValue": "Standing"
-      },
-      {
-        "eventID": "Central Selkirks:4-23:0",
-        "measurementID": "Central Selkirks:4-23:0:elevation-observation",
-        "measurementType": "Elevation (m) of Observation",
-        "measurementUnit": "",
-        "measurementValue": "1200"
-      },
-      {
-        "eventID": "Central Selkirks:4-23:0",
-        "measurementID": "Central Selkirks:4-23:0:habitat",
-        "measurementType": "Habitat",
-        "measurementUnit": "",
-        "measurementValue": "Alpine"
-      },
-      {
-        "eventID": "Central Selkirks:4-23:0",
-        "measurementID": "Central Selkirks:4-23:0:number-of-marked-animals-observed",
-        "measurementType": "Number of Marked Animals Observed",
-        "measurementUnit": "",
-        "measurementValue": "1"
-      },
-      {
-        "eventID": "Central Selkirks:4-23:0",
-        "measurementID": "Central Selkirks:4-23:0:survey-or-telemetry-search",
-        "measurementType": "Survey or Telemetry Search",
-        "measurementUnit": "",
-        "measurementValue": "Survey"
-      },
-      {
-        "eventID": "Central Selkirks:4-23:0",
-        "measurementID": "Central Selkirks:4-23:0:photos",
-        "measurementType": "Photos",
-        "measurementUnit": "",
-        "measurementValue": "4-8"
-      },
-      {
-        "eventID": "Central Selkirks:4-23:0",
-        "organismID": "3636:35463:35365:0",
-        "measurementID": "3636:35463:35365:0:wildlife-health-id",
-        "measurementType": "Wildlife Health ID",
-        "measurementUnit": "",
-        "measurementValue": "3636"
-      },
-      {
-        "eventID": "Central Selkirks:4-23:0",
-        "organismID": "3636:35463:35365:0",
-        "measurementID": "3636:35463:35365:0:animal-id",
-        "measurementType": "Animal ID",
-        "measurementUnit": "",
-        "measurementValue": "35463"
-      },
-      {
-        "eventID": "Central Selkirks:4-23:0",
-        "organismID": "3636:35463:35365:0",
-        "measurementID": "3636:35463:35365:0:telemetry-device-id",
-        "measurementType": "Telemetry Device ID",
-        "measurementUnit": "",
-        "measurementValue": "35365"
-      },
-      {
-        "eventID": "Central Selkirks:4-23:0",
-        "organismID": "3636:35463:35365:0",
-        "measurementID": "3636:35463:35365:0:collar/tag-frequency",
-        "measurementType": "Collar/Tag Frequency",
-        "measurementUnit": "MHz",
-        "measurementValue": "114.34"
-      },
-      {
-        "eventID": "Central Selkirks:4-23:0",
-        "organismID": "3636:35463:35365:0",
-        "measurementID": "3636:35463:35365:0:right-ear-tag-id",
-        "measurementType": "Right Ear Tag ID",
-        "measurementUnit": "",
-        "measurementValue": "04"
-      },
-      {
-        "eventID": "Central Selkirks:4-23:0",
-        "organismID": "3636:35463:35365:0",
-        "measurementID": "3636:35463:35365:0:right-ear-tag-colour",
-        "measurementType": "Right Ear Tag Colour",
-        "measurementUnit": "",
-        "measurementValue": "Yellow"
-      },
-      {
-        "eventID": "Central Selkirks:4-23:0",
-        "organismID": "3636:35463:35365:0",
-        "measurementID": "3636:35463:35365:0:left-ear-tag-id",
-        "measurementType": "Left Ear Tag ID",
-        "measurementUnit": "",
-        "measurementValue": "05"
-      },
-      {
-        "eventID": "Central Selkirks:4-23:0",
-        "organismID": "3636:35463:35365:0",
-        "measurementID": "3636:35463:35365:0:left-ear-tag-colour",
-        "measurementType": "Left Ear Tag Colour",
-        "measurementUnit": "",
-        "measurementValue": "Red"
-      }
-    ]
-  },
-  {
-    "record": [
-      {
-        "eventID": "Central Selkirks:4-23:1",
-        "basisOfRecord ": "HumanObservation"
-      }
-    ],
-    "event": [
-      {
-        "eventID": "Central Selkirks:4-23:1",
-        "eventDate": "16-Mar-19",
-        "eventRemarks": ""
-      }
-    ],
-    "location": [
-      {
-        "eventID": "Central Selkirks:4-23:1",
-        "verbatimCoordinates": "11 486420 5596948",
-        "decimalLatitude": "",
-        "decimalLongitude": "",
-        "verbatimSRS": "NAD83"
-      }
-    ],
-    "occurrence": [
-      {
-        "eventID": "Central Selkirks:4-23:1",
-        "occurrenceID": "Central Selkirks:4-23:1:2",
-        "individualCount": "2",
-        "sex": "unknown",
-        "lifeStage": "adult",
-        "taxonID": "M-RATA",
-        "occurrenceRemarks": ""
-      }
-    ],
-    "measurementOrFact": [
-      {
-        "eventID": "Central Selkirks:4-23:1",
-        "measurementID": "Central Selkirks:4-23:1:study-area",
-        "measurementType": "Study Area",
-        "measurementUnit": "",
-        "measurementValue": "Central Selkirks"
-      },
-      {
-        "eventID": "Central Selkirks:4-23:1",
-        "measurementID": "Central Selkirks:4-23:1:block-id/su-id",
-        "measurementType": "Block ID/SU ID",
-        "measurementUnit": "",
-        "measurementValue": "4-23"
-      },
-      {
-        "eventID": "Central Selkirks:4-23:1",
-        "measurementID": "Central Selkirks:4-23:1:veg-cover",
-        "measurementType": "Veg Cover",
-        "measurementUnit": "%",
-        "measurementValue": "10"
-      },
-      {
-        "eventID": "Central Selkirks:4-23:1",
-        "measurementID": "Central Selkirks:4-23:1:snow-cover",
-        "measurementType": "Snow Cover",
-        "measurementUnit": "%",
-        "measurementValue": "100"
-      },
-      {
-        "eventID": "Central Selkirks:4-23:1",
-        "measurementID": "Central Selkirks:4-23:1:activity",
-        "measurementType": "Activity",
-        "measurementUnit": "",
-        "measurementValue": "Bedding"
-      },
-      {
-        "eventID": "Central Selkirks:4-23:1",
-        "measurementID": "Central Selkirks:4-23:1:elevation-observation",
-        "measurementType": "Elevation (m) of Observation",
-        "measurementUnit": "",
-        "measurementValue": "1200"
-      },
-      {
-        "eventID": "Central Selkirks:4-23:1",
-        "measurementID": "Central Selkirks:4-23:1:habitat",
-        "measurementType": "Habitat",
-        "measurementUnit": "",
-        "measurementValue": "Alpine Barren"
-      },
-      {
-        "eventID": "Central Selkirks:4-23:1",
-        "measurementID": "Central Selkirks:4-23:1:survey-or-telemetry-search",
-        "measurementType": "Survey or Telemetry Search",
-        "measurementUnit": "",
-        "measurementValue": "Survey"
-      },
-      {
-        "eventID": "Central Selkirks:4-23:1",
-        "measurementID": "Central Selkirks:4-23:1:photos",
-        "measurementType": "Photos",
-        "measurementUnit": "",
-        "measurementValue": "9-12"
-      }
-    ]
-  },
-  {
-    "record": [
-      {
-        "eventID": "Central Selkirks:4-23:2",
-        "basisOfRecord ": "HumanObservation"
-      }
-    ],
-    "event": [
-      {
-        "eventID": "Central Selkirks:4-23:2",
-        "eventDate": "16-Mar-19",
-        "eventRemarks": ""
-      }
-    ],
-    "location": [
-      {
-        "eventID": "Central Selkirks:4-23:2",
-        "verbatimCoordinates": "11 468500 5609483",
-        "decimalLatitude": "",
-        "decimalLongitude": "",
-        "verbatimSRS": "NAD83"
-      }
-    ],
-    "occurrence": [
-      {
-        "eventID": "Central Selkirks:4-23:2",
-        "occurrenceID": "Central Selkirks:4-23:2:2",
-        "individualCount": "1",
-        "sex": "unknown",
-        "lifeStage": "adult",
-        "taxonID": "M-RATA",
-        "occurrenceRemarks": ""
-      },
-      {
-        "eventID": "Central Selkirks:4-23:2",
-        "occurrenceID": "Central Selkirks:4-23:2:3",
-        "individualCount": "2",
+        "eventID": "MU 749:Lowland:1:0",
+        "occurrenceID": "MU 749:Lowland:1:0:0",
+        "individualCount": "3",
         "sex": "male",
         "lifeStage": "unknown",
-        "taxonID": "M-RATA",
-        "occurrenceRemarks": ""
+        "taxonID": "M-ALAM",
+        "occurrenceRemarks": "have an observation"
       }
     ],
     "measurementOrFact": [
       {
-        "eventID": "Central Selkirks:4-23:2",
-        "measurementID": "Central Selkirks:4-23:2:study-area",
+        "eventID": "MU 749:Lowland:1:0",
+        "measurementID": "MU 749:Lowland:1:0:study-area",
         "measurementType": "Study Area",
         "measurementUnit": "",
-        "measurementValue": "Central Selkirks"
+        "measurementValue": "MU 749"
       },
       {
-        "eventID": "Central Selkirks:4-23:2",
-        "measurementID": "Central Selkirks:4-23:2:block-id/su-id",
+        "eventID": "MU 749:Lowland:1:0",
+        "measurementID": "MU 749:Lowland:1:0:block-id/su-id",
         "measurementType": "Block ID/SU ID",
         "measurementUnit": "",
-        "measurementValue": "4-23"
+        "measurementValue": "Lowland"
       },
       {
-        "eventID": "Central Selkirks:4-23:2",
-        "measurementID": "Central Selkirks:4-23:2:veg-cover",
-        "measurementType": "Veg Cover",
-        "measurementUnit": "%",
-        "measurementValue": "10"
+        "eventID": "MU 749:Lowland:1:0",
+        "measurementID": "MU 749:Lowland:1:0:perpendicular-distance-from-transect-line",
+        "measurementType": "Perpendicular Distance From Transect Line",
+        "measurementUnit": "m",
+        "measurementValue": "140.0"
       },
       {
-        "eventID": "Central Selkirks:4-23:2",
-        "measurementID": "Central Selkirks:4-23:2:snow-cover",
-        "measurementType": "Snow Cover",
-        "measurementUnit": "%",
-        "measurementValue": "100"
-      },
-      {
-        "eventID": "Central Selkirks:4-23:2",
-        "measurementID": "Central Selkirks:4-23:2:activity",
-        "measurementType": "Activity",
+        "eventID": "MU 749:Lowland:1:0",
+        "measurementID": "MU 749:Lowland:1:0:antler-configuration",
+        "occurrenceID": "MU 749:Lowland:1:0:0",
+        "measurementType": "Antler Configuration",
         "measurementUnit": "",
-        "measurementValue": "Bedding"
+        "measurementValue": "Spike/Fork"
       },
       {
-        "eventID": "Central Selkirks:4-23:2",
-        "measurementID": "Central Selkirks:4-23:2:elevation-observation",
-        "measurementType": "Elevation (m) of Observation",
-        "measurementUnit": "",
-        "measurementValue": "1220"
-      },
-      {
-        "eventID": "Central Selkirks:4-23:2",
-        "measurementID": "Central Selkirks:4-23:2:habitat",
-        "measurementType": "Habitat",
-        "measurementUnit": "",
-        "measurementValue": "Alpine"
-      },
-      {
-        "eventID": "Central Selkirks:4-23:2",
-        "measurementID": "Central Selkirks:4-23:2:survey-or-telemetry-search",
-        "measurementType": "Survey or Telemetry Search",
-        "measurementUnit": "",
-        "measurementValue": "Survey"
-      },
-      {
-        "eventID": "Central Selkirks:4-23:2",
-        "measurementID": "Central Selkirks:4-23:2:photos",
-        "measurementType": "Photos",
-        "measurementUnit": "",
-        "measurementValue": "13-17"
-      }
-    ]
-  },
-  {
-    "record": [
-      {
-        "eventID": "Central Selkirks:4-24:3",
-        "basisOfRecord ": "HumanObservation"
-      }
-    ],
-    "event": [
-      {
-        "eventID": "Central Selkirks:4-24:3",
-        "eventDate": "17-Mar-19",
-        "eventRemarks": ""
-      }
-    ],
-    "location": [
-      {
-        "eventID": "Central Selkirks:4-24:3",
-        "verbatimCoordinates": "11 447578 5581199",
-        "decimalLatitude": "",
-        "decimalLongitude": "",
-        "verbatimSRS": "NAD83"
-      }
-    ],
-    "occurrence": [
-      {
-        "eventID": "Central Selkirks:4-24:3",
-        "occurrenceID": "Central Selkirks:4-24:3:2",
-        "individualCount": "9",
-        "sex": "unknown",
-        "lifeStage": "adult",
-        "taxonID": "M-RATA",
-        "occurrenceRemarks": ""
-      }
-    ],
-    "measurementOrFact": [
-      {
-        "eventID": "Central Selkirks:4-24:3",
-        "measurementID": "Central Selkirks:4-24:3:study-area",
-        "measurementType": "Study Area",
-        "measurementUnit": "",
-        "measurementValue": "Central Selkirks"
-      },
-      {
-        "eventID": "Central Selkirks:4-24:3",
-        "measurementID": "Central Selkirks:4-24:3:block-id/su-id",
-        "measurementType": "Block ID/SU ID",
-        "measurementUnit": "",
-        "measurementValue": "4-24"
-      },
-      {
-        "eventID": "Central Selkirks:4-24:3",
-        "measurementID": "Central Selkirks:4-24:3:veg-cover",
-        "measurementType": "Veg Cover",
-        "measurementUnit": "%",
-        "measurementValue": "15"
-      },
-      {
-        "eventID": "Central Selkirks:4-24:3",
-        "measurementID": "Central Selkirks:4-24:3:snow-cover",
-        "measurementType": "Snow Cover",
-        "measurementUnit": "%",
-        "measurementValue": "100"
-      },
-      {
-        "eventID": "Central Selkirks:4-24:3",
-        "measurementID": "Central Selkirks:4-24:3:activity",
-        "measurementType": "Activity",
-        "measurementUnit": "",
-        "measurementValue": "Running"
-      },
-      {
-        "eventID": "Central Selkirks:4-24:3",
-        "measurementID": "Central Selkirks:4-24:3:elevation-observation",
-        "measurementType": "Elevation (m) of Observation",
-        "measurementUnit": "",
-        "measurementValue": "1400"
-      },
-      {
-        "eventID": "Central Selkirks:4-24:3",
-        "measurementID": "Central Selkirks:4-24:3:habitat",
-        "measurementType": "Habitat",
-        "measurementUnit": "",
-        "measurementValue": "Alpine"
-      },
-      {
-        "eventID": "Central Selkirks:4-24:3",
-        "measurementID": "Central Selkirks:4-24:3:survey-or-telemetry-search",
-        "measurementType": "Survey or Telemetry Search",
-        "measurementUnit": "",
-        "measurementValue": "Survey"
-      },
-      {
-        "eventID": "Central Selkirks:4-24:3",
-        "measurementID": "Central Selkirks:4-24:3:photos",
-        "measurementType": "Photos",
-        "measurementUnit": "",
-        "measurementValue": "18-20"
-      }
-    ]
-  },
-  {
-    "record": [
-      {
-        "eventID": "Central Selkirks:4-24:4",
-        "basisOfRecord ": "HumanObservation"
-      }
-    ],
-    "event": [
-      {
-        "eventID": "Central Selkirks:4-24:4",
-        "eventDate": "17-Mar-19",
-        "eventRemarks": ""
-      }
-    ],
-    "location": [
-      {
-        "eventID": "Central Selkirks:4-24:4",
-        "verbatimCoordinates": "11 469471 5597272",
-        "decimalLatitude": "",
-        "decimalLongitude": "",
-        "verbatimSRS": "NAD83"
-      }
-    ],
-    "occurrence": [
-      {
-        "eventID": "Central Selkirks:4-24:4",
-        "occurrenceID": "Central Selkirks:4-24:4:2",
-        "individualCount": "4",
-        "sex": "unknown",
-        "lifeStage": "adult",
-        "taxonID": "M-RATA",
-        "occurrenceRemarks": ""
-      }
-    ],
-    "measurementOrFact": [
-      {
-        "eventID": "Central Selkirks:4-24:4",
-        "measurementID": "Central Selkirks:4-24:4:study-area",
-        "measurementType": "Study Area",
-        "measurementUnit": "",
-        "measurementValue": "Central Selkirks"
-      },
-      {
-        "eventID": "Central Selkirks:4-24:4",
-        "measurementID": "Central Selkirks:4-24:4:block-id/su-id",
-        "measurementType": "Block ID/SU ID",
-        "measurementUnit": "",
-        "measurementValue": "4-24"
-      },
-      {
-        "eventID": "Central Selkirks:4-24:4",
-        "measurementID": "Central Selkirks:4-24:4:veg-cover",
-        "measurementType": "Veg Cover",
-        "measurementUnit": "%",
-        "measurementValue": "30"
-      },
-      {
-        "eventID": "Central Selkirks:4-24:4",
-        "measurementID": "Central Selkirks:4-24:4:snow-cover",
-        "measurementType": "Snow Cover",
-        "measurementUnit": "%",
-        "measurementValue": "100"
-      },
-      {
-        "eventID": "Central Selkirks:4-24:4",
-        "measurementID": "Central Selkirks:4-24:4:activity",
-        "measurementType": "Activity",
-        "measurementUnit": "",
-        "measurementValue": "Running"
-      },
-      {
-        "eventID": "Central Selkirks:4-24:4",
-        "measurementID": "Central Selkirks:4-24:4:elevation-observation",
-        "measurementType": "Elevation (m) of Observation",
-        "measurementUnit": "",
-        "measurementValue": "1420"
-      },
-      {
-        "eventID": "Central Selkirks:4-24:4",
-        "measurementID": "Central Selkirks:4-24:4:habitat",
-        "measurementType": "Habitat",
-        "measurementUnit": "",
-        "measurementValue": "Alpine"
-      },
-      {
-        "eventID": "Central Selkirks:4-24:4",
-        "measurementID": "Central Selkirks:4-24:4:survey-or-telemetry-search",
-        "measurementType": "Survey or Telemetry Search",
-        "measurementUnit": "",
-        "measurementValue": "Survey"
-      }
-    ]
-  },
-  {
-    "record": [
-      {
-        "eventID": "Central Selkirks:4-24:5",
-        "basisOfRecord ": "HumanObservation"
-      }
-    ],
-    "event": [
-      {
-        "eventID": "Central Selkirks:4-24:5",
-        "eventDate": "17-Mar-19",
-        "eventRemarks": ""
-      }
-    ],
-    "location": [
-      {
-        "eventID": "Central Selkirks:4-24:5",
-        "verbatimCoordinates": "11 459477 5562415",
-        "decimalLatitude": "",
-        "decimalLongitude": "",
-        "verbatimSRS": "NAD83"
-      }
-    ],
-    "measurementOrFact": [
-      {
-        "eventID": "Central Selkirks:4-24:5",
-        "measurementID": "Central Selkirks:4-24:5:study-area",
-        "measurementType": "Study Area",
-        "measurementUnit": "",
-        "measurementValue": "Central Selkirks"
-      },
-      {
-        "eventID": "Central Selkirks:4-24:5",
-        "measurementID": "Central Selkirks:4-24:5:block-id/su-id",
-        "measurementType": "Block ID/SU ID",
-        "measurementUnit": "",
-        "measurementValue": "4-24"
-      },
-      {
-        "eventID": "Central Selkirks:4-24:5",
-        "measurementID": "Central Selkirks:4-24:5:sign-type",
+        "eventID": "MU 749:Lowland:1:0",
+        "measurementID": "MU 749:Lowland:1:0:sign-type",
+        "occurrenceID": "MU 749:Lowland:1:0:0",
         "measurementType": "Sign Type",
         "measurementUnit": "",
-        "measurementValue": ""
+        "measurementValue": "Bed"
       },
       {
-        "eventID": "Central Selkirks:4-24:5",
-        "measurementID": "Central Selkirks:4-24:5:sign-count",
+        "eventID": "MU 749:Lowland:1:0",
+        "measurementID": "MU 749:Lowland:1:0:sign-count",
+        "occurrenceID": "MU 749:Lowland:1:0:0",
         "measurementType": "Sign Count",
         "measurementUnit": "",
         "measurementValue": "1"
       },
       {
-        "eventID": "Central Selkirks:4-24:5",
-        "measurementID": "Central Selkirks:4-24:5:age-of-sign",
+        "eventID": "MU 749:Lowland:1:0",
+        "measurementID": "MU 749:Lowland:1:0:age-of-sign",
+        "occurrenceID": "MU 749:Lowland:1:0:0",
         "measurementType": "Age of Sign",
         "measurementUnit": "",
-        "measurementValue": "New"
+        "measurementValue": "Old"
+      },
+      {
+        "eventID": "MU 749:Lowland:1:0",
+        "measurementID": "MU 749:Lowland:1:0:veg-cover",
+        "occurrenceID": "MU 749:Lowland:1:0:0",
+        "measurementType": "Veg Cover",
+        "measurementUnit": "%",
+        "measurementValue": "2"
+      },
+      {
+        "eventID": "MU 749:Lowland:1:0",
+        "measurementID": "MU 749:Lowland:1:0:snow-cover",
+        "occurrenceID": "MU 749:Lowland:1:0:0",
+        "measurementType": "Snow Cover",
+        "measurementUnit": "%",
+        "measurementValue": "3"
+      },
+      {
+        "eventID": "MU 749:Lowland:1:0",
+        "measurementID": "MU 749:Lowland:1:0:activity",
+        "occurrenceID": "MU 749:Lowland:1:0:0",
+        "measurementType": "Activity",
+        "measurementUnit": "",
+        "measurementValue": "Bedding"
+      },
+      {
+        "eventID": "MU 749:Lowland:1:0",
+        "measurementID": "MU 749:Lowland:1:0:number-of-marked-animals-observed",
+        "occurrenceID": "MU 749:Lowland:1:0:0",
+        "measurementType": "Number of Marked Animals Observed",
+        "measurementUnit": "",
+        "measurementValue": "4"
+      },
+      {
+        "eventID": "MU 749:Lowland:1:0",
+        "measurementID": "MU 749:Lowland:1:0:survey-or-telemetry-search",
+        "occurrenceID": "MU 749:Lowland:1:0:0",
+        "measurementType": "Survey or Telemetry Search",
+        "measurementUnit": "",
+        "measurementValue": "Survey"
+      },
+      {
+        "eventID": "MU 749:Lowland:1:0",
+        "measurementID": "MU 749:Lowland:1:0:photos",
+        "occurrenceID": "MU 749:Lowland:1:0:0",
+        "measurementType": "Photos",
+        "measurementUnit": "",
+        "measurementValue": "some photo id"
+      },
+      {
+        "eventID": "MU 749:Lowland:1:0",
+        "measurementID": "MU 749:Lowland:1:0:observation-comments",
+        "occurrenceID": "MU 749:Lowland:1:0:0",
+        "measurementType": "Observation Comments",
+        "measurementUnit": "",
+        "measurementValue": "have an observation"
       }
     ]
   }

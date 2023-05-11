@@ -1,60 +1,15 @@
-﻿eventID,measurementID,measurementType,measurementUnit,measurementValue,organismID
-Central Selkirks:4-23:0,Central Selkirks:4-23:0:study-area,Study Area,,Central Selkirks,
-Central Selkirks:4-23:0,Central Selkirks:4-23:0:block-id/su-id,Block ID/SU ID,,4-23,
-Central Selkirks:4-23:0,Central Selkirks:4-23:0:group-label,Group Label,,1,
-Central Selkirks:4-23:0,Central Selkirks:4-23:0:veg-cover,Veg Cover,%,10,
-Central Selkirks:4-23:0,Central Selkirks:4-23:0:snow-cover,Snow Cover,%,100,
-Central Selkirks:4-23:0,Central Selkirks:4-23:0:activity,Activity,,Standing,
-Central Selkirks:4-23:0,Central Selkirks:4-23:0:elevation-observation,Elevation (m) of Observation,,1200,
-Central Selkirks:4-23:0,Central Selkirks:4-23:0:habitat,Habitat,,Alpine,
-Central Selkirks:4-23:0,Central Selkirks:4-23:0:number-of-marked-animals-observed,Number of Marked Animals Observed,,1,
-Central Selkirks:4-23:0,Central Selkirks:4-23:0:survey-or-telemetry-search,Survey or Telemetry Search,,Survey,
-Central Selkirks:4-23:0,Central Selkirks:4-23:0:photos,Photos,,4-8,
-Central Selkirks:4-23:0,3636:35463:35365:0:wildlife-health-id,Wildlife Health ID,,3636,3636:35463:35365:0
-Central Selkirks:4-23:0,3636:35463:35365:0:animal-id,Animal ID,,35463,3636:35463:35365:0
-Central Selkirks:4-23:0,3636:35463:35365:0:telemetry-device-id,Telemetry Device ID,,35365,3636:35463:35365:0
-Central Selkirks:4-23:0,3636:35463:35365:0:collar/tag-frequency,Collar/Tag Frequency,MHz,114.34,3636:35463:35365:0
-Central Selkirks:4-23:0,3636:35463:35365:0:right-ear-tag-id,Right Ear Tag ID,,04,3636:35463:35365:0
-Central Selkirks:4-23:0,3636:35463:35365:0:right-ear-tag-colour,Right Ear Tag Colour,,Yellow,3636:35463:35365:0
-Central Selkirks:4-23:0,3636:35463:35365:0:left-ear-tag-id,Left Ear Tag ID,,05,3636:35463:35365:0
-Central Selkirks:4-23:0,3636:35463:35365:0:left-ear-tag-colour,Left Ear Tag Colour,,Red,3636:35463:35365:0
-Central Selkirks:4-23:1,Central Selkirks:4-23:1:study-area,Study Area,,Central Selkirks,
-Central Selkirks:4-23:1,Central Selkirks:4-23:1:block-id/su-id,Block ID/SU ID,,4-23,
-Central Selkirks:4-23:1,Central Selkirks:4-23:1:veg-cover,Veg Cover,%,10,
-Central Selkirks:4-23:1,Central Selkirks:4-23:1:snow-cover,Snow Cover,%,100,
-Central Selkirks:4-23:1,Central Selkirks:4-23:1:activity,Activity,,Bedding,
-Central Selkirks:4-23:1,Central Selkirks:4-23:1:elevation-observation,Elevation (m) of Observation,,1200,
-Central Selkirks:4-23:1,Central Selkirks:4-23:1:habitat,Habitat,,Alpine Barren,
-Central Selkirks:4-23:1,Central Selkirks:4-23:1:survey-or-telemetry-search,Survey or Telemetry Search,,Survey,
-Central Selkirks:4-23:1,Central Selkirks:4-23:1:photos,Photos,,9-12,
-Central Selkirks:4-23:2,Central Selkirks:4-23:2:study-area,Study Area,,Central Selkirks,
-Central Selkirks:4-23:2,Central Selkirks:4-23:2:block-id/su-id,Block ID/SU ID,,4-23,
-Central Selkirks:4-23:2,Central Selkirks:4-23:2:veg-cover,Veg Cover,%,10,
-Central Selkirks:4-23:2,Central Selkirks:4-23:2:snow-cover,Snow Cover,%,100,
-Central Selkirks:4-23:2,Central Selkirks:4-23:2:activity,Activity,,Bedding,
-Central Selkirks:4-23:2,Central Selkirks:4-23:2:elevation-observation,Elevation (m) of Observation,,1220,
-Central Selkirks:4-23:2,Central Selkirks:4-23:2:habitat,Habitat,,Alpine,
-Central Selkirks:4-23:2,Central Selkirks:4-23:2:survey-or-telemetry-search,Survey or Telemetry Search,,Survey,
-Central Selkirks:4-23:2,Central Selkirks:4-23:2:photos,Photos,,13-17,
-Central Selkirks:4-24:3,Central Selkirks:4-24:3:study-area,Study Area,,Central Selkirks,
-Central Selkirks:4-24:3,Central Selkirks:4-24:3:block-id/su-id,Block ID/SU ID,,4-24,
-Central Selkirks:4-24:3,Central Selkirks:4-24:3:veg-cover,Veg Cover,%,15,
-Central Selkirks:4-24:3,Central Selkirks:4-24:3:snow-cover,Snow Cover,%,100,
-Central Selkirks:4-24:3,Central Selkirks:4-24:3:activity,Activity,,Running,
-Central Selkirks:4-24:3,Central Selkirks:4-24:3:elevation-observation,Elevation (m) of Observation,,1400,
-Central Selkirks:4-24:3,Central Selkirks:4-24:3:habitat,Habitat,,Alpine,
-Central Selkirks:4-24:3,Central Selkirks:4-24:3:survey-or-telemetry-search,Survey or Telemetry Search,,Survey,
-Central Selkirks:4-24:3,Central Selkirks:4-24:3:photos,Photos,,18-20,
-Central Selkirks:4-24:4,Central Selkirks:4-24:4:study-area,Study Area,,Central Selkirks,
-Central Selkirks:4-24:4,Central Selkirks:4-24:4:block-id/su-id,Block ID/SU ID,,4-24,
-Central Selkirks:4-24:4,Central Selkirks:4-24:4:veg-cover,Veg Cover,%,30,
-Central Selkirks:4-24:4,Central Selkirks:4-24:4:snow-cover,Snow Cover,%,100,
-Central Selkirks:4-24:4,Central Selkirks:4-24:4:activity,Activity,,Running,
-Central Selkirks:4-24:4,Central Selkirks:4-24:4:elevation-observation,Elevation (m) of Observation,,1420,
-Central Selkirks:4-24:4,Central Selkirks:4-24:4:habitat,Habitat,,Alpine,
-Central Selkirks:4-24:4,Central Selkirks:4-24:4:survey-or-telemetry-search,Survey or Telemetry Search,,Survey,
-Central Selkirks:4-24:5,Central Selkirks:4-24:5:study-area,Study Area,,Central Selkirks,
-Central Selkirks:4-24:5,Central Selkirks:4-24:5:block-id/su-id,Block ID/SU ID,,4-24,
-Central Selkirks:4-24:5,Central Selkirks:4-24:5:sign-type,Sign Type,,,
-Central Selkirks:4-24:5,Central Selkirks:4-24:5:sign-count,Sign Count,,1,
-Central Selkirks:4-24:5,Central Selkirks:4-24:5:age-of-sign,Age of Sign,,New,
+﻿eventID,measurementID,measurementType,measurementUnit,measurementValue,occurrenceID
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:study-area,Study Area,,MU 749,
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:block-id/su-id,Block ID/SU ID,,Lowland,
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:perpendicular-distance-from-transect-line,Perpendicular Distance From Transect Line,m,140.0,
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:antler-configuration,Antler Configuration,,Spike/Fork,MU 749:Lowland:1:0:0
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:sign-type,Sign Type,,Bed,MU 749:Lowland:1:0:0
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:sign-count,Sign Count,,1,MU 749:Lowland:1:0:0
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:age-of-sign,Age of Sign,,Old,MU 749:Lowland:1:0:0
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:veg-cover,Veg Cover,%,2,MU 749:Lowland:1:0:0
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:snow-cover,Snow Cover,%,3,MU 749:Lowland:1:0:0
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:activity,Activity,,Bedding,MU 749:Lowland:1:0:0
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:number-of-marked-animals-observed,Number of Marked Animals Observed,,4,MU 749:Lowland:1:0:0
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:survey-or-telemetry-search,Survey or Telemetry Search,,Survey,MU 749:Lowland:1:0:0
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:photos,Photos,,some photo id,MU 749:Lowland:1:0:0
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:observation-comments,Observation Comments,,have an observation,MU 749:Lowland:1:0:0
