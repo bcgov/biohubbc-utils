@@ -8,8 +8,7 @@
   "event": [
     {
       "eventID": "MU 749:Lowland:1:0",
-      "eventDate": "31/Jan/16",
-      "eventRemarks": "have an observation"
+      "eventDate": "31/Jan/16"
     }
   ],
   "location": [
@@ -56,16 +55,7 @@
     },
     {
       "eventID": "MU 749:Lowland:1:0",
-      "measurementID": "MU 749:Lowland:1:0:antler-configuration",
-      "occurrenceID": "MU 749:Lowland:1:0:0",
-      "measurementType": "Antler Configuration",
-      "measurementUnit": "",
-      "measurementValue": "Spike/Fork"
-    },
-    {
-      "eventID": "MU 749:Lowland:1:0",
       "measurementID": "MU 749:Lowland:1:0:sign-type",
-      "occurrenceID": "MU 749:Lowland:1:0:0",
       "measurementType": "Sign Type",
       "measurementUnit": "",
       "measurementValue": "Bed"
@@ -73,7 +63,6 @@
     {
       "eventID": "MU 749:Lowland:1:0",
       "measurementID": "MU 749:Lowland:1:0:sign-count",
-      "occurrenceID": "MU 749:Lowland:1:0:0",
       "measurementType": "Sign Count",
       "measurementUnit": "",
       "measurementValue": "1"
@@ -81,7 +70,6 @@
     {
       "eventID": "MU 749:Lowland:1:0",
       "measurementID": "MU 749:Lowland:1:0:age-of-sign",
-      "occurrenceID": "MU 749:Lowland:1:0:0",
       "measurementType": "Age of Sign",
       "measurementUnit": "",
       "measurementValue": "Old"
@@ -89,7 +77,6 @@
     {
       "eventID": "MU 749:Lowland:1:0",
       "measurementID": "MU 749:Lowland:1:0:veg-cover",
-      "occurrenceID": "MU 749:Lowland:1:0:0",
       "measurementType": "Veg Cover",
       "measurementUnit": "%",
       "measurementValue": "2"
@@ -97,7 +84,6 @@
     {
       "eventID": "MU 749:Lowland:1:0",
       "measurementID": "MU 749:Lowland:1:0:snow-cover",
-      "occurrenceID": "MU 749:Lowland:1:0:0",
       "measurementType": "Snow Cover",
       "measurementUnit": "%",
       "measurementValue": "3"
@@ -105,7 +91,6 @@
     {
       "eventID": "MU 749:Lowland:1:0",
       "measurementID": "MU 749:Lowland:1:0:activity",
-      "occurrenceID": "MU 749:Lowland:1:0:0",
       "measurementType": "Activity",
       "measurementUnit": "",
       "measurementValue": "Bedding"
@@ -113,7 +98,6 @@
     {
       "eventID": "MU 749:Lowland:1:0",
       "measurementID": "MU 749:Lowland:1:0:number-of-marked-animals-observed",
-      "occurrenceID": "MU 749:Lowland:1:0:0",
       "measurementType": "Number of Marked Animals Observed",
       "measurementUnit": "",
       "measurementValue": "4"
@@ -121,7 +105,6 @@
     {
       "eventID": "MU 749:Lowland:1:0",
       "measurementID": "MU 749:Lowland:1:0:survey-or-telemetry-search",
-      "occurrenceID": "MU 749:Lowland:1:0:0",
       "measurementType": "Survey or Telemetry Search",
       "measurementUnit": "",
       "measurementValue": "Survey"
@@ -129,18 +112,17 @@
     {
       "eventID": "MU 749:Lowland:1:0",
       "measurementID": "MU 749:Lowland:1:0:photos",
-      "occurrenceID": "MU 749:Lowland:1:0:0",
       "measurementType": "Photos",
       "measurementUnit": "",
       "measurementValue": "some photo id"
     },
     {
       "eventID": "MU 749:Lowland:1:0",
-      "measurementID": "MU 749:Lowland:1:0:observation-comments",
+      "measurementID": "MU 749:Lowland:1:0:antler-configuration",
       "occurrenceID": "MU 749:Lowland:1:0:0",
-      "measurementType": "Observation Comments",
+      "measurementType": "Antler Configuration",
       "measurementUnit": "",
-      "measurementValue": "have an observation"
+      "measurementValue": "Spike/Fork"
     }
   ],
   "organism": []

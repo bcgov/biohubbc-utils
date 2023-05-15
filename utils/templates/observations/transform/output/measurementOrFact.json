@@ -2,14 +2,13 @@
 MU 749:Lowland:1:0,MU 749:Lowland:1:0:study-area,Study Area,,MU 749,
 MU 749:Lowland:1:0,MU 749:Lowland:1:0:block-id/su-id,Block ID/SU ID,,Lowland,
 MU 749:Lowland:1:0,MU 749:Lowland:1:0:perpendicular-distance-from-transect-line,Perpendicular Distance From Transect Line,m,140.0,
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:sign-type,Sign Type,,Bed,
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:sign-count,Sign Count,,1,
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:age-of-sign,Age of Sign,,Old,
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:veg-cover,Veg Cover,%,2,
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:snow-cover,Snow Cover,%,3,
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:activity,Activity,,Bedding,
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:number-of-marked-animals-observed,Number of Marked Animals Observed,,4,
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:survey-or-telemetry-search,Survey or Telemetry Search,,Survey,
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:photos,Photos,,some photo id,
 MU 749:Lowland:1:0,MU 749:Lowland:1:0:antler-configuration,Antler Configuration,,Spike/Fork,MU 749:Lowland:1:0:0
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:sign-type,Sign Type,,Bed,MU 749:Lowland:1:0:0
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:sign-count,Sign Count,,1,MU 749:Lowland:1:0:0
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:age-of-sign,Age of Sign,,Old,MU 749:Lowland:1:0:0
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:veg-cover,Veg Cover,%,2,MU 749:Lowland:1:0:0
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:snow-cover,Snow Cover,%,3,MU 749:Lowland:1:0:0
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:activity,Activity,,Bedding,MU 749:Lowland:1:0:0
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:number-of-marked-animals-observed,Number of Marked Animals Observed,,4,MU 749:Lowland:1:0:0
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:survey-or-telemetry-search,Survey or Telemetry Search,,Survey,MU 749:Lowland:1:0:0
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:photos,Photos,,some photo id,MU 749:Lowland:1:0:0
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:observation-comments,Observation Comments,,have an observation,MU 749:Lowland:1:0:0
