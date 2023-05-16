@@ -918,7 +918,7 @@ const mooseTransectTemplateValidationSchema = {
           validations: [...mooseSpeciesPickListValidator(), { column_required_validator: {} }]
         },
         {
-          name: 'Spike/ Fork Bulls',
+          name: 'Spike/Fork Bulls',
           description: '',
           validations: basicNumericValidator()
         },
@@ -938,7 +938,7 @@ const mooseTransectTemplateValidationSchema = {
           validations: basicNumericValidator()
         },
         {
-          name: '3 Brow/10 Point Bulls',
+          name: '3 Brow/10 Points Bulls',
           description: '',
           validations: basicNumericValidator()
         },
@@ -989,6 +989,11 @@ const mooseTransectTemplateValidationSchema = {
         },
         {
           name: 'Adult Unclassified Sex',
+          description: '',
+          validations: basicNumericValidator()
+        },
+        {
+          name: 'Adult Bulls - Unclassified',
           description: '',
           validations: basicNumericValidator()
         },

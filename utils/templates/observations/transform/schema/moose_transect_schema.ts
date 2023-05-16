@@ -157,8 +157,7 @@ export const mooseTransectSchema: TransformSchema = {
         createPathField('individualCount', 'Observations', ['Spike/Fork Bulls']),
         createValueField('sex', 'male'),
         createValueField('lifeStage', 'unknown'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
+        createPathField('taxonID', 'Observations', ['Species'])
       ],
       add: [
         {
@@ -231,8 +230,7 @@ export const mooseTransectSchema: TransformSchema = {
         createPathField('individualCount', 'Observations', ['Sub-Prime Bulls']),
         createValueField('sex', 'male'),
         createValueField('lifeStage', 'unknown'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
+        createPathField('taxonID', 'Observations', ['Species'])
       ],
       add: [
         {
@@ -305,8 +303,7 @@ export const mooseTransectSchema: TransformSchema = {
         createPathField('individualCount', 'Observations', ['Prime Bulls']),
         createValueField('sex', 'male'),
         createValueField('lifeStage', 'adult'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
+        createPathField('taxonID', 'Observations', ['Species'])
       ],
       add: [
         {
@@ -379,8 +376,7 @@ export const mooseTransectSchema: TransformSchema = {
         createPathField('individualCount', 'Observations', ['Senior Bulls']),
         createValueField('sex', 'male'),
         createValueField('lifeStage', 'adult'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
+        createPathField('taxonID', 'Observations', ['Species'])
       ],
       add: [
         {
@@ -453,8 +449,7 @@ export const mooseTransectSchema: TransformSchema = {
         createPathField('individualCount', 'Observations', ['3 Brow/10 Points Bulls']),
         createValueField('sex', 'male'),
         createValueField('lifeStage', 'adult'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
+        createPathField('taxonID', 'Observations', ['Species'])
       ],
       add: [
         {
@@ -527,8 +522,7 @@ export const mooseTransectSchema: TransformSchema = {
         createPathField('individualCount', 'Observations', ['BC RISC Yearling Bulls']),
         createValueField('sex', 'male'),
         createValueField('lifeStage', 'yearling'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
+        createPathField('taxonID', 'Observations', ['Species'])
       ],
       add: [
         {
@@ -602,8 +596,7 @@ export const mooseTransectSchema: TransformSchema = {
         createPathField('individualCount', 'Observations', ['BC RISC Class I Bulls']),
         createValueField('sex', 'male'),
         createValueField('lifeStage', 'unknown'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
+        createPathField('taxonID', 'Observations', ['Species'])
       ],
       add: [
         {
@@ -676,8 +669,7 @@ export const mooseTransectSchema: TransformSchema = {
         createPathField('individualCount', 'Observations', ['BC RISC Class II Bulls']),
         createValueField('sex', 'male'),
         createValueField('lifeStage', 'adult'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
+        createPathField('taxonID', 'Observations', ['Species'])
       ],
       add: [
         {
@@ -753,8 +745,7 @@ export const mooseTransectSchema: TransformSchema = {
         createPathField('individualCount', 'Observations', ['BC RISC Class III Bulls']),
         createValueField('sex', 'male'),
         createValueField('lifeStage', 'adult'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
+        createPathField('taxonID', 'Observations', ['Species'])
       ],
       add: [
         {
@@ -830,8 +821,7 @@ export const mooseTransectSchema: TransformSchema = {
         createPathField('individualCount', 'Observations', ['Oswald (1997) Class I Bulls']),
         createValueField('sex', 'male'),
         createValueField('lifeStage', 'unknown'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
+        createPathField('taxonID', 'Observations', ['Species'])
       ],
       add: [
         {
@@ -907,8 +897,7 @@ export const mooseTransectSchema: TransformSchema = {
         createPathField('individualCount', 'Observations', ['Oswald (1997) Class II Bulls']),
         createValueField('sex', 'male'),
         createValueField('lifeStage', 'unknown'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
+        createPathField('taxonID', 'Observations', ['Species'])
       ],
       add: [
         {
@@ -984,8 +973,7 @@ export const mooseTransectSchema: TransformSchema = {
         createPathField('individualCount', 'Observations', ['Oswald (1997) Class III Bulls']),
         createValueField('sex', 'male'),
         createValueField('lifeStage', 'adult'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
+        createPathField('taxonID', 'Observations', ['Species'])
       ],
       add: [
         {
@@ -1061,8 +1049,7 @@ export const mooseTransectSchema: TransformSchema = {
         createPathField('individualCount', 'Observations', ['Adult Bulls - Unclassified']),
         createValueField('sex', 'male'),
         createValueField('lifeStage', 'adult'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
+        createPathField('taxonID', 'Observations', ['Species'])
       ],
       add: [
         {
@@ -1135,8 +1122,7 @@ export const mooseTransectSchema: TransformSchema = {
         createPathField('individualCount', 'Observations', ['Bulls - Unclassified']),
         createValueField('sex', 'male'),
         createValueField('lifeStage', 'unknown'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
+        createPathField('taxonID', 'Observations', ['Species'])
       ],
       add: [
         {
@@ -1211,8 +1197,7 @@ export const mooseTransectSchema: TransformSchema = {
         createPathField('individualCount', 'Observations', ['Cow']),
         createValueField('sex', 'female'),
         createValueField('lifeStage', 'adult'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
+        createPathField('taxonID', 'Observations', ['Species'])
       ],
       add: [
         {
@@ -1296,7 +1281,7 @@ export const mooseTransectSchema: TransformSchema = {
             },
             createValueField('measurementType', 'Cow W/2 calf'),
             createValueField('measurementUnit', ''),
-            createPathField('measurementValue', 'Observations', ['Cow W/2 calf'])
+            createPathField('measurementValue', 'Observations', ['Cow W/2 calves'])
           ]
         }
       ]
@@ -1328,8 +1313,7 @@ export const mooseTransectSchema: TransformSchema = {
         createPathField('individualCount', 'Observations', ['Calves']),
         createValueField('sex', 'unknown'),
         createValueField('lifeStage', 'juvenile'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
+        createPathField('taxonID', 'Observations', ['Species'])
       ]
     },
     {
@@ -1358,8 +1342,7 @@ export const mooseTransectSchema: TransformSchema = {
         createPathField('individualCount', 'Observations', ['Adult Unclassified Sex']),
         createValueField('sex', 'unknown'),
         createValueField('lifeStage', 'adult'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
+        createPathField('taxonID', 'Observations', ['Species'])
       ]
     },
     {
@@ -1388,8 +1371,7 @@ export const mooseTransectSchema: TransformSchema = {
         createPathField('individualCount', 'Observations', ['Unclassified Age/Sex']),
         createValueField('sex', 'unknown'),
         createValueField('lifeStage', 'unknown'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
+        createPathField('taxonID', 'Observations', ['Species'])
       ]
     },
     //-----------------end of animal counts---------------
@@ -2271,7 +2253,4 @@ export const mooseTransectSchema: TransformSchema = {
   ]
 };
 
-transformSchema('Moose_Transect_SpikeBulls_no_marked_animals.xlsx', mooseTransectSchema);
-
-//transformSchema('Moose_Transect_SpikeBulls_with_marked_animals.xlsx', mooseTransectSchema);
-//transformSchema('Moose_Transect_SpikeBulls_no_marked_animals.xlsx', mooseTransectSchema);
+transformSchema('Moose_Aerial_Transect_Distance_Sampling_Survey_2.0_Test_Data.xlsx', mooseTransectSchema);

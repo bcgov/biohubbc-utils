@@ -8,7 +8,8 @@
   "event": [
     {
       "eventID": "MU 749:Lowland:1:0",
-      "eventDate": "31/Jan/16"
+      "eventDate": "31/Jan/16",
+      "eventRemarks": "some observation comment"
     }
   ],
   "location": [
@@ -17,18 +18,153 @@
       "verbatimCoordinates": "59.212853 -123.488743",
       "decimalLatitude": "59.212853",
       "decimalLongitude": "-123.488743",
-      "verbatimSRS": ""
+      "verbatimSRS": "NAD83"
     }
   ],
   "occurrence": [
     {
       "eventID": "MU 749:Lowland:1:0",
       "occurrenceID": "MU 749:Lowland:1:0:0",
-      "individualCount": "3",
+      "individualCount": "1",
       "sex": "male",
       "lifeStage": "unknown",
-      "taxonID": "M-ALAM",
-      "occurrenceRemarks": "have an observation"
+      "taxonID": "M-ALAM"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "occurrenceID": "MU 749:Lowland:1:0:1",
+      "individualCount": "2",
+      "sex": "male",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "occurrenceID": "MU 749:Lowland:1:0:2",
+      "individualCount": "3",
+      "sex": "male",
+      "lifeStage": "adult",
+      "taxonID": "M-ALAM"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "occurrenceID": "MU 749:Lowland:1:0:3",
+      "individualCount": "4",
+      "sex": "male",
+      "lifeStage": "adult",
+      "taxonID": "M-ALAM"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "occurrenceID": "MU 749:Lowland:1:0:4",
+      "individualCount": "5",
+      "sex": "male",
+      "lifeStage": "adult",
+      "taxonID": "M-ALAM"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "occurrenceID": "MU 749:Lowland:1:0:5",
+      "individualCount": "6",
+      "sex": "male",
+      "lifeStage": "yearling",
+      "taxonID": "M-ALAM"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "occurrenceID": "MU 749:Lowland:1:0:6",
+      "individualCount": "7",
+      "sex": "male",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "occurrenceID": "MU 749:Lowland:1:0:7",
+      "individualCount": "8",
+      "sex": "male",
+      "lifeStage": "adult",
+      "taxonID": "M-ALAM"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "occurrenceID": "MU 749:Lowland:1:0:8",
+      "individualCount": "9",
+      "sex": "male",
+      "lifeStage": "adult",
+      "taxonID": "M-ALAM"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "occurrenceID": "MU 749:Lowland:1:0:9",
+      "individualCount": "10",
+      "sex": "male",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "occurrenceID": "MU 749:Lowland:1:0:10",
+      "individualCount": "11",
+      "sex": "male",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "occurrenceID": "MU 749:Lowland:1:0:11",
+      "individualCount": "12",
+      "sex": "male",
+      "lifeStage": "adult",
+      "taxonID": "M-ALAM"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "occurrenceID": "MU 749:Lowland:1:0:12",
+      "individualCount": "13",
+      "sex": "male",
+      "lifeStage": "adult",
+      "taxonID": "M-ALAM"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "occurrenceID": "MU 749:Lowland:1:0:13",
+      "individualCount": "14",
+      "sex": "male",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "occurrenceID": "MU 749:Lowland:1:0:14",
+      "individualCount": "15",
+      "sex": "female",
+      "lifeStage": "adult",
+      "taxonID": "M-ALAM"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "occurrenceID": "MU 749:Lowland:1:0:15",
+      "individualCount": "16",
+      "sex": "unknown",
+      "lifeStage": "juvenile",
+      "taxonID": "M-ALAM"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "occurrenceID": "MU 749:Lowland:1:0:16",
+      "individualCount": "17",
+      "sex": "unknown",
+      "lifeStage": "adult",
+      "taxonID": "M-ALAM"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "occurrenceID": "MU 749:Lowland:1:0:17",
+      "individualCount": "18",
+      "sex": "unknown",
+      "lifeStage": "unknown",
+      "taxonID": "M-ALAM"
     }
   ],
   "measurementOrFact": [
@@ -55,17 +191,24 @@
     },
     {
       "eventID": "MU 749:Lowland:1:0",
+      "measurementID": "MU 749:Lowland:1:0:group-label",
+      "measurementType": "Group Label",
+      "measurementUnit": "",
+      "measurementValue": "3"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
       "measurementID": "MU 749:Lowland:1:0:sign-type",
       "measurementType": "Sign Type",
       "measurementUnit": "",
-      "measurementValue": "Bed"
+      "measurementValue": "Trail"
     },
     {
       "eventID": "MU 749:Lowland:1:0",
       "measurementID": "MU 749:Lowland:1:0:sign-count",
       "measurementType": "Sign Count",
       "measurementUnit": "",
-      "measurementValue": "1"
+      "measurementValue": "19"
     },
     {
       "eventID": "MU 749:Lowland:1:0",
@@ -79,14 +222,14 @@
       "measurementID": "MU 749:Lowland:1:0:veg-cover",
       "measurementType": "Veg Cover",
       "measurementUnit": "%",
-      "measurementValue": "2"
+      "measurementValue": "20"
     },
     {
       "eventID": "MU 749:Lowland:1:0",
       "measurementID": "MU 749:Lowland:1:0:snow-cover",
       "measurementType": "Snow Cover",
       "measurementUnit": "%",
-      "measurementValue": "3"
+      "measurementValue": "21"
     },
     {
       "eventID": "MU 749:Lowland:1:0",
@@ -100,7 +243,7 @@
       "measurementID": "MU 749:Lowland:1:0:number-of-marked-animals-observed",
       "measurementType": "Number of Marked Animals Observed",
       "measurementUnit": "",
-      "measurementValue": "4"
+      "measurementValue": "22"
     },
     {
       "eventID": "MU 749:Lowland:1:0",
@@ -114,7 +257,87 @@
       "measurementID": "MU 749:Lowland:1:0:photos",
       "measurementType": "Photos",
       "measurementUnit": "",
-      "measurementValue": "some photo id"
+      "measurementValue": "some_photo"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "organismID": "16-00001:MF001:6A7981:0",
+      "measurementID": "16-00001:MF001:6A7981:0:targeted-or-non-targeted",
+      "measurementType": "Targeted or Non-Targeted",
+      "measurementUnit": "",
+      "measurementValue": "Targeted"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "organismID": "16-00001:MF001:6A7981:0",
+      "measurementID": "16-00001:MF001:6A7981:0:wildlife-health-id",
+      "measurementType": "Wildlife Health ID",
+      "measurementUnit": "",
+      "measurementValue": "16-00001"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "organismID": "16-00001:MF001:6A7981:0",
+      "measurementID": "16-00001:MF001:6A7981:0:animal-id",
+      "measurementType": "Animal ID",
+      "measurementUnit": "",
+      "measurementValue": "MF001"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "organismID": "16-00001:MF001:6A7981:0",
+      "measurementID": "16-00001:MF001:6A7981:0:telemetry-device-id",
+      "measurementType": "Telemetry Device ID",
+      "measurementUnit": "",
+      "measurementValue": "6A7981"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "organismID": "16-00001:MF001:6A7981:0",
+      "measurementID": "16-00001:MF001:6A7981:0:collar/tag-frequency",
+      "measurementType": "Collar/Tag Frequency",
+      "measurementUnit": "KHz",
+      "measurementValue": "151.002"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "organismID": "16-00001:MF001:6A7981:0",
+      "measurementID": "16-00001:MF001:6A7981:0:right-ear-tag-id",
+      "measurementType": "Right Ear Tag ID",
+      "measurementUnit": "",
+      "measurementValue": "reti"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "organismID": "16-00001:MF001:6A7981:0",
+      "measurementID": "16-00001:MF001:6A7981:0:right-ear-tag-colour",
+      "measurementType": "Right Ear Tag Colour",
+      "measurementUnit": "",
+      "measurementValue": "retc"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "organismID": "16-00001:MF001:6A7981:0",
+      "measurementID": "16-00001:MF001:6A7981:0:left-ear-tag-id",
+      "measurementType": "Left Ear Tag ID",
+      "measurementUnit": "",
+      "measurementValue": "leti"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "organismID": "16-00001:MF001:6A7981:0",
+      "measurementID": "16-00001:MF001:6A7981:0:left-ear-tag-colour",
+      "measurementType": "Left Ear Tag Colour",
+      "measurementUnit": "",
+      "measurementValue": "letc"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "organismID": "16-00001:MF001:6A7981:0",
+      "measurementID": "16-00001:MF001:6A7981:0:marked-animals-comments",
+      "measurementType": "Marked Animals Comments",
+      "measurementUnit": "",
+      "measurementValue": "marked animals here"
     },
     {
       "eventID": "MU 749:Lowland:1:0",
@@ -123,7 +346,133 @@
       "measurementType": "Antler Configuration",
       "measurementUnit": "",
       "measurementValue": "Spike/Fork"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "measurementID": "MU 749:Lowland:1:0:antler-configuration",
+      "occurrenceID": "MU 749:Lowland:1:0:1",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "Sub-Prime"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "measurementID": "MU 749:Lowland:1:0:antler-configuration",
+      "occurrenceID": "MU 749:Lowland:1:0:2",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "Prime"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "measurementID": "MU 749:Lowland:1:0:antler-configuration",
+      "occurrenceID": "MU 749:Lowland:1:0:3",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "Senior"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "measurementID": "MU 749:Lowland:1:0:antler-configuration",
+      "occurrenceID": "MU 749:Lowland:1:0:4",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "3 Brow/10 Points"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "measurementID": "MU 749:Lowland:1:0:antler-configuration",
+      "occurrenceID": "MU 749:Lowland:1:0:5",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "BC RISC Yearling"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "measurementID": "MU 749:Lowland:1:0:antler-configuration",
+      "occurrenceID": "MU 749:Lowland:1:0:6",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "BC RISC Class I"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "measurementID": "MU 749:Lowland:1:0:antler-configuration",
+      "occurrenceID": "MU 749:Lowland:1:0:7",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "BC RISC Class II"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "measurementID": "MU 749:Lowland:1:0:antler-configuration",
+      "occurrenceID": "MU 749:Lowland:1:0:8",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "BC RISC Class III"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "measurementID": "MU 749:Lowland:1:0:antler-configuration",
+      "occurrenceID": "MU 749:Lowland:1:0:9",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "Oswald (1997) Class I"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "measurementID": "MU 749:Lowland:1:0:antler-configuration",
+      "occurrenceID": "MU 749:Lowland:1:0:10",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "Oswald (1997) Class II"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "measurementID": "MU 749:Lowland:1:0:antler-configuration",
+      "occurrenceID": "MU 749:Lowland:1:0:11",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "Oswald (1997) Class III"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "measurementID": "MU 749:Lowland:1:0:antler-configuration",
+      "occurrenceID": "MU 749:Lowland:1:0:12",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "unclassified"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "measurementID": "MU 749:Lowland:1:0:antler-configuration",
+      "occurrenceID": "MU 749:Lowland:1:0:13",
+      "measurementType": "Antler Configuration",
+      "measurementUnit": "",
+      "measurementValue": "unclassified"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "occurrenceID": "MU 749:Lowland:1:0:14",
+      "measurementID": "MU 749:Lowland:1:0:cow-w/1-calf",
+      "measurementType": "Cow W/1 calf",
+      "measurementUnit": "",
+      "measurementValue": "1"
+    },
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "occurrenceID": "MU 749:Lowland:1:0:14",
+      "measurementID": "MU 749:Lowland:1:0:cow-w/2-calf",
+      "measurementType": "Cow W/2 calf",
+      "measurementUnit": "",
+      "measurementValue": "2"
     }
   ],
-  "organism": []
+  "organism": [
+    {
+      "eventID": "MU 749:Lowland:1:0",
+      "organismID": "16-00001:MF001:6A7981:0",
+      "organismRemarks": "marked animals here"
+    }
+  ]
 }

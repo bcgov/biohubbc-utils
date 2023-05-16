@@ -1,14 +1,40 @@
-﻿eventID,measurementID,measurementType,measurementUnit,measurementValue,occurrenceID
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:study-area,Study Area,,MU 749,
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:block-id/su-id,Block ID/SU ID,,Lowland,
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:perpendicular-distance-from-transect-line,Perpendicular Distance From Transect Line,m,140.0,
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:sign-type,Sign Type,,Bed,
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:sign-count,Sign Count,,1,
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:age-of-sign,Age of Sign,,Old,
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:veg-cover,Veg Cover,%,2,
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:snow-cover,Snow Cover,%,3,
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:activity,Activity,,Bedding,
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:number-of-marked-animals-observed,Number of Marked Animals Observed,,4,
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:survey-or-telemetry-search,Survey or Telemetry Search,,Survey,
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:photos,Photos,,some photo id,
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:antler-configuration,Antler Configuration,,Spike/Fork,MU 749:Lowland:1:0:0
+﻿eventID,measurementID,measurementType,measurementUnit,measurementValue,organismID,occurrenceID
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:study-area,Study Area,,MU 749,,
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:block-id/su-id,Block ID/SU ID,,Lowland,,
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:perpendicular-distance-from-transect-line,Perpendicular Distance From Transect Line,m,140.0,,
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:group-label,Group Label,,3,,
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:sign-type,Sign Type,,Trail,,
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:sign-count,Sign Count,,19,,
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:age-of-sign,Age of Sign,,Old,,
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:veg-cover,Veg Cover,%,20,,
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:snow-cover,Snow Cover,%,21,,
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:activity,Activity,,Bedding,,
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:number-of-marked-animals-observed,Number of Marked Animals Observed,,22,,
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:survey-or-telemetry-search,Survey or Telemetry Search,,Survey,,
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:photos,Photos,,some_photo,,
+MU 749:Lowland:1:0,16-00001:MF001:6A7981:0:targeted-or-non-targeted,Targeted or Non-Targeted,,Targeted,16-00001:MF001:6A7981:0,
+MU 749:Lowland:1:0,16-00001:MF001:6A7981:0:wildlife-health-id,Wildlife Health ID,,16-00001,16-00001:MF001:6A7981:0,
+MU 749:Lowland:1:0,16-00001:MF001:6A7981:0:animal-id,Animal ID,,MF001,16-00001:MF001:6A7981:0,
+MU 749:Lowland:1:0,16-00001:MF001:6A7981:0:telemetry-device-id,Telemetry Device ID,,6A7981,16-00001:MF001:6A7981:0,
+MU 749:Lowland:1:0,16-00001:MF001:6A7981:0:collar/tag-frequency,Collar/Tag Frequency,KHz,151.002,16-00001:MF001:6A7981:0,
+MU 749:Lowland:1:0,16-00001:MF001:6A7981:0:right-ear-tag-id,Right Ear Tag ID,,reti,16-00001:MF001:6A7981:0,
+MU 749:Lowland:1:0,16-00001:MF001:6A7981:0:right-ear-tag-colour,Right Ear Tag Colour,,retc,16-00001:MF001:6A7981:0,
+MU 749:Lowland:1:0,16-00001:MF001:6A7981:0:left-ear-tag-id,Left Ear Tag ID,,leti,16-00001:MF001:6A7981:0,
+MU 749:Lowland:1:0,16-00001:MF001:6A7981:0:left-ear-tag-colour,Left Ear Tag Colour,,letc,16-00001:MF001:6A7981:0,
+MU 749:Lowland:1:0,16-00001:MF001:6A7981:0:marked-animals-comments,Marked Animals Comments,,marked animals here,16-00001:MF001:6A7981:0,
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:antler-configuration,Antler Configuration,,Spike/Fork,,MU 749:Lowland:1:0:0
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:antler-configuration,Antler Configuration,,Sub-Prime,,MU 749:Lowland:1:0:1
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:antler-configuration,Antler Configuration,,Prime,,MU 749:Lowland:1:0:2
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:antler-configuration,Antler Configuration,,Senior,,MU 749:Lowland:1:0:3
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:antler-configuration,Antler Configuration,,3 Brow/10 Points,,MU 749:Lowland:1:0:4
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:antler-configuration,Antler Configuration,,BC RISC Yearling,,MU 749:Lowland:1:0:5
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:antler-configuration,Antler Configuration,,BC RISC Class I,,MU 749:Lowland:1:0:6
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:antler-configuration,Antler Configuration,,BC RISC Class II,,MU 749:Lowland:1:0:7
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:antler-configuration,Antler Configuration,,BC RISC Class III,,MU 749:Lowland:1:0:8
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:antler-configuration,Antler Configuration,,Oswald (1997) Class I,,MU 749:Lowland:1:0:9
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:antler-configuration,Antler Configuration,,Oswald (1997) Class II,,MU 749:Lowland:1:0:10
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:antler-configuration,Antler Configuration,,Oswald (1997) Class III,,MU 749:Lowland:1:0:11
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:antler-configuration,Antler Configuration,,unclassified,,MU 749:Lowland:1:0:12
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:antler-configuration,Antler Configuration,,unclassified,,MU 749:Lowland:1:0:13
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:cow-w/1-calf,Cow W/1 calf,,1,,MU 749:Lowland:1:0:14
+MU 749:Lowland:1:0,MU 749:Lowland:1:0:cow-w/2-calf,Cow W/2 calf,,2,,MU 749:Lowland:1:0:14
