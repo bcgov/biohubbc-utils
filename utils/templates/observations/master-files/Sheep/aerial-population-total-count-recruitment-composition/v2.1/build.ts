@@ -10,9 +10,11 @@ import { validationSchemaBuilder } from './validate/builder_schema';
  * @return {*}  {Promise<void>}
  */
 export async function build(): Promise<void> {
+  // Build validation config
   const validateConfig = await build_validation_config();
+  // Build transformation config
   const transformConfig = await build_transformation_config();
-
+  // Build SQL upsert query file
   await updateSQL([
     { replaceValue: validateConfig, replaceToken: '___VALIDATION_CONFIG___' },
     { replaceValue: transformConfig, replaceToken: '___TRANSFORMATION_CONFIG___' },

@@ -9,26 +9,15 @@ export const transformationSchemaBuilder: TransformSchema = {
   templateMeta: [
     {
       sheetName: 'Observations',
-      primaryKey: ['Study Area', 'Block ID/SU ID'],
+      primaryKey: ['Study Area', 'Population Unit', 'Block ID/SU ID'],
       parentKey: [],
       type: 'root',
       foreignKeys: [
         {
           sheetName: 'Marked Animals',
           primaryKey: ['Group Label']
-        },
-        {
-          sheetName: 'Effort & Site Conditions',
-          primaryKey: ['Study Area', 'Population Unit', 'Block ID/SU ID']
         }
       ]
-    },
-    {
-      sheetName: 'Effort & Site Conditions',
-      primaryKey: ['Study Area', 'Population Unit', 'Block ID/SU ID'],
-      parentKey: ['Study Area', 'Population Unit', 'Block ID/SU ID'],
-      type: '',
-      foreignKeys: []
     },
     {
       sheetName: 'Marked Animals',
@@ -55,9 +44,6 @@ export const transformationSchemaBuilder: TransformSchema = {
           columnValue: [
             {
               paths: [getValuesByName('Observations', ['Date'])]
-            },
-            {
-              paths: [getValuesByName('Effort & Site Conditions', ['Date'])]
             }
           ]
         },
@@ -438,6 +424,46 @@ export const transformationSchemaBuilder: TransformSchema = {
         createValueField('lifeStage', 'unknown'),
         createPathField('taxonID', 'Observations', ['Species']),
         createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
+      ],
+      add: [
+        {
+          sheetName: 'measurementOrFact',
+          fields: [
+            {
+              columnName: 'eventID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+                }
+              ]
+            },
+            {
+              columnName: 'measurementID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: 'horn-configuration'
+                  }
+                }
+              ]
+            },
+            {
+              columnName: 'occurrenceID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: '4'
+                  }
+                }
+              ]
+            },
+            createValueField('measurementType', 'Horn Configuration'),
+            createValueField('measurementUnit', ''),
+            createValueField('measurementValue', 'Unclassified')
+          ]
+        }
       ]
     },
     {
@@ -965,7 +991,6 @@ export const transformationSchemaBuilder: TransformSchema = {
         createPathField('measurementValue', 'Observations', ['Elevation (m) of Observation'])
       ]
     },
-
     {
       sheetName: 'measurementOrFact',
       condition: {
@@ -1152,9 +1177,6 @@ export const transformationSchemaBuilder: TransformSchema = {
         createPathField('measurementValue', 'Observations', ['Photos'])
       ]
     },
-
-    //
-
     {
       sheetName: 'measurementOrFact',
       condition: {
