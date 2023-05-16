@@ -20,7 +20,7 @@
     "build-validation-moose-srb": "ts-node ./observations/validation/builder/Moose_Aerial_StratifiedRandomBlock_Recruit_Comp_Survey_2.0_Validation_Config_Builder.ts",
     "build-validation-moose-transect": "ts-node ./observations/validation/builder/Moose_Aerial_Transect_Distance_Sampling_Survey_2.0_Validation_Config_Builder.ts",
     "transform-moose-transect": "ts-node ./observations/transform/schema/moose_transect_schema.ts",
-    "build:sheep": "ts-node ./observations/master-files/Sheep",
+    "build-sheep": "ts-node ./observations/master-files/sheep",
     "build-validation-caribou": "ts-node ./observations/validation/builder/Caribou_1.0_Validation_Config_Builder.ts",
     "transform-caribou": "ts-node ./observations/transform/schema/caribou_total_count_schema.ts",
     "build-validation-sheep": "ts-node ./observations/validation/builder/Sheep_2.0_Validation_Config_Builder.ts",

@@ -97,7 +97,14 @@ export const validationSchemaBuilder = {
         },
         {
           file_column_unique_validator: {
-            column_names: ['Study Area', 'Population Unit', 'Block ID/SU ID']
+            column_names: [
+              'Study Area',
+              'Population Unit',
+              'Block ID/SU ID',
+              'Population Unit/Block Area (km2)',
+              'Date',
+              'Start Time 1 (24hrs)'
+            ]
           }
         }
       ],
@@ -343,7 +350,36 @@ export const validationSchemaBuilder = {
         },
         {
           file_required_columns_validator: {
-            required_columns: []
+            required_columns: [
+              'Study Area',
+              'Block ID/SU ID',
+              'Population Unit',
+              'Date',
+              'UTM Zone',
+              'Easting',
+              'Northing',
+              'Datum',
+              'Lat (DD)',
+              'Long (DD)',
+              'Species',
+              'Adult Males',
+              'Adult Females',
+              'Adults - Unclassified Sex',
+              'Juvenile Males',
+              'Juvenile Females',
+              'Juveniles - Unclassified Sex',
+              'Unknown Age/Sex',
+              'Total Count',
+              'Species Occurrence Status',
+              'Activity',
+              'Activity Count',
+              'Feature Type',
+              'Feature Type Count',
+              'Sign Type',
+              'Sign Count',
+              'Photos',
+              'Incidental Observation Comments'
+            ]
           }
         }
       ],
@@ -434,7 +470,12 @@ export const validationSchemaBuilder = {
   validations: [
     {
       submission_required_files_validator: {
-        required_files: ['Effort & Site Conditions', 'Observations', 'Marked Animals', 'Incidental Observations']
+        required_files: [
+          'Effort & Site Conditions',
+          'Observations',
+          'Marked Animals',
+          'Incidental Observations'
+        ]
       }
     }
   ],
