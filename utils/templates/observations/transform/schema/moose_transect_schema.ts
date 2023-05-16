@@ -1168,7 +1168,6 @@ export const mooseTransectSchema: TransformSchema = {
     // Cow (static: 14)
     // sex: Female
     // life stage: Adult
-    // configuration: Cow
     // if the attributes cow w/1 calf, add to measurementOrFact
     // if the attributes cow w/2 calves, add to measurementOrFact
     {
@@ -1286,7 +1285,9 @@ export const mooseTransectSchema: TransformSchema = {
         }
       ]
     },
-
+    // Calves (static: 15)
+    // sex: Female
+    // life stage: Juvenile
     {
       sheetName: 'occurrence',
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Calves']) }] },
@@ -1316,6 +1317,9 @@ export const mooseTransectSchema: TransformSchema = {
         createPathField('taxonID', 'Observations', ['Species'])
       ]
     },
+    // Adult Unclassified Sex (static: 16)
+    // sex: unknown
+    // life stage: adult
     {
       sheetName: 'occurrence',
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Adult Unclassified Sex']) }] },
@@ -1345,6 +1349,9 @@ export const mooseTransectSchema: TransformSchema = {
         createPathField('taxonID', 'Observations', ['Species'])
       ]
     },
+    // Adult Unclassified Sex (static: 17)
+    // sex: unknown
+    // life stage: unknown
     {
       sheetName: 'occurrence',
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Unclassified Age/Sex']) }] },

@@ -1,19 +1,7 @@
 ﻿eventID,occurrenceID,individualCount,sex,lifeStage,taxonID
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:0,1,male,unknown,M-ALAM
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:1,2,male,unknown,M-ALAM
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:2,3,male,adult,M-ALAM
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:3,4,male,adult,M-ALAM
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:4,5,male,adult,M-ALAM
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:5,6,male,yearling,M-ALAM
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:6,7,male,unknown,M-ALAM
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:7,8,male,adult,M-ALAM
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:8,9,male,adult,M-ALAM
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:9,10,male,unknown,M-ALAM
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:10,11,male,unknown,M-ALAM
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:11,12,male,adult,M-ALAM
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:12,13,male,adult,M-ALAM
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:13,14,male,unknown,M-ALAM
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:14,15,female,adult,M-ALAM
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:15,16,unknown,juvenile,M-ALAM
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:16,17,unknown,adult,M-ALAM
-MU 749:Lowland:1:0,MU 749:Lowland:1:0:17,18,unknown,unknown,M-ALAM
+SA-1:BISID-1:0,SA-1:BISID-1:0:16,16,male,adult,S-ELK
+SA-1:BISID-1:0,SA-1:BISID-1:0:17,17,female,adult,S-ELK
+SA-1:BISID-1:0,SA-1:BISID-1:0:18,18,unknown,juvenile,S-ELK
+SA-1:BISID-1:0,SA-1:BISID-1:0:19,19,unknown,adult,S-ELK
+SA-1:BISID-1:0,SA-1:BISID-1:0:20,20,unknown,yearling,S-ELK
+SA-1:BISID-1:0,SA-1:BISID-1:0:21,21,unknown,unknown,S-ELK

@@ -222,7 +222,7 @@ const elkGeneralTemplateValidationSchema = {
           validations: [...elkSpeciesValidator(), { column_required_validator: {} }]
         },
         {
-          name: 'BC RISC Yearlings Bulls',
+          name: 'BC RISC Yearling Bulls',
           description: '',
           validations: basicNumericValidator()
         },

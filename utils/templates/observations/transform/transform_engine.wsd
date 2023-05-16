@@ -6,14 +6,14 @@ start
 :Emulate a media file received from an endpoint;
 :Convert raw media file to xlsx workbook;
 :Run transformation engine;
-while (if cookie?) is (is invalid)
-:Show login form;
-endwhile
-fork
-:Mail invoice;
-fork again
-:Load games;
-end fork
+' while (if cookie?) is (is invalid)
+' :Show login form;
+' endwhile
+' fork
+' :Mail invoice;
+' fork again
+' :Load games;
+' end fork
 :Process the result;
 stop
 @enduml
