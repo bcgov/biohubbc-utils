@@ -194,8 +194,8 @@ export const elkGeneralSchema: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'BC RISC Yearling Bulls')
+            createValueField('measurementValue', 'BC RISC Yearling Bulls'),
+            createValueField('measurementUnit', '')
           ]
         }
       ]
@@ -267,8 +267,8 @@ export const elkGeneralSchema: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'BC RISC Class I')
+            createValueField('measurementValue', 'BC RISC Class I'),
+            createValueField('measurementUnit', '')
           ]
         }
       ]
@@ -340,8 +340,8 @@ export const elkGeneralSchema: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'BC RISC Class II')
+            createValueField('measurementValue', 'BC RISC Class II'),
+            createValueField('measurementUnit', '')
           ]
         }
       ]
@@ -416,8 +416,8 @@ export const elkGeneralSchema: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'BC RISC Class III')
+            createValueField('measurementValue', 'BC RISC Class III'),
+            createValueField('measurementUnit', '')
           ]
         }
       ]
@@ -489,8 +489,8 @@ export const elkGeneralSchema: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'BC RISC Class IV')
+            createValueField('measurementValue', 'BC RISC Class IV'),
+            createValueField('measurementUnit', '')
           ]
         }
       ]
@@ -562,8 +562,8 @@ export const elkGeneralSchema: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'Spike antlers')
+            createValueField('measurementValue', 'Spike antlers'),
+            createValueField('measurementUnit', '')
           ]
         }
       ]
@@ -635,8 +635,8 @@ export const elkGeneralSchema: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'Raghorn antlers')
+            createValueField('measurementValue', 'Raghorn antlers'),
+            createValueField('measurementUnit', '')
           ]
         }
       ]
@@ -708,8 +708,8 @@ export const elkGeneralSchema: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', '3 points or fewer')
+            createValueField('measurementValue', '3 points or fewer'),
+            createValueField('measurementUnit', '')
           ]
         }
       ]
@@ -781,8 +781,8 @@ export const elkGeneralSchema: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', '3 or 4 points')
+            createValueField('measurementValue', '3 or 4 points'),
+            createValueField('measurementUnit', '')
           ]
         }
       ]
@@ -854,8 +854,8 @@ export const elkGeneralSchema: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', '3 or 4 or 5 points')
+            createValueField('measurementValue', '3 or 4 or 5 points'),
+            createValueField('measurementUnit', '')
           ]
         }
       ]
@@ -927,8 +927,8 @@ export const elkGeneralSchema: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'fewer than 4 points')
+            createValueField('measurementValue', 'fewer than 4 points'),
+            createValueField('measurementUnit', '')
           ]
         }
       ]
@@ -1000,8 +1000,8 @@ export const elkGeneralSchema: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', '4 points or more')
+            createValueField('measurementValue', '4 points or more'),
+            createValueField('measurementUnit', '')
           ]
         }
       ]
@@ -1073,8 +1073,8 @@ export const elkGeneralSchema: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', '5 points')
+            createValueField('measurementValue', '5 points'),
+            createValueField('measurementUnit', '')
           ]
         }
       ]
@@ -1146,8 +1146,8 @@ export const elkGeneralSchema: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', '5 points or more')
+            createValueField('measurementValue', '5 points or more'),
+            createValueField('measurementUnit', '')
           ]
         }
       ]
@@ -1219,8 +1219,8 @@ export const elkGeneralSchema: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', '6 points or more')
+            createValueField('measurementValue', '6 points or more'),
+            createValueField('measurementUnit', '')
           ]
         }
       ]
@@ -1295,8 +1295,8 @@ export const elkGeneralSchema: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'unclassified')
+            createValueField('measurementValue', 'unclassified'),
+            createValueField('measurementUnit', '')
           ]
         }
       ]
@@ -1368,8 +1368,8 @@ export const elkGeneralSchema: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'unclassified')
+            createValueField('measurementValue', 'unclassified'),
+            createValueField('measurementUnit', '')
           ]
         }
       ]
@@ -1593,8 +1593,8 @@ export const elkGeneralSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Block ID/SU ID'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Block ID/SU ID'])
+        createPathField('measurementValue', 'Observations', ['Block ID/SU ID']),
+        createValueField('measurementUnit', '')
       ]
     },
     //measurementOrFact: Observations - Group Label
@@ -1625,8 +1625,8 @@ export const elkGeneralSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Group Label'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Group Label'])
+        createPathField('measurementValue', 'Observations', ['Group Label']),
+        createValueField('measurementUnit', '')
       ]
     },
     //measurementOrFact: Observations - Sign Type
@@ -1661,8 +1661,8 @@ export const elkGeneralSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Sign Type'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Sign Type'])
+        createPathField('measurementValue', 'Observations', ['Sign Type']),
+        createValueField('measurementUnit', '')
       ]
     },
     //measurementOrFact: Observations - Sign Count
@@ -1696,8 +1696,8 @@ export const elkGeneralSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Sign Count'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Sign Count'])
+        createPathField('measurementValue', 'Observations', ['Sign Count']),
+        createValueField('measurementUnit', '')
       ]
     },
 
@@ -1730,8 +1730,8 @@ export const elkGeneralSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Age of Sign'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Age of Sign'])
+        createPathField('measurementValue', 'Observations', ['Age of Sign']),
+        createValueField('measurementUnit', '')
       ]
     },
 
@@ -1764,8 +1764,8 @@ export const elkGeneralSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Topography'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Topography'])
+        createPathField('measurementValue', 'Observations', ['Topography']),
+        createValueField('measurementUnit', '')
       ]
     },
 
@@ -1798,8 +1798,8 @@ export const elkGeneralSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Habitat'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Habitat'])
+        createPathField('measurementValue', 'Observations', ['Habitat']),
+        createValueField('measurementUnit', '')
       ]
     },
     //measurementOrFact: Observations - Veg Cover (%)
@@ -1830,8 +1830,8 @@ export const elkGeneralSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Veg Cover'),
-        createValueField('measurementUnit', '%'),
-        createPathField('measurementValue', 'Observations', ['Veg Cover (%)'])
+        createPathField('measurementValue', 'Observations', ['Veg Cover (%)']),
+        createValueField('measurementUnit', '')
       ]
     },
     //measurementOrFact: Observations - Snow Cover (%)
@@ -1862,8 +1862,8 @@ export const elkGeneralSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Snow Cover'),
-        createValueField('measurementUnit', '%'),
-        createPathField('measurementValue', 'Observations', ['Snow Cover (%)'])
+        createPathField('measurementValue', 'Observations', ['Snow Cover (%)']),
+        createValueField('measurementUnit', '')
       ]
     },
     //measurementOrFact: Observations - Activity
@@ -1894,8 +1894,8 @@ export const elkGeneralSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Activity'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Activity'])
+        createPathField('measurementValue', 'Observations', ['Activity']),
+        createValueField('measurementUnit', '')
       ]
     },
     //measurementOrFact: Observations: Number of Marked Animals Observed
@@ -1926,8 +1926,8 @@ export const elkGeneralSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Number of Marked Animals Observed'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Number of Marked Animals Observed'])
+        createPathField('measurementValue', 'Observations', ['Number of Marked Animals Observed']),
+        createValueField('measurementUnit', '')
       ]
     },
 
@@ -1959,8 +1959,8 @@ export const elkGeneralSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Survey or Telemetry Search'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Survey or Telemetry Search'])
+        createPathField('measurementValue', 'Observations', ['Survey or Telemetry Search']),
+        createValueField('measurementUnit', '')
       ]
     },
     //measurementOrFact: Observations - Photos
@@ -1991,8 +1991,8 @@ export const elkGeneralSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Photos'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Photos'])
+        createPathField('measurementValue', 'Observations', ['Photos']),
+        createValueField('measurementUnit', '')
       ]
     },
     //measurementOrFact: Marked Animals - Targeted or Non-Targeted
@@ -2031,8 +2031,8 @@ export const elkGeneralSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Targeted or Non-Targeted'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Marked Animals', ['Targeted or Non-Targeted'])
+        createPathField('measurementValue', 'Marked Animals', ['Targeted or Non-Targeted']),
+        createValueField('measurementUnit', '')
       ]
     },
     //measurementOrFact: Marked Animals - Wildlife Health ID
@@ -2071,8 +2071,8 @@ export const elkGeneralSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Wildlife Health ID'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Marked Animals', ['Wildlife Health ID'])
+        createPathField('measurementValue', 'Marked Animals', ['Wildlife Health ID']),
+        createValueField('measurementUnit', '')
       ]
     },
     //measurementOrFact: Marked Animals - Animal ID
@@ -2111,8 +2111,8 @@ export const elkGeneralSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Animal ID'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Marked Animals', ['Animal ID'])
+        createPathField('measurementValue', 'Marked Animals', ['Animal ID']),
+        createValueField('measurementUnit', '')
       ]
     },
 
@@ -2152,8 +2152,8 @@ export const elkGeneralSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Telemetry Device ID'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Marked Animals', ['Telemetry Device ID'])
+        createPathField('measurementValue', 'Marked Animals', ['Telemetry Device ID']),
+        createValueField('measurementUnit', '')
       ]
     },
     //measurementOrFact: Marked Animals - Collar/Tag Frequency
@@ -2192,8 +2192,8 @@ export const elkGeneralSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Collar/Tag Frequency'),
-        createPathField('measurementUnit', 'Marked Animals', ['Frequency Unit']),
-        createPathField('measurementValue', 'Marked Animals', ['Collar/Tag Frequency'])
+        createPathField('measurementValue', 'Marked Animals', ['Collar/Tag Frequency']),
+        createPathField('measurementUnit', 'Marked Animals', ['Frequency Unit'])
       ]
     },
     //measurementOrFact: Marked Animals - Right Ear Tag ID
@@ -2232,8 +2232,8 @@ export const elkGeneralSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Right Ear Tag ID'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Marked Animals', ['Right Ear Tag ID'])
+        createPathField('measurementValue', 'Marked Animals', ['Right Ear Tag ID']),
+        createValueField('measurementUnit', '')
       ]
     },
     //measurementOrFact: Marked Animals - Right Ear Tag Colour
@@ -2272,8 +2272,8 @@ export const elkGeneralSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Right Ear Tag Colour'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Marked Animals', ['Right Ear Tag Colour'])
+        createPathField('measurementValue', 'Marked Animals', ['Right Ear Tag Colour']),
+        createValueField('measurementUnit', '')
       ]
     },
     //measurementOrFact: Marked Animals - Left Ear Tag ID
@@ -2312,8 +2312,8 @@ export const elkGeneralSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Left Ear Tag ID'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Marked Animals', ['Left Ear Tag ID'])
+        createPathField('measurementValue', 'Marked Animals', ['Left Ear Tag ID']),
+        createValueField('measurementUnit', '')
       ]
     },
     //measurementOrFact: Marked Animals - Left Ear Tag Colour
@@ -2352,8 +2352,8 @@ export const elkGeneralSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Left Ear Tag Colour'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Marked Animals', ['Left Ear Tag Colour'])
+        createPathField('measurementValue', 'Marked Animals', ['Left Ear Tag Colour']),
+        createValueField('measurementUnit', '')
       ]
     },
     //measurementOrFact: Marked Animals - Marked Animals Comments
@@ -2392,8 +2392,8 @@ export const elkGeneralSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Marked Animals Comments'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Marked Animals', ['Marked Animals Comments'])
+        createPathField('measurementValue', 'Marked Animals', ['Marked Animals Comments']),
+        createValueField('measurementUnit', '')
       ]
     }
   ],

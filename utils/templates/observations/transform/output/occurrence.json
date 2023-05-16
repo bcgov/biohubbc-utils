@@ -1,7 +1,6 @@
-﻿eventID,occurrenceID,individualCount,sex,lifeStage,taxonID
-SA-1:BISID-1:0,SA-1:BISID-1:0:16,16,male,adult,S-ELK
-SA-1:BISID-1:0,SA-1:BISID-1:0:17,17,female,adult,S-ELK
-SA-1:BISID-1:0,SA-1:BISID-1:0:18,18,unknown,juvenile,S-ELK
-SA-1:BISID-1:0,SA-1:BISID-1:0:19,19,unknown,adult,S-ELK
-SA-1:BISID-1:0,SA-1:BISID-1:0:20,20,unknown,yearling,S-ELK
-SA-1:BISID-1:0,SA-1:BISID-1:0:21,21,unknown,unknown,S-ELK
+﻿eventID,occurrenceID,individualCount,sex,lifeStage,taxonID,occurrenceRemarks
+my_study_area:Bull River:0,my_study_area:Bull River:0:0,1,unknown,adult,M-ORAM,
+my_study_area:Bull River:0,my_study_area:Bull River:0:1,2,unknown,juvenile,M-ORAM,
+my_study_area:Bull River:0,my_study_area:Bull River:0:2,3,female,adult,M-ORAM,some cool goats
+my_study_area:Bull River:0,my_study_area:Bull River:0:3,4,male,adult,M-ORAM,
+my_study_area:Bull River:0,my_study_area:Bull River:0:4,5,unknown,unknown,M-ORAM,

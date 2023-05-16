@@ -126,6 +126,9 @@ export const goatTotalCountSchema: TransformSchema = {
         }
       ]
     },
+    //Adult Unclassified Sex (static: 0)
+    // sex: unknown
+    //life stage: adult
     {
       sheetName: 'occurrence',
       condition: {
@@ -155,10 +158,12 @@ export const goatTotalCountSchema: TransformSchema = {
         createPathField('individualCount', 'Observations', ['Adults Unclassified Sex']),
         createValueField('sex', 'unknown'),
         createValueField('lifeStage', 'adult'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
+        createPathField('taxonID', 'Observations', ['Species'])
       ]
     },
+    //Kid (static: 1)
+    // sex: unknown
+    //life stage: juvenile
     {
       sheetName: 'occurrence',
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Kid']) }] },
@@ -185,10 +190,12 @@ export const goatTotalCountSchema: TransformSchema = {
         createPathField('individualCount', 'Observations', ['Kid']),
         createValueField('sex', 'unknown'),
         createValueField('lifeStage', 'juvenile'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
+        createPathField('taxonID', 'Observations', ['Species'])
       ]
     },
+    //Nanny (static: 2)
+    // sex: female
+    //life stage: adult
     {
       sheetName: 'occurrence',
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Nanny']) }] },
@@ -219,6 +226,9 @@ export const goatTotalCountSchema: TransformSchema = {
         createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
       ]
     },
+    //Billy (static: 3)
+    // sex: male
+    //life stage: adult
     {
       sheetName: 'occurrence',
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Billy']) }] },
@@ -245,10 +255,12 @@ export const goatTotalCountSchema: TransformSchema = {
         createPathField('individualCount', 'Observations', ['Billy']),
         createValueField('sex', 'male'),
         createValueField('lifeStage', 'adult'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
+        createPathField('taxonID', 'Observations', ['Species'])
       ]
     },
+    //Unclassified Age/Sex (static: 4)
+    // sex: unknown
+    //life stage: adult
     {
       sheetName: 'occurrence',
       condition: {
@@ -270,7 +282,7 @@ export const goatTotalCountSchema: TransformSchema = {
             {
               paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
               postfix: {
-                static: '10'
+                static: '4'
               }
             }
           ]
@@ -278,10 +290,10 @@ export const goatTotalCountSchema: TransformSchema = {
         createPathField('individualCount', 'Observations', ['Unclassified Age/Sex']),
         createValueField('sex', 'unknown'),
         createValueField('lifeStage', 'unknown'),
-        createPathField('taxonID', 'Observations', ['Species']),
-        createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
+        createPathField('taxonID', 'Observations', ['Species'])
       ]
     },
+    //-----------------end of animal counts---------------
     {
       sheetName: 'organism',
       condition: {
@@ -333,10 +345,13 @@ export const goatTotalCountSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Study Area'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Study Area'])
+        createPathField('measurementValue', 'Observations', ['Study Area']),
+        createValueField('measurementUnit', '')
       ]
     },
+    // ------------- measurementOrFact captures all additional observation and marked animal information (below)
+
+    //measurementOrFact: Observations - BlockID/SU ID
     {
       sheetName: 'measurementOrFact',
       fields: [
@@ -360,10 +375,12 @@ export const goatTotalCountSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Block ID/SU ID'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Block ID/SU ID'])
+
+        createPathField('measurementValue', 'Observations', ['Block ID/SU ID']),
+        createValueField('measurementUnit', '')
       ]
     },
+    //measurementOrFact: Observations - Group Label
     {
       sheetName: 'measurementOrFact',
       condition: {
@@ -391,10 +408,11 @@ export const goatTotalCountSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Group Label'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Group Label'])
+        createPathField('measurementValue', 'Observations', ['Group Label']),
+        createValueField('measurementUnit', '')
       ]
     },
+    //measurementOrFact: Observations - Sign Type
     {
       sheetName: 'measurementOrFact',
       condition: {
@@ -425,10 +443,11 @@ export const goatTotalCountSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Sign Type'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Sign Type'])
+        createPathField('measurementValue', 'Observations', ['Sign Type']),
+        createValueField('measurementUnit', '')
       ]
     },
+    //measurementOrFact: Observations - Sign Count
     {
       sheetName: 'measurementOrFact',
       condition: {
@@ -459,10 +478,11 @@ export const goatTotalCountSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Sign Count'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Sign Count'])
+        createPathField('measurementValue', 'Observations', ['Sign Count']),
+        createValueField('measurementUnit', '')
       ]
     },
+    //measurementOrFact: Observations - Age of Sign
     {
       sheetName: 'measurementOrFact',
       condition: {
@@ -490,10 +510,11 @@ export const goatTotalCountSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Age of Sign'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Age of Sign'])
+        createPathField('measurementValue', 'Observations', ['Age of Sign']),
+        createValueField('measurementUnit', '')
       ]
     },
+    //measurementOrFact: Observations - Veg Cover (%)
     {
       sheetName: 'measurementOrFact',
       condition: {
@@ -521,10 +542,11 @@ export const goatTotalCountSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Veg Cover'),
-        createValueField('measurementUnit', '%'),
-        createPathField('measurementValue', 'Observations', ['Veg Cover (%)'])
+        createPathField('measurementValue', 'Observations', ['Veg Cover (%)']),
+        createValueField('measurementUnit', '')
       ]
     },
+    //measurementOrFact: Observations - Snow Cover (%)
     {
       sheetName: 'measurementOrFact',
       condition: {
@@ -552,10 +574,11 @@ export const goatTotalCountSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Snow Cover'),
-        createValueField('measurementUnit', '%'),
-        createPathField('measurementValue', 'Observations', ['Snow Cover (%)'])
+        createPathField('measurementValue', 'Observations', ['Snow Cover (%)']),
+        createValueField('measurementUnit', '%')
       ]
     },
+    //measurementOrFact: Observations - Activity
     {
       sheetName: 'measurementOrFact',
       condition: {
@@ -583,10 +606,11 @@ export const goatTotalCountSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Activity'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Activity'])
+        createPathField('measurementValue', 'Observations', ['Activity']),
+        createValueField('measurementUnit', '')
       ]
     },
+    //measurementOrFact: Elevation (m) of Observation
     {
       sheetName: 'measurementOrFact',
       condition: {
@@ -614,11 +638,11 @@ export const goatTotalCountSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Elevation (m) of Observation'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Elevation (m) of Observation'])
+        createPathField('measurementValue', 'Observations', ['Elevation (m) of Observation']),
+        createValueField('measurementUnit', '')
       ]
     },
-
+    //measurementOrFact: Habitat
     {
       sheetName: 'measurementOrFact',
       condition: {
@@ -646,15 +670,18 @@ export const goatTotalCountSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Habitat'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Habitat'])
+
+        createPathField('measurementValue', 'Observations', ['Habitat']),
+        createValueField('measurementUnit', '')
       ]
     },
+
+    //measurementOrFact: Wind Blown
     {
       sheetName: 'measurementOrFact',
       condition: {
         type: 'and',
-        checks: [{ ifNotEmpty: getValuesByName('Observations', ['Habitat-Slope']) }]
+        checks: [{ ifNotEmpty: getValuesByName('Observations', ['Wind Blown']) }]
       },
       fields: [
         {
@@ -671,16 +698,18 @@ export const goatTotalCountSchema: TransformSchema = {
             {
               paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
               postfix: {
-                static: 'habitat-slope'
+                static: 'wind-blown'
               }
             }
           ]
         },
-        createValueField('measurementType', 'Habitat-Slope'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Habitat-Slope'])
+        createValueField('measurementType', 'Wind Blown'),
+        createPathField('measurementValue', 'Observations', ['Wind Blown']),
+        createValueField('measurementUnit', '')
       ]
     },
+
+    //measurementOrFact: Terrain Obstruction
     {
       sheetName: 'measurementOrFact',
       condition: {
@@ -708,10 +737,11 @@ export const goatTotalCountSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Terrain Obstruction'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Terrain Obstruction'])
+        createPathField('measurementValue', 'Observations', ['Terrain Obstruction']),
+        createValueField('measurementUnit', '')
       ]
     },
+    //measurementOrFact: Number of Marked Animals Observed
     {
       sheetName: 'measurementOrFact',
       condition: {
@@ -739,10 +769,11 @@ export const goatTotalCountSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Number of Marked Animals Observed'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Number of Marked Animals Observed'])
+        createPathField('measurementValue', 'Observations', ['Number of Marked Animals Observed']),
+        createValueField('measurementUnit', '')
       ]
     },
+    //measurementOrFact: Survey or Telemetry Search
     {
       sheetName: 'measurementOrFact',
       condition: {
@@ -770,10 +801,11 @@ export const goatTotalCountSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Survey or Telemetry Search'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Survey or Telemetry Search'])
+        createPathField('measurementValue', 'Observations', ['Survey or Telemetry Search']),
+        createValueField('measurementUnit', '')
       ]
     },
+    //measurementOrFact: Observations - Photos
     {
       sheetName: 'measurementOrFact',
       condition: {
@@ -801,13 +833,52 @@ export const goatTotalCountSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Photos'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Photos'])
+        createPathField('measurementValue', 'Observations', ['Photos']),
+        createValueField('measurementUnit', '')
       ]
     },
 
-    //
-
+    //measurementOrFact: Marked Animals - Targeted or Non-Targeted
+    {
+      sheetName: 'measurementOrFact',
+      condition: {
+        type: 'and',
+        checks: [{ ifNotEmpty: getValuesByName('Marked Animals', ['Targeted or Non-Targeted']) }]
+      },
+      fields: [
+        {
+          columnName: 'eventID',
+          columnValue: [
+            {
+              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+            }
+          ]
+        },
+        {
+          columnName: 'organismID',
+          columnValue: [
+            {
+              paths: [getValuesByName('Marked Animals', ['_key']), getValuesByName('Marked Animals', ['_row'])]
+            }
+          ]
+        },
+        {
+          columnName: 'measurementID',
+          columnValue: [
+            {
+              paths: [getValuesByName('Marked Animals', ['_key']), getValuesByName('Marked Animals', ['_row'])],
+              postfix: {
+                static: 'targeted-or-non-targeted'
+              }
+            }
+          ]
+        },
+        createValueField('measurementType', 'Targeted or Non-Targeted'),
+        createValueField('measurementUnit', ''),
+        createPathField('measurementValue', 'Marked Animals', ['Targeted or Non-Targeted'])
+      ]
+    },
+    //measurementOrFact: Marked Animals - Wildlife Health ID
     {
       sheetName: 'measurementOrFact',
       condition: {
@@ -843,10 +914,11 @@ export const goatTotalCountSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Wildlife Health ID'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Marked Animals', ['Wildlife Health ID'])
+        createPathField('measurementValue', 'Marked Animals', ['Wildlife Health ID']),
+        createValueField('measurementUnit', '')
       ]
     },
+    //measurementOrFact: Marked Animals - Animal ID
     {
       sheetName: 'measurementOrFact',
       condition: {
@@ -882,10 +954,11 @@ export const goatTotalCountSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Animal ID'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Marked Animals', ['Animal ID'])
+        createPathField('measurementValue', 'Marked Animals', ['Animal ID']),
+        createValueField('measurementUnit', '')
       ]
     },
+    //measurementOrFact: Marked Animals - Telemetry Device ID
     {
       sheetName: 'measurementOrFact',
       condition: {
@@ -921,10 +994,11 @@ export const goatTotalCountSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Telemetry Device ID'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Marked Animals', ['Telemetry Device ID'])
+        createPathField('measurementValue', 'Marked Animals', ['Telemetry Device ID']),
+        createValueField('measurementUnit', '')
       ]
     },
+    //measurementOrFact: Marked Animals - Collar/Tag Frequency
     {
       sheetName: 'measurementOrFact',
       condition: {
@@ -960,10 +1034,11 @@ export const goatTotalCountSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Collar/Tag Frequency'),
-        createPathField('measurementUnit', 'Marked Animals', ['Frequency Unit']),
-        createPathField('measurementValue', 'Marked Animals', ['Collar/Tag Frequency'])
+        createPathField('measurementValue', 'Marked Animals', ['Collar/Tag Frequency']),
+        createPathField('measurementUnit', 'Marked Animals', ['Frequency Unit'])
       ]
     },
+    //measurementOrFact: Marked Animals - Right Ear Tag ID
     {
       sheetName: 'measurementOrFact',
       condition: {
@@ -999,10 +1074,11 @@ export const goatTotalCountSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Right Ear Tag ID'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Marked Animals', ['Right Ear Tag ID'])
+        createPathField('measurementValue', 'Marked Animals', ['Right Ear Tag ID']),
+        createValueField('measurementUnit', '')
       ]
     },
+    //measurementOrFact: Marked Animals - Right Ear Tag Colour
     {
       sheetName: 'measurementOrFact',
       condition: {
@@ -1038,10 +1114,11 @@ export const goatTotalCountSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Right Ear Tag Colour'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Marked Animals', ['Right Ear Tag Colour'])
+        createPathField('measurementValue', 'Marked Animals', ['Right Ear Tag Colour']),
+        createValueField('measurementUnit', '')
       ]
     },
+    //measurementOrFact: Marked Animals - Left Ear Tag ID
     {
       sheetName: 'measurementOrFact',
       condition: {
@@ -1077,10 +1154,11 @@ export const goatTotalCountSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Left Ear Tag ID'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Marked Animals', ['Left Ear Tag ID'])
+        createPathField('measurementValue', 'Marked Animals', ['Left Ear Tag ID']),
+        createValueField('measurementUnit', '')
       ]
     },
+    //measurementOrFact: Marked Animals - Left Ear Tag Colour
     {
       sheetName: 'measurementOrFact',
       condition: {
@@ -1116,8 +1194,48 @@ export const goatTotalCountSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Left Ear Tag Colour'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Marked Animals', ['Left Ear Tag Colour'])
+        createPathField('measurementValue', 'Marked Animals', ['Left Ear Tag Colour']),
+        createValueField('measurementUnit', '')
+      ]
+    },
+    //measurementOrFact: Marked Animals - Marked Animals Comments
+    {
+      sheetName: 'measurementOrFact',
+      condition: {
+        type: 'and',
+        checks: [{ ifNotEmpty: getValuesByName('Marked Animals', ['Marked Animals Comments']) }]
+      },
+      fields: [
+        {
+          columnName: 'eventID',
+          columnValue: [
+            {
+              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+            }
+          ]
+        },
+        {
+          columnName: 'organismID',
+          columnValue: [
+            {
+              paths: [getValuesByName('Marked Animals', ['_key']), getValuesByName('Marked Animals', ['_row'])]
+            }
+          ]
+        },
+        {
+          columnName: 'measurementID',
+          columnValue: [
+            {
+              paths: [getValuesByName('Marked Animals', ['_key']), getValuesByName('Marked Animals', ['_row'])],
+              postfix: {
+                static: 'marked-animals-comments'
+              }
+            }
+          ]
+        },
+        createValueField('measurementType', 'Marked Animals Comments'),
+        createPathField('measurementValue', 'Marked Animals', ['Marked Animals Comments']),
+        createValueField('measurementUnit', '')
       ]
     }
   ],
@@ -1149,4 +1267,4 @@ export const goatTotalCountSchema: TransformSchema = {
   ]
 };
 
-transformSchema('Monashee_Mt_Goat_Total_Count_Recuit_Comp_Survey_2.0.xlsx', goatTotalCountSchema);
+transformSchema('Goat_test.xlsx', goatTotalCountSchema);
