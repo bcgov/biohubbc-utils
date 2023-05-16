@@ -27,27 +27,6 @@ export const elkGeneralSchema: TransformSchema = {
   ],
   map: [
     {
-      sheetName: 'record',
-      fields: [
-        {
-          columnName: 'eventId',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'basisOfRecord ',
-          columnValue: [
-            {
-              static: 'HumanObservation'
-            }
-          ]
-        }
-      ]
-    },
-    {
       sheetName: 'event',
       fields: [
         {
@@ -71,6 +50,14 @@ export const elkGeneralSchema: TransformSchema = {
           columnValue: [
             {
               paths: [getValuesByName('Observations', ['Observation Comments'])]
+            }
+          ]
+        },
+        {
+          columnName: 'basisOfRecord ',
+          columnValue: [
+            {
+              static: 'HumanObservation'
             }
           ]
         }
@@ -2398,10 +2385,6 @@ export const elkGeneralSchema: TransformSchema = {
     }
   ],
   dwcMeta: [
-    {
-      sheetName: 'record',
-      primaryKey: ['eventID']
-    },
     {
       sheetName: 'event',
       primaryKey: ['eventID']

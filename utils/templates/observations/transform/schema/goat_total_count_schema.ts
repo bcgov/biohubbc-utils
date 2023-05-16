@@ -26,27 +26,6 @@ export const goatTotalCountSchema: TransformSchema = {
   ],
   map: [
     {
-      sheetName: 'record',
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'basisOfRecord ',
-          columnValue: [
-            {
-              static: 'HumanObservation'
-            }
-          ]
-        }
-      ]
-    },
-    {
       sheetName: 'event',
       fields: [
         {
@@ -70,6 +49,14 @@ export const goatTotalCountSchema: TransformSchema = {
           columnValue: [
             {
               paths: [getValuesByName('Observations', ['Observation Comments'])]
+            }
+          ]
+        },
+        {
+          columnName: 'basisOfRecord ',
+          columnValue: [
+            {
+              static: 'HumanObservation'
             }
           ]
         }
@@ -1240,10 +1227,6 @@ export const goatTotalCountSchema: TransformSchema = {
     }
   ],
   dwcMeta: [
-    {
-      sheetName: 'record',
-      primaryKey: ['eventID']
-    },
     {
       sheetName: 'event',
       primaryKey: ['eventID']

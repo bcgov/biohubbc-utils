@@ -1,16 +1,11 @@
 [
   {
-    "record": [
-      {
-        "eventID": "my_study_area:Bull River:0",
-        "basisOfRecord ": "HumanObservation"
-      }
-    ],
     "event": [
       {
         "eventID": "my_study_area:Bull River:0",
         "eventDate": "27-Feb-19",
-        "eventRemarks": "some cool goats"
+        "eventRemarks": "some cool goats",
+        "basisOfRecord ": "HumanObservation"
       }
     ],
     "location": [

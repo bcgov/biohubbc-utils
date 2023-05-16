@@ -25,27 +25,7 @@ export const mooseTransectSchema: TransformSchema = {
     }
   ],
   map: [
-    {
-      sheetName: 'record',
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'basisOfRecord ',
-          columnValue: [
-            {
-              static: 'HumanObservation'
-            }
-          ]
-        }
-      ]
-    },
+
     {
       sheetName: 'event',
       fields: [
@@ -70,6 +50,14 @@ export const mooseTransectSchema: TransformSchema = {
           columnValue: [
             {
               paths: [getValuesByName('Observations', ['Observation Comments'])]
+            }
+          ]
+        },
+        {
+          columnName: 'basisOfRecord ',
+          columnValue: [
+            {
+              static: 'HumanObservation'
             }
           ]
         }
@@ -2232,10 +2220,6 @@ export const mooseTransectSchema: TransformSchema = {
     }
   ],
   dwcMeta: [
-    {
-      sheetName: 'record',
-      primaryKey: ['eventID']
-    },
     {
       sheetName: 'event',
       primaryKey: ['eventID']
