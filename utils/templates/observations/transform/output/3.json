@@ -2,262 +2,268 @@
   {
     "record": [
       {
-        "eventId": "SA-1:BISID-1:0",
+        "eventID": "my_study_area:Bull River:0",
         "basisOfRecord ": "HumanObservation"
       }
     ],
     "event": [
       {
-        "eventID": "SA-1:BISID-1:0",
-        "eventDate": "27/Feb/23",
-        "eventRemarks": "coments son"
+        "eventID": "my_study_area:Bull River:0",
+        "eventDate": "27-Feb-19",
+        "eventRemarks": "some cool goats"
       }
     ],
     "location": [
       {
-        "eventID": "SA-1:BISID-1:0",
-        "verbatimCoordinates": "8 1 1",
-        "decimalLatitude": "lat",
-        "decimalLongitude": "long",
-        "verbatimSRS": "NAD27"
+        "eventID": "my_study_area:Bull River:0",
+        "verbatimCoordinates": "11 611410 5483836",
+        "decimalLatitude": "",
+        "decimalLongitude": "",
+        "verbatimSRS": "WGS84"
       }
     ],
     "occurrence": [
       {
-        "eventID": "SA-1:BISID-1:0",
-        "occurrenceID": "SA-1:BISID-1:0:16",
-        "individualCount": "16",
-        "sex": "male",
+        "eventID": "my_study_area:Bull River:0",
+        "occurrenceID": "my_study_area:Bull River:0:0",
+        "individualCount": "1",
+        "sex": "unknown",
         "lifeStage": "adult",
-        "taxonID": "S-ELK"
+        "taxonID": "M-ORAM"
       },
       {
-        "eventID": "SA-1:BISID-1:0",
-        "occurrenceID": "SA-1:BISID-1:0:17",
-        "individualCount": "17",
-        "sex": "female",
-        "lifeStage": "adult",
-        "taxonID": "S-ELK"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0",
-        "occurrenceID": "SA-1:BISID-1:0:18",
-        "individualCount": "18",
+        "eventID": "my_study_area:Bull River:0",
+        "occurrenceID": "my_study_area:Bull River:0:1",
+        "individualCount": "2",
         "sex": "unknown",
         "lifeStage": "juvenile",
-        "taxonID": "S-ELK"
+        "taxonID": "M-ORAM"
       },
       {
-        "eventID": "SA-1:BISID-1:0",
-        "occurrenceID": "SA-1:BISID-1:0:19",
-        "individualCount": "19",
-        "sex": "unknown",
+        "eventID": "my_study_area:Bull River:0",
+        "occurrenceID": "my_study_area:Bull River:0:2",
+        "individualCount": "3",
+        "sex": "female",
         "lifeStage": "adult",
-        "taxonID": "S-ELK"
+        "taxonID": "M-ORAM",
+        "occurrenceRemarks": "some cool goats"
       },
       {
-        "eventID": "SA-1:BISID-1:0",
-        "occurrenceID": "SA-1:BISID-1:0:20",
-        "individualCount": "20",
-        "sex": "unknown",
-        "lifeStage": "yearling",
-        "taxonID": "S-ELK"
+        "eventID": "my_study_area:Bull River:0",
+        "occurrenceID": "my_study_area:Bull River:0:3",
+        "individualCount": "4",
+        "sex": "male",
+        "lifeStage": "adult",
+        "taxonID": "M-ORAM"
       },
       {
-        "eventID": "SA-1:BISID-1:0",
-        "occurrenceID": "SA-1:BISID-1:0:21",
-        "individualCount": "21",
+        "eventID": "my_study_area:Bull River:0",
+        "occurrenceID": "my_study_area:Bull River:0:4",
+        "individualCount": "5",
         "sex": "unknown",
         "lifeStage": "unknown",
-        "taxonID": "S-ELK"
+        "taxonID": "M-ORAM"
       }
     ],
     "organism": [
       {
-        "eventID": "SA-1:BISID-1:0",
-        "organismID": "wlid:aid:tdid:0",
-        "organismRemarks": "marked comments"
+        "eventID": "my_study_area:Bull River:0",
+        "organismID": "WHID1:BH001:6A10298:0",
+        "organismRemarks": "marked_comment_1"
       }
     ],
     "measurementOrFact": [
       {
-        "eventID": "SA-1:BISID-1:0",
-        "measurementID": "SA-1:BISID-1:0:block-id/su-id",
+        "eventID": "my_study_area:Bull River:0",
+        "measurementID": "my_study_area:Bull River:0:study-area",
+        "measurementType": "Study Area",
+        "measurementValue": "my_study_area",
+        "measurementUnit": ""
+      },
+      {
+        "eventID": "my_study_area:Bull River:0",
+        "measurementID": "my_study_area:Bull River:0:block-id/su-id",
         "measurementType": "Block ID/SU ID",
-        "measurementUnit": "",
-        "measurementValue": "BISID-1"
+        "measurementValue": "Bull River",
+        "measurementUnit": ""
       },
       {
-        "eventID": "SA-1:BISID-1:0",
-        "measurementID": "SA-1:BISID-1:0:group-label",
+        "eventID": "my_study_area:Bull River:0",
+        "measurementID": "my_study_area:Bull River:0:group-label",
         "measurementType": "Group Label",
-        "measurementUnit": "",
-        "measurementValue": "GL-1"
+        "measurementValue": "106",
+        "measurementUnit": ""
       },
       {
-        "eventID": "SA-1:BISID-1:0",
-        "measurementID": "SA-1:BISID-1:0:sign-type",
+        "eventID": "my_study_area:Bull River:0",
+        "measurementID": "my_study_area:Bull River:0:sign-type",
         "measurementType": "Sign Type",
-        "measurementUnit": "",
-        "measurementValue": "Body Parts"
+        "measurementValue": "Body Parts",
+        "measurementUnit": ""
       },
       {
-        "eventID": "SA-1:BISID-1:0",
-        "measurementID": "SA-1:BISID-1:0:sign-count",
+        "eventID": "my_study_area:Bull River:0",
+        "measurementID": "my_study_area:Bull River:0:sign-count",
         "measurementType": "Sign Count",
-        "measurementUnit": "",
-        "measurementValue": "1"
+        "measurementValue": "4",
+        "measurementUnit": ""
       },
       {
-        "eventID": "SA-1:BISID-1:0",
-        "measurementID": "SA-1:BISID-1:0:age-of-sign",
+        "eventID": "my_study_area:Bull River:0",
+        "measurementID": "my_study_area:Bull River:0:age-of-sign",
         "measurementType": "Age of Sign",
-        "measurementUnit": "",
-        "measurementValue": "Hour"
+        "measurementValue": "Day",
+        "measurementUnit": ""
       },
       {
-        "eventID": "SA-1:BISID-1:0",
-        "measurementID": "SA-1:BISID-1:0:topography",
-        "measurementType": "Topography",
-        "measurementUnit": "",
-        "measurementValue": "flat"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0",
-        "measurementID": "SA-1:BISID-1:0:habitat",
-        "measurementType": "Habitat",
-        "measurementUnit": "",
-        "measurementValue": "Avalanche Path"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0",
-        "measurementID": "SA-1:BISID-1:0:veg-cover",
+        "eventID": "my_study_area:Bull River:0",
+        "measurementID": "my_study_area:Bull River:0:veg-cover",
         "measurementType": "Veg Cover",
-        "measurementUnit": "%",
-        "measurementValue": "1"
+        "measurementValue": "50",
+        "measurementUnit": ""
       },
       {
-        "eventID": "SA-1:BISID-1:0",
-        "measurementID": "SA-1:BISID-1:0:snow-cover",
+        "eventID": "my_study_area:Bull River:0",
+        "measurementID": "my_study_area:Bull River:0:snow-cover",
         "measurementType": "Snow Cover",
-        "measurementUnit": "%",
-        "measurementValue": "1"
+        "measurementValue": "20",
+        "measurementUnit": "%"
       },
       {
-        "eventID": "SA-1:BISID-1:0",
-        "measurementID": "SA-1:BISID-1:0:activity",
+        "eventID": "my_study_area:Bull River:0",
+        "measurementID": "my_study_area:Bull River:0:activity",
         "measurementType": "Activity",
-        "measurementUnit": "",
-        "measurementValue": "Moving"
+        "measurementValue": "Walking",
+        "measurementUnit": ""
       },
       {
-        "eventID": "SA-1:BISID-1:0",
-        "measurementID": "SA-1:BISID-1:0:number-of-marked-animals-observed",
+        "eventID": "my_study_area:Bull River:0",
+        "measurementID": "my_study_area:Bull River:0:elevation-observation",
+        "measurementType": "Elevation (m) of Observation",
+        "measurementValue": "3.0",
+        "measurementUnit": ""
+      },
+      {
+        "eventID": "my_study_area:Bull River:0",
+        "measurementID": "my_study_area:Bull River:0:habitat",
+        "measurementType": "Habitat",
+        "measurementValue": "Cutblock",
+        "measurementUnit": ""
+      },
+      {
+        "eventID": "my_study_area:Bull River:0",
+        "measurementID": "my_study_area:Bull River:0:wind-blown",
+        "measurementType": "Wind Blown",
+        "measurementValue": "N",
+        "measurementUnit": ""
+      },
+      {
+        "eventID": "my_study_area:Bull River:0",
+        "measurementID": "my_study_area:Bull River:0:terrain-obstruction",
+        "measurementType": "Terrain Obstruction",
+        "measurementValue": "Y",
+        "measurementUnit": ""
+      },
+      {
+        "eventID": "my_study_area:Bull River:0",
+        "measurementID": "my_study_area:Bull River:0:number-of-marked-animals-observed",
         "measurementType": "Number of Marked Animals Observed",
-        "measurementUnit": "",
-        "measurementValue": "100"
+        "measurementValue": "6",
+        "measurementUnit": ""
       },
       {
-        "eventID": "SA-1:BISID-1:0",
-        "measurementID": "SA-1:BISID-1:0:survey-or-telemetry-search",
+        "eventID": "my_study_area:Bull River:0",
+        "measurementID": "my_study_area:Bull River:0:survey-or-telemetry-search",
         "measurementType": "Survey or Telemetry Search",
-        "measurementUnit": "",
-        "measurementValue": "Survey"
+        "measurementValue": "Telemetry",
+        "measurementUnit": ""
       },
       {
-        "eventID": "SA-1:BISID-1:0",
-        "measurementID": "SA-1:BISID-1:0:photos",
+        "eventID": "my_study_area:Bull River:0",
+        "measurementID": "my_study_area:Bull River:0:photos",
         "measurementType": "Photos",
-        "measurementUnit": "",
-        "measurementValue": "some_phtos"
+        "measurementValue": "some_photos",
+        "measurementUnit": ""
       },
       {
-        "eventID": "SA-1:BISID-1:0",
-        "organismID": "wlid:aid:tdid:0",
-        "measurementID": "wlid:aid:tdid:0:targeted-or-non-targeted",
+        "eventID": "my_study_area:Bull River:0",
+        "organismID": "WHID1:BH001:6A10298:0",
+        "measurementID": "WHID1:BH001:6A10298:0:targeted-or-non-targeted",
         "measurementType": "Targeted or Non-Targeted",
         "measurementUnit": "",
         "measurementValue": "Targeted"
       },
       {
-        "eventID": "SA-1:BISID-1:0",
-        "organismID": "wlid:aid:tdid:0",
-        "measurementID": "wlid:aid:tdid:0:wildlife-health-id",
+        "eventID": "my_study_area:Bull River:0",
+        "organismID": "WHID1:BH001:6A10298:0",
+        "measurementID": "WHID1:BH001:6A10298:0:wildlife-health-id",
         "measurementType": "Wildlife Health ID",
-        "measurementUnit": "",
-        "measurementValue": "wlid"
+        "measurementValue": "WHID1",
+        "measurementUnit": ""
       },
       {
-        "eventID": "SA-1:BISID-1:0",
-        "organismID": "wlid:aid:tdid:0",
-        "measurementID": "wlid:aid:tdid:0:animal-id",
+        "eventID": "my_study_area:Bull River:0",
+        "organismID": "WHID1:BH001:6A10298:0",
+        "measurementID": "WHID1:BH001:6A10298:0:animal-id",
         "measurementType": "Animal ID",
-        "measurementUnit": "",
-        "measurementValue": "aid"
+        "measurementValue": "BH001",
+        "measurementUnit": ""
       },
       {
-        "eventID": "SA-1:BISID-1:0",
-        "organismID": "wlid:aid:tdid:0",
-        "measurementID": "wlid:aid:tdid:0:telemetry-device-id",
+        "eventID": "my_study_area:Bull River:0",
+        "organismID": "WHID1:BH001:6A10298:0",
+        "measurementID": "WHID1:BH001:6A10298:0:telemetry-device-id",
         "measurementType": "Telemetry Device ID",
-        "measurementUnit": "",
-        "measurementValue": "tdid"
+        "measurementValue": "6A10298",
+        "measurementUnit": ""
       },
       {
-        "eventID": "SA-1:BISID-1:0",
-        "organismID": "wlid:aid:tdid:0",
-        "measurementID": "wlid:aid:tdid:0:collar/tag-frequency",
+        "eventID": "my_study_area:Bull River:0",
+        "organismID": "WHID1:BH001:6A10298:0",
+        "measurementID": "WHID1:BH001:6A10298:0:collar/tag-frequency",
         "measurementType": "Collar/Tag Frequency",
-        "measurementUnit": "MHz",
-        "measurementValue": "ctid"
+        "measurementValue": "150.151",
+        "measurementUnit": "KHz"
       },
       {
-        "eventID": "SA-1:BISID-1:0",
-        "organismID": "wlid:aid:tdid:0",
-        "measurementID": "wlid:aid:tdid:0:right-ear-tag-id",
+        "eventID": "my_study_area:Bull River:0",
+        "organismID": "WHID1:BH001:6A10298:0",
+        "measurementID": "WHID1:BH001:6A10298:0:right-ear-tag-id",
         "measurementType": "Right Ear Tag ID",
-        "measurementUnit": "",
-        "measurementValue": "retid"
+        "measurementValue": "right_ear_tag_1",
+        "measurementUnit": ""
       },
       {
-        "eventID": "SA-1:BISID-1:0",
-        "organismID": "wlid:aid:tdid:0",
-        "measurementID": "wlid:aid:tdid:0:right-ear-tag-colour",
+        "eventID": "my_study_area:Bull River:0",
+        "organismID": "WHID1:BH001:6A10298:0",
+        "measurementID": "WHID1:BH001:6A10298:0:right-ear-tag-colour",
         "measurementType": "Right Ear Tag Colour",
-        "measurementUnit": "",
-        "measurementValue": "retc"
+        "measurementValue": "right_ear_color_1",
+        "measurementUnit": ""
       },
       {
-        "eventID": "SA-1:BISID-1:0",
-        "organismID": "wlid:aid:tdid:0",
-        "measurementID": "wlid:aid:tdid:0:left-ear-tag-id",
+        "eventID": "my_study_area:Bull River:0",
+        "organismID": "WHID1:BH001:6A10298:0",
+        "measurementID": "WHID1:BH001:6A10298:0:left-ear-tag-id",
         "measurementType": "Left Ear Tag ID",
-        "measurementUnit": "",
-        "measurementValue": "letid"
+        "measurementValue": "left_ear_tag_1",
+        "measurementUnit": ""
       },
       {
-        "eventID": "SA-1:BISID-1:0",
-        "organismID": "wlid:aid:tdid:0",
-        "measurementID": "wlid:aid:tdid:0:left-ear-tag-colour",
+        "eventID": "my_study_area:Bull River:0",
+        "organismID": "WHID1:BH001:6A10298:0",
+        "measurementID": "WHID1:BH001:6A10298:0:left-ear-tag-colour",
         "measurementType": "Left Ear Tag Colour",
-        "measurementUnit": "",
-        "measurementValue": "letc"
+        "measurementValue": "left_ear_color_1",
+        "measurementUnit": ""
       },
       {
-        "eventID": "SA-1:BISID-1:0",
-        "organismID": "wlid:aid:tdid:0",
-        "measurementID": "wlid:aid:tdid:0:marked-animals-comments",
+        "eventID": "my_study_area:Bull River:0",
+        "organismID": "WHID1:BH001:6A10298:0",
+        "measurementID": "WHID1:BH001:6A10298:0:marked-animals-comments",
         "measurementType": "Marked Animals Comments",
-        "measurementUnit": "",
-        "measurementValue": "marked comments"
-      },
-      {
-        "eventID": "SA-1:BISID-1:0",
-        "measurementID": "SA-1:BISID-1:0:antler-configuration",
-        "occurrenceID": "SA-1:BISID-1:0:16",
-        "measurementType": "Antler Configuration",
-        "measurementUnit": "",
-        "measurementValue": "unclassified"
+        "measurementValue": "marked_comment_1",
+        "measurementUnit": ""
       }
     ]
   }

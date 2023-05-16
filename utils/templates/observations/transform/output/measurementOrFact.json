@@ -1,25 +1,27 @@
-﻿eventID,measurementID,measurementType,measurementUnit,measurementValue,organismID,occurrenceID
-SA-1:BISID-1:0,SA-1:BISID-1:0:block-id/su-id,Block ID/SU ID,,BISID-1,,
-SA-1:BISID-1:0,SA-1:BISID-1:0:group-label,Group Label,,GL-1,,
-SA-1:BISID-1:0,SA-1:BISID-1:0:sign-type,Sign Type,,Body Parts,,
-SA-1:BISID-1:0,SA-1:BISID-1:0:sign-count,Sign Count,,1,,
-SA-1:BISID-1:0,SA-1:BISID-1:0:age-of-sign,Age of Sign,,Hour,,
-SA-1:BISID-1:0,SA-1:BISID-1:0:topography,Topography,,flat,,
-SA-1:BISID-1:0,SA-1:BISID-1:0:habitat,Habitat,,Avalanche Path,,
-SA-1:BISID-1:0,SA-1:BISID-1:0:veg-cover,Veg Cover,%,1,,
-SA-1:BISID-1:0,SA-1:BISID-1:0:snow-cover,Snow Cover,%,1,,
-SA-1:BISID-1:0,SA-1:BISID-1:0:activity,Activity,,Moving,,
-SA-1:BISID-1:0,SA-1:BISID-1:0:number-of-marked-animals-observed,Number of Marked Animals Observed,,100,,
-SA-1:BISID-1:0,SA-1:BISID-1:0:survey-or-telemetry-search,Survey or Telemetry Search,,Survey,,
-SA-1:BISID-1:0,SA-1:BISID-1:0:photos,Photos,,some_phtos,,
-SA-1:BISID-1:0,wlid:aid:tdid:0:targeted-or-non-targeted,Targeted or Non-Targeted,,Targeted,wlid:aid:tdid:0,
-SA-1:BISID-1:0,wlid:aid:tdid:0:wildlife-health-id,Wildlife Health ID,,wlid,wlid:aid:tdid:0,
-SA-1:BISID-1:0,wlid:aid:tdid:0:animal-id,Animal ID,,aid,wlid:aid:tdid:0,
-SA-1:BISID-1:0,wlid:aid:tdid:0:telemetry-device-id,Telemetry Device ID,,tdid,wlid:aid:tdid:0,
-SA-1:BISID-1:0,wlid:aid:tdid:0:collar/tag-frequency,Collar/Tag Frequency,MHz,ctid,wlid:aid:tdid:0,
-SA-1:BISID-1:0,wlid:aid:tdid:0:right-ear-tag-id,Right Ear Tag ID,,retid,wlid:aid:tdid:0,
-SA-1:BISID-1:0,wlid:aid:tdid:0:right-ear-tag-colour,Right Ear Tag Colour,,retc,wlid:aid:tdid:0,
-SA-1:BISID-1:0,wlid:aid:tdid:0:left-ear-tag-id,Left Ear Tag ID,,letid,wlid:aid:tdid:0,
-SA-1:BISID-1:0,wlid:aid:tdid:0:left-ear-tag-colour,Left Ear Tag Colour,,letc,wlid:aid:tdid:0,
-SA-1:BISID-1:0,wlid:aid:tdid:0:marked-animals-comments,Marked Animals Comments,,marked comments,wlid:aid:tdid:0,
-SA-1:BISID-1:0,SA-1:BISID-1:0:antler-configuration,Antler Configuration,,unclassified,,SA-1:BISID-1:0:16
+﻿eventID,measurementID,measurementType,measurementValue,measurementUnit,organismID
+my_study_area:Bull River:0,my_study_area:Bull River:0:study-area,Study Area,my_study_area,,
+my_study_area:Bull River:0,my_study_area:Bull River:0:block-id/su-id,Block ID/SU ID,Bull River,,
+my_study_area:Bull River:0,my_study_area:Bull River:0:group-label,Group Label,106,,
+my_study_area:Bull River:0,my_study_area:Bull River:0:sign-type,Sign Type,Body Parts,,
+my_study_area:Bull River:0,my_study_area:Bull River:0:sign-count,Sign Count,4,,
+my_study_area:Bull River:0,my_study_area:Bull River:0:age-of-sign,Age of Sign,Day,,
+my_study_area:Bull River:0,my_study_area:Bull River:0:veg-cover,Veg Cover,50,,
+my_study_area:Bull River:0,my_study_area:Bull River:0:snow-cover,Snow Cover,20,%,
+my_study_area:Bull River:0,my_study_area:Bull River:0:activity,Activity,Walking,,
+my_study_area:Bull River:0,my_study_area:Bull River:0:elevation-observation,Elevation (m) of Observation,3.0,,
+my_study_area:Bull River:0,my_study_area:Bull River:0:habitat,Habitat,Cutblock,,
+my_study_area:Bull River:0,my_study_area:Bull River:0:wind-blown,Wind Blown,N,,
+my_study_area:Bull River:0,my_study_area:Bull River:0:terrain-obstruction,Terrain Obstruction,Y,,
+my_study_area:Bull River:0,my_study_area:Bull River:0:number-of-marked-animals-observed,Number of Marked Animals Observed,6,,
+my_study_area:Bull River:0,my_study_area:Bull River:0:survey-or-telemetry-search,Survey or Telemetry Search,Telemetry,,
+my_study_area:Bull River:0,my_study_area:Bull River:0:photos,Photos,some_photos,,
+my_study_area:Bull River:0,WHID1:BH001:6A10298:0:targeted-or-non-targeted,Targeted or Non-Targeted,Targeted,,WHID1:BH001:6A10298:0
+my_study_area:Bull River:0,WHID1:BH001:6A10298:0:wildlife-health-id,Wildlife Health ID,WHID1,,WHID1:BH001:6A10298:0
+my_study_area:Bull River:0,WHID1:BH001:6A10298:0:animal-id,Animal ID,BH001,,WHID1:BH001:6A10298:0
+my_study_area:Bull River:0,WHID1:BH001:6A10298:0:telemetry-device-id,Telemetry Device ID,6A10298,,WHID1:BH001:6A10298:0
+my_study_area:Bull River:0,WHID1:BH001:6A10298:0:collar/tag-frequency,Collar/Tag Frequency,150.151,KHz,WHID1:BH001:6A10298:0
+my_study_area:Bull River:0,WHID1:BH001:6A10298:0:right-ear-tag-id,Right Ear Tag ID,right_ear_tag_1,,WHID1:BH001:6A10298:0
+my_study_area:Bull River:0,WHID1:BH001:6A10298:0:right-ear-tag-colour,Right Ear Tag Colour,right_ear_color_1,,WHID1:BH001:6A10298:0
+my_study_area:Bull River:0,WHID1:BH001:6A10298:0:left-ear-tag-id,Left Ear Tag ID,left_ear_tag_1,,WHID1:BH001:6A10298:0
+my_study_area:Bull River:0,WHID1:BH001:6A10298:0:left-ear-tag-colour,Left Ear Tag Colour,left_ear_color_1,,WHID1:BH001:6A10298:0
+my_study_area:Bull River:0,WHID1:BH001:6A10298:0:marked-animals-comments,Marked Animals Comments,marked_comment_1,,WHID1:BH001:6A10298:0
