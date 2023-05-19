@@ -470,12 +470,7 @@ export const validationConfigBuilder = {
   validations: [
     {
       submission_required_files_validator: {
-        required_files: [
-          'Effort & Site Conditions',
-          'Observations',
-          'Marked Animals',
-          'Incidental Observations'
-        ]
+        required_files: ['Effort & Site Conditions', 'Observations', 'Marked Animals', 'Incidental Observations']
       }
     }
   ],

@@ -1,11 +1,9 @@
-
 node_modules
+**/node_modules
 
 **/.npm
 **/.config
 **.bash_history
-
-
 
 # misc
 **/.DS_Store
@@ -18,3 +16,5 @@ yarn-error.log*
 **/utils/templates/observations/transform/output/
 
 **/dist/
+
+utils/templates/observations/**

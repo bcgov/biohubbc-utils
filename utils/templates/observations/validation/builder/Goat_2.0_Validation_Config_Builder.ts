@@ -1,5 +1,9 @@
 import * as fs from 'fs';
-import { eastingValidator, northingValidator, utmZoneValidator } from '../../../sims/helpers/validation/validation-config-helpers';
+import {
+  eastingValidator,
+  northingValidator,
+  utmZoneValidator
+} from '../../../sims/helpers/validation/validation-config-helpers';
 const basicNumericValidator = () => {
   return [
     {

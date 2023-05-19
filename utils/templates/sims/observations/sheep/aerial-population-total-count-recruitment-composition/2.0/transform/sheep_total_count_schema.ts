@@ -1,10 +1,10 @@
-import { transformSchema } from '../../../../../transform/transform';
+import { TransformSchema } from '../../../../../helpers/media/xlsx/transformation/xlsx-transform-schema-parser';
+import { transformSchema } from '../../../../../helpers/transformation/transform';
 import {
   createPathField,
   createValueField,
   getValuesByName
-} from '../../../../../transform/xlsx/xlsx-transform-json-path-queries';
-import { TransformSchema } from '../../../../../transform/xlsx/xlsx-transform-schema-parser';
+} from '../../../../../helpers/transformation/transformation-config-helpers';
 
 export const sheepTotalCountSchema: TransformSchema = {
   templateMeta: [

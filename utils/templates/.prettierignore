@@ -9,3 +9,6 @@ sonar-runner
 uploads
 
 .vscode
+
+sims/observations/**/output/*
+sims/summary/**/output/*

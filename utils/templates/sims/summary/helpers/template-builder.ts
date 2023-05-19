@@ -112,8 +112,8 @@ export class TemplateBuilder {
     const inputString = JSON.stringify(this.config.validate.inputBuilderObject);
     const outputPath = path.resolve(
       this.config.output.outputFolderPath,
-      'validate',
-      `sum_validation_${this.config.output.label}_${this.config.output.version}.json`
+      'output',
+      `s_v_${this.config.output.label}_${this.config.output.version}.json`
     );
 
     await fs.promises.writeFile(outputPath, inputString, { flag: 'w' });
@@ -159,8 +159,8 @@ export class TemplateBuilder {
 
     const outputPath = path.resolve(
       this.config.output.outputFolderPath,
-      'sql',
-      `sims_observation_upsert_sql_${this.config.output.label}_${this.config.output.version}.sql`
+      'output',
+      `s_upsert_sql_${this.config.output.label}_${this.config.output.version}.sql`
     );
 
     let sqlString = this.config.sql.inputBuilderString;

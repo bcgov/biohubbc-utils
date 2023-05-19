@@ -1,9 +1,9 @@
+import { TransformSchema } from '../../../../../helpers/media/xlsx/transformation/xlsx-transform-schema-parser';
 import {
   createPathField,
   createValueField,
   getValuesByName
-} from '../../../../../helpers/transormation/xlsx/xlsx-transform-json-path-queries';
-import { TransformSchema } from '../../../../../helpers/transormation/xlsx/xlsx-transform-schema-parser';
+} from '../../../../../helpers/transformation/transformation-config-helpers';
 
 export const transformationConfigBuilder: TransformSchema = {
   templateMeta: [

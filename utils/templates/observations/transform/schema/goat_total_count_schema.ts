@@ -1,6 +1,10 @@
-import { transformSchema } from '../transform';
-import { createPathField, createValueField, getValuesByName } from '../../../sims/helpers/transormation/xlsx/xlsx-transform-json-path-queries';
-import { TransformSchema } from '../../../sims/helpers/transormation/xlsx/xlsx-transform-schema-parser';
+import { TransformSchema } from '../../../sims/helpers/media/xlsx/transformation/xlsx-transform-schema-parser';
+import { transformSchema } from '../../../sims/helpers/transformation/transform';
+import {
+  createPathField,
+  createValueField,
+  getValuesByName
+} from '../../../sims/helpers/transformation/transformation-config-helpers';
 
 export const goatTotalCountSchema: TransformSchema = {
   templateMeta: [
