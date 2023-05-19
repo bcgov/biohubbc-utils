@@ -1,5 +1,3 @@
-import { outputValidationSchema } from '../../../helper/validation-config-helpers';
-
 // helper functions for constructing validation schema
 const basicNumericValidator = () => {
   return [
@@ -851,7 +849,7 @@ const featureTypePickListValidator = () => {
   ];
 };
 
-const mooseSRBTemplateValidationSchema = {
+export const validationConfigBuilder = {
   name: '',
   description: '',
   files: [
@@ -1274,5 +1272,3 @@ const mooseSRBTemplateValidationSchema = {
     }
   ]
 };
-
-outputValidationSchema(mooseSRBTemplateValidationSchema, 'moose_srb_validation_config_output');

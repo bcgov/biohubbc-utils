@@ -2,9 +2,9 @@ import Ajv from 'ajv';
 import fs from 'fs';
 import path from 'path';
 import xlsx from 'xlsx';
-import { XLSXTransform } from './xlsx/xlsx-transform';
-import { transformationConfigJSONSchema } from './xlsx/xlsx-transform-schema';
-import { TransformSchema } from './xlsx/xlsx-transform-schema-parser';
+import { XLSXTransform } from '../../sims/helpers/transormation/xlsx/xlsx-transform';
+import { transformationConfigJSONSchema } from '../../sims/helpers/transormation/xlsx/xlsx-transform-schema';
+import { TransformSchema } from '../../sims/helpers/transormation/xlsx/xlsx-transform-schema-parser';
 
 export const transformSchema = (templateName: string, templateSchema: TransformSchema) => {
   fs.writeFileSync(path.join(__dirname, 'output', 'schema.json'), JSON.stringify(templateSchema, null, 2));

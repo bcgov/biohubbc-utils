@@ -13,7 +13,7 @@ import {
   surveyOrTelemetryPickListValidator,
   targetPickListValidator,
   utmZoneValidator
-} from '../../../helper/validation-config-helpers';
+} from '../../../sims/helpers/validation/validation-config-helpers';
 
 const elkSpeciesValidator = () => {
   return [
