@@ -15,5 +15,5 @@ yarn-error.log*
 **/dist/
 
 # These folders are only meant to store artifacts produced during local development/testing
-**/sims/observations/**/test-run/**
-**/sims/summary/**/test-run/**
+**/src/observations/**/test-run/**
+**/src/summary/**/test-run/**
