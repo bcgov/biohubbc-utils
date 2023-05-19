@@ -1,4 +1,3 @@
-import * as fs from 'fs';
 import {
   basicNumericValidator,
   eastingValidator,
@@ -1454,18 +1453,3 @@ const sheepTemplateValidationSchema = {
     }
   ]
 };
-
-fs.writeFile(
-  './validation/schema/sheep_validation_config_output.json',
-  JSON.stringify(sheepTemplateValidationSchema),
-  (err) => {
-    // file written successfully
-
-    if (err) {
-      console.log('Oops');
-      console.log(err);
-    } else {
-      console.log('All Done!');
-    }
-  }
-);

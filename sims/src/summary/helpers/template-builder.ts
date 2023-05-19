@@ -93,9 +93,9 @@ export class TemplateBuilder {
 
       await this._buildSQLUpsert();
 
-      console.debug(`[success] - build - ${this.config.output.label} - ${this.config.output.version}`);
+      console.debug(`[build] - success - ${this.config.output.label} - ${this.config.output.version}`);
     } catch (error) {
-      console.error(`[error] - build - ${this.config.output.label} - ${this.config.output.version}`, error);
+      console.error(`[build] - error - ${this.config.output.label} - ${this.config.output.version}`, error);
     }
   }
 

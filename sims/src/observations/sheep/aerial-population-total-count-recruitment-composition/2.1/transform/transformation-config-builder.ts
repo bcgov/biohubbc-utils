@@ -281,7 +281,7 @@ export const transformationConfigBuilder: TransformSchema = {
         },
         createPathField('individualCount', 'Observations', ['BC RISC Class III Rams']),
         createValueField('sex', 'male'),
-        createValueField('lifeStage', '=>4 years old (Peace-Liard)'),
+        createValueField('lifeStage', '>=4 years old (Peace-Liard)'),
         createPathField('taxonID', 'Observations', ['Species']),
         createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
       ],

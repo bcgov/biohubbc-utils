@@ -258,7 +258,7 @@
           "columnValue": [{ "paths": ["$..[?(@._name === 'Observations')]..['BC RISC Class III Rams']"] }]
         },
         { "columnName": "sex", "columnValue": [{ "static": "male" }] },
-        { "columnName": "lifeStage", "columnValue": [{ "static": "=>4 years old (Peace-Liard)" }] },
+        { "columnName": "lifeStage", "columnValue": [{ "static": ">=4 years old (Peace-Liard)" }] },
         { "columnName": "taxonID", "columnValue": [{ "paths": ["$..[?(@._name === 'Observations')]..['Species']"] }] },
         {
           "columnName": "occurrenceRemarks",

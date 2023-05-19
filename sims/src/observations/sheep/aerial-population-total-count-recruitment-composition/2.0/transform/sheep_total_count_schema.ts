@@ -1,5 +1,4 @@
 import { TransformSchema } from '../../../../../helpers/media/xlsx/transformation/xlsx-transform-schema-parser';
-import { transformSchema } from '../../../../../helpers/transformation/transform';
 import {
   createPathField,
   createValueField,
@@ -296,7 +295,7 @@ export const sheepTotalCountSchema: TransformSchema = {
         },
         createPathField('individualCount', 'Observations', ['BC RISC Class III Rams']),
         createValueField('sex', 'male'),
-        createValueField('lifeStage', '=>4 years old (Peace-Liard)'),
+        createValueField('lifeStage', '>=4 years old (Peace-Liard)'),
         createPathField('taxonID', 'Observations', ['Species']),
         createPathField('occurrenceRemarks', 'Observations', ['Observation Comments'])
       ],
@@ -1496,5 +1495,3 @@ export const sheepTotalCountSchema: TransformSchema = {
     }
   ]
 };
-
-transformSchema('EastKootenay_Sheep_Aerial_Total_Count_2.0.xlsx', sheepTotalCountSchema);
