@@ -5,6 +5,9 @@ import { TemplateBuilder, TemplateBuilderConfig } from '../../../helpers/templat
 import { transformationConfigBuilder } from './transform/transformation-config-builder';
 import { validationConfigBuilder } from './validate/validation-config-builder';
 
+/**
+ * Builds the validation, transformation, and SQL files.
+ */
 export const build = async () => {
   const sqlBuilderString = await fs.promises.readFile(
     path.resolve(__dirname, '../../../helpers', 'sql_upsert_template.sql')
@@ -34,6 +37,12 @@ export const build = async () => {
   new TemplateBuilder(config).build();
 };
 
+/**
+ * Runs the transform engine using this transform config against the specified test file. The output of the test run
+ * is written to the `test-run` folder.
+ *
+ * @param testFileName the name of the test file to transform. Must be included in the `test-data` folder.
+ */
 export const testTransform = (testFileName: string) => {
   const transformTester = new TransformTester();
 
