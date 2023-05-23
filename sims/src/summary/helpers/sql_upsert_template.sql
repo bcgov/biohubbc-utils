@@ -10,7 +10,7 @@ DO $$
 
         _taxonomy_ids integer[] := array[___TAXON_IDS___]; -- wild taxonomic IDs from elastic search
         _taxonomy_id integer; -- used as an index in the loop, do not set
-        _validation_config varchar := $v_s${___VALIDATION_CONFIG___}$v_s$;
+        _validation_config varchar := $v_s$___VALIDATION_CONFIG___$v_s$;
 
     BEGIN
         -- Insert template record, if one does not already exist
