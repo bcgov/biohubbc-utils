@@ -1092,7 +1092,7 @@ const frequencyPickListValidator = () => {
   ];
 };
 
-const sheepTemplateValidationSchema = {
+export const sheepTemplateValidationSchema = {
   name: '',
   description: '',
   files: [

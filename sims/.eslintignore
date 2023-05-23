@@ -12,3 +12,6 @@ uploads
 
 sims/observations/**/output/*
 sims/summary/**/output/*
+
+sims/observations/**/test-run/*
+sims/summary/**/test-run/*

@@ -15,7 +15,7 @@ export const build = async () => {
 
   const config: TemplateBuilderConfig = {
     output: {
-      label: 'elk_aerial-transect-distance-sampling-survey',
+      label: 'elk-aerial-srb-recruitment-composition-survey',
       version: '2.1',
       outputFolderPath: __dirname
     },

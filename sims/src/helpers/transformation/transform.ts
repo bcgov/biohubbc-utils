@@ -16,7 +16,7 @@ export class TransformTester {
    * @memberof TransformTester
    */
   async testTransform(config: { transformConfig: TransformSchema; inputFilePath: string; outputFolderPath: string }) {
-    this.isTransformConfigValid({ transformConfig: config.transformConfig });
+    this._isTransformConfigValid({ transformConfig: config.transformConfig });
 
     fs.mkdir(config.outputFolderPath, { recursive: true }, (error) => {
       if (error) {
@@ -40,12 +40,13 @@ export class TransformTester {
     const transformGenerator = xlsxTransformDebug.startDebug();
 
     let finalTransformResult: ReturnType<typeof xlsxTransformDebug.start>;
+    // eslint-disable-next-line no-constant-condition
     for (let step = 1; true; step++) {
       const startTime = performance.now();
       const transformStep = transformGenerator.next();
       const endTime = performance.now();
 
-      console.debug(`write - ${step}.json - ${this.getTimeDiff(startTime, endTime)} ms`);
+      console.debug(`write - ${step}.json - ${this._getTimeDiff(startTime, endTime)} ms`);
 
       await fs.promises.writeFile(
         // Write transform output for each step in the transform process
@@ -71,7 +72,7 @@ export class TransformTester {
         xlsx.utils.book_append_sheet(dwcWorkbook, worksheet, key);
 
         const buffer = xlsx.write(newWorkbook, { type: 'buffer', bookType: 'csv' });
-        await fs.promises.writeFile(path.join(config.outputFolderPath, `${key}.json`), buffer, { flag: 'w' });
+        await fs.promises.writeFile(path.join(config.outputFolderPath, `${key}.csv`), buffer, { flag: 'w' });
       })
     );
 
@@ -89,7 +90,7 @@ export class TransformTester {
    * @param {{ transformConfig: TransformSchema }} config
    * @memberof TransformTester
    */
-  isTransformConfigValid(config: { transformConfig: TransformSchema }) {
+  _isTransformConfigValid(config: { transformConfig: TransformSchema }) {
     const ajv = new Ajv();
     ajv.validate(transformationConfigJSONSchema, config.transformConfig);
     if (ajv.errors) {
@@ -97,13 +98,13 @@ export class TransformTester {
     }
   }
 
-  getTimeDiff(startTime: number, endTime: number) {
+  _getTimeDiff(startTime: number, endTime: number) {
     const timeDiff = endTime - startTime;
     return Math.round(timeDiff);
   }
 }
 
-export class XLSXTransformDebug extends XLSXTransform {
+class XLSXTransformDebug extends XLSXTransform {
   /**
    * A modified version of the original `start` function from `XLSXTransform` that yields each stage of the transform,
    * for debug purposes.
