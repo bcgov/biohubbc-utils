@@ -22,12 +22,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "very high",
@@ -50,8 +44,8 @@
                     "description": "very low"
                   },
                   {
-                    "name": "describe in comments",
-                    "description": "describe in comments"
+                    "name": "Described in Comment",
+                    "description": "Described in Comment"
                   }
                 ]
               }
@@ -73,12 +67,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "Y",
@@ -227,12 +215,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "very high",
@@ -255,8 +237,8 @@
                     "description": "very low"
                   },
                   {
-                    "name": "describe in comments",
-                    "description": "describe in comments"
+                    "name": "Described in Comment",
+                    "description": "Described in Comment"
                   }
                 ]
               }
@@ -659,12 +641,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "New",
@@ -1213,7 +1189,7 @@
                     "description": "Urinating"
                   },
                   {
-                    "name": "Activity described in comments",
+                    "name": "Described in comments",
                     "description": "Described in comments"
                   }
                 ]
@@ -1471,12 +1447,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "Present",
@@ -1675,7 +1645,7 @@
                     "description": "Urinating"
                   },
                   {
-                    "name": "Activity described in comments",
+                    "name": "Described in comments",
                     "description": "Described in comments"
                   }
                 ]

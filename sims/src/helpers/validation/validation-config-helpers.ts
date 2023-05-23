@@ -597,7 +597,7 @@ export const activityNonTargetedPickListValidator = () => {
             description: 'Urinating'
           },
           {
-            name: 'Activity described in comments',
+            name: 'Described in comments',
             description: 'Described in comments'
           }
         ]
@@ -1064,22 +1064,34 @@ export const presentAbsentPickListValidator = () => {
   ];
 };
 
-export const lightPickListValidator = () => {
+export const stratumPickListValidator = () => {
   return [
     {
       column_code_validator: {
         allowed_code_values: [
           {
-            name: 'Bright',
-            description: 'Bright'
+            name: 'very high',
+            description: 'very high'
           },
           {
-            name: 'Light',
-            description: 'Light'
+            name: 'high',
+            description: 'high'
           },
           {
-            name: 'Shady',
-            description: 'Shady'
+            name: 'medium',
+            description: 'medium'
+          },
+          {
+            name: 'low',
+            description: 'low'
+          },
+          {
+            name: 'very low',
+            description: 'very low'
+          },
+          {
+            name: 'Described in Comment',
+            description: 'Described in Comment'
           }
         ]
       }
@@ -1087,191 +1099,39 @@ export const lightPickListValidator = () => {
   ];
 };
 
-export const activityNonTargettedPickListValidator = () => {
+export const sampledPickListValidator = () => {
   return [
     {
       column_code_validator: {
         allowed_code_values: [
           {
-            name: 'Alert',
-            description: 'Alert'
+            name: 'Y',
+            description: 'Y'
           },
           {
-            name: 'Avoiding Pests',
-            description: 'Avoiding Pests'
-          },
-          {
-            name: 'Basking',
-            description: 'Basking'
-          },
-          {
-            name: 'Bedding',
-            description: 'Bedding'
-          },
-          {
-            name: 'Building',
-            description: 'Building'
-          },
-          {
-            name: 'Cashing',
-            description: 'Cashing'
-          },
-          {
-            name: 'Casting',
-            description: 'Casting'
-          },
-          {
-            name: 'Courting',
-            description: 'Courting'
-          },
-          {
-            name: 'Denning',
-            description: 'Denning'
-          },
-          {
-            name: 'Disturbed',
-            description: 'Disturbed'
-          },
-          {
-            name: 'Drinking',
-            description: 'Drinking'
-          },
-          {
-            name: 'Excreting',
-            description: 'Excreting'
-          },
-          {
-            name: 'Feeding',
-            description: 'Feeding'
-          },
-          {
-            name: 'Fleeing',
-            description: 'Fleeing'
-          },
-          {
-            name: 'Feeding salmonid',
-            description: 'Feeding salmonid'
-          },
-          {
-            name: 'Grooming',
-            description: 'Grooming'
-          },
-          {
-            name: 'Habitat',
-            description: 'Habitat'
-          },
-          {
-            name: 'Hibernating',
-            description: 'Hibernating'
-          },
-          {
-            name: 'Hunting',
-            description: 'Building'
-          },
-          {
-            name: 'Ingesting Minerals',
-            description: 'Ingesting Minerals'
-          },
-          {
-            name: 'Incubating',
-            description: 'Incubating'
-          },
-          {
-            name: 'Living',
-            description: 'Living'
-          },
-          {
-            name: 'Migrating Daily',
-            description: 'Migrating Daily'
-          },
-          {
-            name: 'Migrating Seasonally',
-            description: 'Migrating Seasonally'
-          },
-          {
-            name: 'Reproducing birthing',
-            description: 'Reproducing birthing'
-          },
-          {
-            name: 'Reproducing eggs',
-            description: 'Reproducing eggs'
-          },
-          {
-            name: 'Rearing',
-            description: 'Rearing'
-          },
-          {
-            name: 'Standing',
-            description: 'Standing'
-          },
-          {
-            name: 'Security and/or Thermal',
-            description: 'Security and/or Thermal'
-          },
-          {
-            name: 'Thermal',
-            description: 'Thermal'
-          },
-          {
-            name: 'Territoriality',
-            description: 'Territoriality'
-          },
-          {
-            name: 'Not Traveling',
-            description: 'Not Traveling'
-          },
-          {
-            name: 'Traveling, Flying',
-            description: 'Traveling flying'
-          },
-          {
-            name: 'Traveling, Unclassified',
-            description: 'Traveling, Unclassified'
-          },
-          {
-            name: 'Traveling, Walking',
-            description: 'Traveling, Walking'
-          },
-          {
-            name: 'Traveling on a Path',
-            description: 'Traveling on a Path'
-          },
-          {
-            name: 'Traveling, Running',
-            description: 'Traveling running'
-          },
-          {
-            name: 'Traveling, Swimming',
-            description: 'Traveling, Swimming'
-          },
-          {
-            name: 'Traveling, Heli-Skiing',
-            description: 'Traveling, Heli-Skiing'
-          },
-          {
-            name: 'Traveling, Skiing',
-            description: 'Traveling, Skiing'
-          },
-          {
-            name: 'Traveling, Snowmobiling',
-            description: 'Traveling, Snowmobiling'
-          },
-          {
-            name: 'Traveling, Snowshoeing',
-            description: 'Traveling, Snowshoeing'
-          },
-          {
-            name: 'Traveling, Snow Cat',
-            description: 'Traveling, Snow Cat'
-          },
-          {
-            name: 'Urinating',
-            description: 'Urinating'
-          },
-          {
-            name: 'Described in comments',
-            description: 'Described in comments'
+            name: 'N',
+            description: 'N'
           }
+        ]
+      }
+    }
+  ];
+};
+
+export const signAgePickListValidator = () => {
+  return [
+    {
+      column_code_validator: {
+        allowed_code_values: [
+          { name: 'New', description: 'New' },
+          { name: 'Old', description: 'Old' },
+          { name: 'Hour', description: 'Hour' },
+          { name: 'Day', description: 'Day' },
+          { name: 'Week', description: 'Week' },
+          { name: 'Month', description: 'Month' },
+          { name: 'Year', description: 'Year' },
+          { name: 'Unclassified', description: 'Unclassified' },
+          { name: 'Described in Comments', description: 'Described in Comments' }
         ]
       }
     }

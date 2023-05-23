@@ -8,7 +8,11 @@ import {
   frequencyPickListValidator,
   habitatPickListValidator,
   northingValidator,
+  presentAbsentPickListValidator,
+  sampledPickListValidator,
+  signAgePickListValidator,
   signTypePickListValidator,
+  stratumPickListValidator,
   surveyOrTelemetryPickListValidator,
   targetPickListValidator,
   utmZoneValidator
@@ -18,12 +22,6 @@ const elkSpeciesValidator = () => {
   return [
     {
       column_code_validator: {
-        name: {
-          type: 'string'
-        },
-        description: {
-          type: 'string'
-        },
         allowed_code_values: [
           {
             name: 'M-CEEL',
@@ -33,123 +31,6 @@ const elkSpeciesValidator = () => {
             name: 'M-CEEL-RO',
             description: 'M-CEEL-RO'
           }
-        ]
-      }
-    }
-  ];
-};
-
-const stratumPickListValidator = () => {
-  return [
-    {
-      column_code_validator: {
-        name: {
-          type: 'string'
-        },
-        description: {
-          type: 'string'
-        },
-        allowed_code_values: [
-          {
-            name: 'very high',
-            description: 'very high'
-          },
-          {
-            name: 'high',
-            description: 'high'
-          },
-          {
-            name: 'medium',
-            description: 'medium'
-          },
-          {
-            name: 'low',
-            description: 'low'
-          },
-          {
-            name: 'very low',
-            description: 'very low'
-          },
-          {
-            name: 'describe in comments',
-            description: 'describe in comments'
-          }
-        ]
-      }
-    }
-  ];
-};
-
-const sampledPickListValidator = () => {
-  return [
-    {
-      column_code_validator: {
-        name: {
-          type: 'string'
-        },
-        description: {
-          type: 'string'
-        },
-        allowed_code_values: [
-          {
-            name: 'Y',
-            description: 'Y'
-          },
-          {
-            name: 'N',
-            description: 'N'
-          }
-        ]
-      }
-    }
-  ];
-};
-
-const speciesOccurrenceStatusPickListValidator = () => {
-  return [
-    {
-      column_code_validator: {
-        name: {
-          type: 'string'
-        },
-        description: {
-          type: 'string'
-        },
-        allowed_code_values: [
-          {
-            name: 'Present',
-            description: 'Present'
-          },
-          {
-            name: 'Absent',
-            description: 'Absent'
-          }
-        ]
-      }
-    }
-  ];
-};
-
-const signAgePickListValidator = () => {
-  return [
-    {
-      column_code_validator: {
-        name: {
-          type: 'string'
-        },
-        description: {
-          type: 'string'
-        },
-        allowed_code_values: [
-          { name: 'New', description: 'New' },
-          { name: 'Old', description: 'Old' },
-          { name: 'Hour', description: 'Hour' },
-          { name: 'Day', description: 'Day' },
-          { name: 'Week', description: 'Week' },
-          { name: 'Month', description: 'Month' },
-          { name: 'Year', description: 'Year' },
-          { name: 'Unclassified', description: 'Unclassified' },
-          { name: 'Described in Comments', description: 'Described in Comments' }
         ]
       }
     }
@@ -450,7 +331,7 @@ export const validationConfigBuilder = {
         {
           name: 'SpeciesOccurrence Status',
           description: '',
-          validations: speciesOccurrenceStatusPickListValidator()
+          validations: presentAbsentPickListValidator()
         },
         {
           name: 'Activity',

@@ -1,5 +1,5 @@
 import {
-  activityNonTargettedPickListValidator,
+  activityNonTargetedPickListValidator,
   ageOfSignPickListValidator,
   aircraftPickListValidator,
   basicNumericValidator,
@@ -442,7 +442,7 @@ export const validationConfigBuilder = {
         },
         {
           name: 'Activity',
-          validations: activityNonTargettedPickListValidator()
+          validations: activityNonTargetedPickListValidator()
         },
         {
           name: 'Activity Count',

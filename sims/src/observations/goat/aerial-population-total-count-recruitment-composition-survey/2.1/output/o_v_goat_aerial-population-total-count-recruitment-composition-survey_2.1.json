@@ -63,10 +63,7 @@
           "description": "",
           "validations": [
             {
-              "column_numeric_validator": {
-                "name": "",
-                "description": ""
-              }
+              "column_numeric_validator": {}
             }
           ]
         },
@@ -76,12 +73,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "Bell JetRanger",
@@ -267,12 +258,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "NAD83",
@@ -296,10 +281,7 @@
           "description": "",
           "validations": [
             {
-              "column_numeric_validator": {
-                "name": "",
-                "description": ""
-              }
+              "column_numeric_validator": {}
             }
           ]
         },
@@ -308,10 +290,7 @@
           "description": "",
           "validations": [
             {
-              "column_numeric_validator": {
-                "name": "",
-                "description": ""
-              }
+              "column_numeric_validator": {}
             }
           ]
         },
@@ -321,12 +300,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "M-ORAM",
@@ -345,10 +318,7 @@
           "description": "",
           "validations": [
             {
-              "column_numeric_validator": {
-                "name": "",
-                "description": ""
-              }
+              "column_numeric_validator": {}
             }
           ]
         },
@@ -357,10 +327,7 @@
           "description": "",
           "validations": [
             {
-              "column_numeric_validator": {
-                "name": "",
-                "description": ""
-              }
+              "column_numeric_validator": {}
             }
           ]
         },
@@ -369,10 +336,7 @@
           "description": "",
           "validations": [
             {
-              "column_numeric_validator": {
-                "name": "",
-                "description": ""
-              }
+              "column_numeric_validator": {}
             }
           ]
         },
@@ -381,10 +345,7 @@
           "description": "",
           "validations": [
             {
-              "column_numeric_validator": {
-                "name": "",
-                "description": ""
-              }
+              "column_numeric_validator": {}
             }
           ]
         },
@@ -393,10 +354,7 @@
           "description": "",
           "validations": [
             {
-              "column_numeric_validator": {
-                "name": "",
-                "description": ""
-              }
+              "column_numeric_validator": {}
             }
           ]
         },
@@ -405,10 +363,7 @@
           "description": "",
           "validations": [
             {
-              "column_numeric_validator": {
-                "name": "",
-                "description": ""
-              }
+              "column_numeric_validator": {}
             }
           ]
         },
@@ -417,10 +372,7 @@
           "description": "",
           "validations": [
             {
-              "column_numeric_validator": {
-                "name": "",
-                "description": ""
-              }
+              "column_numeric_validator": {}
             }
           ]
         },
@@ -429,10 +381,7 @@
           "description": "",
           "validations": [
             {
-              "column_numeric_validator": {
-                "name": "",
-                "description": ""
-              }
+              "column_numeric_validator": {}
             }
           ]
         },
@@ -441,10 +390,7 @@
           "description": "",
           "validations": [
             {
-              "column_numeric_validator": {
-                "name": "",
-                "description": ""
-              }
+              "column_numeric_validator": {}
             }
           ]
         },
@@ -453,10 +399,7 @@
           "description": "",
           "validations": [
             {
-              "column_numeric_validator": {
-                "name": "",
-                "description": ""
-              }
+              "column_numeric_validator": {}
             }
           ]
         },
@@ -465,10 +408,7 @@
           "description": "",
           "validations": [
             {
-              "column_numeric_validator": {
-                "name": "",
-                "description": ""
-              }
+              "column_numeric_validator": {}
             }
           ]
         },
@@ -478,12 +418,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "Survey",
@@ -504,12 +438,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "Antler",
@@ -594,12 +522,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "New",
@@ -648,12 +570,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "Standing",
@@ -690,12 +606,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "Alpine",
@@ -1000,12 +910,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "Y",
@@ -1056,12 +960,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "Targeted",
@@ -1082,12 +980,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "KHz",
@@ -1196,12 +1088,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "NAD83",
@@ -1225,10 +1111,7 @@
           "description": "",
           "validations": [
             {
-              "column_numeric_validator": {
-                "name": "",
-                "description": ""
-              }
+              "column_numeric_validator": {}
             }
           ]
         },
@@ -1237,10 +1120,7 @@
           "description": "",
           "validations": [
             {
-              "column_numeric_validator": {
-                "name": "",
-                "description": ""
-              }
+              "column_numeric_validator": {}
             }
           ]
         },
@@ -1249,10 +1129,7 @@
           "description": "",
           "validations": [
             {
-              "column_numeric_validator": {
-                "name": "",
-                "description": ""
-              }
+              "column_numeric_validator": {}
             }
           ]
         },
@@ -1261,10 +1138,7 @@
           "description": "",
           "validations": [
             {
-              "column_numeric_validator": {
-                "name": "",
-                "description": ""
-              }
+              "column_numeric_validator": {}
             }
           ]
         },
@@ -1273,10 +1147,7 @@
           "description": "",
           "validations": [
             {
-              "column_numeric_validator": {
-                "name": "",
-                "description": ""
-              }
+              "column_numeric_validator": {}
             }
           ]
         },
@@ -1285,10 +1156,7 @@
           "description": "",
           "validations": [
             {
-              "column_numeric_validator": {
-                "name": "",
-                "description": ""
-              }
+              "column_numeric_validator": {}
             }
           ]
         },
@@ -1297,10 +1165,7 @@
           "description": "",
           "validations": [
             {
-              "column_numeric_validator": {
-                "name": "",
-                "description": ""
-              }
+              "column_numeric_validator": {}
             }
           ]
         },
@@ -1309,10 +1174,7 @@
           "description": "",
           "validations": [
             {
-              "column_numeric_validator": {
-                "name": "",
-                "description": ""
-              }
+              "column_numeric_validator": {}
             }
           ]
         },
@@ -1321,10 +1183,7 @@
           "description": "",
           "validations": [
             {
-              "column_numeric_validator": {
-                "name": "",
-                "description": ""
-              }
+              "column_numeric_validator": {}
             }
           ]
         },
@@ -1334,12 +1193,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "Present",
@@ -1360,12 +1213,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "Alert",
@@ -1557,10 +1404,7 @@
           "description": "",
           "validations": [
             {
-              "column_numeric_validator": {
-                "name": "",
-                "description": ""
-              }
+              "column_numeric_validator": {}
             }
           ]
         },
@@ -1570,12 +1414,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "Breeding Site",
@@ -1687,10 +1525,7 @@
           "description": "",
           "validations": [
             {
-              "column_numeric_validator": {
-                "name": "",
-                "description": ""
-              }
+              "column_numeric_validator": {}
             }
           ]
         },
@@ -1700,12 +1535,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "Antler",
@@ -1789,10 +1618,7 @@
           "description": "",
           "validations": [
             {
-              "column_numeric_validator": {
-                "name": "",
-                "description": ""
-              }
+              "column_numeric_validator": {}
             }
           ]
         }

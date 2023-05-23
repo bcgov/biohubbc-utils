@@ -69,12 +69,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "Bell JetRanger",
@@ -274,12 +268,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "NAD83",
@@ -322,12 +310,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "M-ALAM",
@@ -527,12 +509,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "Antler",
@@ -626,12 +602,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "New",
@@ -698,12 +668,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "Standing",
@@ -749,12 +713,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "Survey",
@@ -805,12 +763,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "Targeted",
@@ -831,12 +783,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "KHz",
@@ -945,12 +891,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "NAD83",
@@ -1056,12 +996,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "Present",
@@ -1082,12 +1016,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "Alert",
@@ -1289,12 +1217,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "Breeding Site",
@@ -1416,12 +1338,6 @@
           "validations": [
             {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "Antler",
