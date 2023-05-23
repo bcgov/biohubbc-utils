@@ -1,109 +1,65 @@
 {
-  "name": "",
-  "description": "",
   "files": [
     {
-      "name": "Block Summary",
-      "description": "",
+      "name": "Effort & Site Conditions",
       "validations": [
         {
           "file_duplicate_columns_validator": {}
         },
         {
           "file_required_columns_validator": {
-            "required_columns": ["Study Area", "Block ID/SU ID", "Stratum", "Sampled (Y/N)"]
+            "required_columns": [
+              "Study Area",
+              "Population Unit",
+              "Block ID/SU ID",
+              "Block/Population Unit Area (km2)",
+              "Date",
+              "Start Time 1 (24hrs)",
+              "End Time 1 (24hrs)",
+              "Start Time 2 (24hrs)",
+              "End Time 2 (24hrs)",
+              "Start Time 3 (24hrs)",
+              "End Time 3 (24hrs)",
+              "Total Block Time",
+              "Total Time (hours)",
+              "Total Time (mins)",
+              "Time (mins)/block area (km2)",
+              "Aircraft Company",
+              "Aircraft Type",
+              "Pilot",
+              "Navigator",
+              "Rear Left Observer",
+              "Rear Right Observer",
+              "Air Temperature (C)",
+              "Visibility",
+              "Cloud Cover (%)",
+              "Wind Speed",
+              "Precipitation",
+              "Light",
+              "Snow Cover",
+              "Snow Depth",
+              "Days Since Snowfall",
+              "Weather Description",
+              "Habitat Description",
+              "Effort & Site Comments"
+            ]
+          }
+        },
+        {
+          "file_column_unique_validator": {
+            "column_names": [
+              "Study Area",
+              "Population Unit",
+              "Block ID/SU ID",
+              "Date",
+              "Start Time 1 (24hrs)"
+            ]
           }
         }
       ],
       "columns": [
         {
-          "name": "Stratum",
-          "description": "",
-          "validations": [
-            {
-              "column_code_validator": {
-                "allowed_code_values": [
-                  {
-                    "name": "very high",
-                    "description": "very high"
-                  },
-                  {
-                    "name": "high",
-                    "description": "high"
-                  },
-                  {
-                    "name": "medium",
-                    "description": "medium"
-                  },
-                  {
-                    "name": "low",
-                    "description": "low"
-                  },
-                  {
-                    "name": "very low",
-                    "description": "very low"
-                  },
-                  {
-                    "name": "Described in Comment",
-                    "description": "Described in Comment"
-                  }
-                ]
-              }
-            }
-          ]
-        },
-        {
-          "name": "Stratum/Block Area (km2)",
-          "description": "",
-          "validations": [
-            {
-              "column_numeric_validator": {}
-            }
-          ]
-        },
-        {
-          "name": "Sampled (Y/N)",
-          "description": "",
-          "validations": [
-            {
-              "column_code_validator": {
-                "allowed_code_values": [
-                  {
-                    "name": "Y",
-                    "description": "Y"
-                  },
-                  {
-                    "name": "N",
-                    "description": "N"
-                  }
-                ]
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Effort & Site Conditions",
-      "description": "",
-      "validations": [
-        {
-          "file_duplicate_columns_validator": {}
-        }
-      ],
-      "columns": [
-        {
-          "name": "Block Area (km2)",
-          "description": "",
-          "validations": [
-            {
-              "column_numeric_validator": {}
-            }
-          ]
-        },
-        {
           "name": "Aircraft Type",
-          "description": "",
           "validations": [
             {
               "column_code_validator": {
@@ -185,7 +141,6 @@
     },
     {
       "name": "Observations",
-      "description": "",
       "validations": [
         {
           "file_duplicate_columns_validator": {}
@@ -194,60 +149,83 @@
           "file_required_columns_validator": {
             "required_columns": [
               "Study Area",
+              "Population Unit",
               "Block ID/SU ID",
-              "Stratum",
               "UTM Zone",
               "Easting",
               "Northing",
+              "Datum",
               "Lat (DD)",
               "Long (DD)",
               "Species",
               "Group Label",
-              "Date"
+              "Date",
+              "Time",
+              "BC RISC Yearling Bulls",
+              "BC RISC Class I Bulls",
+              "BC RISC Class II Bulls",
+              "BC RISC Class III Bulls",
+              "BC RISC Class IV Bulls",
+              "Spike Bulls",
+              "Raghorn Bulls",
+              "<=3 Point Bulls",
+              "3 - 4 Point Bulls",
+              "3 - 5 Point Bulls",
+              "<4 Point Bulls",
+              ">=4 Point Bulls",
+              "5 Point Bulls",
+              ">=5 Point Bulls",
+              ">= 6 Point Bulls",
+              "Adult Bulls - Unclassified",
+              "Unclassified Bulls",
+              "Cows",
+              "Calves",
+              "Adult Unclassified Sex",
+              "Yearling - Unclassified Sex",
+              "Unclassified Age/Sex",
+              "Total Count",
+              "Sign Type",
+              "Sign Count",
+              "Age of Sign",
+              "Topography",
+              "Habitat",
+              "Veg Cover (%)",
+              "Snow Cover (%)",
+              "Activity",
+              "Number of Marked Animals Observed",
+              "Survey or Telemetry Search",
+              "Photos",
+              "Observation Comments"
+            ]
+          }
+        },
+        {
+          "file_column_unique_validator": {
+            "column_names": [
+              "Group Label"
             ]
           }
         }
       ],
       "columns": [
         {
-          "name": "Stratum",
-          "description": "",
+          "name": "Study Area",
           "validations": [
             {
-              "column_code_validator": {
-                "allowed_code_values": [
-                  {
-                    "name": "very high",
-                    "description": "very high"
-                  },
-                  {
-                    "name": "high",
-                    "description": "high"
-                  },
-                  {
-                    "name": "medium",
-                    "description": "medium"
-                  },
-                  {
-                    "name": "low",
-                    "description": "low"
-                  },
-                  {
-                    "name": "very low",
-                    "description": "very low"
-                  },
-                  {
-                    "name": "Described in Comment",
-                    "description": "Described in Comment"
-                  }
-                ]
-              }
+              "column_required_validator": {}
+            }
+          ]
+        },
+        {
+          "name": "Date",
+          "validations": [
+            {
+              "column_required_validator": {}
             }
           ]
         },
         {
           "name": "UTM Zone",
-          "description": "",
           "validations": [
             {
               "column_format_validator": {
@@ -260,25 +238,30 @@
         },
         {
           "name": "Easting",
-          "description": "",
           "validations": [
             {
-              "column_numeric_validator": {}
+              "column_format_validator": {
+                "reg_exp": "^[1-9][0-9][0-9][0-9][0-9][0-9](?:\\.\\d+)?$",
+                "reg_exp_flags": "g",
+                "expected_format": "Easting needs to be a 6 digit number."
+              }
             }
           ]
         },
         {
           "name": "Northing",
-          "description": "",
           "validations": [
             {
-              "column_numeric_validator": {}
+              "column_format_validator": {
+                "reg_exp": "^[1-9][0-9][0-9][0-9][0-9][0-9][0-9](?:\\.\\d+)?$",
+                "reg_exp_flags": "g",
+                "expected_format": "Northing needs to be a 7 digit number."
+              }
             }
           ]
         },
         {
           "name": "Datum",
-          "description": "",
           "validations": [
             {
               "column_code_validator": {
@@ -302,7 +285,6 @@
         },
         {
           "name": "Lat (DD)",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -311,7 +293,6 @@
         },
         {
           "name": "Long (DD)",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -320,16 +301,12 @@
         },
         {
           "name": "Species",
-          "description": "",
           "validations": [
             {
+              "column_required_validator": {}
+            },
+            {
               "column_code_validator": {
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
                 "allowed_code_values": [
                   {
                     "name": "M-CEEL",
@@ -345,8 +322,7 @@
           ]
         },
         {
-          "name": "BC RISC Yearlings Bulls",
-          "description": "",
+          "name": "BC RISC Yearling Bulls",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -355,7 +331,6 @@
         },
         {
           "name": "BC RISC Class I Bulls",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -364,7 +339,6 @@
         },
         {
           "name": "BC RISC Class II Bulls",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -373,7 +347,6 @@
         },
         {
           "name": "BC RISC Class III Bulls",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -382,7 +355,6 @@
         },
         {
           "name": "BC RISC Class IV Bulls",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -391,7 +363,6 @@
         },
         {
           "name": "Spike Bulls",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -400,7 +371,6 @@
         },
         {
           "name": "Raghorn Bulls",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -409,7 +379,6 @@
         },
         {
           "name": "<=3 Point Bulls",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -418,7 +387,6 @@
         },
         {
           "name": "3 - 4 Point Bulls",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -427,7 +395,6 @@
         },
         {
           "name": "3 - 5 Point Bulls",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -436,7 +403,6 @@
         },
         {
           "name": "<4 Point Bulls",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -445,7 +411,6 @@
         },
         {
           "name": ">=4 Point Bulls",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -454,7 +419,6 @@
         },
         {
           "name": "5 Point Bulls",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -463,7 +427,6 @@
         },
         {
           "name": ">=5 Point Bulls",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -472,7 +435,6 @@
         },
         {
           "name": ">= 6 Point Bulls",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -481,7 +443,6 @@
         },
         {
           "name": "Adult Bulls - Unclassified",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -490,7 +451,6 @@
         },
         {
           "name": "Unclassified Bulls",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -499,7 +459,6 @@
         },
         {
           "name": "Cows",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -508,7 +467,6 @@
         },
         {
           "name": "Calves",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -517,7 +475,6 @@
         },
         {
           "name": "Adult Unclassified Sex",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -526,7 +483,6 @@
         },
         {
           "name": "Yearling - Unclassified Sex",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -535,7 +491,6 @@
         },
         {
           "name": "Unclassified Age/Sex",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -544,7 +499,6 @@
         },
         {
           "name": "Sign Type",
-          "description": "",
           "validations": [
             {
               "column_code_validator": {
@@ -628,7 +582,6 @@
         },
         {
           "name": "Sign Count",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -636,8 +589,7 @@
           ]
         },
         {
-          "name": "Sign Age",
-          "description": "",
+          "name": "Age of Sign",
           "validations": [
             {
               "column_code_validator": {
@@ -684,312 +636,7 @@
           ]
         },
         {
-          "name": "Habitat",
-          "description": "",
-          "validations": [
-            {
-              "column_code_validator": {
-                "allowed_code_values": [
-                  {
-                    "name": "Alpine",
-                    "description": "Alpine"
-                  },
-                  {
-                    "name": "Alpine Barren",
-                    "description": "Alpine Barren"
-                  },
-                  {
-                    "name": "Alpine Heath Meadows",
-                    "description": "Alpine Heath Meadows"
-                  },
-                  {
-                    "name": "Avalanche Path",
-                    "description": "Avalanche Path"
-                  },
-                  {
-                    "name": "Avalanche path, herbaceous",
-                    "description": "Avalanche path, herbaceous"
-                  },
-                  {
-                    "name": "Avalanche path, shrubby",
-                    "description": "Avalanche path, shrubby"
-                  },
-                  {
-                    "name": "Burn",
-                    "description": "Burn"
-                  },
-                  {
-                    "name": "Bush or Scrub land",
-                    "description": "Bush or Scrub land"
-                  },
-                  {
-                    "name": "Caves",
-                    "description": "Caves"
-                  },
-                  {
-                    "name": "Cutblock",
-                    "description": "Cutblock"
-                  },
-                  {
-                    "name": "Cutblock, herbaceous",
-                    "description": "Cutblock, herbaceous"
-                  },
-                  {
-                    "name": "Cutblock, shrubby",
-                    "description": "Cutblock, shrubby"
-                  },
-                  {
-                    "name": "Cutblock, unvegetated",
-                    "description": "Cutblock, unvegetated"
-                  },
-                  {
-                    "name": "Cutblock - free to grow",
-                    "description": "Cutblock - free to grow"
-                  },
-                  {
-                    "name": "Cutblock - mature",
-                    "description": "Cutblock - mature"
-                  },
-                  {
-                    "name": "Cutblock - not sufficiently restored",
-                    "description": "Cutblock - not sufficiently restored"
-                  },
-                  {
-                    "name": "Agricultural",
-                    "description": "Agricultural"
-                  },
-                  {
-                    "name": "Cultivated field",
-                    "description": "Cultivated field"
-                  },
-                  {
-                    "name": "Cultivated or Agricultural",
-                    "description": "Cultivated or Agricultural"
-                  },
-                  {
-                    "name": "Cultivated orchard",
-                    "description": "Cultivated orchard"
-                  },
-                  {
-                    "name": "Cultivated vineyard",
-                    "description": "Cultivated vineyard"
-                  },
-                  {
-                    "name": "Cutbank",
-                    "description": "Cutbank"
-                  },
-                  {
-                    "name": "Cliff",
-                    "description": "Cliff"
-                  },
-                  {
-                    "name": "Cliff, broken",
-                    "description": "Cliff, broken"
-                  },
-                  {
-                    "name": "Cliff, dissected",
-                    "description": "Cliff, dissected"
-                  },
-                  {
-                    "name": "Cliff, in forest",
-                    "description": "Cliff, in forest"
-                  },
-                  {
-                    "name": "Cliff, open",
-                    "description": "Cliff, open"
-                  },
-                  {
-                    "name": "Electrical transmission line",
-                    "description": "Electrical transmission line"
-                  },
-                  {
-                    "name": "Estuary",
-                    "description": "Estuary"
-                  },
-                  {
-                    "name": "Flat or Open Slopes",
-                    "description": "Flat or Open Slopes"
-                  },
-                  {
-                    "name": "Forest",
-                    "description": "Forest"
-                  },
-                  {
-                    "name": "Forest, coniferous",
-                    "description": "Forest, coniferous"
-                  },
-                  {
-                    "name": "Forest, deciduous",
-                    "description": "Forest, deciduous"
-                  },
-                  {
-                    "name": "Forest, commercially thinned",
-                    "description": "Forest, commercially thinned"
-                  },
-                  {
-                    "name": "Forest, mature",
-                    "description": "Forest, mature"
-                  },
-                  {
-                    "name": "Forest, mixed",
-                    "description": "Forest, mixed"
-                  },
-                  {
-                    "name": "Forest, old",
-                    "description": "Forest, old"
-                  },
-                  {
-                    "name": "Forest, young",
-                    "description": "Forest, young"
-                  },
-                  {
-                    "name": "Forest, riparian",
-                    "description": "Forest, riparian"
-                  },
-                  {
-                    "name": "Glacier",
-                    "description": "Glacier"
-                  },
-                  {
-                    "name": "Golf course",
-                    "description": "Golf course"
-                  },
-                  {
-                    "name": "Grassland",
-                    "description": "Grassland"
-                  },
-                  {
-                    "name": "Gravel bar",
-                    "description": "Gravel bar"
-                  },
-                  {
-                    "name": "Gravel pit",
-                    "description": "Gravel pit"
-                  },
-                  {
-                    "name": "Krummholtz",
-                    "description": "Krummholtz"
-                  },
-                  {
-                    "name": "Lake",
-                    "description": "Lake"
-                  },
-                  {
-                    "name": "Low-elevation",
-                    "description": "Low-elevation"
-                  },
-                  {
-                    "name": "Mid-elevation",
-                    "description": "Mid-elevation"
-                  },
-                  {
-                    "name": "Moraine",
-                    "description": "Moraine"
-                  },
-                  {
-                    "name": "Parkland",
-                    "description": "Parkland"
-                  },
-                  {
-                    "name": "Pasture",
-                    "description": "Pasture"
-                  },
-                  {
-                    "name": "Pipeline right-of-way",
-                    "description": "Pipeline right-of-way"
-                  },
-                  {
-                    "name": "Railway surface",
-                    "description": "Railway surface"
-                  },
-                  {
-                    "name": "Reservoir",
-                    "description": "Reservoir"
-                  },
-                  {
-                    "name": "Ridge",
-                    "description": "Ridge"
-                  },
-                  {
-                    "name": "Riparian",
-                    "description": "Riparian"
-                  },
-                  {
-                    "name": "River",
-                    "description": "River"
-                  },
-                  {
-                    "name": "Rock/Talus",
-                    "description": "Rock/Talus"
-                  },
-                  {
-                    "name": "Rubble",
-                    "description": "Rubble"
-                  },
-                  {
-                    "name": "Rock outcrop",
-                    "description": "Rock outcrop"
-                  },
-                  {
-                    "name": "Scree",
-                    "description": "Scree"
-                  },
-                  {
-                    "name": "Shrub",
-                    "description": "Shrub"
-                  },
-                  {
-                    "name": "Shore",
-                    "description": "Shore"
-                  },
-                  {
-                    "name": "Snow",
-                    "description": "Snow"
-                  },
-                  {
-                    "name": "Sub-Alpine",
-                    "description": "Sub-Alpine"
-                  },
-                  {
-                    "name": "Talus/Slope",
-                    "description": "Talus/Slope"
-                  },
-                  {
-                    "name": "Terraces",
-                    "description": "Terraces"
-                  },
-                  {
-                    "name": "Timber",
-                    "description": "Timber"
-                  },
-                  {
-                    "name": "Transportation or Transmission Corridor",
-                    "description": "Transportation or Transmission Corridor"
-                  },
-                  {
-                    "name": "Urban or Residential",
-                    "description": "Urban or Residential"
-                  },
-                  {
-                    "name": "Wetland/Meadow",
-                    "description": "Wetland/Meadow"
-                  },
-                  {
-                    "name": "Willow/Shrub",
-                    "description": "Willow/Shrub"
-                  },
-                  {
-                    "name": "Described in Comments",
-                    "description": "Described in Comments"
-                  }
-                ]
-              }
-            }
-          ]
-        },
-        {
-          "name": "% Veg Cover",
-          "description": "",
+          "name": "Veg Cover (%)",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -997,8 +644,7 @@
           ]
         },
         {
-          "name": "% Snow Cover",
-          "description": "",
+          "name": "Snow Cover (%)",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -1007,190 +653,33 @@
         },
         {
           "name": "Activity",
-          "description": "",
           "validations": [
             {
               "column_code_validator": {
                 "allowed_code_values": [
                   {
-                    "name": "Alert",
-                    "description": "Alert"
-                  },
-                  {
-                    "name": "Avoiding Pests",
-                    "description": "Avoiding Pests"
-                  },
-                  {
-                    "name": "Basking",
-                    "description": "Basking"
+                    "name": "Standing",
+                    "description": "Standing"
                   },
                   {
                     "name": "Bedding",
                     "description": "Bedding"
                   },
                   {
-                    "name": "Building",
-                    "description": "Building"
+                    "name": "Running",
+                    "description": "Running"
                   },
                   {
-                    "name": "Cashing",
-                    "description": "Cashing"
+                    "name": "Walking",
+                    "description": "Walking"
                   },
                   {
-                    "name": "Casting",
-                    "description": "Casting"
+                    "name": "Moving",
+                    "description": "Moving"
                   },
                   {
-                    "name": "Courting",
-                    "description": "Courting"
-                  },
-                  {
-                    "name": "Denning",
-                    "description": "Denning"
-                  },
-                  {
-                    "name": "Disturbed",
-                    "description": "Disturbed"
-                  },
-                  {
-                    "name": "Drinking",
-                    "description": "Drinking"
-                  },
-                  {
-                    "name": "Excreting",
-                    "description": "Excreting"
-                  },
-                  {
-                    "name": "Feeding",
-                    "description": "Feeding"
-                  },
-                  {
-                    "name": "Fleeing",
-                    "description": "Fleeing"
-                  },
-                  {
-                    "name": "Feeding salmonid",
-                    "description": "Feeding salmonid"
-                  },
-                  {
-                    "name": "Grooming",
-                    "description": "Grooming"
-                  },
-                  {
-                    "name": "Habitat",
-                    "description": "Habitat"
-                  },
-                  {
-                    "name": "Hibernating",
-                    "description": "Hibernating"
-                  },
-                  {
-                    "name": "Hunting",
-                    "description": "Building"
-                  },
-                  {
-                    "name": "Ingesting Minerals",
-                    "description": "Ingesting Minerals"
-                  },
-                  {
-                    "name": "Incubating",
-                    "description": "Incubating"
-                  },
-                  {
-                    "name": "Living",
-                    "description": "Living"
-                  },
-                  {
-                    "name": "Migrating Daily",
-                    "description": "Migrating Daily"
-                  },
-                  {
-                    "name": "Migrating Seasonally",
-                    "description": "Migrating Seasonally"
-                  },
-                  {
-                    "name": "Reproducing birthing",
-                    "description": "Reproducing birthing"
-                  },
-                  {
-                    "name": "Reproducing eggs",
-                    "description": "Reproducing eggs"
-                  },
-                  {
-                    "name": "Rearing",
-                    "description": "Rearing"
-                  },
-                  {
-                    "name": "Standing",
-                    "description": "Standing"
-                  },
-                  {
-                    "name": "Security and/or Thermal",
-                    "description": "Security and/or Thermal"
-                  },
-                  {
-                    "name": "Thermal",
-                    "description": "Thermal"
-                  },
-                  {
-                    "name": "Territoriality",
-                    "description": "Territoriality"
-                  },
-                  {
-                    "name": "Not Traveling",
-                    "description": "Not Traveling"
-                  },
-                  {
-                    "name": "Traveling, Flying",
-                    "description": "Traveling flying"
-                  },
-                  {
-                    "name": "Traveling, Unclassified",
-                    "description": "Traveling, Unclassified"
-                  },
-                  {
-                    "name": "Traveling, Walking",
-                    "description": "Traveling, Walking"
-                  },
-                  {
-                    "name": "Traveling on a Path",
-                    "description": "Traveling on a Path"
-                  },
-                  {
-                    "name": "Traveling, Running",
-                    "description": "Traveling running"
-                  },
-                  {
-                    "name": "Traveling, Swimming",
-                    "description": "Traveling, Swimming"
-                  },
-                  {
-                    "name": "Traveling, Heli-Skiing",
-                    "description": "Traveling, Heli-Skiing"
-                  },
-                  {
-                    "name": "Traveling, Skiing",
-                    "description": "Traveling, Skiing"
-                  },
-                  {
-                    "name": "Traveling, Snowmobiling",
-                    "description": "Traveling, Snowmobiling"
-                  },
-                  {
-                    "name": "Traveling, Snowshoeing",
-                    "description": "Traveling, Snowshoeing"
-                  },
-                  {
-                    "name": "Traveling, Snow Cat",
-                    "description": "Traveling, Snow Cat"
-                  },
-                  {
-                    "name": "Urinating",
-                    "description": "Urinating"
-                  },
-                  {
-                    "name": "Described in comments",
-                    "description": "Described in comments"
+                    "name": "Not Moving",
+                    "description": "Not Moving"
                   }
                 ]
               }
@@ -1199,7 +688,6 @@
         },
         {
           "name": "Number of Marked Animals Observed",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -1208,7 +696,6 @@
         },
         {
           "name": "Survey or Telemetry Search",
-          "description": "",
           "validations": [
             {
               "column_code_validator": {
@@ -1230,21 +717,50 @@
     },
     {
       "name": "Marked Animals",
-      "description": "",
       "validations": [
         {
           "file_duplicate_columns_validator": {}
         },
         {
           "file_required_columns_validator": {
-            "required_columns": ["Group Label"]
+            "required_columns": [
+              "Group Label",
+              "Date",
+              "Targeted or Non-Targeted",
+              "Wildlife Health ID",
+              "Animal ID",
+              "Telemetry Device ID",
+              "Collar/Tag Frequency",
+              "Frequency Unit",
+              "Right Ear Tag ID",
+              "Right Ear Tag Colour",
+              "Left Ear Tag ID",
+              "Left Ear Tag Colour",
+              "Marked Animals Comments"
+            ]
+          }
+        },
+        {
+          "file_column_unique_validator": {
+            "column_names": [
+              "Wildlife Health ID",
+              "Animal ID",
+              "Telemetry Device ID"
+            ]
           }
         }
       ],
       "columns": [
         {
-          "name": "Target or Non-Targeted",
-          "description": "",
+          "name": "Group Label",
+          "validations": [
+            {
+              "column_required_validator": {}
+            }
+          ]
+        },
+        {
+          "name": "Targeted or Non-Targeted",
           "validations": [
             {
               "column_code_validator": {
@@ -1264,7 +780,6 @@
         },
         {
           "name": "Frequency Unit",
-          "description": "",
           "validations": [
             {
               "column_code_validator": {
@@ -1290,16 +805,48 @@
     },
     {
       "name": "Incidental Observations",
-      "description": "",
       "validations": [
         {
           "file_duplicate_columns_validator": {}
+        },
+        {
+          "file_required_columns_validator": {
+            "required_columns": [
+              "Study Area",
+              "Block ID/SU ID",
+              "Date",
+              "Time",
+              "UTM Zone",
+              "Easting",
+              "Northing",
+              "Datum",
+              "Lat (DD)",
+              "Long (DD)",
+              "Species",
+              "Adult Males",
+              "Adult Females",
+              "Adults - Unclassified Sex",
+              "Juvenile Males",
+              "Juvenile Females",
+              "Juveniles - Unclassified Sex",
+              "Unknown Age/Sex",
+              "Total Count",
+              "Species Occurrence Status",
+              "Activity",
+              "Activity Count",
+              "Feature Type",
+              "Feature Type Count",
+              "Sign Type",
+              "Sign Count",
+              "Photos",
+              "Incidental Observation Comments"
+            ]
+          }
         }
       ],
       "columns": [
         {
           "name": "UTM Zone",
-          "description": "",
           "validations": [
             {
               "column_format_validator": {
@@ -1312,7 +859,6 @@
         },
         {
           "name": "Easting",
-          "description": "",
           "validations": [
             {
               "column_format_validator": {
@@ -1325,7 +871,6 @@
         },
         {
           "name": "Northing",
-          "description": "",
           "validations": [
             {
               "column_format_validator": {
@@ -1338,7 +883,6 @@
         },
         {
           "name": "Datum",
-          "description": "",
           "validations": [
             {
               "column_code_validator": {
@@ -1362,7 +906,6 @@
         },
         {
           "name": "Lat (DD)",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -1371,7 +914,6 @@
         },
         {
           "name": "Long (DD)",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -1380,8 +922,7 @@
         },
         {
           "name": "Adult Males",
-          "description": "",
-          "validators": [
+          "validations": [
             {
               "column_numeric_validator": {}
             }
@@ -1389,8 +930,7 @@
         },
         {
           "name": "Adult Females",
-          "description": "",
-          "validators": [
+          "validations": [
             {
               "column_numeric_validator": {}
             }
@@ -1398,8 +938,7 @@
         },
         {
           "name": "Adults - Unclassified Sex",
-          "description": "",
-          "validators": [
+          "validations": [
             {
               "column_numeric_validator": {}
             }
@@ -1407,8 +946,7 @@
         },
         {
           "name": "Juvenile Males",
-          "description": "",
-          "validators": [
+          "validations": [
             {
               "column_numeric_validator": {}
             }
@@ -1416,8 +954,7 @@
         },
         {
           "name": "Juvenile Females",
-          "description": "",
-          "validators": [
+          "validations": [
             {
               "column_numeric_validator": {}
             }
@@ -1425,8 +962,7 @@
         },
         {
           "name": "Juveniles - Unclassified Sex",
-          "description": "",
-          "validators": [
+          "validations": [
             {
               "column_numeric_validator": {}
             }
@@ -1434,16 +970,14 @@
         },
         {
           "name": "Unknown Age/Sex",
-          "description": "",
-          "validators": [
+          "validations": [
             {
               "column_numeric_validator": {}
             }
           ]
         },
         {
-          "name": "SpeciesOccurrence Status",
-          "description": "",
+          "name": "Species Occurrence Status",
           "validations": [
             {
               "column_code_validator": {
@@ -1462,200 +996,10 @@
           ]
         },
         {
-          "name": "Activity",
-          "description": "",
-          "validations": [
-            {
-              "column_code_validator": {
-                "allowed_code_values": [
-                  {
-                    "name": "Alert",
-                    "description": "Alert"
-                  },
-                  {
-                    "name": "Avoiding Pests",
-                    "description": "Avoiding Pests"
-                  },
-                  {
-                    "name": "Basking",
-                    "description": "Basking"
-                  },
-                  {
-                    "name": "Bedding",
-                    "description": "Bedding"
-                  },
-                  {
-                    "name": "Building",
-                    "description": "Building"
-                  },
-                  {
-                    "name": "Cashing",
-                    "description": "Cashing"
-                  },
-                  {
-                    "name": "Casting",
-                    "description": "Casting"
-                  },
-                  {
-                    "name": "Courting",
-                    "description": "Courting"
-                  },
-                  {
-                    "name": "Denning",
-                    "description": "Denning"
-                  },
-                  {
-                    "name": "Disturbed",
-                    "description": "Disturbed"
-                  },
-                  {
-                    "name": "Drinking",
-                    "description": "Drinking"
-                  },
-                  {
-                    "name": "Excreting",
-                    "description": "Excreting"
-                  },
-                  {
-                    "name": "Feeding",
-                    "description": "Feeding"
-                  },
-                  {
-                    "name": "Fleeing",
-                    "description": "Fleeing"
-                  },
-                  {
-                    "name": "Feeding salmonid",
-                    "description": "Feeding salmonid"
-                  },
-                  {
-                    "name": "Grooming",
-                    "description": "Grooming"
-                  },
-                  {
-                    "name": "Habitat",
-                    "description": "Habitat"
-                  },
-                  {
-                    "name": "Hibernating",
-                    "description": "Hibernating"
-                  },
-                  {
-                    "name": "Hunting",
-                    "description": "Building"
-                  },
-                  {
-                    "name": "Ingesting Minerals",
-                    "description": "Ingesting Minerals"
-                  },
-                  {
-                    "name": "Incubating",
-                    "description": "Incubating"
-                  },
-                  {
-                    "name": "Living",
-                    "description": "Living"
-                  },
-                  {
-                    "name": "Migrating Daily",
-                    "description": "Migrating Daily"
-                  },
-                  {
-                    "name": "Migrating Seasonally",
-                    "description": "Migrating Seasonally"
-                  },
-                  {
-                    "name": "Reproducing birthing",
-                    "description": "Reproducing birthing"
-                  },
-                  {
-                    "name": "Reproducing eggs",
-                    "description": "Reproducing eggs"
-                  },
-                  {
-                    "name": "Rearing",
-                    "description": "Rearing"
-                  },
-                  {
-                    "name": "Standing",
-                    "description": "Standing"
-                  },
-                  {
-                    "name": "Security and/or Thermal",
-                    "description": "Security and/or Thermal"
-                  },
-                  {
-                    "name": "Thermal",
-                    "description": "Thermal"
-                  },
-                  {
-                    "name": "Territoriality",
-                    "description": "Territoriality"
-                  },
-                  {
-                    "name": "Not Traveling",
-                    "description": "Not Traveling"
-                  },
-                  {
-                    "name": "Traveling, Flying",
-                    "description": "Traveling flying"
-                  },
-                  {
-                    "name": "Traveling, Unclassified",
-                    "description": "Traveling, Unclassified"
-                  },
-                  {
-                    "name": "Traveling, Walking",
-                    "description": "Traveling, Walking"
-                  },
-                  {
-                    "name": "Traveling on a Path",
-                    "description": "Traveling on a Path"
-                  },
-                  {
-                    "name": "Traveling, Running",
-                    "description": "Traveling running"
-                  },
-                  {
-                    "name": "Traveling, Swimming",
-                    "description": "Traveling, Swimming"
-                  },
-                  {
-                    "name": "Traveling, Heli-Skiing",
-                    "description": "Traveling, Heli-Skiing"
-                  },
-                  {
-                    "name": "Traveling, Skiing",
-                    "description": "Traveling, Skiing"
-                  },
-                  {
-                    "name": "Traveling, Snowmobiling",
-                    "description": "Traveling, Snowmobiling"
-                  },
-                  {
-                    "name": "Traveling, Snowshoeing",
-                    "description": "Traveling, Snowshoeing"
-                  },
-                  {
-                    "name": "Traveling, Snow Cat",
-                    "description": "Traveling, Snow Cat"
-                  },
-                  {
-                    "name": "Urinating",
-                    "description": "Urinating"
-                  },
-                  {
-                    "name": "Described in comments",
-                    "description": "Described in comments"
-                  }
-                ]
-              }
-            }
-          ]
+          "name": "Activity"
         },
         {
           "name": "Activity Count",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -1664,7 +1008,6 @@
         },
         {
           "name": "Feature Type",
-          "description": "",
           "validations": [
             {
               "column_code_validator": {
@@ -1776,7 +1119,6 @@
         },
         {
           "name": "Feature Type Count",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -1785,7 +1127,6 @@
         },
         {
           "name": "Sign Type",
-          "description": "",
           "validations": [
             {
               "column_code_validator": {
@@ -1869,7 +1210,6 @@
         },
         {
           "name": "Sign Count",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -1883,7 +1223,6 @@
     {
       "submission_required_files_validator": {
         "required_files": [
-          "Block Summary",
           "Effort & Site Conditions",
           "Observations",
           "Marked Animals",
@@ -1897,7 +1236,9 @@
       "workbook_parent_child_key_match_validator": {
         "child_worksheet_name": "Marked Animals",
         "parent_worksheet_name": "Observations",
-        "column_names": ["Group Label"]
+        "column_names": [
+          "Group Label"
+        ]
       }
     }
   ]

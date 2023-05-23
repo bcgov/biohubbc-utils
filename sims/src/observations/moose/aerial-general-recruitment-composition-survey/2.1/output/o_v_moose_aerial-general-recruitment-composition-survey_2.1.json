@@ -1,10 +1,7 @@
 {
-  "name": "",
-  "description": "",
   "files": [
     {
       "name": "Effort & Site Conditions",
-      "description": "",
       "validations": [
         {
           "file_duplicate_columns_validator": {}
@@ -49,14 +46,18 @@
         },
         {
           "file_column_unique_validator": {
-            "column_names": ["Study Area", "Block ID/SU ID", "Date", "Start Time 1 (24hrs)"]
+            "column_names": [
+              "Study Area",
+              "Block ID/SU ID",
+              "Date",
+              "Start Time 1 (24hrs)"
+            ]
           }
         }
       ],
       "columns": [
         {
           "name": "Aircraft Type",
-          "description": "",
           "validations": [
             {
               "column_code_validator": {
@@ -138,7 +139,6 @@
     },
     {
       "name": "Observations",
-      "description": "",
       "validations": [
         {
           "file_duplicate_columns_validator": {}
@@ -191,12 +191,18 @@
               "Observation Comments"
             ]
           }
+        },
+        {
+          "file_column_unique_validator": {
+            "column_names": [
+              "Group Label"
+            ]
+          }
         }
       ],
       "columns": [
         {
           "name": "Study Area",
-          "description": "",
           "validations": [
             {
               "column_required_validator": {}
@@ -205,7 +211,6 @@
         },
         {
           "name": "Date",
-          "description": "",
           "validations": [
             {
               "column_required_validator": {}
@@ -214,7 +219,6 @@
         },
         {
           "name": "UTM Zone",
-          "description": "",
           "validations": [
             {
               "column_format_validator": {
@@ -227,7 +231,6 @@
         },
         {
           "name": "Easting",
-          "description": "",
           "validations": [
             {
               "column_format_validator": {
@@ -240,7 +243,6 @@
         },
         {
           "name": "Northing",
-          "description": "",
           "validations": [
             {
               "column_format_validator": {
@@ -253,7 +255,6 @@
         },
         {
           "name": "Datum",
-          "description": "",
           "validations": [
             {
               "column_code_validator": {
@@ -277,7 +278,6 @@
         },
         {
           "name": "Lat (DD)",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -286,7 +286,6 @@
         },
         {
           "name": "Long (DD)",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -295,8 +294,10 @@
         },
         {
           "name": "Species",
-          "description": "",
           "validations": [
+            {
+              "column_required_validator": {}
+            },
             {
               "column_code_validator": {
                 "allowed_code_values": [
@@ -306,15 +307,11 @@
                   }
                 ]
               }
-            },
-            {
-              "column_required_validator": {}
             }
           ]
         },
         {
           "name": "Spike/Fork Bulls",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -323,7 +320,6 @@
         },
         {
           "name": "Sub-Prime Bulls",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -332,7 +328,6 @@
         },
         {
           "name": "Prime Bulls",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -341,7 +336,6 @@
         },
         {
           "name": "Senior Bulls",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -350,7 +344,6 @@
         },
         {
           "name": "3 Brow/10 Points Bulls",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -359,7 +352,6 @@
         },
         {
           "name": "BC RISC Yearling Bulls",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -368,7 +360,6 @@
         },
         {
           "name": "BC RISC Class I Bulls",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -377,7 +368,6 @@
         },
         {
           "name": "BC RISC Class II Bulls",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -386,7 +376,6 @@
         },
         {
           "name": "BC RISC Class III Bulls",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -395,7 +384,6 @@
         },
         {
           "name": "Oswald (1997) Class I Bulls",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -404,7 +392,6 @@
         },
         {
           "name": "Oswald (1997) Class II Bulls",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -413,7 +400,6 @@
         },
         {
           "name": "Oswald (1997) Class III Bulls",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -422,7 +408,6 @@
         },
         {
           "name": "Adult Bulls - Unclassified",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -431,7 +416,6 @@
         },
         {
           "name": "Bulls - Unclassified",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -440,7 +424,6 @@
         },
         {
           "name": "Cow",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -449,7 +432,6 @@
         },
         {
           "name": "Calves",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -458,7 +440,6 @@
         },
         {
           "name": "Adult Unclassified Sex",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -467,7 +448,6 @@
         },
         {
           "name": "Unclassified Age/Sex",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -476,7 +456,6 @@
         },
         {
           "name": "Cow W/1 calf",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -485,7 +464,6 @@
         },
         {
           "name": "Cow W/2 calves",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -494,7 +472,6 @@
         },
         {
           "name": "Sign Type",
-          "description": "",
           "validations": [
             {
               "column_code_validator": {
@@ -578,7 +555,6 @@
         },
         {
           "name": "Sign Count",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -587,7 +563,6 @@
         },
         {
           "name": "Age of Sign",
-          "description": "",
           "validations": [
             {
               "column_code_validator": {
@@ -635,7 +610,6 @@
         },
         {
           "name": "Veg Cover (%)",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -644,7 +618,6 @@
         },
         {
           "name": "Snow Cover (%)",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -653,7 +626,6 @@
         },
         {
           "name": "Activity",
-          "description": "",
           "validations": [
             {
               "column_code_validator": {
@@ -689,7 +661,6 @@
         },
         {
           "name": "Number of Marked Animals Observed",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -698,7 +669,6 @@
         },
         {
           "name": "Survey or Telemetry Search",
-          "description": "",
           "validations": [
             {
               "column_code_validator": {
@@ -720,7 +690,6 @@
     },
     {
       "name": "Marked Animals",
-      "description": "",
       "validations": [
         {
           "file_duplicate_columns_validator": {}
@@ -743,12 +712,28 @@
               "Marked Animals Comments"
             ]
           }
+        },
+        {
+          "file_column_unique_validator": {
+            "column_names": [
+              "Wildlife Health ID",
+              "Animal ID",
+              "Telemetry Device ID"
+            ]
+          }
         }
       ],
       "columns": [
         {
+          "name": "Group Label",
+          "validations": [
+            {
+              "column_required_validator": {}
+            }
+          ]
+        },
+        {
           "name": "Targeted or Non-Targeted",
-          "description": "",
           "validations": [
             {
               "column_code_validator": {
@@ -768,7 +753,6 @@
         },
         {
           "name": "Frequency Unit",
-          "description": "",
           "validations": [
             {
               "column_code_validator": {
@@ -794,7 +778,6 @@
     },
     {
       "name": "Incidental Observations",
-      "description": "",
       "validations": [
         {
           "file_duplicate_columns_validator": {}
@@ -836,7 +819,6 @@
       "columns": [
         {
           "name": "UTM Zone",
-          "description": "",
           "validations": [
             {
               "column_format_validator": {
@@ -849,7 +831,6 @@
         },
         {
           "name": "Easting",
-          "description": "",
           "validations": [
             {
               "column_format_validator": {
@@ -862,7 +843,6 @@
         },
         {
           "name": "Northing",
-          "description": "",
           "validations": [
             {
               "column_format_validator": {
@@ -875,7 +855,6 @@
         },
         {
           "name": "Datum",
-          "description": "",
           "validations": [
             {
               "column_code_validator": {
@@ -899,7 +878,6 @@
         },
         {
           "name": "Lat (DD)",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -908,7 +886,6 @@
         },
         {
           "name": "Long (DD)",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -917,7 +894,6 @@
         },
         {
           "name": "Adult Males",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -926,7 +902,6 @@
         },
         {
           "name": "Adult Females",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -935,7 +910,6 @@
         },
         {
           "name": "Adults - Unclassified Sex",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -944,7 +918,6 @@
         },
         {
           "name": "Juvenile Males",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -953,7 +926,6 @@
         },
         {
           "name": "Juvenile Females",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -962,7 +934,6 @@
         },
         {
           "name": "Juveniles - Unclassified Sex",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -971,7 +942,6 @@
         },
         {
           "name": "Unknown Age/Sex",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -980,7 +950,6 @@
         },
         {
           "name": "Species Occurrence Status",
-          "description": "",
           "validations": [
             {
               "column_code_validator": {
@@ -1000,7 +969,6 @@
         },
         {
           "name": "Activity",
-          "description": "",
           "validations": [
             {
               "column_code_validator": {
@@ -1192,7 +1160,6 @@
         },
         {
           "name": "Activity Count",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -1201,7 +1168,6 @@
         },
         {
           "name": "Feature Type",
-          "description": "",
           "validations": [
             {
               "column_code_validator": {
@@ -1313,7 +1279,6 @@
         },
         {
           "name": "Feature Type Count",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -1322,7 +1287,6 @@
         },
         {
           "name": "Sign Type",
-          "description": "",
           "validations": [
             {
               "column_code_validator": {
@@ -1406,7 +1370,6 @@
         },
         {
           "name": "Sign Count",
-          "description": "",
           "validations": [
             {
               "column_numeric_validator": {}
@@ -1419,7 +1382,12 @@
   "validations": [
     {
       "submission_required_files_validator": {
-        "required_files": ["Effort & Site Conditions", "Observations", "Marked Animals", "Incidental Observations"]
+        "required_files": [
+          "Effort & Site Conditions",
+          "Observations",
+          "Marked Animals",
+          "Incidental Observations"
+        ]
       }
     }
   ],
@@ -1428,7 +1396,9 @@
       "workbook_parent_child_key_match_validator": {
         "child_worksheet_name": "Marked Animals",
         "parent_worksheet_name": "Observations",
-        "column_names": ["Group Label"]
+        "column_names": [
+          "Group Label"
+        ]
       }
     }
   ]

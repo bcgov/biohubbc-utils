@@ -197,11 +197,21 @@
         },
         {
           "file_column_unique_validator": {
-            "column_names": ["Group Label"]
+            "column_names": [
+              "Group Label"
+            ]
           }
         }
       ],
       "columns": [
+        {
+          "name": "Study Area",
+          "validations": [
+            {
+              "column_required_validator": {}
+            }
+          ]
+        },
         {
           "name": "UTM Zone",
           "validations": [
@@ -274,6 +284,14 @@
           "validations": [
             {
               "column_numeric_validator": {}
+            }
+          ]
+        },
+        {
+          "name": "Date",
+          "validations": [
+            {
+              "column_required_validator": {}
             }
           ]
         },
@@ -986,7 +1004,11 @@
         },
         {
           "file_column_unique_validator": {
-            "column_names": ["Wildlife Health ID", "Animal ID", "Telemetry Device ID"]
+            "column_names": [
+              "Wildlife Health ID",
+              "Animal ID",
+              "Telemetry Device ID"
+            ]
           }
         }
       ],
@@ -1650,7 +1672,12 @@
   "validations": [
     {
       "submission_required_files_validator": {
-        "required_files": ["Effort & Site Conditions", "Observations", "Marked Animals", "Incidental Observations"]
+        "required_files": [
+          "Effort & Site Conditions",
+          "Observations",
+          "Marked Animals",
+          "Incidental Observations"
+        ]
       }
     }
   ],
@@ -1659,14 +1686,20 @@
       "workbook_parent_child_key_match_validator": {
         "child_worksheet_name": "Marked Animals",
         "parent_worksheet_name": "Observations",
-        "column_names": ["Group Label"]
+        "column_names": [
+          "Group Label"
+        ]
       }
     },
     {
       "workbook_parent_child_key_match_validator": {
         "child_worksheet_name": "Effort & Site Conditions",
         "parent_worksheet_name": "Observations",
-        "column_names": ["Study Area", "Population Unit", "Block ID/SU ID"]
+        "column_names": [
+          "Study Area",
+          "Population Unit",
+          "Block ID/SU ID"
+        ]
       }
     }
   ]

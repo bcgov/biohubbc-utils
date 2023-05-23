@@ -2,32 +2,56 @@
   "templateMeta": [
     {
       "sheetName": "Block Summary",
-      "primaryKey": ["Study Area", "Block ID/SU ID", "Stratum"],
+      "primaryKey": [
+        "Study Area",
+        "Block ID/SU ID",
+        "Stratum"
+      ],
       "parentKey": [],
       "type": "root",
       "foreignKeys": [
         {
           "sheetName": "Observations",
-          "primaryKey": ["Study Area", "Block ID/SU ID", "Stratum"]
+          "primaryKey": [
+            "Study Area",
+            "Block ID/SU ID",
+            "Stratum"
+          ]
         }
       ]
     },
     {
       "sheetName": "Observations",
-      "primaryKey": ["Study Area", "Block ID/SU ID", "Stratum"],
-      "parentKey": ["Study Area", "Block ID/SU ID", "Stratum"],
+      "primaryKey": [
+        "Study Area",
+        "Block ID/SU ID",
+        "Stratum"
+      ],
+      "parentKey": [
+        "Study Area",
+        "Block ID/SU ID",
+        "Stratum"
+      ],
       "type": "",
       "foreignKeys": [
         {
           "sheetName": "Marked Animals",
-          "primaryKey": ["Group Label"]
+          "primaryKey": [
+            "Group Label"
+          ]
         }
       ]
     },
     {
       "sheetName": "Marked Animals",
-      "primaryKey": ["Wildlife Health ID", "Animal ID", "Telemetry Device ID"],
-      "parentKey": ["Group Label"],
+      "primaryKey": [
+        "Wildlife Health ID",
+        "Animal ID",
+        "Telemetry Device ID"
+      ],
+      "parentKey": [
+        "Group Label"
+      ],
       "type": "",
       "foreignKeys": []
     }
@@ -35,23 +59,36 @@
   "dwcMeta": [
     {
       "sheetName": "event",
-      "primaryKey": ["eventID"]
+      "primaryKey": [
+        "eventID"
+      ]
     },
     {
       "sheetName": "location",
-      "primaryKey": ["eventID"]
+      "primaryKey": [
+        "eventID"
+      ]
     },
     {
       "sheetName": "occurrence",
-      "primaryKey": ["occurrenceID"]
+      "primaryKey": [
+        "occurrenceID"
+      ]
     },
     {
       "sheetName": "organism",
-      "primaryKey": ["organismID"]
+      "primaryKey": [
+        "organismID"
+      ]
     },
     {
       "sheetName": "measurementOrFact",
-      "primaryKey": ["eventID", "measurementID", "occurrenceID", "organismID"]
+      "primaryKey": [
+        "eventID",
+        "measurementID",
+        "occurrenceID",
+        "organismID"
+      ]
     }
   ],
   "map": [
@@ -62,7 +99,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -70,10 +110,14 @@
           "columnName": "eventDate",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Date']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Date']"
+              ]
             },
             {
-              "paths": ["$..[?(@._name === 'Effort & Site Conditions')]..['Date']"]
+              "paths": [
+                "$..[?(@._name === 'Effort & Site Conditions')]..['Date']"
+              ]
             }
           ]
         },
@@ -81,7 +125,9 @@
           "columnName": "eventRemarks",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['Block Summary Comments']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['Block Summary Comments']"
+              ]
             }
           ]
         }
@@ -102,7 +148,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -110,11 +159,15 @@
           "columnName": "verbatimCoordinates",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['UTM Zone,Easting,Northing']"],
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['UTM Zone,Easting,Northing']"
+              ],
               "join": " "
             },
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Lat (DD),Long (DD)']"],
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Lat (DD),Long (DD)']"
+              ],
               "join": " "
             }
           ]
@@ -123,7 +176,9 @@
           "columnName": "decimalLatitude",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Lat (DD)']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Lat (DD)']"
+              ]
             }
           ]
         },
@@ -131,7 +186,9 @@
           "columnName": "decimalLongitude",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Long (DD)']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Long (DD)']"
+              ]
             }
           ]
         },
@@ -139,7 +196,9 @@
           "columnName": "verbatimSRS",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Datum']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Datum']"
+              ]
             }
           ]
         }
@@ -160,7 +219,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -168,7 +230,10 @@
           "columnName": "occurrenceID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"],
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ],
               "postfix": {
                 "static": "0"
               }
@@ -179,7 +244,9 @@
           "columnName": "individualCount",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Spike/Fork Bulls']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Spike/Fork Bulls']"
+              ]
             }
           ]
         },
@@ -203,7 +270,9 @@
           "columnName": "taxonID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Species']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Species']"
+              ]
             }
           ]
         },
@@ -211,7 +280,9 @@
           "columnName": "occurrenceRemarks",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Observation Comments']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Observation Comments']"
+              ]
             }
           ]
         }
@@ -302,7 +373,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -310,7 +384,10 @@
           "columnName": "occurrenceID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"],
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ],
               "postfix": {
                 "static": "1"
               }
@@ -321,7 +398,9 @@
           "columnName": "individualCount",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Sub-Prime Bulls']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Sub-Prime Bulls']"
+              ]
             }
           ]
         },
@@ -345,7 +424,9 @@
           "columnName": "taxonID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Species']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Species']"
+              ]
             }
           ]
         },
@@ -353,7 +434,9 @@
           "columnName": "occurrenceRemarks",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Observation Comments']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Observation Comments']"
+              ]
             }
           ]
         }
@@ -444,7 +527,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -452,7 +538,10 @@
           "columnName": "occurrenceID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"],
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ],
               "postfix": {
                 "static": "2"
               }
@@ -463,7 +552,9 @@
           "columnName": "individualCount",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Prime Bulls']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Prime Bulls']"
+              ]
             }
           ]
         },
@@ -487,7 +578,9 @@
           "columnName": "taxonID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Species']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Species']"
+              ]
             }
           ]
         },
@@ -495,7 +588,9 @@
           "columnName": "occurrenceRemarks",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Observation Comments']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Observation Comments']"
+              ]
             }
           ]
         }
@@ -586,7 +681,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -594,7 +692,10 @@
           "columnName": "occurrenceID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"],
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ],
               "postfix": {
                 "static": "3"
               }
@@ -605,7 +706,9 @@
           "columnName": "individualCount",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Senior Bulls']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Senior Bulls']"
+              ]
             }
           ]
         },
@@ -629,7 +732,9 @@
           "columnName": "taxonID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Species']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Species']"
+              ]
             }
           ]
         },
@@ -637,7 +742,9 @@
           "columnName": "occurrenceRemarks",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Observation Comments']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Observation Comments']"
+              ]
             }
           ]
         }
@@ -728,7 +835,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -736,7 +846,10 @@
           "columnName": "occurrenceID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"],
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ],
               "postfix": {
                 "static": "4"
               }
@@ -747,7 +860,9 @@
           "columnName": "individualCount",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['3 Brow/10 Points Bulls']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['3 Brow/10 Points Bulls']"
+              ]
             }
           ]
         },
@@ -771,7 +886,9 @@
           "columnName": "taxonID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Species']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Species']"
+              ]
             }
           ]
         },
@@ -779,7 +896,9 @@
           "columnName": "occurrenceRemarks",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Observation Comments']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Observation Comments']"
+              ]
             }
           ]
         }
@@ -870,7 +989,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -878,7 +1000,10 @@
           "columnName": "occurrenceID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"],
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ],
               "postfix": {
                 "static": "5"
               }
@@ -889,7 +1014,9 @@
           "columnName": "individualCount",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['BC RISC Yearling Bulls']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['BC RISC Yearling Bulls']"
+              ]
             }
           ]
         },
@@ -913,7 +1040,9 @@
           "columnName": "taxonID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Species']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Species']"
+              ]
             }
           ]
         },
@@ -921,7 +1050,9 @@
           "columnName": "occurrenceRemarks",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Observation Comments']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Observation Comments']"
+              ]
             }
           ]
         }
@@ -1012,7 +1143,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -1020,7 +1154,10 @@
           "columnName": "occurrenceID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"],
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ],
               "postfix": {
                 "static": "6"
               }
@@ -1031,7 +1168,9 @@
           "columnName": "individualCount",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['BC RISC Class I Bulls']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['BC RISC Class I Bulls']"
+              ]
             }
           ]
         },
@@ -1055,7 +1194,9 @@
           "columnName": "taxonID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Species']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Species']"
+              ]
             }
           ]
         },
@@ -1063,7 +1204,9 @@
           "columnName": "occurrenceRemarks",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Observation Comments']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Observation Comments']"
+              ]
             }
           ]
         }
@@ -1154,7 +1297,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -1162,7 +1308,10 @@
           "columnName": "occurrenceID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"],
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ],
               "postfix": {
                 "static": "7"
               }
@@ -1173,7 +1322,9 @@
           "columnName": "individualCount",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['BC RISC Class II Bulls']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['BC RISC Class II Bulls']"
+              ]
             }
           ]
         },
@@ -1197,7 +1348,9 @@
           "columnName": "taxonID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Species']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Species']"
+              ]
             }
           ]
         },
@@ -1205,7 +1358,9 @@
           "columnName": "occurrenceRemarks",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Observation Comments']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Observation Comments']"
+              ]
             }
           ]
         }
@@ -1296,7 +1451,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -1304,7 +1462,10 @@
           "columnName": "occurrenceID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"],
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ],
               "postfix": {
                 "static": "8"
               }
@@ -1315,7 +1476,9 @@
           "columnName": "individualCount",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['BC RISC Class III Bulls']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['BC RISC Class III Bulls']"
+              ]
             }
           ]
         },
@@ -1339,7 +1502,9 @@
           "columnName": "taxonID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Species']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Species']"
+              ]
             }
           ]
         },
@@ -1347,7 +1512,9 @@
           "columnName": "occurrenceRemarks",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Observation Comments']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Observation Comments']"
+              ]
             }
           ]
         }
@@ -1438,7 +1605,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -1446,7 +1616,10 @@
           "columnName": "occurrenceID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"],
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ],
               "postfix": {
                 "static": "9"
               }
@@ -1457,7 +1630,9 @@
           "columnName": "individualCount",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Oswald (1997) Class I Bulls']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Oswald (1997) Class I Bulls']"
+              ]
             }
           ]
         },
@@ -1481,7 +1656,9 @@
           "columnName": "taxonID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Species']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Species']"
+              ]
             }
           ]
         },
@@ -1489,7 +1666,9 @@
           "columnName": "occurrenceRemarks",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Observation Comments']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Observation Comments']"
+              ]
             }
           ]
         }
@@ -1580,7 +1759,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -1588,7 +1770,10 @@
           "columnName": "occurrenceID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"],
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ],
               "postfix": {
                 "static": "10"
               }
@@ -1599,7 +1784,9 @@
           "columnName": "individualCount",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Oswald (1997) Class II Bulls']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Oswald (1997) Class II Bulls']"
+              ]
             }
           ]
         },
@@ -1623,7 +1810,9 @@
           "columnName": "taxonID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Species']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Species']"
+              ]
             }
           ]
         },
@@ -1631,7 +1820,9 @@
           "columnName": "occurrenceRemarks",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Observation Comments']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Observation Comments']"
+              ]
             }
           ]
         }
@@ -1722,7 +1913,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -1730,7 +1924,10 @@
           "columnName": "occurrenceID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"],
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ],
               "postfix": {
                 "static": "11"
               }
@@ -1741,7 +1938,9 @@
           "columnName": "individualCount",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Oswald (1997) Class III Bulls']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Oswald (1997) Class III Bulls']"
+              ]
             }
           ]
         },
@@ -1765,7 +1964,9 @@
           "columnName": "taxonID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Species']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Species']"
+              ]
             }
           ]
         },
@@ -1773,7 +1974,9 @@
           "columnName": "occurrenceRemarks",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Observation Comments']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Observation Comments']"
+              ]
             }
           ]
         }
@@ -1864,7 +2067,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -1872,7 +2078,10 @@
           "columnName": "occurrenceID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"],
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ],
               "postfix": {
                 "static": "12"
               }
@@ -1883,7 +2092,9 @@
           "columnName": "individualCount",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Adult Bulls - Unclassified']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Adult Bulls - Unclassified']"
+              ]
             }
           ]
         },
@@ -1907,7 +2118,9 @@
           "columnName": "taxonID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Species']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Species']"
+              ]
             }
           ]
         },
@@ -1915,7 +2128,9 @@
           "columnName": "occurrenceRemarks",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Observation Comments']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Observation Comments']"
+              ]
             }
           ]
         }
@@ -2006,7 +2221,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -2014,7 +2232,10 @@
           "columnName": "occurrenceID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"],
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ],
               "postfix": {
                 "static": "13"
               }
@@ -2025,7 +2246,9 @@
           "columnName": "individualCount",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Bulls - Unclassified']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Bulls - Unclassified']"
+              ]
             }
           ]
         },
@@ -2049,7 +2272,9 @@
           "columnName": "taxonID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Species']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Species']"
+              ]
             }
           ]
         },
@@ -2057,7 +2282,9 @@
           "columnName": "occurrenceRemarks",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Observation Comments']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Observation Comments']"
+              ]
             }
           ]
         }
@@ -2148,7 +2375,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -2156,7 +2386,10 @@
           "columnName": "occurrenceID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"],
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ],
               "postfix": {
                 "static": "14"
               }
@@ -2167,7 +2400,9 @@
           "columnName": "individualCount",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Cow']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Cow']"
+              ]
             }
           ]
         },
@@ -2191,7 +2426,9 @@
           "columnName": "taxonID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Species']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Species']"
+              ]
             }
           ]
         },
@@ -2199,7 +2436,9 @@
           "columnName": "occurrenceRemarks",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Observation Comments']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Observation Comments']"
+              ]
             }
           ]
         }
@@ -2220,7 +2459,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -2228,7 +2470,10 @@
           "columnName": "occurrenceID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"],
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ],
               "postfix": {
                 "static": "15"
               }
@@ -2239,7 +2484,9 @@
           "columnName": "individualCount",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Calves']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Calves']"
+              ]
             }
           ]
         },
@@ -2263,7 +2510,9 @@
           "columnName": "taxonID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Species']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Species']"
+              ]
             }
           ]
         },
@@ -2271,7 +2520,9 @@
           "columnName": "occurrenceRemarks",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Observation Comments']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Observation Comments']"
+              ]
             }
           ]
         }
@@ -2292,7 +2543,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -2300,7 +2554,10 @@
           "columnName": "occurrenceID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"],
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ],
               "postfix": {
                 "static": "16"
               }
@@ -2311,7 +2568,9 @@
           "columnName": "individualCount",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Adult Unclassified Sex']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Adult Unclassified Sex']"
+              ]
             }
           ]
         },
@@ -2335,7 +2594,9 @@
           "columnName": "taxonID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Species']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Species']"
+              ]
             }
           ]
         },
@@ -2343,7 +2604,9 @@
           "columnName": "occurrenceRemarks",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Observation Comments']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Observation Comments']"
+              ]
             }
           ]
         }
@@ -2364,7 +2627,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -2372,7 +2638,10 @@
           "columnName": "occurrenceID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"],
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ],
               "postfix": {
                 "static": "17"
               }
@@ -2383,7 +2652,9 @@
           "columnName": "individualCount",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Unclassified Age/Sex']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Unclassified Age/Sex']"
+              ]
             }
           ]
         },
@@ -2407,7 +2678,9 @@
           "columnName": "taxonID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Species']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Species']"
+              ]
             }
           ]
         },
@@ -2415,7 +2688,9 @@
           "columnName": "occurrenceRemarks",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Observation Comments']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Observation Comments']"
+              ]
             }
           ]
         }
@@ -2436,7 +2711,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -2455,7 +2733,9 @@
           "columnName": "organismRemarks",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Marked Animals')]..['Marked Animals Comments']"]
+              "paths": [
+                "$..[?(@._name === 'Marked Animals')]..['Marked Animals Comments']"
+              ]
             }
           ]
         }
@@ -2468,7 +2748,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -2506,7 +2789,9 @@
           "columnName": "measurementValue",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['Study Area']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['Study Area']"
+              ]
             }
           ]
         }
@@ -2519,7 +2804,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -2557,7 +2845,9 @@
           "columnName": "measurementValue",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['Block ID/SU ID']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['Block ID/SU ID']"
+              ]
             }
           ]
         }
@@ -2570,7 +2860,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -2608,7 +2901,9 @@
           "columnName": "measurementValue",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['Stratum']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['Stratum']"
+              ]
             }
           ]
         }
@@ -2621,7 +2916,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -2659,7 +2957,9 @@
           "columnName": "measurementValue",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['Stratum/Block Area (km2)']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['Stratum/Block Area (km2)']"
+              ]
             }
           ]
         }
@@ -2672,7 +2972,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -2710,7 +3013,9 @@
           "columnName": "measurementValue",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['Sampled (Y/N)']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['Sampled (Y/N)']"
+              ]
             }
           ]
         }
@@ -2731,7 +3036,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -2769,7 +3077,9 @@
           "columnName": "measurementValue",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Group Label']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Group Label']"
+              ]
             }
           ]
         }
@@ -2790,7 +3100,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -2828,7 +3141,9 @@
           "columnName": "measurementValue",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Cow W/1 calf']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Cow W/1 calf']"
+              ]
             }
           ]
         }
@@ -2849,7 +3164,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -2887,7 +3205,9 @@
           "columnName": "measurementValue",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Cow W/2 calves']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Cow W/2 calves']"
+              ]
             }
           ]
         }
@@ -2911,7 +3231,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -2949,7 +3272,9 @@
           "columnName": "measurementValue",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Sign Type']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Sign Type']"
+              ]
             }
           ]
         }
@@ -2973,7 +3298,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -3011,7 +3339,9 @@
           "columnName": "measurementValue",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Sign Count']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Sign Count']"
+              ]
             }
           ]
         }
@@ -3032,7 +3362,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -3070,7 +3403,9 @@
           "columnName": "measurementValue",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Age of Sign']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Age of Sign']"
+              ]
             }
           ]
         }
@@ -3091,7 +3426,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -3129,7 +3467,9 @@
           "columnName": "measurementValue",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Veg Cover (%)']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Veg Cover (%)']"
+              ]
             }
           ]
         }
@@ -3150,7 +3490,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -3188,7 +3531,9 @@
           "columnName": "measurementValue",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Snow Cover (%)']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Snow Cover (%)']"
+              ]
             }
           ]
         }
@@ -3209,7 +3554,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -3247,7 +3595,9 @@
           "columnName": "measurementValue",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Activity']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Activity']"
+              ]
             }
           ]
         }
@@ -3268,7 +3618,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -3306,7 +3659,9 @@
           "columnName": "measurementValue",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Number of Marked Animals Observed']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Number of Marked Animals Observed']"
+              ]
             }
           ]
         }
@@ -3327,7 +3682,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -3365,7 +3723,9 @@
           "columnName": "measurementValue",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Survey or Telemetry Search']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Survey or Telemetry Search']"
+              ]
             }
           ]
         }
@@ -3386,7 +3746,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -3424,7 +3787,9 @@
           "columnName": "measurementValue",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Observations')]..['Photos']"]
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Photos']"
+              ]
             }
           ]
         }
@@ -3445,7 +3810,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -3494,7 +3862,9 @@
           "columnName": "measurementValue",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Marked Animals')]..['Targeted or Non-Targeted']"]
+              "paths": [
+                "$..[?(@._name === 'Marked Animals')]..['Targeted or Non-Targeted']"
+              ]
             }
           ]
         }
@@ -3515,7 +3885,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -3564,7 +3937,9 @@
           "columnName": "measurementValue",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Marked Animals')]..['Wildlife Health ID']"]
+              "paths": [
+                "$..[?(@._name === 'Marked Animals')]..['Wildlife Health ID']"
+              ]
             }
           ]
         }
@@ -3585,7 +3960,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -3634,7 +4012,9 @@
           "columnName": "measurementValue",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Marked Animals')]..['Animal ID']"]
+              "paths": [
+                "$..[?(@._name === 'Marked Animals')]..['Animal ID']"
+              ]
             }
           ]
         }
@@ -3655,7 +4035,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -3704,7 +4087,9 @@
           "columnName": "measurementValue",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Marked Animals')]..['Telemetry Device ID']"]
+              "paths": [
+                "$..[?(@._name === 'Marked Animals')]..['Telemetry Device ID']"
+              ]
             }
           ]
         }
@@ -3725,7 +4110,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -3766,7 +4154,9 @@
           "columnName": "measurementUnit",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Marked Animals')]..['Frequency Unit']"]
+              "paths": [
+                "$..[?(@._name === 'Marked Animals')]..['Frequency Unit']"
+              ]
             }
           ]
         },
@@ -3774,7 +4164,9 @@
           "columnName": "measurementValue",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Marked Animals')]..['Collar/Tag Frequency']"]
+              "paths": [
+                "$..[?(@._name === 'Marked Animals')]..['Collar/Tag Frequency']"
+              ]
             }
           ]
         }
@@ -3795,7 +4187,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -3844,7 +4239,9 @@
           "columnName": "measurementValue",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Marked Animals')]..['Right Ear Tag ID']"]
+              "paths": [
+                "$..[?(@._name === 'Marked Animals')]..['Right Ear Tag ID']"
+              ]
             }
           ]
         }
@@ -3865,7 +4262,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -3914,7 +4314,9 @@
           "columnName": "measurementValue",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Marked Animals')]..['Right Ear Tag Colour']"]
+              "paths": [
+                "$..[?(@._name === 'Marked Animals')]..['Right Ear Tag Colour']"
+              ]
             }
           ]
         }
@@ -3935,7 +4337,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -3984,7 +4389,9 @@
           "columnName": "measurementValue",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Marked Animals')]..['Left Ear Tag ID']"]
+              "paths": [
+                "$..[?(@._name === 'Marked Animals')]..['Left Ear Tag ID']"
+              ]
             }
           ]
         }
@@ -4005,7 +4412,10 @@
           "columnName": "eventID",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Block Summary')]..['_key']", "$..[?(@._name === 'Observations')]..['_row']"]
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
             }
           ]
         },
@@ -4054,7 +4464,9 @@
           "columnName": "measurementValue",
           "columnValue": [
             {
-              "paths": ["$..[?(@._name === 'Marked Animals')]..['Left Ear Tag Colour']"]
+              "paths": [
+                "$..[?(@._name === 'Marked Animals')]..['Left Ear Tag Colour']"
+              ]
             }
           ]
         }

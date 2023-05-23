@@ -1,10 +1,7 @@
 {
-  "name": "",
-  "description": "",
   "files": [
     {
       "name": "Moose_RESULTS",
-      "description": "",
       "validations": [
         {
           "file_duplicate_columns_validator": {}
@@ -51,7 +48,10 @@
   "validations": [
     {
       "mimetype_validator": {
-        "reg_exps": ["text/csv", "application/vnd.*"]
+        "reg_exps": [
+          "text/csv",
+          "application/vnd.*"
+        ]
       }
     }
   ]
