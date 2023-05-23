@@ -5,7 +5,7 @@ import {
   getValuesByName
 } from '../../../../../helpers/transformation/transformation-config-helpers';
 
-export const validationConfigBuilder: TransformSchema = {
+export const transformationConfigBuilder: TransformSchema = {
   templateMeta: [
     {
       sheetName: 'Observations',
@@ -57,7 +57,7 @@ export const validationConfigBuilder: TransformSchema = {
           ]
         },
         {
-          columnName: 'basisOfRecord ',
+          columnName: 'basisOfRecord',
           columnValue: [
             {
               static: 'HumanObservation'

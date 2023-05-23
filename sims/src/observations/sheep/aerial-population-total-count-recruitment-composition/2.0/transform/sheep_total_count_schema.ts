@@ -41,7 +41,7 @@ export const sheepTotalCountSchema: TransformSchema = {
           ]
         },
         {
-          columnName: 'basisOfRecord ',
+          columnName: 'basisOfRecord',
           columnValue: [
             {
               static: 'HumanObservation'

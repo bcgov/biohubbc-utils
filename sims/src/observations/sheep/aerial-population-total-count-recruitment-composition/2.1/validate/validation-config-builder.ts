@@ -171,6 +171,10 @@ export const validationConfigBuilder = {
       ],
       columns: [
         {
+          name: 'Study Area',
+          validations: [{ column_required_validator: {} }]
+        },
+        {
           name: 'UTM Zone',
           validations: utmZoneValidator()
         },
@@ -193,6 +197,10 @@ export const validationConfigBuilder = {
         {
           name: 'Long (DD)',
           validations: basicNumericValidator()
+        },
+        {
+          name: 'Date',
+          validations: [{ column_required_validator: {} }]
         },
         {
           name: 'Species',

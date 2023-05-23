@@ -1,10 +1,8 @@
 export const validationConfigBuilder = {
   name: '',
-  description: '',
   files: [
     {
       name: 'Sheep_RESULTS',
-      description: '',
       validations: [
         {
           file_duplicate_columns_validator: {}

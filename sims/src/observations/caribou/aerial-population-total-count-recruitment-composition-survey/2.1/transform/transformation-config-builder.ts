@@ -41,7 +41,7 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         {
-          columnName: 'basisOfRecord ',
+          columnName: 'basisOfRecord',
           columnValue: [
             {
               static: 'HumanObservation'

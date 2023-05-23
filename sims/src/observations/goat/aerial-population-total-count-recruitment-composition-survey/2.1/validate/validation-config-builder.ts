@@ -35,11 +35,9 @@ const goatSpeciesPickListValidator = () => {
 
 export const validationConfigBuilder = {
   name: '',
-  description: '',
   files: [
     {
       name: 'Effort & Site Conditions',
-      description: '',
       validations: [
         {
           file_duplicate_columns_validator: {}
@@ -95,19 +93,16 @@ export const validationConfigBuilder = {
       columns: [
         {
           name: 'Population Unit/Block Area (km2)',
-          description: '',
           validations: basicNumericValidator()
         },
         {
           name: 'Aircraft Type',
-          description: '',
           validations: aircraftPickListValidator()
         }
       ]
     },
     {
       name: 'Observations',
-      description: '',
       validations: [
         {
           file_duplicate_columns_validator: {}
@@ -150,150 +145,122 @@ export const validationConfigBuilder = {
               'Observation Comments'
             ]
           }
+        },
+        {
+          file_column_unique_validator: {
+            column_names: ['Group Label']
+          }
         }
       ],
       columns: [
         {
           name: 'Study Area',
-          validations: [
-            {
-              column_required_validator: {}
-            }
-          ]
+          validations: [{ column_required_validator: {} }]
         },
         {
           name: 'Date',
-          validations: [
-            {
-              column_required_validator: {}
-            }
-          ]
+          validations: [{ column_required_validator: {} }]
         },
         {
           name: 'UTM Zone',
-          description: '',
           validations: utmZoneValidator()
         },
         {
           name: 'Easting',
-          description: '',
           validations: eastingValidator()
         },
         {
           name: 'Northing',
-          description: '',
           validations: northingValidator()
         },
         {
           name: 'Datum',
-          description: '',
           validations: datumPickListValidator()
         },
         {
           name: 'Lat (DD)',
-          description: '',
           validations: basicNumericValidator()
         },
         {
           name: 'Long (DD)',
-          description: '',
           validations: basicNumericValidator()
         },
         {
           name: 'Species',
-          description: '',
-          validations: [...goatSpeciesPickListValidator(), { column_required_validator: {} }]
+          validations: [{ column_required_validator: {} }, ...goatSpeciesPickListValidator()]
         },
         {
           name: 'Adults Unclassified Sex',
-          description: '',
           validations: basicNumericValidator()
         },
         {
           name: 'Kid',
-          description: '',
           validations: basicNumericValidator()
         },
         {
           name: 'Nanny',
-          description: '',
           validations: basicNumericValidator()
         },
         {
           name: 'Billy',
-          description: '',
           validations: basicNumericValidator()
         },
         {
           name: 'Unclassified Age/Sex',
-          description: '',
           validations: basicNumericValidator()
         },
         {
           name: 'Total Count',
-          description: '',
           validations: basicNumericValidator()
         },
         {
           name: 'Sign Count',
-          description: '',
           validations: basicNumericValidator()
         },
         {
           name: 'Veg Cover (%)',
-          description: '',
           validations: basicNumericValidator()
         },
         {
           name: 'Snow Cover (%)',
-          description: '',
           validations: basicNumericValidator()
         },
         {
           name: 'Elevation (m) of Observation',
-          description: '',
           validations: basicNumericValidator()
         },
         {
           name: 'Number of Marked Animals Observed',
-          description: '',
           validations: basicNumericValidator()
         },
         {
           name: 'Survey or Telemetry Search',
-          description: '',
           validations: surveyOrTelemetryPickListValidator()
         },
         {
           name: 'Sign Type',
-          description: '',
           validations: signTypePickListValidator()
         },
         {
           name: 'Sign Age',
-          description: '',
           validations: ageOfSignPickListValidator()
         },
         {
           name: 'Activity',
-          description: '',
           validations: observationActivityPickListValidator()
         },
         {
           name: 'Habitat',
-          description: '',
           validations: habitatPickListValidator()
         },
         {
           name: 'Terrain Obstruction',
-          description: '',
           validations: yesNoPickListValidator()
         }
       ]
     },
     {
       name: 'Marked Animals',
-      description: '',
       validations: [
         {
           file_duplicate_columns_validator: {}
@@ -316,24 +283,30 @@ export const validationConfigBuilder = {
               'Marked Animals Comments'
             ]
           }
+        },
+        {
+          file_column_unique_validator: {
+            column_names: ['Wildlife Health ID', 'Animal ID', 'Telemetry Device ID']
+          }
         }
       ],
       columns: [
         {
+          name: 'Group Label',
+          validations: [{ column_required_validator: {} }]
+        },
+        {
           name: 'Targeted or Non-Targeted',
-          description: '',
           validations: targetPickListValidator()
         },
         {
           name: 'Frequency Unit',
-          description: '',
           validations: frequencyPickListValidator()
         }
       ]
     },
     {
       name: 'Incidental Observations',
-      description: '',
       validations: [
         {
           file_duplicate_columns_validator: {}
@@ -376,102 +349,82 @@ export const validationConfigBuilder = {
       columns: [
         {
           name: 'UTM Zone',
-          description: '',
           validations: utmZoneValidator()
         },
         {
           name: 'Easting',
-          description: '',
           validations: eastingValidator()
         },
         {
           name: 'Northing',
-          description: '',
           validations: northingValidator()
         },
         {
           name: 'Datum',
-          description: '',
           validations: datumPickListValidator()
         },
         {
           name: 'Lat (DD)',
-          description: '',
           validations: basicNumericValidator()
         },
         {
           name: 'Long (DD)',
-          description: '',
           validations: basicNumericValidator()
         },
         {
           name: 'Adult Males',
-          description: '',
           validations: basicNumericValidator()
         },
         {
           name: 'Adult Females',
-          description: '',
           validations: basicNumericValidator()
         },
         {
           name: 'Adults - Unclassified Sex',
-          description: '',
           validations: basicNumericValidator()
         },
         {
           name: 'Juvenile Males',
-          description: '',
           validations: basicNumericValidator()
         },
         {
           name: 'Juvenile Females',
-          description: '',
           validations: basicNumericValidator()
         },
         {
           name: 'Juveniles - Unclassified Sex',
-          description: '',
           validations: basicNumericValidator()
         },
         {
           name: 'Unknown Age/Sex',
-          description: '',
           validations: basicNumericValidator()
         },
         {
           name: 'Species Occurrence Status',
-          description: '',
           validations: presentAbsentPickListValidator()
         },
         {
           name: 'Activity',
-          description: '',
           validations: activityNonTargetedPickListValidator()
         },
         {
           name: 'Activity Count',
-          description: '',
           validations: basicNumericValidator()
         },
         {
           name: 'Feature Type',
-          description: '',
           validations: featureTypePickListValidator()
         },
         {
           name: 'Feature Type Count',
-          description: '',
           validations: basicNumericValidator()
         },
         {
           name: 'Sign Type',
-          description: '',
           validations: signTypePickListValidator()
         },
         {
           name: 'Sign Count',
-          description: '',
           validations: basicNumericValidator()
         }
       ]

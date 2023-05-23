@@ -1,5 +1,6 @@
 import {
   activityNonTargetedPickListValidator,
+  ageOfSignPickListValidator,
   aircraftPickListValidator,
   basicNumericValidator,
   datumPickListValidator,
@@ -9,13 +10,12 @@ import {
   habitatPickListValidator,
   northingValidator,
   presentAbsentPickListValidator,
-  sampledPickListValidator,
-  signAgePickListValidator,
   signTypePickListValidator,
   stratumPickListValidator,
   surveyOrTelemetryPickListValidator,
   targetPickListValidator,
-  utmZoneValidator
+  utmZoneValidator,
+  yesNoPickListValidator
 } from '../../../../../helpers/validation/validation-config-helpers';
 
 const elkSpeciesValidator = () => {
@@ -39,42 +39,44 @@ const elkSpeciesValidator = () => {
 
 export const validationConfigBuilder = {
   name: '',
-  description: '',
   files: [
     {
       name: 'Block Summary',
-      description: '',
       validations: [
         {
           file_duplicate_columns_validator: {}
         },
         {
           file_required_columns_validator: {
-            required_columns: ['Study Area', 'Block ID/SU ID', 'Stratum', 'Sampled (Y/N)']
+            required_columns: [
+              'Study Area',
+              'Population Unit',
+              'Block ID/SU ID',
+              'Stratum',
+              'Stratum/Block Area (km2)',
+              'Sampled (Y/N)',
+              'Block Summary Comments'
+            ]
           }
         }
       ],
       columns: [
         {
           name: 'Stratum',
-          description: '',
           validations: stratumPickListValidator()
         },
         {
           name: 'Stratum/Block Area (km2)',
-          description: '',
           validations: basicNumericValidator()
         },
         {
           name: 'Sampled (Y/N)',
-          description: '',
-          validations: sampledPickListValidator()
+          validations: yesNoPickListValidator()
         }
       ]
     },
     {
       name: 'Effort & Site Conditions',
-      description: '',
       validations: [
         {
           file_duplicate_columns_validator: {}
@@ -83,19 +85,230 @@ export const validationConfigBuilder = {
       columns: [
         {
           name: 'Block Area (km2)',
-          description: '',
           validations: basicNumericValidator()
         },
         {
           name: 'Aircraft Type',
-          description: '',
           validations: aircraftPickListValidator()
         }
       ]
     },
     {
       name: 'Observations',
-      description: '',
+      validations: [
+        {
+          file_duplicate_columns_validator: {}
+        },
+        {
+          file_required_columns_validator: {
+            required_columns: [
+              'Study Area',
+              'Population Unit',
+              'Block ID/SU ID',
+              'Stratum',
+              'UTM Zone',
+              'Easting',
+              'Northing',
+              'Datum',
+              'Lat (DD)',
+              'Long (DD)',
+              'Species',
+              'Group Label',
+              'Date',
+              'Time',
+              'BC RISC Yearling Bulls',
+              'BC RISC Class I Bulls',
+              'BC RISC Class II Bulls',
+              'BC RISC Class III Bulls',
+              'BC RISC Class IV Bulls',
+              'Spike Bulls',
+              'Raghorn Bulls',
+              '<=3 Point Bulls',
+              '3 - 4 Point Bulls',
+              '3 - 5 Point Bulls',
+              '<4 Point Bulls',
+              '>=4 Point Bulls',
+              '5 Point Bulls',
+              '>=5 Point Bulls',
+              '>= 6 Point Bulls',
+              'Adult Bulls - Unclassified',
+              'Unclassified Bulls',
+              'Cows',
+              'Calves',
+              'Adult Unclassified Sex',
+              'Yearling - Unclassified Sex',
+              'Unclassified Age/Sex',
+              'Total Count',
+              'Sign Type',
+              'Sign Count',
+              'Age of Sign',
+              'Topography',
+              'Habitat',
+              'Veg Cover (%)',
+              'Snow Cover (%)',
+              'Activity',
+              'Number of Marked Animals Observed',
+              'Survey or Telemetry Search',
+              'Photos',
+              'Observation Comments'
+            ]
+          }
+        },
+        {
+          file_column_unique_validator: {
+            column_names: ['Group Label']
+          }
+        }
+      ],
+      columns: [
+        {
+          name: 'Study Area',
+          validations: [{ column_required_validator: {} }]
+        },
+        {
+          name: 'Block ID/SU ID',
+          validations: [{ column_required_validator: {} }]
+        },
+        {
+          name: 'Stratum',
+          validations: [{ column_required_validator: {} }, ...stratumPickListValidator()]
+        },
+        {
+          name: 'UTM Zone',
+          validations: utmZoneValidator()
+        },
+        {
+          name: 'Easting',
+          validations: basicNumericValidator()
+        },
+        {
+          name: 'Northing',
+          validations: basicNumericValidator()
+        },
+        {
+          name: 'Datum',
+          validations: datumPickListValidator()
+        },
+        {
+          name: 'Lat (DD)',
+          validations: basicNumericValidator()
+        },
+        {
+          name: 'Long (DD)',
+          validations: basicNumericValidator()
+        },
+        {
+          name: 'Species',
+          validations: [{ column_required_validator: {} }, ...elkSpeciesValidator()]
+        },
+        { name: 'BC RISC Yearlings Bulls', validations: basicNumericValidator() },
+        { name: 'BC RISC Class I Bulls', validations: basicNumericValidator() },
+        { name: 'BC RISC Class II Bulls', validations: basicNumericValidator() },
+        { name: 'BC RISC Class III Bulls', validations: basicNumericValidator() },
+        { name: 'BC RISC Class IV Bulls', validations: basicNumericValidator() },
+        { name: 'Spike Bulls', validations: basicNumericValidator() },
+        { name: 'Raghorn Bulls', validations: basicNumericValidator() },
+        { name: '<=3 Point Bulls', validations: basicNumericValidator() },
+        { name: '3 - 4 Point Bulls', validations: basicNumericValidator() },
+        { name: '3 - 5 Point Bulls', validations: basicNumericValidator() },
+        { name: '<4 Point Bulls', validations: basicNumericValidator() },
+        { name: '>=4 Point Bulls', validations: basicNumericValidator() },
+        { name: '5 Point Bulls', validations: basicNumericValidator() },
+        { name: '>=5 Point Bulls', validations: basicNumericValidator() },
+        { name: '>= 6 Point Bulls', validations: basicNumericValidator() },
+        { name: 'Adult Bulls - Unclassified', validations: basicNumericValidator() },
+        { name: 'Unclassified Bulls', validations: basicNumericValidator() },
+        { name: 'Cows', validations: basicNumericValidator() },
+        { name: 'Calves', validations: basicNumericValidator() },
+        { name: 'Adult Unclassified Sex', validations: basicNumericValidator() },
+        { name: 'Yearling - Unclassified Sex', validations: basicNumericValidator() },
+        { name: 'Unclassified Age/Sex', validations: basicNumericValidator() },
+        {
+          name: 'Sign Type',
+          validations: signTypePickListValidator()
+        },
+        {
+          name: 'Sign Count',
+          validations: basicNumericValidator()
+        },
+        {
+          name: 'Sign Age',
+          validations: ageOfSignPickListValidator()
+        },
+        {
+          name: 'Habitat',
+          validations: habitatPickListValidator()
+        },
+        {
+          name: '% Veg Cover',
+          validations: basicNumericValidator()
+        },
+        {
+          name: '% Snow Cover',
+          validations: basicNumericValidator()
+        },
+        {
+          name: 'Activity',
+          validations: activityNonTargetedPickListValidator()
+        },
+        {
+          name: 'Number of Marked Animals Observed',
+          validations: basicNumericValidator()
+        },
+        {
+          name: 'Survey or Telemetry Search',
+          validations: surveyOrTelemetryPickListValidator()
+        }
+      ]
+    },
+    {
+      name: 'Marked Animals',
+      validations: [
+        {
+          file_duplicate_columns_validator: {}
+        },
+        {
+          file_required_columns_validator: {
+            required_columns: [
+              'Group Label',
+              'Date',
+              'Targeted or Non-Targeted',
+              'Wildlife Health ID',
+              'Animal ID',
+              'Telemetry Device ID',
+              'Collar/Tag Frequency',
+              'Frequency Unit',
+              'Right Ear Tag ID',
+              'Right Ear Tag Colour',
+              'Left Ear Tag ID',
+              'Left Ear Tag Colour',
+              'Marked Animals Comments'
+            ]
+          }
+        },
+        {
+          file_column_unique_validator: {
+            column_names: ['Wildlife Health ID', 'Animal ID', 'Telemetry Device ID']
+          }
+        }
+      ],
+      columns: [
+        {
+          name: 'Group Label',
+          validations: [{ column_required_validator: {} }]
+        },
+        {
+          name: 'Targeted or Non-Targeted',
+          validations: targetPickListValidator()
+        },
+        {
+          name: 'Frequency Unit',
+          validations: frequencyPickListValidator()
+        }
+      ]
+    },
+    {
+      name: 'Incidental Observations',
       validations: [
         {
           file_duplicate_columns_validator: {}
@@ -105,262 +318,115 @@ export const validationConfigBuilder = {
             required_columns: [
               'Study Area',
               'Block ID/SU ID',
-              'Stratum',
+              'Date',
+              'Time',
               'UTM Zone',
               'Easting',
               'Northing',
+              'Datum',
               'Lat (DD)',
               'Long (DD)',
               'Species',
-              'Group Label',
-              'Date'
+              'Adult Males',
+              'Adult Females',
+              'Adults - Unclassified Sex',
+              'Juvenile Males',
+              'Juvenile Females',
+              'Juveniles - Unclassified Sex',
+              'Unknown Age/Sex',
+              'Total Count',
+              'Species Occurrence Status',
+              'Activity',
+              'Activity Count',
+              'Feature Type',
+              'Feature Type Count',
+              'Sign Type',
+              'Sign Count',
+              'Photos',
+              'Incidental Observation Comments'
             ]
           }
         }
       ],
       columns: [
         {
-          name: 'Stratum',
-          description: '',
-          validations: stratumPickListValidator()
-        },
-        {
           name: 'UTM Zone',
-          description: '',
           validations: utmZoneValidator()
         },
         {
           name: 'Easting',
-          description: '',
-          validations: basicNumericValidator()
-        },
-        {
-          name: 'Northing',
-          description: '',
-          validations: basicNumericValidator()
-        },
-        {
-          name: 'Datum',
-          description: '',
-          validations: datumPickListValidator()
-        },
-        {
-          name: 'Lat (DD)',
-          description: '',
-          validations: basicNumericValidator()
-        },
-        {
-          name: 'Long (DD)',
-          description: '',
-          validations: basicNumericValidator()
-        },
-        {
-          name: 'Species',
-          description: '',
-          validations: elkSpeciesValidator()
-        },
-        { name: 'BC RISC Yearlings Bulls', description: '', validations: basicNumericValidator() },
-        { name: 'BC RISC Class I Bulls', description: '', validations: basicNumericValidator() },
-        { name: 'BC RISC Class II Bulls', description: '', validations: basicNumericValidator() },
-        { name: 'BC RISC Class III Bulls', description: '', validations: basicNumericValidator() },
-        { name: 'BC RISC Class IV Bulls', description: '', validations: basicNumericValidator() },
-        { name: 'Spike Bulls', description: '', validations: basicNumericValidator() },
-        { name: 'Raghorn Bulls', description: '', validations: basicNumericValidator() },
-        { name: '<=3 Point Bulls', description: '', validations: basicNumericValidator() },
-        { name: '3 - 4 Point Bulls', description: '', validations: basicNumericValidator() },
-        { name: '3 - 5 Point Bulls', description: '', validations: basicNumericValidator() },
-        { name: '<4 Point Bulls', description: '', validations: basicNumericValidator() },
-        { name: '>=4 Point Bulls', description: '', validations: basicNumericValidator() },
-        { name: '5 Point Bulls', description: '', validations: basicNumericValidator() },
-        { name: '>=5 Point Bulls', description: '', validations: basicNumericValidator() },
-        { name: '>= 6 Point Bulls', description: '', validations: basicNumericValidator() },
-        { name: 'Adult Bulls - Unclassified', description: '', validations: basicNumericValidator() },
-        { name: 'Unclassified Bulls', description: '', validations: basicNumericValidator() },
-        { name: 'Cows', description: '', validations: basicNumericValidator() },
-        { name: 'Calves', description: '', validations: basicNumericValidator() },
-        { name: 'Adult Unclassified Sex', description: '', validations: basicNumericValidator() },
-        { name: 'Yearling - Unclassified Sex', description: '', validations: basicNumericValidator() },
-        { name: 'Unclassified Age/Sex', description: '', validations: basicNumericValidator() },
-        {
-          name: 'Sign Type',
-          description: '',
-          validations: signTypePickListValidator()
-        },
-        {
-          name: 'Sign Count',
-          description: '',
-          validations: basicNumericValidator()
-        },
-        {
-          name: 'Sign Age',
-          description: '',
-          validations: signAgePickListValidator()
-        },
-        {
-          name: 'Habitat',
-          description: '',
-          validations: habitatPickListValidator()
-        },
-        {
-          name: '% Veg Cover',
-          description: '',
-          validations: basicNumericValidator()
-        },
-        {
-          name: '% Snow Cover',
-          description: '',
-          validations: basicNumericValidator()
-        },
-        {
-          name: 'Activity',
-          description: '',
-          validations: activityNonTargetedPickListValidator()
-        },
-        {
-          name: 'Number of Marked Animals Observed',
-          description: '',
-          validations: basicNumericValidator()
-        },
-        {
-          name: 'Survey or Telemetry Search',
-          description: '',
-          validations: surveyOrTelemetryPickListValidator()
-        }
-      ]
-    },
-    {
-      name: 'Marked Animals',
-      description: '',
-      validations: [
-        {
-          file_duplicate_columns_validator: {}
-        },
-        {
-          file_required_columns_validator: {
-            required_columns: ['Group Label']
-          }
-        }
-      ],
-      columns: [
-        {
-          name: 'Target or Non-Targeted',
-          description: '',
-          validations: targetPickListValidator()
-        },
-        {
-          name: 'Frequency Unit',
-          description: '',
-          validations: frequencyPickListValidator()
-        }
-      ]
-    },
-    {
-      name: 'Incidental Observations',
-      description: '',
-      validations: [
-        {
-          file_duplicate_columns_validator: {}
-        }
-      ],
-      columns: [
-        {
-          name: 'UTM Zone',
-          description: '',
-          validations: utmZoneValidator()
-        },
-        {
-          name: 'Easting',
-          description: '',
           validations: eastingValidator()
         },
         {
           name: 'Northing',
-          description: '',
           validations: northingValidator()
         },
         {
           name: 'Datum',
-          description: '',
           validations: datumPickListValidator()
         },
         {
           name: 'Lat (DD)',
-          description: '',
           validations: basicNumericValidator()
         },
         {
           name: 'Long (DD)',
-          description: '',
           validations: basicNumericValidator()
         },
         {
           name: 'Adult Males',
-          description: '',
           validators: basicNumericValidator()
         },
         {
           name: 'Adult Females',
-          description: '',
           validators: basicNumericValidator()
         },
         {
           name: 'Adults - Unclassified Sex',
-          description: '',
           validators: basicNumericValidator()
         },
         {
           name: 'Juvenile Males',
-          description: '',
           validators: basicNumericValidator()
         },
         {
           name: 'Juvenile Females',
-          description: '',
           validators: basicNumericValidator()
         },
         {
           name: 'Juveniles - Unclassified Sex',
-          description: '',
           validators: basicNumericValidator()
         },
         {
           name: 'Unknown Age/Sex',
-          description: '',
           validators: basicNumericValidator()
         },
         {
-          name: 'SpeciesOccurrence Status',
-          description: '',
+          name: 'Species Occurrence Status',
           validations: presentAbsentPickListValidator()
         },
         {
           name: 'Activity',
-          description: '',
           validations: activityNonTargetedPickListValidator()
         },
         {
           name: 'Activity Count',
-          description: '',
           validations: basicNumericValidator()
         },
         {
           name: 'Feature Type',
-          description: '',
           validations: featureTypePickListValidator()
         },
         {
           name: 'Feature Type Count',
-          description: '',
           validations: basicNumericValidator()
         },
         {
           name: 'Sign Type',
-          description: '',
           validations: signTypePickListValidator()
         },
         {
           name: 'Sign Count',
-          description: '',
           validations: basicNumericValidator()
         }
       ]
