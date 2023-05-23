@@ -12,7 +12,6 @@ export const transformationConfigBuilder: TransformSchema = {
       primaryKey: ['Study Area', 'Block ID/SU ID'],
       parentKey: [],
       type: 'root',
-
       foreignKeys: [
         {
           sheetName: 'Marked Animals',
