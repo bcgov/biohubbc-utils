@@ -34,7 +34,6 @@ const goatSpeciesPickListValidator = () => {
 };
 
 export const validationConfigBuilder = {
-  name: '',
   files: [
     {
       name: 'Effort & Site Conditions',

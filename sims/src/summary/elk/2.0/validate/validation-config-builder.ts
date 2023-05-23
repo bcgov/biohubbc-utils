@@ -1,5 +1,4 @@
 export const validationConfigBuilder = {
-  name: '',
   files: [
     {
       name: 'Elk_RESULTS',

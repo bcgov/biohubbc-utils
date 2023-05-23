@@ -46,7 +46,6 @@ const sheepSpeciesPickListValidator = () => {
 };
 
 export const sheepTemplateValidationSchema = {
-  name: '',
   files: [
     {
       name: 'Effort & Site Conditions',

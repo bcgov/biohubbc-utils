@@ -34,7 +34,6 @@ const mooseSpeciesPickListValidator = () => {
 };
 
 export const validationConfigBuilder = {
-  name: '',
   files: [
     {
       name: 'Block Summary',

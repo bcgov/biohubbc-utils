@@ -32,7 +32,6 @@ const mooseSpeciesPickListValidator = () => {
 };
 
 export const validationConfigBuilder = {
-  name: '',
   files: [
     {
       name: 'Effort & Site Conditions',
