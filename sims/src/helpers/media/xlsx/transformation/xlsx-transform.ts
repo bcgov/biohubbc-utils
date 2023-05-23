@@ -509,11 +509,9 @@ export class XLSXTransform {
 
     const conditionsMet = new Set<boolean>();
 
-    for (let checksIndex = 0; checksIndex < condition.checks.length; checksIndex++) {
-      const check = condition.checks[checksIndex];
-
-      if (check.ifNotEmpty) {
-        conditionsMet.add(this._processIfNotEmptyCondition(check, rowObjects));
+    for (const checksItem of condition.checks) {
+      if (checksItem.ifNotEmpty) {
+        conditionsMet.add(this._processIfNotEmptyCondition(checksItem, rowObjects));
       }
     }
 
@@ -522,10 +520,10 @@ export class XLSXTransform {
     if (condition.type === 'or') {
       // condition passes if at least 1 check passes (logical `or`)
       result = conditionsMet.has(true);
+    } else {
+      // condition passes if no check fails (logical `and`)
+      result = !conditionsMet.has(false);
     }
-
-    // condition passes if no check fails (logical `and`)
-    result = !conditionsMet.has(false);
 
     if (condition.not) {
       // if `true`, negate the result of the condition (logical `not`)
@@ -540,8 +538,10 @@ export class XLSXTransform {
 
     let result = false;
 
-    if (!pathValues || !pathValues.length || pathValues[0] === '0') {
-      // path is not empty
+    if (!pathValues || !pathValues.length) {
+      // path is empty
+      result = false;
+    } else {
       result = true;
     }
 
