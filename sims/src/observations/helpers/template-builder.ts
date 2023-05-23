@@ -121,7 +121,7 @@ export class TemplateBuilder {
       return '';
     }
 
-    const inputString = JSON.stringify(this.config.validate.inputBuilderObject);
+    const inputString = JSON.stringify(this.config.validate.inputBuilderObject, null, 2);
     const outputPath = path.resolve(
       this.config.output.outputFolderPath,
       'output',
@@ -132,7 +132,7 @@ export class TemplateBuilder {
 
     console.debug(`write - ${outputPath}`);
 
-    return inputString;
+    return JSON.stringify(this.config.validate.inputBuilderObject);
   }
 
   /**
@@ -145,7 +145,7 @@ export class TemplateBuilder {
       return '';
     }
 
-    const inputString = JSON.stringify(this.config.transform.inputBuilderObject);
+    const inputString = JSON.stringify(this.config.transform.inputBuilderObject, null, 2);
     const outputPath = path.resolve(
       this.config.output.outputFolderPath,
       'output',
@@ -156,7 +156,7 @@ export class TemplateBuilder {
 
     console.debug(`write - ${outputPath}`);
 
-    return inputString;
+    return JSON.stringify(this.config.transform.inputBuilderObject);
   }
 
   /**

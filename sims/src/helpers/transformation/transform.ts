@@ -94,7 +94,7 @@ export class TransformTester {
     const ajv = new Ajv();
     ajv.validate(transformationConfigJSONSchema, config.transformConfig);
     if (ajv.errors) {
-      throw new Error(JSON.stringify(ajv.errors));
+      throw new Error(JSON.stringify(ajv.errors, null, 2));
     }
   }
 
