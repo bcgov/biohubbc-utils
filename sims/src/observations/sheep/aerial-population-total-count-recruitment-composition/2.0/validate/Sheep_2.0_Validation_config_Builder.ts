@@ -56,7 +56,44 @@ export const sheepTemplateValidationSchema = {
         },
         {
           file_required_columns_validator: {
-            required_columns: ['Study Area']
+            required_columns: [
+              'Study Area',
+              'Population Unit',
+              'Block ID/SU ID',
+              'Population Unit/Block Area (km2)',
+              'Date',
+              'Start Time 1 (24hrs)',
+              'End Time 1 (24hrs)',
+              'Start Time 2 (24hrs)',
+              'End Time 2 (24hrs)',
+              'Start Time 3 (24hrs)',
+              'End Time 3 (24hrs)',
+              'Start Time 4 (24hrs)',
+              'End Time 4 (24hrs)',
+              'Total Block Time',
+              'Total Time (hours)',
+              'Total Time (mins)',
+              'Time (mins)/block area (km2)',
+              'Aircraft Company',
+              'Aircraft Type',
+              'Pilot',
+              'Navigator',
+              'Rear Left Observer',
+              'Rear Right Observer',
+              'Air Temperature (C)',
+              'Visibility',
+              'Cloud Cover (%)',
+              'Wind Speed',
+              'Precipitation',
+              'Light',
+              'Snow Cover',
+              'Snow Conditions',
+              'Snow Depth',
+              'Days Since Snowfall',
+              'Weather Description',
+              'Location Description',
+              'Effort & Site Comments'
+            ]
           }
         }
       ],
@@ -79,11 +116,55 @@ export const sheepTemplateValidationSchema = {
         },
         {
           file_required_columns_validator: {
-            required_columns: ['Study Area', 'Date', 'Species']
+            required_columns: [
+              'Study Area',
+              'Population Unit',
+              'Block ID/SU ID',
+              'UTM Zone',
+              'Easting',
+              'Northing',
+              'Datum',
+              'Lat (DD)',
+              'Long (DD)',
+              'Group Label',
+              'Date',
+              'Time',
+              'Species',
+              'BC RISC Class I Rams',
+              'BC RISC Class II Rams',
+              'BC RISC Class III Rams',
+              'BC RISC Class IV Rams',
+              'Ram - Unclassified',
+              'Ewes',
+              'Yearlings',
+              'Lambs',
+              'Ewe-Like Sheep',
+              'Adults Unclassified Sex',
+              'Unclassified Age/Sex',
+              'Total Count',
+              'Sign Type',
+              'Sign Count',
+              'Age of Sign',
+              'Veg Cover (%)',
+              'Snow Cover (%)',
+              'Activity',
+              'Elevation (m) of Observation',
+              'Habitat',
+              'Habitat - Slope',
+              'Terrain Obstruction',
+              'Number of Marked Animals Observed',
+              'Survey or Telemetry Search',
+              'Photos',
+              'Observation Comments'
+            ]
           }
         }
       ],
       columns: [
+        {
+          name: 'Study Area',
+          validations: [{ column_required_validator: {} }]
+        },
         {
           name: 'UTM Zone',
           validations: utmZoneValidator()
@@ -109,8 +190,12 @@ export const sheepTemplateValidationSchema = {
           validations: basicNumericValidator()
         },
         {
+          name: 'Date',
+          validations: [{ column_required_validator: {} }]
+        },
+        {
           name: 'Species',
-          validations: sheepSpeciesPickListValidator()
+          validations: [{ column_required_validator: {} }, ...sheepSpeciesPickListValidator()]
         },
         {
           name: 'BC RISC Class I Rams',
