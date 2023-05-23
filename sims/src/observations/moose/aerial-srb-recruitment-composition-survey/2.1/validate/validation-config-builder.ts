@@ -72,7 +72,38 @@ export const validationConfigBuilder = {
         },
         {
           file_required_columns_validator: {
-            required_columns: []
+            required_columns: [
+              'Study Area',
+              'Block ID/SU ID',
+              'Block Area (km2)',
+              'Date',
+              'Start Time 1 (24hrs)',
+              'End Time 1 (24hrs)',
+              'Start Time 2 (24hrs)',
+              'End Time 2 (24hrs)',
+              'Total Block Time',
+              'Total Time (hours)',
+              'Total Time (mins)',
+              'Time (mins)/block area (km2)',
+              'Aircraft Company',
+              'Aircraft Type',
+              'Pilot',
+              'Navigator',
+              'Rear Left Observer',
+              'Rear Right Observer',
+              'Air Temperature (C)',
+              'Visibility',
+              'Cloud Cover (%)',
+              'Wind Speed',
+              'Precipitation',
+              'Light',
+              'Snow Cover',
+              'Snow Depth',
+              'Days Since Snowfall',
+              'Weather Description',
+              'Habitat Description',
+              'Effort & Site Comments'
+            ]
           }
         }
       ],
