@@ -1435,7 +1435,7 @@ export const transformationConfigBuilder: TransformSchema = {
       sheetName: 'measurementOrFact',
       condition: {
         type: 'and',
-        checks: [{ ifNotEmpty: getValuesByName('Observations', ['Cow W/1 calves']) }]
+        checks: [{ ifNotEmpty: getValuesByName('Observations', ['Cow W/1 calf']) }]
       },
       fields: [
         {
