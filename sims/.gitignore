@@ -17,6 +17,7 @@ yarn-error.log*
 # Ignore files that start with `~$`. These are typically temp files produced by excel that don't need to be committed.
 src/observations/**/test-data/~$*
 src/summary/**/test-data/~$*
+
 # These folders are only meant to store artifacts produced during local development/testing
 src/observations/**/test-run
 src/summary/**/test-run
