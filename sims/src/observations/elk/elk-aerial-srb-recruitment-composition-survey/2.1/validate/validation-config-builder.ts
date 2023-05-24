@@ -413,31 +413,31 @@ export const validationConfigBuilder = {
         },
         {
           name: 'Adult Males',
-          validators: basicNumericValidator()
+          validations: basicNumericValidator()
         },
         {
           name: 'Adult Females',
-          validators: basicNumericValidator()
+          validations: basicNumericValidator()
         },
         {
           name: 'Adults - Unclassified Sex',
-          validators: basicNumericValidator()
+          validations: basicNumericValidator()
         },
         {
           name: 'Juvenile Males',
-          validators: basicNumericValidator()
+          validations: basicNumericValidator()
         },
         {
           name: 'Juvenile Females',
-          validators: basicNumericValidator()
+          validations: basicNumericValidator()
         },
         {
           name: 'Juveniles - Unclassified Sex',
-          validators: basicNumericValidator()
+          validations: basicNumericValidator()
         },
         {
           name: 'Unknown Age/Sex',
-          validators: basicNumericValidator()
+          validations: basicNumericValidator()
         },
         {
           name: 'Species Occurrence Status',

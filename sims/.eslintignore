@@ -10,8 +10,8 @@ uploads
 
 .vscode
 
-sims/observations/**/output/*
-sims/summary/**/output/*
+sims/src/observations/**/output/*
+sims/src/summary/**/output/*
 
-sims/observations/**/test-run/*
-sims/summary/**/test-run/*
+sims/src/observations/**/test-run/*
+sims/src/summary/**/test-run/*

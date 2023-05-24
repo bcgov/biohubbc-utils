@@ -466,7 +466,7 @@ export const validationConfigBuilder = {
         },
         {
           name: 'Activity',
-          validations: activityNonTargetedPickListValidator
+          validations: activityNonTargetedPickListValidator()
         },
         {
           name: 'Activity Count',
