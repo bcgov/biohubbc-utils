@@ -1,7 +1,10 @@
-import { testTransform } from './observations/sheep/aerial-population-total-count-recruitment-composition/2.1';
+import { testValidate } from './observations/sheep/aerial-population-total-count-recruitment-composition/2.1';
 
-console.debug('[test transform] - sheep - aerial-population-total-count-recruitment-composition - 2.1');
-testTransform('mini_EastKootenay_Sheep_Aerial_Total_Count_2.0.xlsx');
+console.debug('[test validate] - sheep - aerial-population-total-count-recruitment-composition - 2.1');
+testValidate('EastKootenay_Sheep_Aerial_Total_Count_2.0.xlsx');
+
+// console.debug('[test transform] - sheep - aerial-population-total-count-recruitment-composition - 2.1');
+// testTransform('mini_EastKootenay_Sheep_Aerial_Total_Count_2.0.xlsx');
 
 // import { testTransform } from './observations/elk/elk-general-recruitment-composition-survey/2.1';
 

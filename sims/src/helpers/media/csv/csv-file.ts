@@ -54,7 +54,7 @@ export class CSVWorksheet {
   _headers: string[];
   _headersLowerCase: string[];
   _rows: string[][];
-  _rowObjects: object[];
+  _rowObjects: Record<string, any>[];
 
   csvValidation: CSVValidation;
 
@@ -172,7 +172,7 @@ export class CSVWorksheet {
     return this._rows;
   }
 
-  getRowObjects(): object[] {
+  getRowObjects(): Record<string, any>[] {
     if (!this.worksheet) {
       return [];
     }
@@ -189,7 +189,7 @@ export class CSVWorksheet {
       const headers = this.getHeaders();
 
       rows.forEach((row: string[]) => {
-        const rowObject = {};
+        const rowObject: Record<string, any> = {};
 
         headers.forEach((header: string, index: number) => {
           rowObject[header] = row[index];

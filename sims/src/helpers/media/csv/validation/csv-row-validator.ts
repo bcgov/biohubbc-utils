@@ -1,4 +1,4 @@
-import { SUBMISSION_MESSAGE_TYPE } from '../../../../constants/status';
+import { SUBMISSION_MESSAGE_TYPE } from '../../status';
 import { safeToLowerCase } from '../../string-utils';
 import { CSVValidator } from '../csv-file';
 
