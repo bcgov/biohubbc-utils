@@ -2798,6 +2798,62 @@
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
+                "static": "transect-id"
+              }
+            }
+          ]
+        },
+        {
+          "columnName": "measurementType",
+          "columnValue": [
+            {
+              "static": "Transect ID"
+            }
+          ]
+        },
+        {
+          "columnName": "measurementValue",
+          "columnValue": [
+            {
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Transect ID']"
+              ]
+            }
+          ]
+        },
+        {
+          "columnName": "measurementUnit",
+          "columnValue": [
+            {
+              "static": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sheetName": "measurementOrFact",
+      "fields": [
+        {
+          "columnName": "eventID",
+          "columnValue": [
+            {
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
+            }
+          ]
+        },
+        {
+          "columnName": "measurementID",
+          "columnValue": [
+            {
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ],
+              "postfix": {
                 "static": "perpendicular-distance-from-transect-line"
               }
             }

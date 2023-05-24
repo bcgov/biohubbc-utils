@@ -1460,6 +1460,35 @@ export const transformationConfigBuilder: TransformSchema = {
       ]
     },
 
+    //measurementOrFact: Observations - Transect Id
+    {
+      sheetName: 'measurementOrFact',
+      fields: [
+        {
+          columnName: 'eventID',
+          columnValue: [
+            {
+              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+            }
+          ]
+        },
+        {
+          columnName: 'measurementID',
+          columnValue: [
+            {
+              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+              postfix: {
+                static: 'transect-id'
+              }
+            }
+          ]
+        },
+        createValueField('measurementType', 'Transect ID'),
+        createPathField('measurementValue', 'Observations', ['Transect ID']),
+        createValueField('measurementUnit', '')
+      ]
+    },
+
     //measurementOrFact: Observations - Perpendicular Distance From Transect Line (m)
     {
       sheetName: 'measurementOrFact',

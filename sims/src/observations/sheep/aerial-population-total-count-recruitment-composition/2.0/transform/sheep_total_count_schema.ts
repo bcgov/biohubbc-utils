@@ -713,6 +713,33 @@ export const sheepTotalCountSchema: TransformSchema = {
     },
     {
       sheetName: 'measurementOrFact',
+      fields: [
+        {
+          columnName: 'eventID',
+          columnValue: [
+            {
+              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+            }
+          ]
+        },
+        {
+          columnName: 'measurementID',
+          columnValue: [
+            {
+              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+              postfix: {
+                static: 'population-unit'
+              }
+            }
+          ]
+        },
+        createValueField('measurementType', 'Population Unit'),
+        createValueField('measurementUnit', ''),
+        createPathField('measurementValue', 'Observations', ['Population Unit'])
+      ]
+    },
+    {
+      sheetName: 'measurementOrFact',
       condition: {
         type: 'and',
         checks: [{ ifNotEmpty: getValuesByName('Observations', ['Group Label']) }]

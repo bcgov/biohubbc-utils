@@ -1471,6 +1471,62 @@
     },
     {
       "sheetName": "measurementOrFact",
+      "fields": [
+        {
+          "columnName": "eventID",
+          "columnValue": [
+            {
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
+            }
+          ]
+        },
+        {
+          "columnName": "measurementID",
+          "columnValue": [
+            {
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ],
+              "postfix": {
+                "static": "population-unit"
+              }
+            }
+          ]
+        },
+        {
+          "columnName": "measurementType",
+          "columnValue": [
+            {
+              "static": "Population Unit"
+            }
+          ]
+        },
+        {
+          "columnName": "measurementUnit",
+          "columnValue": [
+            {
+              "static": ""
+            }
+          ]
+        },
+        {
+          "columnName": "measurementValue",
+          "columnValue": [
+            {
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Population Unit']"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sheetName": "measurementOrFact",
       "condition": {
         "type": "and",
         "checks": [

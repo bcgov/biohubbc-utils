@@ -369,6 +369,33 @@ export const transformationConfigBuilder: TransformSchema = {
         createValueField('measurementUnit', '')
       ]
     },
+    {
+      sheetName: 'measurementOrFact',
+      fields: [
+        {
+          columnName: 'eventID',
+          columnValue: [
+            {
+              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+            }
+          ]
+        },
+        {
+          columnName: 'measurementID',
+          columnValue: [
+            {
+              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+              postfix: {
+                static: 'population-unit'
+              }
+            }
+          ]
+        },
+        createValueField('measurementType', 'Population Unit'),
+        createValueField('measurementUnit', ''),
+        createPathField('measurementValue', 'Observations', ['Population Unit'])
+      ]
+    },
     //measurementOrFact: Observations - Group Label
     {
       sheetName: 'measurementOrFact',
