@@ -4,6 +4,53 @@ This folder contains some scripts that can be used to assist in the creation of 
 
 Why? Both the validation and transformation configs are large JSON objects, which can be tedious to create without the help of re-usable typescript functions that can reduce the manual effort needed to produce the final JSON objects.
 
+# Folder Stucture
+
+```
+sims/src/
+├── helpers/
+│   ├── media/
+│   ├── transformation/
+│   └── validation/
+├── observations/
+│   ├── <species>/
+│   │   ├── <template_name>/
+│   │   │   └── <version>/
+│   │   │       ├── output/
+│   │   │       ├── test-data/
+│   │   │       ├── test-run/
+│   │   │       ├── transform/
+│   │   │       ├── validate/
+│   │   │       └── index.ts
+│   │   └── index.ts
+│   └── index.ts
+├── summary/
+│   ├── <species>/
+│   │   ├── <version>/
+│   │   │   ├── output/
+│   │   │   ├── test-data/
+│   │   │   ├── test-run/
+│   │   │   ├── validate/
+│   │   │   └── index.ts
+│   │   └── index.ts
+│   └── index.ts
+└── test.ts
+```
+
+# Running Test Executions
+
+The `index.ts` file for each template exports a `testValidate` and `testTransform` function that can be called, passing the name of any test file that exists in their respective `test-data` folder.
+
+Add a call to these functions in `test.ts`.
+
+To run all tests specified in `test.ts`.
+
+```
+npm test
+```
+
+The resulting test artifacts will be created in the `test-run` folder.
+
 # Template Validation Config Builder
 
 ### Follow these steps to create a validation configuration for an excel template
