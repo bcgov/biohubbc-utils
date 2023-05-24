@@ -2,7 +2,7 @@
 
 This folder contains some scripts that can be used to assist in the creation of validation and/or transformation configs.
 
-Why? Both the validation and transformation configs are large JSON objects, which can be tedious to create without the help of re-usable typescript functions that can reduce teh manual effort needed to produce the JSON objects.
+Why? Both the validation and transformation configs are large JSON objects, which can be tedious to create without the help of re-usable typescript functions that can reduce the manual effort needed to produce the final JSON objects.
 
 # Template Validation Config Builder
 

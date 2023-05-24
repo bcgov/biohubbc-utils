@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { TransformTester } from '../../../../helpers/transformation/transform';
+import { TransformationTester } from '../../../../helpers/transformation/transformation-tester';
 import { ValidationTester } from '../../../../helpers/validation/validation-tester';
 import { TemplateBuilder, TemplateBuilderConfig } from '../../../helpers/template-builder';
 import { transformationConfigBuilder } from './transform/transformation-config-builder';
@@ -45,7 +45,7 @@ export const build = async () => {
  * @param testFileName the name of the test file to transform. Must be included in the `test-data` folder.
  */
 export const testTransform = (testFileName: string) => {
-  const transformTester = new TransformTester();
+  const transformTester = new TransformationTester();
 
   transformTester.testTransform({
     transformConfig: transformationConfigBuilder,

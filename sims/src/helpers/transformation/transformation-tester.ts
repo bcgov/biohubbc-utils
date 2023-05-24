@@ -7,13 +7,13 @@ import { XLSXTransform } from '../media/xlsx/transformation/xlsx-transform';
 import { transformationConfigJSONSchema } from '../media/xlsx/transformation/xlsx-transform-schema';
 import { TransformSchema } from '../media/xlsx/transformation/xlsx-transform-schema-parser';
 
-export class TransformTester {
+export class TransformationTester {
   /**
    * Runs the provided input file against the provided transform config, and writes the results to a folder under the
    * specified output folder path.
    *
    * @param {{ transformConfig: TransformSchema; inputFilePath: string; outputFolderPath: string }} config
-   * @memberof TransformTester
+   * @memberof TransformationTester
    */
   async testTransform(config: { transformConfig: TransformSchema; inputFilePath: string; outputFolderPath: string }) {
     this._isTransformConfigValid({ transformConfig: config.transformConfig });
@@ -88,7 +88,7 @@ export class TransformTester {
    * Throws an error if it fails to validate.
    *
    * @param {{ transformConfig: TransformSchema }} config
-   * @memberof TransformTester
+   * @memberof TransformationTester
    */
   _isTransformConfigValid(config: { transformConfig: TransformSchema }) {
     const ajv = new Ajv();
