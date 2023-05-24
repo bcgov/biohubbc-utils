@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { ValidationTester } from '../../../helpers/validation/validation-tester';
 import { TemplateBuilder, TemplateBuilderConfig } from '../../helpers/template-builder';
 import { validationConfigBuilder } from './validate/validation-config-builder';
 
@@ -30,4 +31,20 @@ export const build = async () => {
   };
 
   new TemplateBuilder(config).build();
+};
+
+/**
+ * Runs the validation config against the specified test file. The output of the test run is written to the `test-run`
+ * folder.
+ *
+ * @param {string} testFileName the name of the test file to validate. Must be included in the `test-data` folder.
+ */
+export const testValidate = (testFileName: string) => {
+  const validateTester = new ValidationTester();
+
+  validateTester.testValidate({
+    validateConfig: validationConfigBuilder,
+    inputFilePath: path.resolve(__dirname, 'test-data', testFileName),
+    outputFolderPath: path.resolve(__dirname, 'test-run')
+  });
 };
