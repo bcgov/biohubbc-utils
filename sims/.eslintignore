@@ -10,8 +10,10 @@ uploads
 
 .vscode
 
-sims/src/observations/**/output/*
-sims/src/summary/**/output/*
+# Don't lint the output files, as they are automaticaly generated files
+src/observations/**/output/*
+src/summary/**/output/*
 
-sims/src/observations/**/test-run/*
-sims/src/summary/**/test-run/*
+# These folders are only meant to store artifacts produced during local development/testing
+src/observations/**/test-run/*
+src/summary/**/test-run/*
