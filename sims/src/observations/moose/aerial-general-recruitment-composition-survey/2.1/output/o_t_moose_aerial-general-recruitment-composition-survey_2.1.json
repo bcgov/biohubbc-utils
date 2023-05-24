@@ -2882,7 +2882,7 @@
         "type": "and",
         "checks": [
           {
-            "ifNotEmpty": "$..[?(@._name === 'Observations')]..['Cow W/1 calves']"
+            "ifNotEmpty": "$..[?(@._name === 'Observations')]..['Cow W/1 calf']"
           }
         ]
       },
