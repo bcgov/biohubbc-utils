@@ -6,7 +6,10 @@ import {
   testTransform as goatTestTransform,
   testValidate as goatTestValidate1
 } from './observations/goat/aerial-population-total-count-recruitment-composition-survey/2.1';
-import { testValidate as mooseTestValidate1 } from './observations/moose/aerial-general-recruitment-composition-survey/2.1';
+import {
+  testTransform as mooseAerialGeneralTestTransform,
+  testValidate as mooseTestValidate1
+} from './observations/moose/aerial-general-recruitment-composition-survey/2.1';
 import { testValidate as mooseTestValidate2 } from './observations/moose/aerial-srb-recruitment-composition-survey/2.1';
 import {
   testTransform as mooseTransectTestTransform,
@@ -17,10 +20,8 @@ import { testValidate as sheepTestValidate1 } from './observations/sheep/aerial-
 console.debug('[test transform] - goat - aerial-population-total-count-recruitment-composition - 2.1');
 goatTestTransform('Goat_test.xlsx');
 
-//---------------------
-// import { testTransform } from './observations/moose/aerial-general-recruitment-composition-survey/2.1';
-// console.debug('[test transform] - moose - aerial-general-recruitment-composition-survey - 2.1');
-// testTransform('Moose_Aerial_General_Recruit_Comp_Survey_2.0_Test_Data.xlsx');
+console.debug('[test transform] - moose - aerial-general-recruitment-composition-survey - 2.1');
+mooseAerialGeneralTestTransform('Moose_Aerial_General_Recruit_Comp_Survey_2.0_Test_Data.xlsx');
 
 //-----------------------
 console.debug('[test transform] - moose - aerial-transect-distance-sampling-survey - 2.1');
