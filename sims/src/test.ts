@@ -101,6 +101,7 @@ export const sheepTest1 = async () => {
 const testsToRun = async () => {
   await elkTest1();
   await mooseTest2();
+  await caribouTest1();
 };
 
 // Run the tests
