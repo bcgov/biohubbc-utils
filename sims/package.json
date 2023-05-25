@@ -25,6 +25,7 @@
     "observations": "ts-node ./src/observations",
     "summary": "ts-node ./src/summary",
     "all": "npm-run-all -l -s observations summary",
+    "join": "ts-node ./src/join",
     "clean": "rimraf -g \"./src/**/output/*.{json,sql,xlsx,csv}\"",
     "test": "ts-node ./src/test",
     "test-clean": "rimraf -g \"./src/**/test-run/*.{json,sql,xlsx,csv}\"",

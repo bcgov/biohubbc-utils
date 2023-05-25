@@ -31,7 +31,7 @@ DO $$
 
         -- Get template id
         SELECT
-            summary_template_id INTO _summary_template_id
+            summary_template_id INTO _template_id
         FROM
             summary_template st
         WHERE
@@ -49,7 +49,7 @@ DO $$
             )
             VALUES (
                 _taxonomy_id,
-                _summary_template_id,
+                _template_id,
                 _validation_config :: json
             )
             ON CONFLICT (
@@ -58,12 +58,12 @@ DO $$
             ) 
             DO UPDATE SET
                 wldtaxonomic_units_id = _taxonomy_id,
-                summary_template_id = _summary_template_id,
+                summary_template_id = _template_id,
                 validation = _validation_config :: json
             WHERE
                 summary_template_species.wldtaxonomic_units_id = _taxonomy_id
             AND 
-                summary_template_species.summary_template_id = _summary_template_id;
+                summary_template_species.summary_template_id = _template_id;
         END LOOP;
 
         RAISE NOTICE 'All done!';

@@ -28,9 +28,9 @@ export const build = async () => {
     },
     sql: {
       inputBuilderString: sqlBuilderString.toString(),
-      name: 'Goat Aerial Population Total Count Recruitment Composition Survey',
+      name: 'Sheep Aerial Population Total Count Recruitment Composition Survey',
       version: '2.0',
-      description: 'Goat Aerial Population Total Count Recruitment Composition Survey',
+      description: 'Sheep Aerial Population Total Count Recruitment Composition Survey',
       taxonIDs: ['23919', '23921', '23922', '25929', '23920']
     }
   };

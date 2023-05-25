@@ -24,6 +24,7 @@ sims/src/
 │   │   │       └── index.ts
 │   │   └── index.ts
 │   └── index.ts
+├── output/
 ├── summary/
 │   ├── <species>/
 │   │   ├── <version>/
