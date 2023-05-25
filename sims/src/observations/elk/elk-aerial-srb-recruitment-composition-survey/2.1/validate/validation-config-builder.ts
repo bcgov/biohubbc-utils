@@ -57,12 +57,33 @@ export const validationConfigBuilder = {
               'Block Summary Comments'
             ]
           }
+        },
+        {
+          file_column_unique_validator: {
+            column_names: ['Study Area', 'Population Unit', 'Block ID/SU ID', 'Stratum']
+          }
         }
       ],
       columns: [
         {
+          name: 'Study Area',
+          validations: [{ column_required_validator: {} }]
+        },
+        {
+          name: 'Population Unit',
+          validations: [{ column_required_validator: {} }]
+        },
+        {
+          name: 'Block ID/SU ID',
+          validations: [{ column_required_validator: {} }]
+        },
+        {
           name: 'Stratum',
-          validations: stratumPickListValidator()
+          validations: [{ column_required_validator: {} }, ...stratumPickListValidator()]
+        },
+        {
+          name: 'Sampled (Y/N)',
+          validations: yesNoPickListValidator()
         },
         {
           name: 'Stratum/Block Area (km2)',

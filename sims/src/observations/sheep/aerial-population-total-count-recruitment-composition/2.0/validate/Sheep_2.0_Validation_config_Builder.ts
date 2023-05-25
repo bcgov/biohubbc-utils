@@ -161,10 +161,6 @@ export const sheepTemplateValidationSchema = {
       ],
       columns: [
         {
-          name: 'Study Area',
-          validations: [{ column_required_validator: {} }]
-        },
-        {
           name: 'UTM Zone',
           validations: utmZoneValidator()
         },

@@ -152,10 +152,7 @@ export const validationConfigBuilder = {
         }
       ],
       columns: [
-        {
-          name: 'Study Area',
-          validations: [{ column_required_validator: {} }]
-        },
+
         {
           name: 'Date',
           validations: [{ column_required_validator: {} }]

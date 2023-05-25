@@ -43,7 +43,14 @@ export const validationConfigBuilder = {
         },
         {
           file_required_columns_validator: {
-            required_columns: ['Study Area', 'Block ID/SU ID', 'Stratum', 'Sampled (Y/N)']
+            required_columns: [
+              'Study Area',
+              'Block ID/SU ID',
+              'Stratum',
+              'Stratum/Block Area (km2)',
+              'Sampled (Y/N)',
+              'Block Summary Comments'
+            ]
           }
         },
         {
@@ -54,8 +61,20 @@ export const validationConfigBuilder = {
       ],
       columns: [
         {
+          name: 'Study Area',
+          validations: [{ column_required_validator: {} }]
+        },
+        {
+          name: 'Block ID/SU ID',
+          validations: [{ column_required_validator: {} }]
+        },
+        {
           name: 'Stratum',
-          validations: stratumPickListValidator()
+          validations: [{ column_required_validator: {} }, ...stratumPickListValidator()]
+        },
+        {
+          name: 'Stratum/Block Area (km2)',
+          validations: basicNumericValidator()
         },
         {
           name: 'Sampled (Y/N)',
