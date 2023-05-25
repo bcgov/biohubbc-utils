@@ -14,10 +14,21 @@ export const transformationConfigBuilder: TransformSchema = {
       type: 'root',
       foreignKeys: [
         {
+          sheetName: 'Effort & Site Conditions',
+          primaryKey: ['Study Area', 'Block ID/SU ID']
+        },
+        {
           sheetName: 'Observations',
           primaryKey: ['Study Area', 'Block ID/SU ID', 'Stratum']
         }
       ]
+    },
+    {
+      sheetName: 'Effort & Site Conditions',
+      primaryKey: ['Study Area', 'Block ID/SU ID'],
+      parentKey: ['Study Area', 'Block ID/SU ID'],
+      type: '',
+      foreignKeys: []
     },
     {
       sheetName: 'Observations',
@@ -37,28 +48,6 @@ export const transformationConfigBuilder: TransformSchema = {
       parentKey: ['Group Label'],
       type: '',
       foreignKeys: []
-    }
-  ],
-  dwcMeta: [
-    {
-      sheetName: 'event',
-      primaryKey: ['eventID']
-    },
-    {
-      sheetName: 'location',
-      primaryKey: ['eventID']
-    },
-    {
-      sheetName: 'occurrence',
-      primaryKey: ['occurrenceID']
-    },
-    {
-      sheetName: 'organism',
-      primaryKey: ['organismID']
-    },
-    {
-      sheetName: 'measurementOrFact',
-      primaryKey: ['eventID', 'measurementID', 'occurrenceID', 'organismID']
     }
   ],
   map: [
@@ -89,6 +78,14 @@ export const transformationConfigBuilder: TransformSchema = {
           columnValue: [
             {
               paths: [getValuesByName('Block Summary', ['Block Summary Comments'])]
+            }
+          ]
+        },
+        {
+          columnName: 'basisOfRecord',
+          columnValue: [
+            {
+              static: 'HumanObservation'
             }
           ]
         }
@@ -213,8 +210,8 @@ export const transformationConfigBuilder: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'Spike/Fork')
+            createValueField('measurementValue', 'Spike/Fork'),
+            createValueField('measurementUnit', '')
           ]
         }
       ]
@@ -287,8 +284,8 @@ export const transformationConfigBuilder: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'Sub-Prime')
+            createValueField('measurementValue', 'Sub-Prime'),
+            createValueField('measurementUnit', '')
           ]
         }
       ]
@@ -361,8 +358,8 @@ export const transformationConfigBuilder: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'Prime')
+            createValueField('measurementValue', 'Prime'),
+            createValueField('measurementUnit', '')
           ]
         }
       ]
@@ -435,8 +432,8 @@ export const transformationConfigBuilder: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'Senior')
+            createValueField('measurementValue', 'Senior'),
+            createValueField('measurementUnit', '')
           ]
         }
       ]
@@ -509,8 +506,8 @@ export const transformationConfigBuilder: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', '3 Brow/10 Points')
+            createValueField('measurementValue', '3 Brow/10 Points'),
+            createValueField('measurementUnit', '')
           ]
         }
       ]
@@ -583,8 +580,8 @@ export const transformationConfigBuilder: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'BC RISC Yearling')
+            createValueField('measurementValue', 'BC RISC Yearling'),
+            createValueField('measurementUnit', '')
           ]
         }
       ]
@@ -657,8 +654,8 @@ export const transformationConfigBuilder: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'BC RISC Class I')
+            createValueField('measurementValue', 'BC RISC Class I'),
+            createValueField('measurementUnit', '')
           ]
         }
       ]
@@ -731,8 +728,8 @@ export const transformationConfigBuilder: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'BC RISC Class II')
+            createValueField('measurementValue', 'BC RISC Class II'),
+            createValueField('measurementUnit', '')
           ]
         }
       ]
@@ -808,8 +805,8 @@ export const transformationConfigBuilder: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'BC RISC Class III')
+            createValueField('measurementValue', 'BC RISC Class III'),
+            createValueField('measurementUnit', '')
           ]
         }
       ]
@@ -885,8 +882,8 @@ export const transformationConfigBuilder: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'Oswald (1997) Class I')
+            createValueField('measurementValue', 'Oswald (1997) Class I'),
+            createValueField('measurementUnit', '')
           ]
         }
       ]
@@ -962,8 +959,8 @@ export const transformationConfigBuilder: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'Oswald (1997) Class II')
+            createValueField('measurementValue', 'Oswald (1997) Class II'),
+            createValueField('measurementUnit', '')
           ]
         }
       ]
@@ -1039,8 +1036,8 @@ export const transformationConfigBuilder: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'Oswald (1997) Class III')
+            createValueField('measurementValue', 'Oswald (1997) Class III'),
+            createValueField('measurementUnit', '')
           ]
         }
       ]
@@ -1116,8 +1113,8 @@ export const transformationConfigBuilder: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'unclassified')
+            createValueField('measurementValue', 'unclassified'),
+            createValueField('measurementUnit', '')
           ]
         }
       ]
@@ -1190,8 +1187,8 @@ export const transformationConfigBuilder: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-            createValueField('measurementUnit', ''),
-            createValueField('measurementValue', 'unclassified')
+            createValueField('measurementValue', 'unclassified'),
+            createValueField('measurementUnit', '')
           ]
         }
       ]
@@ -1383,8 +1380,8 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Study Area'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Block Summary', ['Study Area'])
+        createPathField('measurementValue', 'Block Summary', ['Study Area']),
+        createValueField('measurementUnit', '')
       ]
     },
     {
@@ -1410,8 +1407,8 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Block ID/SU ID'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Block Summary', ['Block ID/SU ID'])
+        createPathField('measurementValue', 'Block Summary', ['Block ID/SU ID']),
+        createValueField('measurementUnit', '')
       ]
     },
     {
@@ -1437,8 +1434,8 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Stratum'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Block Summary', ['Stratum'])
+        createPathField('measurementValue', 'Block Summary', ['Stratum']),
+        createValueField('measurementUnit', '')
       ]
     },
     {
@@ -1464,8 +1461,8 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Stratum/Block Area'),
-        createValueField('measurementUnit', 'km2'),
-        createPathField('measurementValue', 'Block Summary', ['Stratum/Block Area (km2)'])
+        createPathField('measurementValue', 'Block Summary', ['Stratum/Block Area (km2)']),
+        createValueField('measurementUnit', 'km2')
       ]
     },
     {
@@ -1491,8 +1488,8 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Sampled'),
-        createValueField('measurementUnit', 'Y/N'),
-        createPathField('measurementValue', 'Block Summary', ['Sampled (Y/N)'])
+        createPathField('measurementValue', 'Block Summary', ['Sampled (Y/N)']),
+        createValueField('measurementUnit', 'Y/N')
       ]
     },
     {
@@ -1522,8 +1519,39 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Group Label'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Group Label'])
+        createPathField('measurementValue', 'Observations', ['Group Label']),
+        createValueField('measurementUnit', '')
+      ]
+    },
+    {
+      sheetName: 'measurementOrFact',
+      condition: {
+        type: 'and',
+        checks: [{ ifNotEmpty: getValuesByName('Observations', ['Group Label']) }]
+      },
+      fields: [
+        {
+          columnName: 'eventID',
+          columnValue: [
+            {
+              paths: [getValuesByName('Block Summary', ['_key']), getValuesByName('Observations', ['_row'])]
+            }
+          ]
+        },
+        {
+          columnName: 'measurementID',
+          columnValue: [
+            {
+              paths: [getValuesByName('Block Summary', ['_key']), getValuesByName('Observations', ['_row'])],
+              postfix: {
+                static: 'time'
+              }
+            }
+          ]
+        },
+        createValueField('measurementType', 'Time'),
+        createPathField('measurementValue', 'Observations', ['Time']),
+        createValueField('measurementUnit', '')
       ]
     },
     {
@@ -1553,8 +1581,8 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Cow W/1 calf'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Cow W/1 calf'])
+        createPathField('measurementValue', 'Observations', ['Cow W/1 calf']),
+        createValueField('measurementUnit', '')
       ]
     },
     {
@@ -1584,8 +1612,8 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Cow W/2 calves'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Cow W/2 calves'])
+        createPathField('measurementValue', 'Observations', ['Cow W/2 calves']),
+        createValueField('measurementUnit', '')
       ]
     },
     {
@@ -1618,8 +1646,8 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Sign Type'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Sign Type'])
+        createPathField('measurementValue', 'Observations', ['Sign Type']),
+        createValueField('measurementUnit', '')
       ]
     },
     {
@@ -1652,8 +1680,8 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Sign Count'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Sign Count'])
+        createPathField('measurementValue', 'Observations', ['Sign Count']),
+        createValueField('measurementUnit', '')
       ]
     },
     {
@@ -1683,8 +1711,8 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Age of Sign'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Age of Sign'])
+        createPathField('measurementValue', 'Observations', ['Age of Sign']),
+        createValueField('measurementUnit', '')
       ]
     },
     {
@@ -1714,8 +1742,8 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Veg Cover'),
-        createValueField('measurementUnit', '%'),
-        createPathField('measurementValue', 'Observations', ['Veg Cover (%)'])
+        createPathField('measurementValue', 'Observations', ['Veg Cover (%)']),
+        createValueField('measurementUnit', '%')
       ]
     },
     {
@@ -1745,8 +1773,8 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Snow Cover'),
-        createValueField('measurementUnit', '%'),
-        createPathField('measurementValue', 'Observations', ['Snow Cover (%)'])
+        createPathField('measurementValue', 'Observations', ['Snow Cover (%)']),
+        createValueField('measurementUnit', '%')
       ]
     },
     {
@@ -1776,8 +1804,8 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Activity'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Activity'])
+        createPathField('measurementValue', 'Observations', ['Activity']),
+        createValueField('measurementUnit', '')
       ]
     },
     {
@@ -1807,8 +1835,8 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Number of Marked Animals Observed'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Number of Marked Animals Observed'])
+        createPathField('measurementValue', 'Observations', ['Number of Marked Animals Observed']),
+        createValueField('measurementUnit', '')
       ]
     },
     {
@@ -1838,8 +1866,8 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Survey or Telemetry Search'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Survey or Telemetry Search'])
+        createPathField('measurementValue', 'Observations', ['Survey or Telemetry Search']),
+        createValueField('measurementUnit', '')
       ]
     },
     {
@@ -1869,8 +1897,8 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Photos'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Observations', ['Photos'])
+        createPathField('measurementValue', 'Observations', ['Photos']),
+        createValueField('measurementUnit', '')
       ]
     },
     {
@@ -1908,8 +1936,8 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Targeted or Non-Targeted'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Marked Animals', ['Targeted or Non-Targeted'])
+        createPathField('measurementValue', 'Marked Animals', ['Targeted or Non-Targeted']),
+        createValueField('measurementUnit', '')
       ]
     },
     {
@@ -1947,8 +1975,8 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Wildlife Health ID'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Marked Animals', ['Wildlife Health ID'])
+        createPathField('measurementValue', 'Marked Animals', ['Wildlife Health ID']),
+        createValueField('measurementUnit', '')
       ]
     },
     {
@@ -1986,8 +2014,8 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Animal ID'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Marked Animals', ['Animal ID'])
+        createPathField('measurementValue', 'Marked Animals', ['Animal ID']),
+        createValueField('measurementUnit', '')
       ]
     },
     {
@@ -2025,8 +2053,8 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Telemetry Device ID'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Marked Animals', ['Telemetry Device ID'])
+        createPathField('measurementValue', 'Marked Animals', ['Telemetry Device ID']),
+        createValueField('measurementUnit', '')
       ]
     },
     {
@@ -2103,8 +2131,8 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Right Ear Tag ID'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Marked Animals', ['Right Ear Tag ID'])
+        createPathField('measurementValue', 'Marked Animals', ['Right Ear Tag ID']),
+        createValueField('measurementUnit', '')
       ]
     },
     {
@@ -2142,8 +2170,8 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Right Ear Tag Colour'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Marked Animals', ['Right Ear Tag Colour'])
+        createPathField('measurementValue', 'Marked Animals', ['Right Ear Tag Colour']),
+        createValueField('measurementUnit', '')
       ]
     },
     {
@@ -2181,8 +2209,8 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Left Ear Tag ID'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Marked Animals', ['Left Ear Tag ID'])
+        createPathField('measurementValue', 'Marked Animals', ['Left Ear Tag ID']),
+        createValueField('measurementUnit', '')
       ]
     },
     {
@@ -2220,9 +2248,31 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Left Ear Tag Colour'),
-        createValueField('measurementUnit', ''),
-        createPathField('measurementValue', 'Marked Animals', ['Left Ear Tag Colour'])
+        createPathField('measurementValue', 'Marked Animals', ['Left Ear Tag Colour']),
+        createValueField('measurementUnit', '')
       ]
+    }
+  ],
+  dwcMeta: [
+    {
+      sheetName: 'event',
+      primaryKey: ['eventID']
+    },
+    {
+      sheetName: 'location',
+      primaryKey: ['eventID']
+    },
+    {
+      sheetName: 'occurrence',
+      primaryKey: ['occurrenceID']
+    },
+    {
+      sheetName: 'organism',
+      primaryKey: ['organismID']
+    },
+    {
+      sheetName: 'measurementOrFact',
+      primaryKey: ['eventID', 'measurementID', 'occurrenceID', 'organismID']
     }
   ]
 };

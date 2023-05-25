@@ -1,53 +1,84 @@
-import { testValidate as caribouTestValidate1 } from './observations/caribou/aerial-population-total-count-recruitment-composition-survey/2.1';
-import { testValidate as elkTestValidate1 } from './observations/elk/elk-aerial-srb-recruitment-composition-survey/2.1';
-import { testValidate as elkTestValidate2 } from './observations/elk/elk-general-recruitment-composition-survey/2.1';
-import { testValidate as elkTestValidate3 } from './observations/elk/elk-ground-transect-recruitment-composition-survey/2.1';
-import {
-  testTransform as goatTestTransform,
-  testValidate as goatTestValidate1
-} from './observations/goat/aerial-population-total-count-recruitment-composition-survey/2.1';
-import { testValidate as mooseTestValidate1 } from './observations/moose/aerial-general-recruitment-composition-survey/2.1';
-import { testValidate as mooseTestValidate2 } from './observations/moose/aerial-srb-recruitment-composition-survey/2.1';
-import {
-  testTransform as mooseTransectTestTransform,
-  testValidate as mooseTestValidate3
-} from './observations/moose/aerial-transect-distance-sampling-survey/2.1';
-import { testValidate as sheepTestValidate1 } from './observations/sheep/aerial-population-total-count-recruitment-composition/2.1';
+export const caribouTest1 = async () => {
+  const { testTransform, testValidate } = await import(
+    './observations/caribou/aerial-population-total-count-recruitment-composition-survey/2.1'
+  );
 
-console.debug('[test transform] - goat - aerial-population-total-count-recruitment-composition - 2.1');
-goatTestTransform('Goat_test.xlsx');
+  testValidate('Central Selkirks Caribou_Aerial_Population_Total_Count_Recuit_Comp_Survey_1.0.xlsx');
+  testTransform('Central Selkirks Caribou_Aerial_Population_Total_Count_Recuit_Comp_Survey_1.0.xlsx');
+};
 
-//---------------------
-// import { testTransform } from './observations/moose/aerial-general-recruitment-composition-survey/2.1';
-// console.debug('[test transform] - moose - aerial-general-recruitment-composition-survey - 2.1');
-// testTransform('Moose_Aerial_General_Recruit_Comp_Survey_2.0_Test_Data.xlsx');
+export const elkTest1 = async () => {
+  const { testTransform, testValidate } = await import(
+    './observations/elk/elk-aerial-srb-recruitment-composition-survey/2.1'
+  );
 
-//-----------------------
-console.debug('[test transform] - moose - aerial-transect-distance-sampling-survey - 2.1');
-mooseTransectTestTransform('Moose_Aerial_Transect_Distance_Sampling_Survey_2.0_Test_Data.xlsx');
+  testValidate('Elk_Peace Region MU720A_SRB_Survey_2.0_test_data.xlsx');
+  testTransform('Elk_Peace Region MU720A_SRB_Survey_2.0_test_data.xlsx');
+};
 
-// Test Validations
+export const elkTest2 = async () => {
+  const { testTransform, testValidate } = await import(
+    './observations/elk/elk-aerial-srb-recruitment-composition-survey/2.1'
+  );
 
-console.log('caribou - aerial-population-total-count-recruitment-composition-survey - 2.1');
-caribouTestValidate1('Central Selkirks Caribou_Aerial_Population_Total_Count_Recuit_Comp_Survey_1.0.xlsx');
+  testValidate('Elk_WestKootenay_Composition_Surveys_2.0_test_data.xlsx');
+  testTransform('Elk_WestKootenay_Composition_Surveys_2.0_test_data.xlsx');
+};
 
-console.log('elk - elk-aerial-srb-recruitment-composition-survey - 2.1');
-elkTestValidate1('Elk_Peace Region MU720A_SRB_Survey_2.0_test_data.xlsx');
-console.log('elk - elk-general-recruitment-composition-survey - 2.1');
-elkTestValidate2('Elk_WestKootenay_Composition_Surveys_2.0_test_data.xlsx');
-console.log('elk - elk-ground-transect-recruitment-composition-survey - 2.1');
-elkTestValidate3('Elk_StewarshipCounts_Kootenay_Ground_Transect_2.0_test_data.xlsx');
+export const elkTest3 = async () => {
+  const { testTransform, testValidate } = await import(
+    './observations/elk/elk-aerial-srb-recruitment-composition-survey/2.1'
+  );
 
-console.log('goat - aerial-population-total-count-recruitment-composition-survey - 2.1');
-goatTestValidate1('Monashee_Mt_Goat_Total_Count_Recuit_Comp_Survey_2.0.xlsx');
-//goatTestValidate1('Goat_test.xlsx');
+  testValidate('Elk_StewarshipCounts_Kootenay_Ground_Transect_2.0_test_data.xlsx');
+  testTransform('Elk_StewarshipCounts_Kootenay_Ground_Transect_2.0_test_data.xlsx');
+};
 
-console.log('moose - aerial-general-recruitment-composition-survey - 2.1');
-mooseTestValidate1('Moose_Aerial_General_Recruit_Comp_Survey_2.0_Test_Data.xlsx');
-console.log('moose - aerial-srb-recruitment-composition-survey - 2.1');
-mooseTestValidate2('Moose_Aerial_StratifiedRandomBlock_Recruit_Comp_Survey_2.0_Test_Data.xlsx');
-console.log('moose - aerial-transect-distance-sampling-survey - 2.1');
-mooseTestValidate3('Moose_Aerial_Transect_Distance_Sampling_Survey_2.0_Test_Data.xlsx');
+export const goatTest1 = async () => {
+  const { testTransform, testValidate } = await import(
+    './observations/goat/aerial-population-total-count-recruitment-composition-survey/2.1'
+  );
 
-console.log('sheep - aerial-population-total-count-recruitment-composition - 2.1');
-sheepTestValidate1('EastKootenay_Sheep_Aerial_Total_Count_2.0.xlsx');
+  testValidate('Monashee_Mt_Goat_Total_Count_Recuit_Comp_Survey_2.0.xlsx');
+  testTransform('Monashee_Mt_Goat_Total_Count_Recuit_Comp_Survey_2.0.xlsx');
+};
+
+export const mooseTest1 = async () => {
+  const { testTransform, testValidate } = await import(
+    './observations/moose/aerial-general-recruitment-composition-survey/2.1'
+  );
+
+  testValidate('Moose_Aerial_General_Recruit_Comp_Survey_2.0_Test_Data.xlsx');
+  testTransform('Moose_Aerial_General_Recruit_Comp_Survey_2.0_Test_Data.xlsx');
+};
+
+export const mooseTest2 = async () => {
+  const { testTransform, testValidate } = await import(
+    './observations/moose/aerial-srb-recruitment-composition-survey/2.1'
+  );
+
+  testValidate('Moose_Aerial_StratifiedRandomBlock_Recruit_Comp_Survey_2.0_Test_Data.xlsx');
+  testTransform('Moose_Aerial_StratifiedRandomBlock_Recruit_Comp_Survey_2.0_Test_Data.xlsx');
+};
+
+export const mooseTest3 = async () => {
+  const { testTransform, testValidate } = await import(
+    './observations/moose/aerial-transect-distance-sampling-survey/2.1'
+  );
+
+  testValidate('Moose_Aerial_Transect_Distance_Sampling_Survey_2.0_Test_Data.xlsx');
+  testTransform('Moose_Aerial_Transect_Distance_Sampling_Survey_2.0_Test_Data.xlsx');
+};
+
+export const sheepTest1 = async () => {
+  const { testTransform, testValidate } = await import(
+    './observations/sheep/aerial-population-total-count-recruitment-composition/2.1'
+  );
+
+  testValidate('EastKootenay_Sheep_Aerial_Total_Count_2.0.xlsx');
+  testTransform('EastKootenay_Sheep_Aerial_Total_Count_2.0.xlsx');
+};
+
+// Run Tests
+elkTest1();
+mooseTest2();
