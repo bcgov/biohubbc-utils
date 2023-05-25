@@ -12,7 +12,9 @@
               "Study Area",
               "Block ID/SU ID",
               "Stratum",
-              "Sampled (Y/N)"
+              "Stratum/Block Area (km2)",
+              "Sampled (Y/N)",
+              "Block Summary Comments"
             ]
           }
         },
@@ -28,8 +30,27 @@
       ],
       "columns": [
         {
+          "name": "Study Area",
+          "validations": [
+            {
+              "column_required_validator": {}
+            }
+          ]
+        },
+        {
+          "name": "Block ID/SU ID",
+          "validations": [
+            {
+              "column_required_validator": {}
+            }
+          ]
+        },
+        {
           "name": "Stratum",
           "validations": [
+            {
+              "column_required_validator": {}
+            },
             {
               "column_code_validator": {
                 "allowed_code_values": [
@@ -59,6 +80,14 @@
                   }
                 ]
               }
+            }
+          ]
+        },
+        {
+          "name": "Stratum/Block Area (km2)",
+          "validations": [
+            {
+              "column_numeric_validator": {}
             }
           ]
         },

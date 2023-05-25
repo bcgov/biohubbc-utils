@@ -4,6 +4,7 @@
       "sheetName": "Observations",
       "primaryKey": [
         "Study Area",
+        "Population Unit",
         "Block ID/SU ID"
       ],
       "parentKey": [],

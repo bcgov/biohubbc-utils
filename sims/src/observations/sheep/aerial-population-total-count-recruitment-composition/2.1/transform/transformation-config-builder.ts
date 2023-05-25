@@ -349,14 +349,7 @@ const organismMap: MapSchema = {
   },
   fields: [
     eventIDField,
-    {
-      columnName: 'organismID',
-      columnValue: [
-        {
-          paths: [getValuesByName('Marked Animals', ['_key']), getValuesByName('Marked Animals', ['_row'])]
-        }
-      ]
-    },
+    organismIDField,
     createPathField('organismRemarks', 'Marked Animals', ['Marked Animals Comments'])
   ]
 };

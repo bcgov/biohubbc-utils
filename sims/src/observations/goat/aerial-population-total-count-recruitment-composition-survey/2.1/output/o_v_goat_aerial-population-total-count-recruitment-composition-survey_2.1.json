@@ -205,14 +205,6 @@
       ],
       "columns": [
         {
-          "name": "Study Area",
-          "validations": [
-            {
-              "column_required_validator": {}
-            }
-          ]
-        },
-        {
           "name": "Date",
           "validations": [
             {

@@ -152,7 +152,6 @@ export const validationConfigBuilder = {
         }
       ],
       columns: [
-
         {
           name: 'Date',
           validations: [{ column_required_validator: {} }]

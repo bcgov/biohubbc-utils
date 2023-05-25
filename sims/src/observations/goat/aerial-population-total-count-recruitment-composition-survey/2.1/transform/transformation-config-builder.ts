@@ -9,7 +9,7 @@ export const transformationConfigBuilder: TransformSchema = {
   templateMeta: [
     {
       sheetName: 'Observations',
-      primaryKey: ['Study Area', 'Block ID/SU ID'],
+      primaryKey: ['Study Area', 'Population Unit', 'Block ID/SU ID'],
       parentKey: [],
       type: 'root',
       foreignKeys: [

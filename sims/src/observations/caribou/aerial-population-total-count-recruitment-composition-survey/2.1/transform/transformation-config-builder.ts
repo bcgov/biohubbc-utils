@@ -9,7 +9,7 @@ export const transformationConfigBuilder: TransformSchema = {
   templateMeta: [
     {
       sheetName: 'Observations',
-      primaryKey: ['Study Area', 'Block ID/SU ID'],
+      primaryKey: ['Study Area', 'Population Unit', 'Block ID/SU ID'],
       parentKey: [],
       type: 'root',
 
@@ -643,7 +643,6 @@ export const transformationConfigBuilder: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-
             createValueField('measurementValue', 'BC RISC Class I'),
             createValueField('measurementUnit', '')
           ]
@@ -720,7 +719,6 @@ export const transformationConfigBuilder: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-
             createValueField('measurementValue', 'BC RISC Class II'),
             createValueField('measurementUnit', '')
           ]
@@ -797,7 +795,6 @@ export const transformationConfigBuilder: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-
             createValueField('measurementValue', 'BC RISC Class III'),
             createValueField('measurementUnit', '')
           ]
@@ -874,7 +871,6 @@ export const transformationConfigBuilder: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-
             createValueField('measurementValue', 'BC RISC Class I or II'),
             createValueField('measurementUnit', '')
           ]
@@ -951,7 +947,6 @@ export const transformationConfigBuilder: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-
             createValueField('measurementValue', '3 Points or Fewer'),
             createValueField('measurementUnit', '')
           ]
@@ -1028,7 +1023,6 @@ export const transformationConfigBuilder: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-
             createValueField('measurementValue', '3 or 4 Points'),
             createValueField('measurementUnit', '')
           ]
@@ -1105,7 +1099,6 @@ export const transformationConfigBuilder: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-
             createValueField('measurementValue', '4 points or fewer'),
             createValueField('measurementUnit', '')
           ]
@@ -1182,7 +1175,6 @@ export const transformationConfigBuilder: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-
             createValueField('measurementValue', '4 points or fewer'),
             createValueField('measurementUnit', '')
           ]
@@ -1259,7 +1251,6 @@ export const transformationConfigBuilder: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-
             createValueField('measurementValue', '5 points or more'),
             createValueField('measurementUnit', '')
           ]
@@ -1336,7 +1327,6 @@ export const transformationConfigBuilder: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-
             createValueField('measurementValue', '6 points or more'),
             createValueField('measurementUnit', '')
           ]
@@ -1413,7 +1403,6 @@ export const transformationConfigBuilder: TransformSchema = {
               ]
             },
             createValueField('measurementType', 'Antler Configuration'),
-
             createValueField('measurementValue', '10 Points or Tripalm'),
             createValueField('measurementUnit', '')
           ]
@@ -1471,7 +1460,6 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Study Area'),
-
         createPathField('measurementValue', 'Observations', ['Study Area']),
         createValueField('measurementUnit', '')
       ]
@@ -1499,7 +1487,6 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Block ID/SU ID'),
-
         createPathField('measurementValue', 'Observations', ['Block ID/SU ID']),
         createValueField('measurementUnit', '')
       ]
@@ -1527,7 +1514,6 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Population Unit'),
-
         createPathField('measurementValue', 'Observations', ['Population Unit']),
         createValueField('measurementUnit', '')
       ]
@@ -1627,7 +1613,6 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Sign Count'),
-
         createPathField('measurementValue', 'Observations', ['Sign Count']),
         createValueField('measurementUnit', '')
       ]
@@ -1659,7 +1644,6 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Age of Sign'),
-
         createPathField('measurementValue', 'Observations', ['Age of Sign']),
         createValueField('measurementUnit', '')
       ]
@@ -1691,7 +1675,6 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Veg Cover'),
-
         createPathField('measurementValue', 'Observations', ['Veg Cover (%)']),
         createValueField('measurementUnit', '%')
       ]
@@ -1785,7 +1768,6 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Elevation (m) of Observation'),
-
         createPathField('measurementValue', 'Observations', ['Elevation (m) of Observation']),
         createValueField('measurementUnit', '')
       ]
@@ -1818,7 +1800,6 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Habitat'),
-
         createPathField('measurementValue', 'Observations', ['Habitat']),
         createValueField('measurementUnit', '')
       ]
