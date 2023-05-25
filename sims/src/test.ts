@@ -1,12 +1,3 @@
-// Specify which tests to run
-const testsToRun = async () => {
-  await elkTest1();
-  await mooseTest2();
-};
-
-// Run the tests
-testsToRun();
-
 export const caribouTest1 = async () => {
   console.debug('caribouTest1');
 
@@ -105,3 +96,12 @@ export const sheepTest1 = async () => {
   await testValidate('EastKootenay_Sheep_Aerial_Total_Count_2.0.xlsx');
   await testTransform('EastKootenay_Sheep_Aerial_Total_Count_2.0.xlsx');
 };
+
+// Specify which tests to run
+const testsToRun = async () => {
+  await elkTest1();
+  await mooseTest2();
+};
+
+// Run the tests
+testsToRun();
