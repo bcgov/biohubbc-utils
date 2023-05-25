@@ -1,5 +1,5 @@
 export const caribouTest1 = async () => {
-  console.log('caribouTest1');
+  console.debug('caribouTest1');
 
   const { testTransform, testValidate } = await import(
     './observations/caribou/aerial-population-total-count-recruitment-composition-survey/2.1'
@@ -10,7 +10,7 @@ export const caribouTest1 = async () => {
 };
 
 export const elkTest1 = async () => {
-  console.log('elkTest1');
+  console.debug('elkTest1');
 
   const { testTransform, testValidate } = await import(
     './observations/elk/elk-aerial-srb-recruitment-composition-survey/2.1'
@@ -21,7 +21,7 @@ export const elkTest1 = async () => {
 };
 
 export const elkTest2 = async () => {
-  console.log('elkTest2');
+  console.debug('elkTest2');
 
   const { testTransform, testValidate } = await import(
     './observations/elk/elk-aerial-srb-recruitment-composition-survey/2.1'
@@ -32,7 +32,7 @@ export const elkTest2 = async () => {
 };
 
 export const elkTest3 = async () => {
-  console.log('elkTest3');
+  console.debug('elkTest3');
 
   const { testTransform, testValidate } = await import(
     './observations/elk/elk-aerial-srb-recruitment-composition-survey/2.1'
@@ -43,7 +43,7 @@ export const elkTest3 = async () => {
 };
 
 export const goatTest1 = async () => {
-  console.log('goatTest1');
+  console.debug('goatTest1');
 
   const { testTransform, testValidate } = await import(
     './observations/goat/aerial-population-total-count-recruitment-composition-survey/2.1'
@@ -54,7 +54,7 @@ export const goatTest1 = async () => {
 };
 
 export const mooseTest1 = async () => {
-  console.log('mooseTest1');
+  console.debug('mooseTest1');
 
   const { testTransform, testValidate } = await import(
     './observations/moose/aerial-general-recruitment-composition-survey/2.1'
@@ -65,7 +65,7 @@ export const mooseTest1 = async () => {
 };
 
 export const mooseTest2 = async () => {
-  console.log('mooseTest2');
+  console.debug('mooseTest2');
 
   const { testTransform, testValidate } = await import(
     './observations/moose/aerial-srb-recruitment-composition-survey/2.1'
@@ -76,7 +76,7 @@ export const mooseTest2 = async () => {
 };
 
 export const mooseTest3 = async () => {
-  console.log('mooseTest3');
+  console.debug('mooseTest3');
 
   const { testTransform, testValidate } = await import(
     './observations/moose/aerial-transect-distance-sampling-survey/2.1'
@@ -87,7 +87,7 @@ export const mooseTest3 = async () => {
 };
 
 export const sheepTest1 = async () => {
-  console.log('sheepTest1');
+  console.debug('sheepTest1');
 
   const { testTransform, testValidate } = await import(
     './observations/sheep/aerial-population-total-count-recruitment-composition/2.1'
@@ -97,9 +97,11 @@ export const sheepTest1 = async () => {
   await testTransform('EastKootenay_Sheep_Aerial_Total_Count_2.0.xlsx');
 };
 
+// Specify which tests to run
 const testsToRun = async () => {
   await elkTest1();
   await mooseTest2();
 };
 
+// Run the tests
 testsToRun();
