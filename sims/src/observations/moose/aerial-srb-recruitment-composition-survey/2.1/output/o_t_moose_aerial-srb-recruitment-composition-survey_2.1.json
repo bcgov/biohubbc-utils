@@ -11,6 +11,13 @@
       "type": "root",
       "foreignKeys": [
         {
+          "sheetName": "Effort & Site Conditions",
+          "primaryKey": [
+            "Study Area",
+            "Block ID/SU ID"
+          ]
+        },
+        {
           "sheetName": "Observations",
           "primaryKey": [
             "Study Area",
@@ -19,6 +26,19 @@
           ]
         }
       ]
+    },
+    {
+      "sheetName": "Effort & Site Conditions",
+      "primaryKey": [
+        "Study Area",
+        "Block ID/SU ID"
+      ],
+      "parentKey": [
+        "Study Area",
+        "Block ID/SU ID"
+      ],
+      "type": "",
+      "foreignKeys": []
     },
     {
       "sheetName": "Observations",
@@ -54,41 +74,6 @@
       ],
       "type": "",
       "foreignKeys": []
-    }
-  ],
-  "dwcMeta": [
-    {
-      "sheetName": "event",
-      "primaryKey": [
-        "eventID"
-      ]
-    },
-    {
-      "sheetName": "location",
-      "primaryKey": [
-        "eventID"
-      ]
-    },
-    {
-      "sheetName": "occurrence",
-      "primaryKey": [
-        "occurrenceID"
-      ]
-    },
-    {
-      "sheetName": "organism",
-      "primaryKey": [
-        "organismID"
-      ]
-    },
-    {
-      "sheetName": "measurementOrFact",
-      "primaryKey": [
-        "eventID",
-        "measurementID",
-        "occurrenceID",
-        "organismID"
-      ]
     }
   ],
   "map": [
@@ -128,6 +113,14 @@
               "paths": [
                 "$..[?(@._name === 'Block Summary')]..['Block Summary Comments']"
               ]
+            }
+          ]
+        },
+        {
+          "columnName": "basisOfRecord",
+          "columnValue": [
+            {
+              "static": "HumanObservation"
             }
           ]
         }
@@ -339,18 +332,18 @@
               ]
             },
             {
-              "columnName": "measurementUnit",
-              "columnValue": [
-                {
-                  "static": ""
-                }
-              ]
-            },
-            {
               "columnName": "measurementValue",
               "columnValue": [
                 {
                   "static": "Spike/Fork"
+                }
+              ]
+            },
+            {
+              "columnName": "measurementUnit",
+              "columnValue": [
+                {
+                  "static": ""
                 }
               ]
             }
@@ -493,18 +486,18 @@
               ]
             },
             {
-              "columnName": "measurementUnit",
-              "columnValue": [
-                {
-                  "static": ""
-                }
-              ]
-            },
-            {
               "columnName": "measurementValue",
               "columnValue": [
                 {
                   "static": "Sub-Prime"
+                }
+              ]
+            },
+            {
+              "columnName": "measurementUnit",
+              "columnValue": [
+                {
+                  "static": ""
                 }
               ]
             }
@@ -647,18 +640,18 @@
               ]
             },
             {
-              "columnName": "measurementUnit",
-              "columnValue": [
-                {
-                  "static": ""
-                }
-              ]
-            },
-            {
               "columnName": "measurementValue",
               "columnValue": [
                 {
                   "static": "Prime"
+                }
+              ]
+            },
+            {
+              "columnName": "measurementUnit",
+              "columnValue": [
+                {
+                  "static": ""
                 }
               ]
             }
@@ -801,18 +794,18 @@
               ]
             },
             {
-              "columnName": "measurementUnit",
-              "columnValue": [
-                {
-                  "static": ""
-                }
-              ]
-            },
-            {
               "columnName": "measurementValue",
               "columnValue": [
                 {
                   "static": "Senior"
+                }
+              ]
+            },
+            {
+              "columnName": "measurementUnit",
+              "columnValue": [
+                {
+                  "static": ""
                 }
               ]
             }
@@ -955,18 +948,18 @@
               ]
             },
             {
-              "columnName": "measurementUnit",
-              "columnValue": [
-                {
-                  "static": ""
-                }
-              ]
-            },
-            {
               "columnName": "measurementValue",
               "columnValue": [
                 {
                   "static": "3 Brow/10 Points"
+                }
+              ]
+            },
+            {
+              "columnName": "measurementUnit",
+              "columnValue": [
+                {
+                  "static": ""
                 }
               ]
             }
@@ -1109,18 +1102,18 @@
               ]
             },
             {
-              "columnName": "measurementUnit",
-              "columnValue": [
-                {
-                  "static": ""
-                }
-              ]
-            },
-            {
               "columnName": "measurementValue",
               "columnValue": [
                 {
                   "static": "BC RISC Yearling"
+                }
+              ]
+            },
+            {
+              "columnName": "measurementUnit",
+              "columnValue": [
+                {
+                  "static": ""
                 }
               ]
             }
@@ -1263,18 +1256,18 @@
               ]
             },
             {
-              "columnName": "measurementUnit",
-              "columnValue": [
-                {
-                  "static": ""
-                }
-              ]
-            },
-            {
               "columnName": "measurementValue",
               "columnValue": [
                 {
                   "static": "BC RISC Class I"
+                }
+              ]
+            },
+            {
+              "columnName": "measurementUnit",
+              "columnValue": [
+                {
+                  "static": ""
                 }
               ]
             }
@@ -1417,18 +1410,18 @@
               ]
             },
             {
-              "columnName": "measurementUnit",
-              "columnValue": [
-                {
-                  "static": ""
-                }
-              ]
-            },
-            {
               "columnName": "measurementValue",
               "columnValue": [
                 {
                   "static": "BC RISC Class II"
+                }
+              ]
+            },
+            {
+              "columnName": "measurementUnit",
+              "columnValue": [
+                {
+                  "static": ""
                 }
               ]
             }
@@ -1571,18 +1564,18 @@
               ]
             },
             {
-              "columnName": "measurementUnit",
-              "columnValue": [
-                {
-                  "static": ""
-                }
-              ]
-            },
-            {
               "columnName": "measurementValue",
               "columnValue": [
                 {
                   "static": "BC RISC Class III"
+                }
+              ]
+            },
+            {
+              "columnName": "measurementUnit",
+              "columnValue": [
+                {
+                  "static": ""
                 }
               ]
             }
@@ -1725,18 +1718,18 @@
               ]
             },
             {
-              "columnName": "measurementUnit",
-              "columnValue": [
-                {
-                  "static": ""
-                }
-              ]
-            },
-            {
               "columnName": "measurementValue",
               "columnValue": [
                 {
                   "static": "Oswald (1997) Class I"
+                }
+              ]
+            },
+            {
+              "columnName": "measurementUnit",
+              "columnValue": [
+                {
+                  "static": ""
                 }
               ]
             }
@@ -1879,18 +1872,18 @@
               ]
             },
             {
-              "columnName": "measurementUnit",
-              "columnValue": [
-                {
-                  "static": ""
-                }
-              ]
-            },
-            {
               "columnName": "measurementValue",
               "columnValue": [
                 {
                   "static": "Oswald (1997) Class II"
+                }
+              ]
+            },
+            {
+              "columnName": "measurementUnit",
+              "columnValue": [
+                {
+                  "static": ""
                 }
               ]
             }
@@ -2033,18 +2026,18 @@
               ]
             },
             {
-              "columnName": "measurementUnit",
-              "columnValue": [
-                {
-                  "static": ""
-                }
-              ]
-            },
-            {
               "columnName": "measurementValue",
               "columnValue": [
                 {
                   "static": "Oswald (1997) Class III"
+                }
+              ]
+            },
+            {
+              "columnName": "measurementUnit",
+              "columnValue": [
+                {
+                  "static": ""
                 }
               ]
             }
@@ -2187,18 +2180,18 @@
               ]
             },
             {
-              "columnName": "measurementUnit",
-              "columnValue": [
-                {
-                  "static": ""
-                }
-              ]
-            },
-            {
               "columnName": "measurementValue",
               "columnValue": [
                 {
                   "static": "unclassified"
+                }
+              ]
+            },
+            {
+              "columnName": "measurementUnit",
+              "columnValue": [
+                {
+                  "static": ""
                 }
               ]
             }
@@ -2341,18 +2334,18 @@
               ]
             },
             {
-              "columnName": "measurementUnit",
-              "columnValue": [
-                {
-                  "static": ""
-                }
-              ]
-            },
-            {
               "columnName": "measurementValue",
               "columnValue": [
                 {
                   "static": "unclassified"
+                }
+              ]
+            },
+            {
+              "columnName": "measurementUnit",
+              "columnValue": [
+                {
+                  "static": ""
                 }
               ]
             }
@@ -2778,20 +2771,20 @@
           ]
         },
         {
-          "columnName": "measurementUnit",
-          "columnValue": [
-            {
-              "static": ""
-            }
-          ]
-        },
-        {
           "columnName": "measurementValue",
           "columnValue": [
             {
               "paths": [
                 "$..[?(@._name === 'Block Summary')]..['Study Area']"
               ]
+            }
+          ]
+        },
+        {
+          "columnName": "measurementUnit",
+          "columnValue": [
+            {
+              "static": ""
             }
           ]
         }
@@ -2834,20 +2827,20 @@
           ]
         },
         {
-          "columnName": "measurementUnit",
-          "columnValue": [
-            {
-              "static": ""
-            }
-          ]
-        },
-        {
           "columnName": "measurementValue",
           "columnValue": [
             {
               "paths": [
                 "$..[?(@._name === 'Block Summary')]..['Block ID/SU ID']"
               ]
+            }
+          ]
+        },
+        {
+          "columnName": "measurementUnit",
+          "columnValue": [
+            {
+              "static": ""
             }
           ]
         }
@@ -2890,20 +2883,20 @@
           ]
         },
         {
-          "columnName": "measurementUnit",
-          "columnValue": [
-            {
-              "static": ""
-            }
-          ]
-        },
-        {
           "columnName": "measurementValue",
           "columnValue": [
             {
               "paths": [
                 "$..[?(@._name === 'Block Summary')]..['Stratum']"
               ]
+            }
+          ]
+        },
+        {
+          "columnName": "measurementUnit",
+          "columnValue": [
+            {
+              "static": ""
             }
           ]
         }
@@ -2946,20 +2939,20 @@
           ]
         },
         {
-          "columnName": "measurementUnit",
-          "columnValue": [
-            {
-              "static": "km2"
-            }
-          ]
-        },
-        {
           "columnName": "measurementValue",
           "columnValue": [
             {
               "paths": [
                 "$..[?(@._name === 'Block Summary')]..['Stratum/Block Area (km2)']"
               ]
+            }
+          ]
+        },
+        {
+          "columnName": "measurementUnit",
+          "columnValue": [
+            {
+              "static": "km2"
             }
           ]
         }
@@ -3002,20 +2995,20 @@
           ]
         },
         {
-          "columnName": "measurementUnit",
-          "columnValue": [
-            {
-              "static": "Y/N"
-            }
-          ]
-        },
-        {
           "columnName": "measurementValue",
           "columnValue": [
             {
               "paths": [
                 "$..[?(@._name === 'Block Summary')]..['Sampled (Y/N)']"
               ]
+            }
+          ]
+        },
+        {
+          "columnName": "measurementUnit",
+          "columnValue": [
+            {
+              "static": "Y/N"
             }
           ]
         }
@@ -3066,10 +3059,66 @@
           ]
         },
         {
+          "columnName": "measurementValue",
+          "columnValue": [
+            {
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Group Label']"
+              ]
+            }
+          ]
+        },
+        {
           "columnName": "measurementUnit",
           "columnValue": [
             {
               "static": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sheetName": "measurementOrFact",
+      "condition": {
+        "type": "and",
+        "checks": [
+          {
+            "ifNotEmpty": "$..[?(@._name === 'Observations')]..['Group Label']"
+          }
+        ]
+      },
+      "fields": [
+        {
+          "columnName": "eventID",
+          "columnValue": [
+            {
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ]
+            }
+          ]
+        },
+        {
+          "columnName": "measurementID",
+          "columnValue": [
+            {
+              "paths": [
+                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_row']"
+              ],
+              "postfix": {
+                "static": "time"
+              }
+            }
+          ]
+        },
+        {
+          "columnName": "measurementType",
+          "columnValue": [
+            {
+              "static": "Time"
             }
           ]
         },
@@ -3078,8 +3127,16 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Observations')]..['Group Label']"
+                "$..[?(@._name === 'Observations')]..['Time']"
               ]
+            }
+          ]
+        },
+        {
+          "columnName": "measurementUnit",
+          "columnValue": [
+            {
+              "static": ""
             }
           ]
         }
@@ -3130,20 +3187,20 @@
           ]
         },
         {
-          "columnName": "measurementUnit",
-          "columnValue": [
-            {
-              "static": ""
-            }
-          ]
-        },
-        {
           "columnName": "measurementValue",
           "columnValue": [
             {
               "paths": [
                 "$..[?(@._name === 'Observations')]..['Cow W/1 calf']"
               ]
+            }
+          ]
+        },
+        {
+          "columnName": "measurementUnit",
+          "columnValue": [
+            {
+              "static": ""
             }
           ]
         }
@@ -3194,20 +3251,20 @@
           ]
         },
         {
-          "columnName": "measurementUnit",
-          "columnValue": [
-            {
-              "static": ""
-            }
-          ]
-        },
-        {
           "columnName": "measurementValue",
           "columnValue": [
             {
               "paths": [
                 "$..[?(@._name === 'Observations')]..['Cow W/2 calves']"
               ]
+            }
+          ]
+        },
+        {
+          "columnName": "measurementUnit",
+          "columnValue": [
+            {
+              "static": ""
             }
           ]
         }
@@ -3261,20 +3318,20 @@
           ]
         },
         {
-          "columnName": "measurementUnit",
-          "columnValue": [
-            {
-              "static": ""
-            }
-          ]
-        },
-        {
           "columnName": "measurementValue",
           "columnValue": [
             {
               "paths": [
                 "$..[?(@._name === 'Observations')]..['Sign Type']"
               ]
+            }
+          ]
+        },
+        {
+          "columnName": "measurementUnit",
+          "columnValue": [
+            {
+              "static": ""
             }
           ]
         }
@@ -3328,20 +3385,20 @@
           ]
         },
         {
-          "columnName": "measurementUnit",
-          "columnValue": [
-            {
-              "static": ""
-            }
-          ]
-        },
-        {
           "columnName": "measurementValue",
           "columnValue": [
             {
               "paths": [
                 "$..[?(@._name === 'Observations')]..['Sign Count']"
               ]
+            }
+          ]
+        },
+        {
+          "columnName": "measurementUnit",
+          "columnValue": [
+            {
+              "static": ""
             }
           ]
         }
@@ -3392,20 +3449,20 @@
           ]
         },
         {
-          "columnName": "measurementUnit",
-          "columnValue": [
-            {
-              "static": ""
-            }
-          ]
-        },
-        {
           "columnName": "measurementValue",
           "columnValue": [
             {
               "paths": [
                 "$..[?(@._name === 'Observations')]..['Age of Sign']"
               ]
+            }
+          ]
+        },
+        {
+          "columnName": "measurementUnit",
+          "columnValue": [
+            {
+              "static": ""
             }
           ]
         }
@@ -3456,20 +3513,20 @@
           ]
         },
         {
-          "columnName": "measurementUnit",
-          "columnValue": [
-            {
-              "static": "%"
-            }
-          ]
-        },
-        {
           "columnName": "measurementValue",
           "columnValue": [
             {
               "paths": [
                 "$..[?(@._name === 'Observations')]..['Veg Cover (%)']"
               ]
+            }
+          ]
+        },
+        {
+          "columnName": "measurementUnit",
+          "columnValue": [
+            {
+              "static": "%"
             }
           ]
         }
@@ -3520,20 +3577,20 @@
           ]
         },
         {
-          "columnName": "measurementUnit",
-          "columnValue": [
-            {
-              "static": "%"
-            }
-          ]
-        },
-        {
           "columnName": "measurementValue",
           "columnValue": [
             {
               "paths": [
                 "$..[?(@._name === 'Observations')]..['Snow Cover (%)']"
               ]
+            }
+          ]
+        },
+        {
+          "columnName": "measurementUnit",
+          "columnValue": [
+            {
+              "static": "%"
             }
           ]
         }
@@ -3584,20 +3641,20 @@
           ]
         },
         {
-          "columnName": "measurementUnit",
-          "columnValue": [
-            {
-              "static": ""
-            }
-          ]
-        },
-        {
           "columnName": "measurementValue",
           "columnValue": [
             {
               "paths": [
                 "$..[?(@._name === 'Observations')]..['Activity']"
               ]
+            }
+          ]
+        },
+        {
+          "columnName": "measurementUnit",
+          "columnValue": [
+            {
+              "static": ""
             }
           ]
         }
@@ -3648,20 +3705,20 @@
           ]
         },
         {
-          "columnName": "measurementUnit",
-          "columnValue": [
-            {
-              "static": ""
-            }
-          ]
-        },
-        {
           "columnName": "measurementValue",
           "columnValue": [
             {
               "paths": [
                 "$..[?(@._name === 'Observations')]..['Number of Marked Animals Observed']"
               ]
+            }
+          ]
+        },
+        {
+          "columnName": "measurementUnit",
+          "columnValue": [
+            {
+              "static": ""
             }
           ]
         }
@@ -3712,20 +3769,20 @@
           ]
         },
         {
-          "columnName": "measurementUnit",
-          "columnValue": [
-            {
-              "static": ""
-            }
-          ]
-        },
-        {
           "columnName": "measurementValue",
           "columnValue": [
             {
               "paths": [
                 "$..[?(@._name === 'Observations')]..['Survey or Telemetry Search']"
               ]
+            }
+          ]
+        },
+        {
+          "columnName": "measurementUnit",
+          "columnValue": [
+            {
+              "static": ""
             }
           ]
         }
@@ -3776,20 +3833,20 @@
           ]
         },
         {
-          "columnName": "measurementUnit",
-          "columnValue": [
-            {
-              "static": ""
-            }
-          ]
-        },
-        {
           "columnName": "measurementValue",
           "columnValue": [
             {
               "paths": [
                 "$..[?(@._name === 'Observations')]..['Photos']"
               ]
+            }
+          ]
+        },
+        {
+          "columnName": "measurementUnit",
+          "columnValue": [
+            {
+              "static": ""
             }
           ]
         }
@@ -3851,20 +3908,20 @@
           ]
         },
         {
-          "columnName": "measurementUnit",
-          "columnValue": [
-            {
-              "static": ""
-            }
-          ]
-        },
-        {
           "columnName": "measurementValue",
           "columnValue": [
             {
               "paths": [
                 "$..[?(@._name === 'Marked Animals')]..['Targeted or Non-Targeted']"
               ]
+            }
+          ]
+        },
+        {
+          "columnName": "measurementUnit",
+          "columnValue": [
+            {
+              "static": ""
             }
           ]
         }
@@ -3926,20 +3983,20 @@
           ]
         },
         {
-          "columnName": "measurementUnit",
-          "columnValue": [
-            {
-              "static": ""
-            }
-          ]
-        },
-        {
           "columnName": "measurementValue",
           "columnValue": [
             {
               "paths": [
                 "$..[?(@._name === 'Marked Animals')]..['Wildlife Health ID']"
               ]
+            }
+          ]
+        },
+        {
+          "columnName": "measurementUnit",
+          "columnValue": [
+            {
+              "static": ""
             }
           ]
         }
@@ -4001,20 +4058,20 @@
           ]
         },
         {
-          "columnName": "measurementUnit",
-          "columnValue": [
-            {
-              "static": ""
-            }
-          ]
-        },
-        {
           "columnName": "measurementValue",
           "columnValue": [
             {
               "paths": [
                 "$..[?(@._name === 'Marked Animals')]..['Animal ID']"
               ]
+            }
+          ]
+        },
+        {
+          "columnName": "measurementUnit",
+          "columnValue": [
+            {
+              "static": ""
             }
           ]
         }
@@ -4076,20 +4133,20 @@
           ]
         },
         {
-          "columnName": "measurementUnit",
-          "columnValue": [
-            {
-              "static": ""
-            }
-          ]
-        },
-        {
           "columnName": "measurementValue",
           "columnValue": [
             {
               "paths": [
                 "$..[?(@._name === 'Marked Animals')]..['Telemetry Device ID']"
               ]
+            }
+          ]
+        },
+        {
+          "columnName": "measurementUnit",
+          "columnValue": [
+            {
+              "static": ""
             }
           ]
         }
@@ -4228,20 +4285,20 @@
           ]
         },
         {
-          "columnName": "measurementUnit",
-          "columnValue": [
-            {
-              "static": ""
-            }
-          ]
-        },
-        {
           "columnName": "measurementValue",
           "columnValue": [
             {
               "paths": [
                 "$..[?(@._name === 'Marked Animals')]..['Right Ear Tag ID']"
               ]
+            }
+          ]
+        },
+        {
+          "columnName": "measurementUnit",
+          "columnValue": [
+            {
+              "static": ""
             }
           ]
         }
@@ -4303,20 +4360,20 @@
           ]
         },
         {
-          "columnName": "measurementUnit",
-          "columnValue": [
-            {
-              "static": ""
-            }
-          ]
-        },
-        {
           "columnName": "measurementValue",
           "columnValue": [
             {
               "paths": [
                 "$..[?(@._name === 'Marked Animals')]..['Right Ear Tag Colour']"
               ]
+            }
+          ]
+        },
+        {
+          "columnName": "measurementUnit",
+          "columnValue": [
+            {
+              "static": ""
             }
           ]
         }
@@ -4378,20 +4435,20 @@
           ]
         },
         {
-          "columnName": "measurementUnit",
-          "columnValue": [
-            {
-              "static": ""
-            }
-          ]
-        },
-        {
           "columnName": "measurementValue",
           "columnValue": [
             {
               "paths": [
                 "$..[?(@._name === 'Marked Animals')]..['Left Ear Tag ID']"
               ]
+            }
+          ]
+        },
+        {
+          "columnName": "measurementUnit",
+          "columnValue": [
+            {
+              "static": ""
             }
           ]
         }
@@ -4453,14 +4510,6 @@
           ]
         },
         {
-          "columnName": "measurementUnit",
-          "columnValue": [
-            {
-              "static": ""
-            }
-          ]
-        },
-        {
           "columnName": "measurementValue",
           "columnValue": [
             {
@@ -4469,7 +4518,50 @@
               ]
             }
           ]
+        },
+        {
+          "columnName": "measurementUnit",
+          "columnValue": [
+            {
+              "static": ""
+            }
+          ]
         }
+      ]
+    }
+  ],
+  "dwcMeta": [
+    {
+      "sheetName": "event",
+      "primaryKey": [
+        "eventID"
+      ]
+    },
+    {
+      "sheetName": "location",
+      "primaryKey": [
+        "eventID"
+      ]
+    },
+    {
+      "sheetName": "occurrence",
+      "primaryKey": [
+        "occurrenceID"
+      ]
+    },
+    {
+      "sheetName": "organism",
+      "primaryKey": [
+        "organismID"
+      ]
+    },
+    {
+      "sheetName": "measurementOrFact",
+      "primaryKey": [
+        "eventID",
+        "measurementID",
+        "occurrenceID",
+        "organismID"
       ]
     }
   ]

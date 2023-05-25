@@ -35,7 +35,7 @@ export const build = async () => {
     }
   };
 
-  new TemplateBuilder(config).build();
+  await new TemplateBuilder(config).build();
 };
 
 /**
@@ -44,10 +44,10 @@ export const build = async () => {
  *
  * @param {string} testFileName the name of the test file to transform. Must be included in the `test-data` folder.
  */
-export const testTransform = (testFileName: string) => {
+export const testTransform = async (testFileName: string) => {
   const transformTester = new TransformationTester();
 
-  transformTester.testTransform({
+  await transformTester.testTransform({
     transformConfig: transformationConfigBuilder,
     inputFilePath: path.resolve(__dirname, 'test-data', testFileName),
     outputFolderPath: path.resolve(__dirname, 'test-run')
@@ -60,10 +60,10 @@ export const testTransform = (testFileName: string) => {
  *
  * @param {string} testFileName the name of the test file to validate. Must be included in the `test-data` folder.
  */
-export const testValidate = (testFileName: string) => {
+export const testValidate = async (testFileName: string) => {
   const validateTester = new ValidationTester();
 
-  validateTester.testValidate({
+  await validateTester.testValidate({
     validateConfig: validationConfigBuilder,
     inputFilePath: path.resolve(__dirname, 'test-data', testFileName),
     outputFolderPath: path.resolve(__dirname, 'test-run')
