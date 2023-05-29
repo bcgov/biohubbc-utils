@@ -160,7 +160,7 @@ export class TemplateBuilder {
     const outputPath = path.resolve(
       this.config.output.outputFolderPath,
       'output',
-      `s_upsert_sql_${this.config.output.label}_${this.config.output.version}.sql`
+      `s_sql_${this.config.output.label}_${this.config.output.version}.sql`
     );
 
     let sqlString = this.config.sql.inputBuilderString;
