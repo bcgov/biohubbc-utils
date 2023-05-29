@@ -23,9 +23,9 @@ export const build = async () => {
     },
     sql: {
       inputBuilderString: sqlBuilderString.toString(),
-      name: 'Moose Summary Results',
+      name: 'Moose Summary Results Template',
       version: '1.0',
-      description: 'Moose Summary Results',
+      description: 'Moose Summary Results Template',
       taxonIDs: ['2065']
     }
   };

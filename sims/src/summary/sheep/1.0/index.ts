@@ -23,9 +23,9 @@ export const build = async () => {
     },
     sql: {
       inputBuilderString: sqlBuilderString.toString(),
-      name: 'Sheep Summary Results',
+      name: 'Sheep Summary Results Template',
       version: '1.0',
-      description: 'Sheep Summary Results',
+      description: 'Sheep Summary Results Template',
       taxonIDs: ['23919', '23921', '23922', '25929', '23920']
     }
   };

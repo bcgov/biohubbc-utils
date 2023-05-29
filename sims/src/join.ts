@@ -2,8 +2,10 @@ import fs from 'fs';
 import { join } from 'node:path';
 import path from 'path';
 
+const UpsertSQLFilePathRegex = /.*\\output\\.*\.sql/;
+
 /**
- * Walks the folder structure of the specified rootDirectory, returning a flattened array of all files paths.
+ * Walks the folder structure of the specified rootDirectory, returning a flattened array of all file paths.
  *
  * @param {string} rootDirectory
  * @return {*}  {Promise<string[]>}
@@ -16,7 +18,7 @@ const getAllFilesUnderDirectory = async (rootDirectory: string): Promise<string[
         return entry.isDirectory() ? getAllFilesUnderDirectory(childPath) : childPath;
       })
     )
-  ).then((hierarchicalFiles: string[]) => hierarchicalFiles.flat(Number.POSITIVE_INFINITY));
+  ).then((hierarchicalFiles: any[]) => hierarchicalFiles.flat(Number.POSITIVE_INFINITY));
 
 /**
  * Concatenates all upsert sql files in all `output` folders under `src/observations` and writes the resulting data to
@@ -25,7 +27,7 @@ const getAllFilesUnderDirectory = async (rootDirectory: string): Promise<string[
 const joinAllObservationSQLUpsertOutputFIles = async () => {
   const filePaths = await getAllFilesUnderDirectory('src/observations');
 
-  const upsertSQLPaths = filePaths.filter((path) => path.match(/.*\\output\\.*\.sql/));
+  const upsertSQLPaths = filePaths.filter((path) => path.match(UpsertSQLFilePathRegex));
 
   const upsertSQLData = await Promise.all(
     upsertSQLPaths.map((path) => fs.promises.readFile(path).then((data) => data.toString()))
@@ -45,7 +47,7 @@ const joinAllObservationSQLUpsertOutputFIles = async () => {
 const joinAllSummarySQLUpsertOutputFIles = async () => {
   const filePaths = await getAllFilesUnderDirectory('src/summary');
 
-  const upsertSQLPaths = filePaths.filter((path) => path.match(/.*\\output\\.*\.sql/));
+  const upsertSQLPaths = filePaths.filter((path) => path.match(UpsertSQLFilePathRegex));
 
   const upsertSQLData = await Promise.all(
     upsertSQLPaths.map((path) => fs.promises.readFile(path).then((data) => data.toString()))

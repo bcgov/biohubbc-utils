@@ -23,9 +23,9 @@ export const build = async () => {
     },
     sql: {
       inputBuilderString: sqlBuilderString.toString(),
-      name: 'Elk Summary Results',
+      name: 'Elk Summary Results Template',
       version: '1.0',
-      description: 'Elk Summary Results',
+      description: 'Elk Summary Results Template',
       taxonIDs: ['35370', '35371']
     }
   };

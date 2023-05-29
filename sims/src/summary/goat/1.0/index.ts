@@ -23,9 +23,9 @@ export const build = async () => {
     },
     sql: {
       inputBuilderString: sqlBuilderString.toString(),
-      name: 'Goat Summary Results',
+      name: 'Goat Summary Results Template',
       version: '1.0',
-      description: 'Goat Summary Results',
+      description: 'Goat Summary Results Template',
       taxonIDs: ['2062']
     }
   };
