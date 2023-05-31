@@ -2,7 +2,9 @@ import fs from 'fs';
 import { join } from 'node:path';
 import path from 'path';
 
-const UpsertSQLFilePathRegex = /.*\\output\\.*\.sql/;
+const UpsertSQLFilePathRegex = /.*(?:\\|\/)output(?:\\|\/).*\.sql/;
+
+
 
 /**
  * Walks the folder structure of the specified rootDirectory, returning a flattened array of all file paths.
