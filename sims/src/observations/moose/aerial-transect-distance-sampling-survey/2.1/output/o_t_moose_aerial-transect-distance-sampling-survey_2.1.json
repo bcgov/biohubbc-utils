@@ -58,6 +58,16 @@
           ]
         },
         {
+          "columnName": "eventTime",
+          "columnValue": [
+            {
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Time']"
+              ]
+            }
+          ]
+        },
+        {
           "columnName": "eventRemarks",
           "columnValue": [
             {
@@ -2881,7 +2891,7 @@
           "columnName": "measurementUnit",
           "columnValue": [
             {
-              "static": ""
+              "static": "m"
             }
           ]
         }
@@ -3207,7 +3217,7 @@
           "columnName": "measurementUnit",
           "columnValue": [
             {
-              "static": ""
+              "static": "%"
             }
           ]
         }

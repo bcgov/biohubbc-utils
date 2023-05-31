@@ -48,6 +48,14 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         {
+          columnName: 'eventTime',
+          columnValue: [
+            {
+              paths: [getValuesByName('Observations', ['Time'])]
+            }
+          ]
+        },
+        {
           columnName: 'eventRemarks',
           columnValue: [
             {
@@ -559,7 +567,7 @@ export const transformationConfigBuilder: TransformSchema = {
         },
         createValueField('measurementType', 'Veg Cover'),
         createPathField('measurementValue', 'Observations', ['Veg Cover (%)']),
-        createValueField('measurementUnit', '')
+        createValueField('measurementUnit', '%')
       ]
     },
     //measurementOrFact: Observations - Snow Cover (%)

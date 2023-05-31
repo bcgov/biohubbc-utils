@@ -70,6 +70,14 @@ export const sheepTotalCountSchema: TransformSchema = {
           ]
         },
         {
+          columnName: 'eventTime',
+          columnValue: [
+            {
+              paths: [getValuesByName('Observations', ['Time'])]
+            }
+          ]
+        },
+        {
           columnName: 'eventRemarks',
           columnValue: [
             {
@@ -895,8 +903,8 @@ export const sheepTotalCountSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Veg Cover'),
-        createValueField('measurementUnit', '%'),
-        createPathField('measurementValue', 'Observations', ['Veg Cover (%)'])
+        createPathField('measurementValue', 'Observations', ['Veg Cover (%)']),
+        createValueField('measurementUnit', '%')
       ]
     },
     {
@@ -926,8 +934,8 @@ export const sheepTotalCountSchema: TransformSchema = {
           ]
         },
         createValueField('measurementType', 'Snow Cover'),
-        createValueField('measurementUnit', '%'),
-        createPathField('measurementValue', 'Observations', ['Snow Cover (%)'])
+        createPathField('measurementValue', 'Observations', ['Snow Cover (%)']),
+        createValueField('measurementUnit', '%')
       ]
     },
     {

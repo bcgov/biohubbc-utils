@@ -48,6 +48,14 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         {
+          columnName: 'eventTime',
+          columnValue: [
+            {
+              paths: [getValuesByName('Observations', ['Time'])]
+            }
+          ]
+        },
+        {
           columnName: 'eventRemarks',
           columnValue: [
             {
@@ -1514,7 +1522,7 @@ export const transformationConfigBuilder: TransformSchema = {
         },
         createValueField('measurementType', 'Perpendicular Distance From Transect Line'),
         createPathField('measurementValue', 'Observations', ['Perpendicular Distance From Transect Line (m)']),
-        createValueField('measurementUnit', '')
+        createValueField('measurementUnit', 'm')
       ]
     },
     //measurementOrFact: Observations - Group Label
@@ -1685,7 +1693,7 @@ export const transformationConfigBuilder: TransformSchema = {
         },
         createValueField('measurementType', 'Veg Cover'),
         createPathField('measurementValue', 'Observations', ['Veg Cover (%)']),
-        createValueField('measurementUnit', '')
+        createValueField('measurementUnit', '%')
       ]
     },
     //measurementOrFact: Observations - Snow Cover (%)

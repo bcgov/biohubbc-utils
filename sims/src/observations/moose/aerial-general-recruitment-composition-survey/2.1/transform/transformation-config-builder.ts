@@ -48,6 +48,14 @@ export const transformationConfigBuilder: TransformSchema = {
           ]
         },
         {
+          columnName: 'eventTime',
+          columnValue: [
+            {
+              paths: [getValuesByName('Observations', ['Time'])]
+            }
+          ]
+        },
+        {
           columnName: 'eventRemarks',
           columnValue: [
             {

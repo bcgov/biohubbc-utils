@@ -57,6 +57,16 @@
           ]
         },
         {
+          "columnName": "eventTime",
+          "columnValue": [
+            {
+              "paths": [
+                "$..[?(@._name === 'Observations')]..['Time']"
+              ]
+            }
+          ]
+        },
+        {
           "columnName": "eventRemarks",
           "columnValue": [
             {
