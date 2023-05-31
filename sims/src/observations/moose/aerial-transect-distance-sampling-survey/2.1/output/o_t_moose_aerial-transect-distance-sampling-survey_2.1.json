@@ -2371,7 +2371,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "cow-w/2-calf"
+                    "static": "cow-w/2-calves"
                   }
                 }
               ]
@@ -2380,7 +2380,7 @@
               "columnName": "measurementType",
               "columnValue": [
                 {
-                  "static": "Cow W/2 calf"
+                  "static": "Cow W/2 calves"
                 }
               ]
             },

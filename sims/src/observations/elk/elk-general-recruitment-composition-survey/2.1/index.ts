@@ -28,9 +28,9 @@ export const build = async () => {
     },
     sql: {
       inputBuilderString: sqlBuilderString.toString(),
-      name: 'Elk General Recruitment Composition Survey',
+      name: 'Elk Aerial General Recruitment Composition Survey',
       version: '2.0',
-      description: 'Elk General Recruitment Composition Survey',
+      description: 'Elk Aerial General Recruitment Composition Survey',
       taxonIDs: ['35370', '35371']
     }
   };

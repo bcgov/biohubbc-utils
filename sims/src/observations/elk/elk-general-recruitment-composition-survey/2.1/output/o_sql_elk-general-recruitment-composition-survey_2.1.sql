@@ -4,9 +4,9 @@ SET SCHEMA 'biohub';
 DO $$
     DECLARE
         _template_id integer; -- set after template is created
-        _template_name varchar := 'Elk General Recruitment Composition Survey';
+        _template_name varchar := 'Elk Aerial General Recruitment Composition Survey';
         _template_version varchar := '2.0';
-        _template_description varchar := 'Elk General Recruitment Composition Survey';
+        _template_description varchar := 'Elk Aerial General Recruitment Composition Survey';
         _field_method_name varchar := null;
 
         _taxonomy_ids integer[] := array[35370,35371]; -- wild taxonomic IDs from elastic search

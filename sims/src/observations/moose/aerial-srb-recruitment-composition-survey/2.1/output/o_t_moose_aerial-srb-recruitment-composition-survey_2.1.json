@@ -2445,6 +2445,164 @@
             }
           ]
         }
+      ],
+      "add": [
+        {
+          "sheetName": "measurementOrFact",
+          "condition": {
+            "type": "and",
+            "checks": [
+              {
+                "ifNotEmpty": "$..[?(@._name === 'Observations')]..['Cow W/1 calf']"
+              }
+            ]
+          },
+          "fields": [
+            {
+              "columnName": "eventID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Block Summary')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ]
+                }
+              ]
+            },
+            {
+              "columnName": "occurrenceID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ],
+                  "postfix": {
+                    "static": "14"
+                  }
+                }
+              ]
+            },
+            {
+              "columnName": "measurementID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Block Summary')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ],
+                  "postfix": {
+                    "static": "cow-w/1-calf"
+                  }
+                }
+              ]
+            },
+            {
+              "columnName": "measurementType",
+              "columnValue": [
+                {
+                  "static": "Cow W/1 calf"
+                }
+              ]
+            },
+            {
+              "columnName": "measurementValue",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['Cow W/1 calf']"
+                  ]
+                }
+              ]
+            },
+            {
+              "columnName": "measurementUnit",
+              "columnValue": [
+                {
+                  "static": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "sheetName": "measurementOrFact",
+          "condition": {
+            "type": "and",
+            "checks": [
+              {
+                "ifNotEmpty": "$..[?(@._name === 'Observations')]..['Cow W/2 calves']"
+              }
+            ]
+          },
+          "fields": [
+            {
+              "columnName": "eventID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Block Summary')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ]
+                }
+              ]
+            },
+            {
+              "columnName": "occurrenceID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ],
+                  "postfix": {
+                    "static": "14"
+                  }
+                }
+              ]
+            },
+            {
+              "columnName": "measurementID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Block Summary')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ],
+                  "postfix": {
+                    "static": "cow-w/2-calves"
+                  }
+                }
+              ]
+            },
+            {
+              "columnName": "measurementType",
+              "columnValue": [
+                {
+                  "static": "Cow W/2 calves"
+                }
+              ]
+            },
+            {
+              "columnName": "measurementValue",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['Cow W/2 calves']"
+                  ]
+                }
+              ]
+            },
+            {
+              "columnName": "measurementUnit",
+              "columnValue": [
+                {
+                  "static": ""
+                }
+              ]
+            }
+          ]
+        }
       ]
     },
     {
@@ -3094,7 +3252,7 @@
         "type": "and",
         "checks": [
           {
-            "ifNotEmpty": "$..[?(@._name === 'Observations')]..['Group Label']"
+            "ifNotEmpty": "$..[?(@._name === 'Observations')]..['Time']"
           }
         ]
       },
@@ -3138,134 +3296,6 @@
             {
               "paths": [
                 "$..[?(@._name === 'Observations')]..['Time']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "measurementUnit",
-          "columnValue": [
-            {
-              "static": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "sheetName": "measurementOrFact",
-      "condition": {
-        "type": "and",
-        "checks": [
-          {
-            "ifNotEmpty": "$..[?(@._name === 'Observations')]..['Cow W/1 calves']"
-          }
-        ]
-      },
-      "fields": [
-        {
-          "columnName": "eventID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "measurementID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
-              ],
-              "postfix": {
-                "static": "cow-w/1-calf"
-              }
-            }
-          ]
-        },
-        {
-          "columnName": "measurementType",
-          "columnValue": [
-            {
-              "static": "Cow W/1 calf"
-            }
-          ]
-        },
-        {
-          "columnName": "measurementValue",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['Cow W/1 calf']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "measurementUnit",
-          "columnValue": [
-            {
-              "static": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "sheetName": "measurementOrFact",
-      "condition": {
-        "type": "and",
-        "checks": [
-          {
-            "ifNotEmpty": "$..[?(@._name === 'Observations')]..['Cow W/2 calves']"
-          }
-        ]
-      },
-      "fields": [
-        {
-          "columnName": "eventID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
-              ]
-            }
-          ]
-        },
-        {
-          "columnName": "measurementID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
-              ],
-              "postfix": {
-                "static": "cow-w/2-calves"
-              }
-            }
-          ]
-        },
-        {
-          "columnName": "measurementType",
-          "columnValue": [
-            {
-              "static": "Cow W/2 calves"
-            }
-          ]
-        },
-        {
-          "columnName": "measurementValue",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Observations')]..['Cow W/2 calves']"
               ]
             }
           ]
