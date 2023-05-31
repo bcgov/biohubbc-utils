@@ -1195,6 +1195,92 @@ export const transformationConfigBuilder: TransformSchema = {
         createValueField('sex', 'female'),
         createValueField('lifeStage', 'adult'),
         createPathField('taxonID', 'Observations', ['Species'])
+      ],
+      add: [
+        {
+          sheetName: 'measurementOrFact',
+          condition: {
+            type: 'and',
+            checks: [{ ifNotEmpty: getValuesByName('Observations', ['Cow W/1 calf']) }]
+          },
+          fields: [
+            {
+              columnName: 'eventID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+                }
+              ]
+            },
+            {
+              columnName: 'occurrenceID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: '14'
+                  }
+                }
+              ]
+            },
+            {
+              columnName: 'measurementID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: 'cow-w/1-calf'
+                  }
+                }
+              ]
+            },
+            createValueField('measurementType', 'Cow W/1 calf'),
+            createPathField('measurementValue', 'Observations', ['Cow W/1 calf']),
+            createValueField('measurementUnit', '')
+          ]
+        },
+        {
+          sheetName: 'measurementOrFact',
+          condition: {
+            type: 'and',
+            checks: [{ ifNotEmpty: getValuesByName('Observations', ['Cow W/2 calves']) }]
+          },
+          fields: [
+            {
+              columnName: 'eventID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+                }
+              ]
+            },
+            {
+              columnName: 'occurrenceID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: '14'
+                  }
+                }
+              ]
+            },
+            {
+              columnName: 'measurementID',
+              columnValue: [
+                {
+                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+                  postfix: {
+                    static: 'cow-w/2-calves'
+                  }
+                }
+              ]
+            },
+            createValueField('measurementType', 'Cow W/2 calves'),
+            createPathField('measurementValue', 'Observations', ['Cow W/2 calves']),
+            createValueField('measurementUnit', '')
+          ]
+        }
       ]
     },
     // Calves (static: 15)
@@ -1406,68 +1492,6 @@ export const transformationConfigBuilder: TransformSchema = {
         },
         createValueField('measurementType', 'Group Label'),
         createPathField('measurementValue', 'Observations', ['Group Label']),
-        createValueField('measurementUnit', '')
-      ]
-    },
-    {
-      sheetName: 'measurementOrFact',
-      condition: {
-        type: 'and',
-        checks: [{ ifNotEmpty: getValuesByName('Observations', ['Cow W/1 calf']) }]
-      },
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: 'cow-w/1-calf'
-              }
-            }
-          ]
-        },
-        createValueField('measurementType', 'Cow W/1 calf'),
-        createPathField('measurementValue', 'Observations', ['Cow W/1 calf']),
-        createValueField('measurementUnit', '')
-      ]
-    },
-    {
-      sheetName: 'measurementOrFact',
-      condition: {
-        type: 'and',
-        checks: [{ ifNotEmpty: getValuesByName('Observations', ['Cow W/2 calves']) }]
-      },
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: 'cow-w/2-calves'
-              }
-            }
-          ]
-        },
-        createValueField('measurementType', 'Cow W/2 calves'),
-        createPathField('measurementValue', 'Observations', ['Cow W/2 calves']),
         createValueField('measurementUnit', '')
       ]
     },

@@ -1271,12 +1271,12 @@ export const transformationConfigBuilder: TransformSchema = {
                 {
                   paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
                   postfix: {
-                    static: 'cow-w/2-calf'
+                    static: 'cow-w/2-calves'
                   }
                 }
               ]
             },
-            createValueField('measurementType', 'Cow W/2 calf'),
+            createValueField('measurementType', 'Cow W/2 calves'),
             createPathField('measurementValue', 'Observations', ['Cow W/2 calves']),
             createValueField('measurementUnit', '')
           ]
