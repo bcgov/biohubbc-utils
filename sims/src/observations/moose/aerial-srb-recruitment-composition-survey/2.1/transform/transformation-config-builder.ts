@@ -1620,37 +1620,6 @@ export const transformationConfigBuilder: TransformSchema = {
     {
       sheetName: 'measurementOrFact',
       condition: {
-        type: 'and',
-        checks: [{ ifNotEmpty: getValuesByName('Observations', ['Time']) }]
-      },
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Block Summary', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Block Summary', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: 'time'
-              }
-            }
-          ]
-        },
-        createValueField('measurementType', 'Time'),
-        createPathField('measurementValue', 'Observations', ['Time']),
-        createValueField('measurementUnit', '')
-      ]
-    },
-    {
-      sheetName: 'measurementOrFact',
-      condition: {
         type: 'or',
         checks: [
           { ifNotEmpty: getValuesByName('Observations', ['Sign Type']) },
