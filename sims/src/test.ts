@@ -49,8 +49,8 @@ export const goatTest1 = async () => {
     './observations/goat/aerial-population-total-count-recruitment-composition-survey/2.1'
   );
 
-  await testValidate('Monashee_Mt_Goat_Total_Count_Recuit_Comp_Survey_2.0.xlsx');
-  await testTransform('Monashee_Mt_Goat_Total_Count_Recuit_Comp_Survey_2.0.xlsx');
+  await testValidate('Goat_test.xlsx');
+  await testTransform('Goat_test.xlsx');
 };
 
 export const mooseTest1 = async () => {
@@ -99,9 +99,10 @@ export const sheepTest1 = async () => {
 
 // Specify which tests to run
 const testsToRun = async () => {
-  await elkTest1();
-  await mooseTest2();
-  await caribouTest1();
+  // await elkTest1();
+  // await mooseTest2();
+  // await caribouTest1();
+  await goatTest1();
 };
 
 // Run the tests

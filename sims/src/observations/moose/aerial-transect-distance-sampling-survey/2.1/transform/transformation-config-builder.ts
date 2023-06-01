@@ -2216,46 +2216,6 @@ export const transformationConfigBuilder: TransformSchema = {
         createPathField('measurementValue', 'Marked Animals', ['Left Ear Tag Colour']),
         createValueField('measurementUnit', '')
       ]
-    },
-    //measurementOrFact: Marked Animals - Marked Animals Comments
-    {
-      sheetName: 'measurementOrFact',
-      condition: {
-        type: 'and',
-        checks: [{ ifNotEmpty: getValuesByName('Marked Animals', ['Marked Animals Comments']) }]
-      },
-      fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'organismID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Marked Animals', ['_key']), getValuesByName('Marked Animals', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Marked Animals', ['_key']), getValuesByName('Marked Animals', ['_row'])],
-              postfix: {
-                static: 'marked-animals-comments'
-              }
-            }
-          ]
-        },
-        createValueField('measurementType', 'Marked Animals Comments'),
-        createPathField('measurementValue', 'Marked Animals', ['Marked Animals Comments']),
-        createValueField('measurementUnit', '')
-      ]
     }
   ],
   dwcMeta: [
