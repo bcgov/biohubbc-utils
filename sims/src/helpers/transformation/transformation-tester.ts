@@ -3,9 +3,11 @@ import fs from 'fs';
 import path from 'path';
 import { performance } from 'perf_hooks';
 import xlsx from 'xlsx';
+import { MediaFile } from '../media/media-file';
 import { XLSXTransform } from '../media/xlsx/transformation/xlsx-transform';
 import { transformationConfigJSONSchema } from '../media/xlsx/transformation/xlsx-transform-schema';
 import { TransformSchema } from '../media/xlsx/transformation/xlsx-transform-schema-parser';
+import { XLSXCSV } from '../media/xlsx/xlsx-file';
 
 export class TransformationTester {
   /**
@@ -26,17 +28,13 @@ export class TransformationTester {
 
     // Emulate a media file received from an endpoint
     const templateBuffer = await fs.promises.readFile(config.inputFilePath);
-    const mediaFile = {
-      fileName: 'template.xlsx',
-      mimeType: 'xlsx',
-      buffer: templateBuffer
-    };
 
-    // Convert raw media file to xlsx workbook
-    const workbook = xlsx.read(mediaFile.buffer, { cellFormula: false, cellHTML: false });
+    const mediaFile = new MediaFile('template.xlsx', 'xlsx', templateBuffer);
+
+    const xlsxCSV = new XLSXCSV(mediaFile);
 
     // Run transformation engine
-    const xlsxTransformDebug = new XLSXTransformDebug(workbook, config.transformConfig);
+    const xlsxTransformDebug = new XLSXTransformDebug(xlsxCSV.workbook.rawWorkbook, config.transformConfig);
     const transformGenerator = xlsxTransformDebug.startDebug();
 
     let finalTransformResult: ReturnType<typeof xlsxTransformDebug.start>;
