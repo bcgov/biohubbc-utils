@@ -99,9 +99,9 @@ export const sheepTest1 = async () => {
 
 // Specify which tests to run
 const testsToRun = async () => {
-  // await elkTest1();
-  // await mooseTest2();
-  // await caribouTest1();
+  await elkTest1();
+  await mooseTest2();
+  await caribouTest1();
   await goatTest1();
 };
 
