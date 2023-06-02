@@ -2520,7 +2520,7 @@
           "columnName": "lifeStage",
           "columnValue": [
             {
-              "static": "adult"
+              "static": "unknown"
             }
           ]
         },
