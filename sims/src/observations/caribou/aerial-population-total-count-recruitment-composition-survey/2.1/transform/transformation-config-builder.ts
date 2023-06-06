@@ -292,7 +292,7 @@ export const transformationConfigBuilder: TransformSchema = {
         },
         createPathField('individualCount', 'Observations', ['Immature Males']),
         createValueField('sex', 'male'),
-        createValueField('lifeStage', 'unknown'),
+        createValueField('lifeStage', 'immature'),
         createPathField('taxonID', 'Observations', ['Species'])
       ]
     },
