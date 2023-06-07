@@ -1943,7 +1943,7 @@
           "columnName": "lifeStage",
           "columnValue": [
             {
-              "static": "unknown"
+              "static": "adult"
             }
           ]
         },

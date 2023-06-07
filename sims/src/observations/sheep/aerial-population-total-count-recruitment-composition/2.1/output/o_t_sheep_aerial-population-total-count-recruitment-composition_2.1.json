@@ -1180,7 +1180,7 @@
         "type": "and",
         "checks": [
           {
-            "ifNotEmpty": "$..[?(@._name === 'Observations')]..['Adults Unclassified Sex']"
+            "ifNotEmpty": "$..[?(@._name === 'Observations')]..['Adults Unclassified/Sex']"
           }
         ]
       },
@@ -1215,7 +1215,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Observations')]..['Adults Unclassified Sex']"
+                "$..[?(@._name === 'Observations')]..['Adults Unclassified/Sex']"
               ]
             }
           ]

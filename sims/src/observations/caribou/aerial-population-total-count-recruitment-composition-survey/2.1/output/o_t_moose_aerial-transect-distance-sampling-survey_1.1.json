@@ -508,7 +508,7 @@
           "columnName": "lifeStage",
           "columnValue": [
             {
-              "static": "unknown"
+              "static": "immature"
             }
           ]
         },

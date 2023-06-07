@@ -319,12 +319,12 @@ const occurrenceMaps: MapSchema[] = [
     sheetName: 'occurrence',
     condition: {
       type: 'and',
-      checks: [{ ifNotEmpty: getValuesByName('Observations', ['Adults Unclassified Sex']) }]
+      checks: [{ ifNotEmpty: getValuesByName('Observations', ['Adults Unclassified/Sex']) }]
     },
     fields: [
       eventIDField,
       createOccurrenceIDField(9),
-      createPathField('individualCount', 'Observations', ['Adults Unclassified Sex']),
+      createPathField('individualCount', 'Observations', ['Adults Unclassified/Sex']),
       createValueField('sex', 'unknown'),
       createValueField('lifeStage', 'adult'),
       createPathField('taxonID', 'Observations', ['Species'])
