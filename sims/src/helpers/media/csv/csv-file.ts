@@ -2,7 +2,7 @@ import xlsx from 'xlsx';
 import { IMediaState, MediaValidation } from '../media-file';
 import { SUBMISSION_MESSAGE_TYPE } from '../status';
 import { safeToLowerCase, safeTrim } from '../string-utils';
-import { getCellValue, getWorksheetRange, replaceCellDates, trimCellWhitespace } from '../xlsx/xlsx-utils';
+import { getWorksheetRange, replaceCellDates, trimCellWhitespace } from '../xlsx/xlsx-utils';
 
 export type CSVWorksheets = { [name: string]: CSVWorksheet };
 export type WorkBookValidators = { [name: string]: CSVValidation };
@@ -76,6 +76,8 @@ export class CSVWorksheet {
    *
    * Note: This is always the first row (index 0)
    *
+   * Note: Trims all header values.
+   *
    * @return {*}  {string[]}
    * @memberof CSVWorksheet
    */
@@ -126,6 +128,8 @@ export class CSVWorksheet {
    *
    * Note: This does not include the first row (header row).
    *
+   * Note: Trims all cell values.
+   *
    * @return {*}  {string[][]}
    * @memberof CSVWorksheet
    */
@@ -156,7 +160,7 @@ export class CSVWorksheet {
             continue;
           }
 
-          row[j] = getCellValue(trimCellWhitespace(replaceCellDates(cell)));
+          row[j] = trimCellWhitespace(replaceCellDates(cell)).v;
 
           rowHasValues = true;
         }
@@ -172,6 +176,12 @@ export class CSVWorksheet {
     return this._rows;
   }
 
+  /**
+   * Return an array of row objects.
+   *
+   * @return {*}  {Record<string, any>[]}
+   * @memberof CSVWorksheet
+   */
   getRowObjects(): Record<string, any>[] {
     if (!this.worksheet) {
       return [];
@@ -184,12 +194,12 @@ export class CSVWorksheet {
     }
 
     if (!this._rowObjects.length) {
-      const rowObjectsArray: object[] = [];
+      const rowObjectsArray: Record<string, any>[] = [];
       const rows = this.getRows();
       const headers = this.getHeaders();
 
       rows.forEach((row: string[]) => {
-        const rowObject: Record<string, any> = {};
+        const rowObject = {};
 
         headers.forEach((header: string, index: number) => {
           rowObject[header] = row[index];
@@ -202,24 +212,6 @@ export class CSVWorksheet {
     }
 
     return this._rowObjects;
-  }
-
-  getCell(headerName: string, rowIndex: number) {
-    const headerIndex = this.getHeaderIndex(headerName);
-
-    if (headerIndex < 0) {
-      return undefined;
-    }
-
-    const rows = this.getRows();
-
-    const row = rows?.[rowIndex];
-
-    if (!row || !row.length) {
-      return undefined;
-    }
-
-    return row[headerIndex];
   }
 
   /**

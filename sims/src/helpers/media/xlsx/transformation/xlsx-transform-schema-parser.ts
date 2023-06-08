@@ -43,6 +43,14 @@ export type TemplateMetaForeignKeySchema = {
   primaryKey: string[];
 };
 
+/**
+ * - `root`: indicates the node is the top level root node (only 1 node can be type `root`).
+ * - `leaf`: indicates the node is a leaf node. A node that is type `leaf` will prevent the hierarchical
+ * parsing from progressing further, into this nodes children (if any).
+ * - `<empty>`: indicates a regular node, with no particular special considerations.
+ */
+export type TemplateMetaSchemaType = 'root' | 'leaf' | '';
+
 export type TemplateMetaSchema = {
   /**
    * The name of the template sheet.
@@ -63,14 +71,11 @@ export type TemplateMetaSchema = {
    */
   parentKey: string[];
   /**
-   * `root` - indicates the node is the top level root node (only 1 node can be type `root`).
-   * `leaf` - indicates the node is a leaf node. A node that is type `leaf` will prevent the hierarchical
-   * parsing from progressing further, into this nodes children (if any).
-   * `<empty>` - indicates a regular node, with no particular special considerations.
+   * The type of the node.
    *
-   * @type {('root' | 'leaf' | '')}
+   * @type {TemplateMetaSchemaType}
    */
-  type: 'root' | 'leaf' | '';
+  type: TemplateMetaSchemaType;
   /**
    * An array of linked child nodes.
    *
