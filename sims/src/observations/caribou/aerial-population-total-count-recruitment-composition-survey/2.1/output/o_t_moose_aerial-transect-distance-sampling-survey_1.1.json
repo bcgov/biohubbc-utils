@@ -255,7 +255,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "0-antler-configuration"
+                    "static": "0:antler-configuration"
                   }
                 }
               ]
@@ -917,7 +917,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "8-antler-configuration"
+                    "static": "8:antler-configuration"
                   }
                 }
               ]
@@ -1209,7 +1209,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "11-antler-configuration"
+                    "static": "11:antler-configuration"
                   }
                 }
               ]
@@ -1353,7 +1353,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "12-antler-configuration"
+                    "static": "12:antler-configuration"
                   }
                 }
               ]
@@ -1497,7 +1497,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "13-antler-configuration"
+                    "static": "13:antler-configuration"
                   }
                 }
               ]
@@ -1641,7 +1641,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "14-antler-configuration"
+                    "static": "14:antler-configuration"
                   }
                 }
               ]
@@ -1785,7 +1785,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "15-antler-configuration"
+                    "static": "15:antler-configuration"
                   }
                 }
               ]
@@ -1929,7 +1929,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "16-antler-configuration"
+                    "static": "16:antler-configuration"
                   }
                 }
               ]
@@ -2073,7 +2073,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "17-antler-configuration"
+                    "static": "17:antler-configuration"
                   }
                 }
               ]
@@ -2217,7 +2217,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "18-antler-configuration"
+                    "static": "18:antler-configuration"
                   }
                 }
               ]
@@ -2361,7 +2361,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "19-antler-configuration"
+                    "static": "19:antler-configuration"
                   }
                 }
               ]
@@ -2505,7 +2505,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "20-antler-configuration"
+                    "static": "20:antler-configuration"
                   }
                 }
               ]
@@ -2649,7 +2649,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "21-antler-configuration"
+                    "static": "21:antler-configuration"
                   }
                 }
               ]

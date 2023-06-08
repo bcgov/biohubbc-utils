@@ -187,7 +187,7 @@ export const transformationConfigBuilder: TransformSchema = {
           sheetName: 'measurementOrFact',
           fields: [
             eventIDField,
-            createObservationMeasurementIDField('0-antler-configuration'),
+            createObservationMeasurementIDField('0:antler-configuration'),
             createOccurrenceIDField(0),
             createValueField('measurementType', 'Antler Configuration'),
             createValueField('measurementValue', 'BC RISC Yearling Bulls'),
@@ -216,7 +216,7 @@ export const transformationConfigBuilder: TransformSchema = {
           sheetName: 'measurementOrFact',
           fields: [
             eventIDField,
-            createObservationMeasurementIDField('1-antler-configuration'),
+            createObservationMeasurementIDField('1:antler-configuration'),
             createOccurrenceIDField(1),
             createValueField('measurementType', 'Antler Configuration'),
             createValueField('measurementValue', 'BC RISC Class I'),
@@ -245,7 +245,7 @@ export const transformationConfigBuilder: TransformSchema = {
           sheetName: 'measurementOrFact',
           fields: [
             eventIDField,
-            createObservationMeasurementIDField('2-antler-configuration'),
+            createObservationMeasurementIDField('2:antler-configuration'),
             createOccurrenceIDField(2),
             createValueField('measurementType', 'Antler Configuration'),
             createValueField('measurementValue', 'BC RISC Class II'),
@@ -277,7 +277,7 @@ export const transformationConfigBuilder: TransformSchema = {
           sheetName: 'measurementOrFact',
           fields: [
             eventIDField,
-            createObservationMeasurementIDField('0-antler-configuration'),
+            createObservationMeasurementIDField('3:antler-configuration'),
             createOccurrenceIDField(3),
             createValueField('measurementType', 'Antler Configuration'),
             createValueField('measurementValue', 'BC RISC Class III'),
@@ -306,7 +306,7 @@ export const transformationConfigBuilder: TransformSchema = {
           sheetName: 'measurementOrFact',
           fields: [
             eventIDField,
-            createObservationMeasurementIDField('4-antler-configuration'),
+            createObservationMeasurementIDField('4:antler-configuration'),
             createOccurrenceIDField(4),
             createValueField('measurementType', 'Antler Configuration'),
             createValueField('measurementValue', 'BC RISC Class IV'),
@@ -335,7 +335,7 @@ export const transformationConfigBuilder: TransformSchema = {
           sheetName: 'measurementOrFact',
           fields: [
             eventIDField,
-            createObservationMeasurementIDField('5-antler-configuration'),
+            createObservationMeasurementIDField('5:antler-configuration'),
             createOccurrenceIDField(5),
             createValueField('measurementType', 'Antler Configuration'),
             createValueField('measurementValue', 'Spike antlers'),
@@ -364,7 +364,7 @@ export const transformationConfigBuilder: TransformSchema = {
           sheetName: 'measurementOrFact',
           fields: [
             eventIDField,
-            createObservationMeasurementIDField('6-antler-configuration'),
+            createObservationMeasurementIDField('6:antler-configuration'),
             createOccurrenceIDField(6),
             createValueField('measurementType', 'Antler Configuration'),
             createValueField('measurementValue', 'Raghorn antlers'),
@@ -393,7 +393,7 @@ export const transformationConfigBuilder: TransformSchema = {
           sheetName: 'measurementOrFact',
           fields: [
             eventIDField,
-            createObservationMeasurementIDField('7-antler-configuration'),
+            createObservationMeasurementIDField('7:antler-configuration'),
             createOccurrenceIDField(7),
             createValueField('measurementType', 'Antler Configuration'),
             createValueField('measurementValue', '3 points or fewer'),
@@ -422,7 +422,7 @@ export const transformationConfigBuilder: TransformSchema = {
           sheetName: 'measurementOrFact',
           fields: [
             eventIDField,
-            createObservationMeasurementIDField('8-antler-configuration'),
+            createObservationMeasurementIDField('8:antler-configuration'),
             createOccurrenceIDField(8),
             createValueField('measurementType', 'Antler Configuration'),
             createValueField('measurementValue', '3 or 4 points'),
@@ -451,7 +451,7 @@ export const transformationConfigBuilder: TransformSchema = {
           sheetName: 'measurementOrFact',
           fields: [
             eventIDField,
-            createObservationMeasurementIDField('9-antler-configuration'),
+            createObservationMeasurementIDField('9:antler-configuration'),
             createOccurrenceIDField(9),
             createValueField('measurementType', 'Antler Configuration'),
             createValueField('measurementValue', '3 or 4 or 5 points'),
@@ -480,7 +480,7 @@ export const transformationConfigBuilder: TransformSchema = {
           sheetName: 'measurementOrFact',
           fields: [
             eventIDField,
-            createObservationMeasurementIDField('10-antler-configuration'),
+            createObservationMeasurementIDField('10:antler-configuration'),
             createOccurrenceIDField(10),
             createValueField('measurementType', 'Antler Configuration'),
             createValueField('measurementValue', 'fewer than 4 points'),
@@ -509,7 +509,7 @@ export const transformationConfigBuilder: TransformSchema = {
           sheetName: 'measurementOrFact',
           fields: [
             eventIDField,
-            createObservationMeasurementIDField('11-antler-configuration'),
+            createObservationMeasurementIDField('11:antler-configuration'),
             createOccurrenceIDField(11),
             createValueField('measurementType', 'Antler Configuration'),
             createValueField('measurementValue', '4 points or more'),
@@ -538,7 +538,7 @@ export const transformationConfigBuilder: TransformSchema = {
           sheetName: 'measurementOrFact',
           fields: [
             eventIDField,
-            createObservationMeasurementIDField('12-antler-configuration'),
+            createObservationMeasurementIDField('12:antler-configuration'),
             createOccurrenceIDField(12),
             createValueField('measurementType', 'Antler Configuration'),
             createValueField('measurementValue', '5 points'),
@@ -567,7 +567,7 @@ export const transformationConfigBuilder: TransformSchema = {
           sheetName: 'measurementOrFact',
           fields: [
             eventIDField,
-            createObservationMeasurementIDField('13-antler-configuration'),
+            createObservationMeasurementIDField('13:antler-configuration'),
             createOccurrenceIDField(13),
             createValueField('measurementType', 'Antler Configuration'),
             createValueField('measurementValue', '5 points or more'),
@@ -596,7 +596,7 @@ export const transformationConfigBuilder: TransformSchema = {
           sheetName: 'measurementOrFact',
           fields: [
             eventIDField,
-            createObservationMeasurementIDField('14-antler-configuration'),
+            createObservationMeasurementIDField('14:antler-configuration'),
             createOccurrenceIDField(14),
             createValueField('measurementType', 'Antler Configuration'),
             createValueField('measurementValue', '6 points or more'),
@@ -628,7 +628,7 @@ export const transformationConfigBuilder: TransformSchema = {
           sheetName: 'measurementOrFact',
           fields: [
             eventIDField,
-            createObservationMeasurementIDField('15-antler-configuration'),
+            createObservationMeasurementIDField('15:antler-configuration'),
             createOccurrenceIDField(15),
             createValueField('measurementType', 'Antler Configuration'),
             createValueField('measurementValue', 'unclassified'),
@@ -657,7 +657,7 @@ export const transformationConfigBuilder: TransformSchema = {
           sheetName: 'measurementOrFact',
           fields: [
             eventIDField,
-            createObservationMeasurementIDField('16-antler-configuration'),
+            createObservationMeasurementIDField('16:antler-configuration'),
             createOccurrenceIDField(16),
             createValueField('measurementType', 'Antler Configuration'),
             createValueField('measurementValue', 'unclassified'),
