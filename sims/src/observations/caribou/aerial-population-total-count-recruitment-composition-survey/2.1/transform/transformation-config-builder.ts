@@ -13,6 +13,54 @@ const eventIDField = {
     }
   ]
 };
+const createOccurrenceIDField = (staticPostfix: string | number) => {
+  return {
+    columnName: 'occurrenceID',
+    columnValue: [
+      {
+        paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+        postfix: {
+          static: staticPostfix
+        }
+      }
+    ]
+  };
+};
+const createObservationMeasurementIDField = (staticPostfix: string | number) => {
+  return {
+    columnName: 'measurementID',
+    columnValue: [
+      {
+        paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+        postfix: {
+          static: staticPostfix
+        }
+      }
+    ]
+  };
+};
+const createMarkedAnimalsMeasurementIDField = (staticPostfix: string | number) => {
+  return {
+    columnName: 'measurementID',
+    columnValue: [
+      {
+        paths: [getValuesByName('Marked Animals', ['_key']), getValuesByName('Marked Animals', ['_row'])],
+        postfix: {
+          static: staticPostfix
+        }
+      }
+    ]
+  };
+};
+
+const organismIDField = {
+  columnName: 'organismID',
+  columnValue: [
+    {
+      paths: [getValuesByName('Marked Animals', ['_key']), getValuesByName('Marked Animals', ['_row'])]
+    }
+  ]
+};
 
 export const transformationConfigBuilder: TransformSchema = {
   templateMeta: [
@@ -128,17 +176,7 @@ export const transformationConfigBuilder: TransformSchema = {
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Adult Males']) }] },
       fields: [
         eventIDField,
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '0'
-              }
-            }
-          ]
-        },
+        createOccurrenceIDField(0),
         createPathField('individualCount', 'Observations', ['Adult Males']),
         createValueField('sex', 'male'),
         createValueField('lifeStage', 'adult'),
@@ -149,28 +187,8 @@ export const transformationConfigBuilder: TransformSchema = {
           sheetName: 'measurementOrFact',
           fields: [
             eventIDField,
-            {
-              columnName: 'measurementID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: 'antler-configuration'
-                  }
-                }
-              ]
-            },
-            {
-              columnName: 'occurrenceID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: '0'
-                  }
-                }
-              ]
-            },
+            createObservationMeasurementIDField('0-antler-configuration'),
+            createOccurrenceIDField(0),
             createValueField('measurementType', 'Antler Configuration'),
             createValueField('measurementValue', 'unclassified'),
             createValueField('measurementUnit', '')
@@ -186,17 +204,7 @@ export const transformationConfigBuilder: TransformSchema = {
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Adult Females']) }] },
       fields: [
         eventIDField,
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '1'
-              }
-            }
-          ]
-        },
+        createOccurrenceIDField(1),
         createPathField('individualCount', 'Observations', ['Adult Females']),
         createValueField('sex', 'female'),
         createValueField('lifeStage', 'adult'),
@@ -214,17 +222,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '2'
-              }
-            }
-          ]
-        },
+        createOccurrenceIDField(2),
         createPathField('individualCount', 'Observations', ['Adults - Unclassified Sex']),
         createValueField('sex', 'unknown'),
         createValueField('lifeStage', 'adult'),
@@ -239,17 +237,7 @@ export const transformationConfigBuilder: TransformSchema = {
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Immature Males']) }] },
       fields: [
         eventIDField,
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '3'
-              }
-            }
-          ]
-        },
+        createOccurrenceIDField(3),
         createPathField('individualCount', 'Observations', ['Immature Males']),
         createValueField('sex', 'male'),
         createValueField('lifeStage', 'immature'),
@@ -267,17 +255,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '4'
-              }
-            }
-          ]
-        },
+        createOccurrenceIDField(4),
         createPathField('individualCount', 'Observations', ['Juveniles - Unclassified Sex']),
         createValueField('sex', 'unknown'),
         createValueField('lifeStage', 'juvenile'),
@@ -295,17 +273,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '5'
-              }
-            }
-          ]
-        },
+        createOccurrenceIDField(5),
         createPathField('individualCount', 'Observations', ['Yearling Males']),
         createValueField('sex', 'male'),
         createValueField('lifeStage', 'yearling'),
@@ -323,17 +291,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '6'
-              }
-            }
-          ]
-        },
+        createOccurrenceIDField(6),
         createPathField('individualCount', 'Observations', ['Yearling Females']),
         createValueField('sex', 'female'),
         createValueField('lifeStage', 'yearling'),
@@ -351,17 +309,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '7'
-              }
-            }
-          ]
-        },
+        createOccurrenceIDField(7),
         createPathField('individualCount', 'Observations', ['Yearling - Unclassified Sex']),
         createValueField('sex', 'unknown'),
         createValueField('lifeStage', 'yearling'),
@@ -379,17 +327,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '8'
-              }
-            }
-          ]
-        },
+        createOccurrenceIDField(8),
         createPathField('individualCount', 'Observations', ['Males - Unclassified Life Stage']),
         createValueField('sex', 'male'),
         createValueField('lifeStage', 'unknown'),
@@ -400,28 +338,10 @@ export const transformationConfigBuilder: TransformSchema = {
           sheetName: 'measurementOrFact',
           fields: [
             eventIDField,
-            {
-              columnName: 'measurementID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: 'antler-configuration'
-                  }
-                }
-              ]
-            },
-            {
-              columnName: 'occurrenceID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: '8'
-                  }
-                }
-              ]
-            },
+
+            createObservationMeasurementIDField('8-antler-configuration'),
+            createOccurrenceIDField(8),
+
             createValueField('measurementType', 'Antler Configuration'),
             createValueField('measurementValue', 'unclassified'),
             createValueField('measurementUnit', '')
@@ -440,17 +360,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '9'
-              }
-            }
-          ]
-        },
+        createOccurrenceIDField(9),
         createPathField('individualCount', 'Observations', ['Females - Unclassified Life Stage']),
         createValueField('sex', 'female'),
         createValueField('lifeStage', 'unknown'),
@@ -468,17 +378,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '10'
-              }
-            }
-          ]
-        },
+        createOccurrenceIDField(10),
         createPathField('individualCount', 'Observations', ['Unclassifed Life Stage and Sex']),
         createValueField('sex', 'unknown'),
         createValueField('lifeStage', 'unknown'),
@@ -497,17 +397,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '11'
-              }
-            }
-          ]
-        },
+        createOccurrenceIDField(11),
         createPathField('individualCount', 'Observations', ['BC RISC - Class I Bulls']),
         createValueField('sex', 'male'),
         createValueField('lifeStage', 'yearling'),
@@ -518,28 +408,9 @@ export const transformationConfigBuilder: TransformSchema = {
           sheetName: 'measurementOrFact',
           fields: [
             eventIDField,
-            {
-              columnName: 'measurementID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: 'antler-configuration'
-                  }
-                }
-              ]
-            },
-            {
-              columnName: 'occurrenceID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: '11'
-                  }
-                }
-              ]
-            },
+            createObservationMeasurementIDField('11-antler-configuration'),
+            createOccurrenceIDField(11),
+
             createValueField('measurementType', 'Antler Configuration'),
             createValueField('measurementValue', 'BC RISC Class I'),
             createValueField('measurementUnit', '')
@@ -559,17 +430,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '12'
-              }
-            }
-          ]
-        },
+        createOccurrenceIDField(12),
         createPathField('individualCount', 'Observations', ['BC RISC - Class II Bulls']),
         createValueField('sex', 'male'),
         createValueField('lifeStage', 'unknown'),
@@ -580,28 +441,9 @@ export const transformationConfigBuilder: TransformSchema = {
           sheetName: 'measurementOrFact',
           fields: [
             eventIDField,
-            {
-              columnName: 'measurementID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: 'antler-configuration'
-                  }
-                }
-              ]
-            },
-            {
-              columnName: 'occurrenceID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: '12'
-                  }
-                }
-              ]
-            },
+            createObservationMeasurementIDField('12-antler-configuration'),
+            createOccurrenceIDField(12),
+
             createValueField('measurementType', 'Antler Configuration'),
             createValueField('measurementValue', 'BC RISC Class II'),
             createValueField('measurementUnit', '')
@@ -621,17 +463,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '13'
-              }
-            }
-          ]
-        },
+        createOccurrenceIDField(13),
         createPathField('individualCount', 'Observations', ['BC RISC - Class III Bulls']),
         createValueField('sex', 'male'),
         createValueField('lifeStage', 'adult'),
@@ -642,28 +474,8 @@ export const transformationConfigBuilder: TransformSchema = {
           sheetName: 'measurementOrFact',
           fields: [
             eventIDField,
-            {
-              columnName: 'measurementID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: 'antler-configuration'
-                  }
-                }
-              ]
-            },
-            {
-              columnName: 'occurrenceID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: '13'
-                  }
-                }
-              ]
-            },
+            createObservationMeasurementIDField('13-antler-configuration'),
+            createOccurrenceIDField(13),
             createValueField('measurementType', 'Antler Configuration'),
             createValueField('measurementValue', 'BC RISC Class III'),
             createValueField('measurementUnit', '')
@@ -683,17 +495,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '14'
-              }
-            }
-          ]
-        },
+        createOccurrenceIDField(14),
         createPathField('individualCount', 'Observations', ['BC RISC - Class I or  II Bulls']),
         createValueField('sex', 'male'),
         createValueField('lifeStage', 'unknown'),
@@ -704,28 +506,8 @@ export const transformationConfigBuilder: TransformSchema = {
           sheetName: 'measurementOrFact',
           fields: [
             eventIDField,
-            {
-              columnName: 'measurementID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: 'Antler-configuration'
-                  }
-                }
-              ]
-            },
-            {
-              columnName: 'occurrenceID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: '14'
-                  }
-                }
-              ]
-            },
+            createObservationMeasurementIDField('14-antler-configuration'),
+            createOccurrenceIDField(14),
             createValueField('measurementType', 'Antler Configuration'),
             createValueField('measurementValue', 'BC RISC Class I or II'),
             createValueField('measurementUnit', '')
@@ -745,17 +527,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '15'
-              }
-            }
-          ]
-        },
+        createOccurrenceIDField(15),
         createPathField('individualCount', 'Observations', ['Bulls - 3 Points or Fewer']),
         createValueField('sex', 'male'),
         createValueField('lifeStage', 'unknown'),
@@ -766,28 +538,8 @@ export const transformationConfigBuilder: TransformSchema = {
           sheetName: 'measurementOrFact',
           fields: [
             eventIDField,
-            {
-              columnName: 'measurementID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: 'Antler-configuration'
-                  }
-                }
-              ]
-            },
-            {
-              columnName: 'occurrenceID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: '15'
-                  }
-                }
-              ]
-            },
+            createObservationMeasurementIDField('15-antler-configuration'),
+            createOccurrenceIDField(15),
             createValueField('measurementType', 'Antler Configuration'),
             createValueField('measurementValue', '3 Points or Fewer'),
             createValueField('measurementUnit', '')
@@ -807,17 +559,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '16'
-              }
-            }
-          ]
-        },
+        createOccurrenceIDField(16),
         createPathField('individualCount', 'Observations', ['Bulls - 3 or 4 Points']),
         createValueField('sex', 'male'),
         createValueField('lifeStage', 'unknown'),
@@ -828,28 +570,8 @@ export const transformationConfigBuilder: TransformSchema = {
           sheetName: 'measurementOrFact',
           fields: [
             eventIDField,
-            {
-              columnName: 'measurementID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: 'Antler-configuration'
-                  }
-                }
-              ]
-            },
-            {
-              columnName: 'occurrenceID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: '16'
-                  }
-                }
-              ]
-            },
+            createObservationMeasurementIDField('16-antler-configuration'),
+            createOccurrenceIDField(16),
             createValueField('measurementType', 'Antler Configuration'),
             createValueField('measurementValue', '3 or 4 Points'),
             createValueField('measurementUnit', '')
@@ -869,17 +591,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '17'
-              }
-            }
-          ]
-        },
+        createOccurrenceIDField(17),
         createPathField('individualCount', 'Observations', ['Bulls - 4 Points or Fewer']),
         createValueField('sex', 'male'),
         createValueField('lifeStage', 'unknown'),
@@ -890,28 +602,8 @@ export const transformationConfigBuilder: TransformSchema = {
           sheetName: 'measurementOrFact',
           fields: [
             eventIDField,
-            {
-              columnName: 'measurementID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: 'Antler-configuration'
-                  }
-                }
-              ]
-            },
-            {
-              columnName: 'occurrenceID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: '17'
-                  }
-                }
-              ]
-            },
+            createObservationMeasurementIDField('17-antler-configuration'),
+            createOccurrenceIDField(17),
             createValueField('measurementType', 'Antler Configuration'),
             createValueField('measurementValue', '4 points or fewer'),
             createValueField('measurementUnit', '')
@@ -931,17 +623,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '18'
-              }
-            }
-          ]
-        },
+        createOccurrenceIDField(18),
         createPathField('individualCount', 'Observations', ['Bulls - 4 Points or More']),
         createValueField('sex', 'male'),
         createValueField('lifeStage', 'unknown'),
@@ -952,28 +634,8 @@ export const transformationConfigBuilder: TransformSchema = {
           sheetName: 'measurementOrFact',
           fields: [
             eventIDField,
-            {
-              columnName: 'measurementID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: 'Antler-configuration'
-                  }
-                }
-              ]
-            },
-            {
-              columnName: 'occurrenceID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: '18'
-                  }
-                }
-              ]
-            },
+            createObservationMeasurementIDField('18-antler-configuration'),
+            createOccurrenceIDField(18),
             createValueField('measurementType', 'Antler Configuration'),
             createValueField('measurementValue', '4 points or fewer'),
             createValueField('measurementUnit', '')
@@ -993,17 +655,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '19'
-              }
-            }
-          ]
-        },
+        createOccurrenceIDField(19),
         createPathField('individualCount', 'Observations', ['Bulls - 5 Points or More']),
         createValueField('sex', 'male'),
         createValueField('lifeStage', 'unknown'),
@@ -1014,28 +666,8 @@ export const transformationConfigBuilder: TransformSchema = {
           sheetName: 'measurementOrFact',
           fields: [
             eventIDField,
-            {
-              columnName: 'measurementID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: 'Antler-configuration'
-                  }
-                }
-              ]
-            },
-            {
-              columnName: 'occurrenceID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: '19'
-                  }
-                }
-              ]
-            },
+            createObservationMeasurementIDField('19-antler-configuration'),
+            createOccurrenceIDField(19),
             createValueField('measurementType', 'Antler Configuration'),
             createValueField('measurementValue', '5 points or more'),
             createValueField('measurementUnit', '')
@@ -1055,17 +687,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '20'
-              }
-            }
-          ]
-        },
+        createOccurrenceIDField(20),
         createPathField('individualCount', 'Observations', ['Bulls - 6 Points or More']),
         createValueField('sex', 'male'),
         createValueField('lifeStage', 'adult'),
@@ -1076,28 +698,8 @@ export const transformationConfigBuilder: TransformSchema = {
           sheetName: 'measurementOrFact',
           fields: [
             eventIDField,
-            {
-              columnName: 'measurementID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: 'Antler-configuration'
-                  }
-                }
-              ]
-            },
-            {
-              columnName: 'occurrenceID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: '20'
-                  }
-                }
-              ]
-            },
+            createObservationMeasurementIDField('20-antler-configuration'),
+            createOccurrenceIDField(20),
             createValueField('measurementType', 'Antler Configuration'),
             createValueField('measurementValue', '6 points or more'),
             createValueField('measurementUnit', '')
@@ -1117,17 +719,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'occurrenceID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: '21'
-              }
-            }
-          ]
-        },
+        createOccurrenceIDField(21),
         createPathField('individualCount', 'Observations', ['Bulls - 10 Points or Tripalm']),
         createValueField('sex', 'male'),
         createValueField('lifeStage', 'adult'),
@@ -1138,28 +730,8 @@ export const transformationConfigBuilder: TransformSchema = {
           sheetName: 'measurementOrFact',
           fields: [
             eventIDField,
-            {
-              columnName: 'measurementID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: 'Antler-configuration'
-                  }
-                }
-              ]
-            },
-            {
-              columnName: 'occurrenceID',
-              columnValue: [
-                {
-                  paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-                  postfix: {
-                    static: '21'
-                  }
-                }
-              ]
-            },
+            createObservationMeasurementIDField('21-antler-configuration'),
+            createOccurrenceIDField(21),
             createValueField('measurementType', 'Antler Configuration'),
             createValueField('measurementValue', '10 Points or Tripalm'),
             createValueField('measurementUnit', '')
@@ -1177,14 +749,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'organismID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Marked Animals', ['_key']), getValuesByName('Marked Animals', ['_row'])]
-            }
-          ]
-        },
+        organismIDField,
         createPathField('organismRemarks', 'Marked Animals', ['Marked Animals Comments'])
       ]
     },
@@ -1192,17 +757,7 @@ export const transformationConfigBuilder: TransformSchema = {
       sheetName: 'measurementOrFact',
       fields: [
         eventIDField,
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: 'study-area'
-              }
-            }
-          ]
-        },
+        createObservationMeasurementIDField('study-area'),
         createValueField('measurementType', 'Study Area'),
         createPathField('measurementValue', 'Observations', ['Study Area']),
         createValueField('measurementUnit', '')
@@ -1212,17 +767,7 @@ export const transformationConfigBuilder: TransformSchema = {
       sheetName: 'measurementOrFact',
       fields: [
         eventIDField,
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: 'block-id/su-id'
-              }
-            }
-          ]
-        },
+        createObservationMeasurementIDField('block-id/su-id'),
         createValueField('measurementType', 'Block ID/SU ID'),
         createPathField('measurementValue', 'Observations', ['Block ID/SU ID']),
         createValueField('measurementUnit', '')
@@ -1232,17 +777,7 @@ export const transformationConfigBuilder: TransformSchema = {
       sheetName: 'measurementOrFact',
       fields: [
         eventIDField,
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: 'population-unit'
-              }
-            }
-          ]
-        },
+        createObservationMeasurementIDField('population-unit'),
         createValueField('measurementType', 'Population Unit'),
         createPathField('measurementValue', 'Observations', ['Population Unit']),
         createValueField('measurementUnit', '')
@@ -1256,17 +791,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: 'group-label'
-              }
-            }
-          ]
-        },
+        createObservationMeasurementIDField('group-label'),
         createValueField('measurementType', 'Group Label'),
         createPathField('measurementValue', 'Observations', ['Group Label']),
         createValueField('measurementUnit', '')
@@ -1283,17 +808,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: 'sign-type'
-              }
-            }
-          ]
-        },
+        createObservationMeasurementIDField('sign-type'),
         createValueField('measurementType', 'Sign Type'),
         createPathField('measurementValue', 'Observations', ['Sign type']),
         createValueField('measurementUnit', '')
@@ -1310,17 +825,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: 'sign-count'
-              }
-            }
-          ]
-        },
+        createObservationMeasurementIDField('sign-count'),
         createValueField('measurementType', 'Sign Count'),
         createPathField('measurementValue', 'Observations', ['Sign Count']),
         createValueField('measurementUnit', '')
@@ -1334,17 +839,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: 'age-of-sign'
-              }
-            }
-          ]
-        },
+        createObservationMeasurementIDField('age-of-sign'),
         createValueField('measurementType', 'Age of Sign'),
         createPathField('measurementValue', 'Observations', ['Age of Sign']),
         createValueField('measurementUnit', '')
@@ -1358,17 +853,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: 'veg-cover'
-              }
-            }
-          ]
-        },
+        createObservationMeasurementIDField('veg-cover'),
         createValueField('measurementType', 'Veg Cover'),
         createPathField('measurementValue', 'Observations', ['Veg Cover (%)']),
         createValueField('measurementUnit', '%')
@@ -1382,17 +867,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: 'snow-cover'
-              }
-            }
-          ]
-        },
+        createObservationMeasurementIDField('snow-cover'),
         createValueField('measurementType', 'Snow Cover'),
         createPathField('measurementValue', 'Observations', ['Snow Cover (%)']),
         createValueField('measurementUnit', '%')
@@ -1406,17 +881,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: 'activity'
-              }
-            }
-          ]
-        },
+        createObservationMeasurementIDField('activity'),
         createValueField('measurementType', 'Activity'),
         createPathField('measurementValue', 'Observations', ['Activity']),
         createValueField('measurementUnit', '')
@@ -1430,17 +895,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: 'elevation-observation'
-              }
-            }
-          ]
-        },
+        createObservationMeasurementIDField('elevation-observation'),
         createValueField('measurementType', 'Elevation (m) of Observation'),
         createPathField('measurementValue', 'Observations', ['Elevation (m) of Observation']),
         createValueField('measurementUnit', '')
@@ -1455,17 +910,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: 'habitat'
-              }
-            }
-          ]
-        },
+        createObservationMeasurementIDField('habitat'),
         createValueField('measurementType', 'Habitat'),
         createPathField('measurementValue', 'Observations', ['Habitat']),
         createValueField('measurementUnit', '')
@@ -1479,17 +924,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: 'habitat-slope'
-              }
-            }
-          ]
-        },
+        createObservationMeasurementIDField('habitat-slope'),
         createValueField('measurementType', 'Habitat-Slope'),
         createPathField('measurementValue', 'Observations', ['Habitat-Slope']),
         createValueField('measurementUnit', '')
@@ -1503,17 +938,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: 'terrain-obstruction'
-              }
-            }
-          ]
-        },
+        createObservationMeasurementIDField('terrain-obstruction'),
         createValueField('measurementType', 'Terrain Obstruction'),
         createPathField('measurementValue', 'Observations', ['Terrain Obstruction']),
         createValueField('measurementUnit', '')
@@ -1527,17 +952,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: 'number-of-marked-animals-observed'
-              }
-            }
-          ]
-        },
+        createObservationMeasurementIDField('number-of-marked-animals-observed'),
         createValueField('measurementType', 'Number of Marked Animals Observed'),
         createPathField('measurementValue', 'Observations', ['Number of Marked Animals Observed']),
         createValueField('measurementUnit', '')
@@ -1551,17 +966,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: 'survey-or-telemetry-search'
-              }
-            }
-          ]
-        },
+        createObservationMeasurementIDField('survey-or-telemetry-search'),
         createValueField('measurementType', 'Survey or Telemetry Search'),
         createPathField('measurementValue', 'Observations', ['Survey or Telemetry Search']),
         createValueField('measurementUnit', '')
@@ -1575,17 +980,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
-              postfix: {
-                static: 'photos'
-              }
-            }
-          ]
-        },
+        createObservationMeasurementIDField('photos'),
         createValueField('measurementType', 'Photos'),
         createPathField('measurementValue', 'Observations', ['Photos']),
         createValueField('measurementUnit', '')
@@ -1600,25 +995,8 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'organismID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Marked Animals', ['_key']), getValuesByName('Marked Animals', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Marked Animals', ['_key']), getValuesByName('Marked Animals', ['_row'])],
-              postfix: {
-                static: 'wildlife-health-id'
-              }
-            }
-          ]
-        },
+        organismIDField,
+        createMarkedAnimalsMeasurementIDField('wildlife-health-id'),
         createValueField('measurementType', 'Wildlife Health ID'),
         createPathField('measurementValue', 'Marked Animals', ['Wildlife Health ID']),
         createValueField('measurementUnit', '')
@@ -1632,25 +1010,8 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'organismID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Marked Animals', ['_key']), getValuesByName('Marked Animals', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Marked Animals', ['_key']), getValuesByName('Marked Animals', ['_row'])],
-              postfix: {
-                static: 'animal-id'
-              }
-            }
-          ]
-        },
+        organismIDField,
+        createMarkedAnimalsMeasurementIDField('animal-id'),
         createValueField('measurementType', 'Animal ID'),
         createPathField('measurementValue', 'Marked Animals', ['Animal ID']),
         createValueField('measurementUnit', '')
@@ -1664,25 +1025,8 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'organismID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Marked Animals', ['_key']), getValuesByName('Marked Animals', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Marked Animals', ['_key']), getValuesByName('Marked Animals', ['_row'])],
-              postfix: {
-                static: 'telemetry-device-id'
-              }
-            }
-          ]
-        },
+        organismIDField,
+        createMarkedAnimalsMeasurementIDField('telemetry-device-id'),
         createValueField('measurementType', 'Telemetry Device ID'),
         createPathField('measurementValue', 'Marked Animals', ['Telemetry Device ID']),
         createValueField('measurementUnit', '')
@@ -1696,25 +1040,8 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'organismID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Marked Animals', ['_key']), getValuesByName('Marked Animals', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Marked Animals', ['_key']), getValuesByName('Marked Animals', ['_row'])],
-              postfix: {
-                static: 'collar/tag-frequency'
-              }
-            }
-          ]
-        },
+        organismIDField,
+        createMarkedAnimalsMeasurementIDField('collar/tag-frequency'),
         createValueField('measurementType', 'Collar/Tag Frequency'),
         createPathField('measurementUnit', 'Marked Animals', ['Frequency Unit']),
         createPathField('measurementValue', 'Marked Animals', ['Collar/Tag Frequency'])
@@ -1728,25 +1055,8 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'organismID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Marked Animals', ['_key']), getValuesByName('Marked Animals', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Marked Animals', ['_key']), getValuesByName('Marked Animals', ['_row'])],
-              postfix: {
-                static: 'right-ear-tag-id'
-              }
-            }
-          ]
-        },
+        organismIDField,
+        createMarkedAnimalsMeasurementIDField('right-ear-tag-id'),
         createValueField('measurementType', 'Right Ear Tag ID'),
         createPathField('measurementValue', 'Marked Animals', ['Right Ear Tag ID']),
         createValueField('measurementUnit', '')
@@ -1760,25 +1070,8 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'organismID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Marked Animals', ['_key']), getValuesByName('Marked Animals', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Marked Animals', ['_key']), getValuesByName('Marked Animals', ['_row'])],
-              postfix: {
-                static: 'right-ear-tag-colour'
-              }
-            }
-          ]
-        },
+        organismIDField,
+        createMarkedAnimalsMeasurementIDField('right-ear-tag-colour'),
         createValueField('measurementType', 'Right Ear Tag Colour'),
         createPathField('measurementValue', 'Marked Animals', ['Right Ear Tag Colour']),
         createValueField('measurementUnit', '')
@@ -1792,25 +1085,8 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'organismID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Marked Animals', ['_key']), getValuesByName('Marked Animals', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Marked Animals', ['_key']), getValuesByName('Marked Animals', ['_row'])],
-              postfix: {
-                static: 'left-ear-tag-id'
-              }
-            }
-          ]
-        },
+        organismIDField,
+        createMarkedAnimalsMeasurementIDField('left-ear-tag-id'),
         createValueField('measurementType', 'Left Ear Tag ID'),
         createPathField('measurementValue', 'Marked Animals', ['Left Ear Tag ID']),
         createValueField('measurementUnit', '')
@@ -1824,25 +1100,8 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        {
-          columnName: 'organismID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Marked Animals', ['_key']), getValuesByName('Marked Animals', ['_row'])]
-            }
-          ]
-        },
-        {
-          columnName: 'measurementID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Marked Animals', ['_key']), getValuesByName('Marked Animals', ['_row'])],
-              postfix: {
-                static: 'left-ear-tag-colour'
-              }
-            }
-          ]
-        },
+        organismIDField,
+        createMarkedAnimalsMeasurementIDField('left-ear-tag-colour'),
         createValueField('measurementType', 'Left Ear Tag Colour'),
         createPathField('measurementValue', 'Marked Animals', ['Left Ear Tag Colour']),
         createValueField('measurementUnit', '')

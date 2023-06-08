@@ -521,7 +521,6 @@ const measurementEventIDMaps: MapSchema[] = [
       eventIDField,
       createObservationMeasurementIDField('elevation-observation'),
       createValueField('measurementType', 'Elevation (m) of Observation'),
-
       createPathField('measurementValue', 'Observations', ['Elevation (m) of Observation'])
     ]
   },
