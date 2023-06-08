@@ -4,6 +4,7 @@ import {
   createValueField,
   getValuesByName
 } from '../../../../../helpers/transformation/transformation-config-helpers';
+
 const eventIDField = {
   columnName: 'eventID',
   columnValue: [
@@ -12,6 +13,7 @@ const eventIDField = {
     }
   ]
 };
+
 const createOccurrenceIDField = (staticPostfix: string | number) => {
   return {
     columnName: 'occurrenceID',
@@ -768,7 +770,6 @@ export const transformationConfigBuilder: TransformSchema = {
       fields: [
         eventIDField,
         createMarkedAnimalsMeasurementIDField('block-id/su-id'),
-
         createValueField('measurementType', 'Block ID/SU ID'),
         createPathField('measurementValue', 'Observations', ['Block ID/SU ID']),
         createValueField('measurementUnit', '')
@@ -779,7 +780,6 @@ export const transformationConfigBuilder: TransformSchema = {
       fields: [
         eventIDField,
         createMarkedAnimalsMeasurementIDField('population-unit'),
-
         createValueField('measurementType', 'Population Unit'),
         createValueField('measurementUnit', ''),
         createPathField('measurementValue', 'Observations', ['Population Unit'])
