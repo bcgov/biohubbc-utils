@@ -103,6 +103,7 @@ const testsToRun = async () => {
   await mooseTest2();
   await caribouTest1();
   await goatTest1();
+  await sheepTest1();
 };
 
 // Run the tests

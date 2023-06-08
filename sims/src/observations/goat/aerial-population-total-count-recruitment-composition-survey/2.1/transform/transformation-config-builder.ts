@@ -5,6 +5,14 @@ import {
   getValuesByName
 } from '../../../../../helpers/transformation/transformation-config-helpers';
 
+const eventIDField = {
+  columnName: 'eventID',
+  columnValue: [
+    {
+      paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+    }
+  ]
+};
 export const transformationConfigBuilder: TransformSchema = {
   templateMeta: [
     {
@@ -31,14 +39,7 @@ export const transformationConfigBuilder: TransformSchema = {
     {
       sheetName: 'event',
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'eventDate',
           columnValue: [
@@ -77,14 +78,7 @@ export const transformationConfigBuilder: TransformSchema = {
       sheetName: 'location',
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['_key']) }] },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'verbatimCoordinates',
           columnValue: [
@@ -134,14 +128,7 @@ export const transformationConfigBuilder: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Observations', ['Adults Unclassified Sex']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'occurrenceID',
           columnValue: [
@@ -166,14 +153,7 @@ export const transformationConfigBuilder: TransformSchema = {
       sheetName: 'occurrence',
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Kid']) }] },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'occurrenceID',
           columnValue: [
@@ -198,14 +178,7 @@ export const transformationConfigBuilder: TransformSchema = {
       sheetName: 'occurrence',
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Nanny']) }] },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'occurrenceID',
           columnValue: [
@@ -230,14 +203,7 @@ export const transformationConfigBuilder: TransformSchema = {
       sheetName: 'occurrence',
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Billy']) }] },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'occurrenceID',
           columnValue: [
@@ -265,14 +231,7 @@ export const transformationConfigBuilder: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Observations', ['Unclassified Age/Sex']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'occurrenceID',
           columnValue: [
@@ -300,14 +259,7 @@ export const transformationConfigBuilder: TransformSchema = {
         ]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'organismID',
           columnValue: [
@@ -322,14 +274,7 @@ export const transformationConfigBuilder: TransformSchema = {
     {
       sheetName: 'measurementOrFact',
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -352,14 +297,7 @@ export const transformationConfigBuilder: TransformSchema = {
     {
       sheetName: 'measurementOrFact',
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -380,14 +318,7 @@ export const transformationConfigBuilder: TransformSchema = {
     {
       sheetName: 'measurementOrFact',
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -412,14 +343,7 @@ export const transformationConfigBuilder: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Observations', ['Group Label']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -447,14 +371,7 @@ export const transformationConfigBuilder: TransformSchema = {
         ]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -482,14 +399,7 @@ export const transformationConfigBuilder: TransformSchema = {
         ]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -514,14 +424,7 @@ export const transformationConfigBuilder: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Observations', ['Age of Sign']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -546,14 +449,7 @@ export const transformationConfigBuilder: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Observations', ['Veg Cover (%)']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -578,14 +474,7 @@ export const transformationConfigBuilder: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Observations', ['Snow Cover (%)']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -610,14 +499,7 @@ export const transformationConfigBuilder: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Observations', ['Activity']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -642,14 +524,7 @@ export const transformationConfigBuilder: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Observations', ['Elevation (m) of Observation']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -674,14 +549,7 @@ export const transformationConfigBuilder: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Observations', ['Habitat']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -708,14 +576,7 @@ export const transformationConfigBuilder: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Observations', ['Wind Blown']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -741,14 +602,7 @@ export const transformationConfigBuilder: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Observations', ['Terrain Obstruction']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -773,14 +627,7 @@ export const transformationConfigBuilder: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Observations', ['Number of Marked Animals Observed']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -805,14 +652,7 @@ export const transformationConfigBuilder: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Observations', ['Survey or Telemetry Search']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -837,14 +677,7 @@ export const transformationConfigBuilder: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Observations', ['Photos']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -870,14 +703,7 @@ export const transformationConfigBuilder: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Marked Animals', ['Targeted or Non-Targeted']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'organismID',
           columnValue: [
@@ -910,14 +736,7 @@ export const transformationConfigBuilder: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Marked Animals', ['Wildlife Health ID']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'organismID',
           columnValue: [
@@ -950,14 +769,7 @@ export const transformationConfigBuilder: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Marked Animals', ['Animal ID']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'organismID',
           columnValue: [
@@ -990,14 +802,7 @@ export const transformationConfigBuilder: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Marked Animals', ['Telemetry Device ID']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'organismID',
           columnValue: [
@@ -1030,14 +835,7 @@ export const transformationConfigBuilder: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Marked Animals', ['Collar/Tag Frequency']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'organismID',
           columnValue: [
@@ -1070,14 +868,7 @@ export const transformationConfigBuilder: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Marked Animals', ['Right Ear Tag ID']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'organismID',
           columnValue: [
@@ -1110,14 +901,7 @@ export const transformationConfigBuilder: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Marked Animals', ['Right Ear Tag Colour']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'organismID',
           columnValue: [
@@ -1150,14 +934,7 @@ export const transformationConfigBuilder: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Marked Animals', ['Left Ear Tag ID']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'organismID',
           columnValue: [
@@ -1190,14 +967,7 @@ export const transformationConfigBuilder: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Marked Animals', ['Left Ear Tag Colour']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'organismID',
           columnValue: [

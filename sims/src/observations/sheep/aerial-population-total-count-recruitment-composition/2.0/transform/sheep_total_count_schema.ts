@@ -5,6 +5,14 @@ import {
   getValuesByName
 } from '../../../../../helpers/transformation/transformation-config-helpers';
 
+const eventIDField = {
+  columnName: 'eventID',
+  columnValue: [
+    {
+      paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
+    }
+  ]
+};
 export const sheepTotalCountSchema: TransformSchema = {
   templateMeta: [
     {
@@ -32,14 +40,7 @@ export const sheepTotalCountSchema: TransformSchema = {
     {
       sheetName: 'record',
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'basisOfRecord',
           columnValue: [
@@ -53,14 +54,7 @@ export const sheepTotalCountSchema: TransformSchema = {
     {
       sheetName: 'event',
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'eventDate',
           columnValue: [
@@ -91,14 +85,7 @@ export const sheepTotalCountSchema: TransformSchema = {
       sheetName: 'location',
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['_key']) }] },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'verbatimCoordinates',
           columnValue: [
@@ -142,14 +129,7 @@ export const sheepTotalCountSchema: TransformSchema = {
       sheetName: 'occurrence',
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['BC RISC Class I Rams']) }] },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'occurrenceID',
           columnValue: [
@@ -212,14 +192,7 @@ export const sheepTotalCountSchema: TransformSchema = {
       sheetName: 'occurrence',
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['BC RISC Class II Rams']) }] },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'occurrenceID',
           columnValue: [
@@ -282,14 +255,7 @@ export const sheepTotalCountSchema: TransformSchema = {
       sheetName: 'occurrence',
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['BC RISC Class III Rams']) }] },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'occurrenceID',
           columnValue: [
@@ -352,14 +318,7 @@ export const sheepTotalCountSchema: TransformSchema = {
       sheetName: 'occurrence',
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['BC RISC Class IV Rams']) }] },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'occurrenceID',
           columnValue: [
@@ -422,14 +381,7 @@ export const sheepTotalCountSchema: TransformSchema = {
       sheetName: 'occurrence',
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Ram - Unclassified']) }] },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'occurrenceID',
           columnValue: [
@@ -452,14 +404,7 @@ export const sheepTotalCountSchema: TransformSchema = {
       sheetName: 'occurrence',
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Ewes']) }] },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'occurrenceID',
           columnValue: [
@@ -482,14 +427,7 @@ export const sheepTotalCountSchema: TransformSchema = {
       sheetName: 'occurrence',
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Yearlings']) }] },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'occurrenceID',
           columnValue: [
@@ -512,14 +450,7 @@ export const sheepTotalCountSchema: TransformSchema = {
       sheetName: 'occurrence',
       condition: { type: 'and', checks: [{ ifNotEmpty: getValuesByName('Observations', ['Lambs']) }] },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'occurrenceID',
           columnValue: [
@@ -545,14 +476,7 @@ export const sheepTotalCountSchema: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Observations', ['Ewe-Like Sheep']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'occurrenceID',
           columnValue: [
@@ -578,14 +502,7 @@ export const sheepTotalCountSchema: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Observations', ['Adults Unclassified Sex']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'occurrenceID',
           columnValue: [
@@ -611,14 +528,7 @@ export const sheepTotalCountSchema: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Observations', ['Unclassified Age/Sex']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'occurrenceID',
           columnValue: [
@@ -646,14 +556,7 @@ export const sheepTotalCountSchema: TransformSchema = {
         ]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'organismID',
           columnValue: [
@@ -668,14 +571,7 @@ export const sheepTotalCountSchema: TransformSchema = {
     {
       sheetName: 'measurementOrFact',
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -695,14 +591,7 @@ export const sheepTotalCountSchema: TransformSchema = {
     {
       sheetName: 'measurementOrFact',
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -722,14 +611,7 @@ export const sheepTotalCountSchema: TransformSchema = {
     {
       sheetName: 'measurementOrFact',
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -753,14 +635,7 @@ export const sheepTotalCountSchema: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Observations', ['Group Label']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -787,14 +662,7 @@ export const sheepTotalCountSchema: TransformSchema = {
         ]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -821,14 +689,7 @@ export const sheepTotalCountSchema: TransformSchema = {
         ]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -852,14 +713,7 @@ export const sheepTotalCountSchema: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Observations', ['Age of Sign']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -883,14 +737,7 @@ export const sheepTotalCountSchema: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Observations', ['Veg Cover (%)']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -914,14 +761,7 @@ export const sheepTotalCountSchema: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Observations', ['Snow Cover (%)']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -945,14 +785,7 @@ export const sheepTotalCountSchema: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Observations', ['Activity']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -976,14 +809,7 @@ export const sheepTotalCountSchema: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Observations', ['Elevation (m) of Observation']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -1008,14 +834,7 @@ export const sheepTotalCountSchema: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Observations', ['Habitat']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -1039,14 +858,7 @@ export const sheepTotalCountSchema: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Observations', ['Habitat-Slope']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -1070,14 +882,7 @@ export const sheepTotalCountSchema: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Observations', ['Terrain Obstruction']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -1101,14 +906,7 @@ export const sheepTotalCountSchema: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Observations', ['Number of Marked Animals Observed']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -1132,14 +930,7 @@ export const sheepTotalCountSchema: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Observations', ['Survey or Telemetry Search']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -1163,14 +954,7 @@ export const sheepTotalCountSchema: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Observations', ['Photos']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'measurementID',
           columnValue: [
@@ -1197,14 +981,7 @@ export const sheepTotalCountSchema: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Marked Animals', ['Wildlife Health ID']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'organismID',
           columnValue: [
@@ -1236,14 +1013,7 @@ export const sheepTotalCountSchema: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Marked Animals', ['Animal ID']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'organismID',
           columnValue: [
@@ -1275,14 +1045,7 @@ export const sheepTotalCountSchema: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Marked Animals', ['Telemetry Device ID']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'organismID',
           columnValue: [
@@ -1314,14 +1077,7 @@ export const sheepTotalCountSchema: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Marked Animals', ['Collar/Tag Frequency']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'organismID',
           columnValue: [
@@ -1353,14 +1109,7 @@ export const sheepTotalCountSchema: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Marked Animals', ['Right Ear Tag ID']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'organismID',
           columnValue: [
@@ -1392,14 +1141,7 @@ export const sheepTotalCountSchema: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Marked Animals', ['Right Ear Tag Colour']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'organismID',
           columnValue: [
@@ -1431,14 +1173,7 @@ export const sheepTotalCountSchema: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Marked Animals', ['Left Ear Tag ID']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'organismID',
           columnValue: [
@@ -1470,14 +1205,7 @@ export const sheepTotalCountSchema: TransformSchema = {
         checks: [{ ifNotEmpty: getValuesByName('Marked Animals', ['Left Ear Tag Colour']) }]
       },
       fields: [
-        {
-          columnName: 'eventID',
-          columnValue: [
-            {
-              paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])]
-            }
-          ]
-        },
+        eventIDField,
         {
           columnName: 'organismID',
           columnValue: [

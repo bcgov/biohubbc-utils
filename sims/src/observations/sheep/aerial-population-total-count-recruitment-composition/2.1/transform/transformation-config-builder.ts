@@ -40,12 +40,26 @@ const organismIDField = {
   ]
 };
 
-const createMeasurementIDField = (staticPostfix: string | number) => {
+const createObservationMeasurementIDField = (staticPostfix: string | number) => {
   return {
     columnName: 'measurementID',
     columnValue: [
       {
         paths: [getValuesByName('Observations', ['_key']), getValuesByName('Observations', ['_row'])],
+        postfix: {
+          static: staticPostfix
+        }
+      }
+    ]
+  };
+};
+
+const createMarkedAnimalsMeasurementIDField = (staticPostfix: string | number) => {
+  return {
+    columnName: 'measurementID',
+    columnValue: [
+      {
+        paths: [getValuesByName('Marked Animals', ['_key']), getValuesByName('Marked Animals', ['_row'])],
         postfix: {
           static: staticPostfix
         }
@@ -155,7 +169,7 @@ const occurrenceMaps: MapSchema[] = [
         sheetName: 'measurementOrFact',
         fields: [
           eventIDField,
-          createMeasurementIDField('horn-configuration'),
+          createObservationMeasurementIDField('0-horn-configuration'),
           createOccurrenceIDField(0),
           createValueField('measurementType', 'Horn Configuration'),
           createValueField('measurementValue', 'BC RISC Class I'),
@@ -180,7 +194,7 @@ const occurrenceMaps: MapSchema[] = [
         sheetName: 'measurementOrFact',
         fields: [
           eventIDField,
-          createMeasurementIDField('horn-configuration'),
+          createObservationMeasurementIDField('1-horn-configuration'),
           createOccurrenceIDField(1),
           createValueField('measurementType', 'Horn Configuration'),
           createValueField('measurementValue', 'BC RISC Class II'),
@@ -205,7 +219,7 @@ const occurrenceMaps: MapSchema[] = [
         sheetName: 'measurementOrFact',
         fields: [
           eventIDField,
-          createMeasurementIDField('horn-configuration'),
+          createObservationMeasurementIDField('2-horn-configuration'),
           createOccurrenceIDField(2),
           createValueField('measurementType', 'Horn Configuration'),
           createValueField('measurementValue', 'BC RISC Class III'),
@@ -230,7 +244,7 @@ const occurrenceMaps: MapSchema[] = [
         sheetName: 'measurementOrFact',
         fields: [
           eventIDField,
-          createMeasurementIDField('horn-configuration'),
+          createObservationMeasurementIDField('3-horn-configuration'),
           createOccurrenceIDField(3),
           createValueField('measurementType', 'Horn Configuration'),
           createValueField('measurementValue', 'BC RISC Class IV'),
@@ -255,7 +269,7 @@ const occurrenceMaps: MapSchema[] = [
         sheetName: 'measurementOrFact',
         fields: [
           eventIDField,
-          createMeasurementIDField('horn-configuration'),
+          createObservationMeasurementIDField('4-horn-configuration'),
           createOccurrenceIDField(4),
           createValueField('measurementType', 'Horn Configuration'),
           createValueField('measurementValue', 'Unclassified'),
@@ -367,7 +381,7 @@ const measurementEventIDMaps: MapSchema[] = [
     sheetName: 'measurementOrFact',
     fields: [
       eventIDField,
-      createMeasurementIDField('study-area'),
+      createObservationMeasurementIDField('study-area'),
       createValueField('measurementType', 'Study Area'),
       createPathField('measurementValue', 'Observations', ['Study Area']),
       createValueField('measurementUnit', '')
@@ -377,7 +391,7 @@ const measurementEventIDMaps: MapSchema[] = [
     sheetName: 'measurementOrFact',
     fields: [
       eventIDField,
-      createMeasurementIDField('block-id/su-id'),
+      createObservationMeasurementIDField('block-id/su-id'),
       createValueField('measurementType', 'Block ID/SU ID'),
       createPathField('measurementValue', 'Observations', ['Block ID/SU ID']),
       createValueField('measurementUnit', '')
@@ -387,7 +401,7 @@ const measurementEventIDMaps: MapSchema[] = [
     sheetName: 'measurementOrFact',
     fields: [
       eventIDField,
-      createMeasurementIDField('population-unit'),
+      createObservationMeasurementIDField('population-unit'),
       createValueField('measurementType', 'Population Unit'),
       createValueField('measurementUnit', ''),
       createPathField('measurementValue', 'Observations', ['Population Unit'])
@@ -401,7 +415,7 @@ const measurementEventIDMaps: MapSchema[] = [
     },
     fields: [
       eventIDField,
-      createMeasurementIDField('group-label'),
+      createObservationMeasurementIDField('group-label'),
       createValueField('measurementType', 'Group Label'),
       createPathField('measurementValue', 'Observations', ['Group Label']),
       createValueField('measurementUnit', '')
@@ -418,7 +432,7 @@ const measurementEventIDMaps: MapSchema[] = [
     },
     fields: [
       eventIDField,
-      createMeasurementIDField('sign-type'),
+      createObservationMeasurementIDField('sign-type'),
       createValueField('measurementType', 'Sign Type'),
       createPathField('measurementValue', 'Observations', ['Sign Type']),
       createValueField('measurementUnit', '')
@@ -435,7 +449,7 @@ const measurementEventIDMaps: MapSchema[] = [
     },
     fields: [
       eventIDField,
-      createMeasurementIDField('sign-count'),
+      createObservationMeasurementIDField('sign-count'),
       createValueField('measurementType', 'Sign Count'),
       createPathField('measurementValue', 'Observations', ['Sign Count']),
       createValueField('measurementUnit', '')
@@ -449,7 +463,7 @@ const measurementEventIDMaps: MapSchema[] = [
     },
     fields: [
       eventIDField,
-      createMeasurementIDField('age-of-sign'),
+      createObservationMeasurementIDField('age-of-sign'),
       createValueField('measurementType', 'Age of Sign'),
       createPathField('measurementValue', 'Observations', ['Age of Sign']),
       createValueField('measurementUnit', '')
@@ -463,7 +477,7 @@ const measurementEventIDMaps: MapSchema[] = [
     },
     fields: [
       eventIDField,
-      createMeasurementIDField('veg-cover'),
+      createObservationMeasurementIDField('veg-cover'),
       createValueField('measurementType', 'Veg Cover'),
       createPathField('measurementValue', 'Observations', ['Veg Cover (%)']),
       createValueField('measurementUnit', '%')
@@ -477,7 +491,7 @@ const measurementEventIDMaps: MapSchema[] = [
     },
     fields: [
       eventIDField,
-      createMeasurementIDField('snow-cover'),
+      createObservationMeasurementIDField('snow-cover'),
       createValueField('measurementType', 'Snow Cover'),
       createPathField('measurementValue', 'Observations', ['Snow Cover (%)']),
       createValueField('measurementUnit', '%')
@@ -491,7 +505,7 @@ const measurementEventIDMaps: MapSchema[] = [
     },
     fields: [
       eventIDField,
-      createMeasurementIDField('activity'),
+      createObservationMeasurementIDField('activity'),
       createValueField('measurementType', 'Activity'),
       createPathField('measurementValue', 'Observations', ['Activity']),
       createValueField('measurementUnit', '')
@@ -505,7 +519,7 @@ const measurementEventIDMaps: MapSchema[] = [
     },
     fields: [
       eventIDField,
-      createMeasurementIDField('elevation-observation'),
+      createObservationMeasurementIDField('elevation-observation'),
       createValueField('measurementType', 'Elevation (m) of Observation'),
 
       createPathField('measurementValue', 'Observations', ['Elevation (m) of Observation'])
@@ -519,7 +533,7 @@ const measurementEventIDMaps: MapSchema[] = [
     },
     fields: [
       eventIDField,
-      createMeasurementIDField('habitat'),
+      createObservationMeasurementIDField('habitat'),
       createValueField('measurementType', 'Habitat'),
       createPathField('measurementValue', 'Observations', ['Habitat']),
       createValueField('measurementUnit', '')
@@ -533,7 +547,7 @@ const measurementEventIDMaps: MapSchema[] = [
     },
     fields: [
       eventIDField,
-      createMeasurementIDField('habitat-slope'),
+      createObservationMeasurementIDField('habitat-slope'),
       createValueField('measurementType', 'Habitat-Slope'),
       createPathField('measurementValue', 'Observations', ['Habitat - Slope']),
       createValueField('measurementUnit', '')
@@ -547,7 +561,7 @@ const measurementEventIDMaps: MapSchema[] = [
     },
     fields: [
       eventIDField,
-      createMeasurementIDField('terrain-obstruction'),
+      createObservationMeasurementIDField('terrain-obstruction'),
       createValueField('measurementType', 'Terrain Obstruction'),
       createPathField('measurementValue', 'Observations', ['Terrain Obstruction']),
       createValueField('measurementUnit', '')
@@ -561,7 +575,7 @@ const measurementEventIDMaps: MapSchema[] = [
     },
     fields: [
       eventIDField,
-      createMeasurementIDField('number-of-marked-animals-observed'),
+      createObservationMeasurementIDField('number-of-marked-animals-observed'),
       createValueField('measurementType', 'Number of Marked Animals Observed'),
       createPathField('measurementValue', 'Observations', ['Number of Marked Animals Observed']),
       createValueField('measurementUnit', '')
@@ -575,7 +589,7 @@ const measurementEventIDMaps: MapSchema[] = [
     },
     fields: [
       eventIDField,
-      createMeasurementIDField('survey-or-telemetry-search'),
+      createObservationMeasurementIDField('survey-or-telemetry-search'),
       createValueField('measurementType', 'Survey or Telemetry Search'),
       createPathField('measurementValue', 'Observations', ['Survey or Telemetry Search']),
       createValueField('measurementUnit', '')
@@ -589,7 +603,7 @@ const measurementEventIDMaps: MapSchema[] = [
     },
     fields: [
       eventIDField,
-      createMeasurementIDField('photos'),
+      createObservationMeasurementIDField('photos'),
       createValueField('measurementType', 'Photos'),
       createPathField('measurementValue', 'Observations', ['Photos']),
       createValueField('measurementUnit', '')
@@ -607,7 +621,7 @@ const measurementOrganismIDMaps: MapSchema[] = [
     fields: [
       eventIDField,
       organismIDField,
-      createMeasurementIDField('wildlife-health-id'),
+      createMarkedAnimalsMeasurementIDField('wildlife-health-id'),
       createValueField('measurementType', 'Wildlife Health ID'),
       createPathField('measurementValue', 'Marked Animals', ['Wildlife Health ID']),
       createValueField('measurementUnit', '')
@@ -622,7 +636,7 @@ const measurementOrganismIDMaps: MapSchema[] = [
     fields: [
       eventIDField,
       organismIDField,
-      createMeasurementIDField('animal-id'),
+      createMarkedAnimalsMeasurementIDField('animal-id'),
       createValueField('measurementType', 'Animal ID'),
       createPathField('measurementValue', 'Marked Animals', ['Animal ID']),
       createValueField('measurementUnit', '')
@@ -637,7 +651,7 @@ const measurementOrganismIDMaps: MapSchema[] = [
     fields: [
       eventIDField,
       organismIDField,
-      createMeasurementIDField('telemetry-device-id'),
+      createMarkedAnimalsMeasurementIDField('telemetry-device-id'),
       createValueField('measurementType', 'Telemetry Device ID'),
       createPathField('measurementValue', 'Marked Animals', ['Telemetry Device ID']),
       createValueField('measurementUnit', '')
@@ -652,7 +666,7 @@ const measurementOrganismIDMaps: MapSchema[] = [
     fields: [
       eventIDField,
       organismIDField,
-      createMeasurementIDField('collar/tag-frequency'),
+      createMarkedAnimalsMeasurementIDField('collar/tag-frequency'),
       createValueField('measurementType', 'Collar/Tag Frequency'),
       createPathField('measurementUnit', 'Marked Animals', ['Frequency Unit']),
       createPathField('measurementValue', 'Marked Animals', ['Collar/Tag Frequency'])
@@ -667,7 +681,7 @@ const measurementOrganismIDMaps: MapSchema[] = [
     fields: [
       eventIDField,
       organismIDField,
-      createMeasurementIDField('right-ear-tag-id'),
+      createMarkedAnimalsMeasurementIDField('right-ear-tag-id'),
       createValueField('measurementType', 'Right Ear Tag ID'),
       createPathField('measurementValue', 'Marked Animals', ['Right Ear Tag ID']),
       createValueField('measurementUnit', '')
@@ -682,7 +696,7 @@ const measurementOrganismIDMaps: MapSchema[] = [
     fields: [
       eventIDField,
       organismIDField,
-      createMeasurementIDField('right-ear-tag-colour'),
+      createMarkedAnimalsMeasurementIDField('right-ear-tag-colour'),
       createValueField('measurementType', 'Right Ear Tag Colour'),
       createPathField('measurementValue', 'Marked Animals', ['Right Ear Tag Colour']),
       createValueField('measurementUnit', '')
@@ -697,7 +711,7 @@ const measurementOrganismIDMaps: MapSchema[] = [
     fields: [
       eventIDField,
       organismIDField,
-      createMeasurementIDField('left-ear-tag-id'),
+      createMarkedAnimalsMeasurementIDField('left-ear-tag-id'),
       createValueField('measurementType', 'Left Ear Tag ID'),
       createPathField('measurementValue', 'Marked Animals', ['Left Ear Tag ID']),
       createValueField('measurementUnit', '')
@@ -712,7 +726,7 @@ const measurementOrganismIDMaps: MapSchema[] = [
     fields: [
       eventIDField,
       organismIDField,
-      createMeasurementIDField('left-ear-tag-colour'),
+      createMarkedAnimalsMeasurementIDField('left-ear-tag-colour'),
       createValueField('measurementType', 'Left Ear Tag Colour'),
       createPathField('measurementValue', 'Marked Animals', ['Left Ear Tag Colour']),
       createValueField('measurementUnit', '')

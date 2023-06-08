@@ -255,7 +255,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "horn-configuration"
+                    "static": "0-horn-configuration"
                   }
                 }
               ]
@@ -399,7 +399,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "horn-configuration"
+                    "static": "1-horn-configuration"
                   }
                 }
               ]
@@ -543,7 +543,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "horn-configuration"
+                    "static": "2-horn-configuration"
                   }
                 }
               ]
@@ -687,7 +687,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "horn-configuration"
+                    "static": "3-horn-configuration"
                   }
                 }
               ]
@@ -831,7 +831,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "horn-configuration"
+                    "static": "4-horn-configuration"
                   }
                 }
               ]
@@ -2467,8 +2467,8 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Observations')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
+                "$..[?(@._name === 'Marked Animals')]..['_key']",
+                "$..[?(@._name === 'Marked Animals')]..['_row']"
               ],
               "postfix": {
                 "static": "wildlife-health-id"
@@ -2542,8 +2542,8 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Observations')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
+                "$..[?(@._name === 'Marked Animals')]..['_key']",
+                "$..[?(@._name === 'Marked Animals')]..['_row']"
               ],
               "postfix": {
                 "static": "animal-id"
@@ -2617,8 +2617,8 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Observations')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
+                "$..[?(@._name === 'Marked Animals')]..['_key']",
+                "$..[?(@._name === 'Marked Animals')]..['_row']"
               ],
               "postfix": {
                 "static": "telemetry-device-id"
@@ -2692,8 +2692,8 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Observations')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
+                "$..[?(@._name === 'Marked Animals')]..['_key']",
+                "$..[?(@._name === 'Marked Animals')]..['_row']"
               ],
               "postfix": {
                 "static": "collar/tag-frequency"
@@ -2769,8 +2769,8 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Observations')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
+                "$..[?(@._name === 'Marked Animals')]..['_key']",
+                "$..[?(@._name === 'Marked Animals')]..['_row']"
               ],
               "postfix": {
                 "static": "right-ear-tag-id"
@@ -2844,8 +2844,8 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Observations')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
+                "$..[?(@._name === 'Marked Animals')]..['_key']",
+                "$..[?(@._name === 'Marked Animals')]..['_row']"
               ],
               "postfix": {
                 "static": "right-ear-tag-colour"
@@ -2919,8 +2919,8 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Observations')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
+                "$..[?(@._name === 'Marked Animals')]..['_key']",
+                "$..[?(@._name === 'Marked Animals')]..['_row']"
               ],
               "postfix": {
                 "static": "left-ear-tag-id"
@@ -2994,8 +2994,8 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Observations')]..['_key']",
-                "$..[?(@._name === 'Observations')]..['_row']"
+                "$..[?(@._name === 'Marked Animals')]..['_key']",
+                "$..[?(@._name === 'Marked Animals')]..['_row']"
               ],
               "postfix": {
                 "static": "left-ear-tag-colour"
