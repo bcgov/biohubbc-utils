@@ -223,7 +223,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -238,7 +238,7 @@
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
-                "static": "0"
+                "static": 0
               }
             }
           ]
@@ -310,11 +310,11 @@
               "columnValue": [
                 {
                   "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_key']",
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "antler-configuration"
+                    "static": "0:antler-configuration"
                   }
                 }
               ]
@@ -328,7 +328,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "0"
+                    "static": 0
                   }
                 }
               ]
@@ -377,7 +377,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -392,7 +392,7 @@
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
-                "static": "1"
+                "static": 1
               }
             }
           ]
@@ -464,11 +464,11 @@
               "columnValue": [
                 {
                   "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_key']",
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "antler-configuration"
+                    "static": "1:antler-configuration"
                   }
                 }
               ]
@@ -482,7 +482,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "1"
+                    "static": 1
                   }
                 }
               ]
@@ -531,7 +531,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -546,7 +546,7 @@
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
-                "static": "2"
+                "static": 2
               }
             }
           ]
@@ -618,11 +618,11 @@
               "columnValue": [
                 {
                   "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_key']",
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "antler-configuration"
+                    "static": "2:antler-configuration"
                   }
                 }
               ]
@@ -636,7 +636,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "2"
+                    "static": 2
                   }
                 }
               ]
@@ -685,7 +685,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -700,7 +700,7 @@
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
-                "static": "3"
+                "static": 3
               }
             }
           ]
@@ -772,11 +772,11 @@
               "columnValue": [
                 {
                   "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_key']",
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "antler-configuration"
+                    "static": "3:antler-configuration"
                   }
                 }
               ]
@@ -790,7 +790,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "3"
+                    "static": 3
                   }
                 }
               ]
@@ -839,7 +839,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -854,7 +854,7 @@
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
-                "static": "4"
+                "static": 4
               }
             }
           ]
@@ -922,15 +922,26 @@
               ]
             },
             {
-              "columnName": "measurementID",
+              "columnName": "eventID",
               "columnValue": [
                 {
                   "paths": [
                     "$..[?(@._name === 'Block Summary')]..['_key']",
                     "$..[?(@._name === 'Observations')]..['_row']"
+                  ]
+                }
+              ]
+            },
+            {
+              "columnName": "measurementID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "antler-configuration"
+                    "static": "4:antler-configuration"
                   }
                 }
               ]
@@ -944,7 +955,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "4"
+                    "static": 4
                   }
                 }
               ]
@@ -993,7 +1004,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -1008,7 +1019,7 @@
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
-                "static": "5"
+                "static": 5
               }
             }
           ]
@@ -1080,11 +1091,11 @@
               "columnValue": [
                 {
                   "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_key']",
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "antler-configuration"
+                    "static": "5:antler-configuration"
                   }
                 }
               ]
@@ -1098,7 +1109,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "5"
+                    "static": 5
                   }
                 }
               ]
@@ -1147,7 +1158,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -1162,7 +1173,7 @@
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
-                "static": "6"
+                "static": 6
               }
             }
           ]
@@ -1234,11 +1245,11 @@
               "columnValue": [
                 {
                   "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_key']",
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "antler-configuration"
+                    "static": "6:antler-configuration"
                   }
                 }
               ]
@@ -1252,7 +1263,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "6"
+                    "static": 6
                   }
                 }
               ]
@@ -1301,7 +1312,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -1316,7 +1327,7 @@
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
-                "static": "7"
+                "static": 7
               }
             }
           ]
@@ -1388,11 +1399,11 @@
               "columnValue": [
                 {
                   "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_key']",
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "antler-configuration"
+                    "static": "7:antler-configuration"
                   }
                 }
               ]
@@ -1406,7 +1417,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "7"
+                    "static": 7
                   }
                 }
               ]
@@ -1455,7 +1466,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -1470,7 +1481,7 @@
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
-                "static": "8"
+                "static": 8
               }
             }
           ]
@@ -1542,11 +1553,11 @@
               "columnValue": [
                 {
                   "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_key']",
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "antler-configuration"
+                    "static": "8:antler-configuration"
                   }
                 }
               ]
@@ -1560,7 +1571,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "8"
+                    "static": 8
                   }
                 }
               ]
@@ -1624,7 +1635,7 @@
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
-                "static": "9"
+                "static": 9
               }
             }
           ]
@@ -1696,11 +1707,11 @@
               "columnValue": [
                 {
                   "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_key']",
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "antler-configuration"
+                    "static": "9:antler-configuration"
                   }
                 }
               ]
@@ -1714,7 +1725,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "9"
+                    "static": 9
                   }
                 }
               ]
@@ -1763,7 +1774,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -1778,7 +1789,7 @@
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
-                "static": "10"
+                "static": 10
               }
             }
           ]
@@ -1850,11 +1861,11 @@
               "columnValue": [
                 {
                   "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_key']",
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "antler-configuration"
+                    "static": "10:antler-configuration"
                   }
                 }
               ]
@@ -1868,7 +1879,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "10"
+                    "static": 10
                   }
                 }
               ]
@@ -1917,7 +1928,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -1932,7 +1943,7 @@
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
-                "static": "11"
+                "static": 11
               }
             }
           ]
@@ -2004,11 +2015,11 @@
               "columnValue": [
                 {
                   "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_key']",
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "antler-configuration"
+                    "static": "11:antler-configuration"
                   }
                 }
               ]
@@ -2022,7 +2033,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "11"
+                    "static": 11
                   }
                 }
               ]
@@ -2071,7 +2082,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -2086,7 +2097,7 @@
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
-                "static": "12"
+                "static": 12
               }
             }
           ]
@@ -2158,11 +2169,11 @@
               "columnValue": [
                 {
                   "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_key']",
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "antler-configuration"
+                    "static": "12:antler-configuration"
                   }
                 }
               ]
@@ -2176,7 +2187,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "12"
+                    "static": 12
                   }
                 }
               ]
@@ -2240,7 +2251,7 @@
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
-                "static": "13"
+                "static": 13
               }
             }
           ]
@@ -2312,11 +2323,11 @@
               "columnValue": [
                 {
                   "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_key']",
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "antler-configuration"
+                    "static": "13:antler-configuration"
                   }
                 }
               ]
@@ -2330,7 +2341,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "13"
+                    "static": 13
                   }
                 }
               ]
@@ -2379,7 +2390,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -2394,7 +2405,7 @@
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
-                "static": "14"
+                "static": 14
               }
             }
           ]
@@ -2470,6 +2481,20 @@
               ]
             },
             {
+              "columnName": "measurementID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ],
+                  "postfix": {
+                    "static": "14:cow-w/1-calf"
+                  }
+                }
+              ]
+            },
+            {
               "columnName": "occurrenceID",
               "columnValue": [
                 {
@@ -2478,21 +2503,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "14"
-                  }
-                }
-              ]
-            },
-            {
-              "columnName": "measurementID",
-              "columnValue": [
-                {
-                  "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
-                    "$..[?(@._name === 'Observations')]..['_row']"
-                  ],
-                  "postfix": {
-                    "static": "cow-w/1-calf"
+                    "static": 14
                   }
                 }
               ]
@@ -2548,6 +2559,20 @@
               ]
             },
             {
+              "columnName": "measurementID",
+              "columnValue": [
+                {
+                  "paths": [
+                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Observations')]..['_row']"
+                  ],
+                  "postfix": {
+                    "static": "14:cow-w/2-calves"
+                  }
+                }
+              ]
+            },
+            {
               "columnName": "occurrenceID",
               "columnValue": [
                 {
@@ -2556,21 +2581,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "14"
-                  }
-                }
-              ]
-            },
-            {
-              "columnName": "measurementID",
-              "columnValue": [
-                {
-                  "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
-                    "$..[?(@._name === 'Observations')]..['_row']"
-                  ],
-                  "postfix": {
-                    "static": "cow-w/2-calves"
+                    "static": 14
                   }
                 }
               ]
@@ -2636,7 +2647,7 @@
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
-                "static": "15"
+                "static": 15
               }
             }
           ]
@@ -2720,7 +2731,7 @@
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
-                "static": "16"
+                "static": 16
               }
             }
           ]
@@ -2804,7 +2815,7 @@
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
-                "static": "17"
+                "static": 17
               }
             }
           ]
@@ -2921,7 +2932,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
@@ -2977,7 +2988,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
@@ -3033,7 +3044,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
@@ -3089,7 +3100,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
@@ -3145,7 +3156,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
@@ -3209,7 +3220,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
@@ -3276,7 +3287,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
@@ -3343,7 +3354,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
@@ -3407,7 +3418,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
@@ -3471,7 +3482,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
@@ -3535,7 +3546,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
@@ -3599,7 +3610,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
@@ -3663,7 +3674,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
@@ -3727,7 +3738,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
@@ -3791,7 +3802,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Block Summary')]..['_key']",
+                "$..[?(@._name === 'Observations')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {

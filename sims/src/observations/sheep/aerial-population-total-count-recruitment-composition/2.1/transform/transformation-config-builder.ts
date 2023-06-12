@@ -169,7 +169,7 @@ const occurrenceMaps: MapSchema[] = [
         sheetName: 'measurementOrFact',
         fields: [
           eventIDField,
-          createObservationMeasurementIDField('0-horn-configuration'),
+          createObservationMeasurementIDField('0:horn-configuration'),
           createOccurrenceIDField(0),
           createValueField('measurementType', 'Horn Configuration'),
           createValueField('measurementValue', 'BC RISC Class I'),
@@ -194,7 +194,7 @@ const occurrenceMaps: MapSchema[] = [
         sheetName: 'measurementOrFact',
         fields: [
           eventIDField,
-          createObservationMeasurementIDField('1-horn-configuration'),
+          createObservationMeasurementIDField('1:horn-configuration'),
           createOccurrenceIDField(1),
           createValueField('measurementType', 'Horn Configuration'),
           createValueField('measurementValue', 'BC RISC Class II'),
@@ -219,7 +219,7 @@ const occurrenceMaps: MapSchema[] = [
         sheetName: 'measurementOrFact',
         fields: [
           eventIDField,
-          createObservationMeasurementIDField('2-horn-configuration'),
+          createObservationMeasurementIDField('2:horn-configuration'),
           createOccurrenceIDField(2),
           createValueField('measurementType', 'Horn Configuration'),
           createValueField('measurementValue', 'BC RISC Class III'),
@@ -244,7 +244,7 @@ const occurrenceMaps: MapSchema[] = [
         sheetName: 'measurementOrFact',
         fields: [
           eventIDField,
-          createObservationMeasurementIDField('3-horn-configuration'),
+          createObservationMeasurementIDField('3:horn-configuration'),
           createOccurrenceIDField(3),
           createValueField('measurementType', 'Horn Configuration'),
           createValueField('measurementValue', 'BC RISC Class IV'),
@@ -269,7 +269,7 @@ const occurrenceMaps: MapSchema[] = [
         sheetName: 'measurementOrFact',
         fields: [
           eventIDField,
-          createObservationMeasurementIDField('4-horn-configuration'),
+          createObservationMeasurementIDField('4:horn-configuration'),
           createOccurrenceIDField(4),
           createValueField('measurementType', 'Horn Configuration'),
           createValueField('measurementValue', 'Unclassified'),

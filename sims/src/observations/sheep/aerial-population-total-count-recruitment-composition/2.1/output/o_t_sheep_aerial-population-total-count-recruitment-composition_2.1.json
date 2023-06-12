@@ -255,7 +255,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "0-horn-configuration"
+                    "static": "0:horn-configuration"
                   }
                 }
               ]
@@ -399,7 +399,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "1-horn-configuration"
+                    "static": "1:horn-configuration"
                   }
                 }
               ]
@@ -543,7 +543,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "2-horn-configuration"
+                    "static": "2:horn-configuration"
                   }
                 }
               ]
@@ -687,7 +687,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "3-horn-configuration"
+                    "static": "3:horn-configuration"
                   }
                 }
               ]
@@ -831,7 +831,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": "4-horn-configuration"
+                    "static": "4:horn-configuration"
                   }
                 }
               ]

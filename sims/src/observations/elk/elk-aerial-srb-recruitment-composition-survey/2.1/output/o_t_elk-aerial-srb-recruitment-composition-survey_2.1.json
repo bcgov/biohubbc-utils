@@ -306,7 +306,7 @@
               "columnValue": [
                 {
                   "paths": [
-                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Block Summary')]..['_key']",
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ]
                 }
@@ -460,7 +460,7 @@
               "columnValue": [
                 {
                   "paths": [
-                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Block Summary')]..['_key']",
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ]
                 }
@@ -614,7 +614,7 @@
               "columnValue": [
                 {
                   "paths": [
-                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Block Summary')]..['_key']",
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ]
                 }
@@ -768,7 +768,7 @@
               "columnValue": [
                 {
                   "paths": [
-                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Block Summary')]..['_key']",
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ]
                 }
@@ -922,7 +922,7 @@
               "columnValue": [
                 {
                   "paths": [
-                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Block Summary')]..['_key']",
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ]
                 }
@@ -1076,7 +1076,7 @@
               "columnValue": [
                 {
                   "paths": [
-                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Block Summary')]..['_key']",
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ]
                 }
@@ -1230,7 +1230,7 @@
               "columnValue": [
                 {
                   "paths": [
-                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Block Summary')]..['_key']",
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ]
                 }
@@ -1384,7 +1384,7 @@
               "columnValue": [
                 {
                   "paths": [
-                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Block Summary')]..['_key']",
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ]
                 }
@@ -1538,7 +1538,7 @@
               "columnValue": [
                 {
                   "paths": [
-                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Block Summary')]..['_key']",
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ]
                 }
@@ -1692,7 +1692,7 @@
               "columnValue": [
                 {
                   "paths": [
-                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Block Summary')]..['_key']",
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ]
                 }
@@ -1846,7 +1846,7 @@
               "columnValue": [
                 {
                   "paths": [
-                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Block Summary')]..['_key']",
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ]
                 }
@@ -2000,7 +2000,7 @@
               "columnValue": [
                 {
                   "paths": [
-                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Block Summary')]..['_key']",
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ]
                 }
@@ -2154,7 +2154,7 @@
               "columnValue": [
                 {
                   "paths": [
-                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Block Summary')]..['_key']",
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ]
                 }
@@ -2308,7 +2308,7 @@
               "columnValue": [
                 {
                   "paths": [
-                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Block Summary')]..['_key']",
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ]
                 }
@@ -2462,7 +2462,7 @@
               "columnValue": [
                 {
                   "paths": [
-                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Block Summary')]..['_key']",
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ]
                 }
@@ -2616,7 +2616,7 @@
               "columnValue": [
                 {
                   "paths": [
-                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Block Summary')]..['_key']",
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ]
                 }
@@ -2770,7 +2770,7 @@
               "columnValue": [
                 {
                   "paths": [
-                    "$..[?(@._name === 'Observations')]..['_key']",
+                    "$..[?(@._name === 'Block Summary')]..['_key']",
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ]
                 }
@@ -3555,7 +3555,7 @@
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
-                "static": "ssampled"
+                "static": "sampled"
               }
             }
           ]

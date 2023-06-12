@@ -237,7 +237,7 @@ export const transformationConfigBuilder: TransformSchema = {
         {
           sheetName: 'measurementOrFact',
           fields: [
-            occurrenceIDField,
+            eventIDField,
             createObservationMeasurementIDField('0:antler-configuration'),
             createOccurrenceIDField(0),
             createValueField('measurementType', 'Antler Configuration'),
@@ -267,7 +267,7 @@ export const transformationConfigBuilder: TransformSchema = {
         {
           sheetName: 'measurementOrFact',
           fields: [
-            occurrenceIDField,
+            eventIDField,
             createObservationMeasurementIDField('1:antler-configuration'),
             createOccurrenceIDField(1),
             createValueField('measurementType', 'Antler Configuration'),
@@ -297,7 +297,7 @@ export const transformationConfigBuilder: TransformSchema = {
         {
           sheetName: 'measurementOrFact',
           fields: [
-            occurrenceIDField,
+            eventIDField,
             createObservationMeasurementIDField('2:antler-configuration'),
             createOccurrenceIDField(2),
             createValueField('measurementType', 'Antler Configuration'),
@@ -330,7 +330,7 @@ export const transformationConfigBuilder: TransformSchema = {
         {
           sheetName: 'measurementOrFact',
           fields: [
-            occurrenceIDField,
+            eventIDField,
             createObservationMeasurementIDField('3:antler-configuration'),
             createOccurrenceIDField(3),
             createValueField('measurementType', 'Antler Configuration'),
@@ -360,7 +360,7 @@ export const transformationConfigBuilder: TransformSchema = {
         {
           sheetName: 'measurementOrFact',
           fields: [
-            occurrenceIDField,
+            eventIDField,
             createObservationMeasurementIDField('4:antler-configuration'),
             createOccurrenceIDField(4),
             createValueField('measurementType', 'Antler Configuration'),
@@ -390,7 +390,7 @@ export const transformationConfigBuilder: TransformSchema = {
         {
           sheetName: 'measurementOrFact',
           fields: [
-            occurrenceIDField,
+            eventIDField,
             createObservationMeasurementIDField('5:antler-configuration'),
             createOccurrenceIDField(5),
             createValueField('measurementType', 'Antler Configuration'),
@@ -420,7 +420,7 @@ export const transformationConfigBuilder: TransformSchema = {
         {
           sheetName: 'measurementOrFact',
           fields: [
-            occurrenceIDField,
+            eventIDField,
             createObservationMeasurementIDField('6:antler-configuration'),
             createOccurrenceIDField(6),
             createValueField('measurementType', 'Antler Configuration'),
@@ -450,7 +450,7 @@ export const transformationConfigBuilder: TransformSchema = {
         {
           sheetName: 'measurementOrFact',
           fields: [
-            occurrenceIDField,
+            eventIDField,
             createObservationMeasurementIDField('7:antler-configuration'),
             createOccurrenceIDField(7),
             createValueField('measurementType', 'Antler Configuration'),
@@ -480,7 +480,7 @@ export const transformationConfigBuilder: TransformSchema = {
         {
           sheetName: 'measurementOrFact',
           fields: [
-            occurrenceIDField,
+            eventIDField,
             createObservationMeasurementIDField('8:antler-configuration'),
             createOccurrenceIDField(8),
             createValueField('measurementType', 'Antler Configuration'),
@@ -510,7 +510,7 @@ export const transformationConfigBuilder: TransformSchema = {
         {
           sheetName: 'measurementOrFact',
           fields: [
-            occurrenceIDField,
+            eventIDField,
             createObservationMeasurementIDField('9:antler-configuration'),
             createOccurrenceIDField(9),
             createValueField('measurementType', 'Antler Configuration'),
@@ -540,7 +540,7 @@ export const transformationConfigBuilder: TransformSchema = {
         {
           sheetName: 'measurementOrFact',
           fields: [
-            occurrenceIDField,
+            eventIDField,
             createObservationMeasurementIDField('10:antler-configuration'),
             createOccurrenceIDField(10),
             createValueField('measurementType', 'Antler Configuration'),
@@ -570,7 +570,7 @@ export const transformationConfigBuilder: TransformSchema = {
         {
           sheetName: 'measurementOrFact',
           fields: [
-            occurrenceIDField,
+            eventIDField,
             createObservationMeasurementIDField('11:antler-configuration'),
             createOccurrenceIDField(11),
             createValueField('measurementType', 'Antler Configuration'),
@@ -600,7 +600,7 @@ export const transformationConfigBuilder: TransformSchema = {
         {
           sheetName: 'measurementOrFact',
           fields: [
-            occurrenceIDField,
+            eventIDField,
             createObservationMeasurementIDField('12:antler-configuration'),
             createOccurrenceIDField(12),
             createValueField('measurementType', 'Antler Configuration'),
@@ -630,7 +630,7 @@ export const transformationConfigBuilder: TransformSchema = {
         {
           sheetName: 'measurementOrFact',
           fields: [
-            occurrenceIDField,
+            eventIDField,
             createObservationMeasurementIDField('13:antler-configuration'),
             createOccurrenceIDField(13),
             createValueField('measurementType', 'Antler Configuration'),
@@ -660,7 +660,7 @@ export const transformationConfigBuilder: TransformSchema = {
         {
           sheetName: 'measurementOrFact',
           fields: [
-            occurrenceIDField,
+            eventIDField,
             createObservationMeasurementIDField('14:antler-configuration'),
             createOccurrenceIDField(14),
             createValueField('measurementType', 'Antler Configuration'),
@@ -693,7 +693,7 @@ export const transformationConfigBuilder: TransformSchema = {
         {
           sheetName: 'measurementOrFact',
           fields: [
-            occurrenceIDField,
+            eventIDField,
             createObservationMeasurementIDField('15:antler-configuration'),
             createOccurrenceIDField(15),
             createValueField('measurementType', 'Antler Configuration'),
@@ -723,7 +723,7 @@ export const transformationConfigBuilder: TransformSchema = {
         {
           sheetName: 'measurementOrFact',
           fields: [
-            occurrenceIDField,
+            eventIDField,
             createObservationMeasurementIDField('16:antler-configuration'),
             createOccurrenceIDField(16),
             createValueField('measurementType', 'Antler Configuration'),
@@ -872,7 +872,7 @@ export const transformationConfigBuilder: TransformSchema = {
       sheetName: 'measurementOrFact',
       fields: [
         eventIDField,
-        createEventMeasurementIDField('ssampled'),
+        createEventMeasurementIDField('sampled'),
         createValueField('measurementType', 'Sampled'),
         createPathField('measurementValue', 'Block Summary', ['Sampled (Y/N)']),
         createValueField('measurementUnit', 'Y/N')
@@ -904,7 +904,6 @@ export const transformationConfigBuilder: TransformSchema = {
       fields: [
         eventIDField,
         createEventMeasurementIDField('sign-type'),
-
         createValueField('measurementType', 'Sign Type'),
         createPathField('measurementValue', 'Observations', ['Sign Type']),
         createValueField('measurementUnit', '')
@@ -965,7 +964,6 @@ export const transformationConfigBuilder: TransformSchema = {
       fields: [
         eventIDField,
         createEventMeasurementIDField('habitat'),
-
         createValueField('measurementType', 'Habitat'),
         createPathField('measurementValue', 'Observations', ['Habitat']),
         createValueField('measurementUnit', '')
@@ -980,7 +978,6 @@ export const transformationConfigBuilder: TransformSchema = {
       fields: [
         eventIDField,
         createEventMeasurementIDField('veg-cover'),
-
         createValueField('measurementType', 'Veg Cover'),
         createPathField('measurementValue', 'Observations', ['Veg Cover (%)']),
         createValueField('measurementUnit', '%')
@@ -995,7 +992,6 @@ export const transformationConfigBuilder: TransformSchema = {
       fields: [
         eventIDField,
         createEventMeasurementIDField('snow-cover'),
-
         createValueField('measurementType', 'Snow Cover'),
         createPathField('measurementValue', 'Observations', ['Snow Cover (%)']),
         createValueField('measurementUnit', '%')
@@ -1010,7 +1006,6 @@ export const transformationConfigBuilder: TransformSchema = {
       fields: [
         eventIDField,
         createEventMeasurementIDField('activity'),
-
         createValueField('measurementType', 'Activity'),
         createPathField('measurementValue', 'Observations', ['Activity']),
         createValueField('measurementUnit', '')
@@ -1054,7 +1049,6 @@ export const transformationConfigBuilder: TransformSchema = {
       fields: [
         eventIDField,
         createEventMeasurementIDField('photos'),
-
         createValueField('measurementType', 'Photos'),
         createPathField('measurementValue', 'Observations', ['Photos']),
         createValueField('measurementUnit', '')
@@ -1070,7 +1064,6 @@ export const transformationConfigBuilder: TransformSchema = {
         eventIDField,
         organismIDField,
         createOrganismMeasurementIDField('targeted-or-non-targeted'),
-
         createValueField('measurementType', 'Targeted or Non-Targeted'),
         createPathField('measurementValue', 'Marked Animals', ['Targeted or Non-Targeted']),
         createValueField('measurementUnit', '')
@@ -1148,7 +1141,6 @@ export const transformationConfigBuilder: TransformSchema = {
         eventIDField,
         organismIDField,
         createOrganismMeasurementIDField('right-ear-tag-id'),
-
         createValueField('measurementType', 'Right Ear Tag ID'),
         createPathField('measurementValue', 'Marked Animals', ['Right Ear Tag ID']),
         createValueField('measurementUnit', '')

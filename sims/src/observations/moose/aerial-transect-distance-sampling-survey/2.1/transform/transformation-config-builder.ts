@@ -618,7 +618,7 @@ export const transformationConfigBuilder: TransformSchema = {
           fields: [
             eventIDField,
             createOccurrenceIDField(14),
-            createObservationMeasurementIDField('cow-w/1-calf'),
+            createObservationMeasurementIDField('14:cow-w/1-calf'),
             createValueField('measurementType', 'Cow W/1 calf'),
             createPathField('measurementValue', 'Observations', ['Cow W/1 calf']),
             createValueField('measurementUnit', '')
@@ -633,7 +633,7 @@ export const transformationConfigBuilder: TransformSchema = {
           fields: [
             eventIDField,
             createOccurrenceIDField(14),
-            createObservationMeasurementIDField('cow-w/2-calves'),
+            createObservationMeasurementIDField('14:cow-w/2-calves'),
             createValueField('measurementType', 'Cow W/2 calves'),
             createPathField('measurementValue', 'Observations', ['Cow W/2 calves']),
             createValueField('measurementUnit', '')

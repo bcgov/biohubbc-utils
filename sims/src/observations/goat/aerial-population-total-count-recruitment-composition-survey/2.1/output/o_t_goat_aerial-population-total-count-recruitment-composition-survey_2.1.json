@@ -189,7 +189,7 @@
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
-                "static": "0"
+                "static": 0
               }
             }
           ]
@@ -263,7 +263,7 @@
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
-                "static": "1"
+                "static": 1
               }
             }
           ]
@@ -337,7 +337,7 @@
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
-                "static": "2"
+                "static": 2
               }
             }
           ]
@@ -411,7 +411,7 @@
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
-                "static": "3"
+                "static": 3
               }
             }
           ]
@@ -485,7 +485,7 @@
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
-                "static": "4"
+                "static": 4
               }
             }
           ]
@@ -1354,7 +1354,7 @@
                 "$..[?(@._name === 'Observations')]..['_row']"
               ],
               "postfix": {
-                "static": "wind-blown"
+                "static": "habitat-slope"
               }
             }
           ]
