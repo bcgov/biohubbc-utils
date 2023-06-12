@@ -223,7 +223,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Block Summary')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -377,7 +377,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Block Summary')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -531,7 +531,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Block Summary')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -685,7 +685,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Block Summary')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -839,7 +839,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Block Summary')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -993,7 +993,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Block Summary')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -1147,7 +1147,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Block Summary')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -1301,7 +1301,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Block Summary')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -1455,7 +1455,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Block Summary')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -1763,7 +1763,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Block Summary')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -1917,7 +1917,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Block Summary')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -2071,7 +2071,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Block Summary')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -2379,7 +2379,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Observations')]..['_key']",
+                "$..[?(@._name === 'Block Summary')]..['_key']",
                 "$..[?(@._name === 'Observations')]..['_row']"
               ]
             }
@@ -3851,17 +3851,6 @@
           ]
         },
         {
-          "columnName": "organismID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Marked Animals')]..['_key']",
-                "$..[?(@._name === 'Marked Animals')]..['_row']"
-              ]
-            }
-          ]
-        },
-        {
           "columnName": "measurementID",
           "columnValue": [
             {
@@ -3872,6 +3861,17 @@
               "postfix": {
                 "static": "targeted-or-non-targeted"
               }
+            }
+          ]
+        },
+        {
+          "columnName": "organismID",
+          "columnValue": [
+            {
+              "paths": [
+                "$..[?(@._name === 'Marked Animals')]..['_key']",
+                "$..[?(@._name === 'Marked Animals')]..['_row']"
+              ]
             }
           ]
         },
@@ -3926,17 +3926,6 @@
           ]
         },
         {
-          "columnName": "organismID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Marked Animals')]..['_key']",
-                "$..[?(@._name === 'Marked Animals')]..['_row']"
-              ]
-            }
-          ]
-        },
-        {
           "columnName": "measurementID",
           "columnValue": [
             {
@@ -3947,6 +3936,17 @@
               "postfix": {
                 "static": "wildlife-health-id"
               }
+            }
+          ]
+        },
+        {
+          "columnName": "organismID",
+          "columnValue": [
+            {
+              "paths": [
+                "$..[?(@._name === 'Marked Animals')]..['_key']",
+                "$..[?(@._name === 'Marked Animals')]..['_row']"
+              ]
             }
           ]
         },
@@ -4001,17 +4001,6 @@
           ]
         },
         {
-          "columnName": "organismID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Marked Animals')]..['_key']",
-                "$..[?(@._name === 'Marked Animals')]..['_row']"
-              ]
-            }
-          ]
-        },
-        {
           "columnName": "measurementID",
           "columnValue": [
             {
@@ -4022,6 +4011,17 @@
               "postfix": {
                 "static": "animal-id"
               }
+            }
+          ]
+        },
+        {
+          "columnName": "organismID",
+          "columnValue": [
+            {
+              "paths": [
+                "$..[?(@._name === 'Marked Animals')]..['_key']",
+                "$..[?(@._name === 'Marked Animals')]..['_row']"
+              ]
             }
           ]
         },
@@ -4076,17 +4076,6 @@
           ]
         },
         {
-          "columnName": "organismID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Marked Animals')]..['_key']",
-                "$..[?(@._name === 'Marked Animals')]..['_row']"
-              ]
-            }
-          ]
-        },
-        {
           "columnName": "measurementID",
           "columnValue": [
             {
@@ -4097,6 +4086,17 @@
               "postfix": {
                 "static": "telemetry-device-id"
               }
+            }
+          ]
+        },
+        {
+          "columnName": "organismID",
+          "columnValue": [
+            {
+              "paths": [
+                "$..[?(@._name === 'Marked Animals')]..['_key']",
+                "$..[?(@._name === 'Marked Animals')]..['_row']"
+              ]
             }
           ]
         },
@@ -4151,17 +4151,6 @@
           ]
         },
         {
-          "columnName": "organismID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Marked Animals')]..['_key']",
-                "$..[?(@._name === 'Marked Animals')]..['_row']"
-              ]
-            }
-          ]
-        },
-        {
           "columnName": "measurementID",
           "columnValue": [
             {
@@ -4172,6 +4161,17 @@
               "postfix": {
                 "static": "collar/tag-frequency"
               }
+            }
+          ]
+        },
+        {
+          "columnName": "organismID",
+          "columnValue": [
+            {
+              "paths": [
+                "$..[?(@._name === 'Marked Animals')]..['_key']",
+                "$..[?(@._name === 'Marked Animals')]..['_row']"
+              ]
             }
           ]
         },
@@ -4228,17 +4228,6 @@
           ]
         },
         {
-          "columnName": "organismID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Marked Animals')]..['_key']",
-                "$..[?(@._name === 'Marked Animals')]..['_row']"
-              ]
-            }
-          ]
-        },
-        {
           "columnName": "measurementID",
           "columnValue": [
             {
@@ -4249,6 +4238,17 @@
               "postfix": {
                 "static": "right-ear-tag-id"
               }
+            }
+          ]
+        },
+        {
+          "columnName": "organismID",
+          "columnValue": [
+            {
+              "paths": [
+                "$..[?(@._name === 'Marked Animals')]..['_key']",
+                "$..[?(@._name === 'Marked Animals')]..['_row']"
+              ]
             }
           ]
         },
@@ -4303,17 +4303,6 @@
           ]
         },
         {
-          "columnName": "organismID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Marked Animals')]..['_key']",
-                "$..[?(@._name === 'Marked Animals')]..['_row']"
-              ]
-            }
-          ]
-        },
-        {
           "columnName": "measurementID",
           "columnValue": [
             {
@@ -4324,6 +4313,17 @@
               "postfix": {
                 "static": "right-ear-tag-colour"
               }
+            }
+          ]
+        },
+        {
+          "columnName": "organismID",
+          "columnValue": [
+            {
+              "paths": [
+                "$..[?(@._name === 'Marked Animals')]..['_key']",
+                "$..[?(@._name === 'Marked Animals')]..['_row']"
+              ]
             }
           ]
         },
@@ -4378,17 +4378,6 @@
           ]
         },
         {
-          "columnName": "organismID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Marked Animals')]..['_key']",
-                "$..[?(@._name === 'Marked Animals')]..['_row']"
-              ]
-            }
-          ]
-        },
-        {
           "columnName": "measurementID",
           "columnValue": [
             {
@@ -4399,6 +4388,17 @@
               "postfix": {
                 "static": "left-ear-tag-id"
               }
+            }
+          ]
+        },
+        {
+          "columnName": "organismID",
+          "columnValue": [
+            {
+              "paths": [
+                "$..[?(@._name === 'Marked Animals')]..['_key']",
+                "$..[?(@._name === 'Marked Animals')]..['_row']"
+              ]
             }
           ]
         },
@@ -4453,17 +4453,6 @@
           ]
         },
         {
-          "columnName": "organismID",
-          "columnValue": [
-            {
-              "paths": [
-                "$..[?(@._name === 'Marked Animals')]..['_key']",
-                "$..[?(@._name === 'Marked Animals')]..['_row']"
-              ]
-            }
-          ]
-        },
-        {
           "columnName": "measurementID",
           "columnValue": [
             {
@@ -4474,6 +4463,17 @@
               "postfix": {
                 "static": "left-ear-tag-colour"
               }
+            }
+          ]
+        },
+        {
+          "columnName": "organismID",
+          "columnValue": [
+            {
+              "paths": [
+                "$..[?(@._name === 'Marked Animals')]..['_key']",
+                "$..[?(@._name === 'Marked Animals')]..['_row']"
+              ]
             }
           ]
         },
