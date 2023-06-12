@@ -35,6 +35,7 @@ const createOccurrenceIDField = (staticPostfix: string | number) => {
     ]
   };
 };
+
 const createObservationMeasurementIDField = (staticPostfix: string | number) => {
   return {
     columnName: 'measurementID',
