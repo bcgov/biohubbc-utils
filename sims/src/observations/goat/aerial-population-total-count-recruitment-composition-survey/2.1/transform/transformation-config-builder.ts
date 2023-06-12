@@ -51,7 +51,7 @@ const createObservationMeasurementIDField = (staticPostfix: string | number) => 
   };
 };
 
-const createMarkedAnimalsMeasurementIDField = (staticPostfix: string | number) => {
+const createOrganismMeasurementIDField = (staticPostfix: string | number) => {
   return {
     columnName: 'measurementID',
     columnValue: [
@@ -527,7 +527,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        createMarkedAnimalsMeasurementIDField('targeted-or-non-targeted'),
+        createOrganismMeasurementIDField('targeted-or-non-targeted'),
         organismIDField,
         createValueField('measurementType', 'Targeted or Non-Targeted'),
         createValueField('measurementUnit', ''),
@@ -543,7 +543,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        createMarkedAnimalsMeasurementIDField('wildlife-health-id'),
+        createOrganismMeasurementIDField('wildlife-health-id'),
         organismIDField,
         createValueField('measurementType', 'Wildlife Health ID'),
         createPathField('measurementValue', 'Marked Animals', ['Wildlife Health ID']),
@@ -559,7 +559,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        createMarkedAnimalsMeasurementIDField('animal-id'),
+        createOrganismMeasurementIDField('animal-id'),
         organismIDField,
         createValueField('measurementType', 'Animal ID'),
         createPathField('measurementValue', 'Marked Animals', ['Animal ID']),
@@ -575,7 +575,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        createMarkedAnimalsMeasurementIDField('telemetry-device-id'),
+        createOrganismMeasurementIDField('telemetry-device-id'),
         organismIDField,
         createValueField('measurementType', 'Telemetry Device ID'),
         createPathField('measurementValue', 'Marked Animals', ['Telemetry Device ID']),
@@ -591,7 +591,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        createMarkedAnimalsMeasurementIDField('collar/tag-frequency'),
+        createOrganismMeasurementIDField('collar/tag-frequency'),
         organismIDField,
         createValueField('measurementType', 'Collar/Tag Frequency'),
         createPathField('measurementValue', 'Marked Animals', ['Collar/Tag Frequency']),
@@ -607,7 +607,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        createMarkedAnimalsMeasurementIDField('right-ear-tag-id'),
+        createOrganismMeasurementIDField('right-ear-tag-id'),
         organismIDField,
         createValueField('measurementType', 'Right Ear Tag ID'),
         createPathField('measurementValue', 'Marked Animals', ['Right Ear Tag ID']),
@@ -623,7 +623,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        createMarkedAnimalsMeasurementIDField('right-ear-tag-colour'),
+        createOrganismMeasurementIDField('right-ear-tag-colour'),
         organismIDField,
         createValueField('measurementType', 'Right Ear Tag Colour'),
         createPathField('measurementValue', 'Marked Animals', ['Right Ear Tag Colour']),
@@ -639,7 +639,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        createMarkedAnimalsMeasurementIDField('left-ear-tag-id'),
+        createOrganismMeasurementIDField('left-ear-tag-id'),
         organismIDField,
         createValueField('measurementType', 'Left Ear Tag ID'),
         createPathField('measurementValue', 'Marked Animals', ['Left Ear Tag ID']),
@@ -655,7 +655,7 @@ export const transformationConfigBuilder: TransformSchema = {
       },
       fields: [
         eventIDField,
-        createMarkedAnimalsMeasurementIDField('left-ear-tag-colour'),
+        createOrganismMeasurementIDField('left-ear-tag-colour'),
         organismIDField,
         createValueField('measurementType', 'Left Ear Tag Colour'),
         createPathField('measurementValue', 'Marked Animals', ['Left Ear Tag Colour']),
