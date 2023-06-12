@@ -413,7 +413,7 @@
                     "$..[?(@._name === 'Observations')]..['_row']"
                   ],
                   "postfix": {
-                    "static": 0
+                    "static": 1
                   }
                 }
               ]

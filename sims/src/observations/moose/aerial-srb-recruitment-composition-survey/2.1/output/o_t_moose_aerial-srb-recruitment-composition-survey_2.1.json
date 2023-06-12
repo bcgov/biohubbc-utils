@@ -922,17 +922,6 @@
               ]
             },
             {
-              "columnName": "eventID",
-              "columnValue": [
-                {
-                  "paths": [
-                    "$..[?(@._name === 'Block Summary')]..['_key']",
-                    "$..[?(@._name === 'Observations')]..['_row']"
-                  ]
-                }
-              ]
-            },
-            {
               "columnName": "measurementID",
               "columnValue": [
                 {

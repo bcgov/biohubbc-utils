@@ -44,6 +44,7 @@ const createOccurrenceIDField = (staticPostfix: string | number) => {
     ]
   };
 };
+
 const createObservationMeasurementIDField = (staticPostfix: string | number) => {
   return {
     columnName: 'measurementID',
@@ -357,7 +358,6 @@ export const transformationConfigBuilder: TransformSchema = {
         {
           sheetName: 'measurementOrFact',
           fields: [
-            eventIDField,
             eventIDField,
             createObservationMeasurementIDField('4:antler-configuration'),
             createOccurrenceIDField(4),

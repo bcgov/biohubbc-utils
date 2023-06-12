@@ -54,7 +54,7 @@ const createObservationMeasurementIDField = (staticPostfix: string | number) => 
   };
 };
 
-const createMarkedAnimalsMeasurementIDField = (staticPostfix: string | number) => {
+const createOrganismMeasurementIDField = (staticPostfix: string | number) => {
   return {
     columnName: 'measurementID',
     columnValue: [
@@ -620,7 +620,7 @@ const measurementOrganismIDMaps: MapSchema[] = [
     fields: [
       eventIDField,
       organismIDField,
-      createMarkedAnimalsMeasurementIDField('wildlife-health-id'),
+      createOrganismMeasurementIDField('wildlife-health-id'),
       createValueField('measurementType', 'Wildlife Health ID'),
       createPathField('measurementValue', 'Marked Animals', ['Wildlife Health ID']),
       createValueField('measurementUnit', '')
@@ -635,7 +635,7 @@ const measurementOrganismIDMaps: MapSchema[] = [
     fields: [
       eventIDField,
       organismIDField,
-      createMarkedAnimalsMeasurementIDField('animal-id'),
+      createOrganismMeasurementIDField('animal-id'),
       createValueField('measurementType', 'Animal ID'),
       createPathField('measurementValue', 'Marked Animals', ['Animal ID']),
       createValueField('measurementUnit', '')
@@ -650,7 +650,7 @@ const measurementOrganismIDMaps: MapSchema[] = [
     fields: [
       eventIDField,
       organismIDField,
-      createMarkedAnimalsMeasurementIDField('telemetry-device-id'),
+      createOrganismMeasurementIDField('telemetry-device-id'),
       createValueField('measurementType', 'Telemetry Device ID'),
       createPathField('measurementValue', 'Marked Animals', ['Telemetry Device ID']),
       createValueField('measurementUnit', '')
@@ -665,7 +665,7 @@ const measurementOrganismIDMaps: MapSchema[] = [
     fields: [
       eventIDField,
       organismIDField,
-      createMarkedAnimalsMeasurementIDField('collar/tag-frequency'),
+      createOrganismMeasurementIDField('collar/tag-frequency'),
       createValueField('measurementType', 'Collar/Tag Frequency'),
       createPathField('measurementUnit', 'Marked Animals', ['Frequency Unit']),
       createPathField('measurementValue', 'Marked Animals', ['Collar/Tag Frequency'])
@@ -680,7 +680,7 @@ const measurementOrganismIDMaps: MapSchema[] = [
     fields: [
       eventIDField,
       organismIDField,
-      createMarkedAnimalsMeasurementIDField('right-ear-tag-id'),
+      createOrganismMeasurementIDField('right-ear-tag-id'),
       createValueField('measurementType', 'Right Ear Tag ID'),
       createPathField('measurementValue', 'Marked Animals', ['Right Ear Tag ID']),
       createValueField('measurementUnit', '')
@@ -695,7 +695,7 @@ const measurementOrganismIDMaps: MapSchema[] = [
     fields: [
       eventIDField,
       organismIDField,
-      createMarkedAnimalsMeasurementIDField('right-ear-tag-colour'),
+      createOrganismMeasurementIDField('right-ear-tag-colour'),
       createValueField('measurementType', 'Right Ear Tag Colour'),
       createPathField('measurementValue', 'Marked Animals', ['Right Ear Tag Colour']),
       createValueField('measurementUnit', '')
@@ -710,7 +710,7 @@ const measurementOrganismIDMaps: MapSchema[] = [
     fields: [
       eventIDField,
       organismIDField,
-      createMarkedAnimalsMeasurementIDField('left-ear-tag-id'),
+      createOrganismMeasurementIDField('left-ear-tag-id'),
       createValueField('measurementType', 'Left Ear Tag ID'),
       createPathField('measurementValue', 'Marked Animals', ['Left Ear Tag ID']),
       createValueField('measurementUnit', '')
@@ -725,7 +725,7 @@ const measurementOrganismIDMaps: MapSchema[] = [
     fields: [
       eventIDField,
       organismIDField,
-      createMarkedAnimalsMeasurementIDField('left-ear-tag-colour'),
+      createOrganismMeasurementIDField('left-ear-tag-colour'),
       createValueField('measurementType', 'Left Ear Tag Colour'),
       createPathField('measurementValue', 'Marked Animals', ['Left Ear Tag Colour']),
       createValueField('measurementUnit', '')
