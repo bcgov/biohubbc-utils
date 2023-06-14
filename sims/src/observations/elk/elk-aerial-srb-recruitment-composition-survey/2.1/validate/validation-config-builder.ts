@@ -49,6 +49,7 @@ export const validationConfigBuilder = {
           file_required_columns_validator: {
             required_columns: [
               'Study Area',
+              'Population Unit',
               'Block ID/SU ID',
               'Stratum',
               'Stratum/Block Area (km2)',
@@ -66,10 +67,6 @@ export const validationConfigBuilder = {
       columns: [
         {
           name: 'Study Area',
-          validations: [{ column_required_validator: {} }]
-        },
-        {
-          name: 'Population Unit',
           validations: [{ column_required_validator: {} }]
         },
         {
