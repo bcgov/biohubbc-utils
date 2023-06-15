@@ -641,7 +641,7 @@ export const transformationConfigBuilder: TransformSchema = {
       fields: [
         eventIDField,
         createOccurrenceIDField(14),
-        createPathField('individualCount', 'Observations', ['>=6 Point Bulls']),
+        createPathField('individualCount', 'Observations', ['>= 6 Point Bulls']),
         createValueField('sex', 'male'),
         createValueField('lifeStage', 'adult'),
         createPathField('taxonID', 'Observations', ['Species']),

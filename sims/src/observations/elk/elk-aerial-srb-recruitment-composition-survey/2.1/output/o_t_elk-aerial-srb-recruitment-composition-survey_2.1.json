@@ -2411,7 +2411,7 @@
           "columnValue": [
             {
               "paths": [
-                "$..[?(@._name === 'Observations')]..['>=6 Point Bulls']"
+                "$..[?(@._name === 'Observations')]..['>= 6 Point Bulls']"
               ]
             }
           ]
