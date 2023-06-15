@@ -24,6 +24,5 @@
   },
   "ts-node": {
     "files": true
-  },
-  "exclude": ["utils"]
+  }
 }

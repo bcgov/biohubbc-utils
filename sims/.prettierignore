@@ -1,0 +1,19 @@
+node_modules
+**/node_modules
+
+dist
+coverage
+
+openshift
+sonar-runner
+uploads
+
+.vscode
+
+# Don't lint the output files, as they are automaticaly generated files
+src/observations/**/output/*
+src/summary/**/output/*
+
+# These folders are only meant to store artifacts produced during local development/testing
+src/observations/**/test-run/*
+src/summary/**/test-run/*

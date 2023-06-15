@@ -1,11 +1,9 @@
-
 node_modules
+**/node_modules
 
 **/.npm
 **/.config
 **.bash_history
-
-
 
 # misc
 **/.DS_Store
@@ -14,7 +12,4 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# temp output files
-**/utils/templates/observations/transform/output/*
-
-**/dist
+**/dist/
