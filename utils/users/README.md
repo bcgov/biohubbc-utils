@@ -12,13 +12,3 @@
 - https://nrs.objectstore.gov.bc.ca/gblhvt/postman/BioHub%20Collection%20V3.postman_collection.json
 
 
-### Setup
-
-- S3 bucket for Postman ENV/Collection
-
-- SIMS CSS API Account data ( Not to be pushed here for dev use )
-  - {
-    "tokenUrl": "https://loginproxy.gov.bc.ca/auth/realms/standard/protocol/openid-connect/token",
-    "clientId": "service-account-team-1190-4229",
-    "clientSecret": "iOM77B5QqLXWoSa6RDXf7MoC0KiUGOO4"
-    }
