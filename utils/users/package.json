@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "users": "ts-node ./src/users.ts"
+    "users": "ts-node ./src/users.ts",
+    "insert": "ts-node ./src/insert.ts"
   },
   "keywords": [],
   "author": "",
