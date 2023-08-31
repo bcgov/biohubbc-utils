@@ -1,4 +1,7 @@
 import _keycloakData from "./data_temp/keycloakData.json"
+import { KeycloakService } from "./database/keycloak"
+import axios from "axios"
+require("dotenv").config()
 
 interface IUser {
   SECURE_PERSON_ID: string
@@ -13,7 +16,7 @@ interface IUser {
     attributes: {
       idir_user_guid: string[]
       idir_username: string[]
-      display_name: string[]
+      displayName: string[]
     }
   }
 }
@@ -37,15 +40,19 @@ enum SYSTEM_USER_ROLE_NAME {
 }
 
 interface SystemUserSeed {
-  identifier: string | null
-  type: SYSTEM_IDENTITY_SOURCE
+  userIdentifier: string
+  identitySource: SYSTEM_IDENTITY_SOURCE
   role_name: SYSTEM_USER_ROLE_NAME
-  user_guid: string | null
-  display_name: string
-  given_name: string | null
-  family_name: string | null
+  userGuid: string
+  displayName: string
+  given_name: string
+  family_name: string
   email: string
 }
+
+const getBackboneApiHost = () =>
+  `http://${process.env.API_HOST}:${process.env.API_PORT}` ||
+  "http://localhost:6200"
 
 /**
  * This is a temporary script to insert users into the database.
@@ -57,11 +64,11 @@ interface SystemUserSeed {
  *    - there are 3 types of users:
  *
  *     1. users with keycloak data: {
- *        identifier: string
- *        type: SYSTEM_IDENTITY_SOURCE.IDIR
+ *        userIdentifier: string
+ *        identitySource: SYSTEM_IDENTITY_SOURCE.IDIR
  *        role_name: SYSTEM_USER_ROLE_NAME.CREATOR
- *        user_guid: string
- *        display_name: string
+ *        userGuid: string
+ *        displayName: string
  *        given_name: string
  *        family_name: string
  *        email: string
@@ -71,11 +78,11 @@ interface SystemUserSeed {
  *        - these users will not be inserted into the database
  *
  *     3. user with email but no keycloak data: {
- *        identifier: null
- *        type: SYSTEM_IDENTITY_SOURCE.UNVERIFIED
+ *        userIdentifier: null
+ *        identitySource: SYSTEM_IDENTITY_SOURCE.UNVERIFIED
  *        role_name: SYSTEM_USER_ROLE_NAME.CREATOR
- *        user_guid: null
- *        display_name: string
+ *        userGuid: null
+ *        displayName: string
  *        given_name: string | null
  *        family_name: string | null
  *        email: string
@@ -83,32 +90,67 @@ interface SystemUserSeed {
  *
  */
 async function main() {
-  const keycloakData: IKeycloakData = _keycloakData as IKeycloakData
+  //new keycloak copy service
+  const keycloakService = new KeycloakService()
 
+  //get token from keycloak
+  let token = await keycloakService.getKeycloakServiceToken()
+  console.log("token", token)
+
+  if (!token) {
+    console.log("no token")
+    return
+  }
+
+  //get user intake url
+  const userIntakeUrl = new URL("/user/add", getBackboneApiHost()).href
+
+  //get user data from keycloak file
+  const keycloakData: IKeycloakData = _keycloakData as IKeycloakData
   const userData = keycloakData.userData
+
   for (const user of userData) {
     console.log("user", user)
 
+    //if no email, skip
     if (!user.EMAIL_ADDRESS) {
       continue
     }
 
+    //if no keycloak data, insert user with unverified identity source
     const systemUserSeed: SystemUserSeed = {
-      identifier: user.keycloakData?.attributes.idir_username[0] || null,
-      type: user.keycloakData
+      userIdentifier:
+        user.keycloakData?.attributes.idir_username[0] ||
+        `${user.FIRST_NAME} ${user.LAST_NAME}`,
+      identitySource: user.keycloakData
         ? SYSTEM_IDENTITY_SOURCE.IDIR
         : SYSTEM_IDENTITY_SOURCE.UNVERIFIED,
       role_name: SYSTEM_USER_ROLE_NAME.CREATOR,
-      user_guid: user.keycloakData?.attributes.idir_user_guid[0] || null,
-      display_name:
-        user.keycloakData?.attributes.display_name[0] ||
+      userGuid: user.keycloakData?.attributes.idir_user_guid[0] || "",
+      displayName:
+        user.keycloakData?.attributes.displayName[0] ||
         `${user.FIRST_NAME} ${user.LAST_NAME}`,
-      given_name: user.keycloakData?.firstName || user.FIRST_NAME || null,
-      family_name: user.keycloakData?.lastName || user.LAST_NAME || null,
+      given_name: user.keycloakData?.firstName || user.FIRST_NAME || "",
+      family_name: user.keycloakData?.lastName || user.LAST_NAME || "",
       email: user.keycloakData?.email || user.EMAIL_ADDRESS,
     }
 
     console.log("systemUserSeed", systemUserSeed)
+
+    //insert user into database
+    try {
+      const { data } = await axios.post(userIntakeUrl, systemUserSeed, {
+        headers: {
+          "Content-Type": "application/json",
+          authorization: `Bearer ${token}`,
+        },
+      })
+
+      console.log("data", data)
+    } catch (error) {
+      console.log("error", error)
+      break
+    }
   }
 }
 
