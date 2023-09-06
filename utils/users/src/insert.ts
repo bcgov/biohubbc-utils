@@ -54,6 +54,25 @@ const getBackboneApiHost = () =>
   `http://${process.env.API_HOST}:${process.env.API_PORT}` ||
   "http://localhost:6200"
 
+async function sendUserIntakeRequest(
+  userIntakeUrl: string,
+  systemUserSeed: SystemUserSeed,
+  token: string
+) {
+  try {
+    const { data } = await axios.post(userIntakeUrl, systemUserSeed, {
+      headers: {
+        "Content-Type": "application/json",
+        authorization: `Bearer ${token}`,
+      },
+    })
+
+    console.log("data", data)
+  } catch (error) {
+    console.log("error", error)
+  }
+}
+
 /**
  * This is a temporary script to insert users into the database.
  *
@@ -95,7 +114,6 @@ async function main() {
 
   //get token from keycloak
   let token = await keycloakService.getKeycloakServiceToken()
-  console.log("token", token)
 
   if (!token) {
     console.log("no token")
@@ -110,8 +128,6 @@ async function main() {
   const userData = keycloakData.userData
 
   for (const user of userData) {
-    console.log("user", user)
-
     //if no email, skip
     if (!user.EMAIL_ADDRESS) {
       continue
@@ -136,20 +152,12 @@ async function main() {
     }
 
     console.log("systemUserSeed", systemUserSeed)
-
     //insert user into database
     try {
-      const { data } = await axios.post(userIntakeUrl, systemUserSeed, {
-        headers: {
-          "Content-Type": "application/json",
-          authorization: `Bearer ${token}`,
-        },
-      })
-
-      console.log("data", data)
+      sendUserIntakeRequest(userIntakeUrl, systemUserSeed, token)
     } catch (error) {
       console.log("error", error)
-      break
+      sendUserIntakeRequest(userIntakeUrl, systemUserSeed, token)
     }
   }
 }
