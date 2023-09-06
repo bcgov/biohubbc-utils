@@ -20,6 +20,22 @@ interface IUser {
   }
 }
 
+const KEYCLOAK_API_TOKEN_URL =
+  "https://loginproxy.gov.bc.ca/auth/realms/standard/protocol/openid-connect/token"
+
+const KEYCLOAK_API_USER_URL = "https://api.loginproxy.gov.bc.ca/api/v1"
+const SIMS_KEYCLOAK_API_CLIENT_ID = "service-account-team-1190-4229"
+const SIMS_KEYCLOAK_API_CLIENT_PASSWORD = "" //DONT PUSH THIS TO GITHUB: fill in the password
+const environment = "dev"
+
+let token: string = ""
+
+/**
+ * Read CSV file and return array of objects
+ *
+ * @param {string} filePath
+ * @return {*}  {Promise<object[]>}
+ */
 async function readCSVFile(filePath: string): Promise<object[]> {
   const results: object[] = []
 
@@ -32,16 +48,11 @@ async function readCSVFile(filePath: string): Promise<object[]> {
   })
 }
 
-const KEYCLOAK_API_TOKEN_URL =
-  "https://loginproxy.gov.bc.ca/auth/realms/standard/protocol/openid-connect/token"
-
-const KEYCLOAK_API_USER_URL = "https://api.loginproxy.gov.bc.ca/api/v1"
-const SIMS_KEYCLOAK_API_CLIENT_ID = "service-account-team-1190-4229"
-const SIMS_KEYCLOAK_API_CLIENT_PASSWORD = "" //DONT PUSH THIS TO GITHUB: fill in the password
-const environment = "dev"
-
-let token: string = ""
-
+/**
+ * Get an access token from keycloak for the SIMS Service account.
+ *
+ * @return {*}
+ */
 async function getKeycloakToken() {
   const response = await axios.post(
     KEYCLOAK_API_TOKEN_URL,
@@ -56,6 +67,12 @@ async function getKeycloakToken() {
   return response.data.access_token
 }
 
+/**
+ * Get keycloak data by email
+ *
+ * @param {IUser} user
+ * @return {*}
+ */
 async function getKeycloakIDIR_UUID_ByEmail(user: IUser) {
   const response = await axios.get(
     `${KEYCLOAK_API_USER_URL}/${environment}/idir/users?email=${user.EMAIL_ADDRESS}`,
@@ -69,6 +86,12 @@ async function getKeycloakIDIR_UUID_ByEmail(user: IUser) {
   }
 }
 
+/**
+ * Get keycloak data by name
+ *
+ * @param {IUser} user
+ * @return {*}
+ */
 async function getKeycloakIDIR_UUID_ByName(user: IUser) {
   const response = await axios.get(
     `${KEYCLOAK_API_USER_URL}/${environment}/idir/users?firstName=${user.FIRST_NAME}&lastName=${user.LAST_NAME}`,
@@ -82,6 +105,12 @@ async function getKeycloakIDIR_UUID_ByName(user: IUser) {
   }
 }
 
+/**
+ * Get keycloak data by email or name
+ *
+ * @param {IUser} user
+ * @return {*}
+ */
 async function getKeycloakData(user: IUser) {
   let keycloakUser: IUser | undefined
 
@@ -116,6 +145,13 @@ async function getKeycloakData(user: IUser) {
   }
 }
 
+/**
+ * Get all users from keycloak
+ *
+ * @export
+ * @param {IUser[]} users
+ * @return {*}
+ */
 export async function getAllUsers(users: IUser[]) {
   const idirUsers: IUser[] = []
 
@@ -140,17 +176,26 @@ export async function getAllUsers(users: IUser[]) {
   return idirUsers
 }
 
+/**
+ * Main function
+ *
+ */
 async function main() {
   const filePath = "./src/data_temp/personsForSIMS.csv"
 
+  // get keycloak token
   token = await getKeycloakToken()
 
+  // read csv file
   const users: IUser[] = (await readCSVFile(filePath)) as IUser[]
 
+  // write open array to file
   fs.appendFileSync("./src/data_temp/keycloakData.json", "[\n")
 
+  // get all users from keycloak and write to file
   const keycloakUsers = await getAllUsers(users)
 
+  // write close array to file
   fs.appendFileSync("./src/data_temp/keycloakData.json", "]\n")
 
   // double save data to file
@@ -158,36 +203,6 @@ async function main() {
   fs.writeFileSync(
     "./src/data_temp/keycloakUsers.json",
     JSON.stringify(keycloakUsers, null, 2)
-  )
-}
-
-export async function testData() {
-  const kj: IUser = {
-    SECURE_PERSON_ID: "123456789",
-    FIRST_NAME: "Kjartan",
-    LAST_NAME: "Einarsson",
-    EMAIL_ADDRESS: "Kjartan@gov.bc.ca",
-  }
-  const idirKJ = await getKeycloakData(kj)
-  console.log("idirKJ", idirKJ)
-
-  fs.appendFileSync(
-    "./src/data_temp/keycloakData.json",
-    JSON.stringify(idirKJ, null, 2) + ",\n"
-  )
-
-  const curtis = {
-    SECURE_PERSON_ID: "123456789",
-    FIRST_NAME: "Curtis",
-    LAST_NAME: "Upshall",
-    EMAIL_ADDRESS: "",
-  }
-  const idirCurtis = await getKeycloakData(curtis)
-  console.log("idirCurtis", idirCurtis)
-
-  fs.appendFileSync(
-    "./src/data_temp/keycloakData.json",
-    JSON.stringify(idirCurtis, null, 2) + ",\n"
   )
 }
 

@@ -2,7 +2,6 @@ import _keycloakData from "./data_temp/keycloakData.json"
 import { KeycloakService } from "./database/keycloak"
 import axios from "axios"
 require("dotenv").config()
-
 interface IUser {
   SECURE_PERSON_ID: string
   FIRST_NAME: string
@@ -39,6 +38,7 @@ enum SYSTEM_USER_ROLE_NAME {
   DATA_ADMINISTRATOR = "Data Administrator",
 }
 
+//SIMS USER SEED INTERFACE
 interface SystemUserSeed {
   userIdentifier: string
   identitySource: SYSTEM_IDENTITY_SOURCE
@@ -50,10 +50,20 @@ interface SystemUserSeed {
   email: string
 }
 
+//get backbone api host
 const getBackboneApiHost = () =>
   `http://${process.env.API_HOST}:${process.env.API_PORT}` ||
   "http://localhost:6200"
 
+
+
+/**
+ * Send user intake request to backbone api
+ *
+ * @param {string} userIntakeUrl
+ * @param {SystemUserSeed} systemUserSeed
+ * @param {string} token
+ */
 async function sendUserIntakeRequest(
   userIntakeUrl: string,
   systemUserSeed: SystemUserSeed,
