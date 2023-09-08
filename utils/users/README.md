@@ -12,3 +12,18 @@
 - https://nrs.objectstore.gov.bc.ca/gblhvt/postman/BioHub%20Collection%20V3.postman_collection.json
 
 
+## Collect IDIR information from given list
+ - This script takes in an input file and checks each email and full name if they exist in the IDIR environment.
+    - If they do that info is all saved into a file called `keycloakData.json``
+
+    - A `.env` is required to run both scripts
+    - Input data saved proper location 
+        - `../data_temp/personsForSIMS.csv` 
+    - run `npm run users`
+
+## Insert user data into SIMS
+ - This script sends each user data collected above `keycloakData.json` to a SIMS api endpoint
+ - SIMS api url and Auth requirements are are stored in the `.env` file
+ - run `npm run insert` to start insert script
+
+

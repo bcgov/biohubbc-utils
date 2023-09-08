@@ -1,7 +1,6 @@
-import _keycloakData from "./data_temp/keycloakData.json"
+import _keycloakData from "../data_temp/keycloakData.json"
 import { KeycloakService } from "./database/keycloak"
 import axios from "axios"
-require("dotenv").config()
 interface IUser {
   SECURE_PERSON_ID: string
   FIRST_NAME: string
@@ -51,9 +50,7 @@ interface SystemUserSeed {
 }
 
 //get backbone api host
-const getBackboneApiHost = () =>
-  `http://${process.env.API_HOST}:${process.env.API_PORT}` ||
-  "http://localhost:6200"
+const simsApiHost = `http://${process.env.API_HOST}:${process.env.API_PORT}`
 
 /**
  * Send user intake request to backbone api
@@ -127,7 +124,7 @@ async function main() {
   }
 
   //get user intake url
-  const userIntakeUrl = new URL("/user/add", getBackboneApiHost()).href
+  const userIntakeUrl = new URL("/user/add", simsApiHost).href
 
   //get user data from keycloak file
   const keycloakData: IKeycloakData = _keycloakData as IKeycloakData

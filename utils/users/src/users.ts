@@ -20,13 +20,11 @@ interface IUser {
   }
 }
 
-const KEYCLOAK_API_TOKEN_URL =
-  "https://loginproxy.gov.bc.ca/auth/realms/standard/protocol/openid-connect/token"
-
-const KEYCLOAK_API_USER_URL = "https://api.loginproxy.gov.bc.ca/api/v1"
-const SIMS_KEYCLOAK_API_CLIENT_ID = "service-account-team-1190-4229"
-const SIMS_KEYCLOAK_API_CLIENT_PASSWORD = "" //DONT PUSH THIS TO GITHUB: fill in the password
-const environment = "dev"
+const KEYCLOAK_API_TOKEN_URL = `${process.env.KEYCLOAK_API_TOKEN_URL}`
+const KEYCLOAK_API_USER_URL = `${process.env.KEYCLOAK_API_HOST}`
+const SIMS_KEYCLOAK_API_CLIENT_ID = `${process.env.SIMS_KEYCLOAK_API_CLIENT_ID}`
+const SIMS_KEYCLOAK_API_CLIENT_PASSWORD = `${process.env.SIMS_KEYCLOAK_API_CLIENT_PASSWORD}`
+const environment = `${process.env.KEYCLOAK_ENVIRONMENT}`
 
 let token: string = ""
 
@@ -161,12 +159,12 @@ export async function getAllUsers(users: IUser[]) {
       console.log("keycloakUser", keycloakUser)
       idirUsers.push(keycloakUser)
       fs.appendFileSync(
-        "./src/data_temp/keycloakData.json",
+        "../data_temp/keycloakData.json",
         JSON.stringify(keycloakUser, null, 2) + ",\n"
       )
     } else {
       fs.appendFileSync(
-        "./src/data_temp/keycloakData.json",
+        "../data_temp/keycloakData.json",
         JSON.stringify(user, null, 2) + ",\n"
       )
     }
@@ -181,7 +179,7 @@ export async function getAllUsers(users: IUser[]) {
  *
  */
 async function main() {
-  const filePath = "./src/data_temp/personsForSIMS.csv"
+  const filePath = "../data_temp/personsForSIMS.csv"
 
   // get keycloak token
   token = await getKeycloakToken()
@@ -190,18 +188,18 @@ async function main() {
   const users: IUser[] = (await readCSVFile(filePath)) as IUser[]
 
   // write open array to file
-  fs.appendFileSync("./src/data_temp/keycloakData.json", "[\n")
+  fs.appendFileSync("../data_temp/keycloakData.json", "[\n")
 
   // get all users from keycloak and write to file
   const keycloakUsers = await getAllUsers(users)
 
   // write close array to file
-  fs.appendFileSync("./src/data_temp/keycloakData.json", "]\n")
+  fs.appendFileSync("../data_temp/keycloakData.json", "]\n")
 
   // double save data to file
   console.log("keycloakUsers", keycloakUsers)
   fs.writeFileSync(
-    "./src/data_temp/keycloakUsers.json",
+    "../data_temp/keycloakUsers.json",
     JSON.stringify(keycloakUsers, null, 2)
   )
 }
