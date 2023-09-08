@@ -55,8 +55,6 @@ const getBackboneApiHost = () =>
   `http://${process.env.API_HOST}:${process.env.API_PORT}` ||
   "http://localhost:6200"
 
-
-
 /**
  * Send user intake request to backbone api
  *
@@ -70,16 +68,14 @@ async function sendUserIntakeRequest(
   token: string
 ) {
   try {
-    const { data } = await axios.post(userIntakeUrl, systemUserSeed, {
+    await axios.post(userIntakeUrl, systemUserSeed, {
       headers: {
         "Content-Type": "application/json",
         authorization: `Bearer ${token}`,
       },
     })
-
-    console.log("data", data)
   } catch (error) {
-    console.log("error", error)
+    throw error
   }
 }
 
@@ -146,15 +142,20 @@ async function main() {
     //if no keycloak data, insert user with unverified identity source
     const systemUserSeed: SystemUserSeed = {
       userIdentifier:
-        user.keycloakData?.attributes.idir_username[0] ||
+        (user.keycloakData?.attributes.idir_username &&
+          user.keycloakData?.attributes.idir_username[0]) ||
         `${user.FIRST_NAME} ${user.LAST_NAME}`,
       identitySource: user.keycloakData
         ? SYSTEM_IDENTITY_SOURCE.IDIR
         : SYSTEM_IDENTITY_SOURCE.UNVERIFIED,
       role_name: SYSTEM_USER_ROLE_NAME.CREATOR,
-      userGuid: user.keycloakData?.attributes.idir_user_guid[0] || "",
+      userGuid:
+        (user.keycloakData?.attributes.idir_user_guid &&
+          user.keycloakData?.attributes.idir_user_guid[0]) ||
+        "",
       displayName:
-        user.keycloakData?.attributes.displayName[0] ||
+        (user.keycloakData?.attributes.displayName &&
+          user.keycloakData?.attributes.displayName[0]) ||
         `${user.FIRST_NAME} ${user.LAST_NAME}`,
       given_name: user.keycloakData?.firstName || user.FIRST_NAME || "",
       family_name: user.keycloakData?.lastName || user.LAST_NAME || "",
@@ -164,12 +165,13 @@ async function main() {
     console.log("systemUserSeed", systemUserSeed)
     //insert user into database
     try {
-      sendUserIntakeRequest(userIntakeUrl, systemUserSeed, token)
-    } catch (error) {
-      console.log("error", error)
-      sendUserIntakeRequest(userIntakeUrl, systemUserSeed, token)
+      await sendUserIntakeRequest(userIntakeUrl, systemUserSeed, token)
+    } catch (error: any) {
+      console.log("error", error.data)
     }
   }
+
+  console.log("done")
 }
 
 main()

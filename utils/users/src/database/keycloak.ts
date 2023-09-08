@@ -1,6 +1,7 @@
 import axios from "axios"
 import qs from "qs"
 
+// Types Imported from SIMS API, reused here for simplicity
 type IDIRAttributes = {
   idir_user_guid: [string]
   idir_username: [string]
