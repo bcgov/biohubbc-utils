@@ -1,0 +1,33 @@
+{
+  "name": "users",
+  "version": "1.0.0",
+  "description": "## Static list of SPI users to collect keycloak information and insert into biohub db",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "users": "ts-node ./src/users.ts",
+    "insert": "ts-node ./src/insert.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@react-keycloak/web": "^3.4.0",
+    "axios": "^1.5.0",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.3.1",
+    "fs": "^0.0.1-security",
+    "keycloak-js": "^22.0.1",
+    "qs": "^6.11.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/node": "^20.5.7",
+    "@types/qs": "^6.9.8",
+    "@types/react": "^18.2.21"
+  }
+}
