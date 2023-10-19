@@ -51,12 +51,11 @@ export class KeycloakService {
   // Used to query the CSS API
   keycloakApiHost: string
   keycloakIntegrationId: string
-  keycloakEnvironment: string
 
   constructor() {
-    this.keycloakHost = `${process.env.KEYCLOAK_HOST}`
+    this.keycloakHost = `${process.env.TEST_KEYCLOAK_HOST}`
     this.keycloakServiceClientId = `${process.env.KEYCLOAK_ADMIN_USERNAME}`
-    this.keycloakServiceClientSecret = `${process.env.KEYCLOAK_ADMIN_PASSWORD}`
+    this.keycloakServiceClientSecret = `${process.env.TEST_KEYCLOAK_ADMIN_PASSWORD}`
 
     this.keycloakApiTokenUrl = `${process.env.KEYCLOAK_API_TOKEN_URL}`
     this.keycloakApiClientId = `${process.env.KEYCLOAK_API_CLIENT_ID}`
@@ -64,7 +63,6 @@ export class KeycloakService {
 
     this.keycloakApiHost = `${process.env.KEYCLOAK_API_HOST}`
     this.keycloakIntegrationId = `${process.env.KEYCLOAK_INTEGRATION_ID}`
-    this.keycloakEnvironment = `${process.env.KEYCLOAK_ENVIRONMENT}`
   }
 
   /**
@@ -90,8 +88,8 @@ export class KeycloakService {
       )
 
       return data.access_token as string
-    } catch (error) {
-      console.log("error", error)
+    } catch (error:any) {
+      console.log("error", error.response.data)
     }
   }
 

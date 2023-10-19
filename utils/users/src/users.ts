@@ -1,7 +1,10 @@
 import fs from "fs"
 import csv from "csv-parser"
 import axios from "axios"
-
+import { KeycloakService } from "./database/keycloak"
+import qs from "qs"
+import _test_users from "../data_temp/test_users.json"
+require("dotenv").config()
 interface IUser {
   SECURE_PERSON_ID: string
   FIRST_NAME: string
@@ -20,10 +23,7 @@ interface IUser {
   }
 }
 
-const KEYCLOAK_API_TOKEN_URL = `${process.env.KEYCLOAK_API_TOKEN_URL}`
-const KEYCLOAK_API_USER_URL = `${process.env.KEYCLOAK_API_HOST}`
-const SIMS_KEYCLOAK_API_CLIENT_ID = `${process.env.SIMS_KEYCLOAK_API_CLIENT_ID}`
-const SIMS_KEYCLOAK_API_CLIENT_PASSWORD = `${process.env.SIMS_KEYCLOAK_API_CLIENT_PASSWORD}`
+const KEYCLOAK_API_HOST = `${process.env.KEYCLOAK_API_HOST}`
 const environment = `${process.env.KEYCLOAK_ENVIRONMENT}`
 
 let token: string = ""
@@ -47,25 +47,6 @@ async function readCSVFile(filePath: string): Promise<object[]> {
 }
 
 /**
- * Get an access token from keycloak for the SIMS Service account.
- *
- * @return {*}
- */
-async function getKeycloakToken() {
-  const response = await axios.post(
-    KEYCLOAK_API_TOKEN_URL,
-    {
-      client_id: SIMS_KEYCLOAK_API_CLIENT_ID,
-      client_secret: SIMS_KEYCLOAK_API_CLIENT_PASSWORD,
-      grant_type: "client_credentials",
-    },
-    { headers: { "Content-Type": "application/x-www-form-urlencoded" } }
-  )
-
-  return response.data.access_token
-}
-
-/**
  * Get keycloak data by email
  *
  * @param {IUser} user
@@ -73,7 +54,7 @@ async function getKeycloakToken() {
  */
 async function getKeycloakIDIR_UUID_ByEmail(user: IUser) {
   const response = await axios.get(
-    `${KEYCLOAK_API_USER_URL}/${environment}/idir/users?email=${user.EMAIL_ADDRESS}`,
+    `${KEYCLOAK_API_HOST}/${environment}/idir/users?email=${user.EMAIL_ADDRESS}`,
     { headers: { Authorization: `Bearer ${token}` } }
   )
   if (response.data.data.length > 0) {
@@ -92,7 +73,7 @@ async function getKeycloakIDIR_UUID_ByEmail(user: IUser) {
  */
 async function getKeycloakIDIR_UUID_ByName(user: IUser) {
   const response = await axios.get(
-    `${KEYCLOAK_API_USER_URL}/${environment}/idir/users?firstName=${user.FIRST_NAME}&lastName=${user.LAST_NAME}`,
+    `${KEYCLOAK_API_HOST}/${environment}/idir/users?firstName=${user.FIRST_NAME}&lastName=${user.LAST_NAME}`,
     { headers: { Authorization: `Bearer ${token}` } }
   )
   if (response.data.data.length > 0) {
@@ -118,7 +99,6 @@ async function getKeycloakData(user: IUser) {
     } catch (e: any) {
       if (e.response.data.err === "token expired") {
         console.log("token expired")
-        token = await getKeycloakToken()
         keycloakUser = await getKeycloakIDIR_UUID_ByEmail(user)
       }
     }
@@ -133,7 +113,6 @@ async function getKeycloakData(user: IUser) {
     } catch (e: any) {
       if (e.response.data.err === "token expired") {
         console.log("token expired")
-        token = await getKeycloakToken()
         keycloakUser = await getKeycloakIDIR_UUID_ByName(user)
       }
     }
@@ -176,13 +155,10 @@ export async function getAllUsers(users: IUser[]) {
 
 /**
  * Main function
- *
+ * Broken currently
  */
-async function main() {
+export async function main() {
   const filePath = "../data_temp/personsForSIMS.csv"
-
-  // get keycloak token
-  token = await getKeycloakToken()
 
   // read csv file
   const users: IUser[] = (await readCSVFile(filePath)) as IUser[]
@@ -204,4 +180,94 @@ async function main() {
   )
 }
 
-main()
+/**
+ * Get keycloak data by username
+ *
+ * @param {IUser} user
+ * @return {*}
+ */
+async function getKeycloakIDIR_UUID_ByGUID(guid: string) {
+  const query = qs.stringify({
+    guid: guid,
+  })
+
+  const response = await axios.get(
+    `${KEYCLOAK_API_HOST}/${environment}/idir/users?${query}`,
+    {
+      headers: {
+        authorization: `Bearer ${token}`,
+      },
+    }
+  )
+  if (response.data.data.length > 0) {
+    const keycloakUserData = response.data.data[0]
+
+    return keycloakUserData
+  }
+}
+
+async function main_test() {
+  try {
+    //new keycloak copy service
+    const keycloakService = new KeycloakService()
+
+    //get token from keycloak
+    token = (await keycloakService.getKeycloakToken()) || ""
+    console.log("token", token)
+
+    if (!token) {
+      console.log("no token")
+      return
+    }
+
+    const test_users = _test_users as {
+      user_identifier: string
+      user_guid: string | null
+    }[]
+
+    const idirUsers: IUser[] = []
+
+    // write open array to file
+    fs.appendFileSync("./data_temp/testIDIRUsers.json", "[\n")
+
+    for (const test_user of test_users) {
+      if (!test_user.user_guid) continue
+
+      let keycloakUser: IUser = {
+        SECURE_PERSON_ID: "",
+        FIRST_NAME: "",
+        LAST_NAME: "",
+        EMAIL_ADDRESS: "",
+      }
+
+      const keycloakUserData = await getKeycloakIDIR_UUID_ByGUID(
+        test_user.user_guid
+      )
+      keycloakUser.keycloakData = keycloakUserData
+      console.log("keycloakUserData", keycloakUserData)
+      fs.appendFileSync(
+        "./data_temp/testIDIRUsers.json",
+        JSON.stringify(keycloakUser, null, 2) + ",\n"
+      )
+      idirUsers.push(keycloakUser)
+    }
+
+    // write close array to file
+    fs.appendFileSync("./data_temp/testIDIRUsers.json", "]\n")
+
+    // const guid = "DFE2CC5E345E4B1E813EC1DC10852064"
+    // const keycloakUserData = await getKeycloakIDIR_UUID_ByGUID(guid)
+    // console.log("keycloakUserData", keycloakUserData)
+    console.log("idirUsers", idirUsers)
+
+    fs.writeFileSync(
+      "./data_temp/test_idirUsers.json",
+      JSON.stringify(idirUsers, null, 2)
+    )
+  } catch (e: any) {
+    console.log("e", e)
+  }
+}
+
+// main()
+main_test()
